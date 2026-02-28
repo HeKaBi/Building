@@ -1,0 +1,7665 @@
+{
+    "关汉卿": [
+        {
+            "name": "云",
+            "value": 579
+        },
+        {
+            "name": "水",
+            "value": 59
+        },
+        {
+            "name": "风",
+            "value": 112
+        },
+        {
+            "name": "月",
+            "value": 64
+        },
+        {
+            "name": "日",
+            "value": 190
+        },
+        {
+            "name": "松",
+            "value": 13
+        },
+        {
+            "name": "梅",
+            "value": 24
+        },
+        {
+            "name": "山",
+            "value": 47
+        },
+        {
+            "name": "酒",
+            "value": 93
+        },
+        {
+            "name": "柳",
+            "value": 36
+        },
+        {
+            "name": "楼",
+            "value": 22
+        },
+        {
+            "name": "江",
+            "value": 32
+        },
+        {
+            "name": "亭",
+            "value": 10
+        },
+        {
+            "name": "剑",
+            "value": 19
+        },
+        {
+            "name": "菊",
+            "value": 1
+        },
+        {
+            "name": "荷",
+            "value": 3
+        }
+    ],
+    "阚志学": [
+        {
+            "name": "风",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "楼",
+            "value": 1
+        }
+    ],
+    "王实甫": [
+        {
+            "name": "柳",
+            "value": 28
+        },
+        {
+            "name": "云",
+            "value": 236
+        },
+        {
+            "name": "月",
+            "value": 43
+        },
+        {
+            "name": "风",
+            "value": 71
+        },
+        {
+            "name": "山",
+            "value": 36
+        },
+        {
+            "name": "水",
+            "value": 32
+        },
+        {
+            "name": "日",
+            "value": 77
+        },
+        {
+            "name": "酒",
+            "value": 27
+        },
+        {
+            "name": "楼",
+            "value": 10
+        },
+        {
+            "name": "剑",
+            "value": 4
+        },
+        {
+            "name": "江",
+            "value": 6
+        },
+        {
+            "name": "荷",
+            "value": 3
+        },
+        {
+            "name": "亭",
+            "value": 1
+        },
+        {
+            "name": "梅",
+            "value": 8
+        },
+        {
+            "name": "松",
+            "value": 2
+        }
+    ],
+    "杨维桢": [
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 2
+        },
+        {
+            "name": "亭",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 3
+        },
+        {
+            "name": "水",
+            "value": 3
+        }
+    ],
+    "蒲察善长": [
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 2
+        },
+        {
+            "name": "云",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 1
+        }
+    ],
+    "白贲": [
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "剑",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 2
+        },
+        {
+            "name": "风",
+            "value": 3
+        },
+        {
+            "name": "山",
+            "value": 4
+        },
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        }
+    ],
+    "查德卿": [
+        {
+            "name": "云",
+            "value": 3
+        },
+        {
+            "name": "亭",
+            "value": 2
+        },
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "柳",
+            "value": 5
+        },
+        {
+            "name": "月",
+            "value": 3
+        },
+        {
+            "name": "风",
+            "value": 8
+        },
+        {
+            "name": "楼",
+            "value": 3
+        },
+        {
+            "name": "水",
+            "value": 4
+        },
+        {
+            "name": "山",
+            "value": 3
+        },
+        {
+            "name": "江",
+            "value": 3
+        },
+        {
+            "name": "酒",
+            "value": 1
+        },
+        {
+            "name": "菊",
+            "value": 1
+        }
+    ],
+    "高克礼": [],
+    "李唐宾": [
+        {
+            "name": "江",
+            "value": 4
+        },
+        {
+            "name": "酒",
+            "value": 2
+        },
+        {
+            "name": "日",
+            "value": 10
+        },
+        {
+            "name": "云",
+            "value": 27
+        },
+        {
+            "name": "风",
+            "value": 15
+        },
+        {
+            "name": "山",
+            "value": 8
+        },
+        {
+            "name": "月",
+            "value": 5
+        },
+        {
+            "name": "楼",
+            "value": 5
+        },
+        {
+            "name": "柳",
+            "value": 3
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 3
+        },
+        {
+            "name": "荷",
+            "value": 2
+        },
+        {
+            "name": "松",
+            "value": 1
+        },
+        {
+            "name": "剑",
+            "value": 1
+        }
+    ],
+    "王伯成": [
+        {
+            "name": "山",
+            "value": 14
+        },
+        {
+            "name": "日",
+            "value": 16
+        },
+        {
+            "name": "剑",
+            "value": 3
+        },
+        {
+            "name": "月",
+            "value": 16
+        },
+        {
+            "name": "云",
+            "value": 17
+        },
+        {
+            "name": "水",
+            "value": 16
+        },
+        {
+            "name": "江",
+            "value": 10
+        },
+        {
+            "name": "风",
+            "value": 14
+        },
+        {
+            "name": "松",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 31
+        },
+        {
+            "name": "柳",
+            "value": 3
+        },
+        {
+            "name": "楼",
+            "value": 4
+        },
+        {
+            "name": "梅",
+            "value": 1
+        }
+    ],
+    "孔文升": [
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 1
+        }
+    ],
+    "白朴": [
+        {
+            "name": "日",
+            "value": 56
+        },
+        {
+            "name": "云",
+            "value": 166
+        },
+        {
+            "name": "月",
+            "value": 23
+        },
+        {
+            "name": "江",
+            "value": 8
+        },
+        {
+            "name": "松",
+            "value": 8
+        },
+        {
+            "name": "山",
+            "value": 25
+        },
+        {
+            "name": "柳",
+            "value": 19
+        },
+        {
+            "name": "风",
+            "value": 39
+        },
+        {
+            "name": "梅",
+            "value": 66
+        },
+        {
+            "name": "荷",
+            "value": 6
+        },
+        {
+            "name": "亭",
+            "value": 12
+        },
+        {
+            "name": "水",
+            "value": 24
+        },
+        {
+            "name": "楼",
+            "value": 6
+        },
+        {
+            "name": "剑",
+            "value": 3
+        },
+        {
+            "name": "酒",
+            "value": 17
+        }
+    ],
+    "赵善庆": [
+        {
+            "name": "楼",
+            "value": 7
+        },
+        {
+            "name": "山",
+            "value": 13
+        },
+        {
+            "name": "水",
+            "value": 9
+        },
+        {
+            "name": "剑",
+            "value": 1
+        },
+        {
+            "name": "江",
+            "value": 5
+        },
+        {
+            "name": "风",
+            "value": 13
+        },
+        {
+            "name": "日",
+            "value": 3
+        },
+        {
+            "name": "月",
+            "value": 10
+        },
+        {
+            "name": "云",
+            "value": 6
+        },
+        {
+            "name": "柳",
+            "value": 6
+        },
+        {
+            "name": "酒",
+            "value": 2
+        },
+        {
+            "name": "亭",
+            "value": 1
+        },
+        {
+            "name": "松",
+            "value": 1
+        }
+    ],
+    "沈禧": [
+        {
+            "name": "风",
+            "value": 5
+        },
+        {
+            "name": "楼",
+            "value": 2
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 7
+        },
+        {
+            "name": "日",
+            "value": 4
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 3
+        },
+        {
+            "name": "水",
+            "value": 2
+        },
+        {
+            "name": "柳",
+            "value": 2
+        },
+        {
+            "name": "山",
+            "value": 4
+        },
+        {
+            "name": "松",
+            "value": 1
+        },
+        {
+            "name": "亭",
+            "value": 1
+        },
+        {
+            "name": "梅",
+            "value": 1
+        }
+    ],
+    "马致远": [
+        {
+            "name": "酒",
+            "value": 98
+        },
+        {
+            "name": "楼",
+            "value": 35
+        },
+        {
+            "name": "月",
+            "value": 88
+        },
+        {
+            "name": "风",
+            "value": 113
+        },
+        {
+            "name": "日",
+            "value": 102
+        },
+        {
+            "name": "云",
+            "value": 338
+        },
+        {
+            "name": "柳",
+            "value": 37
+        },
+        {
+            "name": "水",
+            "value": 52
+        },
+        {
+            "name": "山",
+            "value": 104
+        },
+        {
+            "name": "江",
+            "value": 48
+        },
+        {
+            "name": "梅",
+            "value": 17
+        },
+        {
+            "name": "剑",
+            "value": 13
+        },
+        {
+            "name": "松",
+            "value": 17
+        },
+        {
+            "name": "荷",
+            "value": 4
+        },
+        {
+            "name": "菊",
+            "value": 6
+        },
+        {
+            "name": "亭",
+            "value": 3
+        }
+    ],
+    "石君宝": [
+        {
+            "name": "风",
+            "value": 28
+        },
+        {
+            "name": "云",
+            "value": 158
+        },
+        {
+            "name": "月",
+            "value": 14
+        },
+        {
+            "name": "亭",
+            "value": 2
+        },
+        {
+            "name": "日",
+            "value": 29
+        },
+        {
+            "name": "水",
+            "value": 8
+        },
+        {
+            "name": "酒",
+            "value": 16
+        },
+        {
+            "name": "柳",
+            "value": 11
+        },
+        {
+            "name": "楼",
+            "value": 6
+        },
+        {
+            "name": "山",
+            "value": 7
+        },
+        {
+            "name": "荷",
+            "value": 1
+        },
+        {
+            "name": "江",
+            "value": 4
+        },
+        {
+            "name": "梅",
+            "value": 11
+        },
+        {
+            "name": "剑",
+            "value": 2
+        }
+    ],
+    "童童学士": [
+        {
+            "name": "风",
+            "value": 2
+        },
+        {
+            "name": "日",
+            "value": 2
+        },
+        {
+            "name": "云",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 3
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "楼",
+            "value": 2
+        },
+        {
+            "name": "剑",
+            "value": 1
+        }
+    ],
+    "杨显之": [
+        {
+            "name": "云",
+            "value": 59
+        },
+        {
+            "name": "水",
+            "value": 7
+        },
+        {
+            "name": "江",
+            "value": 3
+        },
+        {
+            "name": "月",
+            "value": 3
+        },
+        {
+            "name": "风",
+            "value": 13
+        },
+        {
+            "name": "酒",
+            "value": 11
+        },
+        {
+            "name": "日",
+            "value": 17
+        },
+        {
+            "name": "剑",
+            "value": 2
+        },
+        {
+            "name": "山",
+            "value": 3
+        },
+        {
+            "name": "楼",
+            "value": 2
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "柳",
+            "value": 2
+        },
+        {
+            "name": "亭",
+            "value": 3
+        }
+    ],
+    "杜仁杰": [
+        {
+            "name": "风",
+            "value": 5
+        },
+        {
+            "name": "月",
+            "value": 2
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 3
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 2
+        },
+        {
+            "name": "酒",
+            "value": 1
+        }
+    ],
+    "李好古": [
+        {
+            "name": "水",
+            "value": 16
+        },
+        {
+            "name": "风",
+            "value": 15
+        },
+        {
+            "name": "月",
+            "value": 7
+        },
+        {
+            "name": "云",
+            "value": 43
+        },
+        {
+            "name": "山",
+            "value": 7
+        },
+        {
+            "name": "松",
+            "value": 1
+        },
+        {
+            "name": "菊",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 6
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "江",
+            "value": 1
+        }
+    ],
+    "陈克明": [
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 3
+        },
+        {
+            "name": "楼",
+            "value": 2
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 3
+        },
+        {
+            "name": "云",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 1
+        }
+    ],
+    "高明": [
+        {
+            "name": "风",
+            "value": 2
+        },
+        {
+            "name": "山",
+            "value": 2
+        },
+        {
+            "name": "酒",
+            "value": 2
+        },
+        {
+            "name": "云",
+            "value": 3
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "楼",
+            "value": 2
+        }
+    ],
+    "云龛子": [
+        {
+            "name": "水",
+            "value": 2
+        },
+        {
+            "name": "日",
+            "value": 3
+        },
+        {
+            "name": "月",
+            "value": 7
+        },
+        {
+            "name": "风",
+            "value": 7
+        },
+        {
+            "name": "山",
+            "value": 4
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "松",
+            "value": 2
+        },
+        {
+            "name": "云",
+            "value": 4
+        },
+        {
+            "name": "酒",
+            "value": 1
+        }
+    ],
+    "高文秀": [
+        {
+            "name": "日",
+            "value": 64
+        },
+        {
+            "name": "云",
+            "value": 264
+        },
+        {
+            "name": "月",
+            "value": 11
+        },
+        {
+            "name": "剑",
+            "value": 5
+        },
+        {
+            "name": "风",
+            "value": 30
+        },
+        {
+            "name": "酒",
+            "value": 55
+        },
+        {
+            "name": "亭",
+            "value": 5
+        },
+        {
+            "name": "江",
+            "value": 10
+        },
+        {
+            "name": "水",
+            "value": 12
+        },
+        {
+            "name": "松",
+            "value": 2
+        },
+        {
+            "name": "柳",
+            "value": 2
+        },
+        {
+            "name": "山",
+            "value": 22
+        },
+        {
+            "name": "荷",
+            "value": 2
+        },
+        {
+            "name": "梅",
+            "value": 1
+        }
+    ],
+    "张子坚": [
+        {
+            "name": "酒",
+            "value": 1
+        }
+    ],
+    "康进之": [
+        {
+            "name": "酒",
+            "value": 12
+        },
+        {
+            "name": "云",
+            "value": 48
+        },
+        {
+            "name": "风",
+            "value": 8
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 4
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 5
+        },
+        {
+            "name": "江",
+            "value": 15
+        },
+        {
+            "name": "月",
+            "value": 2
+        },
+        {
+            "name": "山",
+            "value": 19
+        },
+        {
+            "name": "剑",
+            "value": 1
+        }
+    ],
+    "王恽": [
+        {
+            "name": "酒",
+            "value": 2
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 4
+        },
+        {
+            "name": "江",
+            "value": 2
+        },
+        {
+            "name": "日",
+            "value": 2
+        },
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 2
+        },
+        {
+            "name": "云",
+            "value": 1
+        },
+        {
+            "name": "楼",
+            "value": 1
+        }
+    ],
+    "孔文卿": [
+        {
+            "name": "云",
+            "value": 17
+        },
+        {
+            "name": "剑",
+            "value": 2
+        },
+        {
+            "name": "水",
+            "value": 6
+        },
+        {
+            "name": "风",
+            "value": 12
+        },
+        {
+            "name": "月",
+            "value": 5
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "楼",
+            "value": 2
+        },
+        {
+            "name": "日",
+            "value": 12
+        },
+        {
+            "name": "山",
+            "value": 16
+        },
+        {
+            "name": "江",
+            "value": 6
+        },
+        {
+            "name": "酒",
+            "value": 2
+        }
+    ],
+    "孙周卿": [
+        {
+            "name": "云",
+            "value": 9
+        },
+        {
+            "name": "风",
+            "value": 3
+        },
+        {
+            "name": "月",
+            "value": 5
+        },
+        {
+            "name": "楼",
+            "value": 2
+        },
+        {
+            "name": "亭",
+            "value": 1
+        },
+        {
+            "name": "柳",
+            "value": 2
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 1
+        }
+    ],
+    "刘唐卿": [
+        {
+            "name": "山",
+            "value": 17
+        },
+        {
+            "name": "风",
+            "value": 4
+        },
+        {
+            "name": "月",
+            "value": 3
+        },
+        {
+            "name": "云",
+            "value": 67
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 3
+        },
+        {
+            "name": "水",
+            "value": 6
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 15
+        },
+        {
+            "name": "江",
+            "value": 1
+        }
+    ],
+    "薛昂夫": [
+        {
+            "name": "柳",
+            "value": 4
+        },
+        {
+            "name": "风",
+            "value": 13
+        },
+        {
+            "name": "云",
+            "value": 8
+        },
+        {
+            "name": "山",
+            "value": 15
+        },
+        {
+            "name": "剑",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 8
+        },
+        {
+            "name": "梅",
+            "value": 6
+        },
+        {
+            "name": "松",
+            "value": 2
+        },
+        {
+            "name": "月",
+            "value": 7
+        },
+        {
+            "name": "日",
+            "value": 7
+        },
+        {
+            "name": "酒",
+            "value": 12
+        },
+        {
+            "name": "荷",
+            "value": 2
+        },
+        {
+            "name": "江",
+            "value": 6
+        }
+    ],
+    "王子一": [
+        {
+            "name": "风",
+            "value": 16
+        },
+        {
+            "name": "日",
+            "value": 14
+        },
+        {
+            "name": "水",
+            "value": 20
+        },
+        {
+            "name": "云",
+            "value": 37
+        },
+        {
+            "name": "山",
+            "value": 21
+        },
+        {
+            "name": "江",
+            "value": 4
+        },
+        {
+            "name": "松",
+            "value": 3
+        },
+        {
+            "name": "月",
+            "value": 8
+        },
+        {
+            "name": "亭",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 1
+        }
+    ],
+    "马谦斋": [
+        {
+            "name": "月",
+            "value": 2
+        },
+        {
+            "name": "酒",
+            "value": 3
+        },
+        {
+            "name": "梅",
+            "value": 2
+        },
+        {
+            "name": "日",
+            "value": 4
+        },
+        {
+            "name": "柳",
+            "value": 2
+        },
+        {
+            "name": "亭",
+            "value": 1
+        },
+        {
+            "name": "荷",
+            "value": 2
+        },
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "江",
+            "value": 4
+        },
+        {
+            "name": "风",
+            "value": 5
+        },
+        {
+            "name": "云",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 7
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "剑",
+            "value": 2
+        }
+    ],
+    "狄君厚": [
+        {
+            "name": "日",
+            "value": 17
+        },
+        {
+            "name": "风",
+            "value": 8
+        },
+        {
+            "name": "月",
+            "value": 6
+        },
+        {
+            "name": "云",
+            "value": 44
+        },
+        {
+            "name": "山",
+            "value": 16
+        },
+        {
+            "name": "楼",
+            "value": 5
+        },
+        {
+            "name": "酒",
+            "value": 4
+        },
+        {
+            "name": "剑",
+            "value": 5
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 2
+        }
+    ],
+    "钟嗣成": [
+        {
+            "name": "日",
+            "value": 3
+        },
+        {
+            "name": "风",
+            "value": 6
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 2
+        },
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        }
+    ],
+    "杨朝英": [
+        {
+            "name": "云",
+            "value": 7
+        },
+        {
+            "name": "日",
+            "value": 4
+        },
+        {
+            "name": "江",
+            "value": 2
+        },
+        {
+            "name": "酒",
+            "value": 4
+        },
+        {
+            "name": "山",
+            "value": 3
+        },
+        {
+            "name": "楼",
+            "value": 2
+        },
+        {
+            "name": "月",
+            "value": 5
+        },
+        {
+            "name": "风",
+            "value": 7
+        }
+    ],
+    "纪君祥": [
+        {
+            "name": "云",
+            "value": 56
+        },
+        {
+            "name": "日",
+            "value": 15
+        },
+        {
+            "name": "风",
+            "value": 6
+        },
+        {
+            "name": "月",
+            "value": 3
+        },
+        {
+            "name": "山",
+            "value": 3
+        },
+        {
+            "name": "剑",
+            "value": 4
+        },
+        {
+            "name": "水",
+            "value": 1
+        }
+    ],
+    "孙仲章": [
+        {
+            "name": "风",
+            "value": 3
+        },
+        {
+            "name": "酒",
+            "value": 7
+        },
+        {
+            "name": "云",
+            "value": 81
+        },
+        {
+            "name": "月",
+            "value": 2
+        },
+        {
+            "name": "日",
+            "value": 11
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 1
+        }
+    ],
+    "谢应芳": [
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 2
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        },
+        {
+            "name": "亭",
+            "value": 1
+        }
+    ],
+    "萧德祥": [
+        {
+            "name": "风",
+            "value": 9
+        },
+        {
+            "name": "云",
+            "value": 55
+        },
+        {
+            "name": "柳",
+            "value": 9
+        },
+        {
+            "name": "日",
+            "value": 15
+        },
+        {
+            "name": "月",
+            "value": 3
+        },
+        {
+            "name": "酒",
+            "value": 17
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 2
+        },
+        {
+            "name": "梅",
+            "value": 1
+        }
+    ],
+    "郑光祖": [
+        {
+            "name": "日",
+            "value": 145
+        },
+        {
+            "name": "云",
+            "value": 523
+        },
+        {
+            "name": "山",
+            "value": 50
+        },
+        {
+            "name": "风",
+            "value": 61
+        },
+        {
+            "name": "酒",
+            "value": 30
+        },
+        {
+            "name": "水",
+            "value": 19
+        },
+        {
+            "name": "月",
+            "value": 40
+        },
+        {
+            "name": "梅",
+            "value": 12
+        },
+        {
+            "name": "柳",
+            "value": 17
+        },
+        {
+            "name": "剑",
+            "value": 23
+        },
+        {
+            "name": "江",
+            "value": 24
+        },
+        {
+            "name": "楼",
+            "value": 18
+        },
+        {
+            "name": "亭",
+            "value": 5
+        },
+        {
+            "name": "松",
+            "value": 6
+        },
+        {
+            "name": "荷",
+            "value": 2
+        }
+    ],
+    "睢玄明": [
+        {
+            "name": "山",
+            "value": 5
+        },
+        {
+            "name": "水",
+            "value": 5
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 3
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "亭",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        }
+    ],
+    "郑延玉": [
+        {
+            "name": "山",
+            "value": 26
+        },
+        {
+            "name": "云",
+            "value": 377
+        },
+        {
+            "name": "日",
+            "value": 75
+        },
+        {
+            "name": "柳",
+            "value": 5
+        },
+        {
+            "name": "酒",
+            "value": 26
+        },
+        {
+            "name": "剑",
+            "value": 18
+        },
+        {
+            "name": "月",
+            "value": 18
+        },
+        {
+            "name": "松",
+            "value": 5
+        },
+        {
+            "name": "楼",
+            "value": 4
+        },
+        {
+            "name": "水",
+            "value": 22
+        },
+        {
+            "name": "风",
+            "value": 26
+        },
+        {
+            "name": "江",
+            "value": 14
+        },
+        {
+            "name": "亭",
+            "value": 1
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "菊",
+            "value": 2
+        }
+    ],
+    "徐田臣《杀狗记》": [
+        {
+            "name": "水",
+            "value": 22
+        },
+        {
+            "name": "酒",
+            "value": 34
+        },
+        {
+            "name": "月",
+            "value": 8
+        },
+        {
+            "name": "风",
+            "value": 21
+        },
+        {
+            "name": "山",
+            "value": 10
+        },
+        {
+            "name": "云",
+            "value": 9
+        },
+        {
+            "name": "江",
+            "value": 8
+        },
+        {
+            "name": "柳",
+            "value": 19
+        },
+        {
+            "name": "日",
+            "value": 55
+        },
+        {
+            "name": "亭",
+            "value": 3
+        },
+        {
+            "name": "荷",
+            "value": 1
+        },
+        {
+            "name": "楼",
+            "value": 2
+        },
+        {
+            "name": "梅",
+            "value": 2
+        },
+        {
+            "name": "松",
+            "value": 1
+        }
+    ],
+    "杨舜臣": [
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 1
+        }
+    ],
+    "贾仲明": [
+        {
+            "name": "月",
+            "value": 39
+        },
+        {
+            "name": "云",
+            "value": 182
+        },
+        {
+            "name": "风",
+            "value": 62
+        },
+        {
+            "name": "水",
+            "value": 23
+        },
+        {
+            "name": "日",
+            "value": 41
+        },
+        {
+            "name": "山",
+            "value": 28
+        },
+        {
+            "name": "酒",
+            "value": 15
+        },
+        {
+            "name": "梅",
+            "value": 9
+        },
+        {
+            "name": "楼",
+            "value": 8
+        },
+        {
+            "name": "江",
+            "value": 9
+        },
+        {
+            "name": "柳",
+            "value": 28
+        },
+        {
+            "name": "菊",
+            "value": 4
+        },
+        {
+            "name": "松",
+            "value": 8
+        },
+        {
+            "name": "亭",
+            "value": 5
+        },
+        {
+            "name": "荷",
+            "value": 2
+        },
+        {
+            "name": "剑",
+            "value": 3
+        }
+    ],
+    "宫天挺": [
+        {
+            "name": "风",
+            "value": 21
+        },
+        {
+            "name": "山",
+            "value": 18
+        },
+        {
+            "name": "日",
+            "value": 33
+        },
+        {
+            "name": "酒",
+            "value": 15
+        },
+        {
+            "name": "月",
+            "value": 14
+        },
+        {
+            "name": "云",
+            "value": 83
+        },
+        {
+            "name": "江",
+            "value": 7
+        },
+        {
+            "name": "水",
+            "value": 8
+        },
+        {
+            "name": "柳",
+            "value": 2
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "剑",
+            "value": 2
+        },
+        {
+            "name": "亭",
+            "value": 2
+        },
+        {
+            "name": "楼",
+            "value": 2
+        },
+        {
+            "name": "菊",
+            "value": 1
+        },
+        {
+            "name": "松",
+            "value": 5
+        }
+    ],
+    "杨梓": [
+        {
+            "name": "日",
+            "value": 34
+        },
+        {
+            "name": "水",
+            "value": 28
+        },
+        {
+            "name": "松",
+            "value": 4
+        },
+        {
+            "name": "风",
+            "value": 33
+        },
+        {
+            "name": "云",
+            "value": 93
+        },
+        {
+            "name": "山",
+            "value": 22
+        },
+        {
+            "name": "楼",
+            "value": 7
+        },
+        {
+            "name": "月",
+            "value": 16
+        },
+        {
+            "name": "江",
+            "value": 22
+        },
+        {
+            "name": "柳",
+            "value": 4
+        },
+        {
+            "name": "酒",
+            "value": 12
+        },
+        {
+            "name": "剑",
+            "value": 6
+        },
+        {
+            "name": "亭",
+            "value": 2
+        }
+    ],
+    "盍志学": [
+        {
+            "name": "菊",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 1
+        }
+    ],
+    "元好问": [
+        {
+            "name": "松",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 6
+        },
+        {
+            "name": "风",
+            "value": 4
+        },
+        {
+            "name": "水",
+            "value": 2
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "柳",
+            "value": 3
+        },
+        {
+            "name": "梅",
+            "value": 3
+        },
+        {
+            "name": "楼",
+            "value": 2
+        },
+        {
+            "name": "荷",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 1
+        }
+    ],
+    "顾德润": [
+        {
+            "name": "柳",
+            "value": 3
+        },
+        {
+            "name": "荷",
+            "value": 1
+        },
+        {
+            "name": "剑",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 6
+        },
+        {
+            "name": "风",
+            "value": 5
+        },
+        {
+            "name": "山",
+            "value": 3
+        },
+        {
+            "name": "水",
+            "value": 3
+        },
+        {
+            "name": "酒",
+            "value": 2
+        },
+        {
+            "name": "云",
+            "value": 3
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 2
+        },
+        {
+            "name": "菊",
+            "value": 1
+        },
+        {
+            "name": "梅",
+            "value": 1
+        }
+    ],
+    "徐琰": [
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 1
+        }
+    ],
+    "任昱": [
+        {
+            "name": "云",
+            "value": 14
+        },
+        {
+            "name": "水",
+            "value": 13
+        },
+        {
+            "name": "松",
+            "value": 4
+        },
+        {
+            "name": "风",
+            "value": 17
+        },
+        {
+            "name": "山",
+            "value": 9
+        },
+        {
+            "name": "楼",
+            "value": 6
+        },
+        {
+            "name": "月",
+            "value": 8
+        },
+        {
+            "name": "江",
+            "value": 5
+        },
+        {
+            "name": "菊",
+            "value": 3
+        },
+        {
+            "name": "柳",
+            "value": 7
+        },
+        {
+            "name": "梅",
+            "value": 3
+        },
+        {
+            "name": "酒",
+            "value": 11
+        },
+        {
+            "name": "亭",
+            "value": 3
+        },
+        {
+            "name": "日",
+            "value": 2
+        }
+    ],
+    "费唐臣": [
+        {
+            "name": "江",
+            "value": 8
+        },
+        {
+            "name": "云",
+            "value": 24
+        },
+        {
+            "name": "月",
+            "value": 11
+        },
+        {
+            "name": "山",
+            "value": 10
+        },
+        {
+            "name": "风",
+            "value": 14
+        },
+        {
+            "name": "楼",
+            "value": 3
+        },
+        {
+            "name": "水",
+            "value": 11
+        },
+        {
+            "name": "日",
+            "value": 10
+        },
+        {
+            "name": "菊",
+            "value": 1
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 10
+        },
+        {
+            "name": "柳",
+            "value": 2
+        }
+    ],
+    "季子安": [
+        {
+            "name": "风",
+            "value": 2
+        }
+    ],
+    "苏彦文": [
+        {
+            "name": "风",
+            "value": 1
+        },
+        {
+            "name": "江",
+            "value": 1
+        }
+    ],
+    "杨景贤": [
+        {
+            "name": "云",
+            "value": 196
+        },
+        {
+            "name": "月",
+            "value": 34
+        },
+        {
+            "name": "日",
+            "value": 70
+        },
+        {
+            "name": "风",
+            "value": 54
+        },
+        {
+            "name": "山",
+            "value": 98
+        },
+        {
+            "name": "江",
+            "value": 18
+        },
+        {
+            "name": "柳",
+            "value": 17
+        },
+        {
+            "name": "酒",
+            "value": 19
+        },
+        {
+            "name": "剑",
+            "value": 8
+        },
+        {
+            "name": "水",
+            "value": 36
+        },
+        {
+            "name": "松",
+            "value": 14
+        },
+        {
+            "name": "楼",
+            "value": 4
+        },
+        {
+            "name": "梅",
+            "value": 2
+        },
+        {
+            "name": "菊",
+            "value": 2
+        },
+        {
+            "name": "亭",
+            "value": 2
+        }
+    ],
+    "施惠": [
+        {
+            "name": "风",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 2
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 1
+        }
+    ],
+    "王大学士": [
+        {
+            "name": "剑",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 3
+        },
+        {
+            "name": "风",
+            "value": 1
+        }
+    ],
+    "孛罗御史": [
+        {
+            "name": "菊",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 2
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 2
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 1
+        }
+    ],
+    "吴昌龄": [
+        {
+            "name": "风",
+            "value": 30
+        },
+        {
+            "name": "月",
+            "value": 27
+        },
+        {
+            "name": "云",
+            "value": 129
+        },
+        {
+            "name": "日",
+            "value": 20
+        },
+        {
+            "name": "楼",
+            "value": 2
+        },
+        {
+            "name": "山",
+            "value": 16
+        },
+        {
+            "name": "水",
+            "value": 6
+        },
+        {
+            "name": "酒",
+            "value": 15
+        },
+        {
+            "name": "荷",
+            "value": 1
+        },
+        {
+            "name": "菊",
+            "value": 2
+        },
+        {
+            "name": "梅",
+            "value": 9
+        },
+        {
+            "name": "亭",
+            "value": 2
+        },
+        {
+            "name": "剑",
+            "value": 1
+        },
+        {
+            "name": "柳",
+            "value": 13
+        },
+        {
+            "name": "松",
+            "value": 4
+        },
+        {
+            "name": "江",
+            "value": 1
+        }
+    ],
+    "施惠《幽闺记》": [
+        {
+            "name": "月",
+            "value": 18
+        },
+        {
+            "name": "亭",
+            "value": 8
+        },
+        {
+            "name": "云",
+            "value": 21
+        },
+        {
+            "name": "风",
+            "value": 50
+        },
+        {
+            "name": "日",
+            "value": 50
+        },
+        {
+            "name": "剑",
+            "value": 2
+        },
+        {
+            "name": "水",
+            "value": 16
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 36
+        },
+        {
+            "name": "江",
+            "value": 2
+        },
+        {
+            "name": "楼",
+            "value": 5
+        },
+        {
+            "name": "酒",
+            "value": 16
+        },
+        {
+            "name": "柳",
+            "value": 3
+        },
+        {
+            "name": "荷",
+            "value": 1
+        }
+    ],
+    "尚仲贤": [
+        {
+            "name": "日",
+            "value": 25
+        },
+        {
+            "name": "山",
+            "value": 11
+        },
+        {
+            "name": "江",
+            "value": 10
+        },
+        {
+            "name": "水",
+            "value": 22
+        },
+        {
+            "name": "云",
+            "value": 74
+        },
+        {
+            "name": "剑",
+            "value": 8
+        },
+        {
+            "name": "柳",
+            "value": 10
+        },
+        {
+            "name": "风",
+            "value": 22
+        },
+        {
+            "name": "松",
+            "value": 3
+        },
+        {
+            "name": "酒",
+            "value": 2
+        },
+        {
+            "name": "月",
+            "value": 3
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "荷",
+            "value": 1
+        }
+    ],
+    "李子昌": [
+        {
+            "name": "亭",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 3
+        },
+        {
+            "name": "荷",
+            "value": 1
+        }
+    ],
+    "金仁杰": [
+        {
+            "name": "云",
+            "value": 36
+        },
+        {
+            "name": "江",
+            "value": 10
+        },
+        {
+            "name": "山",
+            "value": 15
+        },
+        {
+            "name": "剑",
+            "value": 9
+        },
+        {
+            "name": "日",
+            "value": 10
+        },
+        {
+            "name": "水",
+            "value": 9
+        },
+        {
+            "name": "风",
+            "value": 5
+        },
+        {
+            "name": "月",
+            "value": 2
+        },
+        {
+            "name": "酒",
+            "value": 1
+        }
+    ],
+    "阿里耀卿": [
+        {
+            "name": "月",
+            "value": 1
+        }
+    ],
+    "一分儿": [
+        {
+            "name": "松",
+            "value": 1
+        }
+    ],
+    "兰楚芳": [
+        {
+            "name": "风",
+            "value": 8
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "松",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 6
+        },
+        {
+            "name": "月",
+            "value": 5
+        },
+        {
+            "name": "楼",
+            "value": 2
+        },
+        {
+            "name": "酒",
+            "value": 3
+        },
+        {
+            "name": "日",
+            "value": 3
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "江",
+            "value": 1
+        }
+    ],
+    "赵君祥": [
+        {
+            "name": "风",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 1
+        }
+    ],
+    "范居中": [
+        {
+            "name": "风",
+            "value": 4
+        },
+        {
+            "name": "酒",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 1
+        }
+    ],
+    "徐田臣": [
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 1
+        },
+        {
+            "name": "菊",
+            "value": 1
+        }
+    ],
+    "梁寅": [
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 2
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        }
+    ],
+    "王元和": [
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 2
+        },
+        {
+            "name": "云",
+            "value": 1
+        }
+    ],
+    "彭寿之": [
+        {
+            "name": "剑",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 2
+        },
+        {
+            "name": "风",
+            "value": 4
+        }
+    ],
+    "李直夫": [
+        {
+            "name": "云",
+            "value": 57
+        },
+        {
+            "name": "山",
+            "value": 13
+        },
+        {
+            "name": "风",
+            "value": 2
+        },
+        {
+            "name": "日",
+            "value": 18
+        },
+        {
+            "name": "酒",
+            "value": 14
+        },
+        {
+            "name": "月",
+            "value": 6
+        },
+        {
+            "name": "剑",
+            "value": 2
+        }
+    ],
+    "邓学可": [
+        {
+            "name": "日",
+            "value": 2
+        },
+        {
+            "name": "月",
+            "value": 3
+        },
+        {
+            "name": "风",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 3
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 2
+        },
+        {
+            "name": "云",
+            "value": 1
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "楼",
+            "value": 1
+        }
+    ],
+    "吴镇": [
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "松",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "梅",
+            "value": 1
+        }
+    ],
+    "王举之": [
+        {
+            "name": "酒",
+            "value": 3
+        },
+        {
+            "name": "云",
+            "value": 5
+        },
+        {
+            "name": "山",
+            "value": 3
+        },
+        {
+            "name": "月",
+            "value": 3
+        },
+        {
+            "name": "柳",
+            "value": 4
+        },
+        {
+            "name": "风",
+            "value": 3
+        },
+        {
+            "name": "楼",
+            "value": 1
+        }
+    ],
+    "邓玉宾": [
+        {
+            "name": "风",
+            "value": 7
+        },
+        {
+            "name": "山",
+            "value": 5
+        },
+        {
+            "name": "云",
+            "value": 3
+        },
+        {
+            "name": "酒",
+            "value": 2
+        },
+        {
+            "name": "剑",
+            "value": 1
+        },
+        {
+            "name": "松",
+            "value": 2
+        },
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 3
+        },
+        {
+            "name": "日",
+            "value": 2
+        },
+        {
+            "name": "江",
+            "value": 1
+        }
+    ],
+    "蒲道源": [],
+    "黄公望": [],
+    "邓玉宾子": [
+        {
+            "name": "日",
+            "value": 3
+        },
+        {
+            "name": "山",
+            "value": 2
+        },
+        {
+            "name": "云",
+            "value": 2
+        },
+        {
+            "name": "月",
+            "value": 2
+        },
+        {
+            "name": "风",
+            "value": 3
+        }
+    ],
+    "王仲文": [
+        {
+            "name": "日",
+            "value": 7
+        },
+        {
+            "name": "剑",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 48
+        },
+        {
+            "name": "山",
+            "value": 3
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 3
+        },
+        {
+            "name": "月",
+            "value": 3
+        }
+    ],
+    "张弘范": [
+        {
+            "name": "剑",
+            "value": 2
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 1
+        }
+    ],
+    "高茂卿": [
+        {
+            "name": "风",
+            "value": 5
+        },
+        {
+            "name": "酒",
+            "value": 13
+        },
+        {
+            "name": "云",
+            "value": 69
+        },
+        {
+            "name": "梅",
+            "value": 8
+        },
+        {
+            "name": "日",
+            "value": 8
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "松",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 2
+        }
+    ],
+    "武汉臣": [
+        {
+            "name": "日",
+            "value": 26
+        },
+        {
+            "name": "云",
+            "value": 106
+        },
+        {
+            "name": "月",
+            "value": 4
+        },
+        {
+            "name": "风",
+            "value": 4
+        },
+        {
+            "name": "水",
+            "value": 3
+        },
+        {
+            "name": "山",
+            "value": 2
+        },
+        {
+            "name": "梅",
+            "value": 7
+        },
+        {
+            "name": "酒",
+            "value": 4
+        },
+        {
+            "name": "松",
+            "value": 1
+        }
+    ],
+    "程景初": [],
+    "张彦文": [
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 2
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        }
+    ],
+    "吕止庵": [
+        {
+            "name": "月",
+            "value": 4
+        },
+        {
+            "name": "风",
+            "value": 4
+        },
+        {
+            "name": "山",
+            "value": 5
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 3
+        },
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 1
+        }
+    ],
+    "黑老五": [
+        {
+            "name": "松",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 2
+        }
+    ],
+    "景元启": [
+        {
+            "name": "月",
+            "value": 2
+        },
+        {
+            "name": "梅",
+            "value": 4
+        },
+        {
+            "name": "酒",
+            "value": 5
+        },
+        {
+            "name": "山",
+            "value": 3
+        },
+        {
+            "name": "风",
+            "value": 1
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 2
+        },
+        {
+            "name": "水",
+            "value": 2
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 1
+        }
+    ],
+    "严忠济": [
+        {
+            "name": "日",
+            "value": 2
+        }
+    ],
+    "汤舜民": [
+        {
+            "name": "月",
+            "value": 35
+        },
+        {
+            "name": "风",
+            "value": 82
+        },
+        {
+            "name": "柳",
+            "value": 19
+        },
+        {
+            "name": "日",
+            "value": 39
+        },
+        {
+            "name": "水",
+            "value": 22
+        },
+        {
+            "name": "楼",
+            "value": 22
+        },
+        {
+            "name": "云",
+            "value": 55
+        },
+        {
+            "name": "松",
+            "value": 7
+        },
+        {
+            "name": "梅",
+            "value": 10
+        },
+        {
+            "name": "酒",
+            "value": 17
+        },
+        {
+            "name": "山",
+            "value": 29
+        },
+        {
+            "name": "江",
+            "value": 13
+        },
+        {
+            "name": "菊",
+            "value": 2
+        },
+        {
+            "name": "亭",
+            "value": 6
+        },
+        {
+            "name": "荷",
+            "value": 2
+        },
+        {
+            "name": "剑",
+            "value": 4
+        }
+    ],
+    "史九散人": [
+        {
+            "name": "风",
+            "value": 16
+        },
+        {
+            "name": "云",
+            "value": 42
+        },
+        {
+            "name": "酒",
+            "value": 17
+        },
+        {
+            "name": "日",
+            "value": 15
+        },
+        {
+            "name": "月",
+            "value": 14
+        },
+        {
+            "name": "柳",
+            "value": 9
+        },
+        {
+            "name": "水",
+            "value": 5
+        },
+        {
+            "name": "山",
+            "value": 5
+        },
+        {
+            "name": "楼",
+            "value": 4
+        },
+        {
+            "name": "剑",
+            "value": 1
+        }
+    ],
+    "石子章": [
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 2
+        },
+        {
+            "name": "剑",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 5
+        },
+        {
+            "name": "山",
+            "value": 6
+        },
+        {
+            "name": "日",
+            "value": 3
+        },
+        {
+            "name": "云",
+            "value": 50
+        },
+        {
+            "name": "柳",
+            "value": 2
+        },
+        {
+            "name": "荷",
+            "value": 1
+        },
+        {
+            "name": "菊",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 5
+        },
+        {
+            "name": "月",
+            "value": 6
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "松",
+            "value": 2
+        }
+    ],
+    "姚燧": [
+        {
+            "name": "风",
+            "value": 11
+        },
+        {
+            "name": "酒",
+            "value": 5
+        },
+        {
+            "name": "日",
+            "value": 3
+        },
+        {
+            "name": "山",
+            "value": 8
+        },
+        {
+            "name": "水",
+            "value": 3
+        },
+        {
+            "name": "月",
+            "value": 7
+        },
+        {
+            "name": "江",
+            "value": 3
+        },
+        {
+            "name": "柳",
+            "value": 2
+        },
+        {
+            "name": "剑",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 3
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "荷",
+            "value": 1
+        },
+        {
+            "name": "梅",
+            "value": 1
+        }
+    ],
+    "奥敦周卿": [
+        {
+            "name": "山",
+            "value": 3
+        },
+        {
+            "name": "云",
+            "value": 2
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 3
+        },
+        {
+            "name": "风",
+            "value": 2
+        },
+        {
+            "name": "荷",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 1
+        }
+    ],
+    "伯颜": [
+        {
+            "name": "山",
+            "value": 1
+        }
+    ],
+    "曹德": [
+        {
+            "name": "山",
+            "value": 4
+        },
+        {
+            "name": "风",
+            "value": 5
+        },
+        {
+            "name": "云",
+            "value": 2
+        },
+        {
+            "name": "楼",
+            "value": 2
+        },
+        {
+            "name": "酒",
+            "value": 5
+        },
+        {
+            "name": "月",
+            "value": 2
+        },
+        {
+            "name": "柳",
+            "value": 3
+        },
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "江",
+            "value": 3
+        },
+        {
+            "name": "菊",
+            "value": 1
+        },
+        {
+            "name": "剑",
+            "value": 1
+        },
+        {
+            "name": "亭",
+            "value": 1
+        },
+        {
+            "name": "松",
+            "value": 1
+        }
+    ],
+    "罗贯中": [
+        {
+            "name": "日",
+            "value": 10
+        },
+        {
+            "name": "月",
+            "value": 2
+        },
+        {
+            "name": "风",
+            "value": 11
+        },
+        {
+            "name": "云",
+            "value": 67
+        },
+        {
+            "name": "酒",
+            "value": 6
+        },
+        {
+            "name": "剑",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 7
+        },
+        {
+            "name": "松",
+            "value": 1
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 3
+        },
+        {
+            "name": "江",
+            "value": 4
+        },
+        {
+            "name": "荷",
+            "value": 1
+        }
+    ],
+    "赵天锡": [
+        {
+            "name": "山",
+            "value": 4
+        },
+        {
+            "name": "水",
+            "value": 2
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 5
+        },
+        {
+            "name": "楼",
+            "value": 2
+        },
+        {
+            "name": "酒",
+            "value": 2
+        },
+        {
+            "name": "柳",
+            "value": 2
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 2
+        },
+        {
+            "name": "日",
+            "value": 2
+        }
+    ],
+    "高秀文": [
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 2
+        },
+        {
+            "name": "云",
+            "value": 2
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 1
+        }
+    ],
+    "刘伯亨": [
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 5
+        },
+        {
+            "name": "日",
+            "value": 3
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "松",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "亭",
+            "value": 1
+        },
+        {
+            "name": "荷",
+            "value": 1
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "菊",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 1
+        }
+    ],
+    "卢挚": [
+        {
+            "name": "月",
+            "value": 6
+        },
+        {
+            "name": "江",
+            "value": 7
+        },
+        {
+            "name": "云",
+            "value": 6
+        },
+        {
+            "name": "风",
+            "value": 8
+        },
+        {
+            "name": "山",
+            "value": 6
+        },
+        {
+            "name": "楼",
+            "value": 2
+        },
+        {
+            "name": "酒",
+            "value": 4
+        },
+        {
+            "name": "荷",
+            "value": 1
+        },
+        {
+            "name": "亭",
+            "value": 2
+        },
+        {
+            "name": "梅",
+            "value": 1
+        }
+    ],
+    "卫立中": [
+        {
+            "name": "松",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 5
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 1
+        }
+    ],
+    "赵显宏": [
+        {
+            "name": "山",
+            "value": 6
+        },
+        {
+            "name": "酒",
+            "value": 4
+        },
+        {
+            "name": "风",
+            "value": 7
+        },
+        {
+            "name": "江",
+            "value": 3
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 5
+        },
+        {
+            "name": "日",
+            "value": 4
+        },
+        {
+            "name": "月",
+            "value": 3
+        },
+        {
+            "name": "云",
+            "value": 2
+        }
+    ],
+    "王爱山": [
+        {
+            "name": "酒",
+            "value": 1
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 3
+        },
+        {
+            "name": "日",
+            "value": 3
+        },
+        {
+            "name": "山",
+            "value": 2
+        },
+        {
+            "name": "水",
+            "value": 2
+        },
+        {
+            "name": "月",
+            "value": 14
+        },
+        {
+            "name": "云",
+            "value": 2
+        },
+        {
+            "name": "楼",
+            "value": 1
+        }
+    ],
+    "不忽木": [
+        {
+            "name": "月",
+            "value": 3
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 5
+        },
+        {
+            "name": "云",
+            "value": 4
+        },
+        {
+            "name": "水",
+            "value": 2
+        },
+        {
+            "name": "风",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 2
+        }
+    ],
+    "邾仲谊": [
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 2
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        }
+    ],
+    "赵雍": [
+        {
+            "name": "水",
+            "value": 2
+        },
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 1
+        }
+    ],
+    "鲜于枢": [
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 2
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "梅",
+            "value": 1
+        }
+    ],
+    "李文蔚": [
+        {
+            "name": "山",
+            "value": 24
+        },
+        {
+            "name": "水",
+            "value": 11
+        },
+        {
+            "name": "酒",
+            "value": 5
+        },
+        {
+            "name": "亭",
+            "value": 4
+        },
+        {
+            "name": "云",
+            "value": 194
+        },
+        {
+            "name": "柳",
+            "value": 3
+        },
+        {
+            "name": "日",
+            "value": 55
+        },
+        {
+            "name": "江",
+            "value": 13
+        },
+        {
+            "name": "荷",
+            "value": 2
+        },
+        {
+            "name": "风",
+            "value": 26
+        },
+        {
+            "name": "月",
+            "value": 14
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "松",
+            "value": 3
+        },
+        {
+            "name": "剑",
+            "value": 3
+        }
+    ],
+    "王嘉甫": [
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        }
+    ],
+    "王和卿": [
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "松",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 2
+        },
+        {
+            "name": "酒",
+            "value": 2
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 2
+        },
+        {
+            "name": "荷",
+            "value": 1
+        }
+    ],
+    "吴西逸": [
+        {
+            "name": "柳",
+            "value": 4
+        },
+        {
+            "name": "酒",
+            "value": 6
+        },
+        {
+            "name": "月",
+            "value": 8
+        },
+        {
+            "name": "云",
+            "value": 17
+        },
+        {
+            "name": "江",
+            "value": 4
+        },
+        {
+            "name": "风",
+            "value": 12
+        },
+        {
+            "name": "楼",
+            "value": 4
+        },
+        {
+            "name": "水",
+            "value": 5
+        },
+        {
+            "name": "亭",
+            "value": 2
+        },
+        {
+            "name": "山",
+            "value": 5
+        },
+        {
+            "name": "荷",
+            "value": 1
+        },
+        {
+            "name": "松",
+            "value": 3
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 4
+        },
+        {
+            "name": "菊",
+            "value": 1
+        }
+    ],
+    "高明《蔡伯喈琵琶记》": [
+        {
+            "name": "风",
+            "value": 33
+        },
+        {
+            "name": "月",
+            "value": 30
+        },
+        {
+            "name": "云",
+            "value": 32
+        },
+        {
+            "name": "日",
+            "value": 64
+        },
+        {
+            "name": "柳",
+            "value": 6
+        },
+        {
+            "name": "酒",
+            "value": 10
+        },
+        {
+            "name": "松",
+            "value": 9
+        },
+        {
+            "name": "山",
+            "value": 41
+        },
+        {
+            "name": "水",
+            "value": 24
+        },
+        {
+            "name": "楼",
+            "value": 14
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "梅",
+            "value": 3
+        },
+        {
+            "name": "剑",
+            "value": 1
+        },
+        {
+            "name": "菊",
+            "value": 1
+        },
+        {
+            "name": "荷",
+            "value": 7
+        },
+        {
+            "name": "亭",
+            "value": 4
+        }
+    ],
+    "胡用和": [
+        {
+            "name": "山",
+            "value": 6
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 4
+        },
+        {
+            "name": "江",
+            "value": 4
+        },
+        {
+            "name": "风",
+            "value": 6
+        },
+        {
+            "name": "酒",
+            "value": 2
+        },
+        {
+            "name": "梅",
+            "value": 2
+        },
+        {
+            "name": "松",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 3
+        },
+        {
+            "name": "楼",
+            "value": 3
+        },
+        {
+            "name": "水",
+            "value": 4
+        },
+        {
+            "name": "日",
+            "value": 2
+        },
+        {
+            "name": "菊",
+            "value": 2
+        },
+        {
+            "name": "亭",
+            "value": 1
+        }
+    ],
+    "赵秉文": [
+        {
+            "name": "风",
+            "value": 1
+        }
+    ],
+    "庾吉甫": [
+        {
+            "name": "风",
+            "value": 5
+        },
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "菊",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 1
+        }
+    ],
+    "张子友": [
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 1
+        }
+    ],
+    "王仲元": [
+        {
+            "name": "日",
+            "value": 4
+        },
+        {
+            "name": "风",
+            "value": 13
+        },
+        {
+            "name": "云",
+            "value": 9
+        },
+        {
+            "name": "山",
+            "value": 6
+        },
+        {
+            "name": "江",
+            "value": 4
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "柳",
+            "value": 5
+        },
+        {
+            "name": "水",
+            "value": 4
+        },
+        {
+            "name": "月",
+            "value": 8
+        },
+        {
+            "name": "菊",
+            "value": 2
+        },
+        {
+            "name": "荷",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 1
+        }
+    ],
+    "乔吉": [
+        {
+            "name": "云",
+            "value": 189
+        },
+        {
+            "name": "风",
+            "value": 82
+        },
+        {
+            "name": "酒",
+            "value": 48
+        },
+        {
+            "name": "楼",
+            "value": 25
+        },
+        {
+            "name": "荷",
+            "value": 2
+        },
+        {
+            "name": "山",
+            "value": 32
+        },
+        {
+            "name": "水",
+            "value": 19
+        },
+        {
+            "name": "日",
+            "value": 40
+        },
+        {
+            "name": "柳",
+            "value": 28
+        },
+        {
+            "name": "亭",
+            "value": 10
+        },
+        {
+            "name": "月",
+            "value": 46
+        },
+        {
+            "name": "梅",
+            "value": 9
+        },
+        {
+            "name": "剑",
+            "value": 4
+        },
+        {
+            "name": "松",
+            "value": 4
+        },
+        {
+            "name": "江",
+            "value": 8
+        }
+    ],
+    "朱庭玉": [
+        {
+            "name": "风",
+            "value": 14
+        },
+        {
+            "name": "云",
+            "value": 7
+        },
+        {
+            "name": "酒",
+            "value": 4
+        },
+        {
+            "name": "梅",
+            "value": 4
+        },
+        {
+            "name": "水",
+            "value": 5
+        },
+        {
+            "name": "柳",
+            "value": 3
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 7
+        },
+        {
+            "name": "日",
+            "value": 4
+        },
+        {
+            "name": "剑",
+            "value": 1
+        },
+        {
+            "name": "楼",
+            "value": 4
+        },
+        {
+            "name": "荷",
+            "value": 2
+        },
+        {
+            "name": "松",
+            "value": 2
+        },
+        {
+            "name": "江",
+            "value": 3
+        }
+    ],
+    "秦简夫": [
+        {
+            "name": "云",
+            "value": 126
+        },
+        {
+            "name": "酒",
+            "value": 12
+        },
+        {
+            "name": "楼",
+            "value": 4
+        },
+        {
+            "name": "日",
+            "value": 29
+        },
+        {
+            "name": "风",
+            "value": 10
+        },
+        {
+            "name": "剑",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 16
+        },
+        {
+            "name": "水",
+            "value": 9
+        },
+        {
+            "name": "柳",
+            "value": 6
+        },
+        {
+            "name": "亭",
+            "value": 2
+        },
+        {
+            "name": "江",
+            "value": 3
+        },
+        {
+            "name": "月",
+            "value": 6
+        }
+    ],
+    "丘士元": [
+        {
+            "name": "山",
+            "value": 2
+        },
+        {
+            "name": "月",
+            "value": 2
+        },
+        {
+            "name": "荷",
+            "value": 1
+        },
+        {
+            "name": "菊",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 3
+        },
+        {
+            "name": "云",
+            "value": 2
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 1
+        }
+    ],
+    "杨立斋": [
+        {
+            "name": "风",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 2
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 1
+        }
+    ],
+    "刘因": [
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 2
+        },
+        {
+            "name": "风",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 2
+        }
+    ],
+    "贯云石": [
+        {
+            "name": "风",
+            "value": 33
+        },
+        {
+            "name": "日",
+            "value": 13
+        },
+        {
+            "name": "柳",
+            "value": 10
+        },
+        {
+            "name": "水",
+            "value": 9
+        },
+        {
+            "name": "菊",
+            "value": 1
+        },
+        {
+            "name": "荷",
+            "value": 2
+        },
+        {
+            "name": "梅",
+            "value": 2
+        },
+        {
+            "name": "山",
+            "value": 16
+        },
+        {
+            "name": "酒",
+            "value": 13
+        },
+        {
+            "name": "月",
+            "value": 22
+        },
+        {
+            "name": "云",
+            "value": 20
+        },
+        {
+            "name": "剑",
+            "value": 1
+        },
+        {
+            "name": "江",
+            "value": 6
+        },
+        {
+            "name": "亭",
+            "value": 4
+        },
+        {
+            "name": "松",
+            "value": 2
+        },
+        {
+            "name": "楼",
+            "value": 3
+        }
+    ],
+    "陈草庵": [
+        {
+            "name": "风",
+            "value": 6
+        },
+        {
+            "name": "月",
+            "value": 2
+        },
+        {
+            "name": "酒",
+            "value": 3
+        },
+        {
+            "name": "日",
+            "value": 4
+        },
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 2
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        }
+    ],
+    "盍西村": [
+        {
+            "name": "云",
+            "value": 7
+        },
+        {
+            "name": "楼",
+            "value": 3
+        },
+        {
+            "name": "菊",
+            "value": 1
+        },
+        {
+            "name": "柳",
+            "value": 3
+        },
+        {
+            "name": "风",
+            "value": 9
+        },
+        {
+            "name": "酒",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 2
+        },
+        {
+            "name": "江",
+            "value": 2
+        },
+        {
+            "name": "山",
+            "value": 3
+        },
+        {
+            "name": "月",
+            "value": 3
+        },
+        {
+            "name": "荷",
+            "value": 3
+        },
+        {
+            "name": "亭",
+            "value": 1
+        }
+    ],
+    "张雨": [
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 1
+        }
+    ],
+    "班惟志": [
+        {
+            "name": "月",
+            "value": 2
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 4
+        },
+        {
+            "name": "云",
+            "value": 2
+        }
+    ],
+    "赵彦晖": [
+        {
+            "name": "山",
+            "value": 4
+        },
+        {
+            "name": "风",
+            "value": 6
+        },
+        {
+            "name": "剑",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 3
+        },
+        {
+            "name": "月",
+            "value": 5
+        },
+        {
+            "name": "日",
+            "value": 2
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "柳",
+            "value": 4
+        },
+        {
+            "name": "楼",
+            "value": 2
+        }
+    ],
+    "宋方壶": [
+        {
+            "name": "风",
+            "value": 4
+        },
+        {
+            "name": "山",
+            "value": 6
+        },
+        {
+            "name": "月",
+            "value": 3
+        },
+        {
+            "name": "松",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 7
+        },
+        {
+            "name": "柳",
+            "value": 3
+        },
+        {
+            "name": "江",
+            "value": 2
+        },
+        {
+            "name": "云",
+            "value": 2
+        },
+        {
+            "name": "酒",
+            "value": 2
+        },
+        {
+            "name": "日",
+            "value": 4
+        },
+        {
+            "name": "楼",
+            "value": 1
+        }
+    ],
+    "李茂之": [
+        {
+            "name": "风",
+            "value": 3
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 1
+        }
+    ],
+    "爱山": [
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 2
+        }
+    ],
+    "唐毅夫": [
+        {
+            "name": "云",
+            "value": 2
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 3
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 1
+        }
+    ],
+    "詹时雨": [
+        {
+            "name": "水",
+            "value": 2
+        },
+        {
+            "name": "风",
+            "value": 5
+        },
+        {
+            "name": "月",
+            "value": 3
+        },
+        {
+            "name": "日",
+            "value": 3
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 2
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "剑",
+            "value": 2
+        },
+        {
+            "name": "酒",
+            "value": 1
+        },
+        {
+            "name": "亭",
+            "value": 1
+        }
+    ],
+    "阿鲁威": [
+        {
+            "name": "风",
+            "value": 3
+        },
+        {
+            "name": "水",
+            "value": 1
+        }
+    ],
+    "刘庭信": [
+        {
+            "name": "山",
+            "value": 5
+        },
+        {
+            "name": "风",
+            "value": 13
+        },
+        {
+            "name": "月",
+            "value": 5
+        },
+        {
+            "name": "云",
+            "value": 5
+        },
+        {
+            "name": "日",
+            "value": 3
+        },
+        {
+            "name": "楼",
+            "value": 3
+        },
+        {
+            "name": "菊",
+            "value": 1
+        },
+        {
+            "name": "柳",
+            "value": 5
+        },
+        {
+            "name": "荷",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 3
+        },
+        {
+            "name": "水",
+            "value": 1
+        }
+    ],
+    "张国宾": [
+        {
+            "name": "云",
+            "value": 119
+        },
+        {
+            "name": "日",
+            "value": 23
+        },
+        {
+            "name": "山",
+            "value": 6
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 12
+        },
+        {
+            "name": "风",
+            "value": 10
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 2
+        },
+        {
+            "name": "月",
+            "value": 1
+        }
+    ],
+    "张可久": [
+        {
+            "name": "风",
+            "value": 109
+        },
+        {
+            "name": "山",
+            "value": 133
+        },
+        {
+            "name": "酒",
+            "value": 75
+        },
+        {
+            "name": "云",
+            "value": 113
+        },
+        {
+            "name": "月",
+            "value": 104
+        },
+        {
+            "name": "柳",
+            "value": 63
+        },
+        {
+            "name": "江",
+            "value": 36
+        },
+        {
+            "name": "剑",
+            "value": 7
+        },
+        {
+            "name": "水",
+            "value": 85
+        },
+        {
+            "name": "楼",
+            "value": 45
+        },
+        {
+            "name": "梅",
+            "value": 39
+        },
+        {
+            "name": "松",
+            "value": 36
+        },
+        {
+            "name": "荷",
+            "value": 13
+        },
+        {
+            "name": "日",
+            "value": 40
+        },
+        {
+            "name": "亭",
+            "value": 24
+        },
+        {
+            "name": "菊",
+            "value": 9
+        }
+    ],
+    "姚守中": [
+        {
+            "name": "风",
+            "value": 2
+        },
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "柳",
+            "value": 1
+        }
+    ],
+    "邵元长": [
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 1
+        }
+    ],
+    "李寿卿": [
+        {
+            "name": "风",
+            "value": 25
+        },
+        {
+            "name": "月",
+            "value": 27
+        },
+        {
+            "name": "云",
+            "value": 88
+        },
+        {
+            "name": "山",
+            "value": 3
+        },
+        {
+            "name": "酒",
+            "value": 5
+        },
+        {
+            "name": "柳",
+            "value": 50
+        },
+        {
+            "name": "日",
+            "value": 7
+        },
+        {
+            "name": "楼",
+            "value": 2
+        },
+        {
+            "name": "剑",
+            "value": 2
+        },
+        {
+            "name": "水",
+            "value": 6
+        }
+    ],
+    "吕侍中": [
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "亭",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 2
+        },
+        {
+            "name": "月",
+            "value": 1
+        }
+    ],
+    "刘时中": [
+        {
+            "name": "水",
+            "value": 13
+        },
+        {
+            "name": "酒",
+            "value": 14
+        },
+        {
+            "name": "月",
+            "value": 16
+        },
+        {
+            "name": "柳",
+            "value": 3
+        },
+        {
+            "name": "楼",
+            "value": 3
+        },
+        {
+            "name": "风",
+            "value": 21
+        },
+        {
+            "name": "荷",
+            "value": 3
+        },
+        {
+            "name": "日",
+            "value": 17
+        },
+        {
+            "name": "山",
+            "value": 14
+        },
+        {
+            "name": "云",
+            "value": 10
+        },
+        {
+            "name": "松",
+            "value": 1
+        },
+        {
+            "name": "亭",
+            "value": 4
+        },
+        {
+            "name": "菊",
+            "value": 1
+        },
+        {
+            "name": "江",
+            "value": 5
+        },
+        {
+            "name": "剑",
+            "value": 1
+        },
+        {
+            "name": "梅",
+            "value": 1
+        }
+    ],
+    "张寿卿": [
+        {
+            "name": "月",
+            "value": 11
+        },
+        {
+            "name": "风",
+            "value": 13
+        },
+        {
+            "name": "剑",
+            "value": 1
+        },
+        {
+            "name": "梅",
+            "value": 9
+        },
+        {
+            "name": "云",
+            "value": 58
+        },
+        {
+            "name": "山",
+            "value": 4
+        },
+        {
+            "name": "酒",
+            "value": 8
+        },
+        {
+            "name": "日",
+            "value": 5
+        },
+        {
+            "name": "柳",
+            "value": 5
+        },
+        {
+            "name": "亭",
+            "value": 3
+        },
+        {
+            "name": "水",
+            "value": 1
+        }
+    ],
+    "钱霖": [
+        {
+            "name": "酒",
+            "value": 1
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "松",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 2
+        },
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 1
+        },
+        {
+            "name": "菊",
+            "value": 1
+        },
+        {
+            "name": "楼",
+            "value": 1
+        }
+    ],
+    "秦竹村": [
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 2
+        },
+        {
+            "name": "剑",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 2
+        }
+    ],
+    "王修甫": [
+        {
+            "name": "风",
+            "value": 2
+        },
+        {
+            "name": "月",
+            "value": 2
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "荷",
+            "value": 1
+        }
+    ],
+    "范康": [
+        {
+            "name": "日",
+            "value": 5
+        },
+        {
+            "name": "风",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 1
+        }
+    ],
+    "戴善甫": [
+        {
+            "name": "云",
+            "value": 53
+        },
+        {
+            "name": "酒",
+            "value": 11
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 14
+        },
+        {
+            "name": "山",
+            "value": 5
+        },
+        {
+            "name": "风",
+            "value": 17
+        },
+        {
+            "name": "日",
+            "value": 16
+        },
+        {
+            "name": "柳",
+            "value": 2
+        },
+        {
+            "name": "梅",
+            "value": 2
+        },
+        {
+            "name": "水",
+            "value": 3
+        },
+        {
+            "name": "江",
+            "value": 2
+        },
+        {
+            "name": "亭",
+            "value": 2
+        },
+        {
+            "name": "松",
+            "value": 1
+        }
+    ],
+    "吕济民": [
+        {
+            "name": "酒",
+            "value": 2
+        },
+        {
+            "name": "风",
+            "value": 2
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 1
+        }
+    ],
+    "荆干臣": [
+        {
+            "name": "月",
+            "value": 3
+        },
+        {
+            "name": "风",
+            "value": 3
+        },
+        {
+            "name": "云",
+            "value": 2
+        },
+        {
+            "name": "日",
+            "value": 2
+        },
+        {
+            "name": "柳",
+            "value": 1
+        }
+    ],
+    "虞集": [
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        }
+    ],
+    "王晔": [
+        {
+            "name": "山",
+            "value": 4
+        },
+        {
+            "name": "柳",
+            "value": 3
+        },
+        {
+            "name": "风",
+            "value": 9
+        },
+        {
+            "name": "月",
+            "value": 3
+        },
+        {
+            "name": "云",
+            "value": 64
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 5
+        },
+        {
+            "name": "日",
+            "value": 23
+        },
+        {
+            "name": "酒",
+            "value": 10
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "松",
+            "value": 2
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "荷",
+            "value": 1
+        }
+    ],
+    "李行甫": [
+        {
+            "name": "云",
+            "value": 95
+        },
+        {
+            "name": "日",
+            "value": 16
+        },
+        {
+            "name": "月",
+            "value": 4
+        },
+        {
+            "name": "风",
+            "value": 5
+        },
+        {
+            "name": "酒",
+            "value": 2
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "剑",
+            "value": 1
+        },
+        {
+            "name": "柳",
+            "value": 1
+        }
+    ],
+    "岳伯川": [
+        {
+            "name": "日",
+            "value": 25
+        },
+        {
+            "name": "月",
+            "value": 3
+        },
+        {
+            "name": "风",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 119
+        },
+        {
+            "name": "水",
+            "value": 2
+        },
+        {
+            "name": "山",
+            "value": 2
+        },
+        {
+            "name": "酒",
+            "value": 3
+        },
+        {
+            "name": "剑",
+            "value": 1
+        }
+    ],
+    "孙梁": [
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 1
+        }
+    ],
+    "刘秉忠": [
+        {
+            "name": "风",
+            "value": 3
+        },
+        {
+            "name": "柳",
+            "value": 2
+        },
+        {
+            "name": "楼",
+            "value": 2
+        },
+        {
+            "name": "亭",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "菊",
+            "value": 2
+        },
+        {
+            "name": "酒",
+            "value": 1
+        }
+    ],
+    "王德信": [
+        {
+            "name": "山",
+            "value": 3
+        },
+        {
+            "name": "水",
+            "value": 3
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 3
+        },
+        {
+            "name": "酒",
+            "value": 7
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 1
+        }
+    ],
+    "李伯瑜": [],
+    "王仲诚": [
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 2
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 1
+        },
+        {
+            "name": "梅",
+            "value": 1
+        }
+    ],
+    "张氏": [
+        {
+            "name": "风",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 1
+        }
+    ],
+    "沙正卿": [
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 2
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 1
+        }
+    ],
+    "赵莹": [],
+    "张鸣善": [
+        {
+            "name": "柳",
+            "value": 7
+        },
+        {
+            "name": "月",
+            "value": 7
+        },
+        {
+            "name": "酒",
+            "value": 2
+        },
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 12
+        },
+        {
+            "name": "云",
+            "value": 1
+        },
+        {
+            "name": "菊",
+            "value": 1
+        }
+    ],
+    "邦哲": [
+        {
+            "name": "云",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 1
+        }
+    ],
+    "赵明道": [
+        {
+            "name": "亭",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 4
+        },
+        {
+            "name": "山",
+            "value": 1
+        }
+    ],
+    "孟汉卿": [
+        {
+            "name": "云",
+            "value": 92
+        },
+        {
+            "name": "月",
+            "value": 6
+        },
+        {
+            "name": "水",
+            "value": 7
+        },
+        {
+            "name": "山",
+            "value": 10
+        },
+        {
+            "name": "风",
+            "value": 4
+        },
+        {
+            "name": "日",
+            "value": 8
+        },
+        {
+            "name": "酒",
+            "value": 1
+        },
+        {
+            "name": "剑",
+            "value": 1
+        }
+    ],
+    "沈和": [
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 2
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 1
+        }
+    ],
+    "贯石屏": [
+        {
+            "name": "水",
+            "value": 4
+        },
+        {
+            "name": "山",
+            "value": 4
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "菊",
+            "value": 1
+        }
+    ],
+    "夏庭芝": [
+        {
+            "name": "风",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "亭",
+            "value": 1
+        }
+    ],
+    "张养浩": [
+        {
+            "name": "江",
+            "value": 5
+        },
+        {
+            "name": "柳",
+            "value": 6
+        },
+        {
+            "name": "水",
+            "value": 12
+        },
+        {
+            "name": "日",
+            "value": 12
+        },
+        {
+            "name": "云",
+            "value": 25
+        },
+        {
+            "name": "酒",
+            "value": 6
+        },
+        {
+            "name": "山",
+            "value": 29
+        },
+        {
+            "name": "风",
+            "value": 20
+        },
+        {
+            "name": "亭",
+            "value": 8
+        },
+        {
+            "name": "月",
+            "value": 11
+        },
+        {
+            "name": "楼",
+            "value": 5
+        },
+        {
+            "name": "荷",
+            "value": 2
+        },
+        {
+            "name": "松",
+            "value": 2
+        },
+        {
+            "name": "梅",
+            "value": 2
+        },
+        {
+            "name": "菊",
+            "value": 1
+        }
+    ],
+    "魏初": [
+        {
+            "name": "云",
+            "value": 1
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 1
+        }
+    ],
+    "周文质": [
+        {
+            "name": "风",
+            "value": 20
+        },
+        {
+            "name": "日",
+            "value": 8
+        },
+        {
+            "name": "酒",
+            "value": 5
+        },
+        {
+            "name": "月",
+            "value": 13
+        },
+        {
+            "name": "云",
+            "value": 7
+        },
+        {
+            "name": "楼",
+            "value": 7
+        },
+        {
+            "name": "柳",
+            "value": 8
+        },
+        {
+            "name": "水",
+            "value": 6
+        },
+        {
+            "name": "荷",
+            "value": 2
+        },
+        {
+            "name": "菊",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 2
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "松",
+            "value": 1
+        },
+        {
+            "name": "剑",
+            "value": 2
+        }
+    ],
+    "睢景臣": [
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 3
+        },
+        {
+            "name": "柳",
+            "value": 2
+        },
+        {
+            "name": "云",
+            "value": 3
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "菊",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 4
+        },
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "荷",
+            "value": 1
+        }
+    ],
+    "刘敏中": [
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 1
+        }
+    ],
+    "真氏": [
+        {
+            "name": "风",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        }
+    ],
+    "大食惟寅": [
+        {
+            "name": "山",
+            "value": 1
+        }
+    ],
+    "珠帘秀": [
+        {
+            "name": "山",
+            "value": 2
+        },
+        {
+            "name": "江",
+            "value": 3
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 3
+        },
+        {
+            "name": "酒",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "楼",
+            "value": 2
+        },
+        {
+            "name": "云",
+            "value": 1
+        }
+    ],
+    "柯丹邱《荆钗记》": [
+        {
+            "name": "云",
+            "value": 24
+        },
+        {
+            "name": "山",
+            "value": 28
+        },
+        {
+            "name": "江",
+            "value": 35
+        },
+        {
+            "name": "风",
+            "value": 39
+        },
+        {
+            "name": "酒",
+            "value": 27
+        },
+        {
+            "name": "月",
+            "value": 29
+        },
+        {
+            "name": "日",
+            "value": 99
+        },
+        {
+            "name": "水",
+            "value": 42
+        },
+        {
+            "name": "荷",
+            "value": 4
+        },
+        {
+            "name": "柳",
+            "value": 6
+        },
+        {
+            "name": "剑",
+            "value": 2
+        },
+        {
+            "name": "松",
+            "value": 3
+        },
+        {
+            "name": "梅",
+            "value": 6
+        },
+        {
+            "name": "楼",
+            "value": 2
+        },
+        {
+            "name": "亭",
+            "value": 4
+        }
+    ],
+    "滕斌": [
+        {
+            "name": "风",
+            "value": 9
+        },
+        {
+            "name": "云",
+            "value": 4
+        },
+        {
+            "name": "酒",
+            "value": 3
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 3
+        },
+        {
+            "name": "山",
+            "value": 10
+        },
+        {
+            "name": "荷",
+            "value": 2
+        },
+        {
+            "name": "日",
+            "value": 4
+        },
+        {
+            "name": "菊",
+            "value": 2
+        },
+        {
+            "name": "江",
+            "value": 4
+        },
+        {
+            "name": "梅",
+            "value": 2
+        },
+        {
+            "name": "水",
+            "value": 5
+        }
+    ],
+    "孙季昌": [
+        {
+            "name": "日",
+            "value": 3
+        },
+        {
+            "name": "月",
+            "value": 7
+        },
+        {
+            "name": "风",
+            "value": 3
+        },
+        {
+            "name": "亭",
+            "value": 3
+        },
+        {
+            "name": "梅",
+            "value": 2
+        },
+        {
+            "name": "山",
+            "value": 3
+        },
+        {
+            "name": "江",
+            "value": 4
+        },
+        {
+            "name": "水",
+            "value": 3
+        },
+        {
+            "name": "酒",
+            "value": 2
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "楼",
+            "value": 1
+        }
+    ],
+    "刘君锡": [
+        {
+            "name": "日",
+            "value": 15
+        },
+        {
+            "name": "云",
+            "value": 80
+        },
+        {
+            "name": "山",
+            "value": 7
+        },
+        {
+            "name": "酒",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 12
+        },
+        {
+            "name": "月",
+            "value": 5
+        },
+        {
+            "name": "楼",
+            "value": 2
+        },
+        {
+            "name": "江",
+            "value": 2
+        },
+        {
+            "name": "水",
+            "value": 7
+        }
+    ],
+    "李致远": [
+        {
+            "name": "风",
+            "value": 19
+        },
+        {
+            "name": "日",
+            "value": 3
+        },
+        {
+            "name": "月",
+            "value": 11
+        },
+        {
+            "name": "楼",
+            "value": 4
+        },
+        {
+            "name": "柳",
+            "value": 6
+        },
+        {
+            "name": "酒",
+            "value": 4
+        },
+        {
+            "name": "云",
+            "value": 10
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "荷",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 9
+        },
+        {
+            "name": "水",
+            "value": 4
+        },
+        {
+            "name": "剑",
+            "value": 2
+        },
+        {
+            "name": "松",
+            "value": 3
+        },
+        {
+            "name": "菊",
+            "value": 1
+        }
+    ],
+    "萧德祥《小孙屠》": [
+        {
+            "name": "水",
+            "value": 14
+        },
+        {
+            "name": "日",
+            "value": 39
+        },
+        {
+            "name": "风",
+            "value": 18
+        },
+        {
+            "name": "梅",
+            "value": 25
+        },
+        {
+            "name": "酒",
+            "value": 12
+        },
+        {
+            "name": "亭",
+            "value": 1
+        },
+        {
+            "name": "柳",
+            "value": 5
+        },
+        {
+            "name": "山",
+            "value": 5
+        },
+        {
+            "name": "江",
+            "value": 2
+        },
+        {
+            "name": "云",
+            "value": 7
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 3
+        }
+    ],
+    "贾固": [
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 1
+        }
+    ],
+    "吕天用": [
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 2
+        },
+        {
+            "name": "风",
+            "value": 4
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "菊",
+            "value": 1
+        }
+    ],
+    "李爱山": [
+        {
+            "name": "日",
+            "value": 3
+        },
+        {
+            "name": "亭",
+            "value": 1
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        }
+    ],
+    "方伯成": [
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        }
+    ],
+    "鲜于必仁": [
+        {
+            "name": "云",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 1
+        }
+    ],
+    "刘唐卿《白兔记》": [
+        {
+            "name": "云",
+            "value": 11
+        },
+        {
+            "name": "柳",
+            "value": 5
+        },
+        {
+            "name": "酒",
+            "value": 11
+        },
+        {
+            "name": "梅",
+            "value": 9
+        },
+        {
+            "name": "日",
+            "value": 51
+        },
+        {
+            "name": "月",
+            "value": 11
+        },
+        {
+            "name": "风",
+            "value": 16
+        },
+        {
+            "name": "楼",
+            "value": 6
+        },
+        {
+            "name": "亭",
+            "value": 2
+        },
+        {
+            "name": "山",
+            "value": 19
+        },
+        {
+            "name": "水",
+            "value": 34
+        },
+        {
+            "name": "荷",
+            "value": 2
+        },
+        {
+            "name": "松",
+            "value": 1
+        },
+        {
+            "name": "江",
+            "value": 3
+        },
+        {
+            "name": "剑",
+            "value": 2
+        }
+    ],
+    "吴仁卿": [
+        {
+            "name": "山",
+            "value": 4
+        },
+        {
+            "name": "酒",
+            "value": 4
+        },
+        {
+            "name": "日",
+            "value": 6
+        },
+        {
+            "name": "梅",
+            "value": 2
+        },
+        {
+            "name": "柳",
+            "value": 3
+        },
+        {
+            "name": "风",
+            "value": 8
+        },
+        {
+            "name": "云",
+            "value": 7
+        },
+        {
+            "name": "水",
+            "value": 3
+        },
+        {
+            "name": "楼",
+            "value": 2
+        },
+        {
+            "name": "月",
+            "value": 5
+        },
+        {
+            "name": "江",
+            "value": 1
+        }
+    ],
+    "王挺秀": [
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        }
+    ],
+    "曾瑞": [
+        {
+            "name": "风",
+            "value": 36
+        },
+        {
+            "name": "月",
+            "value": 19
+        },
+        {
+            "name": "水",
+            "value": 9
+        },
+        {
+            "name": "云",
+            "value": 20
+        },
+        {
+            "name": "日",
+            "value": 5
+        },
+        {
+            "name": "梅",
+            "value": 5
+        },
+        {
+            "name": "楼",
+            "value": 6
+        },
+        {
+            "name": "山",
+            "value": 11
+        },
+        {
+            "name": "剑",
+            "value": 4
+        },
+        {
+            "name": "酒",
+            "value": 8
+        },
+        {
+            "name": "松",
+            "value": 2
+        },
+        {
+            "name": "柳",
+            "value": 5
+        },
+        {
+            "name": "亭",
+            "value": 3
+        },
+        {
+            "name": "荷",
+            "value": 2
+        },
+        {
+            "name": "菊",
+            "value": 1
+        }
+    ],
+    "谷子敬": [
+        {
+            "name": "日",
+            "value": 17
+        },
+        {
+            "name": "风",
+            "value": 16
+        },
+        {
+            "name": "柳",
+            "value": 27
+        },
+        {
+            "name": "云",
+            "value": 69
+        },
+        {
+            "name": "楼",
+            "value": 14
+        },
+        {
+            "name": "江",
+            "value": 6
+        },
+        {
+            "name": "山",
+            "value": 9
+        },
+        {
+            "name": "荷",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 20
+        },
+        {
+            "name": "剑",
+            "value": 12
+        },
+        {
+            "name": "月",
+            "value": 6
+        },
+        {
+            "name": "松",
+            "value": 4
+        },
+        {
+            "name": "水",
+            "value": 3
+        },
+        {
+            "name": "亭",
+            "value": 1
+        },
+        {
+            "name": "梅",
+            "value": 1
+        }
+    ],
+    "朱凯": [
+        {
+            "name": "云",
+            "value": 47
+        },
+        {
+            "name": "山",
+            "value": 9
+        },
+        {
+            "name": "风",
+            "value": 5
+        },
+        {
+            "name": "日",
+            "value": 2
+        },
+        {
+            "name": "酒",
+            "value": 1
+        },
+        {
+            "name": "楼",
+            "value": 1
+        }
+    ],
+    "陆登善": [
+        {
+            "name": "日",
+            "value": 2
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "荷",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 2
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 1
+        }
+    ],
+    "马彦良": [
+        {
+            "name": "柳",
+            "value": 1
+        }
+    ],
+    "顾鉴中": [
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        }
+    ],
+    "柴野愚": [
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "松",
+            "value": 1
+        }
+    ],
+    "孙叔顺": [
+        {
+            "name": "山",
+            "value": 3
+        },
+        {
+            "name": "日",
+            "value": 4
+        },
+        {
+            "name": "水",
+            "value": 2
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        }
+    ],
+    "杨果": [
+        {
+            "name": "水",
+            "value": 2
+        },
+        {
+            "name": "日",
+            "value": 2
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 3
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "梅",
+            "value": 1
+        }
+    ],
+    "侯正卿": [
+        {
+            "name": "月",
+            "value": 2
+        },
+        {
+            "name": "亭",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 2
+        }
+    ],
+    "亢文苑": [
+        {
+            "name": "亭",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 2
+        },
+        {
+            "name": "云",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 1
+        }
+    ],
+    "周德清": [
+        {
+            "name": "山",
+            "value": 9
+        },
+        {
+            "name": "江",
+            "value": 7
+        },
+        {
+            "name": "月",
+            "value": 8
+        },
+        {
+            "name": "云",
+            "value": 9
+        },
+        {
+            "name": "水",
+            "value": 5
+        },
+        {
+            "name": "风",
+            "value": 10
+        },
+        {
+            "name": "楼",
+            "value": 3
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "松",
+            "value": 1
+        },
+        {
+            "name": "柳",
+            "value": 3
+        },
+        {
+            "name": "酒",
+            "value": 3
+        },
+        {
+            "name": "日",
+            "value": 1
+        }
+    ],
+    "赵岩": [
+        {
+            "name": "亭",
+            "value": 1
+        }
+    ],
+    "董君瑞": [
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 2
+        },
+        {
+            "name": "江",
+            "value": 1
+        }
+    ],
+    "张碧山": [
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 1
+        }
+    ],
+    "倪瓒": [
+        {
+            "name": "山",
+            "value": 3
+        },
+        {
+            "name": "月",
+            "value": 2
+        },
+        {
+            "name": "云",
+            "value": 2
+        },
+        {
+            "name": "柳",
+            "value": 2
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "松",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "菊",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 2
+        },
+        {
+            "name": "日",
+            "value": 1
+        }
+    ],
+    "李邦基": [
+        {
+            "name": "酒",
+            "value": 1
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "江",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 1
+        }
+    ],
+    "刘婆惜": [],
+    "王氏": [
+        {
+            "name": "江",
+            "value": 3
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "荷",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 2
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 2
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "日",
+            "value": 3
+        }
+    ],
+    "王元鼎": [
+        {
+            "name": "酒",
+            "value": 2
+        },
+        {
+            "name": "日",
+            "value": 4
+        },
+        {
+            "name": "风",
+            "value": 5
+        },
+        {
+            "name": "楼",
+            "value": 2
+        },
+        {
+            "name": "月",
+            "value": 4
+        },
+        {
+            "name": "柳",
+            "value": 3
+        },
+        {
+            "name": "亭",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "江",
+            "value": 1
+        }
+    ],
+    "萧德润": [
+        {
+            "name": "云",
+            "value": 1
+        }
+    ],
+    "徐再思": [
+        {
+            "name": "江",
+            "value": 11
+        },
+        {
+            "name": "楼",
+            "value": 7
+        },
+        {
+            "name": "水",
+            "value": 11
+        },
+        {
+            "name": "山",
+            "value": 29
+        },
+        {
+            "name": "风",
+            "value": 41
+        },
+        {
+            "name": "亭",
+            "value": 2
+        },
+        {
+            "name": "酒",
+            "value": 22
+        },
+        {
+            "name": "月",
+            "value": 30
+        },
+        {
+            "name": "松",
+            "value": 4
+        },
+        {
+            "name": "云",
+            "value": 30
+        },
+        {
+            "name": "日",
+            "value": 10
+        },
+        {
+            "name": "柳",
+            "value": 9
+        },
+        {
+            "name": "梅",
+            "value": 8
+        },
+        {
+            "name": "剑",
+            "value": 1
+        },
+        {
+            "name": "荷",
+            "value": 1
+        }
+    ],
+    "武林隐": [
+        {
+            "name": "风",
+            "value": 2
+        },
+        {
+            "name": "云",
+            "value": 1
+        }
+    ],
+    "周浩": [
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "江",
+            "value": 1
+        }
+    ],
+    "阿里西瑛": [
+        {
+            "name": "酒",
+            "value": 3
+        },
+        {
+            "name": "云",
+            "value": 3
+        },
+        {
+            "name": "日",
+            "value": 2
+        },
+        {
+            "name": "月",
+            "value": 2
+        },
+        {
+            "name": "松",
+            "value": 1
+        }
+    ],
+    "汪元亨": [
+        {
+            "name": "山",
+            "value": 10
+        },
+        {
+            "name": "云",
+            "value": 7
+        },
+        {
+            "name": "江",
+            "value": 4
+        },
+        {
+            "name": "日",
+            "value": 5
+        },
+        {
+            "name": "月",
+            "value": 5
+        },
+        {
+            "name": "风",
+            "value": 7
+        },
+        {
+            "name": "酒",
+            "value": 4
+        },
+        {
+            "name": "水",
+            "value": 3
+        },
+        {
+            "name": "菊",
+            "value": 2
+        },
+        {
+            "name": "剑",
+            "value": 2
+        },
+        {
+            "name": "梅",
+            "value": 2
+        },
+        {
+            "name": "松",
+            "value": 2
+        }
+    ],
+    "杜遵礼": [
+        {
+            "name": "日",
+            "value": 1
+        },
+        {
+            "name": "松",
+            "value": 1
+        }
+    ],
+    "陈子厚": [],
+    "李齐贤": [
+        {
+            "name": "云",
+            "value": 1
+        }
+    ],
+    "于伯渊": [
+        {
+            "name": "月",
+            "value": 3
+        },
+        {
+            "name": "水",
+            "value": 2
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "松",
+            "value": 1
+        },
+        {
+            "name": "风",
+            "value": 4
+        },
+        {
+            "name": "云",
+            "value": 3
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "荷",
+            "value": 1
+        }
+    ],
+    "萨都剌": [],
+    "冯子振": [
+        {
+            "name": "云",
+            "value": 5
+        },
+        {
+            "name": "江",
+            "value": 6
+        },
+        {
+            "name": "山",
+            "value": 16
+        },
+        {
+            "name": "风",
+            "value": 19
+        },
+        {
+            "name": "酒",
+            "value": 5
+        },
+        {
+            "name": "亭",
+            "value": 4
+        },
+        {
+            "name": "日",
+            "value": 6
+        },
+        {
+            "name": "水",
+            "value": 3
+        },
+        {
+            "name": "月",
+            "value": 6
+        },
+        {
+            "name": "柳",
+            "value": 2
+        },
+        {
+            "name": "荷",
+            "value": 1
+        },
+        {
+            "name": "梅",
+            "value": 1
+        },
+        {
+            "name": "松",
+            "value": 3
+        },
+        {
+            "name": "楼",
+            "value": 1
+        },
+        {
+            "name": "剑",
+            "value": 1
+        }
+    ],
+    "高安道": [
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 1
+        },
+        {
+            "name": "水",
+            "value": 2
+        },
+        {
+            "name": "松",
+            "value": 1
+        },
+        {
+            "name": "酒",
+            "value": 2
+        },
+        {
+            "name": "云",
+            "value": 3
+        },
+        {
+            "name": "日",
+            "value": 5
+        },
+        {
+            "name": "风",
+            "value": 3
+        },
+        {
+            "name": "楼",
+            "value": 2
+        },
+        {
+            "name": "柳",
+            "value": 1
+        },
+        {
+            "name": "荷",
+            "value": 1
+        },
+        {
+            "name": "梅",
+            "value": 1
+        }
+    ],
+    "邵亨贞": [
+        {
+            "name": "江",
+            "value": 3
+        },
+        {
+            "name": "月",
+            "value": 1
+        },
+        {
+            "name": "山",
+            "value": 2
+        },
+        {
+            "name": "楼",
+            "value": 2
+        },
+        {
+            "name": "水",
+            "value": 1
+        },
+        {
+            "name": "云",
+            "value": 1
+        }
+    ]
+}

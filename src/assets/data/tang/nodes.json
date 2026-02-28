@@ -1,0 +1,5932 @@
+[
+    {
+        "name": "韦述",
+        "degree": 3,
+        "community": 2
+    },
+    {
+        "name": "魏璞",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "赵冬曦",
+        "degree": 6,
+        "community": 3
+    },
+    {
+        "name": "魏朴",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "李余",
+        "degree": 7,
+        "community": 1
+    },
+    {
+        "name": "苏味道",
+        "degree": 7,
+        "community": 2
+    },
+    {
+        "name": "高力士",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "卢照邻",
+        "degree": 9,
+        "community": 1
+    },
+    {
+        "name": "孟彦深",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "韦应物",
+        "degree": 53,
+        "community": 1
+    },
+    {
+        "name": "张垍",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "崔膺",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "卢休",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "孙鲂",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "陈致雍",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "李忱",
+        "degree": 12,
+        "community": 0
+    },
+    {
+        "name": "杜淹",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "柳公权",
+        "degree": 10,
+        "community": 1
+    },
+    {
+        "name": "高湘",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "袁皓",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "蔡希周",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "陆肱",
+        "degree": 3,
+        "community": 2
+    },
+    {
+        "name": "黄滔",
+        "degree": 5,
+        "community": 1
+    },
+    {
+        "name": "肃宗",
+        "degree": 6,
+        "community": 0
+    },
+    {
+        "name": "高适",
+        "degree": 72,
+        "community": 1
+    },
+    {
+        "name": "李讷",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "崔生",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "杨徽之",
+        "degree": 11,
+        "community": 2
+    },
+    {
+        "name": "李绅",
+        "degree": 24,
+        "community": 1
+    },
+    {
+        "name": "李明远",
+        "degree": 8,
+        "community": 0
+    },
+    {
+        "name": "邬载",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "路洵美",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "徐商",
+        "degree": 9,
+        "community": 0
+    },
+    {
+        "name": "章碣",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "曹汾",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "严休复",
+        "degree": 5,
+        "community": 1
+    },
+    {
+        "name": "拓善",
+        "degree": 3,
+        "community": 2
+    },
+    {
+        "name": "白行简",
+        "degree": 10,
+        "community": 1
+    },
+    {
+        "name": "王鲁复",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "李骘",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "杨凝",
+        "degree": 6,
+        "community": 1
+    },
+    {
+        "name": "詹琲",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "卢钧",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "高骈",
+        "degree": 7,
+        "community": 1
+    },
+    {
+        "name": "李肱",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "崔莺莺",
+        "degree": 6,
+        "community": 1
+    },
+    {
+        "name": "窦常",
+        "degree": 30,
+        "community": 1
+    },
+    {
+        "name": "吕岩",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "谢仲宣",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "杨凭",
+        "degree": 19,
+        "community": 1
+    },
+    {
+        "name": "熊孺登",
+        "degree": 5,
+        "community": 1
+    },
+    {
+        "name": "令狐楚",
+        "degree": 35,
+        "community": 1
+    },
+    {
+        "name": "萧嵩",
+        "degree": 20,
+        "community": 2
+    },
+    {
+        "name": "李山甫",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "李舒",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "李深",
+        "degree": 5,
+        "community": 2
+    },
+    {
+        "name": "卢弼",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "陈子昂",
+        "degree": 30,
+        "community": 1
+    },
+    {
+        "name": "李景俭",
+        "degree": 6,
+        "community": 1
+    },
+    {
+        "name": "张曙",
+        "degree": 4,
+        "community": 3
+    },
+    {
+        "name": "杨虞卿",
+        "degree": 19,
+        "community": 1
+    },
+    {
+        "name": "崔元翰",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "元结",
+        "degree": 16,
+        "community": 1
+    },
+    {
+        "name": "李休烈",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "虞世南",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "袁晖",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "崔子向",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "罗邺",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "马植",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "李廓",
+        "degree": 13,
+        "community": 1
+    },
+    {
+        "name": "皇甫镛",
+        "degree": 10,
+        "community": 1
+    },
+    {
+        "name": "段文昌",
+        "degree": 15,
+        "community": 1
+    },
+    {
+        "name": "杨炯",
+        "degree": 9,
+        "community": 1
+    },
+    {
+        "name": "陈去疾",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "王绍宗",
+        "degree": 3,
+        "community": 3
+    },
+    {
+        "name": "苏广文",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "褚亮",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "李昂",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "王损之",
+        "degree": 2,
+        "community": 2
+    },
+    {
+        "name": "萧沼",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "赵中虚",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "左偃",
+        "degree": 6,
+        "community": 2
+    },
+    {
+        "name": "王沂",
+        "degree": 4,
+        "community": 2
+    },
+    {
+        "name": "李昉",
+        "degree": 14,
+        "community": 1
+    },
+    {
+        "name": "敬相",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "谢良辅",
+        "degree": 6,
+        "community": 1
+    },
+    {
+        "name": "杨发",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "徐融",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "康骈",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "郑元璹",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "陈裕",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "张泌",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "杨邺",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "崔道融",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "赵嘏",
+        "degree": 33,
+        "community": 1
+    },
+    {
+        "name": "王驾",
+        "degree": 4,
+        "community": 3
+    },
+    {
+        "name": "韦铿",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "崔颢",
+        "degree": 11,
+        "community": 3
+    },
+    {
+        "name": "李溟",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "孟昶",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "元德秀",
+        "degree": 5,
+        "community": 1
+    },
+    {
+        "name": "唐求",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "张贲",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "贾言淑",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "高崇文",
+        "degree": 2,
+        "community": 2
+    },
+    {
+        "name": "李商隐",
+        "degree": 58,
+        "community": 1
+    },
+    {
+        "name": "刘猛",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "卢献卿",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "王良士",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "杜易简",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "独孤申叔",
+        "degree": 4,
+        "community": 3
+    },
+    {
+        "name": "郑畋",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "武平一",
+        "degree": 13,
+        "community": 2
+    },
+    {
+        "name": "崔涤",
+        "degree": 5,
+        "community": 1
+    },
+    {
+        "name": "杨汝士",
+        "degree": 24,
+        "community": 1
+    },
+    {
+        "name": "林披",
+        "degree": 4,
+        "community": 2
+    },
+    {
+        "name": "高正臣",
+        "degree": 4,
+        "community": 2
+    },
+    {
+        "name": "岑参",
+        "degree": 46,
+        "community": 3
+    },
+    {
+        "name": "李夔",
+        "degree": 2,
+        "community": 2
+    },
+    {
+        "name": "赵光逢",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "刘子翼",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "杨乘",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "曲信陵",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "包颖",
+        "degree": 2,
+        "community": 2
+    },
+    {
+        "name": "钱俶",
+        "degree": 7,
+        "community": 0
+    },
+    {
+        "name": "杨师道",
+        "degree": 14,
+        "community": 0
+    },
+    {
+        "name": "陆羽",
+        "degree": 21,
+        "community": 3
+    },
+    {
+        "name": "窦群",
+        "degree": 28,
+        "community": 1
+    },
+    {
+        "name": "裴翻",
+        "degree": 2,
+        "community": 2
+    },
+    {
+        "name": "岑文本",
+        "degree": 16,
+        "community": 2
+    },
+    {
+        "name": "杨收",
+        "degree": 8,
+        "community": 0
+    },
+    {
+        "name": "陈润",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "崔珏",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "李回",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "李宗闵",
+        "degree": 13,
+        "community": 1
+    },
+    {
+        "name": "钱惟治",
+        "degree": 7,
+        "community": 0
+    },
+    {
+        "name": "杨凝式",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "刘知几",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "韦贯之",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "马逢",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "郑惟忠",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "尉迟汾",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "牛僧孺",
+        "degree": 24,
+        "community": 1
+    },
+    {
+        "name": "钟蒨",
+        "degree": 6,
+        "community": 2
+    },
+    {
+        "name": "刘商",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "夏侯审",
+        "degree": 6,
+        "community": 1
+    },
+    {
+        "name": "杜鸿渐",
+        "degree": 16,
+        "community": 1
+    },
+    {
+        "name": "殷少野",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "严维",
+        "degree": 40,
+        "community": 1
+    },
+    {
+        "name": "张希复",
+        "degree": 7,
+        "community": 1
+    },
+    {
+        "name": "王益",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "林藻",
+        "degree": 5,
+        "community": 2
+    },
+    {
+        "name": "李日新",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "綦毋潜",
+        "degree": 19,
+        "community": 1
+    },
+    {
+        "name": "柳棠",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "崔知贤",
+        "degree": 3,
+        "community": 3
+    },
+    {
+        "name": "蒋冽",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "卢象",
+        "degree": 11,
+        "community": 1
+    },
+    {
+        "name": "源乾曜",
+        "degree": 12,
+        "community": 2
+    },
+    {
+        "name": "崔铉",
+        "degree": 11,
+        "community": 1
+    },
+    {
+        "name": "胡宿",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "许孟容",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "封特卿",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "杨汉公",
+        "degree": 23,
+        "community": 1
+    },
+    {
+        "name": "崔禹锡",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "张立",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "李绛",
+        "degree": 15,
+        "community": 1
+    },
+    {
+        "name": "李敬伯",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "姚发",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "崔液",
+        "degree": 4,
+        "community": 3
+    },
+    {
+        "name": "孙佺",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "张子容",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "许棠",
+        "degree": 15,
+        "community": 1
+    },
+    {
+        "name": "韦式",
+        "degree": 5,
+        "community": 1
+    },
+    {
+        "name": "贾至",
+        "degree": 21,
+        "community": 1
+    },
+    {
+        "name": "刘复",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "王良会",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "赵林",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "丘上卿",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "王元",
+        "degree": 6,
+        "community": 2
+    },
+    {
+        "name": "袁瓘",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "席夔",
+        "degree": 7,
+        "community": 1
+    },
+    {
+        "name": "崔融",
+        "degree": 9,
+        "community": 2
+    },
+    {
+        "name": "张观",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "郭廷谓",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "申堂构",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "卢僎",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "上官仪",
+        "degree": 7,
+        "community": 0
+    },
+    {
+        "name": "许康佐",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "高傪",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "陆长源",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "殷陶",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "高球",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "许远",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "骆宾王",
+        "degree": 9,
+        "community": 1
+    },
+    {
+        "name": "陈商",
+        "degree": 3,
+        "community": 3
+    },
+    {
+        "name": "贾𫗧",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "王传",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "沈如筠",
+        "degree": 2,
+        "community": 3
+    },
+    {
+        "name": "顾非熊",
+        "degree": 11,
+        "community": 1
+    },
+    {
+        "name": "张易之",
+        "degree": 10,
+        "community": 2
+    },
+    {
+        "name": "徐光溥",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "贺知章",
+        "degree": 21,
+        "community": 1
+    },
+    {
+        "name": "李郁",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "李沼",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "陈玉兰",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "刘虚白",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "吕炅",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "殷文圭",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "郑薰",
+        "degree": 11,
+        "community": 1
+    },
+    {
+        "name": "李瓘",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "崔何",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "孔绍安",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "陈希烈",
+        "degree": 3,
+        "community": 2
+    },
+    {
+        "name": "司空图",
+        "degree": 7,
+        "community": 1
+    },
+    {
+        "name": "张𧏖",
+        "degree": 10,
+        "community": 1
+    },
+    {
+        "name": "李贞白",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "卢怀慎",
+        "degree": 4,
+        "community": 2
+    },
+    {
+        "name": "张文琮",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "杜荀鹤",
+        "degree": 32,
+        "community": 1
+    },
+    {
+        "name": "吕渭",
+        "degree": 9,
+        "community": 1
+    },
+    {
+        "name": "孟简",
+        "degree": 22,
+        "community": 1
+    },
+    {
+        "name": "李叔卿",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "皇甫斌",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "尹璞",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "刘言史",
+        "degree": 5,
+        "community": 1
+    },
+    {
+        "name": "李屿",
+        "degree": 2,
+        "community": 3
+    },
+    {
+        "name": "陆翱",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "元友直",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "蔡孚",
+        "degree": 4,
+        "community": 3
+    },
+    {
+        "name": "段成式",
+        "degree": 22,
+        "community": 1
+    },
+    {
+        "name": "张彪",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "崔锜",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "裴耀卿",
+        "degree": 18,
+        "community": 2
+    },
+    {
+        "name": "张蒙",
+        "degree": 10,
+        "community": 1
+    },
+    {
+        "name": "李谅",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "崔宗之",
+        "degree": 11,
+        "community": 1
+    },
+    {
+        "name": "李渭",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "崔江",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "苏寓",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "沈仲昌",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "张籍",
+        "degree": 78,
+        "community": 1
+    },
+    {
+        "name": "杨续",
+        "degree": 6,
+        "community": 2
+    },
+    {
+        "name": "章孝标",
+        "degree": 19,
+        "community": 1
+    },
+    {
+        "name": "薛蒙",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "卢贞",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "段弘古",
+        "degree": 3,
+        "community": 2
+    },
+    {
+        "name": "李曜",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "王承邺",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "李延陵",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "房琯",
+        "degree": 22,
+        "community": 1
+    },
+    {
+        "name": "薛逢",
+        "degree": 12,
+        "community": 1
+    },
+    {
+        "name": "张殷衡",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "刘秩",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "夏宝松",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "崔备",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "裴延龄",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "杨氏",
+        "degree": 8,
+        "community": 1
+    },
+    {
+        "name": "蒯希逸",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "丘丹",
+        "degree": 6,
+        "community": 1
+    },
+    {
+        "name": "吉皎",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "钱弘偡",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "崔邠",
+        "degree": 12,
+        "community": 1
+    },
+    {
+        "name": "郭受",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "高璩",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "贺朝",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "杨衡",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "李贺",
+        "degree": 16,
+        "community": 1
+    },
+    {
+        "name": "薛涛",
+        "degree": 18,
+        "community": 1
+    },
+    {
+        "name": "李播",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "裴淑",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "包融",
+        "degree": 5,
+        "community": 1
+    },
+    {
+        "name": "刘蕃",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "李靖",
+        "degree": 2,
+        "community": 3
+    },
+    {
+        "name": "张锡",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "裴贽",
+        "degree": 3,
+        "community": 3
+    },
+    {
+        "name": "沈颜",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "戴公怀",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "裴廷裕",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "李峰",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "窦希玠",
+        "degree": 2,
+        "community": 2
+    },
+    {
+        "name": "张直",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "席豫",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "房孺复",
+        "degree": 10,
+        "community": 1
+    },
+    {
+        "name": "张绍",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "王梦周",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "许景先",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "韩喜",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "皇甫曙",
+        "degree": 5,
+        "community": 1
+    },
+    {
+        "name": "高蟾",
+        "degree": 2,
+        "community": 3
+    },
+    {
+        "name": "韦建",
+        "degree": 5,
+        "community": 3
+    },
+    {
+        "name": "崔郾",
+        "degree": 6,
+        "community": 1
+    },
+    {
+        "name": "杜审言",
+        "degree": 23,
+        "community": 1
+    },
+    {
+        "name": "储光羲",
+        "degree": 39,
+        "community": 1
+    },
+    {
+        "name": "汪遵",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "王珪",
+        "degree": 5,
+        "community": 1
+    },
+    {
+        "name": "李景遂",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "殷尧藩",
+        "degree": 29,
+        "community": 1
+    },
+    {
+        "name": "赵崇",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "李德裕",
+        "degree": 55,
+        "community": 1
+    },
+    {
+        "name": "李密",
+        "degree": 5,
+        "community": 2
+    },
+    {
+        "name": "王镕",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "崔玄亮",
+        "degree": 12,
+        "community": 1
+    },
+    {
+        "name": "韦执中",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "张浑",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "郎士元",
+        "degree": 11,
+        "community": 2
+    },
+    {
+        "name": "李璟",
+        "degree": 14,
+        "community": 0
+    },
+    {
+        "name": "苗晋卿",
+        "degree": 9,
+        "community": 2
+    },
+    {
+        "name": "张濬",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "贾曾",
+        "degree": 3,
+        "community": 3
+    },
+    {
+        "name": "崔公辅",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "贺兰朋吉",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "郑繇",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "杨思玄",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "王志安",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "贾弇",
+        "degree": 5,
+        "community": 0
+    },
+    {
+        "name": "徐昌图",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "张继",
+        "degree": 6,
+        "community": 1
+    },
+    {
+        "name": "钱起",
+        "degree": 25,
+        "community": 1
+    },
+    {
+        "name": "李吉甫",
+        "degree": 21,
+        "community": 1
+    },
+    {
+        "name": "胡徽",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "史思明",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "刘晏",
+        "degree": 12,
+        "community": 2
+    },
+    {
+        "name": "崔元范",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "庾光先",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "崔远",
+        "degree": 3,
+        "community": 3
+    },
+    {
+        "name": "胡证",
+        "degree": 11,
+        "community": 1
+    },
+    {
+        "name": "窦俨",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "王起",
+        "degree": 16,
+        "community": 1
+    },
+    {
+        "name": "潘炎",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "张均",
+        "degree": 8,
+        "community": 1
+    },
+    {
+        "name": "张志和",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "李虞仲",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "陆质",
+        "degree": 4,
+        "community": 3
+    },
+    {
+        "name": "雍陶",
+        "degree": 27,
+        "community": 1
+    },
+    {
+        "name": "阎防",
+        "degree": 5,
+        "community": 1
+    },
+    {
+        "name": "庸仁杰",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "薛存诚",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "崔恭",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "赵宗儒",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "张道古",
+        "degree": 2,
+        "community": 2
+    },
+    {
+        "name": "许坚",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "钱弘俶",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "张文规",
+        "degree": 3,
+        "community": 2
+    },
+    {
+        "name": "钱元瓘",
+        "degree": 12,
+        "community": 0
+    },
+    {
+        "name": "李迥秀",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "张怀庆",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "崔兴宗",
+        "degree": 11,
+        "community": 1
+    },
+    {
+        "name": "李敬方",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "吴圆",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "孙偓",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "李端",
+        "degree": 16,
+        "community": 3
+    },
+    {
+        "name": "伍乔",
+        "degree": 4,
+        "community": 2
+    },
+    {
+        "name": "金可纪",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "司马承祯",
+        "degree": 22,
+        "community": 1
+    },
+    {
+        "name": "令狐绹",
+        "degree": 13,
+        "community": 1
+    },
+    {
+        "name": "李益",
+        "degree": 16,
+        "community": 1
+    },
+    {
+        "name": "周墀",
+        "degree": 34,
+        "community": 1
+    },
+    {
+        "name": "潘纬",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "刘驾",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "李敬玄",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "尹懋",
+        "degree": 2,
+        "community": 3
+    },
+    {
+        "name": "宋华",
+        "degree": 2,
+        "community": 3
+    },
+    {
+        "name": "郑𬘡",
+        "degree": 6,
+        "community": 1
+    },
+    {
+        "name": "江直木",
+        "degree": 4,
+        "community": 2
+    },
+    {
+        "name": "狄归昌",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "王之涣",
+        "degree": 9,
+        "community": 2
+    },
+    {
+        "name": "颜萱",
+        "degree": 5,
+        "community": 0
+    },
+    {
+        "name": "邵升",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "陆贽",
+        "degree": 7,
+        "community": 1
+    },
+    {
+        "name": "章八元",
+        "degree": 7,
+        "community": 1
+    },
+    {
+        "name": "廖凝",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "皇甫松",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "杨知至",
+        "degree": 7,
+        "community": 1
+    },
+    {
+        "name": "李缜",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "王勔",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "郑俞",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "刘孝孙",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "刘乙",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "刘眘虚",
+        "degree": 8,
+        "community": 1
+    },
+    {
+        "name": "李幼卿",
+        "degree": 2,
+        "community": 2
+    },
+    {
+        "name": "窦叔向",
+        "degree": 18,
+        "community": 1
+    },
+    {
+        "name": "潘图",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "崔泰之",
+        "degree": 9,
+        "community": 2
+    },
+    {
+        "name": "张氏",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "李邕",
+        "degree": 15,
+        "community": 1
+    },
+    {
+        "name": "严震",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "任希古",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "胡杲",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "郭子仪",
+        "degree": 17,
+        "community": 1
+    },
+    {
+        "name": "陈京",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "刘洎",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "沈传师",
+        "degree": 6,
+        "community": 1
+    },
+    {
+        "name": "殷潜之",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "赵铎",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "李昭象",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "阎宽",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "李百药",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "李义府",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "张南史",
+        "degree": 15,
+        "community": 2
+    },
+    {
+        "name": "皇甫澈",
+        "degree": 7,
+        "community": 1
+    },
+    {
+        "name": "李澣",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "杨浚",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "戎昱",
+        "degree": 13,
+        "community": 1
+    },
+    {
+        "name": "李岑",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "李纾",
+        "degree": 5,
+        "community": 2
+    },
+    {
+        "name": "畅当",
+        "degree": 12,
+        "community": 1
+    },
+    {
+        "name": "王仁裕",
+        "degree": 6,
+        "community": 0
+    },
+    {
+        "name": "刘太真",
+        "degree": 28,
+        "community": 1
+    },
+    {
+        "name": "鲍溶",
+        "degree": 25,
+        "community": 1
+    },
+    {
+        "name": "杜奕",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "权德舆",
+        "degree": 72,
+        "community": 1
+    },
+    {
+        "name": "李庾",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "莲花妓",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "卢汝弼",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "李元纮",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "崔曙",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "熊曜",
+        "degree": 2,
+        "community": 2
+    },
+    {
+        "name": "严公贶",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "曹邺",
+        "degree": 3,
+        "community": 2
+    },
+    {
+        "name": "郑说",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "刘羲叟",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "路应",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "孙昌胤",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "乔侃",
+        "degree": 5,
+        "community": 0
+    },
+    {
+        "name": "王翰",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "韦处厚",
+        "degree": 11,
+        "community": 1
+    },
+    {
+        "name": "郑损",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "韩湘",
+        "degree": 9,
+        "community": 1
+    },
+    {
+        "name": "廖融",
+        "degree": 7,
+        "community": 0
+    },
+    {
+        "name": "印粲",
+        "degree": 2,
+        "community": 2
+    },
+    {
+        "name": "晁衡",
+        "degree": 9,
+        "community": 1
+    },
+    {
+        "name": "钱可复",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "牛峤",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "羊昭业",
+        "degree": 7,
+        "community": 1
+    },
+    {
+        "name": "李适之",
+        "degree": 12,
+        "community": 1
+    },
+    {
+        "name": "杜兼",
+        "degree": 5,
+        "community": 1
+    },
+    {
+        "name": "孙叔向",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "魏征",
+        "degree": 9,
+        "community": 2
+    },
+    {
+        "name": "颜允南",
+        "degree": 2,
+        "community": 2
+    },
+    {
+        "name": "孟球",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "韩翃",
+        "degree": 28,
+        "community": 1
+    },
+    {
+        "name": "秦系",
+        "degree": 22,
+        "community": 1
+    },
+    {
+        "name": "杨兴义",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "邹象先",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "李朋",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "孟守",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "丁居晦",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "姜皎",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "何元上",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "李嶷",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "温翁念",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "李日知",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "宋之问",
+        "degree": 73,
+        "community": 3
+    },
+    {
+        "name": "张叔卿",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "卢郢",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "李从远",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "裴士淹",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "陈昭",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "李适",
+        "degree": 16,
+        "community": 1
+    },
+    {
+        "name": "周元范",
+        "degree": 7,
+        "community": 1
+    },
+    {
+        "name": "李洞",
+        "degree": 3,
+        "community": 3
+    },
+    {
+        "name": "冯涓",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "宋鼎",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "蒋防",
+        "degree": 5,
+        "community": 2
+    },
+    {
+        "name": "曹唐",
+        "degree": 2,
+        "community": 3
+    },
+    {
+        "name": "孔颙",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "崔日用",
+        "degree": 16,
+        "community": 3
+    },
+    {
+        "name": "韦说",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "阎济美",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "王正己",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "苏涣",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "邵楚苌",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "张嘉贞",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "王维",
+        "degree": 58,
+        "community": 1
+    },
+    {
+        "name": "常衮",
+        "degree": 12,
+        "community": 2
+    },
+    {
+        "name": "张翱",
+        "degree": 2,
+        "community": 2
+    },
+    {
+        "name": "韩琮",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "郑颢",
+        "degree": 5,
+        "community": 1
+    },
+    {
+        "name": "魏謩",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "司马都",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "綦毋诚",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "王枢",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "杨炎",
+        "degree": 7,
+        "community": 1
+    },
+    {
+        "name": "刘叉",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "曹生",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "唐彦谦",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "窦弘余",
+        "degree": 8,
+        "community": 2
+    },
+    {
+        "name": "卢延让",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "李景",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "元稹",
+        "degree": 125,
+        "community": 1
+    },
+    {
+        "name": "庾敬休",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "沈东美",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "李阳冰",
+        "degree": 13,
+        "community": 1
+    },
+    {
+        "name": "罗绍威",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "殷寅",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "王衍",
+        "degree": 11,
+        "community": 0
+    },
+    {
+        "name": "张旭",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "李白",
+        "degree": 136,
+        "community": 1
+    },
+    {
+        "name": "严公弼",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "邢群",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "吴仁璧",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "沈佺期",
+        "degree": 30,
+        "community": 2
+    },
+    {
+        "name": "路岩",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "周贺",
+        "degree": 12,
+        "community": 1
+    },
+    {
+        "name": "翁洮",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "李兼",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "钱珝",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "王茂时",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "陈标",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "温庭筠",
+        "degree": 15,
+        "community": 1
+    },
+    {
+        "name": "谢偃",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "朱湾",
+        "degree": 5,
+        "community": 2
+    },
+    {
+        "name": "温庭皓",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "郑锡",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "韦庄",
+        "degree": 21,
+        "community": 1
+    },
+    {
+        "name": "李岩",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "卢子发",
+        "degree": 11,
+        "community": 0
+    },
+    {
+        "name": "卢嵩",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "陈元裕",
+        "degree": 2,
+        "community": 2
+    },
+    {
+        "name": "罗弘信",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "王迥",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "李渥",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "李泌",
+        "degree": 12,
+        "community": 1
+    },
+    {
+        "name": "李君房",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "谢勮",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "王炎",
+        "degree": 7,
+        "community": 1
+    },
+    {
+        "name": "魏丕",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "陆畅",
+        "degree": 8,
+        "community": 1
+    },
+    {
+        "name": "柳珪",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "王昌龄",
+        "degree": 13,
+        "community": 1
+    },
+    {
+        "name": "许圉师",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "李臯",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "陆敬",
+        "degree": 7,
+        "community": 0
+    },
+    {
+        "name": "厉玄",
+        "degree": 5,
+        "community": 1
+    },
+    {
+        "name": "吴融",
+        "degree": 18,
+        "community": 1
+    },
+    {
+        "name": "张谓",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "江文蔚",
+        "degree": 2,
+        "community": 2
+    },
+    {
+        "name": "鱼又玄",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "顾云",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "韦安石",
+        "degree": 10,
+        "community": 1
+    },
+    {
+        "name": "任华",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "欧阳询",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "朱昼",
+        "degree": 2,
+        "community": 2
+    },
+    {
+        "name": "蒲禹卿",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "李栖筠",
+        "degree": 7,
+        "community": 1
+    },
+    {
+        "name": "张碧",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "贾謩",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "朱休",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "欧阳衮",
+        "degree": 6,
+        "community": 2
+    },
+    {
+        "name": "刘耕",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "李浩弼",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "李慎微",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "韦嗣立",
+        "degree": 35,
+        "community": 2
+    },
+    {
+        "name": "萧颖士",
+        "degree": 18,
+        "community": 0
+    },
+    {
+        "name": "孟郊",
+        "degree": 71,
+        "community": 1
+    },
+    {
+        "name": "权龙褒",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "李嘉祐",
+        "degree": 36,
+        "community": 2
+    },
+    {
+        "name": "钟谟",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "敬括",
+        "degree": 2,
+        "community": 2
+    },
+    {
+        "name": "鱼玄机",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "徐仁嗣",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "吴筠",
+        "degree": 6,
+        "community": 1
+    },
+    {
+        "name": "息夫牧",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "廖匡图",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "刘赞",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "武翊黄",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "刘长卿",
+        "degree": 32,
+        "community": 1
+    },
+    {
+        "name": "林蕴",
+        "degree": 9,
+        "community": 1
+    },
+    {
+        "name": "陆龟蒙",
+        "degree": 29,
+        "community": 1
+    },
+    {
+        "name": "费冠卿",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "方干",
+        "degree": 19,
+        "community": 1
+    },
+    {
+        "name": "白敏中",
+        "degree": 13,
+        "community": 1
+    },
+    {
+        "name": "张诚",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "颜粲",
+        "degree": 2,
+        "community": 2
+    },
+    {
+        "name": "李隲",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "张柬之",
+        "degree": 7,
+        "community": 3
+    },
+    {
+        "name": "孟浩然",
+        "degree": 51,
+        "community": 1
+    },
+    {
+        "name": "韩熙载",
+        "degree": 15,
+        "community": 2
+    },
+    {
+        "name": "孙翃",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "李渤",
+        "degree": 7,
+        "community": 1
+    },
+    {
+        "name": "王宏",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "李珏",
+        "degree": 6,
+        "community": 1
+    },
+    {
+        "name": "卫中行",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "刘祎之",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "鲍防",
+        "degree": 16,
+        "community": 2
+    },
+    {
+        "name": "杜甫",
+        "degree": 153,
+        "community": 1
+    },
+    {
+        "name": "窦牟",
+        "degree": 27,
+        "community": 1
+    },
+    {
+        "name": "林滋",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "张孜",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "欧阳澥",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "马怀素",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "李涛",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "石抱忠",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "刘乂",
+        "degree": 8,
+        "community": 1
+    },
+    {
+        "name": "韩泰",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "李晔",
+        "degree": 5,
+        "community": 1
+    },
+    {
+        "name": "张仲方",
+        "degree": 7,
+        "community": 1
+    },
+    {
+        "name": "卢顺之",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "王龟",
+        "degree": 6,
+        "community": 1
+    },
+    {
+        "name": "封彦卿",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "王烈",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "赵骅",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "王承旨",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "萧昕",
+        "degree": 10,
+        "community": 1
+    },
+    {
+        "name": "张署",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "苏绾",
+        "degree": 5,
+        "community": 3
+    },
+    {
+        "name": "张仲素",
+        "degree": 5,
+        "community": 1
+    },
+    {
+        "name": "张翚",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "李群玉",
+        "degree": 16,
+        "community": 1
+    },
+    {
+        "name": "郑巢",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "朱仲晦",
+        "degree": 24,
+        "community": 0
+    },
+    {
+        "name": "喻坦之",
+        "degree": 9,
+        "community": 1
+    },
+    {
+        "name": "欧阳詹",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "刘济",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "赵鸿",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "李昼",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "王彦威",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "乔潭",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "王涣",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "颜师古",
+        "degree": 2,
+        "community": 2
+    },
+    {
+        "name": "韦渠牟",
+        "degree": 14,
+        "community": 1
+    },
+    {
+        "name": "崔护",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "韦元旦",
+        "degree": 10,
+        "community": 0
+    },
+    {
+        "name": "张鼎",
+        "degree": 2,
+        "community": 2
+    },
+    {
+        "name": "窦庠",
+        "degree": 26,
+        "community": 1
+    },
+    {
+        "name": "杨敬之",
+        "degree": 13,
+        "community": 1
+    },
+    {
+        "name": "独孤实",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "冷朝阳",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "张杰",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "万齐融",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "冯著",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "张翔",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "卢鸿一",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "许宣平",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "郑据",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "魏奉古",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "皇甫冉",
+        "degree": 43,
+        "community": 2
+    },
+    {
+        "name": "冯衮",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "裴潾",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "封敖",
+        "degree": 9,
+        "community": 1
+    },
+    {
+        "name": "王毂",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "刘迥",
+        "degree": 7,
+        "community": 0
+    },
+    {
+        "name": "韦抗",
+        "degree": 5,
+        "community": 2
+    },
+    {
+        "name": "李直方",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "房白",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "李愬",
+        "degree": 13,
+        "community": 1
+    },
+    {
+        "name": "裴漼",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "刘鲁风",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "廖匡齐",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "李家明",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "令狐德棻",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "裴度",
+        "degree": 18,
+        "community": 1
+    },
+    {
+        "name": "张洎",
+        "degree": 9,
+        "community": 2
+    },
+    {
+        "name": "萧至忠",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "崔载华",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "郑启",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "朱景玄",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "崔橹",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "张登",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "王丘",
+        "degree": 7,
+        "community": 0
+    },
+    {
+        "name": "魏元忠",
+        "degree": 3,
+        "community": 2
+    },
+    {
+        "name": "韦冰",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "程行谌",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "高退之",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "高峤",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "韦丹",
+        "degree": 9,
+        "community": 1
+    },
+    {
+        "name": "陈咏",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "王謩",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "张敬忠",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "周繇",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "张贾",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "胡皓",
+        "degree": 7,
+        "community": 3
+    },
+    {
+        "name": "薛据",
+        "degree": 15,
+        "community": 1
+    },
+    {
+        "name": "杨潜",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "颜真卿",
+        "degree": 54,
+        "community": 1
+    },
+    {
+        "name": "宇文融",
+        "degree": 2,
+        "community": 3
+    },
+    {
+        "name": "贾岛",
+        "degree": 110,
+        "community": 1
+    },
+    {
+        "name": "袁高",
+        "degree": 3,
+        "community": 2
+    },
+    {
+        "name": "薛曜",
+        "degree": 3,
+        "community": 2
+    },
+    {
+        "name": "杨廉",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "卢仝",
+        "degree": 14,
+        "community": 1
+    },
+    {
+        "name": "杨焕",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "张瑛",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "何仲宣",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "狄仁杰",
+        "degree": 3,
+        "community": 2
+    },
+    {
+        "name": "任公叔",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "卢鉟",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "李清",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "路贯",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "郑述诚",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "李堪",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "罗衮",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "蒋涣",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "温会",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "岑羲",
+        "degree": 11,
+        "community": 2
+    },
+    {
+        "name": "王廷珪",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "崔致远",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "睿宗",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "周朴",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "李昪",
+        "degree": 12,
+        "community": 0
+    },
+    {
+        "name": "郭求",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "钱弘儇",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "李频",
+        "degree": 39,
+        "community": 1
+    },
+    {
+        "name": "长孙无忌",
+        "degree": 6,
+        "community": 0
+    },
+    {
+        "name": "盛小丛",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "李观",
+        "degree": 6,
+        "community": 1
+    },
+    {
+        "name": "韩仪",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "郑符",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "郑余庆",
+        "degree": 15,
+        "community": 1
+    },
+    {
+        "name": "浑惟明",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "郑虔",
+        "degree": 7,
+        "community": 1
+    },
+    {
+        "name": "陶雍",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "查文徽",
+        "degree": 3,
+        "community": 2
+    },
+    {
+        "name": "李涉",
+        "degree": 9,
+        "community": 0
+    },
+    {
+        "name": "荆浩",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "孙逖",
+        "degree": 5,
+        "community": 0
+    },
+    {
+        "name": "刘真",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "赵彦昭",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "顾况",
+        "degree": 38,
+        "community": 1
+    },
+    {
+        "name": "郑丹",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "刘瞻",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "钱弘倧",
+        "degree": 7,
+        "community": 0
+    },
+    {
+        "name": "苗发",
+        "degree": 18,
+        "community": 1
+    },
+    {
+        "name": "李逢吉",
+        "degree": 8,
+        "community": 1
+    },
+    {
+        "name": "陈羽",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "崔信明",
+        "degree": 2,
+        "community": 3
+    },
+    {
+        "name": "刘舟",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "苏源明",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "刘三复",
+        "degree": 8,
+        "community": 1
+    },
+    {
+        "name": "王纬",
+        "degree": 6,
+        "community": 0
+    },
+    {
+        "name": "韦夏卿",
+        "degree": 19,
+        "community": 1
+    },
+    {
+        "name": "许浑",
+        "degree": 50,
+        "community": 1
+    },
+    {
+        "name": "崔成甫",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "谭用之",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "武元衡",
+        "degree": 82,
+        "community": 1
+    },
+    {
+        "name": "梁洽",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "孟云卿",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "李煜",
+        "degree": 12,
+        "community": 0
+    },
+    {
+        "name": "徐坚",
+        "degree": 4,
+        "community": 2
+    },
+    {
+        "name": "樊珣",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "权审",
+        "degree": 2,
+        "community": 2
+    },
+    {
+        "name": "朱长文",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "王涯",
+        "degree": 12,
+        "community": 1
+    },
+    {
+        "name": "李揆",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "石贯",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "王甚夷",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "邹绍先",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "宋齐丘",
+        "degree": 9,
+        "community": 2
+    },
+    {
+        "name": "张彤",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "冯宿",
+        "degree": 9,
+        "community": 1
+    },
+    {
+        "name": "薛戎",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "吕让",
+        "degree": 8,
+        "community": 2
+    },
+    {
+        "name": "崔日知",
+        "degree": 7,
+        "community": 0
+    },
+    {
+        "name": "赵蕃",
+        "degree": 3,
+        "community": 2
+    },
+    {
+        "name": "李甘",
+        "degree": 2,
+        "community": 3
+    },
+    {
+        "name": "和凝",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "张𬸦",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "田澄",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "崔安潜",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "翁承赞",
+        "degree": 5,
+        "community": 0
+    },
+    {
+        "name": "李荣",
+        "degree": 2,
+        "community": 3
+    },
+    {
+        "name": "归登",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "苏晋",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "杜元颖",
+        "degree": 12,
+        "community": 1
+    },
+    {
+        "name": "乔琳",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "富嘉谟",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "曹松",
+        "degree": 20,
+        "community": 1
+    },
+    {
+        "name": "李景让",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "卢藏用",
+        "degree": 10,
+        "community": 3
+    },
+    {
+        "name": "王建",
+        "degree": 22,
+        "community": 1
+    },
+    {
+        "name": "刘谷",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "李华",
+        "degree": 10,
+        "community": 1
+    },
+    {
+        "name": "哥舒翰",
+        "degree": 11,
+        "community": 1
+    },
+    {
+        "name": "郭良",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "郑儋",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "王湾",
+        "degree": 8,
+        "community": 3
+    },
+    {
+        "name": "陆希声",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "张众甫",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "宋济",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "柳浑",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "韦澳",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "韦承庆",
+        "degree": 3,
+        "community": 3
+    },
+    {
+        "name": "祖咏",
+        "degree": 17,
+        "community": 2
+    },
+    {
+        "name": "李琪",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "林杰",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "韦迢",
+        "degree": 5,
+        "community": 1
+    },
+    {
+        "name": "苏颋",
+        "degree": 32,
+        "community": 1
+    },
+    {
+        "name": "陈元初",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "来济",
+        "degree": 4,
+        "community": 2
+    },
+    {
+        "name": "王季友",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "裴坦",
+        "degree": 11,
+        "community": 1
+    },
+    {
+        "name": "李羽",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "高瑾",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "樊骧",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "严恽",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "李舜弦",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "张说",
+        "degree": 51,
+        "community": 1
+    },
+    {
+        "name": "张义方",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "韦济",
+        "degree": 7,
+        "community": 1
+    },
+    {
+        "name": "邵谒",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "高铢",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "徐锴",
+        "degree": 8,
+        "community": 2
+    },
+    {
+        "name": "辛学士",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "潘唐",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "刘炎",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "高元裕",
+        "degree": 8,
+        "community": 1
+    },
+    {
+        "name": "薛稷",
+        "degree": 5,
+        "community": 1
+    },
+    {
+        "name": "丘为",
+        "degree": 11,
+        "community": 0
+    },
+    {
+        "name": "卢真",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "赵居贞",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "陈德诚",
+        "degree": 5,
+        "community": 0
+    },
+    {
+        "name": "姚系",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "远公",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "元载",
+        "degree": 23,
+        "community": 3
+    },
+    {
+        "name": "裴光庭",
+        "degree": 9,
+        "community": 2
+    },
+    {
+        "name": "高亭",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "王溥",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "步非烟",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "柳宗元",
+        "degree": 94,
+        "community": 1
+    },
+    {
+        "name": "刘禹锡",
+        "degree": 67,
+        "community": 1
+    },
+    {
+        "name": "李序",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "康庭芝",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "韩昭",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "皮光业",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "萧项",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "张萧远",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "独孤及",
+        "degree": 24,
+        "community": 1
+    },
+    {
+        "name": "陶翰",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "裴澄",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "韦蟾",
+        "degree": 14,
+        "community": 1
+    },
+    {
+        "name": "王瑀",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "詹敦仁",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "宋璟",
+        "degree": 27,
+        "community": 1
+    },
+    {
+        "name": "李怀远",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "徐希仁",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "王𬤇",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "李从谦",
+        "degree": 2,
+        "community": 2
+    },
+    {
+        "name": "陈陶",
+        "degree": 15,
+        "community": 3
+    },
+    {
+        "name": "朱庆余",
+        "degree": 30,
+        "community": 0
+    },
+    {
+        "name": "张谔",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "苏瓌",
+        "degree": 4,
+        "community": 2
+    },
+    {
+        "name": "李程",
+        "degree": 16,
+        "community": 1
+    },
+    {
+        "name": "刘子玄",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "刘敬之",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "邵大震",
+        "degree": 2,
+        "community": 3
+    },
+    {
+        "name": "李解",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "卢言",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "刘斌",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "杨茂卿",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "杨嗣复",
+        "degree": 11,
+        "community": 1
+    },
+    {
+        "name": "房融",
+        "degree": 2,
+        "community": 3
+    },
+    {
+        "name": "郑审",
+        "degree": 6,
+        "community": 1
+    },
+    {
+        "name": "包佶",
+        "degree": 34,
+        "community": 1
+    },
+    {
+        "name": "卢元辅",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "沈彬",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "薛元超",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "冯延巳",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "皇甫湜",
+        "degree": 18,
+        "community": 1
+    },
+    {
+        "name": "卢文纪",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "邢巨",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "崔澹",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "乐史",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "袁傪",
+        "degree": 11,
+        "community": 0
+    },
+    {
+        "name": "戴良",
+        "degree": 20,
+        "community": 0
+    },
+    {
+        "name": "王质",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "钱熙",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "许敬宗",
+        "degree": 24,
+        "community": 0
+    },
+    {
+        "name": "阎朝隐",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "徐凝",
+        "degree": 7,
+        "community": 1
+    },
+    {
+        "name": "萧彧",
+        "degree": 3,
+        "community": 2
+    },
+    {
+        "name": "李岘",
+        "degree": 6,
+        "community": 2
+    },
+    {
+        "name": "马总",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "韩弇",
+        "degree": 5,
+        "community": 1
+    },
+    {
+        "name": "李远",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "郭郧",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "高越",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "李暠",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "韩滉",
+        "degree": 17,
+        "community": 1
+    },
+    {
+        "name": "崔公信",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "严武",
+        "degree": 5,
+        "community": 1
+    },
+    {
+        "name": "孙革",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "彭伉",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "韦遵",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "马异",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "杨巨源",
+        "degree": 23,
+        "community": 1
+    },
+    {
+        "name": "窦参",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "刘洞",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "罗让",
+        "degree": 9,
+        "community": 2
+    },
+    {
+        "name": "石季武",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "霍总",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "樊晃",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "李乂",
+        "degree": 13,
+        "community": 2
+    },
+    {
+        "name": "裴迪",
+        "degree": 17,
+        "community": 1
+    },
+    {
+        "name": "黄颇",
+        "degree": 8,
+        "community": 2
+    },
+    {
+        "name": "潘孟阳",
+        "degree": 10,
+        "community": 2
+    },
+    {
+        "name": "皮日休",
+        "degree": 39,
+        "community": 1
+    },
+    {
+        "name": "窦巩",
+        "degree": 27,
+        "community": 1
+    },
+    {
+        "name": "张昭",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "徐峤",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "李嵘",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "钱信",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "黎逢",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "崔善为",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "羊滔",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "徐安贞",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "李升",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "王武陵",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "韦承贻",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "张巡",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "王韫秀",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "杨牢",
+        "degree": 3,
+        "community": 2
+    },
+    {
+        "name": "沈叔安",
+        "degree": 5,
+        "community": 0
+    },
+    {
+        "name": "王鉴",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "李体仁",
+        "degree": 2,
+        "community": 3
+    },
+    {
+        "name": "项斯",
+        "degree": 25,
+        "community": 1
+    },
+    {
+        "name": "郭澹",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "徐彦若",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "薛能",
+        "degree": 34,
+        "community": 1
+    },
+    {
+        "name": "王贞白",
+        "degree": 4,
+        "community": 3
+    },
+    {
+        "name": "刘长川",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "徐介",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "温宪",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "姚合",
+        "degree": 90,
+        "community": 1
+    },
+    {
+        "name": "卢拱",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "韩休",
+        "degree": 17,
+        "community": 2
+    },
+    {
+        "name": "张聿",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "权龙襄",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "李林甫",
+        "degree": 12,
+        "community": 3
+    },
+    {
+        "name": "江为",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "张九龄",
+        "degree": 61,
+        "community": 1
+    },
+    {
+        "name": "孟贯",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "张荐",
+        "degree": 27,
+        "community": 1
+    },
+    {
+        "name": "裴虔余",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "张后胤",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "韩察",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "杨夔",
+        "degree": 2,
+        "community": 3
+    },
+    {
+        "name": "杜正伦",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "李昌符",
+        "degree": 2,
+        "community": 3
+    },
+    {
+        "name": "李正辞",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "刘宪",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "令狐峘",
+        "degree": 3,
+        "community": 2
+    },
+    {
+        "name": "梁锽",
+        "degree": 2,
+        "community": 3
+    },
+    {
+        "name": "李郢",
+        "degree": 9,
+        "community": 1
+    },
+    {
+        "name": "陆瀍",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "李正封",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "崔璞",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "朱褒",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "元晟",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "戈牢",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "张芬",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "张轸",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "汤悦",
+        "degree": 7,
+        "community": 2
+    },
+    {
+        "name": "储嗣宗",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "卢肇",
+        "degree": 16,
+        "community": 1
+    },
+    {
+        "name": "魏扶",
+        "degree": 6,
+        "community": 1
+    },
+    {
+        "name": "王缙",
+        "degree": 27,
+        "community": 1
+    },
+    {
+        "name": "王勃",
+        "degree": 10,
+        "community": 1
+    },
+    {
+        "name": "钱徽",
+        "degree": 18,
+        "community": 1
+    },
+    {
+        "name": "李潜",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "吴武陵",
+        "degree": 4,
+        "community": 3
+    },
+    {
+        "name": "羊士谔",
+        "degree": 6,
+        "community": 1
+    },
+    {
+        "name": "姚康",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "夏侯孜",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "翁宏",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "萧祜",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "杜牧",
+        "degree": 77,
+        "community": 1
+    },
+    {
+        "name": "杨玢",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "元晦",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "罗炯",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "滕迈",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "刘沧",
+        "degree": 5,
+        "community": 2
+    },
+    {
+        "name": "张文成",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "韩偓",
+        "degree": 19,
+        "community": 1
+    },
+    {
+        "name": "钱镠",
+        "degree": 13,
+        "community": 1
+    },
+    {
+        "name": "李崇嗣",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "田游岩",
+        "degree": 4,
+        "community": 3
+    },
+    {
+        "name": "雍裕之",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "柳氏",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "崔尚",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "刘邺",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "黄璞",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "裴休",
+        "degree": 13,
+        "community": 2
+    },
+    {
+        "name": "刘希夷",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "姚鹄",
+        "degree": 18,
+        "community": 1
+    },
+    {
+        "name": "裴夷直",
+        "degree": 6,
+        "community": 1
+    },
+    {
+        "name": "卢景亮",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "王熊",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "裴说",
+        "degree": 11,
+        "community": 1
+    },
+    {
+        "name": "尹元凯",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "姚岩杰",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "罗珦",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "冯伉",
+        "degree": 5,
+        "community": 1
+    },
+    {
+        "name": "杜羔",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "崔国辅",
+        "degree": 11,
+        "community": 1
+    },
+    {
+        "name": "吉逾",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "张弘靖",
+        "degree": 24,
+        "community": 1
+    },
+    {
+        "name": "杨郇伯",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "孟嘏",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "崔沔",
+        "degree": 5,
+        "community": 3
+    },
+    {
+        "name": "卢殷",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "李元操",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "王仲舒",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "关盼盼",
+        "degree": 5,
+        "community": 1
+    },
+    {
+        "name": "韦同则",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "王光庭",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "金厚载",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "李搏",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "韦斌",
+        "degree": 3,
+        "community": 3
+    },
+    {
+        "name": "李当",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "蔡京",
+        "degree": 9,
+        "community": 1
+    },
+    {
+        "name": "陈子良",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "吴少微",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "宇文鼎",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "陈彦",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "乔知之",
+        "degree": 7,
+        "community": 2
+    },
+    {
+        "name": "查元方",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "张又新",
+        "degree": 13,
+        "community": 2
+    },
+    {
+        "name": "褚遂良",
+        "degree": 6,
+        "community": 0
+    },
+    {
+        "name": "崔元略",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "伍彬",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "郑史",
+        "degree": 3,
+        "community": 3
+    },
+    {
+        "name": "郑昈",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "杨于陵",
+        "degree": 21,
+        "community": 1
+    },
+    {
+        "name": "元友让",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "刘采春",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "刘湾",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "李璆",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "庾承宣",
+        "degree": 8,
+        "community": 1
+    },
+    {
+        "name": "裴谟",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "谢观",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "戴叔伦",
+        "degree": 14,
+        "community": 2
+    },
+    {
+        "name": "李伉",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "柳公绰",
+        "degree": 9,
+        "community": 1
+    },
+    {
+        "name": "施肩吾",
+        "degree": 5,
+        "community": 1
+    },
+    {
+        "name": "钱弘佐",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "李颀",
+        "degree": 11,
+        "community": 1
+    },
+    {
+        "name": "王无竞",
+        "degree": 2,
+        "community": 3
+    },
+    {
+        "name": "徐铉",
+        "degree": 64,
+        "community": 1
+    },
+    {
+        "name": "崔涂",
+        "degree": 5,
+        "community": 2
+    },
+    {
+        "name": "裴延",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "樊宗师",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "钱昱",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "贺兰进明",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "殷遥",
+        "degree": 4,
+        "community": 2
+    },
+    {
+        "name": "崔瓘",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "崔峒",
+        "degree": 9,
+        "community": 1
+    },
+    {
+        "name": "卢纶",
+        "degree": 53,
+        "community": 1
+    },
+    {
+        "name": "李愿",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "吴丹",
+        "degree": 15,
+        "community": 1
+    },
+    {
+        "name": "陈翊",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "刘方平",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "吕温",
+        "degree": 32,
+        "community": 1
+    },
+    {
+        "name": "姚崇",
+        "degree": 14,
+        "community": 1
+    },
+    {
+        "name": "杨溥",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "长孙铸",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "裴羽仙",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "蔡希寂",
+        "degree": 5,
+        "community": 0
+    },
+    {
+        "name": "薛耀",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "房千里",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "白居易",
+        "degree": 264,
+        "community": 1
+    },
+    {
+        "name": "郑愕",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "王𪟝",
+        "degree": 5,
+        "community": 1
+    },
+    {
+        "name": "卢崇道",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "崔翘",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "司马扎",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "张偁",
+        "degree": 2,
+        "community": 3
+    },
+    {
+        "name": "武少仪",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "韩愈",
+        "degree": 148,
+        "community": 1
+    },
+    {
+        "name": "崔湜",
+        "degree": 12,
+        "community": 3
+    },
+    {
+        "name": "郑愔",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "刘蜕",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "沈千运",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "耿𣲗",
+        "degree": 26,
+        "community": 2
+    },
+    {
+        "name": "孟迟",
+        "degree": 2,
+        "community": 3
+    },
+    {
+        "name": "郑仁表",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "冯延鲁",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "徐放",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "杨宇",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "王景",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "裴通",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "韩雄",
+        "degree": 4,
+        "community": 3
+    },
+    {
+        "name": "王播",
+        "degree": 10,
+        "community": 1
+    },
+    {
+        "name": "朱放",
+        "degree": 19,
+        "community": 1
+    },
+    {
+        "name": "乔备",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "王铎",
+        "degree": 8,
+        "community": 1
+    },
+    {
+        "name": "王晙",
+        "degree": 3,
+        "community": 2
+    },
+    {
+        "name": "丁棱",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "安鸿渐",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "张衮",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "陆搢",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "吉中孚",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "姚向",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "包何",
+        "degree": 7,
+        "community": 0
+    },
+    {
+        "name": "张祜",
+        "degree": 24,
+        "community": 1
+    },
+    {
+        "name": "李续",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "张休",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "李明",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "窦仪",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "李中",
+        "degree": 12,
+        "community": 2
+    },
+    {
+        "name": "张昌宗",
+        "degree": 7,
+        "community": 2
+    },
+    {
+        "name": "罗隐",
+        "degree": 54,
+        "community": 1
+    },
+    {
+        "name": "姚伦",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "裴大章",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "王表",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "崔轩",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "唐思言",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "韦瓘",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "吴士矩",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "李宣古",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "萧华",
+        "degree": 6,
+        "community": 2
+    },
+    {
+        "name": "武三思",
+        "degree": 21,
+        "community": 3
+    },
+    {
+        "name": "郑璧",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "卢嗣业",
+        "degree": 5,
+        "community": 0
+    },
+    {
+        "name": "裴守真",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "孙棨",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "张建封",
+        "degree": 19,
+        "community": 1
+    },
+    {
+        "name": "王审知",
+        "degree": 3,
+        "community": 0
+    },
+    {
+        "name": "赵匡胤",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "王继勋",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "崔璐",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "高士廉",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "张乔",
+        "degree": 9,
+        "community": 1
+    },
+    {
+        "name": "陈彦博",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "刘崇龟",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "牛希济",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "王绩",
+        "degree": 4,
+        "community": 0
+    },
+    {
+        "name": "李鹏",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "李峤",
+        "degree": 19,
+        "community": 3
+    },
+    {
+        "name": "元万顷",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "周愿",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "韦坚",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "丁仙芝",
+        "degree": 2,
+        "community": 2
+    },
+    {
+        "name": "潘佑",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "郑澣",
+        "degree": 17,
+        "community": 1
+    },
+    {
+        "name": "马戴",
+        "degree": 20,
+        "community": 1
+    },
+    {
+        "name": "李翱",
+        "degree": 9,
+        "community": 1
+    },
+    {
+        "name": "吉𫘦𬳿",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "牟融",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "史虚白",
+        "degree": 7,
+        "community": 0
+    },
+    {
+        "name": "王潜",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "张正一",
+        "degree": 1,
+        "community": 1
+    },
+    {
+        "name": "贾邕",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "王储",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "唐扶",
+        "degree": 6,
+        "community": 1
+    },
+    {
+        "name": "路德延",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "沈亚之",
+        "degree": 15,
+        "community": 1
+    },
+    {
+        "name": "李蔚",
+        "degree": 9,
+        "community": 1
+    },
+    {
+        "name": "崔惠童",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "蒋钧",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "徐彦伯",
+        "degree": 5,
+        "community": 2
+    },
+    {
+        "name": "李縠",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "刘得仁",
+        "degree": 28,
+        "community": 1
+    },
+    {
+        "name": "陈谏",
+        "degree": 7,
+        "community": 1
+    },
+    {
+        "name": "张道符",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "崔颂",
+        "degree": 2,
+        "community": 2
+    },
+    {
+        "name": "张敬之",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "郑居中",
+        "degree": 5,
+        "community": 1
+    },
+    {
+        "name": "贾竦",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "滕珦",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "杜伟",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "王镣",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "陈嘏",
+        "degree": 1,
+        "community": 2
+    },
+    {
+        "name": "司空曙",
+        "degree": 32,
+        "community": 1
+    },
+    {
+        "name": "郑遨",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "南卓",
+        "degree": 9,
+        "community": 1
+    },
+    {
+        "name": "陶谷",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "季广琛",
+        "degree": 1,
+        "community": 3
+    },
+    {
+        "name": "柳中庸",
+        "degree": 6,
+        "community": 0
+    },
+    {
+        "name": "孟翔",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "李瀚",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "李浩",
+        "degree": 2,
+        "community": 1
+    },
+    {
+        "name": "崔立之",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "李夷简",
+        "degree": 21,
+        "community": 1
+    },
+    {
+        "name": "徐夤",
+        "degree": 5,
+        "community": 1
+    },
+    {
+        "name": "舒元舆",
+        "degree": 4,
+        "community": 1
+    },
+    {
+        "name": "李景伯",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "李克恭",
+        "degree": 3,
+        "community": 1
+    },
+    {
+        "name": "李损之",
+        "degree": 7,
+        "community": 0
+    },
+    {
+        "name": "张晔",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "郑谷",
+        "degree": 45,
+        "community": 1
+    },
+    {
+        "name": "韩倩",
+        "degree": 2,
+        "community": 0
+    },
+    {
+        "name": "郑愚",
+        "degree": 6,
+        "community": 1
+    },
+    {
+        "name": "张正元",
+        "degree": 1,
+        "community": 0
+    },
+    {
+        "name": "徐浩",
+        "degree": 10,
+        "community": 2
+    },
+    {
+        "name": "王公亮",
+        "degree": 2,
+        "community": 1
+    }
+]

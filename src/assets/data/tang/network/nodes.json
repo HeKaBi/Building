@@ -1,0 +1,142 @@
+[
+  {
+    "name": "李白",
+    "community": 1,
+    "x": 37,
+    "y": 35,
+    "symbolSize": 60
+  },
+  {
+    "name": "李贺",
+    "community": 1,
+    "x": 47,
+    "y": 65,
+    "symbolSize": 40
+  },
+  {
+    "name": "贺知章",
+    "community": 1,
+    "x": 23,
+    "y": 45,
+    "symbolSize": 40
+  },
+  {
+    "name": "张若虚",
+    "community": 1,
+    "x": 20,
+    "y": 25,
+    "symbolSize": 40
+  },
+  {
+    "name": "李商隐",
+    "community": 1,
+    "x": 78,
+    "y": 58,
+    "symbolSize": 40
+  },
+  {
+    "name": "陈子昂",
+    "community": 1,
+    "x": 85,
+    "y": 28,
+    "symbolSize": 40
+  },
+  {
+    "name": "杜甫",
+    "community": 2,
+    "x": 62,
+    "y": 35,
+    "symbolSize": 60
+  },
+  {
+    "name": "韩愈",
+    "community": 2,
+    "x": 45,
+    "y": 50,
+    "symbolSize": 60
+  },
+  {
+    "name": "白居易",
+    "community": 2,
+    "x": 65,
+    "y": 48,
+    "symbolSize": 40
+  },
+  {
+    "name": "杜牧",
+    "community": 2,
+    "x": 38,
+    "y": 62,
+    "symbolSize": 40
+  },
+  {
+    "name": "元稹",
+    "community": 2,
+    "x": 55,
+    "y": 57,
+    "symbolSize": 40
+  },
+  {
+    "name": "王维",
+    "community": 3,
+    "x": 80,
+    "y": 48,
+    "symbolSize": 40
+  },
+  {
+    "name": "孟浩然",
+    "community": 3,
+    "x": 85,
+    "y": 38,
+    "symbolSize": 40
+  },
+  {
+    "name": "韦应物",
+    "community": 3,
+    "x": 31,
+    "y": 55,
+    "symbolSize": 40
+  },
+  {
+    "name": "刘禹锡",
+    "community": 3,
+    "x": 55,
+    "y": 47,
+    "symbolSize": 35
+  },
+  {
+    "name": "王昌龄",
+    "community": 4,
+    "x": 60,
+    "y": 10,
+    "symbolSize": 40
+  },
+  {
+    "name": "岑参",
+    "community": 4,
+    "x": 56,
+    "y": 20,
+    "symbolSize": 40
+  },
+  {
+    "name": "王之涣",
+    "community": 4,
+    "x": 40,
+    "y": 10,
+    "symbolSize": 40
+  },
+  {
+    "name": "高适",
+    "community": 4,
+    "x": 45,
+    "y": 20,
+    "symbolSize": 40
+  },
+  {
+    "name": "杨炯",
+    "community": 4,
+    "x": 80,
+    "y": 18,
+    "symbolSize": 40
+  }
+]

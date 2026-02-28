@@ -1,0 +1,4944 @@
+{
+    "关汉卿": {
+        "count": 714,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 115
+            },
+            {
+                "name": "喜",
+                "value": 162
+            },
+            {
+                "name": "悲",
+                "value": 117
+            },
+            {
+                "name": "惧",
+                "value": 46
+            },
+            {
+                "name": "乐",
+                "value": 146
+            },
+            {
+                "name": "怒",
+                "value": 41
+            },
+            {
+                "name": "忧",
+                "value": 87
+            }
+        ]
+    },
+    "阚志学": {
+        "count": 2,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            },
+            {
+                "name": "怒",
+                "value": 1
+            }
+        ]
+    },
+    "王实甫": {
+        "count": 350,
+        "emotion": [
+            {
+                "name": "忧",
+                "value": 40
+            },
+            {
+                "name": "悲",
+                "value": 64
+            },
+            {
+                "name": "思",
+                "value": 66
+            },
+            {
+                "name": "喜",
+                "value": 74
+            },
+            {
+                "name": "乐",
+                "value": 75
+            },
+            {
+                "name": "惧",
+                "value": 17
+            },
+            {
+                "name": "怒",
+                "value": 14
+            }
+        ]
+    },
+    "杨维桢": {
+        "count": 5,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 2
+            },
+            {
+                "name": "悲",
+                "value": 2
+            },
+            {
+                "name": "思",
+                "value": 1
+            }
+        ]
+    },
+    "蒲察善长": {
+        "count": 9,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 1
+            },
+            {
+                "name": "悲",
+                "value": 4
+            },
+            {
+                "name": "思",
+                "value": 4
+            }
+        ]
+    },
+    "白贲": {
+        "count": 17,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 8
+            },
+            {
+                "name": "悲",
+                "value": 7
+            },
+            {
+                "name": "喜",
+                "value": 2
+            }
+        ]
+    },
+    "查德卿": {
+        "count": 5,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 4
+            },
+            {
+                "name": "忧",
+                "value": 1
+            }
+        ]
+    },
+    "高克礼": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "李唐宾": {
+        "count": 51,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 7
+            },
+            {
+                "name": "思",
+                "value": 13
+            },
+            {
+                "name": "怒",
+                "value": 6
+            },
+            {
+                "name": "喜",
+                "value": 11
+            },
+            {
+                "name": "忧",
+                "value": 1
+            },
+            {
+                "name": "悲",
+                "value": 11
+            },
+            {
+                "name": "惧",
+                "value": 2
+            }
+        ]
+    },
+    "王伯成": {
+        "count": 87,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 13
+            },
+            {
+                "name": "怒",
+                "value": 6
+            },
+            {
+                "name": "乐",
+                "value": 16
+            },
+            {
+                "name": "忧",
+                "value": 12
+            },
+            {
+                "name": "悲",
+                "value": 22
+            },
+            {
+                "name": "喜",
+                "value": 18
+            }
+        ]
+    },
+    "孔文升": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 1
+            }
+        ]
+    },
+    "白朴": {
+        "count": 207,
+        "emotion": [
+            {
+                "name": "忧",
+                "value": 20
+            },
+            {
+                "name": "思",
+                "value": 53
+            },
+            {
+                "name": "悲",
+                "value": 50
+            },
+            {
+                "name": "乐",
+                "value": 31
+            },
+            {
+                "name": "怒",
+                "value": 10
+            },
+            {
+                "name": "喜",
+                "value": 39
+            },
+            {
+                "name": "惧",
+                "value": 4
+            }
+        ]
+    },
+    "赵善庆": {
+        "count": 14,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 8
+            },
+            {
+                "name": "思",
+                "value": 4
+            },
+            {
+                "name": "乐",
+                "value": 2
+            }
+        ]
+    },
+    "沈禧": {
+        "count": 14,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 5
+            },
+            {
+                "name": "思",
+                "value": 2
+            },
+            {
+                "name": "忧",
+                "value": 2
+            },
+            {
+                "name": "悲",
+                "value": 3
+            },
+            {
+                "name": "喜",
+                "value": 2
+            }
+        ]
+    },
+    "马致远": {
+        "count": 399,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 78
+            },
+            {
+                "name": "乐",
+                "value": 78
+            },
+            {
+                "name": "惧",
+                "value": 25
+            },
+            {
+                "name": "喜",
+                "value": 73
+            },
+            {
+                "name": "怒",
+                "value": 26
+            },
+            {
+                "name": "悲",
+                "value": 91
+            },
+            {
+                "name": "忧",
+                "value": 28
+            }
+        ]
+    },
+    "石君宝": {
+        "count": 108,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 12
+            },
+            {
+                "name": "喜",
+                "value": 27
+            },
+            {
+                "name": "悲",
+                "value": 20
+            },
+            {
+                "name": "怒",
+                "value": 11
+            },
+            {
+                "name": "乐",
+                "value": 19
+            },
+            {
+                "name": "忧",
+                "value": 11
+            },
+            {
+                "name": "惧",
+                "value": 8
+            }
+        ]
+    },
+    "童童学士": {
+        "count": 16,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 4
+            },
+            {
+                "name": "思",
+                "value": 9
+            },
+            {
+                "name": "喜",
+                "value": 2
+            },
+            {
+                "name": "乐",
+                "value": 1
+            }
+        ]
+    },
+    "杨显之": {
+        "count": 59,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 10
+            },
+            {
+                "name": "悲",
+                "value": 13
+            },
+            {
+                "name": "思",
+                "value": 10
+            },
+            {
+                "name": "喜",
+                "value": 10
+            },
+            {
+                "name": "惧",
+                "value": 4
+            },
+            {
+                "name": "忧",
+                "value": 7
+            },
+            {
+                "name": "怒",
+                "value": 5
+            }
+        ]
+    },
+    "杜仁杰": {
+        "count": 24,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 8
+            },
+            {
+                "name": "悲",
+                "value": 3
+            },
+            {
+                "name": "思",
+                "value": 7
+            },
+            {
+                "name": "喜",
+                "value": 4
+            },
+            {
+                "name": "怒",
+                "value": 1
+            },
+            {
+                "name": "惧",
+                "value": 1
+            }
+        ]
+    },
+    "李好古": {
+        "count": 32,
+        "emotion": [
+            {
+                "name": "怒",
+                "value": 7
+            },
+            {
+                "name": "思",
+                "value": 4
+            },
+            {
+                "name": "喜",
+                "value": 7
+            },
+            {
+                "name": "悲",
+                "value": 5
+            },
+            {
+                "name": "乐",
+                "value": 3
+            },
+            {
+                "name": "忧",
+                "value": 4
+            },
+            {
+                "name": "惧",
+                "value": 2
+            }
+        ]
+    },
+    "陈克明": {
+        "count": 12,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 4
+            },
+            {
+                "name": "乐",
+                "value": 1
+            },
+            {
+                "name": "喜",
+                "value": 5
+            },
+            {
+                "name": "思",
+                "value": 2
+            }
+        ]
+    },
+    "高明": {
+        "count": 9,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 4
+            },
+            {
+                "name": "悲",
+                "value": 3
+            },
+            {
+                "name": "乐",
+                "value": 1
+            },
+            {
+                "name": "喜",
+                "value": 1
+            }
+        ]
+    },
+    "云龛子": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "忧",
+                "value": 1
+            }
+        ]
+    },
+    "高文秀": {
+        "count": 183,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 50
+            },
+            {
+                "name": "思",
+                "value": 23
+            },
+            {
+                "name": "悲",
+                "value": 15
+            },
+            {
+                "name": "忧",
+                "value": 31
+            },
+            {
+                "name": "怒",
+                "value": 19
+            },
+            {
+                "name": "喜",
+                "value": 28
+            },
+            {
+                "name": "惧",
+                "value": 17
+            }
+        ]
+    },
+    "张子坚": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "康进之": {
+        "count": 33,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 7
+            },
+            {
+                "name": "悲",
+                "value": 8
+            },
+            {
+                "name": "怒",
+                "value": 4
+            },
+            {
+                "name": "思",
+                "value": 8
+            },
+            {
+                "name": "乐",
+                "value": 5
+            },
+            {
+                "name": "忧",
+                "value": 1
+            }
+        ]
+    },
+    "王恽": {
+        "count": 2,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 1
+            },
+            {
+                "name": "思",
+                "value": 1
+            }
+        ]
+    },
+    "孔文卿": {
+        "count": 57,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 11
+            },
+            {
+                "name": "思",
+                "value": 7
+            },
+            {
+                "name": "喜",
+                "value": 6
+            },
+            {
+                "name": "忧",
+                "value": 19
+            },
+            {
+                "name": "乐",
+                "value": 10
+            },
+            {
+                "name": "怒",
+                "value": 3
+            },
+            {
+                "name": "惧",
+                "value": 1
+            }
+        ]
+    },
+    "孙周卿": {
+        "count": 3,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 2
+            },
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "刘唐卿": {
+        "count": 36,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 11
+            },
+            {
+                "name": "喜",
+                "value": 12
+            },
+            {
+                "name": "忧",
+                "value": 6
+            },
+            {
+                "name": "悲",
+                "value": 2
+            },
+            {
+                "name": "思",
+                "value": 3
+            },
+            {
+                "name": "怒",
+                "value": 1
+            },
+            {
+                "name": "惧",
+                "value": 1
+            }
+        ]
+    },
+    "薛昂夫": {
+        "count": 27,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 4
+            },
+            {
+                "name": "怒",
+                "value": 2
+            },
+            {
+                "name": "悲",
+                "value": 8
+            },
+            {
+                "name": "喜",
+                "value": 3
+            },
+            {
+                "name": "思",
+                "value": 6
+            },
+            {
+                "name": "忧",
+                "value": 3
+            },
+            {
+                "name": "惧",
+                "value": 1
+            }
+        ]
+    },
+    "王子一": {
+        "count": 50,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 9
+            },
+            {
+                "name": "乐",
+                "value": 20
+            },
+            {
+                "name": "忧",
+                "value": 3
+            },
+            {
+                "name": "悲",
+                "value": 11
+            },
+            {
+                "name": "惧",
+                "value": 2
+            },
+            {
+                "name": "怒",
+                "value": 2
+            },
+            {
+                "name": "喜",
+                "value": 3
+            }
+        ]
+    },
+    "马谦斋": {
+        "count": 3,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 2
+            },
+            {
+                "name": "喜",
+                "value": 1
+            }
+        ]
+    },
+    "狄君厚": {
+        "count": 47,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 6
+            },
+            {
+                "name": "喜",
+                "value": 14
+            },
+            {
+                "name": "忧",
+                "value": 8
+            },
+            {
+                "name": "乐",
+                "value": 5
+            },
+            {
+                "name": "惧",
+                "value": 5
+            },
+            {
+                "name": "悲",
+                "value": 7
+            },
+            {
+                "name": "怒",
+                "value": 2
+            }
+        ]
+    },
+    "钟嗣成": {
+        "count": 14,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 4
+            },
+            {
+                "name": "怒",
+                "value": 3
+            },
+            {
+                "name": "思",
+                "value": 2
+            },
+            {
+                "name": "喜",
+                "value": 2
+            },
+            {
+                "name": "乐",
+                "value": 3
+            }
+        ]
+    },
+    "杨朝英": {
+        "count": 8,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 4
+            },
+            {
+                "name": "思",
+                "value": 2
+            },
+            {
+                "name": "乐",
+                "value": 1
+            },
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "纪君祥": {
+        "count": 44,
+        "emotion": [
+            {
+                "name": "忧",
+                "value": 12
+            },
+            {
+                "name": "喜",
+                "value": 9
+            },
+            {
+                "name": "思",
+                "value": 7
+            },
+            {
+                "name": "怒",
+                "value": 3
+            },
+            {
+                "name": "惧",
+                "value": 8
+            },
+            {
+                "name": "悲",
+                "value": 3
+            },
+            {
+                "name": "乐",
+                "value": 2
+            }
+        ]
+    },
+    "孙仲章": {
+        "count": 33,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 3
+            },
+            {
+                "name": "惧",
+                "value": 4
+            },
+            {
+                "name": "喜",
+                "value": 8
+            },
+            {
+                "name": "思",
+                "value": 2
+            },
+            {
+                "name": "乐",
+                "value": 10
+            },
+            {
+                "name": "怒",
+                "value": 4
+            },
+            {
+                "name": "忧",
+                "value": 2
+            }
+        ]
+    },
+    "谢应芳": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 1
+            }
+        ]
+    },
+    "萧德祥": {
+        "count": 46,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 4
+            },
+            {
+                "name": "怒",
+                "value": 3
+            },
+            {
+                "name": "惧",
+                "value": 5
+            },
+            {
+                "name": "喜",
+                "value": 19
+            },
+            {
+                "name": "悲",
+                "value": 4
+            },
+            {
+                "name": "乐",
+                "value": 8
+            },
+            {
+                "name": "忧",
+                "value": 3
+            }
+        ]
+    },
+    "郑光祖": {
+        "count": 310,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 68
+            },
+            {
+                "name": "喜",
+                "value": 60
+            },
+            {
+                "name": "悲",
+                "value": 49
+            },
+            {
+                "name": "惧",
+                "value": 25
+            },
+            {
+                "name": "忧",
+                "value": 54
+            },
+            {
+                "name": "怒",
+                "value": 22
+            },
+            {
+                "name": "思",
+                "value": 32
+            }
+        ]
+    },
+    "睢玄明": {
+        "count": 12,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 3
+            },
+            {
+                "name": "悲",
+                "value": 2
+            },
+            {
+                "name": "喜",
+                "value": 4
+            },
+            {
+                "name": "思",
+                "value": 3
+            }
+        ]
+    },
+    "郑延玉": {
+        "count": 211,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 67
+            },
+            {
+                "name": "忧",
+                "value": 21
+            },
+            {
+                "name": "怒",
+                "value": 8
+            },
+            {
+                "name": "思",
+                "value": 23
+            },
+            {
+                "name": "乐",
+                "value": 53
+            },
+            {
+                "name": "悲",
+                "value": 25
+            },
+            {
+                "name": "惧",
+                "value": 14
+            }
+        ]
+    },
+    "徐田臣《杀狗记》": {
+        "count": 276,
+        "emotion": [
+            {
+                "name": "惧",
+                "value": 33
+            },
+            {
+                "name": "忧",
+                "value": 61
+            },
+            {
+                "name": "乐",
+                "value": 44
+            },
+            {
+                "name": "思",
+                "value": 49
+            },
+            {
+                "name": "喜",
+                "value": 44
+            },
+            {
+                "name": "悲",
+                "value": 34
+            },
+            {
+                "name": "怒",
+                "value": 11
+            }
+        ]
+    },
+    "杨舜臣": {
+        "count": 2,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            },
+            {
+                "name": "喜",
+                "value": 1
+            }
+        ]
+    },
+    "贾仲明": {
+        "count": 202,
+        "emotion": [
+            {
+                "name": "忧",
+                "value": 24
+            },
+            {
+                "name": "悲",
+                "value": 35
+            },
+            {
+                "name": "乐",
+                "value": 49
+            },
+            {
+                "name": "怒",
+                "value": 12
+            },
+            {
+                "name": "喜",
+                "value": 46
+            },
+            {
+                "name": "思",
+                "value": 23
+            },
+            {
+                "name": "惧",
+                "value": 13
+            }
+        ]
+    },
+    "宫天挺": {
+        "count": 92,
+        "emotion": [
+            {
+                "name": "惧",
+                "value": 12
+            },
+            {
+                "name": "忧",
+                "value": 11
+            },
+            {
+                "name": "思",
+                "value": 11
+            },
+            {
+                "name": "喜",
+                "value": 19
+            },
+            {
+                "name": "悲",
+                "value": 22
+            },
+            {
+                "name": "乐",
+                "value": 14
+            },
+            {
+                "name": "怒",
+                "value": 3
+            }
+        ]
+    },
+    "杨梓": {
+        "count": 151,
+        "emotion": [
+            {
+                "name": "忧",
+                "value": 25
+            },
+            {
+                "name": "惧",
+                "value": 14
+            },
+            {
+                "name": "喜",
+                "value": 31
+            },
+            {
+                "name": "思",
+                "value": 19
+            },
+            {
+                "name": "怒",
+                "value": 17
+            },
+            {
+                "name": "悲",
+                "value": 20
+            },
+            {
+                "name": "乐",
+                "value": 25
+            }
+        ]
+    },
+    "盍志学": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 1
+            }
+        ]
+    },
+    "元好问": {
+        "count": 4,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 2
+            },
+            {
+                "name": "乐",
+                "value": 1
+            },
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "顾德润": {
+        "count": 16,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 3
+            },
+            {
+                "name": "思",
+                "value": 6
+            },
+            {
+                "name": "乐",
+                "value": 2
+            },
+            {
+                "name": "喜",
+                "value": 2
+            },
+            {
+                "name": "忧",
+                "value": 2
+            },
+            {
+                "name": "怒",
+                "value": 1
+            }
+        ]
+    },
+    "徐琰": {
+        "count": 2,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 2
+            }
+        ]
+    },
+    "任昱": {
+        "count": 16,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 5
+            },
+            {
+                "name": "思",
+                "value": 7
+            },
+            {
+                "name": "喜",
+                "value": 3
+            },
+            {
+                "name": "乐",
+                "value": 1
+            }
+        ]
+    },
+    "费唐臣": {
+        "count": 46,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 11
+            },
+            {
+                "name": "喜",
+                "value": 8
+            },
+            {
+                "name": "乐",
+                "value": 11
+            },
+            {
+                "name": "思",
+                "value": 4
+            },
+            {
+                "name": "忧",
+                "value": 8
+            },
+            {
+                "name": "怒",
+                "value": 4
+            }
+        ]
+    },
+    "季子安": {
+        "count": 6,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 1
+            },
+            {
+                "name": "悲",
+                "value": 1
+            },
+            {
+                "name": "思",
+                "value": 2
+            },
+            {
+                "name": "乐",
+                "value": 2
+            }
+        ]
+    },
+    "苏彦文": {
+        "count": 5,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            },
+            {
+                "name": "思",
+                "value": 2
+            },
+            {
+                "name": "忧",
+                "value": 2
+            }
+        ]
+    },
+    "杨景贤": {
+        "count": 267,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 34
+            },
+            {
+                "name": "悲",
+                "value": 53
+            },
+            {
+                "name": "喜",
+                "value": 45
+            },
+            {
+                "name": "忧",
+                "value": 42
+            },
+            {
+                "name": "怒",
+                "value": 22
+            },
+            {
+                "name": "乐",
+                "value": 58
+            },
+            {
+                "name": "惧",
+                "value": 13
+            }
+        ]
+    },
+    "施惠": {
+        "count": 3,
+        "emotion": [
+            {
+                "name": "怒",
+                "value": 1
+            },
+            {
+                "name": "忧",
+                "value": 1
+            },
+            {
+                "name": "乐",
+                "value": 1
+            }
+        ]
+    },
+    "王大学士": {
+        "count": 16,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 5
+            },
+            {
+                "name": "悲",
+                "value": 5
+            },
+            {
+                "name": "怒",
+                "value": 1
+            },
+            {
+                "name": "乐",
+                "value": 3
+            },
+            {
+                "name": "惧",
+                "value": 2
+            }
+        ]
+    },
+    "孛罗御史": {
+        "count": 5,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 3
+            },
+            {
+                "name": "乐",
+                "value": 1
+            },
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "吴昌龄": {
+        "count": 74,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 6
+            },
+            {
+                "name": "喜",
+                "value": 22
+            },
+            {
+                "name": "忧",
+                "value": 10
+            },
+            {
+                "name": "乐",
+                "value": 14
+            },
+            {
+                "name": "思",
+                "value": 16
+            },
+            {
+                "name": "惧",
+                "value": 3
+            },
+            {
+                "name": "怒",
+                "value": 3
+            }
+        ]
+    },
+    "施惠《幽闺记》": {
+        "count": 277,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 37
+            },
+            {
+                "name": "忧",
+                "value": 46
+            },
+            {
+                "name": "思",
+                "value": 56
+            },
+            {
+                "name": "喜",
+                "value": 34
+            },
+            {
+                "name": "怒",
+                "value": 16
+            },
+            {
+                "name": "惧",
+                "value": 20
+            },
+            {
+                "name": "悲",
+                "value": 68
+            }
+        ]
+    },
+    "尚仲贤": {
+        "count": 100,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 17
+            },
+            {
+                "name": "忧",
+                "value": 14
+            },
+            {
+                "name": "乐",
+                "value": 17
+            },
+            {
+                "name": "思",
+                "value": 10
+            },
+            {
+                "name": "喜",
+                "value": 18
+            },
+            {
+                "name": "惧",
+                "value": 9
+            },
+            {
+                "name": "怒",
+                "value": 15
+            }
+        ]
+    },
+    "李子昌": {
+        "count": 7,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 1
+            },
+            {
+                "name": "悲",
+                "value": 2
+            },
+            {
+                "name": "思",
+                "value": 4
+            }
+        ]
+    },
+    "金仁杰": {
+        "count": 40,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 5
+            },
+            {
+                "name": "怒",
+                "value": 5
+            },
+            {
+                "name": "喜",
+                "value": 8
+            },
+            {
+                "name": "忧",
+                "value": 10
+            },
+            {
+                "name": "悲",
+                "value": 3
+            },
+            {
+                "name": "思",
+                "value": 9
+            }
+        ]
+    },
+    "阿里耀卿": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "一分儿": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 1
+            }
+        ]
+    },
+    "兰楚芳": {
+        "count": 27,
+        "emotion": [
+            {
+                "name": "惧",
+                "value": 1
+            },
+            {
+                "name": "悲",
+                "value": 6
+            },
+            {
+                "name": "喜",
+                "value": 6
+            },
+            {
+                "name": "思",
+                "value": 6
+            },
+            {
+                "name": "乐",
+                "value": 3
+            },
+            {
+                "name": "忧",
+                "value": 4
+            },
+            {
+                "name": "怒",
+                "value": 1
+            }
+        ]
+    },
+    "赵君祥": {
+        "count": 5,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 1
+            },
+            {
+                "name": "思",
+                "value": 1
+            },
+            {
+                "name": "忧",
+                "value": 1
+            },
+            {
+                "name": "悲",
+                "value": 2
+            }
+        ]
+    },
+    "范居中": {
+        "count": 9,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 5
+            },
+            {
+                "name": "思",
+                "value": 2
+            },
+            {
+                "name": "乐",
+                "value": 1
+            },
+            {
+                "name": "喜",
+                "value": 1
+            }
+        ]
+    },
+    "徐田臣": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 1
+            }
+        ]
+    },
+    "梁寅": {
+        "count": 2,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            },
+            {
+                "name": "忧",
+                "value": 1
+            }
+        ]
+    },
+    "王元和": {
+        "count": 6,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 3
+            },
+            {
+                "name": "悲",
+                "value": 1
+            },
+            {
+                "name": "怒",
+                "value": 1
+            },
+            {
+                "name": "乐",
+                "value": 1
+            }
+        ]
+    },
+    "彭寿之": {
+        "count": 4,
+        "emotion": [
+            {
+                "name": "忧",
+                "value": 1
+            },
+            {
+                "name": "悲",
+                "value": 1
+            },
+            {
+                "name": "乐",
+                "value": 1
+            },
+            {
+                "name": "喜",
+                "value": 1
+            }
+        ]
+    },
+    "李直夫": {
+        "count": 41,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 6
+            },
+            {
+                "name": "怒",
+                "value": 4
+            },
+            {
+                "name": "思",
+                "value": 6
+            },
+            {
+                "name": "喜",
+                "value": 16
+            },
+            {
+                "name": "忧",
+                "value": 1
+            },
+            {
+                "name": "悲",
+                "value": 7
+            },
+            {
+                "name": "惧",
+                "value": 1
+            }
+        ]
+    },
+    "邓学可": {
+        "count": 7,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 3
+            },
+            {
+                "name": "悲",
+                "value": 1
+            },
+            {
+                "name": "思",
+                "value": 1
+            },
+            {
+                "name": "乐",
+                "value": 1
+            },
+            {
+                "name": "惧",
+                "value": 1
+            }
+        ]
+    },
+    "吴镇": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "王举之": {
+        "count": 7,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 1
+            },
+            {
+                "name": "悲",
+                "value": 3
+            },
+            {
+                "name": "乐",
+                "value": 2
+            },
+            {
+                "name": "怒",
+                "value": 1
+            }
+        ]
+    },
+    "邓玉宾": {
+        "count": 36,
+        "emotion": [
+            {
+                "name": "惧",
+                "value": 4
+            },
+            {
+                "name": "思",
+                "value": 9
+            },
+            {
+                "name": "喜",
+                "value": 7
+            },
+            {
+                "name": "悲",
+                "value": 8
+            },
+            {
+                "name": "乐",
+                "value": 5
+            },
+            {
+                "name": "忧",
+                "value": 1
+            },
+            {
+                "name": "怒",
+                "value": 2
+            }
+        ]
+    },
+    "蒲道源": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "黄公望": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "邓玉宾子": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 1
+            }
+        ]
+    },
+    "王仲文": {
+        "count": 33,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 9
+            },
+            {
+                "name": "喜",
+                "value": 7
+            },
+            {
+                "name": "怒",
+                "value": 2
+            },
+            {
+                "name": "思",
+                "value": 5
+            },
+            {
+                "name": "悲",
+                "value": 9
+            },
+            {
+                "name": "惧",
+                "value": 1
+            }
+        ]
+    },
+    "张弘范": {
+        "count": 3,
+        "emotion": [
+            {
+                "name": "怒",
+                "value": 1
+            },
+            {
+                "name": "悲",
+                "value": 1
+            },
+            {
+                "name": "乐",
+                "value": 1
+            }
+        ]
+    },
+    "高茂卿": {
+        "count": 30,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 2
+            },
+            {
+                "name": "悲",
+                "value": 8
+            },
+            {
+                "name": "乐",
+                "value": 6
+            },
+            {
+                "name": "惧",
+                "value": 4
+            },
+            {
+                "name": "喜",
+                "value": 8
+            },
+            {
+                "name": "怒",
+                "value": 1
+            },
+            {
+                "name": "忧",
+                "value": 1
+            }
+        ]
+    },
+    "武汉臣": {
+        "count": 57,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 18
+            },
+            {
+                "name": "悲",
+                "value": 13
+            },
+            {
+                "name": "乐",
+                "value": 8
+            },
+            {
+                "name": "忧",
+                "value": 3
+            },
+            {
+                "name": "思",
+                "value": 5
+            },
+            {
+                "name": "惧",
+                "value": 7
+            },
+            {
+                "name": "怒",
+                "value": 3
+            }
+        ]
+    },
+    "程景初": {
+        "count": 4,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 2
+            },
+            {
+                "name": "思",
+                "value": 2
+            }
+        ]
+    },
+    "张彦文": {
+        "count": 3,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 2
+            },
+            {
+                "name": "忧",
+                "value": 1
+            }
+        ]
+    },
+    "吕止庵": {
+        "count": 26,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 6
+            },
+            {
+                "name": "思",
+                "value": 8
+            },
+            {
+                "name": "喜",
+                "value": 5
+            },
+            {
+                "name": "乐",
+                "value": 2
+            },
+            {
+                "name": "忧",
+                "value": 2
+            },
+            {
+                "name": "怒",
+                "value": 3
+            }
+        ]
+    },
+    "黑老五": {
+        "count": 7,
+        "emotion": [
+            {
+                "name": "惧",
+                "value": 1
+            },
+            {
+                "name": "思",
+                "value": 3
+            },
+            {
+                "name": "怒",
+                "value": 2
+            },
+            {
+                "name": "喜",
+                "value": 1
+            }
+        ]
+    },
+    "景元启": {
+        "count": 10,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            },
+            {
+                "name": "乐",
+                "value": 3
+            },
+            {
+                "name": "思",
+                "value": 3
+            },
+            {
+                "name": "喜",
+                "value": 2
+            },
+            {
+                "name": "怒",
+                "value": 1
+            }
+        ]
+    },
+    "严忠济": {
+        "count": 2,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 1
+            },
+            {
+                "name": "喜",
+                "value": 1
+            }
+        ]
+    },
+    "汤舜民": {
+        "count": 171,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 48
+            },
+            {
+                "name": "思",
+                "value": 51
+            },
+            {
+                "name": "喜",
+                "value": 18
+            },
+            {
+                "name": "忧",
+                "value": 9
+            },
+            {
+                "name": "怒",
+                "value": 10
+            },
+            {
+                "name": "乐",
+                "value": 32
+            },
+            {
+                "name": "惧",
+                "value": 3
+            }
+        ]
+    },
+    "史九散人": {
+        "count": 43,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 6
+            },
+            {
+                "name": "喜",
+                "value": 10
+            },
+            {
+                "name": "乐",
+                "value": 6
+            },
+            {
+                "name": "怒",
+                "value": 2
+            },
+            {
+                "name": "悲",
+                "value": 11
+            },
+            {
+                "name": "忧",
+                "value": 6
+            },
+            {
+                "name": "惧",
+                "value": 2
+            }
+        ]
+    },
+    "石子章": {
+        "count": 34,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 4
+            },
+            {
+                "name": "思",
+                "value": 7
+            },
+            {
+                "name": "喜",
+                "value": 11
+            },
+            {
+                "name": "乐",
+                "value": 10
+            },
+            {
+                "name": "惧",
+                "value": 1
+            },
+            {
+                "name": "怒",
+                "value": 1
+            }
+        ]
+    },
+    "姚燧": {
+        "count": 18,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 8
+            },
+            {
+                "name": "悲",
+                "value": 6
+            },
+            {
+                "name": "乐",
+                "value": 3
+            },
+            {
+                "name": "忧",
+                "value": 1
+            }
+        ]
+    },
+    "奥敦周卿": {
+        "count": 5,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 2
+            },
+            {
+                "name": "思",
+                "value": 1
+            },
+            {
+                "name": "喜",
+                "value": 1
+            },
+            {
+                "name": "怒",
+                "value": 1
+            }
+        ]
+    },
+    "伯颜": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 1
+            }
+        ]
+    },
+    "曹德": {
+        "count": 7,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 3
+            },
+            {
+                "name": "思",
+                "value": 1
+            },
+            {
+                "name": "忧",
+                "value": 1
+            },
+            {
+                "name": "悲",
+                "value": 2
+            }
+        ]
+    },
+    "罗贯中": {
+        "count": 45,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 12
+            },
+            {
+                "name": "悲",
+                "value": 9
+            },
+            {
+                "name": "喜",
+                "value": 9
+            },
+            {
+                "name": "思",
+                "value": 6
+            },
+            {
+                "name": "忧",
+                "value": 7
+            },
+            {
+                "name": "怒",
+                "value": 2
+            }
+        ]
+    },
+    "赵天锡": {
+        "count": 3,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 2
+            },
+            {
+                "name": "喜",
+                "value": 1
+            }
+        ]
+    },
+    "高秀文": {
+        "count": 12,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 3
+            },
+            {
+                "name": "喜",
+                "value": 3
+            },
+            {
+                "name": "怒",
+                "value": 1
+            },
+            {
+                "name": "思",
+                "value": 5
+            }
+        ]
+    },
+    "刘伯亨": {
+        "count": 14,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 6
+            },
+            {
+                "name": "怒",
+                "value": 1
+            },
+            {
+                "name": "思",
+                "value": 4
+            },
+            {
+                "name": "忧",
+                "value": 2
+            },
+            {
+                "name": "乐",
+                "value": 1
+            }
+        ]
+    },
+    "卢挚": {
+        "count": 9,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 4
+            },
+            {
+                "name": "悲",
+                "value": 4
+            },
+            {
+                "name": "喜",
+                "value": 1
+            }
+        ]
+    },
+    "卫立中": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 1
+            }
+        ]
+    },
+    "赵显宏": {
+        "count": 9,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 4
+            },
+            {
+                "name": "喜",
+                "value": 3
+            },
+            {
+                "name": "思",
+                "value": 1
+            },
+            {
+                "name": "乐",
+                "value": 1
+            }
+        ]
+    },
+    "王爱山": {
+        "count": 2,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 2
+            }
+        ]
+    },
+    "不忽木": {
+        "count": 14,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 5
+            },
+            {
+                "name": "思",
+                "value": 2
+            },
+            {
+                "name": "喜",
+                "value": 1
+            },
+            {
+                "name": "忧",
+                "value": 3
+            },
+            {
+                "name": "悲",
+                "value": 3
+            }
+        ]
+    },
+    "邾仲谊": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 1
+            }
+        ]
+    },
+    "赵雍": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 1
+            }
+        ]
+    },
+    "鲜于枢": {
+        "count": 4,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 1
+            },
+            {
+                "name": "思",
+                "value": 2
+            },
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "李文蔚": {
+        "count": 87,
+        "emotion": [
+            {
+                "name": "忧",
+                "value": 23
+            },
+            {
+                "name": "悲",
+                "value": 8
+            },
+            {
+                "name": "惧",
+                "value": 6
+            },
+            {
+                "name": "喜",
+                "value": 11
+            },
+            {
+                "name": "思",
+                "value": 10
+            },
+            {
+                "name": "怒",
+                "value": 5
+            },
+            {
+                "name": "乐",
+                "value": 24
+            }
+        ]
+    },
+    "王嘉甫": {
+        "count": 5,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 4
+            },
+            {
+                "name": "喜",
+                "value": 1
+            }
+        ]
+    },
+    "王和卿": {
+        "count": 13,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 4
+            },
+            {
+                "name": "悲",
+                "value": 2
+            },
+            {
+                "name": "喜",
+                "value": 2
+            },
+            {
+                "name": "乐",
+                "value": 1
+            },
+            {
+                "name": "忧",
+                "value": 1
+            },
+            {
+                "name": "怒",
+                "value": 2
+            },
+            {
+                "name": "惧",
+                "value": 1
+            }
+        ]
+    },
+    "吴西逸": {
+        "count": 7,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 3
+            },
+            {
+                "name": "悲",
+                "value": 3
+            },
+            {
+                "name": "乐",
+                "value": 1
+            }
+        ]
+    },
+    "高明《蔡伯喈琵琶记》": {
+        "count": 378,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 88
+            },
+            {
+                "name": "乐",
+                "value": 52
+            },
+            {
+                "name": "思",
+                "value": 85
+            },
+            {
+                "name": "喜",
+                "value": 51
+            },
+            {
+                "name": "忧",
+                "value": 65
+            },
+            {
+                "name": "惧",
+                "value": 29
+            },
+            {
+                "name": "怒",
+                "value": 8
+            }
+        ]
+    },
+    "胡用和": {
+        "count": 18,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 5
+            },
+            {
+                "name": "悲",
+                "value": 1
+            },
+            {
+                "name": "喜",
+                "value": 1
+            },
+            {
+                "name": "忧",
+                "value": 4
+            },
+            {
+                "name": "怒",
+                "value": 4
+            },
+            {
+                "name": "思",
+                "value": 3
+            }
+        ]
+    },
+    "赵秉文": {
+        "count": 2,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 2
+            }
+        ]
+    },
+    "庾吉甫": {
+        "count": 18,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 7
+            },
+            {
+                "name": "喜",
+                "value": 3
+            },
+            {
+                "name": "忧",
+                "value": 3
+            },
+            {
+                "name": "思",
+                "value": 5
+            }
+        ]
+    },
+    "张子友": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 1
+            }
+        ]
+    },
+    "王仲元": {
+        "count": 25,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 10
+            },
+            {
+                "name": "乐",
+                "value": 4
+            },
+            {
+                "name": "悲",
+                "value": 5
+            },
+            {
+                "name": "喜",
+                "value": 3
+            },
+            {
+                "name": "怒",
+                "value": 1
+            },
+            {
+                "name": "忧",
+                "value": 2
+            }
+        ]
+    },
+    "乔吉": {
+        "count": 166,
+        "emotion": [
+            {
+                "name": "忧",
+                "value": 10
+            },
+            {
+                "name": "乐",
+                "value": 41
+            },
+            {
+                "name": "悲",
+                "value": 34
+            },
+            {
+                "name": "喜",
+                "value": 25
+            },
+            {
+                "name": "怒",
+                "value": 9
+            },
+            {
+                "name": "思",
+                "value": 39
+            },
+            {
+                "name": "惧",
+                "value": 8
+            }
+        ]
+    },
+    "朱庭玉": {
+        "count": 80,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 13
+            },
+            {
+                "name": "悲",
+                "value": 20
+            },
+            {
+                "name": "惧",
+                "value": 2
+            },
+            {
+                "name": "怒",
+                "value": 2
+            },
+            {
+                "name": "乐",
+                "value": 10
+            },
+            {
+                "name": "思",
+                "value": 29
+            },
+            {
+                "name": "忧",
+                "value": 4
+            }
+        ]
+    },
+    "秦简夫": {
+        "count": 89,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 24
+            },
+            {
+                "name": "悲",
+                "value": 13
+            },
+            {
+                "name": "忧",
+                "value": 19
+            },
+            {
+                "name": "思",
+                "value": 7
+            },
+            {
+                "name": "喜",
+                "value": 16
+            },
+            {
+                "name": "惧",
+                "value": 8
+            },
+            {
+                "name": "怒",
+                "value": 2
+            }
+        ]
+    },
+    "丘士元": {
+        "count": 5,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 5
+            }
+        ]
+    },
+    "杨立斋": {
+        "count": 11,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 4
+            },
+            {
+                "name": "悲",
+                "value": 2
+            },
+            {
+                "name": "喜",
+                "value": 5
+            }
+        ]
+    },
+    "刘因": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 1
+            }
+        ]
+    },
+    "贯云石": {
+        "count": 62,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 15
+            },
+            {
+                "name": "乐",
+                "value": 6
+            },
+            {
+                "name": "思",
+                "value": 27
+            },
+            {
+                "name": "忧",
+                "value": 4
+            },
+            {
+                "name": "喜",
+                "value": 10
+            }
+        ]
+    },
+    "陈草庵": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 1
+            }
+        ]
+    },
+    "盍西村": {
+        "count": 4,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 1
+            },
+            {
+                "name": "乐",
+                "value": 1
+            },
+            {
+                "name": "思",
+                "value": 2
+            }
+        ]
+    },
+    "张雨": {
+        "count": 3,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 1
+            },
+            {
+                "name": "乐",
+                "value": 2
+            }
+        ]
+    },
+    "班惟志": {
+        "count": 3,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 2
+            },
+            {
+                "name": "思",
+                "value": 1
+            }
+        ]
+    },
+    "赵彦晖": {
+        "count": 20,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 4
+            },
+            {
+                "name": "思",
+                "value": 7
+            },
+            {
+                "name": "惧",
+                "value": 1
+            },
+            {
+                "name": "喜",
+                "value": 5
+            },
+            {
+                "name": "忧",
+                "value": 1
+            },
+            {
+                "name": "悲",
+                "value": 2
+            }
+        ]
+    },
+    "宋方壶": {
+        "count": 27,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 11
+            },
+            {
+                "name": "乐",
+                "value": 7
+            },
+            {
+                "name": "悲",
+                "value": 6
+            },
+            {
+                "name": "怒",
+                "value": 1
+            },
+            {
+                "name": "喜",
+                "value": 2
+            }
+        ]
+    },
+    "李茂之": {
+        "count": 13,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 4
+            },
+            {
+                "name": "悲",
+                "value": 2
+            },
+            {
+                "name": "乐",
+                "value": 3
+            },
+            {
+                "name": "忧",
+                "value": 2
+            },
+            {
+                "name": "思",
+                "value": 2
+            }
+        ]
+    },
+    "爱山": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "唐毅夫": {
+        "count": 4,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 2
+            },
+            {
+                "name": "忧",
+                "value": 1
+            },
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "詹时雨": {
+        "count": 20,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 6
+            },
+            {
+                "name": "思",
+                "value": 5
+            },
+            {
+                "name": "乐",
+                "value": 3
+            },
+            {
+                "name": "忧",
+                "value": 3
+            },
+            {
+                "name": "怒",
+                "value": 1
+            },
+            {
+                "name": "惧",
+                "value": 1
+            },
+            {
+                "name": "喜",
+                "value": 1
+            }
+        ]
+    },
+    "阿鲁威": {
+        "count": 2,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 1
+            },
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "刘庭信": {
+        "count": 46,
+        "emotion": [
+            {
+                "name": "忧",
+                "value": 1
+            },
+            {
+                "name": "思",
+                "value": 16
+            },
+            {
+                "name": "喜",
+                "value": 5
+            },
+            {
+                "name": "乐",
+                "value": 8
+            },
+            {
+                "name": "悲",
+                "value": 15
+            },
+            {
+                "name": "怒",
+                "value": 1
+            }
+        ]
+    },
+    "张国宾": {
+        "count": 61,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 11
+            },
+            {
+                "name": "怒",
+                "value": 5
+            },
+            {
+                "name": "乐",
+                "value": 16
+            },
+            {
+                "name": "悲",
+                "value": 13
+            },
+            {
+                "name": "思",
+                "value": 3
+            },
+            {
+                "name": "忧",
+                "value": 6
+            },
+            {
+                "name": "惧",
+                "value": 7
+            }
+        ]
+    },
+    "张可久": {
+        "count": 127,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 54
+            },
+            {
+                "name": "喜",
+                "value": 15
+            },
+            {
+                "name": "乐",
+                "value": 14
+            },
+            {
+                "name": "思",
+                "value": 32
+            },
+            {
+                "name": "怒",
+                "value": 4
+            },
+            {
+                "name": "忧",
+                "value": 6
+            },
+            {
+                "name": "惧",
+                "value": 2
+            }
+        ]
+    },
+    "姚守中": {
+        "count": 12,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 3
+            },
+            {
+                "name": "悲",
+                "value": 2
+            },
+            {
+                "name": "惧",
+                "value": 3
+            },
+            {
+                "name": "思",
+                "value": 2
+            },
+            {
+                "name": "喜",
+                "value": 1
+            },
+            {
+                "name": "忧",
+                "value": 1
+            }
+        ]
+    },
+    "邵元长": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 1
+            }
+        ]
+    },
+    "李寿卿": {
+        "count": 37,
+        "emotion": [
+            {
+                "name": "忧",
+                "value": 3
+            },
+            {
+                "name": "喜",
+                "value": 11
+            },
+            {
+                "name": "乐",
+                "value": 5
+            },
+            {
+                "name": "悲",
+                "value": 7
+            },
+            {
+                "name": "思",
+                "value": 6
+            },
+            {
+                "name": "怒",
+                "value": 2
+            },
+            {
+                "name": "惧",
+                "value": 3
+            }
+        ]
+    },
+    "吕侍中": {
+        "count": 3,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 2
+            },
+            {
+                "name": "怒",
+                "value": 1
+            }
+        ]
+    },
+    "刘时中": {
+        "count": 65,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 16
+            },
+            {
+                "name": "喜",
+                "value": 15
+            },
+            {
+                "name": "悲",
+                "value": 9
+            },
+            {
+                "name": "乐",
+                "value": 13
+            },
+            {
+                "name": "忧",
+                "value": 7
+            },
+            {
+                "name": "惧",
+                "value": 2
+            },
+            {
+                "name": "怒",
+                "value": 3
+            }
+        ]
+    },
+    "张寿卿": {
+        "count": 41,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 16
+            },
+            {
+                "name": "思",
+                "value": 7
+            },
+            {
+                "name": "乐",
+                "value": 5
+            },
+            {
+                "name": "怒",
+                "value": 4
+            },
+            {
+                "name": "惧",
+                "value": 3
+            },
+            {
+                "name": "悲",
+                "value": 3
+            },
+            {
+                "name": "忧",
+                "value": 3
+            }
+        ]
+    },
+    "钱霖": {
+        "count": 11,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 2
+            },
+            {
+                "name": "惧",
+                "value": 1
+            },
+            {
+                "name": "怒",
+                "value": 2
+            },
+            {
+                "name": "乐",
+                "value": 3
+            },
+            {
+                "name": "思",
+                "value": 1
+            },
+            {
+                "name": "喜",
+                "value": 1
+            },
+            {
+                "name": "忧",
+                "value": 1
+            }
+        ]
+    },
+    "秦竹村": {
+        "count": 7,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 1
+            },
+            {
+                "name": "思",
+                "value": 3
+            },
+            {
+                "name": "忧",
+                "value": 1
+            },
+            {
+                "name": "悲",
+                "value": 1
+            },
+            {
+                "name": "喜",
+                "value": 1
+            }
+        ]
+    },
+    "王修甫": {
+        "count": 9,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 5
+            },
+            {
+                "name": "喜",
+                "value": 1
+            },
+            {
+                "name": "悲",
+                "value": 3
+            }
+        ]
+    },
+    "范康": {
+        "count": 9,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            },
+            {
+                "name": "乐",
+                "value": 5
+            },
+            {
+                "name": "思",
+                "value": 1
+            },
+            {
+                "name": "怒",
+                "value": 1
+            },
+            {
+                "name": "惧",
+                "value": 1
+            }
+        ]
+    },
+    "戴善甫": {
+        "count": 38,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 8
+            },
+            {
+                "name": "悲",
+                "value": 3
+            },
+            {
+                "name": "喜",
+                "value": 10
+            },
+            {
+                "name": "怒",
+                "value": 3
+            },
+            {
+                "name": "乐",
+                "value": 9
+            },
+            {
+                "name": "忧",
+                "value": 5
+            }
+        ]
+    },
+    "吕济民": {
+        "count": 4,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 2
+            },
+            {
+                "name": "思",
+                "value": 1
+            },
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "荆干臣": {
+        "count": 17,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 8
+            },
+            {
+                "name": "思",
+                "value": 6
+            },
+            {
+                "name": "忧",
+                "value": 1
+            },
+            {
+                "name": "乐",
+                "value": 1
+            },
+            {
+                "name": "喜",
+                "value": 1
+            }
+        ]
+    },
+    "虞集": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "王晔": {
+        "count": 49,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 11
+            },
+            {
+                "name": "悲",
+                "value": 7
+            },
+            {
+                "name": "乐",
+                "value": 12
+            },
+            {
+                "name": "忧",
+                "value": 6
+            },
+            {
+                "name": "思",
+                "value": 7
+            },
+            {
+                "name": "怒",
+                "value": 3
+            },
+            {
+                "name": "惧",
+                "value": 3
+            }
+        ]
+    },
+    "李行甫": {
+        "count": 38,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 11
+            },
+            {
+                "name": "忧",
+                "value": 6
+            },
+            {
+                "name": "悲",
+                "value": 6
+            },
+            {
+                "name": "怒",
+                "value": 3
+            },
+            {
+                "name": "惧",
+                "value": 6
+            },
+            {
+                "name": "思",
+                "value": 2
+            },
+            {
+                "name": "乐",
+                "value": 4
+            }
+        ]
+    },
+    "岳伯川": {
+        "count": 54,
+        "emotion": [
+            {
+                "name": "惧",
+                "value": 3
+            },
+            {
+                "name": "喜",
+                "value": 17
+            },
+            {
+                "name": "忧",
+                "value": 5
+            },
+            {
+                "name": "思",
+                "value": 6
+            },
+            {
+                "name": "乐",
+                "value": 10
+            },
+            {
+                "name": "悲",
+                "value": 8
+            },
+            {
+                "name": "怒",
+                "value": 5
+            }
+        ]
+    },
+    "孙梁": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "刘秉忠": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "王德信": {
+        "count": 21,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 3
+            },
+            {
+                "name": "思",
+                "value": 5
+            },
+            {
+                "name": "喜",
+                "value": 5
+            },
+            {
+                "name": "乐",
+                "value": 3
+            },
+            {
+                "name": "忧",
+                "value": 2
+            },
+            {
+                "name": "怒",
+                "value": 1
+            },
+            {
+                "name": "惧",
+                "value": 2
+            }
+        ]
+    },
+    "李伯瑜": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 1
+            }
+        ]
+    },
+    "王仲诚": {
+        "count": 8,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 1
+            },
+            {
+                "name": "忧",
+                "value": 1
+            },
+            {
+                "name": "乐",
+                "value": 3
+            },
+            {
+                "name": "悲",
+                "value": 1
+            },
+            {
+                "name": "怒",
+                "value": 1
+            },
+            {
+                "name": "思",
+                "value": 1
+            }
+        ]
+    },
+    "张氏": {
+        "count": 10,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 5
+            },
+            {
+                "name": "悲",
+                "value": 3
+            },
+            {
+                "name": "忧",
+                "value": 1
+            },
+            {
+                "name": "喜",
+                "value": 1
+            }
+        ]
+    },
+    "沙正卿": {
+        "count": 7,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 3
+            },
+            {
+                "name": "思",
+                "value": 1
+            },
+            {
+                "name": "惧",
+                "value": 2
+            },
+            {
+                "name": "乐",
+                "value": 1
+            }
+        ]
+    },
+    "赵莹": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "张鸣善": {
+        "count": 16,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 4
+            },
+            {
+                "name": "悲",
+                "value": 5
+            },
+            {
+                "name": "忧",
+                "value": 1
+            },
+            {
+                "name": "思",
+                "value": 6
+            }
+        ]
+    },
+    "邦哲": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 1
+            }
+        ]
+    },
+    "赵明道": {
+        "count": 14,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 5
+            },
+            {
+                "name": "喜",
+                "value": 5
+            },
+            {
+                "name": "思",
+                "value": 2
+            },
+            {
+                "name": "忧",
+                "value": 1
+            },
+            {
+                "name": "乐",
+                "value": 1
+            }
+        ]
+    },
+    "孟汉卿": {
+        "count": 57,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 10
+            },
+            {
+                "name": "喜",
+                "value": 18
+            },
+            {
+                "name": "思",
+                "value": 13
+            },
+            {
+                "name": "乐",
+                "value": 10
+            },
+            {
+                "name": "惧",
+                "value": 3
+            },
+            {
+                "name": "忧",
+                "value": 3
+            }
+        ]
+    },
+    "沈和": {
+        "count": 9,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 1
+            },
+            {
+                "name": "忧",
+                "value": 2
+            },
+            {
+                "name": "悲",
+                "value": 3
+            },
+            {
+                "name": "乐",
+                "value": 2
+            },
+            {
+                "name": "思",
+                "value": 1
+            }
+        ]
+    },
+    "贯石屏": {
+        "count": 7,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 2
+            },
+            {
+                "name": "悲",
+                "value": 1
+            },
+            {
+                "name": "思",
+                "value": 3
+            },
+            {
+                "name": "乐",
+                "value": 1
+            }
+        ]
+    },
+    "夏庭芝": {
+        "count": 2,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 1
+            },
+            {
+                "name": "忧",
+                "value": 1
+            }
+        ]
+    },
+    "张养浩": {
+        "count": 25,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 11
+            },
+            {
+                "name": "乐",
+                "value": 5
+            },
+            {
+                "name": "忧",
+                "value": 2
+            },
+            {
+                "name": "悲",
+                "value": 3
+            },
+            {
+                "name": "思",
+                "value": 3
+            },
+            {
+                "name": "怒",
+                "value": 1
+            }
+        ]
+    },
+    "魏初": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 1
+            }
+        ]
+    },
+    "周文质": {
+        "count": 31,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 9
+            },
+            {
+                "name": "喜",
+                "value": 7
+            },
+            {
+                "name": "忧",
+                "value": 2
+            },
+            {
+                "name": "乐",
+                "value": 4
+            },
+            {
+                "name": "思",
+                "value": 8
+            },
+            {
+                "name": "惧",
+                "value": 1
+            }
+        ]
+    },
+    "睢景臣": {
+        "count": 17,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 5
+            },
+            {
+                "name": "乐",
+                "value": 4
+            },
+            {
+                "name": "忧",
+                "value": 2
+            },
+            {
+                "name": "怒",
+                "value": 2
+            },
+            {
+                "name": "惧",
+                "value": 1
+            },
+            {
+                "name": "悲",
+                "value": 3
+            }
+        ]
+    },
+    "刘敏中": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 1
+            }
+        ]
+    },
+    "真氏": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "大食惟寅": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "珠帘秀": {
+        "count": 6,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 2
+            },
+            {
+                "name": "悲",
+                "value": 4
+            }
+        ]
+    },
+    "柯丹邱《荆钗记》": {
+        "count": 340,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 67
+            },
+            {
+                "name": "忧",
+                "value": 57
+            },
+            {
+                "name": "怒",
+                "value": 13
+            },
+            {
+                "name": "悲",
+                "value": 57
+            },
+            {
+                "name": "喜",
+                "value": 64
+            },
+            {
+                "name": "惧",
+                "value": 40
+            },
+            {
+                "name": "思",
+                "value": 42
+            }
+        ]
+    },
+    "滕斌": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "孙季昌": {
+        "count": 26,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 9
+            },
+            {
+                "name": "乐",
+                "value": 4
+            },
+            {
+                "name": "悲",
+                "value": 7
+            },
+            {
+                "name": "惧",
+                "value": 2
+            },
+            {
+                "name": "怒",
+                "value": 2
+            },
+            {
+                "name": "忧",
+                "value": 2
+            }
+        ]
+    },
+    "刘君锡": {
+        "count": 38,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 4
+            },
+            {
+                "name": "忧",
+                "value": 4
+            },
+            {
+                "name": "乐",
+                "value": 12
+            },
+            {
+                "name": "思",
+                "value": 8
+            },
+            {
+                "name": "惧",
+                "value": 5
+            },
+            {
+                "name": "悲",
+                "value": 2
+            },
+            {
+                "name": "怒",
+                "value": 3
+            }
+        ]
+    },
+    "李致远": {
+        "count": 31,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 9
+            },
+            {
+                "name": "思",
+                "value": 11
+            },
+            {
+                "name": "怒",
+                "value": 1
+            },
+            {
+                "name": "忧",
+                "value": 6
+            },
+            {
+                "name": "喜",
+                "value": 3
+            },
+            {
+                "name": "乐",
+                "value": 1
+            }
+        ]
+    },
+    "萧德祥《小孙屠》": {
+        "count": 134,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 40
+            },
+            {
+                "name": "喜",
+                "value": 20
+            },
+            {
+                "name": "悲",
+                "value": 22
+            },
+            {
+                "name": "忧",
+                "value": 24
+            },
+            {
+                "name": "思",
+                "value": 21
+            },
+            {
+                "name": "怒",
+                "value": 5
+            },
+            {
+                "name": "惧",
+                "value": 2
+            }
+        ]
+    },
+    "贾固": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 1
+            }
+        ]
+    },
+    "吕天用": {
+        "count": 6,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 2
+            },
+            {
+                "name": "悲",
+                "value": 2
+            },
+            {
+                "name": "喜",
+                "value": 2
+            }
+        ]
+    },
+    "李爱山": {
+        "count": 5,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 5
+            }
+        ]
+    },
+    "方伯成": {
+        "count": 7,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            },
+            {
+                "name": "喜",
+                "value": 2
+            },
+            {
+                "name": "思",
+                "value": 4
+            }
+        ]
+    },
+    "鲜于必仁": {
+        "count": 2,
+        "emotion": [
+            {
+                "name": "忧",
+                "value": 1
+            },
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "刘唐卿《白兔记》": {
+        "count": 210,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 53
+            },
+            {
+                "name": "悲",
+                "value": 29
+            },
+            {
+                "name": "忧",
+                "value": 30
+            },
+            {
+                "name": "喜",
+                "value": 43
+            },
+            {
+                "name": "怒",
+                "value": 12
+            },
+            {
+                "name": "惧",
+                "value": 17
+            },
+            {
+                "name": "思",
+                "value": 26
+            }
+        ]
+    },
+    "吴仁卿": {
+        "count": 30,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 9
+            },
+            {
+                "name": "悲",
+                "value": 5
+            },
+            {
+                "name": "喜",
+                "value": 4
+            },
+            {
+                "name": "思",
+                "value": 9
+            },
+            {
+                "name": "忧",
+                "value": 2
+            },
+            {
+                "name": "怒",
+                "value": 1
+            }
+        ]
+    },
+    "王挺秀": {
+        "count": 3,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 2
+            },
+            {
+                "name": "喜",
+                "value": 1
+            }
+        ]
+    },
+    "曾瑞": {
+        "count": 91,
+        "emotion": [
+            {
+                "name": "惧",
+                "value": 5
+            },
+            {
+                "name": "乐",
+                "value": 15
+            },
+            {
+                "name": "忧",
+                "value": 7
+            },
+            {
+                "name": "悲",
+                "value": 20
+            },
+            {
+                "name": "怒",
+                "value": 2
+            },
+            {
+                "name": "喜",
+                "value": 14
+            },
+            {
+                "name": "思",
+                "value": 28
+            }
+        ]
+    },
+    "谷子敬": {
+        "count": 56,
+        "emotion": [
+            {
+                "name": "乐",
+                "value": 12
+            },
+            {
+                "name": "悲",
+                "value": 11
+            },
+            {
+                "name": "忧",
+                "value": 3
+            },
+            {
+                "name": "思",
+                "value": 12
+            },
+            {
+                "name": "喜",
+                "value": 12
+            },
+            {
+                "name": "惧",
+                "value": 4
+            },
+            {
+                "name": "怒",
+                "value": 2
+            }
+        ]
+    },
+    "朱凯": {
+        "count": 27,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 3
+            },
+            {
+                "name": "悲",
+                "value": 7
+            },
+            {
+                "name": "怒",
+                "value": 6
+            },
+            {
+                "name": "忧",
+                "value": 1
+            },
+            {
+                "name": "惧",
+                "value": 3
+            },
+            {
+                "name": "思",
+                "value": 4
+            },
+            {
+                "name": "乐",
+                "value": 3
+            }
+        ]
+    },
+    "陆登善": {
+        "count": 3,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            },
+            {
+                "name": "喜",
+                "value": 1
+            },
+            {
+                "name": "惧",
+                "value": 1
+            }
+        ]
+    },
+    "马彦良": {
+        "count": 2,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 2
+            }
+        ]
+    },
+    "顾鉴中": {
+        "count": 2,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 1
+            },
+            {
+                "name": "思",
+                "value": 1
+            }
+        ]
+    },
+    "柴野愚": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "孙叔顺": {
+        "count": 21,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 1
+            },
+            {
+                "name": "乐",
+                "value": 4
+            },
+            {
+                "name": "悲",
+                "value": 5
+            },
+            {
+                "name": "忧",
+                "value": 5
+            },
+            {
+                "name": "喜",
+                "value": 4
+            },
+            {
+                "name": "惧",
+                "value": 1
+            },
+            {
+                "name": "怒",
+                "value": 1
+            }
+        ]
+    },
+    "杨果": {
+        "count": 10,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 3
+            },
+            {
+                "name": "思",
+                "value": 4
+            },
+            {
+                "name": "忧",
+                "value": 2
+            },
+            {
+                "name": "乐",
+                "value": 1
+            }
+        ]
+    },
+    "侯正卿": {
+        "count": 19,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 3
+            },
+            {
+                "name": "思",
+                "value": 9
+            },
+            {
+                "name": "乐",
+                "value": 3
+            },
+            {
+                "name": "喜",
+                "value": 2
+            },
+            {
+                "name": "怒",
+                "value": 1
+            },
+            {
+                "name": "惧",
+                "value": 1
+            }
+        ]
+    },
+    "亢文苑": {
+        "count": 7,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 3
+            },
+            {
+                "name": "乐",
+                "value": 2
+            },
+            {
+                "name": "怒",
+                "value": 1
+            },
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "周德清": {
+        "count": 27,
+        "emotion": [
+            {
+                "name": "怒",
+                "value": 4
+            },
+            {
+                "name": "悲",
+                "value": 5
+            },
+            {
+                "name": "忧",
+                "value": 2
+            },
+            {
+                "name": "思",
+                "value": 11
+            },
+            {
+                "name": "喜",
+                "value": 3
+            },
+            {
+                "name": "乐",
+                "value": 1
+            },
+            {
+                "name": "惧",
+                "value": 1
+            }
+        ]
+    },
+    "赵岩": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 1
+            }
+        ]
+    },
+    "董君瑞": {
+        "count": 9,
+        "emotion": [
+            {
+                "name": "怒",
+                "value": 2
+            },
+            {
+                "name": "喜",
+                "value": 2
+            },
+            {
+                "name": "思",
+                "value": 4
+            },
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "张碧山": {
+        "count": 4,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            },
+            {
+                "name": "思",
+                "value": 2
+            },
+            {
+                "name": "乐",
+                "value": 1
+            }
+        ]
+    },
+    "倪瓒": {
+        "count": 2,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 1
+            },
+            {
+                "name": "怒",
+                "value": 1
+            }
+        ]
+    },
+    "李邦基": {
+        "count": 6,
+        "emotion": [
+            {
+                "name": "忧",
+                "value": 1
+            },
+            {
+                "name": "悲",
+                "value": 5
+            }
+        ]
+    },
+    "刘婆惜": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "喜",
+                "value": 1
+            }
+        ]
+    },
+    "王氏": {
+        "count": 14,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 4
+            },
+            {
+                "name": "怒",
+                "value": 3
+            },
+            {
+                "name": "喜",
+                "value": 1
+            },
+            {
+                "name": "思",
+                "value": 4
+            },
+            {
+                "name": "乐",
+                "value": 2
+            }
+        ]
+    },
+    "王元鼎": {
+        "count": 9,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 6
+            },
+            {
+                "name": "思",
+                "value": 2
+            },
+            {
+                "name": "乐",
+                "value": 1
+            }
+        ]
+    },
+    "萧德润": {
+        "count": 6,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 2
+            },
+            {
+                "name": "思",
+                "value": 3
+            },
+            {
+                "name": "乐",
+                "value": 1
+            }
+        ]
+    },
+    "徐再思": {
+        "count": 16,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 10
+            },
+            {
+                "name": "喜",
+                "value": 2
+            },
+            {
+                "name": "思",
+                "value": 4
+            }
+        ]
+    },
+    "武林隐": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    },
+    "周浩": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "忧",
+                "value": 1
+            }
+        ]
+    },
+    "阿里西瑛": {
+        "count": 2,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            },
+            {
+                "name": "乐",
+                "value": 1
+            }
+        ]
+    },
+    "汪元亨": {
+        "count": 3,
+        "emotion": [
+            {
+                "name": "忧",
+                "value": 2
+            },
+            {
+                "name": "怒",
+                "value": 1
+            }
+        ]
+    },
+    "杜遵礼": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "惧",
+                "value": 1
+            }
+        ]
+    },
+    "陈子厚": {
+        "count": 3,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 3
+            }
+        ]
+    },
+    "李齐贤": {
+        "count": 2,
+        "emotion": [
+            {
+                "name": "悲",
+                "value": 1
+            },
+            {
+                "name": "思",
+                "value": 1
+            }
+        ]
+    },
+    "于伯渊": {
+        "count": 11,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 2
+            },
+            {
+                "name": "乐",
+                "value": 2
+            },
+            {
+                "name": "悲",
+                "value": 3
+            },
+            {
+                "name": "喜",
+                "value": 3
+            },
+            {
+                "name": "忧",
+                "value": 1
+            }
+        ]
+    },
+    "萨都剌": {
+        "count": 1,
+        "emotion": [
+            {
+                "name": "忧",
+                "value": 1
+            }
+        ]
+    },
+    "冯子振": {
+        "count": 40,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 18
+            },
+            {
+                "name": "乐",
+                "value": 4
+            },
+            {
+                "name": "怒",
+                "value": 3
+            },
+            {
+                "name": "喜",
+                "value": 6
+            },
+            {
+                "name": "悲",
+                "value": 7
+            },
+            {
+                "name": "忧",
+                "value": 2
+            }
+        ]
+    },
+    "高安道": {
+        "count": 15,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 1
+            },
+            {
+                "name": "乐",
+                "value": 1
+            },
+            {
+                "name": "悲",
+                "value": 3
+            },
+            {
+                "name": "怒",
+                "value": 2
+            },
+            {
+                "name": "忧",
+                "value": 1
+            },
+            {
+                "name": "喜",
+                "value": 7
+            }
+        ]
+    },
+    "邵亨贞": {
+        "count": 2,
+        "emotion": [
+            {
+                "name": "思",
+                "value": 1
+            },
+            {
+                "name": "悲",
+                "value": 1
+            }
+        ]
+    }
+}

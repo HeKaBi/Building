@@ -1,0 +1,183 @@
+[
+  {
+    "source": "李白",
+    "target": "杜甫",
+    "color": "#cd9957",
+    "name": [
+      "赠诗文",
+      "友人"
+    ]
+  },
+  {
+    "source": "白居易",
+    "target": "李白",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "李白",
+    "target": "高适",
+    "color": "#cd9957",
+    "name": [
+      "赠诗文",
+      "与Y旅游"
+    ]
+  },
+  {
+    "source": "韩愈",
+    "target": "李白",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "贺知章",
+    "target": "李白",
+    "color": "#cd9957",
+    "name": [
+      "欣赏/器重"
+    ]
+  },
+  {
+    "source": "白居易",
+    "target": "杜甫",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "李商隐",
+    "target": "杜甫",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "杜甫",
+    "target": "孟浩然",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "杜甫",
+    "target": "王维",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "杜甫",
+    "target": "岑参",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "李商隐",
+    "target": "李贺",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "李贺",
+    "target": "韩愈",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "杜牧",
+    "target": "李贺",
+    "color": "#cd9957",
+    "name": "作书序"
+  },
+  {
+    "source": "杜牧",
+    "target": "韩愈",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "刘禹锡",
+    "target": "韩愈",
+    "color": "#cd9957",
+    "name": [
+      "赠诗文",
+      "友人"
+    ]
+  },
+  {
+    "source": "杜甫",
+    "target": "陈子昂",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "元稹",
+    "target": "白居易",
+    "color": "#cd9957",
+    "name": [
+      "友人",
+      "作书序"
+    ]
+  },
+  {
+    "source": "元稹",
+    "target": "韩愈",
+    "color": "#cd9957",
+    "name": [
+      "友人"
+    ]
+  },
+  {
+    "source": "刘禹锡",
+    "target": "元稹",
+    "color": "#cd9957",
+    "name": [
+      "赠诗文",
+      "友人"
+    ]
+  },
+  {
+    "source": "岑参",
+    "target": "高适",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "王之涣",
+    "target": "王昌龄",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "杜甫",
+    "target": "杨炯",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "韩愈",
+    "target": "韦应物",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "王维",
+    "target": "孟浩然",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "贺知章",
+    "target": "张若虚",
+    "color": "#cd9957",
+    "name": "友人"
+  },
+  {
+    "source": "王之涣",
+    "target": "高适",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "岑参",
+    "target": "王昌龄",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  }
+]

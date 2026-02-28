@@ -1,0 +1,188 @@
+[
+  {
+    "source": "苏轼",
+    "target": "苏洵",
+    "color": "#cd9957",
+    "name": "父子"
+  },
+  {
+    "source": "苏轼",
+    "target": "苏辙",
+    "color": "#cd9957",
+    "name": "兄弟"
+  },
+  {
+    "source": "苏洵",
+    "target": "苏辙",
+    "color": "#cd9957",
+    "name": "父子"
+  },
+  {
+    "source": "苏轼",
+    "target": "黄庭坚",
+    "color": "#cd9957",
+    "name": "友人"
+  },
+  {
+    "source": "苏轼",
+    "target": "欧阳修",
+    "color": "#cd9957",
+    "name": [
+      "作书序",
+      "作祭文"
+    ]
+  },
+  {
+    "source": "苏轼",
+    "target": "范仲淹",
+    "color": "#cd9957",
+    "name": "作书序"
+  },
+  {
+    "source": "苏轼",
+    "target": "王安石",
+    "color": "#cd9957",
+    "name": "反对/不支持其政策"
+  },
+  {
+    "source": "黄庭坚",
+    "target": "苏辙",
+    "color": "#cd9957",
+    "name": "作书跋"
+  },
+  {
+    "source": "欧阳修",
+    "target": "苏辙",
+    "color": "#cd9957",
+    "name": "师生"
+  },
+  {
+    "source": "苏辙",
+    "target": "王安石",
+    "color": "#cd9957",
+    "name": [
+      "作祭文",
+      "作墓志铭"
+    ]
+  },
+  {
+    "source": "辛弃疾",
+    "target": "陆游",
+    "color": "#cd9957",
+    "name": "友人"
+  },
+  {
+    "source": "辛弃疾",
+    "target": "姜夔",
+    "color": "#cd9957",
+    "name": "友人"
+  },
+  {
+    "source": "陆游",
+    "target": "苏轼",
+    "color": "#cd9957",
+    "name": [
+      "作书序",
+      "作书跋"
+    ]
+  },
+  {
+    "source": "陆游",
+    "target": "王安石",
+    "color": "#cd9957",
+    "name": [
+      "作书序",
+      "作书跋"
+    ]
+  },
+  {
+    "source": "杨万里",
+    "target": "陆游",
+    "color": "#cd9957",
+    "name": "友人"
+  },
+  {
+    "source": "陆游",
+    "target": "欧阳修",
+    "color": "#cd9957",
+    "name": "作书跋"
+  },
+  {
+    "source": "范仲淹",
+    "target": "欧阳修",
+    "color": "#cd9957",
+    "name": "推荐"
+  },
+  {
+    "source": "王安石",
+    "target": "范仲淹",
+    "color": "#cd9957",
+    "name": "作祭文"
+  },
+  {
+    "source": "杨万里",
+    "target": "姜夔",
+    "color": "#cd9957",
+    "name": "友人"
+  },
+  {
+    "source": "朱熹",
+    "target": "李煜",
+    "color": "#cd9957",
+    "name": "作书跋"
+  },
+  {
+    "source": "朱熹",
+    "target": "苏辙",
+    "color": "#cd9957",
+    "name": "作书跋"
+  },
+  {
+    "source": "苏轼",
+    "target": "岳飞",
+    "color": "#cd9957",
+    "name": "友人"
+  },
+  {
+    "source": "秦观",
+    "target": "欧阳修",
+    "color": "#cd9957",
+    "name": "作祭文"
+  },
+  {
+    "source": "晏殊",
+    "target": "晏几道",
+    "color": "#cd9957",
+    "name": "父子"
+  },
+  {
+    "source": "晏殊",
+    "target": "范仲淹",
+    "color": "#cd9957",
+    "name": "推荐"
+  },
+  {
+    "source": "晏殊",
+    "target": "欧阳修",
+    "color": "#cd9957",
+    "name": "推荐"
+  },
+  {
+    "source": "黄庭坚",
+    "target": "秦观",
+    "color": "#cd9957",
+    "name": "同门"
+  },
+  {
+    "source": "李清照",
+    "target": "柳永",
+    "color": "#cd9957",
+    "name": "批评/批判"
+  },
+  {
+    "source": "朱熹",
+    "target": "李清照",
+    "color": "#cd9957",
+    "name": "赞扬"
+  }
+]

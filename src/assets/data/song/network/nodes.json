@@ -1,0 +1,135 @@
+[
+  {
+    "name": "苏轼",
+    "community": 1,
+    "x": 50,
+    "y": 50,
+    "symbolSize": 60
+  },
+  {
+    "name": "苏洵",
+    "community": 1,
+    "x": 33,
+    "y": 90,
+    "symbolSize": 40
+  },
+  {
+    "name": "辛弃疾",
+    "community": 1,
+    "x": 50,
+    "y": 20,
+    "symbolSize": 40
+  },
+  {
+    "name": "陆游",
+    "community": 1,
+    "x": 75,
+    "y": 62,
+    "symbolSize": 40
+  },
+  {
+    "name": "岳飞",
+    "community": 1,
+    "x": 50,
+    "y": 72,
+    "symbolSize": 40
+  },
+  {
+    "name": "范仲淹",
+    "community": 1,
+    "x": 105,
+    "y": 25,
+    "symbolSize": 50
+  },
+  {
+    "name": "王安石",
+    "community": 1,
+    "x": 70,
+    "y": 102,
+    "symbolSize": 40
+  },
+  {
+    "name": "黄庭坚",
+    "community": 1,
+    "x": 34,
+    "y": 43,
+    "symbolSize": 40
+  },
+  {
+    "name": "朱熹",
+    "community": 1,
+    "x": 1,
+    "y": 40,
+    "symbolSize": 40
+  },
+  {
+    "name": "苏辙",
+    "community": 2,
+    "x": 20,
+    "y": 65,
+    "symbolSize": 60
+  },
+  {
+    "name": "柳永",
+    "community": 2,
+    "x": 10,
+    "y": 90,
+    "symbolSize": 40
+  },
+  {
+    "name": "李清照",
+    "community": 2,
+    "x": 0,
+    "y": 70,
+    "symbolSize": 40
+  },
+  {
+    "name": "晏殊",
+    "community": 2,
+    "x": 50,
+    "y": 1,
+    "symbolSize": 40
+  },
+  {
+    "name": "晏几道",
+    "community": 2,
+    "x": 90,
+    "y": 0,
+    "symbolSize": 30
+  },
+  {
+    "name": "秦观",
+    "community": 2,
+    "x": 12,
+    "y": 30,
+    "symbolSize": 40
+  },
+  {
+    "name": "李煜",
+    "community": 2,
+    "x": 5,
+    "y": 10,
+    "symbolSize": 40
+  },
+  {
+    "name": "欧阳修",
+    "community": 2,
+    "x": 22,
+    "y": 5,
+    "symbolSize": 50
+  },
+  {
+    "name": "杨万里",
+    "community": 2,
+    "x": 85,
+    "y": 43,
+    "symbolSize": 40
+  },
+  {
+    "name": "姜夔",
+    "community": 2,
+    "x": 67,
+    "y": 24,
+    "symbolSize": 35
+  }
+]

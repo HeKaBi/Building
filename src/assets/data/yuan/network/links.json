@@ -1,0 +1,134 @@
+[
+  {
+    "source": "虞集",
+    "target": "张养浩",
+    "color": "#cd9957",
+    "name": "作诗文跋"
+  },
+  {
+    "source": "张养浩",
+    "target": "马致远",
+    "color": "#cd9957",
+    "name": "挚友"
+  },
+  {
+    "source": "张养浩",
+    "target": "元好问",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "张养浩",
+    "target": "白朴",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "元好问",
+    "target": "白朴",
+    "color": "#cd9957",
+    "name": "启蒙/授课"
+  },
+  {
+    "source": "关汉卿",
+    "target": "马致远",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "关汉卿",
+    "target": "白朴",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "关汉卿",
+    "target": "郑光祖",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "马致远",
+    "target": "郑光祖",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "白朴",
+    "target": "郑光祖",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "白朴",
+    "target": "马致远",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "张可久",
+    "target": "虞集",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "杨载",
+    "target": "虞集",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "范梈",
+    "target": "虞集",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "杨载",
+    "target": "范梈",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "睢景臣",
+    "target": "乔吉",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "睢景臣",
+    "target": "张可久",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "徐再思",
+    "target": "张可久",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "睢景臣",
+    "target": "贯云石",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "徐再思",
+    "target": "贯云石",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "元好问",
+    "target": "贯云石",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  },
+  {
+    "source": "吴西逸",
+    "target": "贯云石",
+    "color": "#cd9957",
+    "name": "赠诗文"
+  }
+]

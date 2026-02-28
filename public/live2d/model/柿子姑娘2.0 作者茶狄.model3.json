@@ -1,0 +1,57 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "柿子姑娘2.0 作者茶狄.moc3",
+		"Textures": [
+			"柿子姑娘2.0 作者茶狄.4096/texture_00.png"
+		],
+		"Physics": "柿子姑娘2.0 作者茶狄.physics3.json",
+		"DisplayInfo": "柿子姑娘2.0 作者茶狄.cdi3.json",
+		"Expressions": [
+			{
+				"Name": "刘海",
+				"File": "../../小柿/刘海.exp3.json"
+			},
+			{
+				"Name": "后发 ",
+				"File": "../../小柿/后发 .exp3.json"
+			},
+			{
+				"Name": "大丸子",
+				"File": "../../小柿/大丸子.exp3.json"
+			},
+			{
+				"Name": "头饰",
+				"File": "../../小柿/头饰.exp3.json"
+			},
+			{
+				"Name": "小丸子",
+				"File": "../../小柿/小丸子.exp3.json"
+			},
+			{
+				"Name": "手势1",
+				"File": "../../小柿/手势1.exp3.json"
+			},
+			{
+				"Name": "柿子花花发髻",
+				"File": "../../小柿/柿子花花发髻.exp3.json"
+			}
+		]
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	],
+	"HitAreas": []
+}

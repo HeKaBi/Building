@@ -1,0 +1,107 @@
+[
+  {
+    "name": "张养浩",
+    "community": 1,
+    "x": 50,
+    "y": 10,
+    "symbolSize": 60
+  },
+  {
+    "name": "马致远",
+    "community": 1,
+    "x": 43,
+    "y": 23,
+    "symbolSize": 50
+  },
+  {
+    "name": "杨载",
+    "community": 1,
+    "x": 15,
+    "y": 20,
+    "symbolSize": 40
+  },
+  {
+    "name": "范梈",
+    "community": 1,
+    "x": 35,
+    "y": 10,
+    "symbolSize": 40
+  },
+  {
+    "name": "关汉卿",
+    "community": 1,
+    "x": 35,
+    "y": 43,
+    "symbolSize": 40
+  },
+  {
+    "name": "睢景臣",
+    "community": 1,
+    "x": 50,
+    "y": 53,
+    "symbolSize": 40
+  },
+  {
+    "name": "白朴",
+    "community": 2,
+    "x": 57,
+    "y": 40,
+    "symbolSize": 60
+  },
+  {
+    "name": "元好问",
+    "community": 2,
+    "x": 63,
+    "y": 23,
+    "symbolSize": 40
+  },
+  {
+    "name": "虞集",
+    "community": 2,
+    "x": 25,
+    "y": 28,
+    "symbolSize": 50
+  },
+  {
+    "name": "张可久",
+    "community": 2,
+    "x": 34,
+    "y": 60,
+    "symbolSize": 40
+  },
+  {
+    "name": "乔吉",
+    "community": 2,
+    "x": 60,
+    "y": 62,
+    "symbolSize": 40
+  },
+  {
+    "name": "徐再思",
+    "community": 2,
+    "x": 65,
+    "y": 70,
+    "symbolSize": 40
+  },
+  {
+    "name": "吴西逸",
+    "community": 2,
+    "x": 80,
+    "y": 25,
+    "symbolSize": 40
+  },
+  {
+    "name": "郑光祖",
+    "community": 2,
+    "x": 45,
+    "y": 35,
+    "symbolSize": 40
+  },
+  {
+    "name": "贯云石",
+    "community": 1,
+    "x": 70,
+    "y": 50,
+    "symbolSize": 40
+  }
+]

@@ -1,0 +1,895 @@
+[
+    {
+        "name": "社会关系",
+        "size": 3715,
+        "value": 3715,
+        "children": [
+            {
+                "name": "收到Y的赠诗、文",
+                "size": 1622,
+                "value": 1622
+            },
+            {
+                "name": "赠诗、文",
+                "size": 1761,
+                "value": 1761
+            },
+            {
+                "name": "友",
+                "size": 81,
+                "value": 81
+            },
+            {
+                "name": "同年友",
+                "size": 8,
+                "value": 8
+            },
+            {
+                "name": "墓志铭由Y所作",
+                "size": 31,
+                "value": 31
+            },
+            {
+                "name": "为Y作墓志铭",
+                "size": 34,
+                "value": 34
+            },
+            {
+                "name": "祭文由Y所作",
+                "size": 10,
+                "value": 10
+            },
+            {
+                "name": "被致书由Y",
+                "size": 4,
+                "value": 4
+            },
+            {
+                "name": "忌/恶",
+                "size": 3,
+                "value": 3
+            },
+            {
+                "name": "为Y作传",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "为Y所忌/恶",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "欣赏/器重",
+                "size": 8,
+                "value": 8
+            },
+            {
+                "name": "神道碑由Y所作",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "临别得到Y所作赠言(送别诗、序)",
+                "size": 5,
+                "value": 5
+            },
+            {
+                "name": "同僚",
+                "size": 15,
+                "value": 15
+            },
+            {
+                "name": "因与Y的交往受牵连",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "收到Y的答书",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "推荐",
+                "size": 5,
+                "value": 5
+            },
+            {
+                "name": "未详",
+                "size": 3,
+                "value": 3
+            },
+            {
+                "name": "与他的交往导致Y受牵连",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "为Y作祭文",
+                "size": 8,
+                "value": 8
+            },
+            {
+                "name": "被Y推荐",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "答Y书",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "哀辞由Y所作",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "为Y作哀辞",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "墓表由Y所作",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "为Y作墓表",
+                "size": 6,
+                "value": 6
+            },
+            {
+                "name": "为Y作画赞(画像记)",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "挽诗、词由Y所作",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "致书Y",
+                "size": 9,
+                "value": 9
+            },
+            {
+                "name": "收到Y的启",
+                "size": 5,
+                "value": 5
+            },
+            {
+                "name": "同会",
+                "size": 9,
+                "value": 9
+            },
+            {
+                "name": "被Y欣赏/器重",
+                "size": 6,
+                "value": 6
+            },
+            {
+                "name": "从Y游",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "为Y作临别赠言(送别诗、序)",
+                "size": 5,
+                "value": 5
+            },
+            {
+                "name": "与Y游",
+                "size": 3,
+                "value": 3
+            },
+            {
+                "name": "为Y作挽诗、词",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "为Y之建筑物题咏、记、命名",
+                "size": 3,
+                "value": 3
+            },
+            {
+                "name": "得罪Y",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "为友人提供帮助",
+                "size": 3,
+                "value": 3
+            },
+            {
+                "name": "得到友人Y之帮助",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "与Y旅游",
+                "size": 6,
+                "value": 6
+            },
+            {
+                "name": "从游者为Y",
+                "size": 3,
+                "value": 3
+            },
+            {
+                "name": "建筑物得到Y的题咏、记、命名",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "受到Y拜访",
+                "size": 3,
+                "value": 3
+            },
+            {
+                "name": "致Y启",
+                "size": 8,
+                "value": 8
+            },
+            {
+                "name": "上司为Y",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "是Y的恩主",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "为Y作行状",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "奏录Y之文",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "受Y的请求为他人（第三方）作墓志铭",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "拜访",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "受Y之礼待",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "为Y作神道碑",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "求Y为他人（第三方）作墓志铭",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "恩主是Y",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "得到Y的支持",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "遗爱碑/记由Y所作",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "辟",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "传记作者为Y",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "礼待",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "被Y得罪",
+                "size": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "家庭关系",
+        "size": 526,
+        "value": 526,
+        "children": [
+            {
+                "name": "子",
+                "size": 84,
+                "value": 84
+            },
+            {
+                "name": "兄",
+                "size": 43,
+                "value": 43
+            },
+            {
+                "name": "弟",
+                "size": 46,
+                "value": 46
+            },
+            {
+                "name": "祖父",
+                "size": 42,
+                "value": 42
+            },
+            {
+                "name": "孙",
+                "size": 44,
+                "value": 44
+            },
+            {
+                "name": "次子",
+                "size": 9,
+                "value": 9
+            },
+            {
+                "name": "父",
+                "size": 86,
+                "value": 86
+            },
+            {
+                "name": "族兄弟",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "岳父",
+                "size": 12,
+                "value": 12
+            },
+            {
+                "name": "第二任妻",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "表姐妹",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "妻子",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "从子;姪子",
+                "size": 13,
+                "value": 13
+            },
+            {
+                "name": "五子",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "伯;伯父",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "舅表兄弟",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "四子",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "六子",
+                "size": 6,
+                "value": 6
+            },
+            {
+                "name": "女婿",
+                "size": 22,
+                "value": 22
+            },
+            {
+                "name": "舅表兄",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "八子",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "玄孙;四世孙",
+                "size": 5,
+                "value": 5
+            },
+            {
+                "name": "从父;伯叔父",
+                "size": 4,
+                "value": 4
+            },
+            {
+                "name": "长子; 第一子",
+                "size": 14,
+                "value": 14
+            },
+            {
+                "name": "女儿",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "姐夫",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "从兄弟;堂兄弟",
+                "size": 4,
+                "value": 4
+            },
+            {
+                "name": "表兄弟",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "姪孙;从孙",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "妾",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "嗣子(作为继承人的儿子)",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "妻之母舅",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "三子",
+                "size": 4,
+                "value": 4
+            },
+            {
+                "name": "从弟",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "从兄",
+                "size": 3,
+                "value": 3
+            },
+            {
+                "name": "母舅",
+                "size": 7,
+                "value": 7
+            },
+            {
+                "name": "十一世孙",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "伯叔母",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "叔;叔父",
+                "size": 5,
+                "value": 5
+            },
+            {
+                "name": "九世孙",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "族人(辈分不详)",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "九世祖;太高曾祖",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "妻之祖父",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "族父",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "高祖;四世祖",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "族子",
+                "size": 3,
+                "value": 3
+            },
+            {
+                "name": "五世祖;高曾祖",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "从祖;伯叔祖",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "五世孙;来孙",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "妻之曾祖",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "祖母",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "妹夫",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "族姊妹之夫",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "姑表弟",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "三女婿",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "外甥",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "外祖父",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "姻亲",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "妻兄",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "妻之族兄弟姊妹",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "孙女婿",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "妻弟",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "独子",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "曾孙女婿",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "养子(非嗣子)",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "养父",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "七子",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "外孙",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "姪女之夫",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "姑表兄弟",
+                "size": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "学术关系",
+        "size": 99,
+        "value": 99,
+        "children": [
+            {
+                "name": "为Y所著书作序",
+                "size": 7,
+                "value": 7
+            },
+            {
+                "name": "相唱和",
+                "size": 35,
+                "value": 35
+            },
+            {
+                "name": "称道Y之文风",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "以文章、学问受知于",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "诗/文由Y编辑",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "诗文序由Y所作",
+                "size": 5,
+                "value": 5
+            },
+            {
+                "name": "称道Y之文章、学问",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "为Y之学生",
+                "size": 4,
+                "value": 4
+            },
+            {
+                "name": "称道Y的诗作",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "画赞(画像记)由Y所作",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "门人为Y",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "为Y所著书作跋",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "论学",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "其学为Y所宗",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "教授Y",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "学记（书院记）由Y所作",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "学生为Y",
+                "size": 6,
+                "value": 6
+            },
+            {
+                "name": "书序由Y所作",
+                "size": 7,
+                "value": 7
+            },
+            {
+                "name": "文风为Y所称道",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "代Y作文",
+                "size": 3,
+                "value": 3
+            },
+            {
+                "name": "由Y代作文",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "编辑Y之诗/文",
+                "size": 3,
+                "value": 3
+            },
+            {
+                "name": "为Y所作诗文作序",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "画风为Y所师法",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "行状由Y所作",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "诗作为Y所称道",
+                "size": 2,
+                "value": 2
+            }
+        ]
+    },
+    {
+        "name": "政治关系",
+        "size": 33,
+        "value": 33,
+        "children": [
+            {
+                "name": "与Y结党",
+                "size": 12,
+                "value": 12
+            },
+            {
+                "name": "德政碑/颂由Y所作",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "幕僚为Y",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "政见趋同",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "为Y之幕僚",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "反对/攻讦",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "反对/不支持Y的政策",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "遭到Y的反对/攻讦",
+                "size": 3,
+                "value": 3
+            },
+            {
+                "name": "下属为Y",
+                "size": 3,
+                "value": 3
+            },
+            {
+                "name": "弹劾",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "为Y所辟",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "其政策被Y反对/不支持",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "陷害Y",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "支持",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "被Y陷害",
+                "size": 1,
+                "value": 1
+            }
+        ]
+    }
+]

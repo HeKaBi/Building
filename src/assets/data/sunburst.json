@@ -1,0 +1,113 @@
+[
+  {
+    "name": "唐",
+    "children": [
+      {
+        "name": "浪漫主义诗派",
+        "children": [
+          {"name": "喜", "value": 2493},
+          {"name": "怒", "value": 596},
+          {"name": "悲", "value": 3521},
+          {"name": "乐", "value": 3344},
+          {"name": "思", "value": 3727},
+          {"name": "惧", "value": 125},
+          {"name": "忧", "value": 1209}
+        ]
+      },
+      {
+        "name": "现实主义诗派",
+        "children": [
+          {"name": "喜", "value": 1357},
+          {"name": "怒", "value": 773},
+          {"name": "悲", "value": 5431},
+          {"name": "乐", "value": 1948},
+          {"name": "思", "value": 3960},
+          {"name": "惧", "value": 432},
+          {"name": "忧", "value": 1799}
+        ]
+      },
+      {
+        "name": "山水田园诗派",
+        "children": [
+          {"name": "喜", "value": 2088},
+          {"name": "怒", "value": 302},
+          {"name": "悲", "value": 1614},
+          {"name": "乐", "value": 3604},
+          {"name": "思", "value": 2460},
+          {"name": "惧", "value": 3},
+          {"name": "忧", "value": 344}
+        ]
+      },
+      {
+        "name": "边塞诗派",
+        "children": [
+          {"name": "喜", "value": 1656},
+          {"name": "怒", "value": 1003},
+          {"name": "悲", "value": 5013},
+          {"name": "乐", "value": 2603},
+          {"name": "思", "value": 4064},
+          {"name": "惧", "value": 156},
+          {"name": "忧", "value": 1632}
+        ]
+      }
+    ]
+  },
+  {
+    "name": "宋",
+    "children": [
+      {
+        "name": "豪放派",
+        "children": [
+          {"name": "喜", "value": 1867},
+          {"name": "怒", "value": 492},
+          {"name": "悲", "value": 2680},
+          {"name": "乐", "value": 1377},
+          {"name": "思", "value": 1613},
+          {"name": "惧", "value": 84},
+          {"name": "忧", "value": 262}
+        ]
+      },
+      {
+        "name": "婉约派",
+        "children": [
+          {"name": "喜", "value": 2356},
+          {"name": "怒", "value": 108},
+          {"name": "悲", "value": 3403},
+          {"name": "乐", "value": 931},
+          {"name": "思", "value": 3640},
+          {"name": "惧", "value": 82},
+          {"name": "忧", "value": 589}
+        ]
+      }
+    ]
+  },
+  {
+    "name": "元",
+    "children": [
+      {
+        "name": "豪放派",
+        "children": [
+          {"name": "喜", "value": 894},
+          {"name": "怒", "value": 391},
+          {"name": "悲", "value": 832},
+          {"name": "乐", "value": 831},
+          {"name": "思", "value": 736},
+          {"name": "惧", "value": 118},
+          {"name": "忧", "value": 380}
+        ]
+      },
+      {
+        "name": "清丽派",
+        "children": [
+          {"name": "喜", "value": 770},
+          {"name": "怒", "value": 107},
+          {"name": "悲", "value": 902},
+          {"name": "乐", "value": 820},
+          {"name": "思", "value": 924},
+          {"name": "惧", "value": 401},
+          {"name": "忧", "value": 665}
+        ]
+      }
+    ]
+  }
+]

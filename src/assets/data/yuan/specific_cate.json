@@ -1,0 +1,273 @@
+[
+    {
+        "name": "社会关系",
+        "size": 103,
+        "value": 103,
+        "children": [
+            {
+                "name": "从Y处收到贺词 (occasion)",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "友",
+                "size": 4,
+                "value": 4
+            },
+            {
+                "name": "赠诗、文",
+                "size": 14,
+                "value": 14
+            },
+            {
+                "name": "收到Y的赠诗、文",
+                "size": 10,
+                "value": 10
+            },
+            {
+                "name": "为Y之建筑物题咏、记、命名",
+                "size": 4,
+                "value": 4
+            },
+            {
+                "name": "建筑物得到Y的题咏、记、命名",
+                "size": 4,
+                "value": 4
+            },
+            {
+                "name": "为Y作墓志铭",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "为Y作世系碑记",
+                "size": 4,
+                "value": 4
+            },
+            {
+                "name": "为Y作神道碑",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "墓表由Y所作",
+                "size": 3,
+                "value": 3
+            },
+            {
+                "name": "挽诗、词由Y所作",
+                "size": 4,
+                "value": 4
+            },
+            {
+                "name": "为Y作临别赠言(送别诗、序)",
+                "size": 6,
+                "value": 6
+            },
+            {
+                "name": "传记作者为Y",
+                "size": 3,
+                "value": 3
+            },
+            {
+                "name": "为Y作画赞(画像记)",
+                "size": 4,
+                "value": 4
+            },
+            {
+                "name": "被致书由Y",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "祭文由Y所作",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "为Y作墓表",
+                "size": 3,
+                "value": 3
+            },
+            {
+                "name": "为Y作祭文",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "临别得到Y所作赠言(送别诗、序)",
+                "size": 6,
+                "value": 6
+            },
+            {
+                "name": "为Y作挽诗、词",
+                "size": 5,
+                "value": 5
+            },
+            {
+                "name": "与Y旅游",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "世系碑记由Y所作",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "哀辞由Y所作",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "佛寺记由Y所作",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "致Y启",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "墓志铭由Y所作",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "为Y作传",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "为Y作哀辞",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "向Y致贺",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "致书Y",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "收到Y的启",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "为Y作佛寺记",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "被Y推荐",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "神道碑由Y所作",
+                "size": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "学术关系",
+        "size": 63,
+        "value": 63,
+        "children": [
+            {
+                "name": "相唱和",
+                "size": 9,
+                "value": 9
+            },
+            {
+                "name": "为Y之书、画作跋",
+                "size": 9,
+                "value": 9
+            },
+            {
+                "name": "书、画由Y作跋",
+                "size": 9,
+                "value": 9
+            },
+            {
+                "name": "书序由Y所作",
+                "size": 5,
+                "value": 5
+            },
+            {
+                "name": "论学",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "诗文跋由Y所作",
+                "size": 6,
+                "value": 6
+            },
+            {
+                "name": "为Y所著书作跋",
+                "size": 2,
+                "value": 2
+            },
+            {
+                "name": "为Y之诗文作跋",
+                "size": 10,
+                "value": 10
+            },
+            {
+                "name": "为Y作年谱",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "为Y所著书作序",
+                "size": 3,
+                "value": 3
+            },
+            {
+                "name": "画赞(画像记)由Y所作",
+                "size": 4,
+                "value": 4
+            },
+            {
+                "name": "为Y作字说、名述",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "字说、名述由Y所作",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "书跋由Y所作",
+                "size": 1,
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "家庭关系",
+        "size": 2,
+        "value": 2,
+        "children": [
+            {
+                "name": "养育",
+                "size": 1,
+                "value": 1
+            },
+            {
+                "name": "被Y养育",
+                "size": 1,
+                "value": 1
+            }
+        ]
+    }
+]
