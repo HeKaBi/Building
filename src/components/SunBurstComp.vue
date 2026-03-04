@@ -143,7 +143,7 @@ const option = {
   title: {
     text: '朝代-派系-情感旭日图',
     left: 'center',
-    top: '-2%',
+    top: '2%',
     textStyle: {
       fontFamily: 'TitleFont',
       fontSize: 25,

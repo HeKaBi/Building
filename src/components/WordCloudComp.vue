@@ -77,7 +77,7 @@ const updateChart = (words: any[]) => {
       show: props.title,
       text: '双字词云图',
       left: 'center',
-      top: '-2%',
+      top: '2%',
       textStyle: {
         fontFamily: 'TitleFont',
         fontSize: 25,

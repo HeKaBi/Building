@@ -2,7 +2,7 @@
     <nav class="nav-bar" style="height: 70px;">
         <div class="nav-item" v-for="(item, index) in navItems" :key="index" :class="{ active: currentIndex === index }"
             @click="handleClick(index)">
-            <div>{{ item.title }}</div>
+            <div class="nav-label">{{ item.title }}</div>
         </div>
     </nav>
 </template>
@@ -55,7 +55,6 @@ watch(() => router.currentRoute.value.path, (newPath) => {
 
 .nav-item {
     text-align: center;
-    font-family: '华文行楷', sans-serif;
     font-size: 33px;
     padding: 4px;
     user-select: none;
@@ -91,5 +90,9 @@ watch(() => router.currentRoute.value.path, (newPath) => {
             transform: scaleX(1); // 选中时拉伸到100%
         }
     }
+}
+
+.nav-label {
+    font-family: 'NavFont', '华文行楷', serif !important;
 }
 </style>

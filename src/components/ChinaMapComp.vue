@@ -18,6 +18,7 @@ import { onMounted, onUnmounted, shallowRef, watch } from "vue";
 import vintage from '@/assets/theme/vintage.json'
 import chinaJson from '@/assets/map/china.json'
 import siteJson from '@/assets/map/site.json'
+import { waitForChartFonts } from '@/utils/chartFonts'
 
 echarts.use([
   TitleComponent,
@@ -41,7 +42,7 @@ const props = defineProps({
 })
 
 const graph = shallowRef();
-const initChart = () => {
+const initChart = async () => {
   if (graph.value) {
     graph.value.dispose();
   }
@@ -50,6 +51,7 @@ const initChart = () => {
   if (!chartDom) return;
   chartDom.style.width = '100%';
   chartDom.style.height = '90%';
+  await waitForChartFonts();
   let themeObj = JSON.parse(JSON.stringify(vintage))
   echarts.registerTheme('vintage', themeObj)
   graph.value = echarts.init(chartDom, 'vintage');

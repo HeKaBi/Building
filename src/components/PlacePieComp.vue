@@ -60,7 +60,7 @@ const initPie = () => {
         title: {
             text: '朝代-景点-诗词数量玫瑰图',
             left: 'center',
-            top: '-2%',
+            top: '2%',
             textStyle: {
                 fontFamily: 'TitleFont',
                 fontSize: 25

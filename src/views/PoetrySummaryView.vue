@@ -108,16 +108,19 @@ onBeforeUnmount(() => {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
+  padding-top: 12px;
 
   .top-row {
     width: 99%;
-    height: 55%;
+    height: calc(55% - 12px);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 
     .button-container {
       width: 100%;
+      min-height: 44px;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -155,12 +158,13 @@ onBeforeUnmount(() => {
 
     .charts {
       width: 100%;
-      height: 100%;
+      flex: 1;
+      min-height: 0;
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      margin-top: 1.5%;
+      margin-top: 8px;
 
 
       .left {

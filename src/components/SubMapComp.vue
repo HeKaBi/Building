@@ -26,6 +26,7 @@ import { CanvasRenderer } from 'echarts/renderers';
 import { onMounted, onUnmounted, shallowRef, watch, nextTick } from "vue";
 import vintage from '@/assets/theme/vintage.json'
 import siteJson from '@/assets/map/site.json'
+import { waitForChartFonts } from '@/utils/chartFonts'
 
 echarts.use([
     TitleComponent,
@@ -76,6 +77,7 @@ const initChart = async () => {
     if (!chartDom) return;
     chartDom.style.width = '100%';
     chartDom.style.height = '30%';
+    await waitForChartFonts();
     let themeObj = JSON.parse(JSON.stringify(vintage))
     echarts.registerTheme('vintage', themeObj)
     graph.value = echarts.init(chartDom, 'vintage');

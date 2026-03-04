@@ -19,8 +19,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('@/assets/images/background.png') center/cover no-repeat;
-    z-index: -1;
+    background: url('@/assets/images/background.png') center / cover no-repeat;
+    z-index: -2;
 }
 
 .entry-bg {
@@ -41,8 +41,9 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.42);
     z-index: -1;
+    pointer-events: none;
 }
 
 .tour-button {
@@ -75,10 +76,21 @@ body {
 
 @font-face {
     font-family: 'TitleFont';
-    src: url('../assets/fonts/FZZJ-YLWBJW.TTF');
+    src: url('../assets/fonts/AaXinHuaShuangJianTi.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NavFont';
+    src: url('../assets/fonts/FZXKJW.TTF') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'ContentFont';
-    src: url('../assets/fonts/FZChuSLKSJW.TTF');
+    src: url('../assets/fonts/FZZJ-ZYGDKJW.TTF');
+    font-display: swap;
 }
+

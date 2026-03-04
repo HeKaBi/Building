@@ -1,6 +1,7 @@
 <template>
   <div class="app-container">
     <div class="global-bg"></div>
+    <div class="global-overlay"></div>
     <MusicPlayComp/>
     <NavbarComp v-if="!isEntry" />
     <router-view v-slot="{ Component }">

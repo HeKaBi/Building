@@ -6,6 +6,7 @@
 import { ref, onMounted, onUnmounted, watch } from 'vue';
 import * as echarts from 'echarts';
 import vintage from '@/assets/theme/vintage.json';
+import { waitForChartFonts } from '@/utils/chartFonts';
 
 const props = defineProps({
     selectedDynasty: {
@@ -31,6 +32,8 @@ const loadDynastyData = async (dynasty: string) => {
 const initChart = async () => {
     if (!scatterChart.value) return;
     const dynastyData = await loadDynastyData(['tang', 'song', 'yuan'][props.selectedDynasty]);
+    chart?.dispose();
+    await waitForChartFonts();
     chart = echarts.init(scatterChart.value, 'vintage');
 
     const option = {

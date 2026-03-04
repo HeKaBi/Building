@@ -8,6 +8,7 @@ import * as echarts from 'echarts/core';
 import { TooltipComponent, GridComponent, LegendComponent, TitleComponent } from 'echarts/components';
 import { BarChart } from 'echarts/charts';
 import { CanvasRenderer } from 'echarts/renderers';
+import { waitForChartFonts } from '@/utils/chartFonts';
 
 echarts.use([TooltipComponent, GridComponent, LegendComponent, BarChart, CanvasRenderer, TitleComponent]);
 
@@ -31,8 +32,9 @@ const poets = {
   "元代": "关汉卿、马致远等人"
 }
 
-onMounted(() => {
+onMounted(async () => {
   if (!barChart.value) return;
+  await waitForChartFonts();
   chart = echarts.init(barChart.value);
   renderChart();
 });
@@ -45,6 +47,8 @@ watch(
 );
 
 const renderChart = () => {
+  if (!chart) return;
+
   const series = [
     {
       name: '诗词总量',
