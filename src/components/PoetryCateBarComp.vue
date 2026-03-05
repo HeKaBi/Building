@@ -48,7 +48,7 @@ const initEcharts = () => {
             text: '诗词-自然科学内容关联图',
             left: 'center',
             textStyle: {
-                fontFamily: 'TitleFont',
+                fontFamily: 'ChartTitleFont',
                 fontSize: 25,
             }
         },

@@ -210,7 +210,7 @@ const initEcharts = () => {
             text: '诗人关系网络图',
             left: 'center',
             textStyle: {
-                fontFamily: 'TitleFont',
+                fontFamily: 'ChartTitleFont',
                 fontSize: 25,
             }
         },

@@ -82,7 +82,7 @@ onMounted(() => {
         left: 'center',
         top: '0%',
         textStyle: {
-            fontFamily: 'TitleFont',
+            fontFamily: 'ChartTitleFont',
             fontSize: 25,
         }
     });
@@ -93,7 +93,7 @@ onMounted(() => {
             top: ((index + 0.5) * 100) / 4 + 15 + '%',
             text: dynasty,
             textStyle: {
-                fontFamily: 'TitleFont',
+                fontFamily: 'ChartTitleFont',
                 fontSize: 25,
             }
         });

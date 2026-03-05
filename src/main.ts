@@ -4,5 +4,10 @@ import App from './App.vue'
 import './style/global.scss'
 import router from './router'
 import store from './store'
+import { waitForChartFonts } from './utils/chartFonts'
 
-createApp(App).use(router).use(store).mount('#app')
+const app = createApp(App).use(router).use(store)
+
+waitForChartFonts().finally(() => {
+  app.mount('#app')
+})

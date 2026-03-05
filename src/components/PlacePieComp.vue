@@ -62,7 +62,7 @@ const initPie = () => {
             left: 'center',
             top: '2%',
             textStyle: {
-                fontFamily: 'TitleFont',
+                fontFamily: 'ChartTitleFont',
                 fontSize: 25
             }
         },

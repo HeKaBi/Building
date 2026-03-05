@@ -108,7 +108,7 @@ const initChart = async () => {
             text: mapTitle[props.mType],
             left: 'center',
             textStyle: {
-                fontFamily: 'TitleFont',
+                fontFamily: 'ChartTitleFont',
                 fontSize: 20,
             }
         },

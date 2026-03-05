@@ -46,7 +46,7 @@ const initEcharts = () => {
             text: '情感-诗人-派系桑基图',
             left: 'center',
             textStyle: {
-                fontFamily: 'TitleFont',
+                fontFamily: 'ChartTitleFont',
                 fontSize: 25,
             }
         },

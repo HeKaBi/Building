@@ -346,7 +346,7 @@ onBeforeUnmount(() => {
 }
 
 .chart-title {
-    font-family: 'TitleFont';
+    font-family: 'ChartTitleFont';
     font-size: 25px;
     text-align: center;
     font-weight: 600;
@@ -355,7 +355,7 @@ onBeforeUnmount(() => {
 }
 
 .friend-chart-title {
-    font-family: 'TitleFont';
+    font-family: 'ChartTitleFont';
     font-size: 25px;
     text-align: center;
     font-weight: 600;

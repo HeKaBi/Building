@@ -82,7 +82,7 @@ const initChart = async () => {
       text: '诗人籍贯分布图',
       left: 'center',
       textStyle: {
-        fontFamily: 'TitleFont',
+        fontFamily: 'ChartTitleFont',
         fontSize: 28,
       }
     },

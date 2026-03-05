@@ -73,7 +73,7 @@ const renderChart = () => {
     title: {
       text: '朝代诗词总量图',
       textStyle: {
-        fontFamily: 'TitleFont',
+        fontFamily: 'ChartTitleFont',
         fontSize: 20,
       },
       left: 'center',

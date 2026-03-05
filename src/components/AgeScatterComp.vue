@@ -45,7 +45,7 @@ const initChart = async () => {
         title: {
             text: `诗人享年数据分布图`,
             textStyle: {
-                fontFamily: 'TitleFont',
+                fontFamily: 'ChartTitleFont',
                 fontSize: 20,
             },
             left: 'center'
