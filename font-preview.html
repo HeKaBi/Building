@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>字体对比测试</title>
+    <link rel="stylesheet" href="./font-preview.css" />
+</head>
+<body>
+    <main class="page">
+        <h1>图表标题字体对比测试</h1>
+        <p class="desc">
+            测试文本：
+            <span>诗人籍贯分布图 / 关中地区 / 江南北部 / 诗人享年数据分布图</span>
+        </p>
+        <div id="status" class="status">正在加载字体...</div>
+
+        <section class="grid">
+            <article class="card">
+                <h2>DOM 渲染对比</h2>
+                <div class="row">
+                    <label>目标字体（字魂敦煌经韵楷）</label>
+                    <p class="sample font-target">诗人籍贯分布图 关中地区 江南北部 诗人享年数据分布图</p>
+                </div>
+                <div class="row">
+                    <label>旧字体（敦煌飞天 行楷体）</label>
+                    <p class="sample font-old-dunhuang">诗人籍贯分布图 关中地区 江南北部 诗人享年数据分布图</p>
+                </div>
+                <div class="row">
+                    <label>导航字体（方正行楷简体）</label>
+                    <p class="sample font-nav">诗人籍贯分布图 关中地区 江南北部 诗人享年数据分布图</p>
+                </div>
+                <div class="row">
+                    <label>系统字体（对照）</label>
+                    <p class="sample font-system">诗人籍贯分布图 关中地区 江南北部 诗人享年数据分布图</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <h2>Canvas 渲染对比（模拟 ECharts）</h2>
+                <canvas id="preview-canvas" width="1200" height="460"></canvas>
+            </article>
+        </section>
+    </main>
+
+    <script>
+        const sampleText = '诗人籍贯分布图 关中地区 江南北部 诗人享年数据分布图';
+        const statusEl = document.getElementById('status');
+
+        const fontChecks = [
+            ['目标字体别名', '400 20px "ChartTitleFont"'],
+            ['目标字体内部名', '400 20px "字魂敦煌经韵楷(商用需授权)"'],
+            ['旧字体别名', '400 20px "ChartTitleFontLegacy"'],
+            ['旧字体内部名', '400 20px "敦煌飞天 行楷体"'],
+            ['导航字体别名', '400 20px "NavFont"'],
+            ['导航字体内部名', '400 20px "方正行楷简体"'],
+        ];
+
+        const canvasFontDefs = [
+            ['目标字体别名', '"ChartTitleFont", serif'],
+            ['目标字体内部名', '"字魂敦煌经韵楷(商用需授权)", serif'],
+            ['旧字体别名', '"ChartTitleFontLegacy", serif'],
+            ['旧字体内部名', '"敦煌飞天 行楷体", serif'],
+            ['导航字体内部名', '"方正行楷简体", serif'],
+            ['系统字体', '"Microsoft YaHei", sans-serif'],
+        ];
+
+        const drawCanvas = () => {
+            const canvas = document.getElementById('preview-canvas');
+            const ctx = canvas.getContext('2d');
+            if (!ctx) return;
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = '#f6f1e6';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.strokeStyle = '#d2c2a8';
+            ctx.strokeRect(12, 12, canvas.width - 24, canvas.height - 24);
+
+            let y = 76;
+            for (const [label, family] of canvasFontDefs) {
+                ctx.fillStyle = '#3a2e1f';
+                ctx.font = '600 20px "Microsoft YaHei", sans-serif';
+                ctx.fillText(label, 24, y);
+
+                ctx.fillStyle = '#8f2f22';
+                ctx.font = `400 42px ${family}`;
+                ctx.fillText(sampleText, 240, y);
+
+                y += 82;
+            }
+        };
+
+        const updateStatus = async () => {
+            await Promise.allSettled(
+                fontChecks.map(([, fontDef]) => document.fonts.load(fontDef, sampleText))
+            );
+
+            const rows = fontChecks.map(([label, fontDef]) => {
+                const ready = document.fonts.check(fontDef, sampleText);
+                return `${label}: ${ready ? '已加载' : '未加载（可能回退）'}`;
+            });
+
+            statusEl.innerHTML = rows.map((x) => `<div>${x}</div>`).join('');
+        };
+
+        const boot = async () => {
+            await updateStatus();
+            drawCanvas();
+            window.setTimeout(drawCanvas, 900);
+        };
+
+        boot();
+    </script>
+</body>
+</html>

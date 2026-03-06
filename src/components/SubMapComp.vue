@@ -26,7 +26,7 @@ import { CanvasRenderer } from 'echarts/renderers';
 import { onMounted, onUnmounted, shallowRef, watch, nextTick } from "vue";
 import vintage from '@/assets/theme/vintage.json'
 import siteJson from '@/assets/map/site.json'
-import { waitForChartFonts } from '@/utils/chartFonts'
+import { CHART_TITLE_FONT_FAMILY, waitForChartFonts } from '@/utils/chartFonts'
 
 echarts.use([
     TitleComponent,
@@ -67,6 +67,20 @@ const props = defineProps({
 })
 
 const graph = shallowRef();
+const refreshTitleFont = () => {
+    graph.value?.setOption({
+        title: {
+            textStyle: {
+                fontFamily: CHART_TITLE_FONT_FAMILY,
+                fontWeight: 'bold',
+            },
+        },
+    });
+};
+const handleResize = () => {
+    graph.value?.resize();
+};
+
 const initChart = async () => {
     if (graph.value) {
         graph.value.dispose();
@@ -108,8 +122,9 @@ const initChart = async () => {
             text: mapTitle[props.mType],
             left: 'center',
             textStyle: {
-                fontFamily: 'ChartTitleFont',
-                fontSize: 20,
+                fontFamily: CHART_TITLE_FONT_FAMILY,
+                fontWeight: 'bold',
+                fontSize: 26,
             }
         },
         geo: {
@@ -183,6 +198,8 @@ const initChart = async () => {
         ]
     }
     graph.value.setOption(option);
+    requestAnimationFrame(refreshTitleFont);
+    window.setTimeout(refreshTitleFont, 900);
 }
 
 watch(() => props.data, async () => {
@@ -191,9 +208,11 @@ watch(() => props.data, async () => {
 
 onMounted(async () => {
     initChart();
+    window.addEventListener('resize', handleResize);
 })
 
 onUnmounted(() => {
+    window.removeEventListener('resize', handleResize);
     if (graph.value) {
         graph.value.dispose();
     }

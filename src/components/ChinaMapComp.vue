@@ -18,7 +18,7 @@ import { onMounted, onUnmounted, shallowRef, watch } from "vue";
 import vintage from '@/assets/theme/vintage.json'
 import chinaJson from '@/assets/map/china.json'
 import siteJson from '@/assets/map/site.json'
-import { waitForChartFonts } from '@/utils/chartFonts'
+import { CHART_TITLE_FONT_FAMILY, waitForChartFonts } from '@/utils/chartFonts'
 
 echarts.use([
   TitleComponent,
@@ -42,6 +42,20 @@ const props = defineProps({
 })
 
 const graph = shallowRef();
+const refreshTitleFont = () => {
+  graph.value?.setOption({
+    title: {
+      textStyle: {
+        fontFamily: CHART_TITLE_FONT_FAMILY,
+        fontWeight: 'bold',
+      },
+    },
+  });
+};
+const handleResize = () => {
+  graph.value?.resize();
+};
+
 const initChart = async () => {
   if (graph.value) {
     graph.value.dispose();
@@ -82,8 +96,9 @@ const initChart = async () => {
       text: '诗人籍贯分布图',
       left: 'center',
       textStyle: {
-        fontFamily: 'ChartTitleFont',
-        fontSize: 28,
+        fontFamily: CHART_TITLE_FONT_FAMILY,
+        fontWeight: 'bold',
+        fontSize: 34,
       }
     },
     geo: {
@@ -156,6 +171,8 @@ const initChart = async () => {
     ]
   }
   graph.value.setOption(option);
+  requestAnimationFrame(refreshTitleFont);
+  window.setTimeout(refreshTitleFont, 900);
 }
 
 watch(() => props.data, () => {
@@ -164,9 +181,11 @@ watch(() => props.data, () => {
 
 onMounted(() => {
   initChart();
+  window.addEventListener('resize', handleResize);
 })
 
 onUnmounted(() => {
+  window.removeEventListener('resize', handleResize);
   if (graph.value) {
     graph.value.dispose();
   }

@@ -49,7 +49,8 @@ const initEcharts = () => {
             left: 'center',
             textStyle: {
                 fontFamily: 'ChartTitleFont',
-                fontSize: 25,
+                fontSize: 30,
+                fontWeight: 'bold',
             }
         },
         tooltip: {

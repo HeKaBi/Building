@@ -347,18 +347,18 @@ onBeforeUnmount(() => {
 
 .chart-title {
     font-family: 'ChartTitleFont';
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 700;
     position: relative;
     top: 6%;
 }
 
 .friend-chart-title {
     font-family: 'ChartTitleFont';
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .tour-comp {

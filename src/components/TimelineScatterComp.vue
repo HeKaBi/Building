@@ -83,7 +83,8 @@ onMounted(() => {
         top: '0%',
         textStyle: {
             fontFamily: 'ChartTitleFont',
-            fontSize: 25,
+            fontSize: 30,
+            fontWeight: 'bold',
         }
     });
 
@@ -94,7 +95,8 @@ onMounted(() => {
             text: dynasty,
             textStyle: {
                 fontFamily: 'ChartTitleFont',
-                fontSize: 25,
+                fontSize: 26,
+                fontWeight: 'bold',
             }
         });
         singleAxis.push({

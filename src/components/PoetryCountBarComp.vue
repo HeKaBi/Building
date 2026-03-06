@@ -74,7 +74,8 @@ const renderChart = () => {
       text: '朝代诗词总量图',
       textStyle: {
         fontFamily: 'ChartTitleFont',
-        fontSize: 20,
+        fontSize: 28,
+        fontWeight: 'bold',
       },
       left: 'center',
     },

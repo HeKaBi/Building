@@ -6,7 +6,7 @@
 import { ref, onMounted, onUnmounted, watch } from 'vue';
 import * as echarts from 'echarts';
 import vintage from '@/assets/theme/vintage.json';
-import { waitForChartFonts } from '@/utils/chartFonts';
+import { CHART_TITLE_FONT_FAMILY, waitForChartFonts } from '@/utils/chartFonts';
 
 const props = defineProps({
     selectedDynasty: {
@@ -18,6 +18,17 @@ const props = defineProps({
 const scatterChart = ref<HTMLElement | null>(null);
 let chart: echarts.ECharts | null = null;
 echarts.registerTheme('vintage', vintage);
+
+const refreshTitleFont = () => {
+    chart?.setOption({
+        title: {
+            textStyle: {
+                fontFamily: CHART_TITLE_FONT_FAMILY,
+                fontWeight: 'bold',
+            },
+        },
+    });
+};
 
 const loadDynastyData = async (dynasty: string) => {
     try {
@@ -45,8 +56,9 @@ const initChart = async () => {
         title: {
             text: `诗人享年数据分布图`,
             textStyle: {
-                fontFamily: 'ChartTitleFont',
-                fontSize: 20,
+                fontFamily: CHART_TITLE_FONT_FAMILY,
+                fontWeight: 'bold',
+                fontSize: 28,
             },
             left: 'center'
         },
@@ -91,6 +103,8 @@ const initChart = async () => {
     };
 
     chart.setOption(option as echarts.EChartsOption);
+    requestAnimationFrame(refreshTitleFont);
+    window.setTimeout(refreshTitleFont, 900);
 };
 
 watch(() => props.selectedDynasty, initChart);

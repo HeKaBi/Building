@@ -146,7 +146,8 @@ const option = {
     top: '2%',
     textStyle: {
       fontFamily: 'ChartTitleFont',
-      fontSize: 25,
+      fontSize: 30,
+      fontWeight: 'bold',
     }
   },
   tooltip: {
