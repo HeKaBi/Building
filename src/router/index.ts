@@ -5,7 +5,11 @@ const routes = [
     {
         path: '/',
         name: 'Entry',
-        component: EntryView
+        component: EntryView,
+        meta: {
+            hideNavbar: true,
+            hideMusic: true
+        }
     },
     {
         path: '/home',
@@ -32,7 +36,24 @@ const routes = [
         name: 'PoetDetails',
         component: () => import('@/views/PoetDetailsView.vue')
     },
-    // 无匹配页面则跳转到404
+    {
+        path: '/building-map-demo',
+        name: 'BuildingMapDemo',
+        component: () => import('@/views/BuildingMapDemoView.vue'),
+        meta: {
+            hideNavbar: true,
+            hideMusic: true
+        }
+    },
+    {
+        path: '/building-section-demo',
+        name: 'BuildingSectionDemo',
+        component: () => import('@/views/BuildingSectionDemoView.vue'),
+        meta: {
+            hideNavbar: true,
+            hideMusic: true
+        }
+    },
     {
         path: '/:pathMatch(.*)*',
         name: 'NotFound',
@@ -40,13 +61,10 @@ const routes = [
     }
 ]
 
-const router = createRouter(
-    {
-        history: createWebHashHistory(),
-        routes: routes,
-        // 在导航栏中，为当前活动路由的菜单项添加类名
-        linkActiveClass: 'router-active'
-    }
-)
+const router = createRouter({
+    history: createWebHashHistory(),
+    routes,
+    linkActiveClass: 'router-active'
+})
 
 export default router

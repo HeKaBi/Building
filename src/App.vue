@@ -2,8 +2,8 @@
   <div class="app-container">
     <div class="global-bg"></div>
     <div class="global-overlay"></div>
-    <MusicPlayComp/>
-    <NavbarComp v-if="!isEntry" />
+    <MusicPlayComp v-if="!hideMusic" />
+    <NavbarComp v-if="!hideNavbar" />
     <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <component :is="Component" />
@@ -15,11 +15,14 @@
 <style scoped>
 .app-container {
   position: relative;
-  width: 100vw;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
+  overflow: hidden;
 }
 
 .fade-enter-active,
@@ -34,15 +37,11 @@
 </style>
 
 <script setup lang="ts">
+import { computed } from 'vue';
+
 import NavbarComp from './components/NavbarComp.vue';
-import router from './router'
-import { ref, watch } from 'vue';
+import router from './router';
 
-const isEntry = ref(false);
-
-watch(() => router.currentRoute.value.path, (newRoute) => {
-  isEntry.value = newRoute === '/';
-}, {
-  immediate: true
-})
+const hideNavbar = computed(() => Boolean(router.currentRoute.value.meta.hideNavbar));
+const hideMusic = computed(() => Boolean(router.currentRoute.value.meta.hideMusic));
 </script>
