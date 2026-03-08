@@ -64,6 +64,17 @@
                   <p>{{ category.summary }}</p>
                 </div>
               </div>
+              <div v-else class="category-slab__poster-copy">
+                <div class="category-slab__poster-head">
+                  <div class="category-slab__seal">{{ category.seal }}</div>
+                  <div class="category-slab__poster-title-wrap">
+                    <div class="category-slab__title">{{ category.title }}</div>
+                    <div class="category-slab__alias">{{ category.alias }}</div>
+                    <div class="category-slab__english">{{ category.english }}</div>
+                  </div>
+                </div>
+                <p>{{ category.summary }}</p>
+              </div>
 
               <div class="category-slab__art">
                 <ArchitectureSketch
@@ -386,12 +397,20 @@ watch(
   min-height: 0;
 }
 
+.stage--home {
+  margin: -14px;
+  height: calc(100% + 28px);
+}
+
 .category-grid {
   height: 100%;
   min-height: 0;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
+  gap: 0;
+  background:
+    linear-gradient(180deg, rgba(244, 238, 227, 0.18), rgba(233, 225, 210, 0.1)),
+    rgba(241, 235, 224, 0.16);
 }
 
 .category-slab {
@@ -402,15 +421,30 @@ watch(
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
-  padding: 18px;
-  border: 1px solid rgba(147, 116, 93, 0.16);
-  background:
-    linear-gradient(180deg, rgba(248, 243, 235, 0.74), rgba(236, 228, 214, 0.86)),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.14), transparent 44%);
-  box-shadow: 0 14px 30px rgba(72, 54, 41, 0.08);
+  padding: 26px 20px 22px;
+  border: none;
+  background: transparent;
+  box-shadow: none;
   text-align: left;
   cursor: pointer;
-  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease, filter 0.28s ease;
+  isolation: isolate;
+  transition: transform 0.28s ease, filter 0.28s ease, background-color 0.28s ease;
+}
+
+.category-slab::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background:
+    linear-gradient(180deg, transparent, rgba(126, 98, 78, 0.22) 14%, rgba(126, 98, 78, 0.26) 80%, transparent);
+  opacity: 0.95;
+}
+
+.category-slab:last-child::after {
+  display: none;
 }
 
 .category-slab--poster {
@@ -444,9 +478,10 @@ watch(
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.18), transparent 35%),
-    radial-gradient(circle at 78% 20%, color-mix(in srgb, var(--accent-color) 8%, transparent), transparent 30%);
-  opacity: 0.88;
+    linear-gradient(180deg, rgba(255, 255, 255, 0.12), transparent 30%),
+    linear-gradient(180deg, rgba(218, 208, 192, 0.12), transparent 55%),
+    radial-gradient(circle at 78% 20%, color-mix(in srgb, var(--accent-color) 6%, transparent), transparent 32%);
+  opacity: 0.72;
 }
 
 .category-slab--poster::before {
@@ -456,10 +491,8 @@ watch(
 }
 
 .category-slab:hover {
-  transform: translateY(-6px) scale(1.01);
-  border-color: color-mix(in srgb, var(--outline-color) 28%, rgba(147, 116, 93, 0.2));
-  box-shadow: 0 20px 38px rgba(72, 54, 41, 0.14);
-  filter: saturate(1.06);
+  transform: translateY(-2px);
+  filter: saturate(1.05);
 }
 
 .category-slab:hover .category-slab__photo {
@@ -484,11 +517,11 @@ watch(
       rgba(114, 86, 66, 0.04) 23px,
       rgba(114, 86, 66, 0.04) 24px
     );
-  opacity: 0.95;
+  opacity: 0.58;
 }
 
 .category-slab--poster .category-slab__overlay {
-  opacity: 0.3;
+  opacity: 0.22;
 }
 
 .category-slab--poster .category-slab__content,
@@ -496,11 +529,16 @@ watch(
   background: transparent;
 }
 
+.category-slab--poster:hover .category-slab__poster-copy {
+  background: rgba(248, 245, 242, 0.68);
+}
+
 .category-slab--poster:hover .category-slab__overlay {
   opacity: 0.1;
 }
 
 .category-slab__content,
+.category-slab__poster-copy,
 .category-slab__art,
 .category-slab__enter {
   position: relative;
@@ -512,6 +550,38 @@ watch(
   grid-template-columns: 52px minmax(0, 1fr);
   gap: 12px;
   align-items: start;
+  max-width: 260px;
+}
+
+.category-slab__poster-copy {
+  display: grid;
+  gap: 10px;
+  align-self: flex-start;
+  width: min(252px, calc(100% - 28px));
+  padding: 12px 14px;
+  border: 1px solid rgba(146, 118, 97, 0.14);
+  background: rgba(244, 239, 235, 0.46);
+  box-shadow: 0 8px 20px rgba(70, 52, 41, 0.05);
+  backdrop-filter: blur(4px);
+}
+
+.category-slab__poster-head {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+}
+
+.category-slab__poster-title-wrap {
+  min-width: 0;
+}
+
+.category-slab__poster-copy p {
+  margin: 0;
+  font-family: 'ContentFont', serif;
+  font-size: 12px;
+  line-height: 1.76;
+  color: rgba(78, 58, 47, 0.82);
 }
 
 .category-slab__seal {
@@ -565,7 +635,7 @@ watch(
 .category-slab__art {
   flex: 1 1 auto;
   min-height: 0;
-  margin-top: 14px;
+  margin-top: 18px;
   transform-origin: center bottom;
   transition: transform 0.28s ease;
 }
@@ -575,7 +645,7 @@ watch(
 }
 
 .category-slab:hover .category-slab__art {
-  transform: scale(1.06) translateY(-6px);
+  transform: scale(1.03) translateY(-2px);
 }
 
 .category-slab__enter {
@@ -594,7 +664,7 @@ watch(
   align-self: flex-end;
   margin-top: 0;
   color: #6c4539;
-  background: rgba(248, 243, 236, 0.62);
+  background: rgba(248, 243, 236, 0.42);
   backdrop-filter: blur(5px);
 }
 
@@ -926,6 +996,12 @@ watch(
   .category-grid {
     grid-template-columns: 1fr;
     height: auto;
+  }
+
+  .stage--home {
+    margin: -10px;
+    height: auto;
+    min-height: calc(100vh - 20px);
   }
 
   .category-slab__art {

@@ -1,4 +1,7 @@
 import type { BuildingCategory } from './types';
+import bridgeCover from '@/assets/images/building-covers/bridge-cover.png';
+import officeCover from '@/assets/images/building-covers/office-cover.png';
+import palaceCover from '@/assets/images/building-covers/palace-cover.png';
 import residenceCover from '@/assets/images/building-covers/residence-cover.png';
 
 export const buildingCatalog: BuildingCategory[] = [
@@ -157,6 +160,10 @@ export const buildingCatalog: BuildingCategory[] = [
     accent: '#a44a3d',
     outline: '#7c3029',
     coverVariant: 'office-yamen',
+    coverImage: officeCover,
+    coverPosition: 'center center',
+    coverSize: 'contain',
+    useCoverAsPoster: true,
     groups: [
       {
         id: 'office-songyuan',
@@ -297,6 +304,10 @@ export const buildingCatalog: BuildingCategory[] = [
     accent: '#3e6f61',
     outline: '#2a5449',
     coverVariant: 'palace-hall',
+    coverImage: palaceCover,
+    coverPosition: 'center center',
+    coverSize: 'contain',
+    useCoverAsPoster: true,
     groups: [
       {
         id: 'palace-tangsong',
@@ -437,6 +448,10 @@ export const buildingCatalog: BuildingCategory[] = [
     accent: '#b4824f',
     outline: '#8d6438',
     coverVariant: 'bridge-arch',
+    coverImage: bridgeCover,
+    coverPosition: 'center center',
+    coverSize: 'contain',
+    useCoverAsPoster: true,
     groups: [
       {
         id: 'bridge-stone',
