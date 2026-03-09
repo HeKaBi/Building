@@ -86,7 +86,7 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue';
 
-import rawBuildings from '../../building.json';
+import rawBuildings from '../../building-jittered.json';
 import BuildingMapChart from '@/demo/building-home-map/components/BuildingMapChart.vue';
 import BuildingTimeline from '@/demo/building-home-map/components/BuildingTimeline.vue';
 import {

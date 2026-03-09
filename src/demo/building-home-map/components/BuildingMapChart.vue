@@ -78,11 +78,12 @@ const PREVIEW_CARD_HEIGHT = 258;
 const PREVIEW_EDGE_GAP = 16;
 const PREVIEW_POINT_OFFSET = 18;
 const MIN_GEO_ZOOM = 1;
-const MAX_GEO_ZOOM = 6;
-const INITIAL_GEO_ZOOM = MAX_GEO_ZOOM;
+const MAX_GEO_ZOOM = 8;
+const INITIAL_GEO_ZOOM = 7.2;
 const INITIAL_GEO_CENTER: [number, number] = [113.7, 37.9];
-const INITIAL_LAYOUT_CENTER: [string, string] = ['50%', '56%'];
-const INITIAL_LAYOUT_SIZE = '100%';
+const INITIAL_LAYOUT_CENTER: [string, string] = ['48%', '56%'];
+const INITIAL_LAYOUT_SIZE = '118%';
+const HIT_SYMBOL_SIZE = 24;
 const clamp = (value: number, min: number, max: number) => Math.min(Math.max(value, min), max);
 
 const chartRef = ref<HTMLDivElement | null>(null);
@@ -112,9 +113,11 @@ const previewStyle = computed<CSSProperties | undefined>(() => {
   } as CSSProperties;
 });
 
-const createPoint = (building: BuildingRecord, focused = false) => {
+const createPoint = (building: BuildingRecord, options?: { focused?: boolean; hitArea?: boolean }) => {
   const color = getStructureColor(building);
   const baseSize = getBuildingSymbolSize(building);
+  const focused = options?.focused ?? false;
+  const hitArea = options?.hitArea ?? false;
 
   return {
     name: building.name,
@@ -122,14 +125,18 @@ const createPoint = (building: BuildingRecord, focused = false) => {
     buildingId: building.id,
     building,
     symbol: getBuildingSymbol(building),
-    symbolSize: focused ? baseSize + 5 : baseSize,
+    symbolSize: hitArea ? Math.max(HIT_SYMBOL_SIZE, baseSize + 12) : focused ? baseSize + 5 : baseSize,
     itemStyle: {
-      color,
-      borderColor: focused ? 'rgba(248, 241, 229, 0.96)' : 'rgba(245, 236, 222, 0.88)',
-      borderWidth: focused ? 1.8 : 1.05,
-      shadowBlur: focused ? 18 : 10,
-      shadowColor: focused ? `${color}66` : `${color}3d`,
-      opacity: 0.98,
+      color: hitArea ? 'rgba(0, 0, 0, 0.001)' : color,
+      borderColor: hitArea
+        ? 'rgba(0, 0, 0, 0)'
+        : focused
+          ? 'rgba(248, 241, 229, 0.96)'
+          : 'rgba(245, 236, 222, 0.88)',
+      borderWidth: hitArea ? 0 : focused ? 1.8 : 1.05,
+      shadowBlur: hitArea ? 0 : focused ? 18 : 10,
+      shadowColor: hitArea ? 'transparent' : focused ? `${color}66` : `${color}3d`,
+      opacity: hitArea ? 1 : 0.98,
     },
   };
 };
@@ -226,55 +233,70 @@ const renderChart = () => {
 
   echarts.registerMap('china-building-demo', chinaJson as never);
 
+  const geoOption = {
+    map: 'china-building-demo',
+    roam: true,
+    zoom: geoZoom.value,
+    center: geoCenter.value,
+    aspectScale: 0.88,
+    scaleLimit: {
+      min: MIN_GEO_ZOOM,
+      max: MAX_GEO_ZOOM,
+    },
+    layoutCenter: INITIAL_LAYOUT_CENTER,
+    layoutSize: INITIAL_LAYOUT_SIZE,
+    selectedMode: false,
+    label: {
+      show: true,
+      color: 'rgba(152, 91, 72, 0.48)',
+      fontSize: 14,
+      fontFamily: 'ContentFont',
+    },
+    emphasis: {
+      label: {
+        color: '#8d392c',
+      },
+      itemStyle: {
+        areaColor: 'rgba(225, 213, 194, 0.54)',
+        borderColor: 'rgba(167, 137, 112, 0.98)',
+        borderWidth: 1.8,
+      },
+    },
+    itemStyle: {
+      areaColor: 'rgba(207, 194, 175, 0.34)',
+      borderColor: 'rgba(147, 125, 106, 0.9)',
+      borderWidth: 1.38,
+    },
+  };
+
+  const interactivePoints = props.buildings.map((building) => createPoint(building, { hitArea: true }));
+
   const normalPoints = props.buildings
     .filter((building) => building.id !== props.selectedId)
     .map((building) => createPoint(building));
 
-  const focusPoints = selectedBuilding.value ? [createPoint(selectedBuilding.value, true)] : [];
+  const focusPoints = selectedBuilding.value ? [createPoint(selectedBuilding.value, { focused: true })] : [];
 
   chart.setOption({
     backgroundColor: 'transparent',
     animationDurationUpdate: 0,
-    geo: {
-      map: 'china-building-demo',
-      roam: true,
-      zoom: geoZoom.value,
-      center: geoCenter.value,
-      aspectScale: 0.88,
-      scaleLimit: {
-        min: MIN_GEO_ZOOM,
-        max: MAX_GEO_ZOOM,
-      },
-      layoutCenter: INITIAL_LAYOUT_CENTER,
-      layoutSize: INITIAL_LAYOUT_SIZE,
-      selectedMode: false,
-      label: {
-        show: true,
-        color: 'rgba(152, 91, 72, 0.48)',
-        fontSize: 14,
-        fontFamily: 'ContentFont',
-      },
-      emphasis: {
-        label: {
-          color: '#8d392c',
-        },
-        itemStyle: {
-          areaColor: 'rgba(225, 213, 194, 0.54)',
-          borderColor: 'rgba(167, 137, 112, 0.98)',
-          borderWidth: 1.8,
-        },
-      },
-      itemStyle: {
-        areaColor: 'rgba(207, 194, 175, 0.34)',
-        borderColor: 'rgba(147, 125, 106, 0.9)',
-        borderWidth: 1.38,
-      },
-    },
+    geo: geoOption,
     series: [
       {
         type: 'scatter',
         coordinateSystem: 'geo',
+        data: interactivePoints,
+        z: 6,
+        emphasis: {
+          disabled: true,
+        },
+      },
+      {
+        type: 'scatter',
+        coordinateSystem: 'geo',
         data: normalPoints,
+        silent: true,
+        z: 4,
         emphasis: {
           scale: 1.18,
         },
@@ -283,6 +305,8 @@ const renderChart = () => {
         type: 'effectScatter',
         coordinateSystem: 'geo',
         data: focusPoints,
+        silent: true,
+        z: 5,
         showEffectOn: 'render',
         rippleEffect: {
           scale: 3.4,
