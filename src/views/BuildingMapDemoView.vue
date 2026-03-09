@@ -12,15 +12,6 @@
     <div class="building-map-screen__motif"></div>
 
     <div class="screen-ui">
-      <header class="map-brand">
-        <div class="map-brand__seal">{{ uiText.brandSealTop }}<br />{{ uiText.brandSealBottom }}</div>
-        <div class="map-brand__content">
-          <div class="map-brand__eyebrow">Chinese Traditional Architecture Atlas</div>
-          <h1>{{ uiText.pageTitle }}</h1>
-          <p>{{ uiText.pageCopy }}</p>
-        </div>
-      </header>
-
       <div class="map-legend">
         <div v-for="item in structureLegend" :key="item.key" class="map-legend__item">
           <span class="map-legend__dot" :style="{ '--legend-color': item.color }"></span>
@@ -56,25 +47,21 @@
           <h2 class="legend-block__title">{{ uiText.planTitle }}</h2>
           <div class="legend-block__hint">{{ uiText.planHint }}</div>
 
-          <div class="plan-legend">
-            <div class="plan-legend__column">
-              <div v-for="item in pointShapeLegend" :key="item.label" class="plan-row">
-                <span>{{ item.label }}</span>
+          <div class="importance-legend">
+            <div v-for="item in importanceLegend" :key="item.label" class="importance-row">
+              <span class="importance-row__marker">
                 <i
                   class="plan-shape"
                   :class="`plan-shape--${item.className}`"
                   :style="{ '--shape-size': `${item.size}px` }"
                 ></i>
-              </div>
-            </div>
+              </span>
 
-            <div class="plan-legend__divider"></div>
-
-            <div class="plan-legend__column">
-              <div v-for="item in depthSizeLegend" :key="item.label" class="plan-row plan-row--depth">
-                <span>{{ item.label }}</span>
-                <i class="plan-size" :style="{ '--shape-size': `${item.size}px` }"></i>
-              </div>
+              <span class="importance-row__copy">
+                <strong>{{ item.label }}</strong>
+                <em>{{ item.title }}</em>
+                <small>{{ item.description }}</small>
+              </span>
             </div>
           </div>
         </section>
@@ -92,18 +79,6 @@
           @select="handleSelect"
         />
       </aside>
-
-      <div v-if="selectedBuilding" class="selection-card">
-        <div class="selection-card__eyebrow">{{ selectedBuilding.eraLabel }}</div>
-        <div class="selection-card__title">{{ selectedBuilding.name }}</div>
-        <div class="selection-card__meta">
-          <span>{{ getStructureType(selectedBuilding) }}</span>
-          <span>{{ selectedBuilding.category }}</span>
-          <span>{{ selectedBuilding.dynasty }}</span>
-          <span>{{ selectedBuilding.province }} {{ selectedBuilding.city }}</span>
-        </div>
-        <p>{{ selectedBuilding.description }}</p>
-      </div>
     </div>
   </section>
 </template>
@@ -111,13 +86,12 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue';
 
+import rawBuildings from '../../building.json';
 import BuildingMapChart from '@/demo/building-home-map/components/BuildingMapChart.vue';
 import BuildingTimeline from '@/demo/building-home-map/components/BuildingTimeline.vue';
-import rawBuildings from '@/demo/building-home-map/data/buildings.json';
 import {
-  depthSizeLegend,
   getStructureType,
-  pointShapeLegend,
+  importanceLegend,
   structureLegend,
   type StructureType,
 } from '@/demo/building-home-map/metadata';
@@ -127,16 +101,12 @@ import type { BuildingRecord } from '@/demo/building-home-map/types';
 const buildings = rawBuildings as BuildingRecord[];
 
 const uiText = {
-  brandSealTop: '\u8425',
-  brandSealBottom: '\u9020',
-  pageTitle: '\u4e2d\u56fd\u53e4\u5efa\u7b51\u5206\u5e03\u56fe',
-  pageCopy: '\u4ee5\u8425\u9020\u5f62\u5236\u3001\u5e73\u9762\u5c3a\u5ea6\u4e0e\u65f6\u4ee3\u5206\u5e03\u89c2\u5bdf\u4e2d\u56fd\u53e4\u5efa\u7b51\u7684\u7a7a\u95f4\u8109\u7edc\u3002',
-  structureTitle: '\u8425\u9020\u5f62\u5236',
-  structureCopy: '\u6309\u4e3b\u4f53\u7a7a\u95f4\u7c7b\u578b\u7b5b\u9009\u5730\u56fe\u6837\u672c\uff0c\u89c2\u5bdf\u6728\u6784\u8425\u9020\u7684\u533a\u57df\u5206\u5e03\u3002',
-  planTitle: '\u5e73\u9762\u5c3a\u5ea6',
-  planHint: '\u9762\u9614\u4e0e\u8fdb\u6df1\u4ee5\u56fe\u5f62\u6837\u5f0f\u7f16\u7801',
+  structureTitle: '\u5efa\u7b51\u5206\u7c7b',
+  structureCopy: '\u6309\u6c11\u5c45\u3001\u5b98\u5e9c\u3001\u7687\u5bab\u3001\u6865\u6881\u7b5b\u9009\u5730\u56fe\u5efa\u7b51\u6837\u672c\u3002',
+  planTitle: '\u6837\u672c\u7b49\u7ea7',
+  planHint: '\u7b49\u7ea7\u8d8a\u9ad8\uff0c\u5730\u56fe\u6807\u8bb0\u8d8a\u9192\u76ee',
   noteTitle: '\u8bfb\u56fe\u8bf4\u660e',
-  noteCopy: '\u989c\u8272\u5bf9\u5e94\u8425\u9020\u5f62\u5236\uff0c\u70b9\u5f62\u4e0e\u70b9\u5f84\u5206\u522b\u5bf9\u5e94\u5efa\u7b51\u5e73\u9762\u5c3a\u5ea6\u4e0e\u91cd\u8981\u7a0b\u5ea6\u3002',
+  noteCopy: '\u989c\u8272\u770b\u5efa\u7b51\u7c7b\u578b\uff0c\u6807\u8bb0\u770b\u91cd\u8981\u7b49\u7ea7\u3002',
 } as const;
 
 const activeStructure = ref<StructureType | null>(null);
@@ -153,10 +123,6 @@ const structureCounts = computed(() =>
 
 const filteredBuildings = computed(() =>
   buildings.filter((building) => !activeStructure.value || getStructureType(building) === activeStructure.value),
-);
-
-const selectedBuilding = computed(
-  () => filteredBuildings.value.find((building) => building.id === selectedBuildingId.value) ?? filteredBuildings.value[0] ?? null,
 );
 
 const toggleStructure = (structure: StructureType) => {
@@ -250,63 +216,10 @@ watch(
   pointer-events: none;
 }
 
-.map-brand,
 .map-legend,
-.side-panel,
-.selection-card {
+.side-panel {
   position: absolute;
   pointer-events: auto;
-}
-
-.map-brand {
-  top: 22px;
-  left: 26px;
-  display: grid;
-  grid-template-columns: 46px minmax(0, 1fr);
-  gap: 12px;
-  width: min(338px, calc(100vw - 52px));
-  padding: 14px 14px 12px;
-  border: 1px solid rgba(154, 121, 98, 0.18);
-  background: rgba(241, 233, 218, 0.8);
-  box-shadow: 0 10px 24px var(--shadow);
-}
-
-.map-brand__seal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(163, 72, 58, 0.38);
-  background: rgba(163, 72, 58, 0.06);
-  color: var(--red);
-  font-family: 'ChartTitleFont', 'TitleFont', serif;
-  font-size: 22px;
-  line-height: 1.08;
-  text-align: center;
-}
-
-.map-brand__eyebrow {
-  margin-bottom: 6px;
-  font-family: 'ContentFont', serif;
-  font-size: 10px;
-  letter-spacing: 0.22em;
-  color: rgba(96, 74, 61, 0.68);
-}
-
-.map-brand h1 {
-  margin: 0;
-  font-family: 'ChartTitleFont', 'TitleFont', serif;
-  font-size: clamp(26px, 2.4vw, 34px);
-  line-height: 1.05;
-  color: #612a20;
-  letter-spacing: 0.05em;
-}
-
-.map-brand p {
-  margin: 6px 0 0;
-  font-family: 'ContentFont', serif;
-  font-size: 12px;
-  line-height: 1.65;
-  color: var(--ink-soft);
 }
 
 .map-legend {
@@ -337,25 +250,30 @@ watch(
 }
 
 .side-panel {
-  background: rgba(239, 231, 215, 0.8);
+  background: rgba(239, 231, 215, 0.78);
   border: 1px solid rgba(154, 121, 98, 0.12);
   box-shadow: 0 12px 28px rgba(72, 52, 40, 0.08);
+  backdrop-filter: blur(6px);
 }
 
 .side-panel--left {
-  top: 184px;
+  top: 94px;
   left: 26px;
-  width: 178px;
-  padding: 14px 14px 12px;
+  width: 220px;
+  padding: 12px 14px;
 }
 
 .side-panel--right {
   top: 122px;
   right: 26px;
   bottom: 26px;
-  width: 206px;
-  padding: 12px 12px 10px;
+  width: 244px;
+  padding: 0;
   display: flex;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  backdrop-filter: none;
 }
 
 .side-panel--right :deep(.line-timeline) {
@@ -364,7 +282,7 @@ watch(
 }
 
 .legend-block + .legend-block {
-  margin-top: 16px;
+  margin-top: 12px;
 }
 
 .legend-block__title {
@@ -380,10 +298,10 @@ watch(
 
 .legend-block__copy,
 .legend-block__hint {
-  margin: 8px 0 0;
+  margin: 6px 0 0;
   font-family: 'STSong', 'SimSun', 'Songti SC', serif;
-  font-size: 11px;
-  line-height: 1.55;
+  font-size: 10px;
+  line-height: 1.45;
   color: rgba(92, 67, 55, 0.76);
 }
 
@@ -393,7 +311,7 @@ watch(
   align-items: flex-start;
   justify-content: space-between;
   gap: 8px;
-  padding: 8px 0 7px;
+  padding: 6px 0 5px;
   border: none;
   border-bottom: 1px dashed rgba(149, 117, 94, 0.18);
   background: transparent;
@@ -422,8 +340,8 @@ watch(
 
 .legend-row__text small {
   font-family: 'STSong', 'SimSun', 'Songti SC', serif;
-  font-size: 9px;
-  line-height: 1.45;
+  font-size: 8px;
+  line-height: 1.35;
   color: rgba(96, 74, 61, 0.72);
 }
 
@@ -453,38 +371,64 @@ watch(
   color: rgba(88, 64, 52, 0.72);
 }
 
-.plan-legend {
+.importance-legend {
   display: grid;
-  grid-template-columns: 1fr 1px 1fr;
-  gap: 8px;
-  margin-top: 10px;
-}
-
-.plan-legend__column {
-  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 6px;
+  margin-top: 8px;
 }
 
-.plan-legend__divider {
-  background: linear-gradient(180deg, rgba(163, 72, 58, 0.18), rgba(163, 72, 58, 0.42), rgba(163, 72, 58, 0.18));
+.importance-row {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr);
+  gap: 8px;
+  align-items: start;
+  padding: 7px 8px;
+  border: 1px dashed rgba(149, 117, 94, 0.18);
+  border-radius: 12px;
+  background: rgba(246, 240, 230, 0.54);
 }
 
-.plan-row {
+.importance-row:last-child {
+  grid-column: 1 / -1;
+}
+
+.importance-row__marker {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 8px;
+  justify-content: center;
+  min-height: 24px;
+}
+
+.importance-row__copy {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.importance-row__copy strong {
+  font-family: 'STKaiti', 'KaiTi', 'Kaiti SC', 'Songti SC', serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #5f4032;
+}
+
+.importance-row__copy em {
   font-family: 'STSong', 'SimSun', 'Songti SC', serif;
-  font-size: 11px;
-  color: rgba(83, 63, 52, 0.82);
+  font-style: normal;
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  color: rgba(147, 63, 51, 0.82);
 }
 
-.plan-row--depth {
-  justify-content: flex-start;
+.importance-row__copy small {
+  font-family: 'STSong', 'SimSun', 'Songti SC', serif;
+  font-size: 9px;
+  line-height: 1.35;
+  color: rgba(96, 74, 61, 0.72);
 }
 
-.plan-shape,
-.plan-size {
+.plan-shape {
   position: relative;
   flex: 0 0 auto;
 }
@@ -511,8 +455,7 @@ watch(
 }
 
 .plan-shape--circle,
-.plan-shape--circle-large,
-.plan-size {
+.plan-shape--circle-large {
   width: var(--shape-size);
   height: var(--shape-size);
   border-radius: 999px;
@@ -520,65 +463,7 @@ watch(
 }
 
 .legend-block--note {
-  padding-top: 2px;
-}
-
-.selection-card {
-  left: 50%;
-  bottom: 20px;
-  width: min(420px, calc(100vw - 468px));
-  transform: translateX(-50%);
-  padding: 14px 16px;
-  background: rgba(242, 234, 219, 0.92);
-  border: 1px solid rgba(154, 121, 98, 0.16);
-  box-shadow: 0 12px 26px rgba(72, 52, 40, 0.1);
-}
-
-.selection-card__eyebrow {
-  margin-bottom: 4px;
-  font-family: 'ContentFont', serif;
-  font-size: 11px;
-  letter-spacing: 0.2em;
-  color: rgba(102, 75, 61, 0.72);
-}
-
-.selection-card__title {
-  font-family: 'ChartTitleFont', 'TitleFont', serif;
-  font-size: 25px;
-  line-height: 1.12;
-  color: #5a281f;
-}
-
-.selection-card__meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin: 8px 0;
-}
-
-.selection-card__meta span {
-  display: inline-flex;
-  align-items: center;
-  padding: 4px 8px 3px;
-  background: rgba(249, 244, 236, 0.86);
-  border: 1px solid rgba(150, 118, 95, 0.14);
-  font-family: 'ContentFont', serif;
-  font-size: 12px;
-  color: rgba(80, 56, 44, 0.84);
-}
-
-.selection-card p {
-  margin: 0;
-  font-family: 'ContentFont', serif;
-  font-size: 13px;
-  line-height: 1.65;
-  color: rgba(79, 57, 44, 0.8);
-}
-
-@media (max-width: 1180px) {
-  .selection-card {
-    width: min(360px, calc(100vw - 430px));
-  }
+  padding-top: 0;
 }
 
 @media (max-width: 980px) {
@@ -592,19 +477,13 @@ watch(
     position: relative;
   }
 
-  .map-brand,
   .map-legend,
-  .side-panel,
-  .selection-card {
+  .side-panel {
     position: relative;
     inset: auto;
     transform: none;
     width: calc(100% - 24px);
     margin: 12px;
-  }
-
-  .map-brand {
-    grid-template-columns: 42px minmax(0, 1fr);
   }
 
   .map-legend {
