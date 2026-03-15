@@ -19,3 +19,8 @@ declare module "*.json" {
     const value: any;
     export default value;
 }
+
+declare module "*.jsonl?raw" {
+    const value: string;
+    export default value;
+}

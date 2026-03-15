@@ -55,6 +55,15 @@ const routes = [
         }
     },
     {
+        path: '/building-dashboard-demo',
+        name: 'BuildingDashboardDemo',
+        component: () => import('@/views/BuildingDashboardDemoView.vue'),
+        meta: {
+            hideNavbar: true,
+            hideMusic: true
+        }
+    },
+    {
         path: '/:pathMatch(.*)*',
         name: 'NotFound',
         component: () => import('@/views/NotFoundView.vue')
