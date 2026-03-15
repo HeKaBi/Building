@@ -1,0 +1,4 @@
+{"building_type": "民居", "building_count": 195, "year_min": 605, "year_max": 1910, "year_mean": 1591.497436, "year_median": 1644}
+{"building_type": "官府", "building_count": 105, "year_min": -540, "year_max": 1909, "year_mean": 1369.619048, "year_median": 1437}
+{"building_type": "桥梁", "building_count": 92, "year_min": 309, "year_max": 1896, "year_mean": 1396.75, "year_median": 1489.5}
+{"building_type": "宫殿", "building_count": 18, "year_min": 1179, "year_max": 1863, "year_mean": 1544.5, "year_median": 1608.0}
