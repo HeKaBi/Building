@@ -69,7 +69,7 @@
         </header>
 
         <section class="chart-grid">
-          <article class="paper-card dashboard-panel">
+          <article class="paper-card dashboard-panel dashboard-panel--frameless">
             <div class="dashboard-panel__head">
               <div>
                 <h3>地域分布玫瑰图</h3>
@@ -78,7 +78,7 @@
             </div>
             <div :ref="chartRefs.rose" class="dashboard-panel__chart"></div>
           </article>
-          <article class="paper-card dashboard-panel">
+          <article class="paper-card dashboard-panel dashboard-panel--frameless">
             <div class="dashboard-panel__head">
               <div>
                 <h3>建筑术语词云</h3>
@@ -87,7 +87,7 @@
             </div>
             <div :ref="chartRefs.cloud" class="dashboard-panel__chart"></div>
           </article>
-          <article class="paper-card dashboard-panel">
+          <article class="paper-card dashboard-panel dashboard-panel--frameless">
             <div class="dashboard-panel__head">
               <div>
                 <h3>类别 → 维度 → 术语桑基图</h3>
@@ -96,7 +96,7 @@
             </div>
             <div :ref="chartRefs.sankey" class="dashboard-panel__chart"></div>
           </article>
-          <article class="paper-card dashboard-panel">
+          <article class="paper-card dashboard-panel dashboard-panel--frameless">
             <div class="dashboard-panel__head">
               <div>
                 <h3>朝代 · 类别 · 地域旭日图</h3>
@@ -349,6 +349,7 @@ onBeforeUnmount(() => { window.removeEventListener('resize', handleResize); char
 
 .chart-grid { min-height: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: minmax(0, 1fr); gap: 10px; }
 .dashboard-panel { min-height: 0; display: flex; flex-direction: column; padding: 10px 12px 10px; overflow: hidden; background: linear-gradient(180deg, rgba(248, 242, 233, 0.6), rgba(236, 225, 210, 0.36)); }
+.dashboard-panel--frameless { border: none; border-radius: 0; background: transparent; box-shadow: none; backdrop-filter: none; }
 .dashboard-panel__head { display: flex; justify-content: space-between; gap: 10px; align-items: start; }
 .dashboard-panel__chart { flex: 1; min-height: 0; margin-top: 6px; }
 .dashboard-side-panel--right { min-height: 0; }
