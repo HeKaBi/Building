@@ -15,6 +15,14 @@ export type SketchVariant =
   | 'bridge-beam'
   | 'bridge-corridor';
 
+export type BuildingPhotoMood =
+  | 'sepia'
+  | 'mist'
+  | 'earth'
+  | 'timber'
+  | 'stone'
+  | 'ink';
+
 export interface BuildingGalleryItem {
   id: string;
   name: string;
@@ -25,6 +33,11 @@ export interface BuildingGalleryItem {
   summary: string;
   tags: string[];
   variant: SketchVariant;
+  structureFeature?: string;
+  regionFamily?: string;
+  photoMood?: BuildingPhotoMood;
+  image?: string;
+  imagePosition?: string;
 }
 
 export interface BuildingGroup {
@@ -33,6 +46,10 @@ export interface BuildingGroup {
   subtitle: string;
   description: string;
   previewVariant: SketchVariant;
+  coverImage?: string;
+  coverPosition?: string;
+  coverSize?: string;
+  useCoverAsPoster?: boolean;
   items: BuildingGalleryItem[];
 }
 
