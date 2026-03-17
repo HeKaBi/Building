@@ -1,0 +1,2760 @@
+[
+  {
+    "name": "石材",
+    "value": 31.94,
+    "term_count": 37,
+    "avg_confidence": 0.8632,
+    "building_count": 37,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 11,
+        "name": "安济桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 120,
+        "name": "观音桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 122,
+        "name": "广济桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 217,
+        "name": "龙脑桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 417,
+        "name": "宝带桥",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "石拱桥",
+    "value": 21.17,
+    "term_count": 23,
+    "avg_confidence": 0.9204,
+    "building_count": 23,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 11,
+        "name": "安济桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 120,
+        "name": "观音桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 433,
+        "name": "八字桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 626,
+        "name": "单桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 632,
+        "name": "伍仁桥",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "交通桥梁",
+    "value": 15.46,
+    "term_count": 18,
+    "avg_confidence": 0.8589,
+    "building_count": 18,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 11,
+        "name": "安济桥",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 120,
+        "name": "观音桥",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 217,
+        "name": "龙脑桥",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 421,
+        "name": "古月桥",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 632,
+        "name": "伍仁桥",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "木材",
+    "value": 14.73,
+    "term_count": 19,
+    "avg_confidence": 0.7753,
+    "building_count": 19,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 122,
+        "name": "广济桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 428,
+        "name": "如龙桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 510,
+        "name": "岜团桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 534,
+        "name": "地坪风雨桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 843,
+        "name": "泰顺廊桥",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "交通要道",
+    "value": 13.0,
+    "term_count": 14,
+    "avg_confidence": 0.9286,
+    "building_count": 14,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1043,
+        "name": "双龙桥",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1349,
+        "name": "七桥瓮",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1409,
+        "name": "潘公桥及潘孝墓",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1468,
+        "name": "宁海桥",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1515,
+        "name": "太平桥",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "条石",
+    "value": 11.92,
+    "term_count": 13,
+    "avg_confidence": 0.9169,
+    "building_count": 13,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 123,
+        "name": "古纤道",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 421,
+        "name": "古月桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 826,
+        "name": "新河闸桥群",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 890,
+        "name": "清华彩虹桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1183,
+        "name": "襄垣永惠桥",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "青石",
+    "value": 11.2,
+    "term_count": 12,
+    "avg_confidence": 0.9333,
+    "building_count": 12,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 626,
+        "name": "单桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 627,
+        "name": "弘济桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 844,
+        "name": "仕水矴步",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 960,
+        "name": "坪坦风雨桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1394,
+        "name": "西山桥",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "南北走向",
+    "value": 9.93,
+    "term_count": 11,
+    "avg_confidence": 0.9027,
+    "building_count": 11,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 274,
+        "name": "万里长城－九门口",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 428,
+        "name": "如龙桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 476,
+        "name": "小商桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 826,
+        "name": "新河闸桥群",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 828,
+        "name": "寿昌桥",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "交通通行",
+    "value": 9.31,
+    "term_count": 11,
+    "avg_confidence": 0.8464,
+    "building_count": 11,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 428,
+        "name": "如龙桥",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 800,
+        "name": "太仓石拱桥",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 826,
+        "name": "新河闸桥群",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1022,
+        "name": "葛镜桥",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1040,
+        "name": "金龙桥",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "拱券砌筑",
+    "value": 8.66,
+    "term_count": 11,
+    "avg_confidence": 0.7873,
+    "building_count": 11,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 11,
+        "name": "安济桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 417,
+        "name": "宝带桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 632,
+        "name": "伍仁桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 800,
+        "name": "太仓石拱桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 889,
+        "name": "鸣水桥",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "花岗岩",
+    "value": 7.68,
+    "term_count": 8,
+    "avg_confidence": 0.96,
+    "building_count": 8,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1138,
+        "name": "下胡良桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1146,
+        "name": "方顺桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1349,
+        "name": "七桥瓮",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1350,
+        "name": "蒲塘桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1392,
+        "name": "八卦桥和河西桥",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "石砌",
+    "value": 7.04,
+    "term_count": 8,
+    "avg_confidence": 0.88,
+    "building_count": 8,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 123,
+        "name": "古纤道",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 417,
+        "name": "宝带桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 800,
+        "name": "太仓石拱桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 826,
+        "name": "新河闸桥群",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1022,
+        "name": "葛镜桥",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "东西走向",
+    "value": 6.35,
+    "term_count": 7,
+    "avg_confidence": 0.9071,
+    "building_count": 7,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 826,
+        "name": "新河闸桥群",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1342,
+        "name": "思本桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1528,
+        "name": "金口坝",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1656,
+        "name": "广利桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1782,
+        "name": "星宿桥和丰裕桥",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "交通桥",
+    "value": 5.56,
+    "term_count": 7,
+    "avg_confidence": 0.7943,
+    "building_count": 7,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 417,
+        "name": "宝带桥",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 627,
+        "name": "弘济桥",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 828,
+        "name": "寿昌桥",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 889,
+        "name": "鸣水桥",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 898,
+        "name": "卞桥",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "石板",
+    "value": 5.33,
+    "term_count": 6,
+    "avg_confidence": 0.8883,
+    "building_count": 6,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 123,
+        "name": "古纤道",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 829,
+        "name": "赤溪五洞桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 960,
+        "name": "坪坦风雨桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1394,
+        "name": "西山桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1545,
+        "name": "大汶口古石桥",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "单孔石拱桥",
+    "value": 4.78,
+    "term_count": 5,
+    "avg_confidence": 0.956,
+    "building_count": 5,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 627,
+        "name": "弘济桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 828,
+        "name": "寿昌桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1183,
+        "name": "襄垣永惠桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1967,
+        "name": "杭州忠义桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 2141,
+        "name": "洄澜桥阁",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "分水尖",
+    "value": 4.67,
+    "term_count": 5,
+    "avg_confidence": 0.934,
+    "building_count": 5,
+    "dimensions": [
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 617,
+        "name": "永济桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 826,
+        "name": "新河闸桥群",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 829,
+        "name": "赤溪五洞桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1349,
+        "name": "七桥瓮",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1582,
+        "name": "永济桥",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "拱券结构",
+    "value": 4.66,
+    "term_count": 5,
+    "avg_confidence": 0.932,
+    "building_count": 5,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 11,
+        "name": "安济桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 889,
+        "name": "鸣水桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1515,
+        "name": "太平桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1518,
+        "name": "玉带桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1983,
+        "name": "金清大桥",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "木板",
+    "value": 4.57,
+    "term_count": 5,
+    "avg_confidence": 0.914,
+    "building_count": 5,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 960,
+        "name": "坪坦风雨桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1040,
+        "name": "金龙桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1760,
+        "name": "金勾风雨桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1970,
+        "name": "南渡广济桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 2145,
+        "name": "海口川字闸",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "拱桥",
+    "value": 4.26,
+    "term_count": 5,
+    "avg_confidence": 0.852,
+    "building_count": 5,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 122,
+        "name": "广济桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 123,
+        "name": "古纤道",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1775,
+        "name": "沘江古桥梁群",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1974,
+        "name": "湖州潮音桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 2045,
+        "name": "安阳永和桥",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "榫卯结构",
+    "value": 4.19,
+    "term_count": 5,
+    "avg_confidence": 0.838,
+    "building_count": 4,
+    "dimensions": [
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1005,
+        "name": "波日桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1655,
+        "name": "兵书阁与文星桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1661,
+        "name": "安化风雨桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1970,
+        "name": "南渡广济桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1970,
+        "name": "南渡广济桥",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "砖石",
+    "value": 3.99,
+    "term_count": 6,
+    "avg_confidence": 0.665,
+    "building_count": 6,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 433,
+        "name": "八字桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 632,
+        "name": "伍仁桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1147,
+        "name": "登瀛桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1661,
+        "name": "安化风雨桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1994,
+        "name": "池河太平桥",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "线性布局",
+    "value": 3.98,
+    "term_count": 5,
+    "avg_confidence": 0.796,
+    "building_count": 5,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 627,
+        "name": "弘济桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1005,
+        "name": "波日桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1291,
+        "name": "平遥惠济桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1394,
+        "name": "西山桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1545,
+        "name": "大汶口古石桥",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "石梁桥",
+    "value": 3.77,
+    "term_count": 4,
+    "avg_confidence": 0.9425,
+    "building_count": 4,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 464,
+        "name": "江东桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 829,
+        "name": "赤溪五洞桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1343,
+        "name": "东庙桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1714,
+        "name": "泸县龙桥群",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "干砌石工",
+    "value": 3.67,
+    "term_count": 5,
+    "avg_confidence": 0.734,
+    "building_count": 5,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 120,
+        "name": "观音桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 433,
+        "name": "八字桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1501,
+        "name": "紫阳堤",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1515,
+        "name": "太平桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1545,
+        "name": "大汶口古石桥",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "弧形桥面",
+    "value": 3.54,
+    "term_count": 4,
+    "avg_confidence": 0.885,
+    "building_count": 4,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1146,
+        "name": "方顺桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1291,
+        "name": "平遥惠济桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1518,
+        "name": "玉带桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1539,
+        "name": "平阴永济桥",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "跨河通道",
+    "value": 3.54,
+    "term_count": 4,
+    "avg_confidence": 0.885,
+    "building_count": 4,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 421,
+        "name": "古月桥",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1423,
+        "name": "双林三桥",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1545,
+        "name": "大汶口古石桥",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 2052,
+        "name": "汝宁石桥",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "对称布局",
+    "value": 3.51,
+    "term_count": 4,
+    "avg_confidence": 0.8775,
+    "building_count": 4,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 11,
+        "name": "安济桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1460,
+        "name": "北岸廊桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1468,
+        "name": "宁海桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1956,
+        "name": "永安石桥",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "石砌拱券",
+    "value": 3.48,
+    "term_count": 4,
+    "avg_confidence": 0.87,
+    "building_count": 4,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 617,
+        "name": "永济桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1394,
+        "name": "西山桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1582,
+        "name": "永济桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1782,
+        "name": "星宿桥和丰裕桥",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "浮雕装饰",
+    "value": 3.44,
+    "term_count": 4,
+    "avg_confidence": 0.86,
+    "building_count": 4,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 627,
+        "name": "弘济桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1539,
+        "name": "平阴永济桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1956,
+        "name": "永安石桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1983,
+        "name": "金清大桥",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "交通连接",
+    "value": 3.31,
+    "term_count": 4,
+    "avg_confidence": 0.8275,
+    "building_count": 4,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1405,
+        "name": "㹧𱮒湖避塘",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1661,
+        "name": "安化风雨桥",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1714,
+        "name": "泸县龙桥群",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1997,
+        "name": "屯溪镇海桥",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "石拱砌筑",
+    "value": 3.25,
+    "term_count": 4,
+    "avg_confidence": 0.8125,
+    "building_count": 4,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1409,
+        "name": "潘公桥及潘孝墓",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1679,
+        "name": "富川瑶族风雨桥群",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1835,
+        "name": "桥上桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1967,
+        "name": "杭州忠义桥",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "传统石作",
+    "value": 3.02,
+    "term_count": 4,
+    "avg_confidence": 0.755,
+    "building_count": 4,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1022,
+        "name": "葛镜桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1291,
+        "name": "平遥惠济桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1460,
+        "name": "北岸廊桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1970,
+        "name": "南渡广济桥",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "抬梁式",
+    "value": 3.02,
+    "term_count": 4,
+    "avg_confidence": 0.755,
+    "building_count": 4,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1147,
+        "name": "登瀛桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1661,
+        "name": "安化风雨桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1970,
+        "name": "南渡广济桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 2141,
+        "name": "洄澜桥阁",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "三孔石拱桥",
+    "value": 2.85,
+    "term_count": 3,
+    "avg_confidence": 0.95,
+    "building_count": 3,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1409,
+        "name": "潘公桥及潘孝墓",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1974,
+        "name": "湖州潮音桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1982,
+        "name": "余姚通济桥",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "汉白玉",
+    "value": 2.85,
+    "term_count": 3,
+    "avg_confidence": 0.95,
+    "building_count": 3,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 617,
+        "name": "永济桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1146,
+        "name": "方顺桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1582,
+        "name": "永济桥",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "花岗石",
+    "value": 2.83,
+    "term_count": 3,
+    "avg_confidence": 0.9433,
+    "building_count": 3,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1343,
+        "name": "东庙桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1497,
+        "name": "逢渠桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1837,
+        "name": "毓秀桥",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "多孔石桥",
+    "value": 2.82,
+    "term_count": 3,
+    "avg_confidence": 0.94,
+    "building_count": 3,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 417,
+        "name": "宝带桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1957,
+        "name": "垂虹断桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 2055,
+        "name": "龙泉澧河石桥",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "木拱廊桥",
+    "value": 2.82,
+    "term_count": 3,
+    "avg_confidence": 0.94,
+    "building_count": 3,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 428,
+        "name": "如龙桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 843,
+        "name": "泰顺廊桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 878,
+        "name": "闽东北廊桥",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "引桥",
+    "value": 2.76,
+    "term_count": 3,
+    "avg_confidence": 0.92,
+    "building_count": 3,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 617,
+        "name": "永济桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1582,
+        "name": "永济桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 2009,
+        "name": "休宁登封桥",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "糯米灰浆",
+    "value": 2.75,
+    "term_count": 3,
+    "avg_confidence": 0.9167,
+    "building_count": 3,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1349,
+        "name": "七桥瓮",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1518,
+        "name": "玉带桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1782,
+        "name": "星宿桥和丰裕桥",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "廊桥",
+    "value": 2.73,
+    "term_count": 3,
+    "avg_confidence": 0.91,
+    "building_count": 3,
+    "dimensions": [
+      "建筑功能",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 534,
+        "name": "地坪风雨桥",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 890,
+        "name": "清华彩虹桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1970,
+        "name": "南渡广济桥",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "石栏板",
+    "value": 2.72,
+    "term_count": 3,
+    "avg_confidence": 0.9067,
+    "building_count": 3,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1103,
+        "name": "琉璃河大桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1539,
+        "name": "平阴永济桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1983,
+        "name": "金清大桥",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "梁桥",
+    "value": 2.68,
+    "term_count": 3,
+    "avg_confidence": 0.8933,
+    "building_count": 3,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 122,
+        "name": "广济桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 433,
+        "name": "八字桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 890,
+        "name": "清华彩虹桥",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "单跨拱桥",
+    "value": 2.66,
+    "term_count": 3,
+    "avg_confidence": 0.8867,
+    "building_count": 3,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 11,
+        "name": "安济桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 421,
+        "name": "古月桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1515,
+        "name": "太平桥",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "木构",
+    "value": 2.63,
+    "term_count": 3,
+    "avg_confidence": 0.8767,
+    "building_count": 3,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 428,
+        "name": "如龙桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 878,
+        "name": "闽东北廊桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 2017,
+        "name": "建瓯值庆桥",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "跨河布局",
+    "value": 2.56,
+    "term_count": 3,
+    "avg_confidence": 0.8533,
+    "building_count": 3,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 417,
+        "name": "宝带桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1392,
+        "name": "八卦桥和河西桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1679,
+        "name": "富川瑶族风雨桥群",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "干砌法",
+    "value": 2.54,
+    "term_count": 3,
+    "avg_confidence": 0.8467,
+    "building_count": 3,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 11,
+        "name": "安济桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 417,
+        "name": "宝带桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1518,
+        "name": "玉带桥",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "轴线对称",
+    "value": 2.53,
+    "term_count": 3,
+    "avg_confidence": 0.8433,
+    "building_count": 3,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1582,
+        "name": "永济桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1655,
+        "name": "兵书阁与文星桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1957,
+        "name": "垂虹断桥",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "桥亭",
+    "value": 2.51,
+    "term_count": 3,
+    "avg_confidence": 0.8367,
+    "building_count": 3,
+    "dimensions": [
+      "建筑功能",
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 960,
+        "name": "坪坦风雨桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1775,
+        "name": "沘江古桥梁群",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 2009,
+        "name": "休宁登封桥",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "单跨布局",
+    "value": 2.02,
+    "term_count": 3,
+    "avg_confidence": 0.6733,
+    "building_count": 3,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1394,
+        "name": "西山桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1497,
+        "name": "逢渠桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1967,
+        "name": "杭州忠义桥",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "武康石",
+    "value": 1.96,
+    "term_count": 2,
+    "avg_confidence": 0.98,
+    "building_count": 2,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1342,
+        "name": "思本桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1343,
+        "name": "东庙桥",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "长方巨石",
+    "value": 1.96,
+    "term_count": 2,
+    "avg_confidence": 0.98,
+    "building_count": 2,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 617,
+        "name": "永济桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1582,
+        "name": "永济桥",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "灌溉",
+    "value": 1.95,
+    "term_count": 2,
+    "avg_confidence": 0.975,
+    "building_count": 2,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1528,
+        "name": "金口坝",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 2145,
+        "name": "海口川字闸",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "交通功能",
+    "value": 1.93,
+    "term_count": 2,
+    "avg_confidence": 0.965,
+    "building_count": 2,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 843,
+        "name": "泰顺廊桥",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 878,
+        "name": "闽东北廊桥",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "六墩七孔",
+    "value": 1.93,
+    "term_count": 2,
+    "avg_confidence": 0.965,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1782,
+        "name": "星宿桥和丰裕桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1997,
+        "name": "屯溪镇海桥",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "石条",
+    "value": 1.93,
+    "term_count": 2,
+    "avg_confidence": 0.965,
+    "building_count": 2,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1501,
+        "name": "紫阳堤",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1837,
+        "name": "毓秀桥",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "条形方石",
+    "value": 1.92,
+    "term_count": 2,
+    "avg_confidence": 0.96,
+    "building_count": 2,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 617,
+        "name": "永济桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1582,
+        "name": "永济桥",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "联拱石拱桥",
+    "value": 1.92,
+    "term_count": 2,
+    "avg_confidence": 0.96,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1423,
+        "name": "双林三桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 2009,
+        "name": "休宁登封桥",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "遮风挡雨",
+    "value": 1.92,
+    "term_count": 2,
+    "avg_confidence": 0.96,
+    "building_count": 2,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 843,
+        "name": "泰顺廊桥",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1679,
+        "name": "富川瑶族风雨桥群",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "分节并列砌筑",
+    "value": 1.91,
+    "term_count": 2,
+    "avg_confidence": 0.955,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1342,
+        "name": "思本桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1342,
+        "name": "思本桥",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "悬臂梁结构",
+    "value": 1.91,
+    "term_count": 2,
+    "avg_confidence": 0.955,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 534,
+        "name": "地坪风雨桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1517,
+        "name": "永镇桥",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "梭形桥墩",
+    "value": 1.91,
+    "term_count": 2,
+    "avg_confidence": 0.955,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 274,
+        "name": "万里长城－九门口",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1349,
+        "name": "七桥瓮",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "石灰岩",
+    "value": 1.91,
+    "term_count": 2,
+    "avg_confidence": 0.955,
+    "building_count": 2,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1349,
+        "name": "七桥瓮",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 2055,
+        "name": "龙泉澧河石桥",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "纵列式法券",
+    "value": 1.91,
+    "term_count": 2,
+    "avg_confidence": 0.955,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 2003,
+        "name": "歙县太平桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 2009,
+        "name": "休宁登封桥",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "九孔石桥",
+    "value": 1.9,
+    "term_count": 2,
+    "avg_confidence": 0.95,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 617,
+        "name": "永济桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1582,
+        "name": "永济桥",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "五孔梁式石桥",
+    "value": 1.9,
+    "term_count": 2,
+    "avg_confidence": 0.95,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 829,
+        "name": "赤溪五洞桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1392,
+        "name": "八卦桥和河西桥",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "三孔联拱",
+    "value": 1.89,
+    "term_count": 2,
+    "avg_confidence": 0.945,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 898,
+        "name": "卞桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1022,
+        "name": "葛镜桥",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "古驿道桥梁",
+    "value": 1.88,
+    "term_count": 2,
+    "avg_confidence": 0.94,
+    "building_count": 2,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 828,
+        "name": "寿昌桥",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1837,
+        "name": "毓秀桥",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "四墩五孔",
+    "value": 1.88,
+    "term_count": 2,
+    "avg_confidence": 0.94,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 890,
+        "name": "清华彩虹桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1782,
+        "name": "星宿桥和丰裕桥",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "引桥结构",
+    "value": 1.88,
+    "term_count": 2,
+    "avg_confidence": 0.94,
+    "building_count": 2,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 898,
+        "name": "卞桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1997,
+        "name": "屯溪镇海桥",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "纵联分节并列砌置法",
+    "value": 1.88,
+    "term_count": 2,
+    "avg_confidence": 0.94,
+    "building_count": 2,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 421,
+        "name": "古月桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1423,
+        "name": "双林三桥",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "船形墩",
+    "value": 1.88,
+    "term_count": 2,
+    "avg_confidence": 0.94,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 829,
+        "name": "赤溪五洞桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1468,
+        "name": "宁海桥",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "军事要冲",
+    "value": 1.87,
+    "term_count": 2,
+    "avg_confidence": 0.935,
+    "building_count": 2,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 464,
+        "name": "江东桥",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1349,
+        "name": "七桥瓮",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "木石结构",
+    "value": 1.87,
+    "term_count": 2,
+    "avg_confidence": 0.935,
+    "building_count": 2,
+    "dimensions": [
+      "建筑材料",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1970,
+        "name": "南渡广济桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1983,
+        "name": "金清大桥",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "横向交错砌筑",
+    "value": 1.87,
+    "term_count": 2,
+    "avg_confidence": 0.935,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1146,
+        "name": "方顺桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1146,
+        "name": "方顺桥",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "连拱石桥",
+    "value": 1.87,
+    "term_count": 2,
+    "avg_confidence": 0.935,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 417,
+        "name": "宝带桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1957,
+        "name": "垂虹断桥",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "浮桥",
+    "value": 1.86,
+    "term_count": 2,
+    "avg_confidence": 0.93,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 122,
+        "name": "广济桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1775,
+        "name": "沘江古桥梁群",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "石墩",
+    "value": 1.86,
+    "term_count": 2,
+    "avg_confidence": 0.93,
+    "building_count": 2,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 464,
+        "name": "江东桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1957,
+        "name": "垂虹断桥",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "石拱结构",
+    "value": 1.86,
+    "term_count": 2,
+    "avg_confidence": 0.93,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 828,
+        "name": "寿昌桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1183,
+        "name": "襄垣永惠桥",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "纤道",
+    "value": 1.86,
+    "term_count": 2,
+    "avg_confidence": 0.93,
+    "building_count": 2,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 123,
+        "name": "古纤道",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1982,
+        "name": "余姚通济桥",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "铸铁",
+    "value": 1.86,
+    "term_count": 2,
+    "avg_confidence": 0.93,
+    "building_count": 2,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 617,
+        "name": "永济桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1582,
+        "name": "永济桥",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "填土",
+    "value": 1.85,
+    "term_count": 2,
+    "avg_confidence": 0.925,
+    "building_count": 2,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1656,
+        "name": "广利桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 2145,
+        "name": "海口川字闸",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "巨石",
+    "value": 1.85,
+    "term_count": 2,
+    "avg_confidence": 0.925,
+    "building_count": 2,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 464,
+        "name": "江东桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1468,
+        "name": "宁海桥",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "起拱技法",
+    "value": 1.84,
+    "term_count": 2,
+    "avg_confidence": 0.92,
+    "building_count": 2,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 617,
+        "name": "永济桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1582,
+        "name": "永济桥",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "人行桥",
+    "value": 1.83,
+    "term_count": 2,
+    "avg_confidence": 0.915,
+    "building_count": 2,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1974,
+        "name": "湖州潮音桥",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1994,
+        "name": "池河太平桥",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "多孔连拱",
+    "value": 1.83,
+    "term_count": 2,
+    "avg_confidence": 0.915,
+    "building_count": 2,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1582,
+        "name": "永济桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1837,
+        "name": "毓秀桥",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "泄洪",
+    "value": 1.82,
+    "term_count": 2,
+    "avg_confidence": 0.91,
+    "building_count": 2,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1146,
+        "name": "方顺桥",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 2145,
+        "name": "海口川字闸",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "石桥",
+    "value": 1.82,
+    "term_count": 2,
+    "avg_confidence": 0.91,
+    "building_count": 2,
+    "dimensions": [
+      "建筑材料",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 13,
+        "name": "永通桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 2052,
+        "name": "汝宁石桥",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "铁链",
+    "value": 1.82,
+    "term_count": 2,
+    "avg_confidence": 0.91,
+    "building_count": 2,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1040,
+        "name": "金龙桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1775,
+        "name": "沘江古桥梁群",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "石灰砂浆",
+    "value": 1.81,
+    "term_count": 2,
+    "avg_confidence": 0.905,
+    "building_count": 2,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 11,
+        "name": "安济桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1517,
+        "name": "永镇桥",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "石雕工艺",
+    "value": 1.81,
+    "term_count": 2,
+    "avg_confidence": 0.905,
+    "building_count": 2,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 217,
+        "name": "龙脑桥",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1103,
+        "name": "琉璃河大桥",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "纵联砌筑",
+    "value": 1.81,
+    "term_count": 2,
+    "avg_confidence": 0.905,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1985,
+        "name": "兰溪通洲桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1985,
+        "name": "兰溪通洲桥",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "九间廊屋",
+    "value": 1.8,
+    "term_count": 2,
+    "avg_confidence": 0.9,
+    "building_count": 2,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 428,
+        "name": "如龙桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1517,
+        "name": "永镇桥",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "十八梭船廿四洲",
+    "value": 1.8,
+    "term_count": 2,
+    "avg_confidence": 0.9,
+    "building_count": 1,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 122,
+        "name": "广济桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 122,
+        "name": "广济桥",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "单孔拱券",
+    "value": 1.8,
+    "term_count": 2,
+    "avg_confidence": 0.9,
+    "building_count": 2,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 120,
+        "name": "观音桥",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1539,
+        "name": "平阴永济桥",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "木梁桥",
+    "value": 1.8,
+    "term_count": 2,
+    "avg_confidence": 0.9,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 534,
+        "name": "地坪风雨桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1775,
+        "name": "沘江古桥梁群",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "涵洞",
+    "value": 1.8,
+    "term_count": 2,
+    "avg_confidence": 0.9,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 617,
+        "name": "永济桥",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1582,
+        "name": "永济桥",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "青砖",
+    "value": 1.8,
+    "term_count": 2,
+    "avg_confidence": 0.9,
+    "building_count": 2,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1956,
+        "name": "永安石桥",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 2141,
+        "name": "洄澜桥阁",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "公路桥",
+    "value": 1.78,
+    "term_count": 2,
+    "avg_confidence": 0.89,
+    "building_count": 2,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1350,
+        "name": "蒲塘桥",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1515,
+        "name": "太平桥",
+        "dimension": "建筑功能"
+      }
+    ]
+  }
+]

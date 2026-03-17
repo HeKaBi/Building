@@ -1,0 +1,170 @@
+{
+  "building_type": "宫殿",
+  "title": "宫殿：主要朝代-主要地区-建筑结构",
+  "dimension_order": [
+    "主要朝代",
+    "主要地区",
+    "建筑结构"
+  ],
+  "data": [
+    {
+      "name": "元",
+      "value": 1,
+      "children": [
+        {
+          "name": "西南",
+          "value": 1,
+          "children": [
+            {
+              "name": "特殊宫殿体系",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "明",
+      "value": 8,
+      "children": [
+        {
+          "name": "其他地区",
+          "value": 3,
+          "children": [
+            {
+              "name": "中轴合院体系",
+              "value": 1
+            },
+            {
+              "name": "其他宫殿体系",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "name": "华中",
+          "value": 3,
+          "children": [
+            {
+              "name": "中轴合院体系",
+              "value": 1
+            },
+            {
+              "name": "其他宫殿体系",
+              "value": 1
+            },
+            {
+              "name": "特殊宫殿体系",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "华北",
+          "value": 2,
+          "children": [
+            {
+              "name": "中轴合院体系",
+              "value": 1
+            },
+            {
+              "name": "其他宫殿体系",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "清",
+      "value": 7,
+      "children": [
+        {
+          "name": "其他地区",
+          "value": 1,
+          "children": [
+            {
+              "name": "殿阁体系",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "华北",
+          "value": 5,
+          "children": [
+            {
+              "name": "中轴合院体系",
+              "value": 4
+            },
+            {
+              "name": "特殊宫殿体系",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "西南",
+          "value": 1,
+          "children": [
+            {
+              "name": "中轴合院体系",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "金",
+      "value": 2,
+      "children": [
+        {
+          "name": "其他地区",
+          "value": 1,
+          "children": [
+            {
+              "name": "殿阁体系",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "华北",
+          "value": 1,
+          "children": [
+            {
+              "name": "殿阁体系",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "building_count": 18,
+    "dynasty_node_count": 4,
+    "region_node_count": 4,
+    "structure_node_count": 4,
+    "leaf_path_count": 14,
+    "dynasty_nodes": [
+      "元",
+      "明",
+      "清",
+      "金"
+    ],
+    "region_nodes": [
+      "其他地区",
+      "华中",
+      "华北",
+      "西南"
+    ],
+    "structure_nodes": [
+      "中轴合院体系",
+      "其他宫殿体系",
+      "殿阁体系",
+      "特殊宫殿体系"
+    ]
+  }
+}

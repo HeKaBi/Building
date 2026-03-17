@@ -1,0 +1,269 @@
+{
+  "nodes": [
+    {
+      "name": "元",
+      "depth": 0
+    },
+    {
+      "name": "其他朝代",
+      "depth": 0
+    },
+    {
+      "name": "唐",
+      "depth": 0
+    },
+    {
+      "name": "宋",
+      "depth": 0
+    },
+    {
+      "name": "明",
+      "depth": 0
+    },
+    {
+      "name": "清",
+      "depth": 0
+    },
+    {
+      "name": "其他民居体系",
+      "depth": 1
+    },
+    {
+      "name": "合院民居体系",
+      "depth": 1
+    },
+    {
+      "name": "合院穿斗体系",
+      "depth": 1
+    },
+    {
+      "name": "抬梁合院体系",
+      "depth": 1
+    },
+    {
+      "name": "抬梁穿斗混合体系",
+      "depth": 1
+    },
+    {
+      "name": "其他材料",
+      "depth": 2
+    },
+    {
+      "name": "土类",
+      "depth": 2
+    },
+    {
+      "name": "木材类",
+      "depth": 2
+    },
+    {
+      "name": "灰浆胶结类",
+      "depth": 2
+    },
+    {
+      "name": "石材类",
+      "depth": 2
+    },
+    {
+      "name": "砖瓦类",
+      "depth": 2
+    }
+  ],
+  "links": [
+    {
+      "source": "元",
+      "target": "其他民居体系",
+      "value": 2
+    },
+    {
+      "source": "元",
+      "target": "合院民居体系",
+      "value": 1
+    },
+    {
+      "source": "元",
+      "target": "抬梁穿斗混合体系",
+      "value": 2
+    },
+    {
+      "source": "其他朝代",
+      "target": "其他民居体系",
+      "value": 1
+    },
+    {
+      "source": "其他朝代",
+      "target": "抬梁穿斗混合体系",
+      "value": 2
+    },
+    {
+      "source": "其他民居体系",
+      "target": "木材类",
+      "value": 4
+    },
+    {
+      "source": "其他民居体系",
+      "target": "石材类",
+      "value": 5
+    },
+    {
+      "source": "其他民居体系",
+      "target": "砖瓦类",
+      "value": 1
+    },
+    {
+      "source": "合院民居体系",
+      "target": "木材类",
+      "value": 3
+    },
+    {
+      "source": "合院民居体系",
+      "target": "石材类",
+      "value": 1
+    },
+    {
+      "source": "合院穿斗体系",
+      "target": "其他材料",
+      "value": 1
+    },
+    {
+      "source": "合院穿斗体系",
+      "target": "土类",
+      "value": 5
+    },
+    {
+      "source": "合院穿斗体系",
+      "target": "木材类",
+      "value": 26
+    },
+    {
+      "source": "合院穿斗体系",
+      "target": "灰浆胶结类",
+      "value": 1
+    },
+    {
+      "source": "合院穿斗体系",
+      "target": "石材类",
+      "value": 22
+    },
+    {
+      "source": "合院穿斗体系",
+      "target": "砖瓦类",
+      "value": 19
+    },
+    {
+      "source": "唐",
+      "target": "合院民居体系",
+      "value": 1
+    },
+    {
+      "source": "唐",
+      "target": "合院穿斗体系",
+      "value": 1
+    },
+    {
+      "source": "唐",
+      "target": "抬梁合院体系",
+      "value": 2
+    },
+    {
+      "source": "唐",
+      "target": "抬梁穿斗混合体系",
+      "value": 1
+    },
+    {
+      "source": "宋",
+      "target": "合院民居体系",
+      "value": 2
+    },
+    {
+      "source": "宋",
+      "target": "抬梁合院体系",
+      "value": 1
+    },
+    {
+      "source": "宋",
+      "target": "抬梁穿斗混合体系",
+      "value": 12
+    },
+    {
+      "source": "抬梁合院体系",
+      "target": "土类",
+      "value": 5
+    },
+    {
+      "source": "抬梁合院体系",
+      "target": "木材类",
+      "value": 25
+    },
+    {
+      "source": "抬梁合院体系",
+      "target": "石材类",
+      "value": 15
+    },
+    {
+      "source": "抬梁合院体系",
+      "target": "砖瓦类",
+      "value": 8
+    },
+    {
+      "source": "抬梁穿斗混合体系",
+      "target": "土类",
+      "value": 1
+    },
+    {
+      "source": "抬梁穿斗混合体系",
+      "target": "木材类",
+      "value": 38
+    },
+    {
+      "source": "抬梁穿斗混合体系",
+      "target": "石材类",
+      "value": 7
+    },
+    {
+      "source": "抬梁穿斗混合体系",
+      "target": "砖瓦类",
+      "value": 8
+    },
+    {
+      "source": "明",
+      "target": "其他民居体系",
+      "value": 4
+    },
+    {
+      "source": "明",
+      "target": "合院穿斗体系",
+      "value": 2
+    },
+    {
+      "source": "明",
+      "target": "抬梁合院体系",
+      "value": 47
+    },
+    {
+      "source": "明",
+      "target": "抬梁穿斗混合体系",
+      "value": 16
+    },
+    {
+      "source": "清",
+      "target": "其他民居体系",
+      "value": 3
+    },
+    {
+      "source": "清",
+      "target": "合院穿斗体系",
+      "value": 71
+    },
+    {
+      "source": "清",
+      "target": "抬梁合院体系",
+      "value": 3
+    },
+    {
+      "source": "清",
+      "target": "抬梁穿斗混合体系",
+      "value": 21
+    }
+  ]
+}

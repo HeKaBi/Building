@@ -1,0 +1,3025 @@
+[
+  {
+    "name": "木材",
+    "value": 40.14,
+    "term_count": 50,
+    "avg_confidence": 0.8028,
+    "building_count": 50,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 116,
+        "name": "正阳门",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 118,
+        "name": "光岳楼",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 124,
+        "name": "直隶总督署",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 125,
+        "name": "卓克基土司官寨",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 126,
+        "name": "大屯土司庄园",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "青砖",
+    "value": 26.75,
+    "term_count": 30,
+    "avg_confidence": 0.8917,
+    "building_count": 30,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 117,
+        "name": "清远楼",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 139,
+        "name": "泰宁尚书第",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 213,
+        "name": "旅顺监狱旧址",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 343,
+        "name": "鸡鸣驿城",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 434,
+        "name": "吕府",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "抬梁式",
+    "value": 25.78,
+    "term_count": 31,
+    "avg_confidence": 0.8316,
+    "building_count": 31,
+    "dimensions": [
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 124,
+        "name": "直隶总督署",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 139,
+        "name": "泰宁尚书第",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 257,
+        "name": "霍州州署大堂",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 291,
+        "name": "莫土司衙署",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 308,
+        "name": "盂城驿",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "砖石",
+    "value": 22.75,
+    "term_count": 32,
+    "avg_confidence": 0.7109,
+    "building_count": 32,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 124,
+        "name": "直隶总督署",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 268,
+        "name": "北京鼓楼、钟楼",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 284,
+        "name": "归德府城墙",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 308,
+        "name": "盂城驿",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 315,
+        "name": "内乡县衙",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "中轴对称",
+    "value": 21.95,
+    "term_count": 24,
+    "avg_confidence": 0.9146,
+    "building_count": 24,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 66,
+        "name": "国子监",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 102,
+        "name": "恭王府及花园",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 124,
+        "name": "直隶总督署",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 125,
+        "name": "卓克基土司官寨",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 126,
+        "name": "大屯土司庄园",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "围院结构",
+    "value": 17.74,
+    "term_count": 20,
+    "avg_confidence": 0.887,
+    "building_count": 20,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 91,
+        "name": "皇史宬",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 94,
+        "name": "古观象台",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 124,
+        "name": "直隶总督署",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 291,
+        "name": "莫土司衙署",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 308,
+        "name": "盂城驿",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "坐北朝南",
+    "value": 15.96,
+    "term_count": 17,
+    "avg_confidence": 0.9388,
+    "building_count": 17,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 255,
+        "name": "绛州大堂",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 257,
+        "name": "霍州州署大堂",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 268,
+        "name": "北京鼓楼、钟楼",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 308,
+        "name": "盂城驿",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 315,
+        "name": "内乡县衙",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "榫卯结构",
+    "value": 14.87,
+    "term_count": 18,
+    "avg_confidence": 0.8261,
+    "building_count": 18,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 102,
+        "name": "恭王府及花园",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 124,
+        "name": "直隶总督署",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 139,
+        "name": "泰宁尚书第",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 291,
+        "name": "莫土司衙署",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 388,
+        "name": "临晋县衙",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "木构架",
+    "value": 13.71,
+    "term_count": 16,
+    "avg_confidence": 0.8569,
+    "building_count": 16,
+    "dimensions": [
+      "建筑材料",
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 66,
+        "name": "国子监",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 102,
+        "name": "恭王府及花园",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 139,
+        "name": "泰宁尚书第",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 308,
+        "name": "盂城驿",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 343,
+        "name": "鸡鸣驿城",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "军事防御",
+    "value": 11.71,
+    "term_count": 13,
+    "avg_confidence": 0.9008,
+    "building_count": 13,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 436,
+        "name": "台州府城墙",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 533,
+        "name": "海龙屯",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 585,
+        "name": "德胜门箭楼",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 633,
+        "name": "万全右卫城",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 783,
+        "name": "中前所城",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "灰瓦",
+    "value": 9.1,
+    "term_count": 11,
+    "avg_confidence": 0.8273,
+    "building_count": 11,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 343,
+        "name": "鸡鸣驿城",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 469,
+        "name": "临清运河钞关",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 477,
+        "name": "南阳知府衙门",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 759,
+        "name": "潞安府衙",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 922,
+        "name": "叶县县衙",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "瓮城",
+    "value": 8.44,
+    "term_count": 9,
+    "avg_confidence": 0.9378,
+    "building_count": 9,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 284,
+        "name": "归德府城墙",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 436,
+        "name": "台州府城墙",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 628,
+        "name": "永年城",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 784,
+        "name": "广宁城",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 801,
+        "name": "盘门",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "多进院落",
+    "value": 8.05,
+    "term_count": 9,
+    "avg_confidence": 0.8944,
+    "building_count": 9,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 102,
+        "name": "恭王府及花园",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 308,
+        "name": "盂城驿",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 759,
+        "name": "潞安府衙",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 816,
+        "name": "淮安府衙",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1041,
+        "name": "孟连宣抚司署",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "穿斗式",
+    "value": 7.9,
+    "term_count": 11,
+    "avg_confidence": 0.7182,
+    "building_count": 11,
+    "dimensions": [
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 124,
+        "name": "直隶总督署",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 291,
+        "name": "莫土司衙署",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 598,
+        "name": "安徽会馆",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 807,
+        "name": "瞻园",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1156,
+        "name": "淮军公所",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "重檐歇山顶",
+    "value": 7.58,
+    "term_count": 8,
+    "avg_confidence": 0.9475,
+    "building_count": 8,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 116,
+        "name": "正阳门",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 117,
+        "name": "清远楼",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 431,
+        "name": "文澜阁",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 585,
+        "name": "德胜门箭楼",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 759,
+        "name": "潞安府衙",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "夯土",
+    "value": 7.26,
+    "term_count": 8,
+    "avg_confidence": 0.9075,
+    "building_count": 8,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 343,
+        "name": "鸡鸣驿城",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 633,
+        "name": "万全右卫城",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 784,
+        "name": "广宁城",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1078,
+        "name": "丰图义仓",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1087,
+        "name": "永昌钟鼓楼",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "砖",
+    "value": 6.32,
+    "term_count": 7,
+    "avg_confidence": 0.9029,
+    "building_count": 7,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 126,
+        "name": "大屯土司庄园",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 291,
+        "name": "莫土司衙署",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 367,
+        "name": "边靖楼",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 628,
+        "name": "永年城",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1157,
+        "name": "清河道署",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "砖木结构",
+    "value": 5.66,
+    "term_count": 6,
+    "avg_confidence": 0.9433,
+    "building_count": 6,
+    "dimensions": [
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 126,
+        "name": "大屯土司庄园",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 291,
+        "name": "莫土司衙署",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 367,
+        "name": "边靖楼",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 784,
+        "name": "广宁城",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1093,
+        "name": "董府",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "依山就势",
+    "value": 5.35,
+    "term_count": 6,
+    "avg_confidence": 0.8917,
+    "building_count": 5,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 99,
+        "name": "蓬莱水城及蓬莱阁",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1069,
+        "name": "榆林卫城",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1750,
+        "name": "镇远城墙",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1756,
+        "name": "岩门长官司城",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1756,
+        "name": "岩门长官司城",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "石材",
+    "value": 4.95,
+    "term_count": 6,
+    "avg_confidence": 0.825,
+    "building_count": 6,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 139,
+        "name": "泰宁尚书第",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 434,
+        "name": "吕府",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1727,
+        "name": "宜宾大观楼",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1896,
+        "name": "邢台清风楼",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 2079,
+        "name": "许家桥将军府",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "衙署",
+    "value": 4.79,
+    "term_count": 5,
+    "avg_confidence": 0.958,
+    "building_count": 5,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 291,
+        "name": "莫土司衙署",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 326,
+        "name": "伊犁将军府",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 759,
+        "name": "潞安府衙",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 774,
+        "name": "绥远城墙和将军衙署",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 2038,
+        "name": "浮梁县衙",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "中轴对称布局",
+    "value": 4.77,
+    "term_count": 5,
+    "avg_confidence": 0.954,
+    "building_count": 5,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 91,
+        "name": "皇史宬",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 257,
+        "name": "霍州州署大堂",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 412,
+        "name": "和硕恪靖公主府",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1041,
+        "name": "孟连宣抚司署",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1370,
+        "name": "学政试院",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "四合院",
+    "value": 4.76,
+    "term_count": 5,
+    "avg_confidence": 0.952,
+    "building_count": 4,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 94,
+        "name": "古观象台",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 102,
+        "name": "恭王府及花园",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 326,
+        "name": "伊犁将军府",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 2140,
+        "name": "叶枝土司衙署",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 2140,
+        "name": "叶枝土司衙署",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "角楼",
+    "value": 4.73,
+    "term_count": 5,
+    "avg_confidence": 0.946,
+    "building_count": 5,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 284,
+        "name": "归德府城墙",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 507,
+        "name": "肇庆古城墙",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 774,
+        "name": "绥远城墙和将军衙署",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 784,
+        "name": "广宁城",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1143,
+        "name": "正定城墙",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "三路并列",
+    "value": 4.72,
+    "term_count": 5,
+    "avg_confidence": 0.944,
+    "building_count": 4,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 102,
+        "name": "恭王府及花园",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 780,
+        "name": "僧格林沁王府",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 780,
+        "name": "僧格林沁王府",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 816,
+        "name": "淮安府衙",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 922,
+        "name": "叶县县衙",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "中轴线布局",
+    "value": 4.72,
+    "term_count": 5,
+    "avg_confidence": 0.944,
+    "building_count": 5,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 268,
+        "name": "北京鼓楼、钟楼",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 315,
+        "name": "内乡县衙",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 922,
+        "name": "叶县县衙",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1107,
+        "name": "克勤郡王府",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1157,
+        "name": "清河道署",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "歇山顶",
+    "value": 4.7,
+    "term_count": 5,
+    "avg_confidence": 0.94,
+    "building_count": 5,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 326,
+        "name": "伊犁将军府",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1157,
+        "name": "清河道署",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1276,
+        "name": "唱经楼",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1668,
+        "name": "镇海楼与广州明城墙",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1961,
+        "name": "南京鼓楼",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "条石",
+    "value": 4.68,
+    "term_count": 5,
+    "avg_confidence": 0.936,
+    "building_count": 5,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 117,
+        "name": "清远楼",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 507,
+        "name": "肇庆古城墙",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 784,
+        "name": "广宁城",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1143,
+        "name": "正定城墙",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1716,
+        "name": "潼川古城墙",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "坐南朝北",
+    "value": 4.63,
+    "term_count": 5,
+    "avg_confidence": 0.926,
+    "building_count": 5,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 291,
+        "name": "莫土司衙署",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1276,
+        "name": "唱经楼",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1422,
+        "name": "陈阁老宅",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1439,
+        "name": "黄村进士第",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1949,
+        "name": "解州同善义仓",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "硬山顶",
+    "value": 4.59,
+    "term_count": 5,
+    "avg_confidence": 0.918,
+    "building_count": 5,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 326,
+        "name": "伊犁将军府",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1093,
+        "name": "董府",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1157,
+        "name": "清河道署",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1370,
+        "name": "学政试院",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 2169,
+        "name": "张掖高总兵宅院",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "瓮城布局",
+    "value": 4.58,
+    "term_count": 5,
+    "avg_confidence": 0.916,
+    "building_count": 5,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 116,
+        "name": "正阳门",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 284,
+        "name": "归德府城墙",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 585,
+        "name": "德胜门箭楼",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 801,
+        "name": "盘门",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1578,
+        "name": "襄城城墙",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "面阔七间",
+    "value": 4.54,
+    "term_count": 5,
+    "avg_confidence": 0.908,
+    "building_count": 4,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 255,
+        "name": "绛州大堂",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 255,
+        "name": "绛州大堂",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 345,
+        "name": "定州贡院",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 367,
+        "name": "边靖楼",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 585,
+        "name": "德胜门箭楼",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "琉璃瓦",
+    "value": 4.42,
+    "term_count": 5,
+    "avg_confidence": 0.884,
+    "building_count": 5,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 117,
+        "name": "清远楼",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 124,
+        "name": "直隶总督署",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 598,
+        "name": "安徽会馆",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1093,
+        "name": "董府",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1885,
+        "name": "惠远钟鼓楼",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "生土",
+    "value": 4.12,
+    "term_count": 6,
+    "avg_confidence": 0.6867,
+    "building_count": 6,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 284,
+        "name": "归德府城墙",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 783,
+        "name": "中前所城",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1069,
+        "name": "榆林卫城",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1078,
+        "name": "丰图义仓",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1482,
+        "name": "蓝廷珍府第",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "彩绘",
+    "value": 4.07,
+    "term_count": 5,
+    "avg_confidence": 0.814,
+    "building_count": 5,
+    "dimensions": [
+      "建筑材料",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 434,
+        "name": "吕府",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1093,
+        "name": "董府",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1156,
+        "name": "淮军公所",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1157,
+        "name": "清河道署",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1439,
+        "name": "黄村进士第",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "雕花装饰",
+    "value": 4.03,
+    "term_count": 5,
+    "avg_confidence": 0.806,
+    "building_count": 5,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 139,
+        "name": "泰宁尚书第",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1041,
+        "name": "孟连宣抚司署",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1422,
+        "name": "陈阁老宅",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1773,
+        "name": "侬氏土司衙署",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 2079,
+        "name": "许家桥将军府",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "粮仓",
+    "value": 3.83,
+    "term_count": 4,
+    "avg_confidence": 0.9575,
+    "building_count": 4,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 326,
+        "name": "伊犁将军府",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1078,
+        "name": "丰图义仓",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1158,
+        "name": "深州盈亿义仓",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1615,
+        "name": "大丰仓",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "三进院落",
+    "value": 3.8,
+    "term_count": 4,
+    "avg_confidence": 0.95,
+    "building_count": 4,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 139,
+        "name": "泰宁尚书第",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 431,
+        "name": "文澜阁",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 469,
+        "name": "临清运河钞关",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1093,
+        "name": "董府",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "城墙",
+    "value": 3.8,
+    "term_count": 4,
+    "avg_confidence": 0.95,
+    "building_count": 4,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 99,
+        "name": "蓬莱水城及蓬莱阁",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 628,
+        "name": "永年城",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1069,
+        "name": "榆林卫城",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1849,
+        "name": "洮州卫城",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "硬山式",
+    "value": 3.8,
+    "term_count": 4,
+    "avg_confidence": 0.95,
+    "building_count": 4,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 412,
+        "name": "和硕恪靖公主府",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 434,
+        "name": "吕府",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 780,
+        "name": "僧格林沁王府",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1595,
+        "name": "密县县衙",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "府第",
+    "value": 3.78,
+    "term_count": 4,
+    "avg_confidence": 0.945,
+    "building_count": 4,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 139,
+        "name": "泰宁尚书第",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 291,
+        "name": "莫土司衙署",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1482,
+        "name": "蓝廷珍府第",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 2169,
+        "name": "张掖高总兵宅院",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "四合院式",
+    "value": 3.73,
+    "term_count": 4,
+    "avg_confidence": 0.9325,
+    "building_count": 3,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 125,
+        "name": "卓克基土司官寨",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1158,
+        "name": "深州盈亿义仓",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1158,
+        "name": "深州盈亿义仓",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 2139,
+        "name": "云南提督府旧址",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "面阔五间",
+    "value": 3.73,
+    "term_count": 4,
+    "avg_confidence": 0.9325,
+    "building_count": 4,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 315,
+        "name": "内乡县衙",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 388,
+        "name": "临晋县衙",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1896,
+        "name": "邢台清风楼",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 2169,
+        "name": "张掖高总兵宅院",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "减柱造",
+    "value": 3.72,
+    "term_count": 4,
+    "avg_confidence": 0.93,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 255,
+        "name": "绛州大堂",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 255,
+        "name": "绛州大堂",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1896,
+        "name": "邢台清风楼",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1896,
+        "name": "邢台清风楼",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "行政办公",
+    "value": 3.71,
+    "term_count": 4,
+    "avg_confidence": 0.9275,
+    "building_count": 4,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 124,
+        "name": "直隶总督署",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1335,
+        "name": "延吉边务督办公署旧址",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1799,
+        "name": "冲赛康",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 2038,
+        "name": "浮梁县衙",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "抬梁式构架",
+    "value": 3.43,
+    "term_count": 4,
+    "avg_confidence": 0.8575,
+    "building_count": 4,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 66,
+        "name": "国子监",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 102,
+        "name": "恭王府及花园",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 388,
+        "name": "临晋县衙",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1041,
+        "name": "孟连宣抚司署",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "青石",
+    "value": 3.39,
+    "term_count": 4,
+    "avg_confidence": 0.8475,
+    "building_count": 4,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 125,
+        "name": "卓克基土司官寨",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1143,
+        "name": "正定城墙",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1756,
+        "name": "岩门长官司城",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 2140,
+        "name": "叶枝土司衙署",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "糯米灰浆",
+    "value": 3.15,
+    "term_count": 4,
+    "avg_confidence": 0.7875,
+    "building_count": 4,
+    "dimensions": [
+      "建筑材料",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 124,
+        "name": "直隶总督署",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 436,
+        "name": "台州府城墙",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 598,
+        "name": "安徽会馆",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1482,
+        "name": "蓝廷珍府第",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "砖雕",
+    "value": 3.13,
+    "term_count": 4,
+    "avg_confidence": 0.7825,
+    "building_count": 4,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1093,
+        "name": "董府",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1156,
+        "name": "淮军公所",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1157,
+        "name": "清河道署",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1834,
+        "name": "骡帮会馆",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "科举考场",
+    "value": 2.88,
+    "term_count": 3,
+    "avg_confidence": 0.96,
+    "building_count": 3,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 345,
+        "name": "定州贡院",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 2039,
+        "name": "玉山考棚",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 2160,
+        "name": "蒲城考院",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "博物馆",
+    "value": 2.85,
+    "term_count": 3,
+    "avg_confidence": 0.95,
+    "building_count": 3,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 94,
+        "name": "古观象台",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 412,
+        "name": "和硕恪靖公主府",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 2139,
+        "name": "云南提督府旧址",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "敌台",
+    "value": 2.85,
+    "term_count": 3,
+    "avg_confidence": 0.95,
+    "building_count": 3,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 99,
+        "name": "蓬莱水城及蓬莱阁",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 284,
+        "name": "归德府城墙",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 507,
+        "name": "肇庆古城墙",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "监狱",
+    "value": 2.85,
+    "term_count": 3,
+    "avg_confidence": 0.95,
+    "building_count": 3,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 315,
+        "name": "内乡县衙",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 922,
+        "name": "叶县县衙",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1595,
+        "name": "密县县衙",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "月城",
+    "value": 2.83,
+    "term_count": 3,
+    "avg_confidence": 0.9433,
+    "building_count": 3,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 507,
+        "name": "肇庆古城墙",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1143,
+        "name": "正定城墙",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 2106,
+        "name": "桂林静江府城墙",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "石砌城墙",
+    "value": 2.82,
+    "term_count": 3,
+    "avg_confidence": 0.94,
+    "building_count": 3,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 963,
+        "name": "凤凰古城堡",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1677,
+        "name": "永宁州城城墙",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 2106,
+        "name": "桂林静江府城墙",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "四进院落",
+    "value": 2.79,
+    "term_count": 3,
+    "avg_confidence": 0.93,
+    "building_count": 3,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 412,
+        "name": "和硕恪靖公主府",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1439,
+        "name": "黄村进士第",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 2079,
+        "name": "许家桥将军府",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "四门制",
+    "value": 2.77,
+    "term_count": 3,
+    "avg_confidence": 0.9233,
+    "building_count": 3,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1137,
+        "name": "永平府城墙",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1677,
+        "name": "永宁州城城墙",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1716,
+        "name": "潼川古城墙",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "楼阁式",
+    "value": 2.77,
+    "term_count": 3,
+    "avg_confidence": 0.9233,
+    "building_count": 3,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 118,
+        "name": "光岳楼",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 345,
+        "name": "定州贡院",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1087,
+        "name": "永昌钟鼓楼",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "进深三间",
+    "value": 2.77,
+    "term_count": 3,
+    "avg_confidence": 0.9233,
+    "building_count": 3,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 388,
+        "name": "临晋县衙",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1896,
+        "name": "邢台清风楼",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 2169,
+        "name": "张掖高总兵宅院",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "谯楼",
+    "value": 2.76,
+    "term_count": 3,
+    "avg_confidence": 0.92,
+    "building_count": 3,
+    "dimensions": [
+      "建筑功能",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1716,
+        "name": "潼川古城墙",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1727,
+        "name": "宜宾大观楼",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1856,
+        "name": "酒泉鼓楼",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "马面",
+    "value": 2.76,
+    "term_count": 3,
+    "avg_confidence": 0.92,
+    "building_count": 3,
+    "dimensions": [
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 436,
+        "name": "台州府城墙",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1143,
+        "name": "正定城墙",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1849,
+        "name": "洮州卫城",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "护城河",
+    "value": 2.74,
+    "term_count": 3,
+    "avg_confidence": 0.9133,
+    "building_count": 3,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 628,
+        "name": "永年城",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1143,
+        "name": "正定城墙",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 2106,
+        "name": "桂林静江府城墙",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "灰筒瓦",
+    "value": 2.74,
+    "term_count": 3,
+    "avg_confidence": 0.9133,
+    "building_count": 3,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 116,
+        "name": "正阳门",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 268,
+        "name": "北京鼓楼、钟楼",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 585,
+        "name": "德胜门箭楼",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "斗拱结构",
+    "value": 2.69,
+    "term_count": 3,
+    "avg_confidence": 0.8967,
+    "building_count": 3,
+    "dimensions": [
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 118,
+        "name": "光岳楼",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1142,
+        "name": "保定钟楼",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1727,
+        "name": "宜宾大观楼",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "城门楼",
+    "value": 2.68,
+    "term_count": 3,
+    "avg_confidence": 0.8933,
+    "building_count": 3,
+    "dimensions": [
+      "建筑功能",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 774,
+        "name": "绥远城墙和将军衙署",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1037,
+        "name": "朝阳楼",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1856,
+        "name": "酒泉鼓楼",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "防御",
+    "value": 2.68,
+    "term_count": 3,
+    "avg_confidence": 0.8933,
+    "building_count": 3,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 507,
+        "name": "肇庆古城墙",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 628,
+        "name": "永年城",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1078,
+        "name": "丰图义仓",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "祠堂",
+    "value": 2.66,
+    "term_count": 3,
+    "avg_confidence": 0.8867,
+    "building_count": 3,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 126,
+        "name": "大屯土司庄园",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1107,
+        "name": "克勤郡王府",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1422,
+        "name": "陈阁老宅",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "布瓦",
+    "value": 2.63,
+    "term_count": 3,
+    "avg_confidence": 0.8767,
+    "building_count": 3,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 117,
+        "name": "清远楼",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1142,
+        "name": "保定钟楼",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1896,
+        "name": "邢台清风楼",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "夯土筑城",
+    "value": 2.58,
+    "term_count": 3,
+    "avg_confidence": 0.86,
+    "building_count": 3,
+    "dimensions": [
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 784,
+        "name": "广宁城",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1078,
+        "name": "丰图义仓",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1849,
+        "name": "洮州卫城",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "斗拱",
+    "value": 2.52,
+    "term_count": 3,
+    "avg_confidence": 0.84,
+    "building_count": 3,
+    "dimensions": [
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 922,
+        "name": "叶县县衙",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1142,
+        "name": "保定钟楼",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1896,
+        "name": "邢台清风楼",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "青瓦",
+    "value": 2.44,
+    "term_count": 3,
+    "avg_confidence": 0.8133,
+    "building_count": 3,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 326,
+        "name": "伊犁将军府",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1439,
+        "name": "黄村进士第",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1734,
+        "name": "筹边楼",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "雕花门窗",
+    "value": 2.04,
+    "term_count": 3,
+    "avg_confidence": 0.68,
+    "building_count": 3,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1156,
+        "name": "淮军公所",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1370,
+        "name": "学政试院",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1834,
+        "name": "骡帮会馆",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "六进院落",
+    "value": 1.93,
+    "term_count": 2,
+    "avg_confidence": 0.965,
+    "building_count": 2,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 774,
+        "name": "绥远城墙和将军衙署",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 2146,
+        "name": "建水学政考棚",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "大堂",
+    "value": 1.93,
+    "term_count": 2,
+    "avg_confidence": 0.965,
+    "building_count": 2,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 126,
+        "name": "大屯土司庄园",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1595,
+        "name": "密县县衙",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "报时建筑",
+    "value": 1.93,
+    "term_count": 2,
+    "avg_confidence": 0.965,
+    "building_count": 2,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 117,
+        "name": "清远楼",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 268,
+        "name": "北京鼓楼、钟楼",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "攒尖顶",
+    "value": 1.93,
+    "term_count": 2,
+    "avg_confidence": 0.965,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1084,
+        "name": "张掖鼓楼",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1856,
+        "name": "酒泉鼓楼",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "木结构",
+    "value": 1.93,
+    "term_count": 2,
+    "avg_confidence": 0.965,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 116,
+        "name": "正阳门",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1734,
+        "name": "筹边楼",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "砖石结构",
+    "value": 1.93,
+    "term_count": 2,
+    "avg_confidence": 0.965,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 268,
+        "name": "北京鼓楼、钟楼",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1137,
+        "name": "永平府城墙",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "仓储",
+    "value": 1.91,
+    "term_count": 2,
+    "avg_confidence": 0.955,
+    "building_count": 2,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1078,
+        "name": "丰图义仓",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1949,
+        "name": "解州同善义仓",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "花岗岩",
+    "value": 1.91,
+    "term_count": 2,
+    "avg_confidence": 0.955,
+    "building_count": 2,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1131,
+        "name": "灵寿石牌坊",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1398,
+        "name": "金昭牌坊和宪台牌坊",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "三坊一照壁",
+    "value": 1.9,
+    "term_count": 2,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 2140,
+        "name": "叶枝土司衙署",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 2140,
+        "name": "叶枝土司衙署",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "三重檐歇山顶",
+    "value": 1.9,
+    "term_count": 2,
+    "avg_confidence": 0.95,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 268,
+        "name": "北京鼓楼、钟楼",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1727,
+        "name": "宜宾大观楼",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "四合五天井",
+    "value": 1.9,
+    "term_count": 2,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 2140,
+        "name": "叶枝土司衙署",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 2140,
+        "name": "叶枝土司衙署",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "官署",
+    "value": 1.9,
+    "term_count": 2,
+    "avg_confidence": 0.95,
+    "building_count": 2,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 124,
+        "name": "直隶总督署",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 477,
+        "name": "南阳知府衙门",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "重檐十字歇山顶",
+    "value": 1.9,
+    "term_count": 2,
+    "avg_confidence": 0.95,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1242,
+        "name": "隰县鼓楼",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1276,
+        "name": "唱经楼",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "黄土",
+    "value": 1.9,
+    "term_count": 2,
+    "avg_confidence": 0.95,
+    "building_count": 2,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1093,
+        "name": "董府",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1578,
+        "name": "襄城城墙",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "五重四进",
+    "value": 1.89,
+    "term_count": 2,
+    "avg_confidence": 0.945,
+    "building_count": 1,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 780,
+        "name": "僧格林沁王府",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 780,
+        "name": "僧格林沁王府",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "炮台",
+    "value": 1.89,
+    "term_count": 2,
+    "avg_confidence": 0.945,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 99,
+        "name": "蓬莱水城及蓬莱阁",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 507,
+        "name": "肇庆古城墙",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "五进院落",
+    "value": 1.88,
+    "term_count": 2,
+    "avg_confidence": 0.94,
+    "building_count": 1,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1595,
+        "name": "密县县衙",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1595,
+        "name": "密县县衙",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "会馆",
+    "value": 1.88,
+    "term_count": 2,
+    "avg_confidence": 0.94,
+    "building_count": 2,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 598,
+        "name": "安徽会馆",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1834,
+        "name": "骡帮会馆",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "办公场所",
+    "value": 1.88,
+    "term_count": 2,
+    "avg_confidence": 0.94,
+    "building_count": 2,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1157,
+        "name": "清河道署",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1370,
+        "name": "学政试院",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "城墙结构",
+    "value": 1.88,
+    "term_count": 2,
+    "avg_confidence": 0.94,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 633,
+        "name": "万全右卫城",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 783,
+        "name": "中前所城",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "料石",
+    "value": 1.88,
+    "term_count": 2,
+    "avg_confidence": 0.94,
+    "building_count": 2,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1677,
+        "name": "永宁州城城墙",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1756,
+        "name": "岩门长官司城",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "单檐歇山顶",
+    "value": 1.87,
+    "term_count": 2,
+    "avg_confidence": 0.935,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 255,
+        "name": "绛州大堂",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 257,
+        "name": "霍州州署大堂",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "回廊结构",
+    "value": 1.87,
+    "term_count": 2,
+    "avg_confidence": 0.935,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 117,
+        "name": "清远楼",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 367,
+        "name": "边靖楼",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "城中城",
+    "value": 1.87,
+    "term_count": 2,
+    "avg_confidence": 0.935,
+    "building_count": 1,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1078,
+        "name": "丰图义仓",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1078,
+        "name": "丰图义仓",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "汉白玉",
+    "value": 1.87,
+    "term_count": 2,
+    "avg_confidence": 0.935,
+    "building_count": 2,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 91,
+        "name": "皇史宬",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 412,
+        "name": "和硕恪靖公主府",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "纵联式券拱",
+    "value": 1.87,
+    "term_count": 2,
+    "avg_confidence": 0.935,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1716,
+        "name": "潼川古城墙",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1716,
+        "name": "潼川古城墙",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "绿琉璃剪边",
+    "value": 1.87,
+    "term_count": 2,
+    "avg_confidence": 0.935,
+    "building_count": 2,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 116,
+        "name": "正阳门",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 268,
+        "name": "北京鼓楼、钟楼",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "通天柱",
+    "value": 1.87,
+    "term_count": 2,
+    "avg_confidence": 0.935,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 117,
+        "name": "清远楼",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1856,
+        "name": "酒泉鼓楼",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  }
+]

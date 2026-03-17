@@ -1,0 +1,304 @@
+{
+  "building_type": "官府",
+  "title": "官府：主要朝代-主要地区-建筑结构",
+  "dimension_order": [
+    "主要朝代",
+    "主要地区",
+    "建筑结构"
+  ],
+  "data": [
+    {
+      "name": "元",
+      "value": 9,
+      "children": [
+        {
+          "name": "其他地区",
+          "value": 3,
+          "children": [
+            {
+              "name": "官署合院体系",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "name": "华东",
+          "value": 1,
+          "children": [
+            {
+              "name": "城防防御体系",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "华北",
+          "value": 3,
+          "children": [
+            {
+              "name": "官署合院体系",
+              "value": 2
+            },
+            {
+              "name": "楼阁台榭体系",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "西南",
+          "value": 2,
+          "children": [
+            {
+              "name": "官署合院体系",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "其他朝代",
+      "value": 25,
+      "children": [
+        {
+          "name": "其他地区",
+          "value": 7,
+          "children": [
+            {
+              "name": "城防防御体系",
+              "value": 4
+            },
+            {
+              "name": "楼阁台榭体系",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "name": "华东",
+          "value": 7,
+          "children": [
+            {
+              "name": "城防防御体系",
+              "value": 4
+            },
+            {
+              "name": "官署合院体系",
+              "value": 1
+            },
+            {
+              "name": "楼阁台榭体系",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "name": "华北",
+          "value": 9,
+          "children": [
+            {
+              "name": "其他官府体系",
+              "value": 1
+            },
+            {
+              "name": "城防防御体系",
+              "value": 4
+            },
+            {
+              "name": "楼阁台榭体系",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "name": "西南",
+          "value": 2,
+          "children": [
+            {
+              "name": "城防防御体系",
+              "value": 1
+            },
+            {
+              "name": "楼阁台榭体系",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "明",
+      "value": 41,
+      "children": [
+        {
+          "name": "其他地区",
+          "value": 11,
+          "children": [
+            {
+              "name": "城防防御体系",
+              "value": 6
+            },
+            {
+              "name": "官署合院体系",
+              "value": 3
+            },
+            {
+              "name": "楼阁台榭体系",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "name": "华东",
+          "value": 12,
+          "children": [
+            {
+              "name": "城防防御体系",
+              "value": 1
+            },
+            {
+              "name": "官署合院体系",
+              "value": 9
+            },
+            {
+              "name": "楼阁台榭体系",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "name": "华北",
+          "value": 11,
+          "children": [
+            {
+              "name": "城防防御体系",
+              "value": 3
+            },
+            {
+              "name": "官署合院体系",
+              "value": 2
+            },
+            {
+              "name": "楼阁台榭体系",
+              "value": 6
+            }
+          ]
+        },
+        {
+          "name": "西南",
+          "value": 7,
+          "children": [
+            {
+              "name": "城防防御体系",
+              "value": 4
+            },
+            {
+              "name": "官署合院体系",
+              "value": 2
+            },
+            {
+              "name": "楼阁台榭体系",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "清",
+      "value": 30,
+      "children": [
+        {
+          "name": "其他地区",
+          "value": 10,
+          "children": [
+            {
+              "name": "其他官府体系",
+              "value": 1
+            },
+            {
+              "name": "城防防御体系",
+              "value": 1
+            },
+            {
+              "name": "官署合院体系",
+              "value": 6
+            },
+            {
+              "name": "楼阁台榭体系",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "name": "华东",
+          "value": 3,
+          "children": [
+            {
+              "name": "其他官府体系",
+              "value": 1
+            },
+            {
+              "name": "官署合院体系",
+              "value": 1
+            },
+            {
+              "name": "楼阁台榭体系",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "华北",
+          "value": 12,
+          "children": [
+            {
+              "name": "官署合院体系",
+              "value": 11
+            },
+            {
+              "name": "楼阁台榭体系",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "西南",
+          "value": 5,
+          "children": [
+            {
+              "name": "官署合院体系",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "building_count": 105,
+    "dynasty_node_count": 4,
+    "region_node_count": 4,
+    "structure_node_count": 4,
+    "leaf_path_count": 37,
+    "dynasty_nodes": [
+      "元",
+      "其他朝代",
+      "明",
+      "清"
+    ],
+    "region_nodes": [
+      "其他地区",
+      "华东",
+      "华北",
+      "西南"
+    ],
+    "structure_nodes": [
+      "其他官府体系",
+      "城防防御体系",
+      "官署合院体系",
+      "楼阁台榭体系"
+    ]
+  }
+}

@@ -1,0 +1,372 @@
+{
+  "building_type": "桥梁",
+  "summary": {
+    "building_count": 92,
+    "raw_dynasty_count": 9,
+    "raw_function_count": 7,
+    "raw_material_count": 5,
+    "rose_dynasty_count": 9,
+    "rose_function_count": 7,
+    "rose_material_count": 5
+  },
+  "limits": {
+    "dynasty_max": 10,
+    "function_max": 8,
+    "material_max": 7
+  },
+  "rings": {
+    "dynasty": [
+      {
+        "name": "西晋",
+        "value": 1
+      },
+      {
+        "name": "南北朝",
+        "value": 2
+      },
+      {
+        "name": "隋",
+        "value": 2
+      },
+      {
+        "name": "唐",
+        "value": 5
+      },
+      {
+        "name": "宋",
+        "value": 22
+      },
+      {
+        "name": "金",
+        "value": 2
+      },
+      {
+        "name": "元",
+        "value": 4
+      },
+      {
+        "name": "明",
+        "value": 29
+      },
+      {
+        "name": "清",
+        "value": 25
+      }
+    ],
+    "function": [
+      {
+        "name": "交通通行",
+        "value": 69
+      },
+      {
+        "name": "休憩社交",
+        "value": 9
+      },
+      {
+        "name": "水利调控",
+        "value": 6
+      },
+      {
+        "name": "纤道功能",
+        "value": 4
+      },
+      {
+        "name": "信仰祭祀",
+        "value": 2
+      },
+      {
+        "name": "军事防御",
+        "value": 1
+      },
+      {
+        "name": "其他功能",
+        "value": 1
+      }
+    ],
+    "material": [
+      {
+        "name": "石材类",
+        "value": 74
+      },
+      {
+        "name": "木材类",
+        "value": 15
+      },
+      {
+        "name": "金属类",
+        "value": 1
+      },
+      {
+        "name": "灰浆胶结类",
+        "value": 1
+      },
+      {
+        "name": "砖瓦类",
+        "value": 1
+      }
+    ]
+  },
+  "paths": [
+    {
+      "building_type": "桥梁",
+      "dynasty": "明",
+      "function": "交通通行",
+      "material": "石材类",
+      "value": 21
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "宋",
+      "function": "交通通行",
+      "material": "石材类",
+      "value": 16
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "清",
+      "function": "交通通行",
+      "material": "石材类",
+      "value": 13
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "清",
+      "function": "交通通行",
+      "material": "木材类",
+      "value": 4
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "元",
+      "function": "交通通行",
+      "material": "石材类",
+      "value": 3
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "唐",
+      "function": "交通通行",
+      "material": "石材类",
+      "value": 2
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "唐",
+      "function": "纤道功能",
+      "material": "石材类",
+      "value": 2
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "明",
+      "function": "交通通行",
+      "material": "木材类",
+      "value": 2
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "清",
+      "function": "休憩社交",
+      "material": "木材类",
+      "value": 2
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "清",
+      "function": "休憩社交",
+      "material": "石材类",
+      "value": 2
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "金",
+      "function": "交通通行",
+      "material": "石材类",
+      "value": 2
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "隋",
+      "function": "交通通行",
+      "material": "石材类",
+      "value": 2
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "元",
+      "function": "交通通行",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "南北朝",
+      "function": "军事防御",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "南北朝",
+      "function": "水利调控",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "唐",
+      "function": "休憩社交",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "宋",
+      "function": "交通通行",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "宋",
+      "function": "休憩社交",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "宋",
+      "function": "休憩社交",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "宋",
+      "function": "信仰祭祀",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "宋",
+      "function": "水利调控",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "宋",
+      "function": "纤道功能",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "明",
+      "function": "交通通行",
+      "material": "灰浆胶结类",
+      "value": 1
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "明",
+      "function": "休憩社交",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "明",
+      "function": "休憩社交",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "明",
+      "function": "信仰祭祀",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "明",
+      "function": "水利调控",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "明",
+      "function": "纤道功能",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "清",
+      "function": "交通通行",
+      "material": "金属类",
+      "value": 1
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "清",
+      "function": "其他功能",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "清",
+      "function": "水利调控",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "清",
+      "function": "水利调控",
+      "material": "砖瓦类",
+      "value": 1
+    },
+    {
+      "building_type": "桥梁",
+      "dynasty": "西晋",
+      "function": "水利调控",
+      "material": "石材类",
+      "value": 1
+    }
+  ],
+  "mappings": {
+    "dynasty": {
+      "明": "明",
+      "清": "清",
+      "宋": "宋",
+      "唐": "唐",
+      "元": "元",
+      "隋": "隋",
+      "南北朝": "南北朝",
+      "金": "金",
+      "西晋": "西晋"
+    },
+    "function": {
+      "交通通行": "交通通行",
+      "休憩社交": "休憩社交",
+      "水利调控": "水利调控",
+      "纤道功能": "纤道功能",
+      "信仰祭祀": "信仰祭祀",
+      "军事防御": "军事防御",
+      "其他功能": "其他功能"
+    },
+    "material": {
+      "石材类": "石材类",
+      "木材类": "木材类",
+      "金属类": "金属类",
+      "灰浆胶结类": "灰浆胶结类",
+      "砖瓦类": "砖瓦类"
+    }
+  },
+  "generated_at": "2026-03-17 17:12:38"
+}

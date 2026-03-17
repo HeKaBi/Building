@@ -1,0 +1,158 @@
+{
+  "nodes": [
+    {
+      "name": "元",
+      "depth": 0
+    },
+    {
+      "name": "明",
+      "depth": 0
+    },
+    {
+      "name": "清",
+      "depth": 0
+    },
+    {
+      "name": "金",
+      "depth": 0
+    },
+    {
+      "name": "中轴合院体系",
+      "depth": 1
+    },
+    {
+      "name": "影壁坊门体系",
+      "depth": 1
+    },
+    {
+      "name": "楼阁体系",
+      "depth": 1
+    },
+    {
+      "name": "殿阁体系",
+      "depth": 1
+    },
+    {
+      "name": "特殊宫殿体系",
+      "depth": 1
+    },
+    {
+      "name": "土类",
+      "depth": 2
+    },
+    {
+      "name": "木材类",
+      "depth": 2
+    },
+    {
+      "name": "石材类",
+      "depth": 2
+    },
+    {
+      "name": "砖瓦类",
+      "depth": 2
+    }
+  ],
+  "links": [
+    {
+      "source": "中轴合院体系",
+      "target": "木材类",
+      "value": 3
+    },
+    {
+      "source": "中轴合院体系",
+      "target": "石材类",
+      "value": 4
+    },
+    {
+      "source": "中轴合院体系",
+      "target": "砖瓦类",
+      "value": 1
+    },
+    {
+      "source": "元",
+      "target": "特殊宫殿体系",
+      "value": 1
+    },
+    {
+      "source": "影壁坊门体系",
+      "target": "石材类",
+      "value": 2
+    },
+    {
+      "source": "影壁坊门体系",
+      "target": "砖瓦类",
+      "value": 1
+    },
+    {
+      "source": "明",
+      "target": "中轴合院体系",
+      "value": 3
+    },
+    {
+      "source": "明",
+      "target": "影壁坊门体系",
+      "value": 3
+    },
+    {
+      "source": "明",
+      "target": "楼阁体系",
+      "value": 1
+    },
+    {
+      "source": "明",
+      "target": "特殊宫殿体系",
+      "value": 1
+    },
+    {
+      "source": "楼阁体系",
+      "target": "木材类",
+      "value": 1
+    },
+    {
+      "source": "殿阁体系",
+      "target": "土类",
+      "value": 1
+    },
+    {
+      "source": "殿阁体系",
+      "target": "木材类",
+      "value": 1
+    },
+    {
+      "source": "殿阁体系",
+      "target": "砖瓦类",
+      "value": 1
+    },
+    {
+      "source": "清",
+      "target": "中轴合院体系",
+      "value": 5
+    },
+    {
+      "source": "清",
+      "target": "殿阁体系",
+      "value": 1
+    },
+    {
+      "source": "清",
+      "target": "特殊宫殿体系",
+      "value": 1
+    },
+    {
+      "source": "特殊宫殿体系",
+      "target": "木材类",
+      "value": 2
+    },
+    {
+      "source": "特殊宫殿体系",
+      "target": "石材类",
+      "value": 1
+    },
+    {
+      "source": "金",
+      "target": "殿阁体系",
+      "value": 2
+    }
+  ]
+}

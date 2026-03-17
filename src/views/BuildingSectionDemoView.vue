@@ -386,7 +386,7 @@
 
             <aside class="side-panel side-panel--atlas-right">
               <BuildingEraTimeline
-                :items="atlasItems"
+                :items="galleryItems"
                 :active-id="displayedItemId"
                 :accent="currentCategory.accent"
                 @select="selectItem"
@@ -2244,13 +2244,11 @@ watch(
   align-items: flex-start;
   justify-content: space-between;
   gap: 16px;
-  padding: 16px 18px;
-  border: 1px solid rgba(147, 116, 93, 0.16);
-  border-radius: 24px 8px 24px 8px;
-  background:
-    linear-gradient(180deg, rgba(245, 239, 230, 0.96), rgba(235, 226, 211, 0.92)),
-    radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.18), transparent 26%);
-  box-shadow: 0 12px 28px rgba(72, 54, 41, 0.08);
+  padding: 4px 2px 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .atlas-strip__title h3 {

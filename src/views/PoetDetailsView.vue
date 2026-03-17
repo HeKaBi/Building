@@ -119,32 +119,6 @@ const preprocessNetworkData = (info: Array) => {
             isCenter: node === poetName.value
         })
     }
-    // 对于非poetName的节点，看看是否有边的两个节点是位于tempNodes的节点，有则将边加入poetLinks
-    // for (let i = 0; i < info.length; i++) {
-    //     if (info[i]['source'] !== poetName.value && info[i]['target'] !== poetName.value) {
-    //         if (tempNodes.has(info[i]['source']) && tempNodes.has(info[i]['target'])) {
-    //             let flag = false;
-    //             for (let j = 0; j < poetLinks.value.length; j++) {
-    //                 if (poetLinks.value[j]['source'] === info[i]['source'] && poetLinks.value[j]['target'] === info[i]['target']) {
-    //                     flag = true;
-    //                     poetLinks.value[j]['name'].push(info[i]['name']);
-    //                     break;
-    //                 }
-    //             }
-    //             if (!flag) {
-    //                 poetLinks.value.push({
-    //                     source: info[i]['source'],
-    //                     target: info[i]['target'],
-    //                     name: [info[i]['name']],
-    //                     lineStyle: {
-    //                         width: Math.random() * 2 + 0.1,
-    //                         opacity: Math.random() * 0.5 + 0.01
-    //                     }
-    //                 })
-    //             }
-    //         }
-    //     }
-    // }
 }
 
 const queryPoet = () => {
@@ -163,8 +137,8 @@ const queryPoet = () => {
     }
     if (tangPoets.includes(poetName.value)) {
         dynasty.value = '唐朝';
-        poetInfo.value = tangPoetInfo[poetName.value];  // 诗人基本信息
-        if (Object.keys(tangPoetEmotion).includes(poetName.value)) {   // 诗人诗词情感信息
+        poetInfo.value = tangPoetInfo[poetName.value];
+        if (Object.keys(tangPoetEmotion).includes(poetName.value)) {
             let emotion = tangPoetEmotion[poetName.value]['emotion'];
             let maxVal = Math.max(...emotion.map((item: any) => item['value']));
             for (let i = 0; i < emotion.length; i++) {
@@ -175,7 +149,7 @@ const queryPoet = () => {
                 poetEmotionValue.value.push(emotion[i]['value']);
             }
         }
-        if (Object.keys(tangImagery).includes(poetName.value)) { // 诗人诗词意象信息
+        if (Object.keys(tangImagery).includes(poetName.value)) {
             poetImagery.value = tangImagery[poetName.value];
         }
         preprocessNetworkData(tangLink);
@@ -183,7 +157,7 @@ const queryPoet = () => {
     else if (songPoets.includes(poetName.value)) {
         dynasty.value = '宋朝';
         poetInfo.value = songPoetInfo[poetName.value];
-        if (Object.keys(songPoetEmotion).includes(poetName.value)) {   // 诗人诗词情感信息
+        if (Object.keys(songPoetEmotion).includes(poetName.value)) {
             let emotion = songPoetEmotion[poetName.value]['emotion'];
             let maxVal = Math.max(...emotion.map((item: any) => item['value']));
             for (let i = 0; i < emotion.length; i++) {
@@ -194,7 +168,7 @@ const queryPoet = () => {
                 poetEmotionValue.value.push(emotion[i]['value']);
             }
         }
-        if (Object.keys(songImagery).includes(poetName.value)) { // 诗人诗词意象信息
+        if (Object.keys(songImagery).includes(poetName.value)) {
             poetImagery.value = songImagery[poetName.value];
         }
         preprocessNetworkData(songLink);
@@ -202,7 +176,7 @@ const queryPoet = () => {
     else if (yuanPoets.includes(poetName.value)) {
         dynasty.value = '元朝';
         poetInfo.value = yuanPoetInfo[poetName.value];
-        if (Object.keys(yuanPoetEmotion).includes(poetName.value)) {   // 诗人诗词情感信息
+        if (Object.keys(yuanPoetEmotion).includes(poetName.value)) {
             let emotion = yuanPoetEmotion[poetName.value]['emotion'];
             let maxVal = Math.max(...emotion.map((item: any) => item['value']));
 
@@ -214,7 +188,7 @@ const queryPoet = () => {
                 poetEmotionValue.value.push(emotion[i]['value']);
             }
         }
-        if (Object.keys(yuanImagery).includes(poetName.value)) { // 诗人诗词意象信息
+        if (Object.keys(yuanImagery).includes(poetName.value)) {
             poetImagery.value = yuanImagery[poetName.value];
         }
         preprocessNetworkData(yuanLink);
@@ -225,29 +199,24 @@ onMounted(() => {
     queryPoet();
 })
 
-// 引导相关
 const tourVisible = ref(false);
 const currentIndex = ref(0);
 const currentIntro = ref('');
 
 import PoetDetailsJson from "@/assets/tour/PoetDetailsView.json"
-// 引导步骤
 const tourSteps = ref(Array.from(PoetDetailsJson));
 
-// 监听引导步骤修改引导话语
 watch(currentIndex, () => {
     if (currentIndex.value === tourSteps.value.length) {
         tourVisible.value = false;
         currentIndex.value = 0;
         return;
     }
-    // @ts-ignore
     currentIntro.value = tourSteps.value[currentIndex.value]["content"];
 }, {
     immediate: true
 })
 
-// 开始引导
 const startTour = () => {
     tourVisible.value = true;
 };

@@ -1,0 +1,629 @@
+{
+  "building_type": "民居",
+  "summary": {
+    "building_count": 195,
+    "raw_dynasty_count": 7,
+    "raw_function_count": 9,
+    "raw_material_count": 6,
+    "rose_dynasty_count": 7,
+    "rose_function_count": 9,
+    "rose_material_count": 6
+  },
+  "limits": {
+    "dynasty_max": 10,
+    "function_max": 10,
+    "material_max": 7
+  },
+  "rings": {
+    "dynasty": [
+      {
+        "name": "隋",
+        "value": 1
+      },
+      {
+        "name": "唐",
+        "value": 5
+      },
+      {
+        "name": "五代十国",
+        "value": 2
+      },
+      {
+        "name": "宋",
+        "value": 15
+      },
+      {
+        "name": "元",
+        "value": 5
+      },
+      {
+        "name": "明",
+        "value": 69
+      },
+      {
+        "name": "清",
+        "value": 98
+      }
+    ],
+    "function": [
+      {
+        "name": "居住生活",
+        "value": 75
+      },
+      {
+        "name": "家族祭祀",
+        "value": 27
+      },
+      {
+        "name": "防御安全",
+        "value": 23
+      },
+      {
+        "name": "文化教育",
+        "value": 20
+      },
+      {
+        "name": "公共展示",
+        "value": 16
+      },
+      {
+        "name": "园林游憩",
+        "value": 12
+      },
+      {
+        "name": "社交接待",
+        "value": 11
+      },
+      {
+        "name": "商业服务",
+        "value": 9
+      },
+      {
+        "name": "其他功能",
+        "value": 2
+      }
+    ],
+    "material": [
+      {
+        "name": "木材类",
+        "value": 96
+      },
+      {
+        "name": "石材类",
+        "value": 50
+      },
+      {
+        "name": "砖瓦类",
+        "value": 36
+      },
+      {
+        "name": "土类",
+        "value": 11
+      },
+      {
+        "name": "灰浆胶结类",
+        "value": 1
+      },
+      {
+        "name": "其他材料",
+        "value": 1
+      }
+    ]
+  },
+  "paths": [
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "居住生活",
+      "material": "木材类",
+      "value": 27
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "居住生活",
+      "material": "石材类",
+      "value": 10
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "居住生活",
+      "material": "砖瓦类",
+      "value": 10
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "明",
+      "function": "居住生活",
+      "material": "木材类",
+      "value": 8
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "明",
+      "function": "家族祭祀",
+      "material": "木材类",
+      "value": 6
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "明",
+      "function": "居住生活",
+      "material": "砖瓦类",
+      "value": 5
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "明",
+      "function": "文化教育",
+      "material": "木材类",
+      "value": 5
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "明",
+      "function": "社交接待",
+      "material": "木材类",
+      "value": 5
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "明",
+      "function": "防御安全",
+      "material": "石材类",
+      "value": 5
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "文化教育",
+      "material": "砖瓦类",
+      "value": 5
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "宋",
+      "function": "居住生活",
+      "material": "木材类",
+      "value": 4
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "明",
+      "function": "公共展示",
+      "material": "木材类",
+      "value": 4
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "明",
+      "function": "家族祭祀",
+      "material": "石材类",
+      "value": 4
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "家族祭祀",
+      "material": "石材类",
+      "value": 4
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "文化教育",
+      "material": "木材类",
+      "value": 4
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "防御安全",
+      "material": "土类",
+      "value": 4
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "防御安全",
+      "material": "木材类",
+      "value": 4
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "宋",
+      "function": "家族祭祀",
+      "material": "木材类",
+      "value": 3
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "明",
+      "function": "公共展示",
+      "material": "石材类",
+      "value": 3
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "明",
+      "function": "公共展示",
+      "material": "砖瓦类",
+      "value": 3
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "明",
+      "function": "园林游憩",
+      "material": "木材类",
+      "value": 3
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "文化教育",
+      "material": "石材类",
+      "value": 3
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "防御安全",
+      "material": "石材类",
+      "value": 3
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "元",
+      "function": "居住生活",
+      "material": "木材类",
+      "value": 2
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "唐",
+      "function": "公共展示",
+      "material": "木材类",
+      "value": 2
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "宋",
+      "function": "居住生活",
+      "material": "砖瓦类",
+      "value": 2
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "宋",
+      "function": "文化教育",
+      "material": "木材类",
+      "value": 2
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "明",
+      "function": "商业服务",
+      "material": "石材类",
+      "value": 2
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "明",
+      "function": "园林游憩",
+      "material": "石材类",
+      "value": 2
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "明",
+      "function": "居住生活",
+      "material": "土类",
+      "value": 2
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "明",
+      "function": "居住生活",
+      "material": "石材类",
+      "value": 2
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "明",
+      "function": "防御安全",
+      "material": "土类",
+      "value": 2
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "明",
+      "function": "防御安全",
+      "material": "木材类",
+      "value": 2
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "公共展示",
+      "material": "砖瓦类",
+      "value": 2
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "商业服务",
+      "material": "砖瓦类",
+      "value": 2
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "园林游憩",
+      "material": "木材类",
+      "value": 2
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "园林游憩",
+      "material": "石材类",
+      "value": 2
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "家族祭祀",
+      "material": "木材类",
+      "value": 2
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "家族祭祀",
+      "material": "砖瓦类",
+      "value": 2
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "社交接待",
+      "material": "木材类",
+      "value": 2
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "五代十国",
+      "function": "家族祭祀",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "五代十国",
+      "function": "居住生活",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "元",
+      "function": "其他功能",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "元",
+      "function": "家族祭祀",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "元",
+      "function": "居住生活",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "唐",
+      "function": "家族祭祀",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "唐",
+      "function": "居住生活",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "唐",
+      "function": "防御安全",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "宋",
+      "function": "商业服务",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "宋",
+      "function": "园林游憩",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "宋",
+      "function": "家族祭祀",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "宋",
+      "function": "防御安全",
+      "material": "土类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "明",
+      "function": "商业服务",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "明",
+      "function": "园林游憩",
+      "material": "砖瓦类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "明",
+      "function": "家族祭祀",
+      "material": "砖瓦类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "明",
+      "function": "文化教育",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "明",
+      "function": "社交接待",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "明",
+      "function": "社交接待",
+      "material": "砖瓦类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "公共展示",
+      "material": "灰浆胶结类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "公共展示",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "其他功能",
+      "material": "土类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "商业服务",
+      "material": "土类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "商业服务",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "商业服务",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "园林游憩",
+      "material": "砖瓦类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "社交接待",
+      "material": "其他材料",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "社交接待",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "清",
+      "function": "防御安全",
+      "material": "砖瓦类",
+      "value": 1
+    },
+    {
+      "building_type": "民居",
+      "dynasty": "隋",
+      "function": "家族祭祀",
+      "material": "石材类",
+      "value": 1
+    }
+  ],
+  "mappings": {
+    "dynasty": {
+      "清": "清",
+      "明": "明",
+      "宋": "宋",
+      "唐": "唐",
+      "元": "元",
+      "五代十国": "五代十国",
+      "隋": "隋"
+    },
+    "function": {
+      "居住生活": "居住生活",
+      "家族祭祀": "家族祭祀",
+      "防御安全": "防御安全",
+      "文化教育": "文化教育",
+      "公共展示": "公共展示",
+      "园林游憩": "园林游憩",
+      "社交接待": "社交接待",
+      "商业服务": "商业服务",
+      "其他功能": "其他功能"
+    },
+    "material": {
+      "木材类": "木材类",
+      "石材类": "石材类",
+      "砖瓦类": "砖瓦类",
+      "土类": "土类",
+      "灰浆胶结类": "灰浆胶结类",
+      "其他材料": "其他材料"
+    }
+  },
+  "generated_at": "2026-03-17 17:12:38"
+}

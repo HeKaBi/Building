@@ -8,6 +8,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AgeScatterComp: typeof import('./src/components/AgeScatterComp.vue')['default']
+    BuildingArtTimeline: typeof import('./src/components/BuildingArtTimeline.vue')['default']
     ChatComp: typeof import('./src/components/ChatComp.vue')['default']
     ChinaMapComp: typeof import('./src/components/ChinaMapComp.vue')['default']
     ElButton: typeof import('element-plus/es')['ElButton']
