@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import EntryView from '@/views/EntryView.vue'
+import { buildingSections } from '@/const/buildingSections'
 
 const routes = [
     {
@@ -37,40 +38,63 @@ const routes = [
         component: () => import('@/views/PoetDetailsView.vue')
     },
     {
-        path: '/building-map-demo',
-        name: 'BuildingMapDemo',
-        component: () => import('@/views/BuildingMapDemoView.vue'),
+        path: '/building',
+        component: () => import('@/views/BuildingLayoutView.vue'),
         meta: {
             hideNavbar: true,
             hideMusic: true
-        }
+        },
+        children: [
+            {
+                path: '',
+                redirect: buildingSections[0].path
+            },
+            {
+                path: 'map',
+                name: 'BuildingMapDemo',
+                component: () => import('@/views/BuildingMapDemoView.vue')
+            },
+            {
+                path: 'atlas',
+                name: 'BuildingSectionDemo',
+                component: () => import('@/views/BuildingSectionDemoView.vue')
+            },
+            {
+                path: 'matrix',
+                name: 'BuildingDashboardDemo',
+                component: () => import('@/views/BuildingDashboardDemoView.vue')
+            },
+            {
+                path: 'portrait',
+                name: 'BuildingPortraitDemo',
+                component: () => import('@/views/BuildingPortraitDemoView.vue')
+            },
+            {
+                path: 'qa',
+                name: 'BuildingQaDemo',
+                component: () => import('@/views/BuildingQaDemoView.vue')
+            },
+        ]
+    },
+    {
+        path: '/building-map-demo',
+        redirect: buildingSections.find((item) => item.key === 'map')?.path ?? '/building/map'
     },
     {
         path: '/building-section-demo',
-        name: 'BuildingSectionDemo',
-        component: () => import('@/views/BuildingSectionDemoView.vue'),
-        meta: {
-            hideNavbar: true,
-            hideMusic: true
-        }
+        redirect: buildingSections.find((item) => item.key === 'atlas')?.path ?? '/building/atlas'
     },
     {
         path: '/building-dashboard-demo',
-        name: 'BuildingDashboardDemo',
-        component: () => import('@/views/BuildingDashboardDemoView.vue'),
-        meta: {
-            hideNavbar: true,
-            hideMusic: true
-        }
+        redirect: buildingSections.find((item) => item.key === 'matrix')?.path ?? '/building/matrix'
     },
     {
         path: '/building-portrait-demo',
-        name: 'BuildingPortraitDemo',
-        component: () => import('@/views/BuildingPortraitDemoView.vue'),
-        meta: {
-            hideNavbar: true,
-            hideMusic: true
-        }
+        redirect: buildingSections.find((item) => item.key === 'portrait')?.path ?? '/building/portrait'
+    },
+    {
+        path: '/building-qa-demo',
+        redirect: buildingSections.find((item) => item.key === 'qa')?.path ?? '/building/qa'
     },
     {
         path: '/:pathMatch(.*)*',

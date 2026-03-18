@@ -1,0 +1,1497 @@
+{
+  "center_building": {
+    "line_no": "120",
+    "name": "观音桥",
+    "building_type": "桥梁",
+    "start_dynasty": "宋",
+    "century_num": 11,
+    "province": "江西省",
+    "region": "华东",
+    "address": "江西省星子县",
+    "start_time_confidence": 0.9,
+    "structure_terms": [
+      "石拱桥",
+      "拱桥体系",
+      "石材主导",
+      "单孔单跨"
+    ],
+    "layout_terms": [
+      "拱券结构",
+      "跨涧而建"
+    ],
+    "material_terms": [
+      "石材"
+    ],
+    "craft_terms": [
+      "干砌石工",
+      "券拱技术"
+    ],
+    "function_terms": [
+      "交通桥梁",
+      "文物保护单位"
+    ],
+    "material_categories": [
+      "石材类"
+    ],
+    "structure_cluster": "石拱桥型",
+    "structure_cluster_summary": "以石材为主，采用拱桥体系，多为单孔单跨结构，部分具引桥衔接。",
+    "material_primary_category": "石材类",
+    "structure_evidence": "观音桥 (庐山) ，石拱桥名，位于江西省庐山南麓，星子县境内，为全国重点文物保护单位 || 观音桥 可以指： [地名] 观音桥 (越南) ，地名，位于 越南 老街省 || 观音桥 (云龙) ，位于云南省大理州 云龙县 ，全国重点文物保护单位 || 观音桥镇 (金川县) ，位于四川省阿坝藏族羌族自治州金川县 || 观音桥镇 (邻水县) ，位于四川省广安市邻水县 || 观音桥街道 (毕节市) ，位于贵州省毕节市 [重庆] 观音桥步行街 ，重庆的商圈、步行街、旅游景点",
+    "semantic_terms": [
+      "石拱桥",
+      "拱桥体系",
+      "石材主导",
+      "单孔单跨",
+      "拱券结构",
+      "跨涧而建",
+      "石材",
+      "干砌石工",
+      "券拱技术",
+      "交通桥梁",
+      "文物保护单位",
+      "石材类"
+    ]
+  },
+  "lineage_id": "桥梁-L02",
+  "lineage_name": "宋-弧形桥面·拱桥体系-条石谱系",
+  "building_type": "桥梁",
+  "signature_features": {
+    "primary_structure": "拱桥体系",
+    "primary_layout": "弧形桥面",
+    "support_material": "条石",
+    "support_craft": "拱券结构",
+    "dominant_province": "江西",
+    "dominant_dynasty": "宋",
+    "dominant_region": "华东"
+  },
+  "signature_summary": "以弧形桥面、拱桥体系为核心，辅以条石，在宋样本中形成稳定的营造共同体。",
+  "community_member_count": 21,
+  "nodes": [
+    {
+      "id": "120",
+      "line_no": "120",
+      "name": "观音桥",
+      "building_type": "桥梁",
+      "province": "江西省",
+      "start_dynasty": "宋",
+      "century_num": 11,
+      "role": "center",
+      "hop": 0,
+      "score": 1.0,
+      "shared_features": [],
+      "structure_terms": [
+        "石拱桥",
+        "拱桥体系",
+        "石材主导",
+        "单孔单跨"
+      ],
+      "layout_terms": [
+        "拱券结构",
+        "跨涧而建"
+      ],
+      "material_terms": [
+        "石材"
+      ],
+      "craft_terms": [
+        "干砌石工",
+        "券拱技术"
+      ],
+      "function_terms": [
+        "交通桥梁",
+        "文物保护单位"
+      ]
+    },
+    {
+      "id": "1518",
+      "line_no": "1518",
+      "name": "玉带桥",
+      "building_type": "桥梁",
+      "province": "江西省",
+      "start_dynasty": "清",
+      "century_num": 17,
+      "role": "member",
+      "hop": 1,
+      "score": 0.6837,
+      "shared_features": [
+        "单孔单跨",
+        "石拱桥",
+        "石材",
+        "拱桥体系",
+        "弧形桥面",
+        "条石"
+      ],
+      "structure_terms": [
+        "拱券结构",
+        "石拱桥",
+        "拱桥体系",
+        "石材主导",
+        "单孔单跨"
+      ],
+      "layout_terms": [
+        "单孔跨河",
+        "弧形桥面"
+      ],
+      "material_terms": [
+        "石材",
+        "青石",
+        "糯米灰浆"
+      ],
+      "craft_terms": [
+        "干砌法",
+        "拱券结构"
+      ],
+      "function_terms": [
+        "交通通行",
+        "景观装饰"
+      ]
+    },
+    {
+      "id": "889",
+      "line_no": "889",
+      "name": "鸣水桥",
+      "building_type": "桥梁",
+      "province": "江西省",
+      "start_dynasty": "宋",
+      "century_num": 12,
+      "role": "member",
+      "hop": 1,
+      "score": 0.6631,
+      "shared_features": [
+        "单孔单跨",
+        "石拱桥",
+        "石材",
+        "拱桥体系",
+        "弧形桥面",
+        "条石"
+      ],
+      "structure_terms": [
+        "石拱桥",
+        "拱券结构",
+        "拱桥体系",
+        "木材主导",
+        "石材主导",
+        "单孔单跨"
+      ],
+      "layout_terms": [
+        "桥亭结合",
+        "峡谷崖口布局"
+      ],
+      "material_terms": [
+        "石材",
+        "石拱"
+      ],
+      "craft_terms": [
+        "拱券结构",
+        "原貌整修"
+      ],
+      "function_terms": [
+        "交通桥",
+        "山口通道"
+      ]
+    },
+    {
+      "id": "1682",
+      "line_no": "1682",
+      "name": "惠爱桥",
+      "building_type": "桥梁",
+      "province": "广西壮族自治区",
+      "start_dynasty": "清",
+      "century_num": 17,
+      "role": "member",
+      "hop": 1,
+      "score": 0.653,
+      "shared_features": [
+        "石拱桥",
+        "拱桥体系",
+        "石材",
+        "弧形桥面",
+        "条石",
+        "拱券结构"
+      ],
+      "structure_terms": [
+        "石拱桥",
+        "拱桥体系",
+        "石材主导"
+      ],
+      "layout_terms": [
+        "西门外"
+      ],
+      "material_terms": [
+        "石材"
+      ],
+      "craft_terms": [
+        "拱券结构"
+      ],
+      "function_terms": [
+        "古建筑",
+        "历史纪念建筑物"
+      ]
+    },
+    {
+      "id": "1904",
+      "line_no": "1904",
+      "name": "原平普济桥",
+      "building_type": "桥梁",
+      "province": "山西省",
+      "start_dynasty": "金",
+      "century_num": 12,
+      "role": "member",
+      "hop": 1,
+      "score": 0.6368,
+      "shared_features": [
+        "石拱桥",
+        "拱桥体系",
+        "石材",
+        "弧形桥面",
+        "条石",
+        "拱券结构"
+      ],
+      "structure_terms": [
+        "石拱桥",
+        "拱桥体系",
+        "石材主导"
+      ],
+      "layout_terms": [
+        "南门外",
+        "镇外桥"
+      ],
+      "material_terms": [
+        "石材"
+      ],
+      "craft_terms": [
+        "拱券结构"
+      ],
+      "function_terms": [
+        "全国重点文物保护单位",
+        "桥梁"
+      ]
+    },
+    {
+      "id": "1183",
+      "line_no": "1183",
+      "name": "襄垣永惠桥",
+      "building_type": "桥梁",
+      "province": "山西省",
+      "start_dynasty": "金",
+      "century_num": 12,
+      "role": "member",
+      "hop": 1,
+      "score": 0.5785,
+      "shared_features": [
+        "单孔单跨",
+        "石拱桥",
+        "石材",
+        "拱桥体系",
+        "弧形桥面",
+        "条石"
+      ],
+      "structure_terms": [
+        "石拱桥",
+        "石拱结构",
+        "拱桥体系",
+        "石材主导",
+        "单孔单跨"
+      ],
+      "layout_terms": [
+        "跨河桥位",
+        "城门间布局"
+      ],
+      "material_terms": [
+        "条石",
+        "石材"
+      ],
+      "craft_terms": [
+        "纵联式砌筑法",
+        "拱券结构"
+      ],
+      "function_terms": [
+        "交通通道",
+        "城门连接桥"
+      ]
+    },
+    {
+      "id": "1291",
+      "line_no": "1291",
+      "name": "平遥惠济桥",
+      "building_type": "桥梁",
+      "province": "山西省",
+      "start_dynasty": "清",
+      "century_num": 17,
+      "role": "member",
+      "hop": 1,
+      "score": 0.5705,
+      "shared_features": [
+        "石拱桥",
+        "拱桥体系",
+        "石材",
+        "交通桥梁",
+        "弧形桥面",
+        "条石"
+      ],
+      "structure_terms": [
+        "石拱桥",
+        "九墩联孔",
+        "拱桥体系",
+        "石材主导"
+      ],
+      "layout_terms": [
+        "弧形桥面",
+        "线性布局"
+      ],
+      "material_terms": [
+        "石材",
+        "石砌"
+      ],
+      "craft_terms": [
+        "拱券结构",
+        "传统石作"
+      ],
+      "function_terms": [
+        "交通桥梁",
+        "水利设施"
+      ]
+    },
+    {
+      "id": "1539",
+      "line_no": "1539",
+      "name": "平阴永济桥",
+      "building_type": "桥梁",
+      "province": "山东省",
+      "start_dynasty": "明",
+      "century_num": 15,
+      "role": "member",
+      "hop": 1,
+      "score": 0.5351,
+      "shared_features": [
+        "单孔单跨",
+        "石拱桥",
+        "交通桥梁",
+        "拱桥体系",
+        "弧形桥面",
+        "条石"
+      ],
+      "structure_terms": [
+        "拱券结构",
+        "石拱桥",
+        "拱桥体系",
+        "石材主导",
+        "单孔单跨",
+        "引桥衔接"
+      ],
+      "layout_terms": [
+        "弧形桥面",
+        "对称栏板布局",
+        "引桥衔接"
+      ],
+      "material_terms": [
+        "青石",
+        "石栏板",
+        "方体望柱"
+      ],
+      "craft_terms": [
+        "拱券结构",
+        "浮雕装饰"
+      ],
+      "function_terms": [
+        "交通桥梁",
+        "实用与艺术结合"
+      ]
+    },
+    {
+      "id": "800",
+      "line_no": "800",
+      "name": "太仓石拱桥",
+      "building_type": "桥梁",
+      "province": "江苏省",
+      "start_dynasty": "元",
+      "century_num": 14,
+      "role": "member",
+      "hop": 1,
+      "score": 0.4772,
+      "shared_features": [
+        "单孔单跨",
+        "石拱桥",
+        "石材",
+        "拱桥体系",
+        "弧形桥面",
+        "条石"
+      ],
+      "structure_terms": [
+        "单孔石拱",
+        "三孔石拱",
+        "石拱桥",
+        "拱桥体系",
+        "石材主导",
+        "单孔单跨",
+        "多孔多跨"
+      ],
+      "layout_terms": [
+        "沿河布局",
+        "街桥一体",
+        "致和塘沿线"
+      ],
+      "material_terms": [
+        "石材",
+        "石砌"
+      ],
+      "craft_terms": [
+        "拱券结构",
+        "石构干砌"
+      ],
+      "function_terms": [
+        "交通通行",
+        "跨河连街"
+      ]
+    },
+    {
+      "id": "1515",
+      "line_no": "1515",
+      "name": "太平桥",
+      "building_type": "桥梁",
+      "province": "江西省",
+      "start_dynasty": "清",
+      "century_num": 19,
+      "role": "member",
+      "hop": 1,
+      "score": 0.4713,
+      "shared_features": [
+        "单孔单跨",
+        "拱桥体系",
+        "石材",
+        "干砌石工",
+        "弧形桥面",
+        "条石"
+      ],
+      "structure_terms": [
+        "拱券结构",
+        "双孔石拱",
+        "拱桥体系",
+        "石材主导",
+        "单孔单跨"
+      ],
+      "layout_terms": [
+        "单跨拱桥",
+        "矩形平面"
+      ],
+      "material_terms": [
+        "石拱",
+        "石材"
+      ],
+      "craft_terms": [
+        "干砌石工",
+        "拱券结构"
+      ],
+      "function_terms": [
+        "交通要道",
+        "府际桥梁",
+        "公路桥"
+      ]
+    },
+    {
+      "id": "1394",
+      "line_no": "1394",
+      "name": "西山桥",
+      "building_type": "桥梁",
+      "province": "浙江省",
+      "start_dynasty": "宋",
+      "century_num": 13,
+      "role": "member",
+      "hop": 2,
+      "score": 0.4557,
+      "shared_features": [
+        "单孔单跨",
+        "石拱桥",
+        "拱桥体系",
+        "弧形桥面",
+        "条石",
+        "拱券结构"
+      ],
+      "structure_terms": [
+        "石拱桥",
+        "单拱桥",
+        "折边拱",
+        "拱桥体系",
+        "石材主导",
+        "单孔单跨"
+      ],
+      "layout_terms": [
+        "线性布局",
+        "单跨布局"
+      ],
+      "material_terms": [
+        "青石",
+        "条石",
+        "石板"
+      ],
+      "craft_terms": [
+        "联锁式砌法",
+        "拱券结构"
+      ],
+      "function_terms": [
+        "交通桥",
+        "民用桥梁"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "1904",
+      "target": "1682",
+      "weight": 0.6435,
+      "reasons": [
+        "共享结构：石拱桥、拱桥体系、石材主导",
+        "共享材料：石材",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 1.0,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 1.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.088,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1539",
+      "target": "1518",
+      "weight": 0.4676,
+      "reasons": [
+        "共享结构：拱券结构、单孔单跨、石拱桥",
+        "共享布局：弧形桥面",
+        "共享材料：青石",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 0.7608,
+        "layout_terms": 0.2127,
+        "material_terms": 0.1649,
+        "craft_terms": 0.2428,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.2921,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1904",
+      "target": "120",
+      "weight": 0.4611,
+      "reasons": [
+        "共享结构：石拱桥、拱桥体系、石材主导",
+        "共享材料：石材",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 0.6559,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.4357,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "120",
+      "target": "1682",
+      "weight": 0.446,
+      "reasons": [
+        "共享结构：石拱桥、拱桥体系、石材主导",
+        "共享材料：石材",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 0.6559,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.059,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1515",
+      "target": "889",
+      "weight": 0.4389,
+      "reasons": [
+        "共享结构：拱券结构、单孔单跨、拱桥体系",
+        "共享材料：石拱、石材",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同省：江西省"
+      ],
+      "components": {
+        "structure_terms": 0.4792,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.2317,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.0395,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "1518",
+      "target": "889",
+      "weight": 0.4359,
+      "reasons": [
+        "共享结构：拱券结构、单孔单跨、石拱桥",
+        "共享材料：石材",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同省：江西省"
+      ],
+      "components": {
+        "structure_terms": 0.8326,
+        "layout_terms": 0.0,
+        "material_terms": 0.141,
+        "craft_terms": 0.2236,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.088,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "1291",
+      "target": "1682",
+      "weight": 0.3967,
+      "reasons": [
+        "共享结构：石拱桥、拱桥体系、石材主导",
+        "共享材料：石材",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.4768,
+        "layout_terms": 0.0,
+        "material_terms": 0.3623,
+        "craft_terms": 0.3975,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1183",
+      "target": "1904",
+      "weight": 0.393,
+      "reasons": [
+        "共享结构：石拱桥、拱桥体系、石材主导",
+        "共享材料：石材",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同省：山西省"
+      ],
+      "components": {
+        "structure_terms": 0.3953,
+        "layout_terms": 0.0,
+        "material_terms": 0.3957,
+        "craft_terms": 0.3485,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "889",
+      "target": "120",
+      "weight": 0.3891,
+      "reasons": [
+        "共享结构：单孔单跨、石拱桥、拱桥体系",
+        "共享材料：石材",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同省：江西省",
+        "同朝代：宋"
+      ],
+      "components": {
+        "structure_terms": 0.5776,
+        "layout_terms": 0.0,
+        "material_terms": 0.2994,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "1518",
+      "target": "120",
+      "weight": 0.3819,
+      "reasons": [
+        "共享结构：单孔单跨、石拱桥、拱桥体系",
+        "共享材料：石材",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同省：江西省"
+      ],
+      "components": {
+        "structure_terms": 0.6938,
+        "layout_terms": 0.0,
+        "material_terms": 0.2103,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.059,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "1904",
+      "target": "1291",
+      "weight": 0.3802,
+      "reasons": [
+        "共享结构：石拱桥、拱桥体系、石材主导",
+        "共享材料：石材",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同省：山西省"
+      ],
+      "components": {
+        "structure_terms": 0.4768,
+        "layout_terms": 0.0,
+        "material_terms": 0.3623,
+        "craft_terms": 0.3975,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.088,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "1515",
+      "target": "1518",
+      "weight": 0.3795,
+      "reasons": [
+        "共享结构：拱券结构、单孔单跨、拱桥体系",
+        "共享材料：石材",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同省：江西省"
+      ],
+      "components": {
+        "structure_terms": 0.5434,
+        "layout_terms": 0.0,
+        "material_terms": 0.141,
+        "craft_terms": 0.2471,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.6421,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "1518",
+      "target": "1291",
+      "weight": 0.3767,
+      "reasons": [
+        "共享结构：石拱桥、拱桥体系、石材主导",
+        "共享布局：弧形桥面",
+        "共享材料：石材",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 0.3035,
+        "layout_terms": 0.3138,
+        "material_terms": 0.1535,
+        "craft_terms": 0.2428,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1183",
+      "target": "120",
+      "weight": 0.3736,
+      "reasons": [
+        "共享结构：单孔单跨、石拱桥、拱桥体系",
+        "共享材料：石材",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 0.6026,
+        "layout_terms": 0.0,
+        "material_terms": 0.3957,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.4357,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1518",
+      "target": "1682",
+      "weight": 0.3711,
+      "reasons": [
+        "共享结构：石拱桥、拱桥体系、石材主导",
+        "共享材料：石材",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.4551,
+        "layout_terms": 0.0,
+        "material_terms": 0.2103,
+        "craft_terms": 0.3843,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1539",
+      "target": "889",
+      "weight": 0.3674,
+      "reasons": [
+        "共享结构：拱券结构、单孔单跨、石拱桥",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同属华东"
+      ],
+      "components": {
+        "structure_terms": 0.6598,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.228,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.1958,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "800",
+      "target": "1291",
+      "weight": 0.3443,
+      "reasons": [
+        "共享结构：石拱桥、拱桥体系、石材主导",
+        "共享材料：石砌、石材",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 0.1916,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.228,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.1958,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1904",
+      "target": "889",
+      "weight": 0.3429,
+      "reasons": [
+        "共享结构：石拱桥、拱桥体系、石材主导",
+        "共享材料：石材",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 0.3789,
+        "layout_terms": 0.0,
+        "material_terms": 0.2994,
+        "craft_terms": 0.3485,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.65,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1183",
+      "target": "1682",
+      "weight": 0.3365,
+      "reasons": [
+        "共享结构：石拱桥、拱桥体系、石材主导",
+        "共享材料：石材",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 0.3953,
+        "layout_terms": 0.0,
+        "material_terms": 0.3957,
+        "craft_terms": 0.3485,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.088,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1518",
+      "target": "1904",
+      "weight": 0.3346,
+      "reasons": [
+        "共享结构：石拱桥、拱桥体系、石材主导",
+        "共享材料：石材",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 0.4551,
+        "layout_terms": 0.0,
+        "material_terms": 0.2103,
+        "craft_terms": 0.3843,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.088,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1183",
+      "target": "889",
+      "weight": 0.3289,
+      "reasons": [
+        "共享结构：单孔单跨、石拱桥、拱桥体系",
+        "共享材料：石材",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 0.4183,
+        "layout_terms": 0.0,
+        "material_terms": 0.2055,
+        "craft_terms": 0.211,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.65,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1515",
+      "target": "120",
+      "weight": 0.3255,
+      "reasons": [
+        "共享结构：单孔单跨、拱桥体系、石材主导",
+        "共享材料：石材",
+        "共享技艺：干砌石工",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同省：江西省"
+      ],
+      "components": {
+        "structure_terms": 0.3392,
+        "layout_terms": 0.0,
+        "material_terms": 0.2994,
+        "craft_terms": 0.3349,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.0265,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "1539",
+      "target": "120",
+      "weight": 0.3212,
+      "reasons": [
+        "共享结构：单孔单跨、石拱桥、拱桥体系",
+        "共享功能：交通桥梁",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同属华东"
+      ],
+      "components": {
+        "structure_terms": 0.5278,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.2014,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.1312,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "889",
+      "target": "1682",
+      "weight": 0.3204,
+      "reasons": [
+        "共享结构：石拱桥、拱桥体系、石材主导",
+        "共享材料：石材",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 0.3789,
+        "layout_terms": 0.0,
+        "material_terms": 0.2994,
+        "craft_terms": 0.3485,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.088,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1183",
+      "target": "1518",
+      "weight": 0.3183,
+      "reasons": [
+        "共享结构：单孔单跨、石拱桥、拱桥体系",
+        "共享材料：石材",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 0.476,
+        "layout_terms": 0.0,
+        "material_terms": 0.1592,
+        "craft_terms": 0.2236,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.088,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1394",
+      "target": "889",
+      "weight": 0.3139,
+      "reasons": [
+        "共享结构：单孔单跨、石拱桥、拱桥体系",
+        "共享技艺：拱券结构",
+        "共享功能：交通桥",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同属华东"
+      ],
+      "components": {
+        "structure_terms": 0.3154,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.211,
+        "function_terms": 0.263,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1539",
+      "target": "1291",
+      "weight": 0.3132,
+      "reasons": [
+        "共享结构：石拱桥、拱桥体系、石材主导",
+        "共享布局：弧形桥面",
+        "共享技艺：拱券结构",
+        "共享功能：交通桥梁",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 0.2509,
+        "layout_terms": 0.2262,
+        "material_terms": 0.0,
+        "craft_terms": 0.248,
+        "function_terms": 0.2084,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.2921,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "120",
+      "target": "1291",
+      "weight": 0.3093,
+      "reasons": [
+        "共享结构：石拱桥、拱桥体系、石材主导",
+        "共享材料：石材",
+        "共享功能：交通桥梁",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 0.3814,
+        "layout_terms": 0.0,
+        "material_terms": 0.3623,
+        "craft_terms": 0.0,
+        "function_terms": 0.2084,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.059,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1518",
+      "target": "800",
+      "weight": 0.3088,
+      "reasons": [
+        "共享结构：单孔单跨、石拱桥、拱桥体系",
+        "共享材料：石材",
+        "共享技艺：拱券结构",
+        "共享功能：交通通行",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 0.318,
+        "layout_terms": 0.0,
+        "material_terms": 0.1535,
+        "craft_terms": 0.2236,
+        "function_terms": 0.2395,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.1958,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1539",
+      "target": "1515",
+      "weight": 0.3083,
+      "reasons": [
+        "共享结构：拱券结构、单孔单跨、拱桥体系",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同属华东"
+      ],
+      "components": {
+        "structure_terms": 0.4492,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.2525,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.1312,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "800",
+      "target": "120",
+      "weight": 0.3069,
+      "reasons": [
+        "共享结构：单孔单跨、石拱桥、拱桥体系",
+        "共享材料：石材",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同属华东"
+      ],
+      "components": {
+        "structure_terms": 0.37,
+        "layout_terms": 0.0,
+        "material_terms": 0.3623,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.1958,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1518",
+      "target": "1394",
+      "weight": 0.2998,
+      "reasons": [
+        "共享结构：单孔单跨、石拱桥、拱桥体系",
+        "共享材料：青石",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同属华东"
+      ],
+      "components": {
+        "structure_terms": 0.3471,
+        "layout_terms": 0.0,
+        "material_terms": 0.1916,
+        "craft_terms": 0.2236,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.1312,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1183",
+      "target": "1394",
+      "weight": 0.2995,
+      "reasons": [
+        "共享结构：单孔单跨、石拱桥、拱桥体系",
+        "共享材料：条石",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 0.3227,
+        "layout_terms": 0.0,
+        "material_terms": 0.2551,
+        "craft_terms": 0.211,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.4357,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1904",
+      "target": "800",
+      "weight": 0.2979,
+      "reasons": [
+        "共享结构：石拱桥、拱桥体系、石材主导",
+        "共享材料：石材",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 0.2427,
+        "layout_terms": 0.0,
+        "material_terms": 0.3623,
+        "craft_terms": 0.3485,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.2921,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1394",
+      "target": "1291",
+      "weight": 0.2959,
+      "reasons": [
+        "共享结构：石拱桥、拱桥体系、石材主导",
+        "共享布局：线性布局",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 0.2076,
+        "layout_terms": 0.3167,
+        "material_terms": 0.0,
+        "craft_terms": 0.228,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.1312,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "800",
+      "target": "1682",
+      "weight": 0.2941,
+      "reasons": [
+        "共享结构：石拱桥、拱桥体系、石材主导",
+        "共享材料：石材",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 0.2427,
+        "layout_terms": 0.0,
+        "material_terms": 0.3623,
+        "craft_terms": 0.3485,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.1958,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1515",
+      "target": "1682",
+      "weight": 0.2929,
+      "reasons": [
+        "共享结构：拱桥体系、石材主导",
+        "共享材料：石材",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.18,
+        "layout_terms": 0.0,
+        "material_terms": 0.2994,
+        "craft_terms": 0.4089,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.6421,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1183",
+      "target": "1291",
+      "weight": 0.2915,
+      "reasons": [
+        "共享结构：石拱桥、拱桥体系、石材主导",
+        "共享材料：石材",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同省：山西省"
+      ],
+      "components": {
+        "structure_terms": 0.2757,
+        "layout_terms": 0.0,
+        "material_terms": 0.2333,
+        "craft_terms": 0.228,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.088,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "1539",
+      "target": "1394",
+      "weight": 0.2898,
+      "reasons": [
+        "共享结构：单孔单跨、石拱桥、拱桥体系",
+        "共享材料：青石",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同属华东"
+      ],
+      "components": {
+        "structure_terms": 0.2999,
+        "layout_terms": 0.0,
+        "material_terms": 0.161,
+        "craft_terms": 0.228,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.2921,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "800",
+      "target": "889",
+      "weight": 0.2898,
+      "reasons": [
+        "共享结构：单孔单跨、石拱桥、拱桥体系",
+        "共享材料：石材",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同属华东"
+      ],
+      "components": {
+        "structure_terms": 0.2912,
+        "layout_terms": 0.0,
+        "material_terms": 0.1961,
+        "craft_terms": 0.211,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.2921,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1183",
+      "target": "800",
+      "weight": 0.284,
+      "reasons": [
+        "共享结构：单孔单跨、石拱桥、拱桥体系",
+        "共享材料：石材",
+        "共享技艺：拱券结构",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 0.2974,
+        "layout_terms": 0.0,
+        "material_terms": 0.2333,
+        "craft_terms": 0.211,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.2921,
+        "region": 0.0
+      }
+    }
+  ]
+}

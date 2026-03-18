@@ -2,7 +2,7 @@
     <div class="home-container">
         <div class="entry-bg"></div>
         <div class="content-wrapper">
-            <div class="arrow-container" @click="navigateToHome">
+            <div class="arrow-container" @click="navigateToBuilding">
                 <div class="arrow">></div>
             </div>
         </div>
@@ -14,16 +14,16 @@ import { useRouter } from 'vue-router'
 
 const router = useRouter()
 
-const navigateToHome = () => {
+const navigateToBuilding = () => {
     const content = document.querySelector('.content-wrapper') as HTMLElement | null
-    const entryBg = document.querySelector('.entry-bg') as HTMLElement | null // 获取背景元素
+    const entryBg = document.querySelector('.entry-bg') as HTMLElement | null
     
     if (content && entryBg) {
         content.style.transform = 'translateY(-10vh)'
-        entryBg.style.opacity = '0'  // 透明度从 1 变为 0
+        entryBg.style.opacity = '0'
         
         setTimeout(() => {
-            router.push('/home')
+            router.push('/building')
         }, 800)
     }
 }

@@ -1,0 +1,405 @@
+{
+  "center_building": {
+    "line_no": "329",
+    "name": "孚王府",
+    "building_type": "宫殿",
+    "start_dynasty": "清",
+    "century_num": 18,
+    "province": "北京市",
+    "region": "华北",
+    "address": "北京市朝阳区",
+    "start_time_confidence": 0.98,
+    "structure_terms": [
+      "中轴对称",
+      "三路布局",
+      "前庭后寝",
+      "银安殿制",
+      "木构架",
+      "合院布局",
+      "硬山顶"
+    ],
+    "layout_terms": [
+      "三路院落",
+      "坐北朝南",
+      "中轴对称",
+      "后罩楼庭院"
+    ],
+    "material_terms": [
+      "青砖灰瓦",
+      "木构架",
+      "硬山顶"
+    ],
+    "craft_terms": [
+      "抬梁式",
+      "斗拱结构",
+      "榫卯结构"
+    ],
+    "function_terms": [
+      "居住区",
+      "府库",
+      "执事住所",
+      "厨厩"
+    ],
+    "material_categories": [
+      "木材类",
+      "砖瓦类",
+      "其他材料"
+    ],
+    "structure_cluster": "抬梁合院型",
+    "structure_cluster_summary": "采用抬梁式木构体系，中轴对称布局，前庭后寝，三路院落组合，硬山顶覆盖。",
+    "material_primary_category": "木材类",
+    "structure_evidence": "其内建筑布局完全与《大清会典》所规定的王府形式相符。 || 中路有前庭和后寝两个部分。正殿名为银安殿，左右各有配楼7间。后殿5间，后寝7间，最后有后罩楼7间。 || 东西向建筑布局可分为中、东、西三路，中路轴线自南向北依次建有南房（后改为街门）、府门、银安殿、后殿、正寝殿、后罩楼。 || 整体呈长方形，分东路、中路、西路。 || 后罩楼两侧各有一个独立的庭院。 || 坐北朝南，占地自朝阳门内大街向北直至东四三条路南，总占地面积达4.4万平方米，南北中轴线将近300米。",
+    "semantic_terms": [
+      "中轴对称",
+      "三路布局",
+      "前庭后寝",
+      "银安殿制",
+      "木构架",
+      "合院布局",
+      "硬山顶",
+      "三路院落",
+      "坐北朝南",
+      "后罩楼庭院",
+      "青砖灰瓦",
+      "抬梁式",
+      "斗拱结构",
+      "榫卯结构",
+      "居住区",
+      "府库",
+      "执事住所",
+      "厨厩",
+      "木材类",
+      "砖瓦类",
+      "其他材料"
+    ]
+  },
+  "lineage_id": "宫殿-L01",
+  "lineage_name": "内蒙古-合院布局-琉璃瓦谱系",
+  "building_type": "宫殿",
+  "signature_features": {
+    "primary_structure": "合院布局",
+    "primary_layout": "合院布局",
+    "support_material": "琉璃瓦",
+    "support_craft": "榫卯结构",
+    "dominant_province": "内蒙古",
+    "dominant_dynasty": "清",
+    "dominant_region": "华北"
+  },
+  "signature_summary": "以合院布局为核心，辅以琉璃瓦，在内蒙古样本中形成稳定的营造共同体。",
+  "community_member_count": 4,
+  "nodes": [
+    {
+      "id": "329",
+      "line_no": "329",
+      "name": "孚王府",
+      "building_type": "宫殿",
+      "province": "北京市",
+      "start_dynasty": "清",
+      "century_num": 18,
+      "role": "center",
+      "hop": 0,
+      "score": 1.0,
+      "shared_features": [],
+      "structure_terms": [
+        "中轴对称",
+        "三路布局",
+        "前庭后寝",
+        "银安殿制",
+        "木构架",
+        "合院布局",
+        "硬山顶"
+      ],
+      "layout_terms": [
+        "三路院落",
+        "坐北朝南",
+        "中轴对称",
+        "后罩楼庭院"
+      ],
+      "material_terms": [
+        "青砖灰瓦",
+        "木构架",
+        "硬山顶"
+      ],
+      "craft_terms": [
+        "抬梁式",
+        "斗拱结构",
+        "榫卯结构"
+      ],
+      "function_terms": [
+        "居住区",
+        "府库",
+        "执事住所",
+        "厨厩"
+      ]
+    },
+    {
+      "id": "1306",
+      "line_no": "1306",
+      "name": "奈曼蒙古王府",
+      "building_type": "宫殿",
+      "province": "内蒙古自治区",
+      "start_dynasty": "清",
+      "century_num": 19,
+      "role": "member",
+      "hop": 1,
+      "score": 0.682,
+      "shared_features": [
+        "硬山顶",
+        "木构架",
+        "榫卯结构",
+        "合院布局",
+        "琉璃瓦"
+      ],
+      "structure_terms": [
+        "抬梁式",
+        "硬山顶",
+        "木构架",
+        "砖石混合",
+        "合院布局"
+      ],
+      "layout_terms": [
+        "合院布局",
+        "回廊式",
+        "东院西院分置",
+        "正殿配殿布局"
+      ],
+      "material_terms": [
+        "砖石",
+        "木材"
+      ],
+      "craft_terms": [
+        "榫卯结构",
+        "雕花门窗"
+      ],
+      "function_terms": [
+        "王府",
+        "文物保护单位"
+      ]
+    },
+    {
+      "id": "1312",
+      "line_no": "1312",
+      "name": "四子王旗王府",
+      "building_type": "宫殿",
+      "province": "内蒙古自治区",
+      "start_dynasty": "清",
+      "century_num": 17,
+      "role": "member",
+      "hop": 1,
+      "score": 0.5574,
+      "shared_features": [
+        "硬山顶",
+        "木构架",
+        "合院布局",
+        "琉璃瓦",
+        "榫卯结构"
+      ],
+      "structure_terms": [
+        "抬梁式",
+        "硬山顶",
+        "城防单元",
+        "木构架",
+        "砖石混合",
+        "合院布局"
+      ],
+      "layout_terms": [
+        "王城",
+        "合院布局",
+        "城门城墙"
+      ],
+      "material_terms": [
+        "琉璃瓦",
+        "砖石"
+      ],
+      "craft_terms": [
+        "逾制营造",
+        "规制限制"
+      ],
+      "function_terms": [
+        "理政",
+        "居住"
+      ]
+    },
+    {
+      "id": "53",
+      "line_no": "53",
+      "name": "故宫",
+      "building_type": "宫殿",
+      "province": "北京市",
+      "start_dynasty": "明",
+      "century_num": 15,
+      "role": "member",
+      "hop": 1,
+      "score": 0.4392,
+      "shared_features": [
+        "中轴对称",
+        "合院布局",
+        "琉璃瓦",
+        "榫卯结构"
+      ],
+      "structure_terms": [
+        "九梁十八柱七十二条脊",
+        "抬梁式",
+        "城防单元",
+        "中轴对称",
+        "合院布局",
+        "高台基座"
+      ],
+      "layout_terms": [
+        "中轴对称",
+        "外朝内廷",
+        "院落组合"
+      ],
+      "material_terms": [
+        "汉白玉",
+        "木材"
+      ],
+      "craft_terms": [
+        "预制拼装",
+        "官式营造"
+      ],
+      "function_terms": [
+        "外朝",
+        "内廷",
+        "佛堂"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "1306",
+      "target": "1312",
+      "weight": 0.4695,
+      "reasons": [
+        "共享结构：硬山顶、抬梁式、砖石混合",
+        "共享布局：合院布局",
+        "共享材料：砖石",
+        "同属结构簇：抬梁合院型",
+        "同省：内蒙古自治区",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.8197,
+        "layout_terms": 0.149,
+        "material_terms": 0.2908,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.6667,
+        "time": 0.6421,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "1306",
+      "target": "329",
+      "weight": 0.2818,
+      "reasons": [
+        "共享结构：硬山顶、木构架、合院布局",
+        "共享技艺：榫卯结构",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同属华北",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.2771,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.2078,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1306",
+      "target": "53",
+      "weight": 0.2331,
+      "reasons": [
+        "共享结构：抬梁式、合院布局",
+        "共享材料：木材",
+        "同属结构簇：抬梁合院型",
+        "同属华北"
+      ],
+      "components": {
+        "structure_terms": 0.196,
+        "layout_terms": 0.0,
+        "material_terms": 0.2856,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.6667,
+        "time": 0.1312,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "53",
+      "target": "1312",
+      "weight": 0.2241,
+      "reasons": [
+        "共享结构：城防单元、抬梁式、合院布局",
+        "同属结构簇：抬梁合院型",
+        "同属华北"
+      ],
+      "components": {
+        "structure_terms": 0.3111,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.3333,
+        "time": 0.2921,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "329",
+      "target": "1312",
+      "weight": 0.2236,
+      "reasons": [
+        "共享结构：硬山顶、木构架、合院布局",
+        "同属结构簇：抬梁合院型",
+        "同属华北",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.2507,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.25,
+        "time": 0.7857,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "329",
+      "target": "53",
+      "weight": 0.1992,
+      "reasons": [
+        "共享结构：中轴对称、合院布局",
+        "共享布局：中轴对称",
+        "同属结构簇：抬梁合院型",
+        "同省：北京市"
+      ],
+      "components": {
+        "structure_terms": 0.1215,
+        "layout_terms": 0.1244,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.25,
+        "time": 0.1958,
+        "region": 1.0
+      }
+    }
+  ]
+}

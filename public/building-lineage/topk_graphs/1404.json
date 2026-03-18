@@ -1,0 +1,1586 @@
+{
+  "center_building": {
+    "line_no": "1404",
+    "name": "寺平村乡土建筑",
+    "building_type": "民居",
+    "start_dynasty": "明",
+    "century_num": 14,
+    "province": "浙江省",
+    "region": "华东",
+    "address": "浙江省金华市婺城区",
+    "start_time_confidence": 0.75,
+    "structure_terms": [
+      "木构架",
+      "穿斗式",
+      "抬梁式",
+      "砖石混合"
+    ],
+    "layout_terms": [
+      "民居格局",
+      "厅堂布局"
+    ],
+    "material_terms": [
+      "砖雕",
+      "砖石"
+    ],
+    "craft_terms": [
+      "徽派建筑风格",
+      "砖雕"
+    ],
+    "function_terms": [
+      "民居",
+      "厅堂"
+    ],
+    "material_categories": [
+      "砖瓦类",
+      "石材类"
+    ],
+    "structure_cluster": "抬梁合院型",
+    "structure_cluster_summary": "以抬梁式木构架为主，布局多为合院式，强调中轴对称，常见硬山顶与砖木混合结构。",
+    "material_primary_category": "砖瓦类",
+    "structure_evidence": "村内保留有丰富完整的民居格局和多处完整的厅堂建筑 || 被誉为“中国最漂亮砖雕民居村” || 村内保留有丰富完整的民居格局和多处完整的厅堂建筑，具有十分浓厚的 徽派建筑 风格特点，被誉为“中国最漂亮砖雕民居村”",
+    "semantic_terms": [
+      "木构架",
+      "穿斗式",
+      "抬梁式",
+      "砖石混合",
+      "民居格局",
+      "厅堂布局",
+      "砖雕",
+      "砖石",
+      "徽派建筑风格",
+      "民居",
+      "厅堂",
+      "砖瓦类",
+      "石材类"
+    ]
+  },
+  "lineage_id": "民居-L04",
+  "lineage_name": "明-围院结构·砖石混合-砖雕谱系",
+  "building_type": "民居",
+  "signature_features": {
+    "primary_structure": "砖石混合",
+    "primary_layout": "围院结构",
+    "support_material": "砖雕",
+    "support_craft": "传统木构",
+    "dominant_province": "安徽",
+    "dominant_dynasty": "明",
+    "dominant_region": "华东"
+  },
+  "signature_summary": "以围院结构、砖石混合为核心，辅以砖雕，在明样本中形成稳定的营造共同体。",
+  "community_member_count": 23,
+  "nodes": [
+    {
+      "id": "1404",
+      "line_no": "1404",
+      "name": "寺平村乡土建筑",
+      "building_type": "民居",
+      "province": "浙江省",
+      "start_dynasty": "明",
+      "century_num": 14,
+      "role": "center",
+      "hop": 0,
+      "score": 1.0,
+      "shared_features": [],
+      "structure_terms": [
+        "木构架",
+        "穿斗式",
+        "抬梁式",
+        "砖石混合"
+      ],
+      "layout_terms": [
+        "民居格局",
+        "厅堂布局"
+      ],
+      "material_terms": [
+        "砖雕",
+        "砖石"
+      ],
+      "craft_terms": [
+        "徽派建筑风格",
+        "砖雕"
+      ],
+      "function_terms": [
+        "民居",
+        "厅堂"
+      ]
+    },
+    {
+      "id": "1633",
+      "line_no": "1633",
+      "name": "涧岩头周家大院古建筑群",
+      "building_type": "民居",
+      "province": "湖南省",
+      "start_dynasty": "明",
+      "century_num": 16,
+      "role": "member",
+      "hop": 1,
+      "score": 0.731,
+      "shared_features": [
+        "穿斗式",
+        "抬梁式",
+        "砖石",
+        "砖雕",
+        "民居",
+        "砖石混合"
+      ],
+      "structure_terms": [
+        "木构架",
+        "穿斗式",
+        "抬梁式",
+        "砖石混合"
+      ],
+      "layout_terms": [
+        "北斗七星状布局",
+        "宅院组合"
+      ],
+      "material_terms": [
+        "木材",
+        "砖石"
+      ],
+      "craft_terms": [
+        "砖雕",
+        "木雕",
+        "合院布局"
+      ],
+      "function_terms": [
+        "民居"
+      ]
+    },
+    {
+      "id": "141",
+      "line_no": "141",
+      "name": "潜口民宅",
+      "building_type": "民居",
+      "province": "安徽省",
+      "start_dynasty": "明",
+      "century_num": 14,
+      "role": "member",
+      "hop": 1,
+      "score": 0.5922,
+      "shared_features": [
+        "穿斗式",
+        "抬梁式",
+        "砖石",
+        "砖石混合",
+        "围院结构",
+        "砖雕"
+      ],
+      "structure_terms": [
+        "抬梁式",
+        "穿斗式",
+        "砖石混合"
+      ],
+      "layout_terms": [
+        "传统村落布局",
+        "顺地势布局",
+        "单体建筑式样"
+      ],
+      "material_terms": [
+        "砖石",
+        "木材"
+      ],
+      "craft_terms": [
+        "原貌复建",
+        "拆迁重建"
+      ],
+      "function_terms": [
+        "民宅",
+        "祠堂",
+        "路亭",
+        "石牌坊"
+      ]
+    },
+    {
+      "id": "1447",
+      "line_no": "1447",
+      "name": "棠樾古民居",
+      "building_type": "民居",
+      "province": "安徽省",
+      "start_dynasty": "宋",
+      "century_num": 12,
+      "role": "member",
+      "hop": 1,
+      "score": 0.5175,
+      "shared_features": [
+        "穿斗式",
+        "抬梁式",
+        "砖石",
+        "砖石混合",
+        "围院结构",
+        "砖雕"
+      ],
+      "structure_terms": [
+        "木构架",
+        "穿斗式",
+        "抬梁式",
+        "砖石混合"
+      ],
+      "layout_terms": [
+        "二横主干道",
+        "小巷连接",
+        "枕山环水面屏"
+      ],
+      "material_terms": [
+        "砖石",
+        "木材"
+      ],
+      "craft_terms": [
+        "徽州三雕",
+        "天井院落",
+        "马头墙砌筑"
+      ],
+      "function_terms": [
+        "住宅",
+        "祠堂",
+        "药店",
+        "墓园"
+      ]
+    },
+    {
+      "id": "453",
+      "line_no": "453",
+      "name": "西递村古建筑群",
+      "building_type": "民居",
+      "province": "安徽省",
+      "start_dynasty": "宋",
+      "century_num": 11,
+      "role": "member",
+      "hop": 1,
+      "score": 0.4863,
+      "shared_features": [
+        "穿斗式",
+        "抬梁式",
+        "砖石",
+        "砖雕",
+        "砖石混合",
+        "围院结构"
+      ],
+      "structure_terms": [
+        "穿斗式",
+        "抬梁式",
+        "木构架",
+        "砖石混合"
+      ],
+      "layout_terms": [
+        "主道贯穿东西",
+        "街巷沿溪而设",
+        "窄巷纵横",
+        "小广场前置"
+      ],
+      "material_terms": [
+        "青石",
+        "木材",
+        "砖石"
+      ],
+      "craft_terms": [
+        "木雕",
+        "石雕",
+        "砖雕"
+      ],
+      "function_terms": [
+        "古民居",
+        "祠堂",
+        "公共建筑"
+      ]
+    },
+    {
+      "id": "1449",
+      "line_no": "1449",
+      "name": "上庄古建筑群",
+      "building_type": "民居",
+      "province": "安徽省",
+      "start_dynasty": "明",
+      "century_num": 14,
+      "role": "member",
+      "hop": 1,
+      "score": 0.454,
+      "shared_features": [
+        "穿斗式",
+        "抬梁式",
+        "砖石",
+        "民居",
+        "砖石混合",
+        "围院结构"
+      ],
+      "structure_terms": [
+        "抬梁式",
+        "穿斗式",
+        "土石夯筑",
+        "砖石混合",
+        "合院布局"
+      ],
+      "layout_terms": [
+        "围院结构",
+        "合院布局"
+      ],
+      "material_terms": [
+        "木材",
+        "砖石",
+        "生土"
+      ],
+      "craft_terms": [
+        "榫卯结构",
+        "糯米灰浆"
+      ],
+      "function_terms": [
+        "民居",
+        "祠堂"
+      ]
+    },
+    {
+      "id": "1408",
+      "line_no": "1408",
+      "name": "河阳村乡土建筑",
+      "building_type": "民居",
+      "province": "浙江省",
+      "start_dynasty": "五代十国",
+      "century_num": 14,
+      "role": "member",
+      "hop": 1,
+      "score": 0.4518,
+      "shared_features": [
+        "穿斗式",
+        "砖石混合",
+        "砖石",
+        "围院结构",
+        "砖雕",
+        "传统木构"
+      ],
+      "structure_terms": [
+        "木构架",
+        "穿斗式",
+        "砖石混合",
+        "中轴对称"
+      ],
+      "layout_terms": [
+        "棋盘式格局",
+        "四纵五横",
+        "中轴对称",
+        "一溪二坑"
+      ],
+      "material_terms": [
+        "砖石",
+        "木材"
+      ],
+      "craft_terms": [
+        "榫卯结构",
+        "雕花装饰"
+      ],
+      "function_terms": [
+        "古民居",
+        "宗祠",
+        "寺庙",
+        "古井"
+      ]
+    },
+    {
+      "id": "956",
+      "line_no": "956",
+      "name": "高椅村古建筑群",
+      "building_type": "民居",
+      "province": "湖南省",
+      "start_dynasty": "明",
+      "century_num": 14,
+      "role": "member",
+      "hop": 1,
+      "score": 0.4157,
+      "shared_features": [
+        "穿斗式",
+        "抬梁式",
+        "砖石",
+        "砖石混合",
+        "围院结构",
+        "砖雕"
+      ],
+      "structure_terms": [
+        "穿斗式",
+        "抬梁式",
+        "土石夯筑",
+        "砖石混合"
+      ],
+      "layout_terms": [
+        "梅花状布局",
+        "中心辐射式",
+        "五通庙中心布局"
+      ],
+      "material_terms": [
+        "木材",
+        "生土",
+        "砖石"
+      ],
+      "craft_terms": [
+        "明代江南营造法式",
+        "沅湘营造技艺",
+        "侗家营造技艺"
+      ],
+      "function_terms": [
+        "文化教育",
+        "政治活动",
+        "宗族聚居"
+      ]
+    },
+    {
+      "id": "415",
+      "line_no": "415",
+      "name": "徐霞客故居及晴山堂石刻",
+      "building_type": "民居",
+      "province": "江苏省",
+      "start_dynasty": "明",
+      "century_num": 14,
+      "role": "member",
+      "hop": 1,
+      "score": 0.3842,
+      "shared_features": [
+        "抬梁式",
+        "砖石混合",
+        "砖雕",
+        "砖石",
+        "围院结构",
+        "传统木构"
+      ],
+      "structure_terms": [
+        "三进院落",
+        "抬梁式",
+        "砖石混合",
+        "中轴对称",
+        "合院布局",
+        "多进院落"
+      ],
+      "layout_terms": [
+        "三进院落",
+        "坐北朝南",
+        "厢房对称"
+      ],
+      "material_terms": [
+        "砖雕",
+        "砖石"
+      ],
+      "craft_terms": [
+        "砖雕",
+        "镌刻工艺"
+      ],
+      "function_terms": [
+        "纪念性建筑",
+        "陈列展示",
+        "孝亲庆贺"
+      ]
+    },
+    {
+      "id": "894",
+      "line_no": "894",
+      "name": "理坑村民居",
+      "building_type": "民居",
+      "province": "江西省",
+      "start_dynasty": "明",
+      "century_num": 14,
+      "role": "member",
+      "hop": 2,
+      "score": 0.448,
+      "shared_features": [
+        "穿斗式",
+        "抬梁式",
+        "砖石",
+        "砖石混合",
+        "围院结构",
+        "砖雕"
+      ],
+      "structure_terms": [
+        "徽派建筑",
+        "抬梁式",
+        "穿斗式",
+        "砖石混合",
+        "合院布局"
+      ],
+      "layout_terms": [
+        "住宅为主体",
+        "园林式布局",
+        "围院结构"
+      ],
+      "material_terms": [
+        "砖石",
+        "木材"
+      ],
+      "craft_terms": [
+        "传统木构",
+        "徽州三雕"
+      ],
+      "function_terms": [
+        "官厅",
+        "尚书第",
+        "司马第",
+        "祠堂",
+        "花厅"
+      ]
+    },
+    {
+      "id": "1352",
+      "line_no": "1352",
+      "name": "玉燕堂",
+      "building_type": "民居",
+      "province": "江苏省",
+      "start_dynasty": "明",
+      "century_num": 15,
+      "role": "member",
+      "hop": 2,
+      "score": 0.3898,
+      "shared_features": [
+        "穿斗式",
+        "抬梁式",
+        "砖石",
+        "砖石混合",
+        "围院结构",
+        "砖雕"
+      ],
+      "structure_terms": [
+        "抬梁式",
+        "穿斗式",
+        "五进院落",
+        "砖石混合",
+        "合院布局",
+        "多进院落"
+      ],
+      "layout_terms": [
+        "坐东朝西",
+        "前后五进",
+        "临街面河",
+        "桥从门前进",
+        "船自家中过"
+      ],
+      "material_terms": [
+        "木材",
+        "砖石"
+      ],
+      "craft_terms": [
+        "糯米灰浆",
+        "木构架"
+      ],
+      "function_terms": [
+        "门厅",
+        "轿厅",
+        "正厅",
+        "堂楼",
+        "备弄"
+      ]
+    },
+    {
+      "id": "140",
+      "line_no": "140",
+      "name": "丁村民宅",
+      "building_type": "民居",
+      "province": "山西省",
+      "start_dynasty": "明",
+      "century_num": 16,
+      "role": "member",
+      "hop": 2,
+      "score": 0.346,
+      "shared_features": [
+        "砖石混合",
+        "砖石",
+        "砖雕",
+        "围院结构",
+        "传统木构"
+      ],
+      "structure_terms": [
+        "合院布局",
+        "砖石混合"
+      ],
+      "layout_terms": [
+        "合院布局",
+        "北中南三组群",
+        "疏密均匀",
+        "错落有致"
+      ],
+      "material_terms": [
+        "木材",
+        "砖石"
+      ],
+      "craft_terms": [
+        "抬梁式",
+        "木雕",
+        "砖雕"
+      ],
+      "function_terms": [
+        "正厅",
+        "厢房",
+        "绣楼",
+        "观景楼",
+        "民俗博物馆"
+      ]
+    },
+    {
+      "id": "1503",
+      "line_no": "1503",
+      "name": "明园",
+      "building_type": "民居",
+      "province": "江西省",
+      "start_dynasty": "明",
+      "century_num": 16,
+      "role": "member",
+      "hop": 2,
+      "score": 0.3204,
+      "shared_features": [
+        "抬梁式",
+        "砖石混合",
+        "砖石",
+        "围院结构",
+        "砖雕",
+        "传统木构"
+      ],
+      "structure_terms": [
+        "三进院落",
+        "抬梁式",
+        "砖石混合",
+        "中轴对称",
+        "合院布局",
+        "多进院落"
+      ],
+      "layout_terms": [
+        "三进布局",
+        "门厅-享堂-后寝序列",
+        "中轴对称"
+      ],
+      "material_terms": [
+        "木材",
+        "砖石"
+      ],
+      "craft_terms": [
+        "明代营造法",
+        "传统木构"
+      ],
+      "function_terms": [
+        "祠堂",
+        "商铺",
+        "宅院"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "956",
+      "target": "1449",
+      "weight": 0.5452,
+      "reasons": [
+        "共享结构：土石夯筑、穿斗式、抬梁式",
+        "共享材料：生土、砖石、木材",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.8756,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "453",
+      "target": "1447",
+      "weight": 0.5404,
+      "reasons": [
+        "共享结构：穿斗式、抬梁式、砖石混合",
+        "共享材料：砖石、木材",
+        "共享功能：祠堂",
+        "同属结构簇：抬梁穿斗合院型",
+        "同省：安徽省",
+        "同朝代：宋"
+      ],
+      "components": {
+        "structure_terms": 1.0,
+        "layout_terms": 0.0,
+        "material_terms": 0.4904,
+        "craft_terms": 0.0,
+        "function_terms": 0.1267,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "1404",
+      "target": "1633",
+      "weight": 0.5172,
+      "reasons": [
+        "共享结构：穿斗式、抬梁式、砖石混合",
+        "共享材料：砖石",
+        "共享技艺：砖雕",
+        "共享功能：民居",
+        "同属结构簇：抬梁合院型",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 1.0,
+        "layout_terms": 0.0,
+        "material_terms": 0.2985,
+        "craft_terms": 0.1773,
+        "function_terms": 0.3907,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.6667,
+        "time": 0.6421,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1633",
+      "target": "1447",
+      "weight": 0.5052,
+      "reasons": [
+        "共享结构：穿斗式、抬梁式、砖石混合",
+        "共享材料：砖石、木材",
+        "同属材料主类：木材类"
+      ],
+      "components": {
+        "structure_terms": 1.0,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 0.6,
+        "material_cluster": 1.0,
+        "time": 0.1312,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1633",
+      "target": "141",
+      "weight": 0.5039,
+      "reasons": [
+        "共享结构：穿斗式、抬梁式、砖石混合",
+        "共享材料：砖石、木材",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.7792,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.6421,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "453",
+      "target": "1633",
+      "weight": 0.4834,
+      "reasons": [
+        "共享结构：穿斗式、抬梁式、砖石混合",
+        "共享材料：砖石、木材",
+        "共享技艺：砖雕、木雕"
+      ],
+      "components": {
+        "structure_terms": 1.0,
+        "layout_terms": 0.0,
+        "material_terms": 0.4904,
+        "craft_terms": 0.4107,
+        "function_terms": 0.0,
+        "structure_cluster": 0.6,
+        "material_cluster": 1.0,
+        "time": 0.088,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1503",
+      "target": "415",
+      "weight": 0.4802,
+      "reasons": [
+        "共享结构：三进院落、中轴对称、多进院落",
+        "共享材料：砖石",
+        "同属结构簇：抬梁合院型",
+        "同属华东",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 1.0,
+        "layout_terms": 0.0,
+        "material_terms": 0.2985,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.6667,
+        "time": 0.6421,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1447",
+      "target": "141",
+      "weight": 0.4778,
+      "reasons": [
+        "共享结构：穿斗式、抬梁式、砖石混合",
+        "共享材料：砖石、木材",
+        "共享功能：祠堂",
+        "同属材料主类：木材类",
+        "同省：安徽省"
+      ],
+      "components": {
+        "structure_terms": 0.7792,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0997,
+        "structure_cluster": 0.6,
+        "material_cluster": 1.0,
+        "time": 0.2921,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "141",
+      "target": "894",
+      "weight": 0.4568,
+      "reasons": [
+        "共享结构：穿斗式、抬梁式、砖石混合",
+        "共享材料：砖石、木材",
+        "共享功能：祠堂",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同属华东"
+      ],
+      "components": {
+        "structure_terms": 0.4929,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0851,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1449",
+      "target": "141",
+      "weight": 0.4529,
+      "reasons": [
+        "共享结构：穿斗式、抬梁式、砖石混合",
+        "共享材料：砖石、木材",
+        "共享功能：祠堂",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同省：安徽省"
+      ],
+      "components": {
+        "structure_terms": 0.6235,
+        "layout_terms": 0.0,
+        "material_terms": 0.5528,
+        "craft_terms": 0.0,
+        "function_terms": 0.1493,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "956",
+      "target": "141",
+      "weight": 0.4457,
+      "reasons": [
+        "共享结构：穿斗式、抬梁式、砖石混合",
+        "共享材料：砖石、木材",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.7121,
+        "layout_terms": 0.0,
+        "material_terms": 0.5528,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1449",
+      "target": "894",
+      "weight": 0.4453,
+      "reasons": [
+        "共享结构：穿斗式、抬梁式、砖石混合",
+        "共享布局：围院结构",
+        "共享材料：砖石、木材",
+        "共享功能：祠堂",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类"
+      ],
+      "components": {
+        "structure_terms": 0.493,
+        "layout_terms": 0.1752,
+        "material_terms": 0.5528,
+        "craft_terms": 0.0,
+        "function_terms": 0.1295,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1408",
+      "target": "1633",
+      "weight": 0.433,
+      "reasons": [
+        "共享结构：穿斗式、砖石混合、木构架",
+        "共享材料：砖石、木材",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类"
+      ],
+      "components": {
+        "structure_terms": 0.5761,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.2921,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1404",
+      "target": "141",
+      "weight": 0.4327,
+      "reasons": [
+        "共享结构：穿斗式、抬梁式、砖石混合",
+        "共享材料：砖石",
+        "同属结构簇：抬梁合院型",
+        "同属华东",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.7792,
+        "layout_terms": 0.0,
+        "material_terms": 0.2985,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.6667,
+        "time": 1.0,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1404",
+      "target": "453",
+      "weight": 0.4295,
+      "reasons": [
+        "共享结构：穿斗式、抬梁式、砖石混合",
+        "共享材料：砖石",
+        "共享技艺：砖雕",
+        "同属华东"
+      ],
+      "components": {
+        "structure_terms": 1.0,
+        "layout_terms": 0.0,
+        "material_terms": 0.1956,
+        "craft_terms": 0.1949,
+        "function_terms": 0.0,
+        "structure_cluster": 0.6,
+        "material_cluster": 0.6667,
+        "time": 0.1958,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1404",
+      "target": "1447",
+      "weight": 0.4262,
+      "reasons": [
+        "共享结构：穿斗式、抬梁式、砖石混合",
+        "共享材料：砖石",
+        "同属华东"
+      ],
+      "components": {
+        "structure_terms": 1.0,
+        "layout_terms": 0.0,
+        "material_terms": 0.2985,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 0.6,
+        "material_cluster": 0.6667,
+        "time": 0.2921,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1352",
+      "target": "141",
+      "weight": 0.4241,
+      "reasons": [
+        "共享结构：穿斗式、抬梁式、砖石混合",
+        "共享材料：砖石、木材",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同属华东",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.4311,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "956",
+      "target": "1633",
+      "weight": 0.4179,
+      "reasons": [
+        "共享结构：穿斗式、抬梁式、砖石混合",
+        "共享材料：砖石、木材",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同省：湖南省",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.5925,
+        "layout_terms": 0.0,
+        "material_terms": 0.5528,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.6421,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "1449",
+      "target": "1633",
+      "weight": 0.4168,
+      "reasons": [
+        "共享结构：穿斗式、抬梁式、砖石混合",
+        "共享材料：砖石、木材",
+        "共享功能：民居",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.5299,
+        "layout_terms": 0.0,
+        "material_terms": 0.5528,
+        "craft_terms": 0.0,
+        "function_terms": 0.4551,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.6421,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "453",
+      "target": "141",
+      "weight": 0.4142,
+      "reasons": [
+        "共享结构：穿斗式、抬梁式、砖石混合",
+        "共享材料：砖石、木材",
+        "共享功能：祠堂",
+        "同省：安徽省"
+      ],
+      "components": {
+        "structure_terms": 0.7792,
+        "layout_terms": 0.0,
+        "material_terms": 0.4904,
+        "craft_terms": 0.0,
+        "function_terms": 0.1165,
+        "structure_cluster": 0.6,
+        "material_cluster": 1.0,
+        "time": 0.1958,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "1503",
+      "target": "894",
+      "weight": 0.4115,
+      "reasons": [
+        "共享结构：抬梁式、砖石混合、合院布局",
+        "共享材料：砖石、木材",
+        "共享技艺：传统木构",
+        "共享功能：祠堂",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类"
+      ],
+      "components": {
+        "structure_terms": 0.2557,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.2606,
+        "function_terms": 0.1026,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.6421,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "1408",
+      "target": "141",
+      "weight": 0.4109,
+      "reasons": [
+        "共享结构：穿斗式、砖石混合",
+        "共享材料：砖石、木材",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同属华东"
+      ],
+      "components": {
+        "structure_terms": 0.4031,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.65,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1449",
+      "target": "1352",
+      "weight": 0.4103,
+      "reasons": [
+        "共享结构：穿斗式、抬梁式、砖石混合",
+        "共享材料：砖石、木材",
+        "共享技艺：糯米灰浆",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同属华东"
+      ],
+      "components": {
+        "structure_terms": 0.4403,
+        "layout_terms": 0.0,
+        "material_terms": 0.5528,
+        "craft_terms": 0.3727,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1352",
+      "target": "894",
+      "weight": 0.4101,
+      "reasons": [
+        "共享结构：穿斗式、抬梁式、砖石混合",
+        "共享材料：砖石、木材",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同属华东",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.3809,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1633",
+      "target": "894",
+      "weight": 0.4068,
+      "reasons": [
+        "共享结构：穿斗式、抬梁式、砖石混合",
+        "共享材料：砖石、木材",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.4325,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.6421,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1503",
+      "target": "1352",
+      "weight": 0.4063,
+      "reasons": [
+        "共享结构：多进院落、抬梁式、砖石混合",
+        "共享材料：砖石、木材",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同属华东",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.3675,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1408",
+      "target": "1447",
+      "weight": 0.405,
+      "reasons": [
+        "共享结构：穿斗式、砖石混合、木构架",
+        "共享材料：砖石、木材",
+        "同属材料主类：木材类",
+        "同属华东"
+      ],
+      "components": {
+        "structure_terms": 0.5761,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 0.6,
+        "material_cluster": 1.0,
+        "time": 0.2921,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1447",
+      "target": "894",
+      "weight": 0.3992,
+      "reasons": [
+        "共享结构：穿斗式、抬梁式、砖石混合",
+        "共享材料：砖石、木材",
+        "共享技艺：徽州三雕",
+        "共享功能：祠堂",
+        "同属材料主类：木材类",
+        "同属华东"
+      ],
+      "components": {
+        "structure_terms": 0.4325,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.272,
+        "function_terms": 0.0905,
+        "structure_cluster": 0.6,
+        "material_cluster": 1.0,
+        "time": 0.2921,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1633",
+      "target": "1352",
+      "weight": 0.399,
+      "reasons": [
+        "共享结构：穿斗式、抬梁式、砖石混合",
+        "共享材料：砖石、木材",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.3841,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1633",
+      "target": "140",
+      "weight": 0.3973,
+      "reasons": [
+        "共享结构：砖石混合",
+        "共享材料：砖石、木材",
+        "共享技艺：砖雕、木雕",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.2122,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.3784,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1404",
+      "target": "415",
+      "weight": 0.3972,
+      "reasons": [
+        "共享结构：抬梁式、砖石混合",
+        "共享材料：砖雕、砖石",
+        "共享技艺：砖雕",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：砖瓦类",
+        "同属华东"
+      ],
+      "components": {
+        "structure_terms": 0.2342,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.196,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1408",
+      "target": "1503",
+      "weight": 0.3715,
+      "reasons": [
+        "共享结构：中轴对称、砖石混合",
+        "共享布局：中轴对称",
+        "共享材料：砖石、木材",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同属华东"
+      ],
+      "components": {
+        "structure_terms": 0.2394,
+        "layout_terms": 0.0944,
+        "material_terms": 1.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.2921,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1404",
+      "target": "1408",
+      "weight": 0.3698,
+      "reasons": [
+        "共享结构：穿斗式、砖石混合、木构架",
+        "共享材料：砖石",
+        "同属结构簇：抬梁合院型",
+        "同省：浙江省"
+      ],
+      "components": {
+        "structure_terms": 0.5761,
+        "layout_terms": 0.0,
+        "material_terms": 0.2985,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.6667,
+        "time": 0.65,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "1408",
+      "target": "894",
+      "weight": 0.3673,
+      "reasons": [
+        "共享结构：穿斗式、砖石混合",
+        "共享材料：砖石、木材",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同属华东"
+      ],
+      "components": {
+        "structure_terms": 0.2476,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.65,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1404",
+      "target": "1449",
+      "weight": 0.3671,
+      "reasons": [
+        "共享结构：穿斗式、抬梁式、砖石混合",
+        "共享材料：砖石",
+        "共享功能：民居",
+        "同属结构簇：抬梁合院型",
+        "同属华东",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.5299,
+        "layout_terms": 0.0,
+        "material_terms": 0.2117,
+        "craft_terms": 0.0,
+        "function_terms": 0.2662,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.5,
+        "time": 1.0,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1503",
+      "target": "140",
+      "weight": 0.3665,
+      "reasons": [
+        "共享结构：砖石混合、合院布局",
+        "共享材料：砖石、木材",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.2374,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "140",
+      "target": "1352",
+      "weight": 0.3616,
+      "reasons": [
+        "共享结构：砖石混合、合院布局",
+        "共享材料：砖石、木材",
+        "共享功能：正厅",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.2216,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.1016,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "956",
+      "target": "894",
+      "weight": 0.3614,
+      "reasons": [
+        "共享结构：穿斗式、抬梁式、砖石混合",
+        "共享材料：砖石、木材",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.411,
+        "layout_terms": 0.0,
+        "material_terms": 0.5528,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1404",
+      "target": "956",
+      "weight": 0.3513,
+      "reasons": [
+        "共享结构：穿斗式、抬梁式、砖石混合",
+        "共享材料：砖石",
+        "同属结构簇：抬梁合院型",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.5925,
+        "layout_terms": 0.0,
+        "material_terms": 0.2117,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.5,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "956",
+      "target": "1352",
+      "weight": 0.3406,
+      "reasons": [
+        "共享结构：穿斗式、抬梁式、砖石混合",
+        "共享材料：砖石、木材",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.3671,
+        "layout_terms": 0.0,
+        "material_terms": 0.5528,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 0.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "center_building": {
+    "line_no": "1076",
+    "name": "盘龙山古建筑群",
+    "building_type": "宫殿",
+    "start_dynasty": "明",
+    "century_num": 17,
+    "province": "陕西省",
+    "region": "西北",
+    "address": "陕西省米脂县",
+    "start_time_confidence": 0.95,
+    "structure_terms": [
+      "单檐歇山顶",
+      "五架梁",
+      "通柱做法",
+      "围廊",
+      "腰檐平座",
+      "楼阁化",
+      "砖石混合",
+      "合院布局",
+      "歇山顶",
+      "斗拱承托"
+    ],
+    "layout_terms": [
+      "院落组合",
+      "轴线序列",
+      "多进建筑"
+    ],
+    "material_terms": [
+      "木材",
+      "砖石"
+    ],
+    "craft_terms": [
+      "三踩出单昂",
+      "三彩如意斗拱",
+      "出昂瘦削尖曲",
+      "楼阁营造"
+    ],
+    "function_terms": [
+      "行宫",
+      "古建筑群"
+    ],
+    "material_categories": [
+      "木材类",
+      "石材类",
+      "砖瓦类"
+    ],
+    "structure_cluster": "歇山楼阁型",
+    "structure_cluster_summary": "采用单檐歇山顶、通柱做法与五架梁结构，设围廊及腰檐平座，斗拱承托出昂，具楼阁化特征。",
+    "material_primary_category": "木材类",
+    "structure_evidence": "玉皇阁为二层楼阁，单檐歇山顶，面阔三间，进深五架梁，四周围廊，底层外檐斗拱*为三踩出单昂，二层外檐施三彩如意斗拱，出昂瘦削尖曲 || 整体结构采用通柱做法，二层施腰檐平座 || 主要由乐楼、梅花亭、捧圣楼、二天门、玉皇阁、启祥殿、兆庆宫等建筑组成",
+    "semantic_terms": [
+      "单檐歇山顶",
+      "五架梁",
+      "通柱做法",
+      "围廊",
+      "腰檐平座",
+      "楼阁化",
+      "砖石混合",
+      "合院布局",
+      "歇山顶",
+      "斗拱承托",
+      "院落组合",
+      "轴线序列",
+      "多进建筑",
+      "木材",
+      "砖石",
+      "三踩出单昂",
+      "三彩如意斗拱",
+      "出昂瘦削尖曲",
+      "楼阁营造",
+      "行宫",
+      "古建筑群",
+      "木材类",
+      "石材类",
+      "砖瓦类"
+    ]
+  },
+  "lineage_id": "宫殿-L02",
+  "lineage_name": "陕西-多进建筑·砖石混合-木材谱系",
+  "building_type": "宫殿",
+  "signature_features": {
+    "primary_structure": "砖石混合",
+    "primary_layout": "多进建筑",
+    "support_material": "木材",
+    "support_craft": "楼阁营造",
+    "dominant_province": "陕西",
+    "dominant_dynasty": "明",
+    "dominant_region": "西北"
+  },
+  "signature_summary": "以多进建筑、砖石混合为核心，辅以木材，在陕西样本中形成稳定的营造共同体。",
+  "community_member_count": 2,
+  "nodes": [
+    {
+      "id": "1076",
+      "line_no": "1076",
+      "name": "盘龙山古建筑群",
+      "building_type": "宫殿",
+      "province": "陕西省",
+      "start_dynasty": "明",
+      "century_num": 17,
+      "role": "center",
+      "hop": 0,
+      "score": 1.0,
+      "shared_features": [],
+      "structure_terms": [
+        "单檐歇山顶",
+        "五架梁",
+        "通柱做法",
+        "围廊",
+        "腰檐平座",
+        "楼阁化",
+        "砖石混合",
+        "合院布局",
+        "歇山顶",
+        "斗拱承托"
+      ],
+      "layout_terms": [
+        "院落组合",
+        "轴线序列",
+        "多进建筑"
+      ],
+      "material_terms": [
+        "木材",
+        "砖石"
+      ],
+      "craft_terms": [
+        "三踩出单昂",
+        "三彩如意斗拱",
+        "出昂瘦削尖曲",
+        "楼阁营造"
+      ],
+      "function_terms": [
+        "行宫",
+        "古建筑群"
+      ]
+    },
+    {
+      "id": "928",
+      "line_no": "928",
+      "name": "阳台宫",
+      "building_type": "宫殿",
+      "province": "河南省",
+      "start_dynasty": "明",
+      "century_num": 15,
+      "role": "member",
+      "hop": 1,
+      "score": 0.6252,
+      "shared_features": [
+        "砖石混合",
+        "合院布局",
+        "砖石",
+        "木材",
+        "多进建筑",
+        "楼阁营造"
+      ],
+      "structure_terms": [
+        "抬梁式",
+        "穿斗式",
+        "砖石混合",
+        "中轴对称",
+        "合院布局"
+      ],
+      "layout_terms": [
+        "中轴对称",
+        "院落式"
+      ],
+      "material_terms": [
+        "木材",
+        "砖石"
+      ],
+      "craft_terms": [
+        "榫卯结构",
+        "琉璃瓦作"
+      ],
+      "function_terms": [
+        "道教宫观"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "928",
+      "target": "1076",
+      "weight": 0.2149,
+      "reasons": [
+        "共享结构：砖石混合、合院布局",
+        "共享材料：砖石、木材",
+        "同属材料主类：木材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.1045,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 0.0,
+        "material_cluster": 1.0,
+        "time": 0.6421,
+        "region": 0.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "center_building": {
+    "line_no": "1030",
+    "name": "宝山石头城",
+    "building_type": "民居",
+    "start_dynasty": "元",
+    "century_num": 13,
+    "province": "云南省",
+    "region": "西南",
+    "address": "云南省玉龙纳西族自治县",
+    "start_time_confidence": 0.9,
+    "structure_terms": [
+      "石砌结构",
+      "山地石构"
+    ],
+    "layout_terms": [
+      "山地聚落",
+      "石上村落",
+      "依山就势"
+    ],
+    "material_terms": [
+      "石材",
+      "石头"
+    ],
+    "craft_terms": [
+      "就地取材",
+      "石砌工艺",
+      "山地凿筑"
+    ],
+    "function_terms": [
+      "州治所",
+      "行政中心"
+    ],
+    "material_categories": [
+      "石材类"
+    ],
+    "structure_cluster": "山地石构民居型",
+    "structure_cluster_summary": "依山就势，以石砌结构为主，适应山地地形的防御性民居形式。",
+    "material_primary_category": "石材类",
+    "structure_evidence": "是建于金沙江右岸一个巨型柱状石头上纳西族村落 || [Wiki]宝山石头城 位于 中国 云南省 丽江市 玉龙纳西族自治县 宝山乡 宝山村，是建于 金沙江 右岸一个巨型柱状石头上 纳西族 村落 || 石头城建于 元 初 至元 年间（公元1264—1294年），曾为 丽江路 所辖的 宝山州 治所 [ 1 ]",
+    "semantic_terms": [
+      "石砌结构",
+      "山地石构",
+      "山地聚落",
+      "石上村落",
+      "依山就势",
+      "石材",
+      "石头",
+      "就地取材",
+      "石砌工艺",
+      "山地凿筑",
+      "州治所",
+      "行政中心",
+      "石材类"
+    ]
+  },
+  "lineage_id": "民居-L11",
+  "lineage_name": "云南-石上村落·山地石构-石头谱系",
+  "building_type": "民居",
+  "signature_features": {
+    "primary_structure": "山地石构",
+    "primary_layout": "石上村落",
+    "support_material": "石头",
+    "support_craft": "就地取材",
+    "dominant_province": "云南",
+    "dominant_dynasty": "元",
+    "dominant_region": "西南"
+  },
+  "signature_summary": "以石上村落、山地石构为核心，辅以石头，在云南样本中形成稳定的营造共同体。",
+  "community_member_count": 1,
+  "nodes": [
+    {
+      "line_no": "1030",
+      "name": "宝山石头城",
+      "building_type": "民居",
+      "start_dynasty": "元",
+      "century_num": 13,
+      "province": "云南省",
+      "region": "西南",
+      "address": "云南省玉龙纳西族自治县",
+      "start_time_confidence": 0.9,
+      "structure_terms": [
+        "石砌结构",
+        "山地石构"
+      ],
+      "layout_terms": [
+        "山地聚落",
+        "石上村落",
+        "依山就势"
+      ],
+      "material_terms": [
+        "石材",
+        "石头"
+      ],
+      "craft_terms": [
+        "就地取材",
+        "石砌工艺",
+        "山地凿筑"
+      ],
+      "function_terms": [
+        "州治所",
+        "行政中心"
+      ],
+      "material_categories": [
+        "石材类"
+      ],
+      "structure_cluster": "山地石构民居型",
+      "structure_cluster_summary": "依山就势，以石砌结构为主，适应山地地形的防御性民居形式。",
+      "material_primary_category": "石材类",
+      "structure_evidence": "是建于金沙江右岸一个巨型柱状石头上纳西族村落 || [Wiki]宝山石头城 位于 中国 云南省 丽江市 玉龙纳西族自治县 宝山乡 宝山村，是建于 金沙江 右岸一个巨型柱状石头上 纳西族 村落 || 石头城建于 元 初 至元 年间（公元1264—1294年），曾为 丽江路 所辖的 宝山州 治所 [ 1 ]",
+      "semantic_terms": [
+        "石砌结构",
+        "山地石构",
+        "山地聚落",
+        "石上村落",
+        "依山就势",
+        "石材",
+        "石头",
+        "就地取材",
+        "石砌工艺",
+        "山地凿筑",
+        "州治所",
+        "行政中心",
+        "石材类"
+      ],
+      "id": "1030",
+      "role": "center",
+      "hop": 0,
+      "score": 1.0,
+      "shared_features": []
+    }
+  ],
+  "edges": []
+}

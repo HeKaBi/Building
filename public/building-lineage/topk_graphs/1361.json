@@ -1,0 +1,418 @@
+{
+  "center_building": {
+    "line_no": "1361",
+    "name": "近园",
+    "building_type": "民居",
+    "start_dynasty": "清",
+    "century_num": 17,
+    "province": "江苏省",
+    "region": "华东",
+    "address": "江苏省常州市天宁区",
+    "start_time_confidence": 0.98,
+    "structure_terms": [
+      "硬山顶",
+      "爬山廊",
+      "民居风格"
+    ],
+    "layout_terms": [
+      "西宅东园",
+      "中有大池",
+      "池周环建",
+      "池中一岛"
+    ],
+    "material_terms": [
+      "黄石",
+      "假山石"
+    ],
+    "craft_terms": [
+      "一隔",
+      "虚实结合",
+      "对比手法"
+    ],
+    "function_terms": [
+      "厅堂",
+      "书斋",
+      "轩馆"
+    ],
+    "material_categories": [
+      "石材类"
+    ],
+    "structure_cluster": "合院穿斗民居型",
+    "structure_cluster_summary": "采用合院布局与穿斗木构体系，多进院落沿中轴对称分布，常结合砖石墙体与硬山顶。",
+    "material_primary_category": "石材类",
+    "structure_evidence": "园内的建筑以硬山顶为主，被曲折蜿蜒的爬山廊连接在一起，首尾相接，立面一般由大面积的白色组成。 || 与其他园林相比，这些建筑的风格更加类似于民居，比较简单。 || 近园南北长80米，东西宽64米，以北部的西野草堂为主要厅堂，厅前凿池叠山，四周环以亭榭、书斋、轩馆和回廊。 || 亭、台、楼、榭大多围着池水安置，形成了“中有大池、池中一岛、池周建筑”的独特格局。 || 采用西宅东园的布局 || 岛山是一座高约4.2米的黄石假山，也是水域乃至园林的主体。",
+    "semantic_terms": [
+      "硬山顶",
+      "爬山廊",
+      "民居风格",
+      "西宅东园",
+      "中有大池",
+      "池周环建",
+      "池中一岛",
+      "黄石",
+      "假山石",
+      "一隔",
+      "虚实结合",
+      "对比手法",
+      "厅堂",
+      "书斋",
+      "轩馆",
+      "石材类"
+    ]
+  },
+  "lineage_id": "民居-L09",
+  "lineage_name": "江苏-西宅东园·合院布局-假山石谱系",
+  "building_type": "民居",
+  "signature_features": {
+    "primary_structure": "合院布局",
+    "primary_layout": "西宅东园",
+    "support_material": "假山石",
+    "support_craft": "一隔",
+    "dominant_province": "江苏",
+    "dominant_dynasty": "清",
+    "dominant_region": "华东"
+  },
+  "signature_summary": "以西宅东园、合院布局为核心，辅以假山石，在江苏样本中形成稳定的营造共同体。",
+  "community_member_count": 5,
+  "nodes": [
+    {
+      "id": "1361",
+      "line_no": "1361",
+      "name": "近园",
+      "building_type": "民居",
+      "province": "江苏省",
+      "start_dynasty": "清",
+      "century_num": 17,
+      "role": "center",
+      "hop": 0,
+      "score": 1.0,
+      "shared_features": [],
+      "structure_terms": [
+        "硬山顶",
+        "爬山廊",
+        "民居风格"
+      ],
+      "layout_terms": [
+        "西宅东园",
+        "中有大池",
+        "池周环建",
+        "池中一岛"
+      ],
+      "material_terms": [
+        "黄石",
+        "假山石"
+      ],
+      "craft_terms": [
+        "一隔",
+        "虚实结合",
+        "对比手法"
+      ],
+      "function_terms": [
+        "厅堂",
+        "书斋",
+        "轩馆"
+      ]
+    },
+    {
+      "id": "418",
+      "line_no": "418",
+      "name": "耦园",
+      "building_type": "民居",
+      "province": "江苏省",
+      "start_dynasty": "清",
+      "century_num": 18,
+      "role": "member",
+      "hop": 1,
+      "score": 0.5989,
+      "shared_features": [
+        "黄石",
+        "假山石",
+        "书斋",
+        "合院布局",
+        "西宅东园",
+        "一隔"
+      ],
+      "structure_terms": [
+        "重楼连接",
+        "四进厅堂",
+        "两两呼应",
+        "中轴对称"
+      ],
+      "layout_terms": [
+        "中轴对称",
+        "东西对偶",
+        "山主池辅",
+        "三段式布局"
+      ],
+      "material_terms": [
+        "黄石",
+        "湖石",
+        "假山石"
+      ],
+      "craft_terms": [
+        "黄石叠山",
+        "湖石理水",
+        "对景借景"
+      ],
+      "function_terms": [
+        "书斋",
+        "藏书楼",
+        "住宅园林"
+      ]
+    },
+    {
+      "id": "151",
+      "line_no": "151",
+      "name": "个园",
+      "building_type": "民居",
+      "province": "江苏省",
+      "start_dynasty": "明",
+      "century_num": 19,
+      "role": "member",
+      "hop": 1,
+      "score": 0.5225,
+      "shared_features": [
+        "假山石",
+        "合院布局",
+        "西宅东园",
+        "一隔"
+      ],
+      "structure_terms": [
+        "前宅后院",
+        "江南私家园林结构",
+        "楼阁化",
+        "合院布局"
+      ],
+      "layout_terms": [
+        "庭院楼阁布局",
+        "围院结构",
+        "南北轴线布局"
+      ],
+      "material_terms": [
+        "压舱石",
+        "假山石"
+      ],
+      "craft_terms": [
+        "四季假山",
+        "石垒造景"
+      ],
+      "function_terms": [
+        "盐商园林",
+        "名园"
+      ]
+    },
+    {
+      "id": "1375",
+      "line_no": "1375",
+      "name": "卢氏盐商住宅",
+      "building_type": "民居",
+      "province": "江苏省",
+      "start_dynasty": "清",
+      "century_num": 19,
+      "role": "member",
+      "hop": 2,
+      "score": 0.1902,
+      "shared_features": [
+        "合院布局",
+        "西宅东园",
+        "假山石",
+        "一隔"
+      ],
+      "structure_terms": [
+        "前宅后院",
+        "多进厅堂",
+        "七间主厅",
+        "五间大门",
+        "合院布局"
+      ],
+      "layout_terms": [
+        "前宅后院",
+        "九进建筑",
+        "天井花园",
+        "长廊曲桥"
+      ],
+      "material_terms": [
+        "紫藤",
+        "石舫",
+        "曲桥"
+      ],
+      "craft_terms": [
+        "木构架",
+        "砖雕",
+        "假山叠石"
+      ],
+      "function_terms": [
+        "会客",
+        "读书",
+        "藏书",
+        "景点兼饭店"
+      ]
+    },
+    {
+      "id": "1421",
+      "line_no": "1421",
+      "name": "雪溪胡氏大院",
+      "building_type": "民居",
+      "province": "浙江省",
+      "start_dynasty": "清",
+      "century_num": 19,
+      "role": "member",
+      "hop": 2,
+      "score": 0.1888,
+      "shared_features": [
+        "厅堂",
+        "书斋",
+        "合院布局",
+        "西宅东园",
+        "假山石",
+        "一隔"
+      ],
+      "structure_terms": [
+        "二进院落",
+        "中轴对称",
+        "宗族建筑群",
+        "台门体系",
+        "合院布局",
+        "多进院落"
+      ],
+      "layout_terms": [
+        "二进台门",
+        "上堂下堂",
+        "南北厢房",
+        "面阔五/七间"
+      ],
+      "material_terms": [
+        "麻石",
+        "石材墙体"
+      ],
+      "craft_terms": [
+        "月梁",
+        "牛腿",
+        "斗拱",
+        "法式与乡土融合工艺"
+      ],
+      "function_terms": [
+        "厅堂",
+        "宗祠",
+        "书斋",
+        "祭祀空间"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "1361",
+      "target": "418",
+      "weight": 0.2827,
+      "reasons": [
+        "共享材料：黄石、假山石",
+        "共享功能：书斋",
+        "同属结构簇：合院穿斗民居型",
+        "同属材料主类：石材类",
+        "同省：江苏省",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.0,
+        "layout_terms": 0.0,
+        "material_terms": 0.6486,
+        "craft_terms": 0.0,
+        "function_terms": 0.1685,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "1375",
+      "target": "151",
+      "weight": 0.2418,
+      "reasons": [
+        "共享结构：前宅后院、合院布局",
+        "同属结构簇：合院穿斗民居型",
+        "同属材料主类：石材类",
+        "同省：江苏省"
+      ],
+      "components": {
+        "structure_terms": 0.1992,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.65,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "1421",
+      "target": "418",
+      "weight": 0.2125,
+      "reasons": [
+        "共享结构：中轴对称",
+        "共享功能：书斋",
+        "同属结构簇：合院穿斗民居型",
+        "同属材料主类：石材类",
+        "同属华东",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.0609,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.1503,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1361",
+      "target": "151",
+      "weight": 0.2087,
+      "reasons": [
+        "共享材料：假山石",
+        "同属结构簇：合院穿斗民居型",
+        "同属材料主类：石材类",
+        "同省：江苏省"
+      ],
+      "components": {
+        "structure_terms": 0.0,
+        "layout_terms": 0.0,
+        "material_terms": 0.3083,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.2921,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "151",
+      "target": "418",
+      "weight": 0.205,
+      "reasons": [
+        "共享材料：假山石",
+        "同属结构簇：合院穿斗民居型",
+        "同属材料主类：石材类",
+        "同省：江苏省"
+      ],
+      "components": {
+        "structure_terms": 0.0,
+        "layout_terms": 0.0,
+        "material_terms": 0.2297,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.4357,
+        "region": 1.0
+      }
+    }
+  ]
+}

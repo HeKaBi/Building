@@ -1,0 +1,196 @@
+{
+  "center_building": {
+    "line_no": "2045",
+    "name": "安阳永和桥",
+    "building_type": "桥梁",
+    "start_dynasty": "宋",
+    "century_num": 10,
+    "province": "河南省",
+    "region": "华中",
+    "address": "河南省安阳县",
+    "start_time_confidence": 0.95,
+    "structure_terms": [
+      "桁架梁桥",
+      "斜拉桥",
+      "拱桥",
+      "拱桥体系",
+      "梁桥体系",
+      "木材主导"
+    ],
+    "layout_terms": [
+      "等截面拱",
+      "变截面拱",
+      "拱轴线布局"
+    ],
+    "material_terms": [
+      "木材",
+      "乔木"
+    ],
+    "craft_terms": [
+      "实腹梁制作",
+      "梁桥建造"
+    ],
+    "function_terms": [
+      "跨越障碍",
+      "连接两岸",
+      "通行功能"
+    ],
+    "material_categories": [
+      "木材类"
+    ],
+    "structure_cluster": "浮梁拱复合桥型",
+    "structure_cluster_summary": "结合浮桥、梁桥与拱桥结构，以木材为主，兼具通行与开合功能。",
+    "material_primary_category": "木材类",
+    "structure_evidence": "1860年由 罗伯特·史蒂芬逊 在威尔士建造的 桁架 梁桥 不列颠大桥 （ 德语 ： Britanniabrücke ） ，跨径146米 || 随着预应力混凝土桥梁同时发展起来的还有 钢结构 形式和 斜拉桥 || 拱桥主拱圈沿桥跨方向的形状，可以做成横截面尺寸沿拱轴线不变的等截面拱，或者做成横截面尺寸由拱脚向拱顶逐渐变化的变截面拱 || 主拱圈的拱轴线形状，对拱圈截面的应力大小将产生直接影响 || “橋”源於“喬”，即“ 喬木 ”，泛指高大的樹，因為夠高大，砍下來就夠長放在河面，可以連着兩邊岸，即 獨木橋 || 左为木桥，背景为另两座现代桥",
+    "semantic_terms": [
+      "桁架梁桥",
+      "斜拉桥",
+      "拱桥",
+      "拱桥体系",
+      "梁桥体系",
+      "木材主导",
+      "等截面拱",
+      "变截面拱",
+      "拱轴线布局",
+      "木材",
+      "乔木",
+      "实腹梁制作",
+      "梁桥建造",
+      "跨越障碍",
+      "连接两岸",
+      "通行功能",
+      "木材类"
+    ]
+  },
+  "lineage_id": "桥梁-L06",
+  "lineage_name": "广东-十八梭船廿四洲·拱桥体系-铁件谱系",
+  "building_type": "桥梁",
+  "signature_features": {
+    "primary_structure": "拱桥体系",
+    "primary_layout": "十八梭船廿四洲",
+    "support_material": "铁件",
+    "support_craft": "梁桥与浮桥并存",
+    "dominant_province": "广东",
+    "dominant_dynasty": "宋",
+    "dominant_region": "华南"
+  },
+  "signature_summary": "以十八梭船廿四洲、拱桥体系为核心，辅以铁件，在广东样本中形成稳定的营造共同体。",
+  "community_member_count": 2,
+  "nodes": [
+    {
+      "id": "2045",
+      "line_no": "2045",
+      "name": "安阳永和桥",
+      "building_type": "桥梁",
+      "province": "河南省",
+      "start_dynasty": "宋",
+      "century_num": 10,
+      "role": "center",
+      "hop": 0,
+      "score": 1.0,
+      "shared_features": [],
+      "structure_terms": [
+        "桁架梁桥",
+        "斜拉桥",
+        "拱桥",
+        "拱桥体系",
+        "梁桥体系",
+        "木材主导"
+      ],
+      "layout_terms": [
+        "等截面拱",
+        "变截面拱",
+        "拱轴线布局"
+      ],
+      "material_terms": [
+        "木材",
+        "乔木"
+      ],
+      "craft_terms": [
+        "实腹梁制作",
+        "梁桥建造"
+      ],
+      "function_terms": [
+        "跨越障碍",
+        "连接两岸",
+        "通行功能"
+      ]
+    },
+    {
+      "id": "122",
+      "line_no": "122",
+      "name": "广济桥",
+      "building_type": "桥梁",
+      "province": "广东省",
+      "start_dynasty": "宋",
+      "century_num": 12,
+      "role": "member",
+      "hop": 1,
+      "score": 0.5753,
+      "shared_features": [
+        "拱桥",
+        "梁桥体系",
+        "木材",
+        "拱桥体系",
+        "十八梭船廿四洲",
+        "铁件"
+      ],
+      "structure_terms": [
+        "浮梁结合结构",
+        "梁桥",
+        "浮桥",
+        "拱桥",
+        "十八梭船廿四洲",
+        "复合桥体系",
+        "拱桥体系",
+        "梁桥体系",
+        "浮桥体系",
+        "木材主导",
+        "石材主导",
+        "铁件加固"
+      ],
+      "layout_terms": [
+        "横跨韩江",
+        "联结东西两岸",
+        "十八梭船廿四洲"
+      ],
+      "material_terms": [
+        "石材",
+        "木材",
+        "铁件"
+      ],
+      "craft_terms": [
+        "启闭式桥梁",
+        "梁桥与浮桥并存"
+      ],
+      "function_terms": [
+        "交通要津",
+        "旅游观光步行桥"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "2045",
+      "target": "122",
+      "weight": 0.2151,
+      "reasons": [
+        "共享结构：拱桥、梁桥体系、木材主导",
+        "共享材料：木材",
+        "同属结构簇：浮梁拱复合桥型",
+        "同朝代：宋"
+      ],
+      "components": {
+        "structure_terms": 0.1947,
+        "layout_terms": 0.0,
+        "material_terms": 0.1798,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.3333,
+        "time": 0.6421,
+        "region": 0.0
+      }
+    }
+  ]
+}

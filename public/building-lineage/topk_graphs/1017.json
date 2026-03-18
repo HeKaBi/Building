@@ -1,0 +1,976 @@
+{
+  "center_building": {
+    "line_no": "1017",
+    "name": "寨英村古建筑群",
+    "building_type": "民居",
+    "start_dynasty": "明",
+    "century_num": 14,
+    "province": "贵州省",
+    "region": "西南",
+    "address": "贵州省松桃苗族自治县",
+    "start_time_confidence": 0.9,
+    "structure_terms": [
+      "干栏式",
+      "合院布局",
+      "吊脚楼",
+      "城防单元",
+      "干栏体系",
+      "木构架"
+    ],
+    "layout_terms": [
+      "街巷布局",
+      "结构严谨",
+      "布局精巧"
+    ],
+    "material_terms": [
+      "木材"
+    ],
+    "craft_terms": [
+      "自流供排水系统",
+      "消防系统"
+    ],
+    "function_terms": [
+      "古民居",
+      "会馆",
+      "商铺",
+      "手工作坊",
+      "军事屯堡"
+    ],
+    "material_categories": [
+      "木材类"
+    ],
+    "structure_cluster": "抬梁合院型",
+    "structure_cluster_summary": "以抬梁式木构架为主，布局多为合院式，强调中轴对称，常见硬山顶与砖木混合结构。",
+    "material_primary_category": "木材类",
+    "structure_evidence": "建筑群结构严谨、布局精巧，由古民居、会馆、商铺、手工作坊、城墙、城门、码头、街巷等建筑物构成 || 现存四合院式、三合院式、苗族吊脚楼等古民居建筑85栋 || 建筑群结构严谨、布局精巧 || 东南北门街、中街、巷子口、何家坝巷 || 民居建筑均为木结构 干栏 式，大多面阔三间，上下三层，底层养牲畜，二三层住人",
+    "semantic_terms": [
+      "干栏式",
+      "合院布局",
+      "吊脚楼",
+      "城防单元",
+      "干栏体系",
+      "木构架",
+      "街巷布局",
+      "结构严谨",
+      "布局精巧",
+      "木材",
+      "自流供排水系统",
+      "消防系统",
+      "古民居",
+      "会馆",
+      "商铺",
+      "手工作坊",
+      "军事屯堡",
+      "木材类"
+    ]
+  },
+  "lineage_id": "民居-L08",
+  "lineage_name": "明-背山面水·干栏体系-生土谱系",
+  "building_type": "民居",
+  "signature_features": {
+    "primary_structure": "干栏体系",
+    "primary_layout": "背山面水",
+    "support_material": "生土",
+    "support_craft": "榫卯结构",
+    "dominant_province": "贵州",
+    "dominant_dynasty": "明",
+    "dominant_region": "华中"
+  },
+  "signature_summary": "以背山面水、干栏体系为核心，辅以生土，在明样本中形成稳定的营造共同体。",
+  "community_member_count": 11,
+  "nodes": [
+    {
+      "id": "1017",
+      "line_no": "1017",
+      "name": "寨英村古建筑群",
+      "building_type": "民居",
+      "province": "贵州省",
+      "start_dynasty": "明",
+      "century_num": 14,
+      "role": "center",
+      "hop": 0,
+      "score": 1.0,
+      "shared_features": [],
+      "structure_terms": [
+        "干栏式",
+        "合院布局",
+        "吊脚楼",
+        "城防单元",
+        "干栏体系",
+        "木构架"
+      ],
+      "layout_terms": [
+        "街巷布局",
+        "结构严谨",
+        "布局精巧"
+      ],
+      "material_terms": [
+        "木材"
+      ],
+      "craft_terms": [
+        "自流供排水系统",
+        "消防系统"
+      ],
+      "function_terms": [
+        "古民居",
+        "会馆",
+        "商铺",
+        "手工作坊",
+        "军事屯堡"
+      ]
+    },
+    {
+      "id": "1591",
+      "line_no": "1591",
+      "name": "寨卜昌村古建筑群",
+      "building_type": "民居",
+      "province": "河南省",
+      "start_dynasty": "明",
+      "century_num": 14,
+      "role": "member",
+      "hop": 1,
+      "score": 0.6475,
+      "shared_features": [
+        "干栏式",
+        "干栏体系",
+        "木材",
+        "背山面水",
+        "生土",
+        "榫卯结构"
+      ],
+      "structure_terms": [
+        "干栏式",
+        "木结构",
+        "干栏体系",
+        "木构架"
+      ],
+      "layout_terms": [
+        "背山面水",
+        "依山而建",
+        "公共活动广场",
+        "风雨桥"
+      ],
+      "material_terms": [
+        "木材"
+      ],
+      "craft_terms": [
+        "穿斗式",
+        "榫卯结构",
+        "木作技艺"
+      ],
+      "function_terms": [
+        "人畜分居",
+        "居住",
+        "牲畜圈养"
+      ]
+    },
+    {
+      "id": "532",
+      "line_no": "532",
+      "name": "郎德上寨古建筑群",
+      "building_type": "民居",
+      "province": "贵州省",
+      "start_dynasty": "明",
+      "century_num": 14,
+      "role": "member",
+      "hop": 1,
+      "score": 0.6358,
+      "shared_features": [
+        "干栏式",
+        "吊脚楼",
+        "木材",
+        "干栏体系",
+        "背山面水",
+        "生土"
+      ],
+      "structure_terms": [
+        "干栏式",
+        "吊脚楼",
+        "木结构",
+        "干栏体系",
+        "木构架"
+      ],
+      "layout_terms": [
+        "依山而建",
+        "背山面水",
+        "阶梯式布局",
+        "路网密集"
+      ],
+      "material_terms": [
+        "木材",
+        "青瓦"
+      ],
+      "craft_terms": [
+        "传统木作",
+        "榫卯结构"
+      ],
+      "function_terms": [
+        "居住",
+        "畜养",
+        "公共活动",
+        "储粮",
+        "消防"
+      ]
+    },
+    {
+      "id": "500",
+      "line_no": "500",
+      "name": "芋头侗寨古建筑群",
+      "building_type": "民居",
+      "province": "湖南省",
+      "start_dynasty": "明",
+      "century_num": 14,
+      "role": "member",
+      "hop": 1,
+      "score": 0.4993,
+      "shared_features": [
+        "干栏体系",
+        "木材",
+        "背山面水",
+        "生土",
+        "榫卯结构"
+      ],
+      "structure_terms": [
+        "鼓楼",
+        "风雨桥",
+        "门楼",
+        "土石夯筑",
+        "干栏体系"
+      ],
+      "layout_terms": [
+        "吊脚楼群",
+        "鼓楼中心布局",
+        "古驿道串联",
+        "萨岁台分布"
+      ],
+      "material_terms": [
+        "木材",
+        "生土"
+      ],
+      "craft_terms": [
+        "榫卯结构",
+        "干栏式营造"
+      ],
+      "function_terms": [
+        "集会",
+        "交通",
+        "祭祀"
+      ]
+    },
+    {
+      "id": "1754",
+      "line_no": "1754",
+      "name": "榕江大利村古建筑群",
+      "building_type": "民居",
+      "province": "贵州省",
+      "start_dynasty": "明",
+      "century_num": 14,
+      "role": "member",
+      "hop": 1,
+      "score": 0.4871,
+      "shared_features": [
+        "吊脚楼",
+        "干栏体系",
+        "木材",
+        "背山面水",
+        "生土",
+        "榫卯结构"
+      ],
+      "structure_terms": [
+        "吊脚楼",
+        "侗家四合楼院",
+        "干栏体系"
+      ],
+      "layout_terms": [
+        "溪谷依势布局",
+        "层叠上坡",
+        "花桥跨溪",
+        "石板路网"
+      ],
+      "material_terms": [
+        "木材",
+        "石灰石",
+        "重晶石",
+        "粘土"
+      ],
+      "craft_terms": [
+        "穿斗式",
+        "榫卯结构",
+        "干栏营造法"
+      ],
+      "function_terms": [
+        "集会议事",
+        "休闲娱乐"
+      ]
+    },
+    {
+      "id": "1864",
+      "line_no": "1864",
+      "name": "保安古屯田寨堡古建筑群",
+      "building_type": "民居",
+      "province": "青海省",
+      "start_dynasty": "明",
+      "century_num": 14,
+      "role": "member",
+      "hop": 1,
+      "score": 0.1872,
+      "shared_features": [
+        "城防单元",
+        "木构架",
+        "木材",
+        "干栏体系",
+        "背山面水",
+        "生土"
+      ],
+      "structure_terms": [
+        "寨墙",
+        "寨门",
+        "木阁门楼",
+        "封闭式防御结构",
+        "城防单元",
+        "木构架"
+      ],
+      "layout_terms": [
+        "方正规矩布局",
+        "院舍建筑",
+        "住宅密集",
+        "巷道幽深",
+        "依山就势"
+      ],
+      "material_terms": [
+        "木材",
+        "雕刻木构件",
+        "柱头",
+        "扎口板"
+      ],
+      "craft_terms": [
+        "木雕",
+        "花卉雕刻",
+        "吉祥图案雕刻",
+        "动物纹样雕刻"
+      ],
+      "function_terms": [
+        "军事防御",
+        "屯田驻守",
+        "集居防卫",
+        "卫所遗存"
+      ]
+    },
+    {
+      "id": "1620",
+      "line_no": "1620",
+      "name": "彭家寨古建筑群",
+      "building_type": "民居",
+      "province": "湖北省",
+      "start_dynasty": "清",
+      "century_num": 17,
+      "role": "member",
+      "hop": 2,
+      "score": 0.2642,
+      "shared_features": [
+        "干栏体系",
+        "背山面水",
+        "生土",
+        "榫卯结构"
+      ],
+      "structure_terms": [
+        "吊脚楼",
+        "风雨桥",
+        "土石夯筑",
+        "干栏体系"
+      ],
+      "layout_terms": [
+        "依山临水",
+        "聚落布局",
+        "吊脚楼群"
+      ],
+      "material_terms": [
+        "木材",
+        "生土"
+      ],
+      "craft_terms": [
+        "干栏式营造",
+        "榫卯结构"
+      ],
+      "function_terms": [
+        "居住",
+        "村落聚居"
+      ]
+    },
+    {
+      "id": "1662",
+      "line_no": "1662",
+      "name": "石堰坪古建筑群",
+      "building_type": "民居",
+      "province": "湖南省",
+      "start_dynasty": "清",
+      "century_num": 17,
+      "role": "member",
+      "hop": 2,
+      "score": 0.1293,
+      "shared_features": [
+        "干栏体系",
+        "背山面水",
+        "生土",
+        "榫卯结构"
+      ],
+      "structure_terms": [
+        "穿斗式",
+        "吊脚楼",
+        "干栏体系"
+      ],
+      "layout_terms": [
+        "依山就势",
+        "集中成片",
+        "无固定朝向"
+      ],
+      "material_terms": [
+        "青石",
+        "小青瓦",
+        "木材"
+      ],
+      "craft_terms": [
+        "雕瓜柱",
+        "挑出檐",
+        "刻齐筒",
+        "画看梁"
+      ],
+      "function_terms": [
+        "上人下畜"
+      ]
+    },
+    {
+      "id": "2105",
+      "line_no": "2105",
+      "name": "大埔光禄第",
+      "building_type": "民居",
+      "province": "广东省",
+      "start_dynasty": "清",
+      "century_num": 20,
+      "role": "member",
+      "hop": 3,
+      "score": 0.0377,
+      "shared_features": [
+        "干栏体系",
+        "背山面水",
+        "生土",
+        "榫卯结构"
+      ],
+      "structure_terms": [
+        "土木结构",
+        "三堂四横一围",
+        "三进院落",
+        "围屋",
+        "土石夯筑",
+        "木构架",
+        "合院布局",
+        "多进院落"
+      ],
+      "layout_terms": [
+        "多厅多井",
+        "坐南向北",
+        "背山面水",
+        "四横一围"
+      ],
+      "material_terms": [
+        "生土",
+        "木材"
+      ],
+      "craft_terms": [
+        "夯土墙",
+        "穿斗式",
+        "天井排水系统"
+      ],
+      "function_terms": [
+        "居住",
+        "书斋",
+        "花园",
+        "私人码头"
+      ]
+    },
+    {
+      "id": "2025",
+      "line_no": "2025",
+      "name": "永泰庄寨建筑群",
+      "building_type": "民居",
+      "province": "福建省",
+      "start_dynasty": "唐",
+      "century_num": 17,
+      "role": "member",
+      "hop": 3,
+      "score": 0.0322,
+      "shared_features": [
+        "干栏体系",
+        "背山面水",
+        "生土",
+        "榫卯结构"
+      ],
+      "structure_terms": [
+        "土木石结构",
+        "穿斗式",
+        "抬梁式",
+        "土石夯筑",
+        "合院布局"
+      ],
+      "layout_terms": [
+        "散点布局",
+        "山地台地布局",
+        "大型院落群"
+      ],
+      "material_terms": [
+        "生土",
+        "木材",
+        "石材"
+      ],
+      "craft_terms": [
+        "传统木作",
+        "夯土技术"
+      ],
+      "function_terms": [
+        "居住防御一体",
+        "防御性民居",
+        "乡土防御建筑"
+      ]
+    },
+    {
+      "id": "1613",
+      "line_no": "1613",
+      "name": "百宝寨岩屋",
+      "building_type": "民居",
+      "province": "湖北省",
+      "start_dynasty": "清",
+      "century_num": 17,
+      "role": "member",
+      "hop": 3,
+      "score": 0.0279,
+      "shared_features": [
+        "干栏体系",
+        "背山面水",
+        "生土",
+        "榫卯结构"
+      ],
+      "structure_terms": [
+        "岩洞结构",
+        "人工开凿结构",
+        "自然洞穴改建",
+        "土石夯筑"
+      ],
+      "layout_terms": [
+        "岩屋群布局",
+        "分散式布局",
+        "多点聚落"
+      ],
+      "material_terms": [
+        "岩石",
+        "生土"
+      ],
+      "craft_terms": [
+        "人工开凿",
+        "洞穴改建",
+        "岩壁雕凿"
+      ],
+      "function_terms": [
+        "防御功能",
+        "避难功能",
+        "宗教功能",
+        "生活功能"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "532",
+      "target": "1591",
+      "weight": 0.5207,
+      "reasons": [
+        "共享结构：干栏式、木结构、干栏体系",
+        "共享布局：依山而建、背山面水",
+        "共享材料：木材",
+        "共享技艺：榫卯结构",
+        "共享功能：居住",
+        "同属结构簇：抬梁合院型"
+      ],
+      "components": {
+        "structure_terms": 0.7754,
+        "layout_terms": 0.3036,
+        "material_terms": 0.2472,
+        "craft_terms": 0.1878,
+        "function_terms": 0.1049,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "500",
+      "target": "1620",
+      "weight": 0.4372,
+      "reasons": [
+        "共享结构：风雨桥、干栏体系、土石夯筑",
+        "共享布局：吊脚楼群",
+        "共享材料：生土、木材",
+        "共享技艺：干栏式营造、榫卯结构",
+        "同属材料主类：木材类",
+        "同属华中"
+      ],
+      "components": {
+        "structure_terms": 0.436,
+        "layout_terms": 0.1604,
+        "material_terms": 1.0,
+        "craft_terms": 1.0,
+        "function_terms": 0.0,
+        "structure_cluster": 0.0,
+        "material_cluster": 1.0,
+        "time": 0.1958,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1591",
+      "target": "1017",
+      "weight": 0.4213,
+      "reasons": [
+        "共享结构：干栏式、干栏体系、木构架",
+        "共享材料：木材",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.4331,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "532",
+      "target": "1017",
+      "weight": 0.4004,
+      "reasons": [
+        "共享结构：干栏式、吊脚楼、干栏体系",
+        "共享材料：木材",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同省：贵州省",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.6098,
+        "layout_terms": 0.0,
+        "material_terms": 0.2472,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "2105",
+      "target": "1620",
+      "weight": 0.3131,
+      "reasons": [
+        "共享结构：土石夯筑",
+        "共享材料：生土、木材",
+        "共享功能：居住",
+        "同属结构簇：合院穿斗民居型",
+        "同属材料主类：木材类",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.0649,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.163,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.5458,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "532",
+      "target": "1754",
+      "weight": 0.2899,
+      "reasons": [
+        "共享结构：吊脚楼、干栏体系",
+        "共享材料：木材",
+        "共享技艺：榫卯结构",
+        "同属结构簇：抬梁合院型",
+        "同省：贵州省",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.3398,
+        "layout_terms": 0.0,
+        "material_terms": 0.0668,
+        "craft_terms": 0.1878,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.2,
+        "time": 1.0,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "500",
+      "target": "1591",
+      "weight": 0.2845,
+      "reasons": [
+        "共享结构：干栏体系",
+        "共享材料：木材",
+        "共享技艺：榫卯结构",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同属华中"
+      ],
+      "components": {
+        "structure_terms": 0.1215,
+        "layout_terms": 0.0,
+        "material_terms": 0.3367,
+        "craft_terms": 0.1804,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1754",
+      "target": "1017",
+      "weight": 0.2718,
+      "reasons": [
+        "共享结构：吊脚楼、干栏体系",
+        "共享材料：木材",
+        "同属结构簇：抬梁合院型",
+        "同省：贵州省",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.3278,
+        "layout_terms": 0.0,
+        "material_terms": 0.0838,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.25,
+        "time": 1.0,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "2025",
+      "target": "1620",
+      "weight": 0.2679,
+      "reasons": [
+        "共享结构：土石夯筑",
+        "共享材料：生土、木材",
+        "同属结构簇：合院穿斗民居型",
+        "同属材料主类：木材类"
+      ],
+      "components": {
+        "structure_terms": 0.0968,
+        "layout_terms": 0.0,
+        "material_terms": 0.6233,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.65,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1620",
+      "target": "1662",
+      "weight": 0.2641,
+      "reasons": [
+        "共享结构：吊脚楼、干栏体系",
+        "共享材料：木材",
+        "同属华中",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.4592,
+        "layout_terms": 0.0,
+        "material_terms": 0.1126,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 0.6,
+        "material_cluster": 0.25,
+        "time": 1.0,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "532",
+      "target": "500",
+      "weight": 0.2549,
+      "reasons": [
+        "共享结构：干栏体系",
+        "共享材料：木材",
+        "共享技艺：榫卯结构",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.1075,
+        "layout_terms": 0.0,
+        "material_terms": 0.1663,
+        "craft_terms": 0.248,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "500",
+      "target": "1017",
+      "weight": 0.2498,
+      "reasons": [
+        "共享结构：干栏体系",
+        "共享材料：木材",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.105,
+        "layout_terms": 0.0,
+        "material_terms": 0.3367,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1754",
+      "target": "1591",
+      "weight": 0.2442,
+      "reasons": [
+        "共享结构：干栏体系",
+        "共享材料：木材",
+        "共享技艺：穿斗式、榫卯结构",
+        "同属结构簇：抬梁合院型",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.1643,
+        "layout_terms": 0.0,
+        "material_terms": 0.0838,
+        "craft_terms": 0.3819,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.25,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1620",
+      "target": "1613",
+      "weight": 0.2319,
+      "reasons": [
+        "共享结构：土石夯筑",
+        "共享材料：生土",
+        "同属结构簇：合院穿斗民居型",
+        "同省：湖北省",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.0817,
+        "layout_terms": 0.0,
+        "material_terms": 0.2979,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.3333,
+        "time": 1.0,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "1864",
+      "target": "1017",
+      "weight": 0.2288,
+      "reasons": [
+        "共享结构：城防单元、木构架",
+        "共享材料：木材",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：木材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.1385,
+        "layout_terms": 0.0,
+        "material_terms": 0.0838,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1754",
+      "target": "500",
+      "weight": 0.2219,
+      "reasons": [
+        "共享结构：干栏体系",
+        "共享材料：木材",
+        "共享技艺：榫卯结构",
+        "同属结构簇：抬梁合院型",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.1259,
+        "layout_terms": 0.0,
+        "material_terms": 0.072,
+        "craft_terms": 0.1804,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.5,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1754",
+      "target": "1662",
+      "weight": 0.2011,
+      "reasons": [
+        "共享结构：吊脚楼、干栏体系",
+        "共享材料：木材",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 0.5233,
+        "layout_terms": 0.0,
+        "material_terms": 0.0561,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 0.0,
+        "material_cluster": 1.0,
+        "time": 0.1958,
+        "region": 0.0
+      }
+    }
+  ]
+}

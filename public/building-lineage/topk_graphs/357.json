@@ -1,0 +1,146 @@
+{
+  "center_building": {
+    "line_no": "357",
+    "name": "大同九龙壁",
+    "building_type": "宫殿",
+    "start_dynasty": "明",
+    "century_num": 14,
+    "province": "山西省",
+    "region": "华北",
+    "address": "山西省大同市",
+    "start_time_confidence": 0.95,
+    "structure_terms": [
+      "须弥座",
+      "壁顶",
+      "壁体",
+      "中轴对称",
+      "高台基座"
+    ],
+    "layout_terms": [
+      "对称布局",
+      "临街设置"
+    ],
+    "material_terms": [
+      "琉璃",
+      "灰砖"
+    ],
+    "craft_terms": [
+      "浮雕",
+      "琉璃烧制",
+      "构图严谨"
+    ],
+    "function_terms": [
+      "照壁",
+      "装饰性临街建筑",
+      "彰显地位"
+    ],
+    "material_categories": [
+      "砖瓦类"
+    ],
+    "structure_cluster": "琉璃照壁型",
+    "structure_cluster_summary": "采用高台基座与中轴对称布局，由壁顶、壁体和须弥座三段构成，饰以琉璃构件，多设于宫殿或王府前作照壁。",
+    "material_primary_category": "砖瓦类",
+    "structure_evidence": "九龙壁东西长45.5米，高8米，厚2.02米，气势宏大。 || 龙壁分为壁顶、壁体、须弥座三个部分。 || 通常认为九龙壁是代王府裕门对面的照壁 || 1954年8月，由于筑路需要，当地政府将龙壁拆卸，并在原址南28米处把原件按原样拼接。 || 朱桂为此召来了怀仁县吴家窑的琉璃匠吴氏父子三人，限期一个月完成。 || 一些缺损的部分在迁建中使用灰砖补上。",
+    "semantic_terms": [
+      "须弥座",
+      "壁顶",
+      "壁体",
+      "中轴对称",
+      "高台基座",
+      "对称布局",
+      "临街设置",
+      "琉璃",
+      "灰砖",
+      "浮雕",
+      "琉璃烧制",
+      "构图严谨",
+      "照壁",
+      "装饰性临街建筑",
+      "彰显地位",
+      "砖瓦类"
+    ]
+  },
+  "lineage_id": "宫殿-L09",
+  "lineage_name": "山西-临街设置·须弥座-灰砖谱系",
+  "building_type": "宫殿",
+  "signature_features": {
+    "primary_structure": "须弥座",
+    "primary_layout": "临街设置",
+    "support_material": "灰砖",
+    "support_craft": "琉璃烧制",
+    "dominant_province": "山西",
+    "dominant_dynasty": "明",
+    "dominant_region": "华北"
+  },
+  "signature_summary": "以临街设置、须弥座为核心，辅以灰砖，在山西样本中形成稳定的营造共同体。",
+  "community_member_count": 1,
+  "nodes": [
+    {
+      "line_no": "357",
+      "name": "大同九龙壁",
+      "building_type": "宫殿",
+      "start_dynasty": "明",
+      "century_num": 14,
+      "province": "山西省",
+      "region": "华北",
+      "address": "山西省大同市",
+      "start_time_confidence": 0.95,
+      "structure_terms": [
+        "须弥座",
+        "壁顶",
+        "壁体",
+        "中轴对称",
+        "高台基座"
+      ],
+      "layout_terms": [
+        "对称布局",
+        "临街设置"
+      ],
+      "material_terms": [
+        "琉璃",
+        "灰砖"
+      ],
+      "craft_terms": [
+        "浮雕",
+        "琉璃烧制",
+        "构图严谨"
+      ],
+      "function_terms": [
+        "照壁",
+        "装饰性临街建筑",
+        "彰显地位"
+      ],
+      "material_categories": [
+        "砖瓦类"
+      ],
+      "structure_cluster": "琉璃照壁型",
+      "structure_cluster_summary": "采用高台基座与中轴对称布局，由壁顶、壁体和须弥座三段构成，饰以琉璃构件，多设于宫殿或王府前作照壁。",
+      "material_primary_category": "砖瓦类",
+      "structure_evidence": "九龙壁东西长45.5米，高8米，厚2.02米，气势宏大。 || 龙壁分为壁顶、壁体、须弥座三个部分。 || 通常认为九龙壁是代王府裕门对面的照壁 || 1954年8月，由于筑路需要，当地政府将龙壁拆卸，并在原址南28米处把原件按原样拼接。 || 朱桂为此召来了怀仁县吴家窑的琉璃匠吴氏父子三人，限期一个月完成。 || 一些缺损的部分在迁建中使用灰砖补上。",
+      "semantic_terms": [
+        "须弥座",
+        "壁顶",
+        "壁体",
+        "中轴对称",
+        "高台基座",
+        "对称布局",
+        "临街设置",
+        "琉璃",
+        "灰砖",
+        "浮雕",
+        "琉璃烧制",
+        "构图严谨",
+        "照壁",
+        "装饰性临街建筑",
+        "彰显地位",
+        "砖瓦类"
+      ],
+      "id": "357",
+      "role": "center",
+      "hop": 0,
+      "score": 1.0,
+      "shared_features": []
+    }
+  ],
+  "edges": []
+}

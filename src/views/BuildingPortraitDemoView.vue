@@ -80,7 +80,7 @@
             </div>
 
             <div class="network-panel__legend">
-              <span v-for="item in relationLegend" :key="item.key" class="network-panel__legend-item">
+              <span v-for="item in relationLegendItems" :key="item.key" class="network-panel__legend-item">
                 <i :style="{ backgroundColor: item.color }"></i>
                 {{ item.label }}
               </span>
@@ -146,6 +146,67 @@ interface WeightedItem {
   value: number;
 }
 
+interface LineageIndexEntry {
+  line_no: string;
+  name: string;
+  building_type: BuildingCategory;
+  province: string;
+  start_dynasty: string;
+  lineage_id: string;
+  lineage_name: string;
+  graph_file: string;
+}
+
+interface LineageManifest {
+  building_count?: number;
+  lineage_count?: number;
+  parameters?: {
+    mutual_k?: number;
+    min_weight?: number;
+    resolution?: number;
+  };
+}
+
+interface LineageGraphNode {
+  id: string;
+  line_no: string;
+  name: string;
+  building_type: BuildingCategory;
+  province: string;
+  start_dynasty: string;
+  century_num?: number;
+  role?: 'center' | 'bridge' | 'member';
+  hop: number;
+  score: number;
+  shared_features?: string[];
+}
+
+interface LineageGraphEdge {
+  source: string;
+  target: string;
+  weight: number;
+  reasons?: string[];
+  primary?: boolean;
+}
+
+interface LineageGraph {
+  center_building?: {
+    line_no: string;
+    name: string;
+    building_type: BuildingCategory;
+    start_dynasty: string;
+    century_num?: number;
+    province: string;
+  };
+  lineage_id: string;
+  lineage_name: string;
+  building_type: BuildingCategory;
+  signature_summary?: string;
+  community_member_count: number;
+  nodes: LineageGraphNode[];
+  edges: LineageGraphEdge[];
+}
+
 const buildings = rawBuildings as BuildingRecord[];
 
 const pieChartRef = ref<HTMLDivElement | null>(null);
@@ -161,8 +222,14 @@ const chartRefs: Record<ChartKey, Ref<HTMLDivElement | null>> = {
 };
 
 const chartInstances = new Map<ChartKey, echarts.EChartsType>();
+const lineageGraphCache = new Map<string, LineageGraph>();
+const reducedMotion = typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 
 const searchText = ref('故宫');
+const lineageManifest = ref<LineageManifest | null>(null);
+const lineageIndex = ref<LineageIndexEntry[]>([]);
+const activeLineageGraph = ref<LineageGraph | null>(null);
+const lineageLoading = ref(false);
 
 const defaultBuilding =
   buildings.find((item) => item.name === '故宫') ??
@@ -189,7 +256,16 @@ const relationLegend = [
   { key: 'category', label: '同类别', color: '#c49362' },
 ] as const satisfies ReadonlyArray<{ key: RelationKey; label: string; color: string }>;
 
+const lineageLegend = [
+  { key: 'center', label: '中心建筑', color: '#d87c7c' },
+  { key: 'hop1', label: '一跳节点', color: '#919e8b' },
+  { key: 'hop2', label: '二跳节点', color: '#d7ab82' },
+  { key: 'bridge', label: '桥接节点', color: '#724e58' },
+  { key: 'hop3', label: '外缘节点', color: '#6e7074' },
+] as const;
+
 const relationColorMap = Object.fromEntries(relationLegend.map((item) => [item.key, item.color])) as Record<RelationKey, string>;
+const lineageRoleColorMap = Object.fromEntries(lineageLegend.map((item) => [item.key, item.color])) as Record<string, string>;
 
 const featurePresets: Record<BuildingCategory, Array<{ label: string; base: number; keywords: string[] }>> = {
   民居: [
@@ -297,6 +373,67 @@ const cleanProvince = (value: string) =>
 
 const cleanCity = (value: string) => value.replace(/市|地区|自治州|自治县|盟/g, '').trim();
 
+const lineageBaseUrl = `${import.meta.env.BASE_URL}building-lineage`;
+
+const normalizeLookupText = (value: string) =>
+  value
+    .replace(/\s+/g, '')
+    .replace(/[·•・\-—()（）《》「」『』、，。,.：:]/g, '')
+    .replace(/遗址|旧址|景区|风景名胜区|全国重点文物保护单位/g, '')
+    .trim()
+    .toLowerCase();
+
+const fetchLineageJson = async <T>(path: string) => {
+  const response = await fetch(`${lineageBaseUrl}/${path}`, { cache: 'force-cache' });
+  if (!response.ok) {
+    throw new Error(`加载谱系图失败：${path}`);
+  }
+
+  return (await response.json()) as T;
+};
+
+const buildLineageIndexScore = (entry: LineageIndexEntry, building: BuildingRecord) => {
+  const buildingName = normalizeLookupText(building.name);
+  const entryName = normalizeLookupText(entry.name);
+  const buildingProvince = normalizeLookupText(cleanProvince(building.province));
+  const entryProvince = normalizeLookupText(cleanProvince(entry.province));
+  const buildingDynasty = normalizeLookupText(building.dynasty);
+  const entryDynasty = normalizeLookupText(entry.start_dynasty);
+
+  let score = 0;
+
+  if (entryName === buildingName) score += 1200;
+  if (entryName.includes(buildingName) || buildingName.includes(entryName)) score += 520 - Math.abs(entryName.length - buildingName.length) * 12;
+  if (entry.building_type === building.category) score += 180;
+  if (entryProvince === buildingProvince) score += 80;
+  if (entryProvince.includes(buildingProvince) || buildingProvince.includes(entryProvince)) score += 32;
+  if (entryDynasty === buildingDynasty) score += 64;
+  if (`${entry.lineage_name}|${entry.name}`.includes(building.structureType)) score += 24;
+
+  return score;
+};
+
+const resolveLineageIndexEntry = (building: BuildingRecord) => {
+  if (lineageIndex.value.length === 0) return null;
+
+  const ranked = lineageIndex.value
+    .map((entry) => ({ entry, score: buildLineageIndexScore(entry, building) }))
+    .filter((item) => item.score > 0)
+    .sort((left, right) => right.score - left.score || left.entry.name.length - right.entry.name.length);
+
+  return ranked[0]?.entry ?? null;
+};
+
+const resolveBuildingFromLineageEntry = (entry: LineageIndexEntry) => {
+  const targetName = normalizeLookupText(entry.name);
+  const exactMatch = buildings.find(
+    (item) => item.category === entry.building_type && normalizeLookupText(item.name) === targetName,
+  );
+
+  if (exactMatch) return exactMatch;
+  return findBestMatch(entry.name);
+};
+
 const levelBonusMap: Record<string, number> = {
   国保: 18,
   省保: 12,
@@ -375,6 +512,65 @@ const findBestMatch = (keyword: string) => {
     .sort((left, right) => right.score - left.score || right.item.importance - left.item.importance || left.item.year - right.item.year);
 
   return ranked[0]?.item ?? null;
+};
+
+const loadLineageGraph = async (lineNo: string) => {
+  if (lineageGraphCache.has(lineNo)) {
+    return lineageGraphCache.get(lineNo)!;
+  }
+
+  const graph = await fetchLineageJson<LineageGraph>(`topk_graphs/${encodeURIComponent(lineNo)}.json`);
+  lineageGraphCache.set(lineNo, graph);
+  return graph;
+};
+
+let lineageRequestId = 0;
+
+const syncLineageGraph = async (building: BuildingRecord) => {
+  if (lineageIndex.value.length === 0) {
+    activeLineageGraph.value = null;
+    return;
+  }
+
+  const matchedEntry = resolveLineageIndexEntry(building);
+  if (!matchedEntry) {
+    activeLineageGraph.value = null;
+    return;
+  }
+
+  const requestId = ++lineageRequestId;
+  lineageLoading.value = true;
+
+  try {
+    const graph = await loadLineageGraph(matchedEntry.line_no);
+    if (requestId !== lineageRequestId) return;
+    activeLineageGraph.value = graph;
+  } catch (error) {
+    if (requestId !== lineageRequestId) return;
+    console.error('failed to load lineage graph', error);
+    activeLineageGraph.value = null;
+  } finally {
+    if (requestId === lineageRequestId) {
+      lineageLoading.value = false;
+    }
+  }
+};
+
+const loadLineageResources = async () => {
+  try {
+    const [manifest, index] = await Promise.all([
+      fetchLineageJson<LineageManifest>('lineage_manifest.json'),
+      fetchLineageJson<LineageIndexEntry[]>('building_index.json'),
+    ]);
+    lineageManifest.value = manifest;
+    lineageIndex.value = index;
+    await syncLineageGraph(selectedBuilding.value);
+  } catch (error) {
+    console.error('failed to initialize lineage resources', error);
+    lineageManifest.value = null;
+    lineageIndex.value = [];
+    activeLineageGraph.value = null;
+  }
 };
 
 const buildRelationPool = (target: BuildingRecord) => {
@@ -468,6 +664,8 @@ const buildRelationPool = (target: BuildingRecord) => {
 };
 
 const relatedBuildings = computed(() => buildRelationPool(selectedBuilding.value));
+const activeLineageEntry = computed(() => resolveLineageIndexEntry(selectedBuilding.value));
+const relationLegendItems = computed(() => (activeLineageGraph.value ? lineageLegend : relationLegend));
 
 const selectedCover = computed(
   () => resolvePublicImageUrl(buildingImageMap[selectedBuilding.value.id]) || coverAssets[resolveCoverFile(selectedBuilding.value)] || '',
@@ -592,10 +790,21 @@ const wordCloudMeta = computed(() => `${wordCloudData.value.length} 个关键词
 
 const radarMeta = computed(() => `${selectedBuilding.value.level} · 权重 ${selectedBuilding.value.importance}/5`);
 
-const networkSubtitle = computed(
-  () =>
-    `围绕“${selectedBuilding.value.structureType}”与 ${selectedBuilding.value.category}、${selectedBuilding.value.dynasty} 语境，收束 ${relatedBuildings.value.length} 个关联样本。`,
-);
+const networkSubtitle = computed(() => {
+  if (lineageLoading.value) {
+    return '正在加载 stage10 建筑谱系图...';
+  }
+
+  if (activeLineageGraph.value && activeLineageEntry.value) {
+    return `谱系：${activeLineageGraph.value.lineage_name} · 社区成员 ${activeLineageGraph.value.community_member_count} · 子图节点 ${activeLineageGraph.value.nodes.length}`;
+  }
+
+  if (lineageManifest.value && lineageIndex.value.length > 0) {
+    return '当前建筑未命中谱系子图，已回退为结构/地域/时代关联网络';
+  }
+
+  return `围绕“${selectedBuilding.value.structureType}”与 ${selectedBuilding.value.category}、${selectedBuilding.value.dynasty} 语境，收束 ${relatedBuildings.value.length} 个关联样本。`;
+});
 
 const truncateLabel = (value: string, length: number) => (value.length > length ? `${value.slice(0, length)}…` : value);
 
@@ -779,9 +988,351 @@ const renderRadarChart = () => {
   );
 };
 
+const escapeTooltipHtml = (value: string) =>
+  String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+
+const detectLineageEntityKind = (name: string) =>
+  /古建筑群|建筑群|古村落|聚落|宅群|故居群|民居群|大院|村落|村$|寨$/.test(name) ? 'collection' : 'single';
+
+const getLineageRoleKey = (node: LineageGraphNode) => {
+  if (node.role === 'center') return 'center';
+  if (node.role === 'bridge') return 'bridge';
+  if (node.hop === 1) return 'hop1';
+  if (node.hop === 2) return 'hop2';
+  return 'hop3';
+};
+
+const lineageRoleLabel = (node: LineageGraphNode) => {
+  const roleKey = getLineageRoleKey(node);
+  return lineageLegend.find((item) => item.key === roleKey)?.label ?? '谱系节点';
+};
+
+const wrapLineageLabel = (text: string, max: number) => {
+  if (text.length <= max) return text;
+
+  const parts: string[] = [];
+  for (let index = 0; index < text.length; index += max) {
+    parts.push(text.slice(index, index + max));
+  }
+
+  return parts.join('\n');
+};
+
+const arcAngles = (count: number, startDeg: number, endDeg: number) => {
+  if (count <= 0) return [];
+  if (count === 1) return [(startDeg + endDeg) / 2];
+  const step = (endDeg - startDeg) / count;
+  return Array.from({ length: count }, (_value, index) => startDeg + step * index + step / 2);
+};
+
+const lineageEdgeKey = (edge: Pick<LineageGraphEdge, 'source' | 'target'>) =>
+  [String(edge.source), String(edge.target)].sort().join('::');
+
+const filterLineageEdges = (graph: LineageGraph) => {
+  const edges = graph.edges ?? [];
+  if (edges.length === 0) return [] as LineageGraphEdge[];
+
+  const centerId = String(graph.center_building?.line_no ?? '');
+  const nodeById = new Map((graph.nodes ?? []).map((node) => [String(node.id), node]));
+  const selected: LineageGraphEdge[] = [];
+  const selectedKeys = new Set<string>();
+  const primaryKeys = new Set<string>();
+
+  const priority = (edge: LineageGraphEdge) => {
+    const sourceNode = nodeById.get(String(edge.source));
+    const targetNode = nodeById.get(String(edge.target));
+    let score = Number(edge.weight || 0);
+
+    if (String(edge.source) === centerId || String(edge.target) === centerId) score += 0.9;
+    if (sourceNode?.role === 'bridge' || targetNode?.role === 'bridge') score += 0.18;
+    if (typeof sourceNode?.hop === 'number' && typeof targetNode?.hop === 'number') {
+      score += Math.max(0, 0.14 - Math.abs(sourceNode.hop - targetNode.hop) * 0.04);
+    }
+
+    return score;
+  };
+
+  const pushEdge = (edge: LineageGraphEdge | undefined, primary: boolean) => {
+    if (!edge) return;
+    const key = lineageEdgeKey(edge);
+    if (selectedKeys.has(key)) {
+      if (primary) primaryKeys.add(key);
+      return;
+    }
+
+    selectedKeys.add(key);
+    if (primary) primaryKeys.add(key);
+    selected.push(edge);
+  };
+
+  const orderedNodes = (graph.nodes ?? [])
+    .filter((node) => node.role !== 'center')
+    .sort((left, right) => left.hop - right.hop || right.score - left.score || left.name.localeCompare(right.name, 'zh-CN'));
+
+  orderedNodes.forEach((node) => {
+    const best = edges
+      .filter((edge) => String(edge.source) === String(node.id) || String(edge.target) === String(node.id))
+      .sort((left, right) => priority(right) - priority(left))
+      .find((edge) => {
+        const otherId = String(edge.source) === String(node.id) ? String(edge.target) : String(edge.source);
+        const other = nodeById.get(otherId);
+        if (otherId === centerId) return true;
+        if (!other) return false;
+        return other.role === 'bridge' || other.hop < node.hop;
+      })
+      ?? edges
+        .filter((edge) => String(edge.source) === String(node.id) || String(edge.target) === String(node.id))
+        .sort((left, right) => priority(right) - priority(left))[0];
+
+    pushEdge(best, true);
+  });
+
+  const supportBudget = orderedNodes.length <= 4 ? 1 : orderedNodes.length <= 8 ? 2 : 4;
+  edges
+    .filter((edge) => !selectedKeys.has(lineageEdgeKey(edge)) && Number(edge.weight || 0) >= 0.28)
+    .sort((left, right) => priority(right) - priority(left))
+    .slice(0, supportBudget)
+    .forEach((edge) => pushEdge(edge, false));
+
+  return selected.map((edge) => ({ ...edge, primary: primaryKeys.has(lineageEdgeKey(edge)) }));
+};
+
+const polarPoint = (centerX: number, centerY: number, radiusX: number, radiusY: number, angle: number) => {
+  const rad = (angle * Math.PI) / 180;
+  return {
+    x: centerX + Math.cos(rad) * radiusX,
+    y: centerY + Math.sin(rad) * radiusY,
+  };
+};
+
+const buildLineageInitialLayout = (graph: LineageGraph) => {
+  const width = Math.max(graphChartRef.value?.clientWidth ?? 0, 520);
+  const height = Math.max(graphChartRef.value?.clientHeight ?? 0, 520);
+  const centerX = width * 0.5;
+  const centerY = height * 0.52;
+  const positions = new Map<string, { x: number; y: number }>();
+  const centerId = String(graph.center_building?.line_no ?? '');
+  const nodeCount = graph.nodes.length;
+  const compact = nodeCount <= 4 ? 0.74 : nodeCount <= 8 ? 0.88 : 1;
+
+  positions.set(centerId, { x: centerX, y: centerY });
+
+  const buckets = [
+    { nodes: graph.nodes.filter((node) => node.role === 'bridge'), radiusX: 70 * compact, radiusY: 58 * compact, start: -120, end: 120 },
+    { nodes: graph.nodes.filter((node) => node.role !== 'center' && node.role !== 'bridge' && node.hop === 1), radiusX: 110 * compact, radiusY: 88 * compact, start: -158, end: 158 },
+    { nodes: graph.nodes.filter((node) => node.role !== 'center' && node.role !== 'bridge' && node.hop === 2), radiusX: 152 * compact, radiusY: 120 * compact, start: -176, end: 176 },
+    { nodes: graph.nodes.filter((node) => node.role !== 'center' && node.role !== 'bridge' && node.hop >= 3), radiusX: 196 * compact, radiusY: 154 * compact, start: -180, end: 180 },
+  ];
+
+  buckets.forEach((bucket) => {
+    const ordered = bucket.nodes
+      .slice()
+      .sort((left, right) => right.score - left.score || left.name.localeCompare(right.name, 'zh-CN'));
+    const angles = ordered.length <= 3
+      ? Array.from({ length: ordered.length }, (_value, index) => -90 + (360 / Math.max(ordered.length, 1)) * index)
+      : arcAngles(ordered.length, bucket.start, bucket.end);
+
+    ordered.forEach((node, index) => {
+      const point = polarPoint(centerX, centerY, bucket.radiusX, bucket.radiusY, angles[index] ?? -90);
+      positions.set(String(node.id), {
+        x: point.x + (index % 2 === 0 ? -6 : 6),
+        y: point.y + ((index % 3) - 1) * 4,
+      });
+    });
+  });
+
+  return {
+    positions,
+    width,
+    height,
+    centerX,
+    centerY,
+    zoom: nodeCount <= 4 ? 1.22 : nodeCount <= 8 ? 1.1 : 1,
+  };
+};
+
+const buildLineageForceConfig = (nodeCount: number) => {
+  if (nodeCount <= 4) {
+    return { repulsion: 88, edgeLength: [34, 66], gravity: 0.22, friction: 0.18, layoutAnimation: !reducedMotion };
+  }
+
+  if (nodeCount <= 8) {
+    return { repulsion: 116, edgeLength: [44, 84], gravity: 0.18, friction: 0.16, layoutAnimation: !reducedMotion };
+  }
+
+  return { repulsion: 148, edgeLength: [56, 112], gravity: 0.13, friction: 0.14, layoutAnimation: !reducedMotion };
+};
+
+const buildLineageGraphOption = (graph: LineageGraph): echarts.EChartsCoreOption => {
+  const visibleEdges = filterLineageEdges(graph);
+  const layout = buildLineageInitialLayout(graph);
+  const forceConfig = buildLineageForceConfig(graph.nodes.length);
+
+  const nodes = graph.nodes.map((node) => {
+    const roleKey = getLineageRoleKey(node);
+    const baseColor = lineageRoleColorMap[roleKey] ?? '#8f7b68';
+    const entityKind = detectLineageEntityKind(node.name);
+    const isCenter = node.role === 'center';
+    const isCollection = entityKind === 'collection';
+    const position = layout.positions.get(String(node.id)) ?? { x: layout.centerX, y: layout.centerY };
+    const symbolSize = isCenter
+      ? [152, 48]
+      : isCollection
+        ? [Math.min(148, 82 + node.name.length * 10), 36 + Math.max(0, wrapLineageLabel(node.name, 8).split('\n').length - 1) * 14]
+        : Math.round(18 + Math.min(12, Math.max(0, Number(node.score || 0) * 14)));
+
+    return {
+      id: String(node.id),
+      name: node.name,
+      x: position.x,
+      y: position.y,
+      fixed: isCenter,
+      symbol: isCenter || isCollection ? 'roundRect' : 'circle',
+      symbolSize,
+      value: Number(node.score || 0),
+      itemStyle: {
+        color: isCenter ? '#e6c3c9' : isCollection ? withAlpha(baseColor, 0.24) : baseColor,
+        borderWidth: 0,
+        shadowBlur: isCenter ? 16 : 10,
+        shadowColor: isCenter ? 'rgba(72, 54, 54, 0.18)' : 'rgba(0, 0, 0, 0.14)',
+        shadowOffsetX: 2,
+        shadowOffsetY: 2,
+      },
+      label: {
+        show: true,
+        position: isCenter || isCollection ? 'inside' : 'bottom',
+        distance: isCenter || isCollection ? 0 : 8,
+        formatter: isCenter ? wrapLineageLabel(node.name, 10) : isCollection ? wrapLineageLabel(node.name, 8) : wrapLineageLabel(node.name, 7),
+        color: '#3b3028',
+        fontFamily: 'ContentFont, serif',
+        fontWeight: 'bold',
+        fontSize: isCenter ? 16 : 13,
+        lineHeight: 16,
+        textBorderColor: isCenter || isCollection ? 'transparent' : 'rgba(254, 248, 239, 0.96)',
+        textBorderWidth: isCenter || isCollection ? 0 : 4,
+      },
+      raw: node,
+    };
+  });
+
+  const links = visibleEdges.map((edge, index) => {
+    const isPrimary = Boolean(edge.primary);
+    const sign = index % 2 === 0 ? 1 : -1;
+    return {
+      source: String(edge.source),
+      target: String(edge.target),
+      value: Number(edge.weight || 0),
+      lineStyle: {
+        width: isPrimary ? 1.3 + Number(edge.weight || 0) * 3.4 : 0.8 + Number(edge.weight || 0) * 1.3,
+        color: isPrimary ? 'rgba(146, 142, 130, 0.72)' : 'rgba(146, 142, 130, 0.28)',
+        opacity: isPrimary ? 0.78 : 0.26,
+        curveness: isPrimary ? 0.08 * sign : 0.18 * sign,
+      },
+      raw: edge,
+    };
+  });
+
+  return {
+    backgroundColor: 'transparent',
+    animationDuration: reducedMotion ? 0 : 420,
+    animationDurationUpdate: reducedMotion ? 0 : 1200,
+    animationEasing: 'cubicOut',
+    animationEasingUpdate: 'quinticInOut',
+    tooltip: {
+      backgroundColor: 'rgba(248, 242, 232, 0.98)',
+      borderColor: 'rgba(151, 117, 93, 0.22)',
+      borderWidth: 1,
+      textStyle: {
+        color: '#4f3b2f',
+        fontFamily: 'ContentFont',
+        fontSize: 13,
+        fontWeight: 'bold',
+      },
+      formatter: (params: { dataType: 'node' | 'edge'; data: any }) => {
+        if (params.dataType === 'edge') {
+          const edge = params.data.raw as LineageGraphEdge;
+          const reasons = (edge.reasons ?? []).map((item) => escapeTooltipHtml(item)).join('<br/>');
+          return `<div><strong>边权</strong> ${Number(edge.weight || 0).toFixed(3)}<br/>${reasons || '暂无边解释'}</div>`;
+        }
+
+        const node = params.data.raw as LineageGraphNode;
+        const shared = (node.shared_features ?? []).map((item) => escapeTooltipHtml(item)).join('、');
+        return `
+          <div>
+            <strong>${escapeTooltipHtml(node.name)}</strong><br/>
+            ${escapeTooltipHtml(lineageRoleLabel(node))} · ${escapeTooltipHtml(node.building_type)}<br/>
+            score ${Number(node.score || 0).toFixed(3)}<br/>
+            ${escapeTooltipHtml(cleanProvince(node.province))} · ${escapeTooltipHtml(node.start_dynasty)}<br/>
+            ${shared ? `共享特征：${shared}` : '共享特征：待补充'}
+          </div>
+        `;
+      },
+    },
+    series: [
+      {
+        type: 'graph',
+        top: '10%',
+        right: '6%',
+        bottom: '10%',
+        left: '6%',
+        layout: 'force',
+        force: forceConfig,
+        data: nodes,
+        links,
+        roam: true,
+        draggable: true,
+        focusNodeAdjacency: true,
+        autoCurveness: true,
+        edgeSymbol: ['none', 'none'],
+        zoom: layout.zoom,
+        scaleLimit: {
+          min: 0.55,
+          max: 1.9,
+        },
+        labelLayout: {
+          hideOverlap: true,
+        },
+        lineStyle: {
+          opacity: 0.58,
+        },
+      },
+    ],
+  };
+};
+
+const handleLineageNodeClick = (params: { dataType?: string; data?: { id?: string } }) => {
+  if (params.dataType !== 'node') return;
+
+  const nextId = params.data?.id;
+  if (!nextId) return;
+
+  const matchedEntry = lineageIndex.value.find((item) => item.line_no === String(nextId));
+  if (!matchedEntry) return;
+
+  const nextBuilding = resolveBuildingFromLineageEntry(matchedEntry);
+  if (!nextBuilding || nextBuilding.id === selectedBuilding.value.id) return;
+
+  selectedBuilding.value = nextBuilding;
+  searchText.value = nextBuilding.name;
+};
+
 const renderGraphChart = () => {
   const chart = chartInstances.get('graph');
   if (!chart) return;
+
+  if (activeLineageGraph.value) {
+    chart.off('click');
+    chart.on('click', handleLineageNodeClick);
+    chart.setOption(buildLineageGraphOption(activeLineageGraph.value), { notMerge: true });
+    return;
+  }
+
+  chart.off('click');
 
   const coreNode = {
     id: selectedBuilding.value.id,
@@ -980,8 +1531,20 @@ const handleSearch = () => {
 watch(
   selectedBuilding,
   () => {
+    activeLineageGraph.value = null;
     nextTick(() => {
       renderAllCharts();
+      void syncLineageGraph(selectedBuilding.value);
+    });
+  },
+  { flush: 'post' },
+);
+
+watch(
+  activeLineageGraph,
+  () => {
+    nextTick(() => {
+      renderGraphChart();
     });
   },
   { flush: 'post' },
@@ -995,6 +1558,7 @@ onMounted(() => {
   });
 
   window.addEventListener('resize', handleResize);
+  void loadLineageResources();
 });
 
 onBeforeUnmount(() => {

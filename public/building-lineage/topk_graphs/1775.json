@@ -1,0 +1,1299 @@
+{
+  "center_building": {
+    "line_no": "1775",
+    "name": "沘江古桥梁群",
+    "building_type": "桥梁",
+    "start_dynasty": "明",
+    "century_num": 17,
+    "province": "云南省",
+    "region": "西南",
+    "address": "云南省大理白族自治州云龙县",
+    "start_time_confidence": 0.96,
+    "structure_terms": [
+      "木梁桥",
+      "浮桥",
+      "拱桥",
+      "吊桥",
+      "风雨桥",
+      "廊桥体系",
+      "拱桥体系",
+      "梁桥体系",
+      "浮桥体系",
+      "木材主导",
+      "铁件加固",
+      "单孔单跨"
+    ],
+    "layout_terms": [
+      "桥亭",
+      "木板遮挡",
+      "廊道式布局"
+    ],
+    "material_terms": [
+      "木材",
+      "藤绳",
+      "铁链",
+      "木枋"
+    ],
+    "craft_terms": [
+      "木枋交错架叠",
+      "挑梁衔接",
+      "藤绳编织",
+      "瓦顶覆盖"
+    ],
+    "function_terms": [
+      "交通通行",
+      "行人歇息",
+      "文化遗产保护"
+    ],
+    "material_categories": [
+      "木材类",
+      "金属类",
+      "其他材料"
+    ],
+    "structure_cluster": "木拱廊桥型",
+    "structure_cluster_summary": "以木材为主构单孔拱架，上覆廊屋，集通行、遮蔽与祭祀功能于一体。",
+    "material_primary_category": "木材类",
+    "structure_evidence": "涵盖“梁、浮、拱、吊”四大基本类型 || 现存37座典型古桥，涵盖浮、梁、吊、拱四大类型 || 通京桥（清乾隆年间建，单孔跨径最大木梁风雨桥） || 桥身两侧设木板遮挡 || 东桥亭内保存有清乾隆四十七年（1782年）云龙州官告示碑 || 全木质桥体，采用木枋交错架叠",
+    "semantic_terms": [
+      "木梁桥",
+      "浮桥",
+      "拱桥",
+      "吊桥",
+      "风雨桥",
+      "廊桥体系",
+      "拱桥体系",
+      "梁桥体系",
+      "浮桥体系",
+      "木材主导",
+      "铁件加固",
+      "单孔单跨",
+      "桥亭",
+      "木板遮挡",
+      "廊道式布局",
+      "木材",
+      "藤绳",
+      "铁链",
+      "木枋",
+      "木枋交错架叠",
+      "挑梁衔接",
+      "藤绳编织",
+      "瓦顶覆盖",
+      "交通通行",
+      "行人歇息",
+      "文化遗产保护",
+      "木材类",
+      "金属类",
+      "其他材料"
+    ]
+  },
+  "lineage_id": "桥梁-L03",
+  "lineage_name": "清-九间廊屋·木材主导-木构谱系",
+  "building_type": "桥梁",
+  "signature_features": {
+    "primary_structure": "木材主导",
+    "primary_layout": "九间廊屋",
+    "support_material": "木构",
+    "support_craft": "榫卯结构",
+    "dominant_province": "湖南",
+    "dominant_dynasty": "清",
+    "dominant_region": "华东"
+  },
+  "signature_summary": "以九间廊屋、木材主导为核心，辅以木构，在清样本中形成稳定的营造共同体。",
+  "community_member_count": 16,
+  "nodes": [
+    {
+      "id": "1775",
+      "line_no": "1775",
+      "name": "沘江古桥梁群",
+      "building_type": "桥梁",
+      "province": "云南省",
+      "start_dynasty": "明",
+      "century_num": 17,
+      "role": "center",
+      "hop": 0,
+      "score": 1.0,
+      "shared_features": [],
+      "structure_terms": [
+        "木梁桥",
+        "浮桥",
+        "拱桥",
+        "吊桥",
+        "风雨桥",
+        "廊桥体系",
+        "拱桥体系",
+        "梁桥体系",
+        "浮桥体系",
+        "木材主导",
+        "铁件加固",
+        "单孔单跨"
+      ],
+      "layout_terms": [
+        "桥亭",
+        "木板遮挡",
+        "廊道式布局"
+      ],
+      "material_terms": [
+        "木材",
+        "藤绳",
+        "铁链",
+        "木枋"
+      ],
+      "craft_terms": [
+        "木枋交错架叠",
+        "挑梁衔接",
+        "藤绳编织",
+        "瓦顶覆盖"
+      ],
+      "function_terms": [
+        "交通通行",
+        "行人歇息",
+        "文化遗产保护"
+      ]
+    },
+    {
+      "id": "428",
+      "line_no": "428",
+      "name": "如龙桥",
+      "building_type": "桥梁",
+      "province": "浙江省",
+      "start_dynasty": "明",
+      "century_num": 17,
+      "role": "member",
+      "hop": 1,
+      "score": 0.5843,
+      "shared_features": [
+        "廊桥体系",
+        "单孔单跨",
+        "木材",
+        "交通通行",
+        "木材主导",
+        "九间廊屋"
+      ],
+      "structure_terms": [
+        "木拱廊桥",
+        "单孔木拱",
+        "廊屋结构",
+        "廊桥体系",
+        "木材主导",
+        "单孔单跨"
+      ],
+      "layout_terms": [
+        "九间廊屋",
+        "南北走向",
+        "横跨溪流"
+      ],
+      "material_terms": [
+        "木材",
+        "木构"
+      ],
+      "craft_terms": [
+        "宋代遗风",
+        "木拱架设技艺"
+      ],
+      "function_terms": [
+        "交通通行",
+        "休憩遮蔽",
+        "亭台楼阁复合功能"
+      ]
+    },
+    {
+      "id": "2017",
+      "line_no": "2017",
+      "name": "建瓯值庆桥",
+      "building_type": "桥梁",
+      "province": "福建省",
+      "start_dynasty": "明",
+      "century_num": 15,
+      "role": "member",
+      "hop": 1,
+      "score": 0.5086,
+      "shared_features": [
+        "廊桥体系",
+        "木材主导",
+        "木材",
+        "九间廊屋",
+        "木构",
+        "榫卯结构"
+      ],
+      "structure_terms": [
+        "伸臂叠梁",
+        "廊桥结构",
+        "廊桥体系",
+        "木材主导"
+      ],
+      "layout_terms": [
+        "三神龛布局",
+        "廊屋式平面"
+      ],
+      "material_terms": [
+        "木材",
+        "木构"
+      ],
+      "craft_terms": [
+        "彩绘",
+        "明代题记"
+      ],
+      "function_terms": [
+        "神龛",
+        "祭祀空间"
+      ]
+    },
+    {
+      "id": "1679",
+      "line_no": "1679",
+      "name": "富川瑶族风雨桥群",
+      "building_type": "桥梁",
+      "province": "广西壮族自治区",
+      "start_dynasty": "明",
+      "century_num": 16,
+      "role": "member",
+      "hop": 1,
+      "score": 0.4577,
+      "shared_features": [
+        "廊桥体系",
+        "木材主导",
+        "木材",
+        "交通通行",
+        "九间廊屋",
+        "木构"
+      ],
+      "structure_terms": [
+        "石拱木构",
+        "廊屋亭阁一体",
+        "廊桥体系",
+        "木材主导",
+        "石材主导"
+      ],
+      "layout_terms": [
+        "廊屋亭阁一体",
+        "跨河布局"
+      ],
+      "material_terms": [
+        "石材",
+        "木材"
+      ],
+      "craft_terms": [
+        "石拱砌筑",
+        "榫卯结构",
+        "廊亭一体营造"
+      ],
+      "function_terms": [
+        "遮风挡雨",
+        "交通通行",
+        "景观点缀"
+      ]
+    },
+    {
+      "id": "878",
+      "line_no": "878",
+      "name": "闽东北廊桥",
+      "building_type": "桥梁",
+      "province": "福建省",
+      "start_dynasty": "清",
+      "century_num": 18,
+      "role": "member",
+      "hop": 2,
+      "score": 0.3278,
+      "shared_features": [
+        "木材主导",
+        "九间廊屋",
+        "木构",
+        "榫卯结构"
+      ],
+      "structure_terms": [
+        "木拱廊桥",
+        "单孔跨度",
+        "廊桥体系",
+        "木材主导",
+        "单孔单跨"
+      ],
+      "layout_terms": [
+        "廊屋式布局",
+        "桥上廊道"
+      ],
+      "material_terms": [
+        "木材",
+        "木构"
+      ],
+      "craft_terms": [
+        "木拱营造技艺",
+        "浙闽廊桥工艺"
+      ],
+      "function_terms": [
+        "交通桥梁",
+        "人文空间"
+      ]
+    },
+    {
+      "id": "1655",
+      "line_no": "1655",
+      "name": "兵书阁与文星桥",
+      "building_type": "桥梁",
+      "province": "湖南省",
+      "start_dynasty": "清",
+      "century_num": 17,
+      "role": "member",
+      "hop": 2,
+      "score": 0.2491,
+      "shared_features": [
+        "木材主导",
+        "九间廊屋",
+        "木构",
+        "榫卯结构"
+      ],
+      "structure_terms": [
+        "木构架",
+        "穿斗式",
+        "木材主导",
+        "石材主导"
+      ],
+      "layout_terms": [
+        "轴线对称",
+        "院落组合"
+      ],
+      "material_terms": [
+        "石材",
+        "木材"
+      ],
+      "craft_terms": [
+        "榫卯结构",
+        "雕花装饰"
+      ],
+      "function_terms": [
+        "交通枢纽",
+        "历史文化名城"
+      ]
+    },
+    {
+      "id": "843",
+      "line_no": "843",
+      "name": "泰顺廊桥",
+      "building_type": "桥梁",
+      "province": "浙江省",
+      "start_dynasty": "唐",
+      "century_num": 17,
+      "role": "member",
+      "hop": 2,
+      "score": 0.1901,
+      "shared_features": [
+        "木材主导",
+        "九间廊屋",
+        "木构",
+        "榫卯结构"
+      ],
+      "structure_terms": [
+        "木拱廊桥",
+        "八字形拱架",
+        "三折边",
+        "五折边",
+        "剪刀撑",
+        "廊桥体系",
+        "木材主导",
+        "石材主导",
+        "单孔单跨"
+      ],
+      "layout_terms": [
+        "集中分布",
+        "廊桥文化园",
+        "廊桥博物园"
+      ],
+      "material_terms": [
+        "木材",
+        "木拱结构",
+        "廊屋"
+      ],
+      "craft_terms": [
+        "木拱桥传统营造技艺",
+        "编木拱技艺",
+        "非遗营造工艺"
+      ],
+      "function_terms": [
+        "交通桥梁",
+        "遮风挡雨",
+        "休憩场所",
+        "信仰场所",
+        "商贸交流"
+      ]
+    },
+    {
+      "id": "1661",
+      "line_no": "1661",
+      "name": "安化风雨桥",
+      "building_type": "桥梁",
+      "province": "湖南省",
+      "start_dynasty": "清",
+      "century_num": 17,
+      "role": "member",
+      "hop": 3,
+      "score": 0.2083,
+      "shared_features": [
+        "木材主导",
+        "九间廊屋",
+        "木构",
+        "榫卯结构"
+      ],
+      "structure_terms": [
+        "木构廊桥",
+        "抬梁式",
+        "廊桥体系",
+        "木材主导",
+        "石材主导",
+        "砖材参与"
+      ],
+      "layout_terms": [
+        "分散布局",
+        "跨水设桥"
+      ],
+      "material_terms": [
+        "木材",
+        "砖石"
+      ],
+      "craft_terms": [
+        "榫卯结构",
+        "穿斗式"
+      ],
+      "function_terms": [
+        "交通连接",
+        "遮风避雨",
+        "村落节点"
+      ]
+    },
+    {
+      "id": "1517",
+      "line_no": "1517",
+      "name": "永镇桥",
+      "building_type": "桥梁",
+      "province": "江西省",
+      "start_dynasty": "清",
+      "century_num": 17,
+      "role": "member",
+      "hop": 3,
+      "score": 0.1689,
+      "shared_features": [
+        "木材主导",
+        "九间廊屋",
+        "木构",
+        "榫卯结构"
+      ],
+      "structure_terms": [
+        "石墩木梁悬臂式廊桥",
+        "三孔二墩二台",
+        "悬臂梁结构",
+        "廊桥体系",
+        "木材主导",
+        "石材主导",
+        "多孔多跨"
+      ],
+      "layout_terms": [
+        "长廊叠梁式屋架",
+        "九间廊屋"
+      ],
+      "material_terms": [
+        "花岗岩条石",
+        "石灰砂浆",
+        "杉条木"
+      ],
+      "craft_terms": [
+        "悬臂梁叠建",
+        "疏排法",
+        "密排法",
+        "纵横交错叠梁"
+      ],
+      "function_terms": [
+        "桥梁演变实物资料"
+      ]
+    },
+    {
+      "id": "534",
+      "line_no": "534",
+      "name": "地坪风雨桥",
+      "building_type": "桥梁",
+      "province": "贵州省",
+      "start_dynasty": "清",
+      "century_num": 19,
+      "role": "member",
+      "hop": 3,
+      "score": 0.1614,
+      "shared_features": [
+        "木材主导",
+        "九间廊屋",
+        "木构",
+        "榫卯结构"
+      ],
+      "structure_terms": [
+        "悬臂梁结构",
+        "木梁桥",
+        "廊桥体系",
+        "梁桥体系",
+        "木材主导",
+        "分水桥墩"
+      ],
+      "layout_terms": [
+        "三阁楼布局",
+        "廊道连接",
+        "攒尖顶中阁",
+        "歇山顶端阁"
+      ],
+      "material_terms": [
+        "木材"
+      ],
+      "craft_terms": [
+        "悬臂梁承托",
+        "木构架"
+      ],
+      "function_terms": [
+        "廊桥",
+        "休憩设施"
+      ]
+    },
+    {
+      "id": "510",
+      "line_no": "510",
+      "name": "岜团桥",
+      "building_type": "桥梁",
+      "province": "广西壮族自治区",
+      "start_dynasty": "清",
+      "century_num": 19,
+      "role": "member",
+      "hop": 3,
+      "score": 0.1467,
+      "shared_features": [
+        "木材主导",
+        "九间廊屋",
+        "木构",
+        "榫卯结构"
+      ],
+      "structure_terms": [
+        "双层木桥",
+        "二台一墩",
+        "两孔三亭",
+        "歇山顶",
+        "木材主导",
+        "石材主导",
+        "分水桥墩"
+      ],
+      "layout_terms": [
+        "三座桥楼",
+        "双层廊道",
+        "歇山顶布局"
+      ],
+      "material_terms": [
+        "木材",
+        "石料"
+      ],
+      "craft_terms": [
+        "侗族建桥技艺",
+        "传统木构营造"
+      ],
+      "function_terms": [
+        "人畜分道",
+        "侗族立交桥",
+        "双层功能分工"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "428",
+      "target": "2017",
+      "weight": 0.3404,
+      "reasons": [
+        "共享结构：廊桥体系、木材主导",
+        "共享材料：木构、木材",
+        "同属结构簇：木拱廊桥型",
+        "同属材料主类：木材类",
+        "同属华东",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.1526,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.6421,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "428",
+      "target": "878",
+      "weight": 0.3108,
+      "reasons": [
+        "共享结构：木拱廊桥、廊桥体系、单孔单跨",
+        "共享材料：木构、木材",
+        "同属材料主类：木材类",
+        "同属华东"
+      ],
+      "components": {
+        "structure_terms": 0.4335,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 0.0,
+        "material_cluster": 1.0,
+        "time": 0.4357,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1655",
+      "target": "1661",
+      "weight": 0.2948,
+      "reasons": [
+        "共享结构：木材主导、石材主导",
+        "共享材料：木材",
+        "共享技艺：榫卯结构",
+        "同属结构簇：廊桥体系型",
+        "同属材料主类：木材类",
+        "同省：湖南省"
+      ],
+      "components": {
+        "structure_terms": 0.1137,
+        "layout_terms": 0.0,
+        "material_terms": 0.3164,
+        "craft_terms": 0.2502,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "843",
+      "target": "878",
+      "weight": 0.2809,
+      "reasons": [
+        "共享结构：木拱廊桥、廊桥体系、单孔单跨",
+        "共享材料：木材",
+        "共享功能：交通桥梁",
+        "同属结构簇：廊桥体系型",
+        "同属材料主类：木材类",
+        "同属华东"
+      ],
+      "components": {
+        "structure_terms": 0.3052,
+        "layout_terms": 0.0,
+        "material_terms": 0.155,
+        "craft_terms": 0.0,
+        "function_terms": 0.0931,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.4357,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "534",
+      "target": "878",
+      "weight": 0.2602,
+      "reasons": [
+        "共享结构：廊桥体系、木材主导",
+        "共享材料：木材",
+        "同属结构簇：廊桥体系型",
+        "同属材料主类：木材类",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.1543,
+        "layout_terms": 0.0,
+        "material_terms": 0.3796,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "534",
+      "target": "1661",
+      "weight": 0.2562,
+      "reasons": [
+        "共享结构：廊桥体系、木材主导",
+        "共享材料：木材",
+        "同属结构簇：廊桥体系型",
+        "同属材料主类：木材类",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.1457,
+        "layout_terms": 0.0,
+        "material_terms": 0.4143,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.6421,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "510",
+      "target": "534",
+      "weight": 0.2553,
+      "reasons": [
+        "共享结构：分水桥墩、木材主导",
+        "共享材料：木材",
+        "同属结构簇：廊桥体系型",
+        "同属材料主类：木材类",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.113,
+        "layout_terms": 0.0,
+        "material_terms": 0.3639,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "534",
+      "target": "1655",
+      "weight": 0.2533,
+      "reasons": [
+        "共享结构：木材主导",
+        "共享材料：木材",
+        "同属结构簇：廊桥体系型",
+        "同属材料主类：木材类",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.0674,
+        "layout_terms": 0.0,
+        "material_terms": 0.5724,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.6421,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1517",
+      "target": "534",
+      "weight": 0.2468,
+      "reasons": [
+        "共享结构：悬臂梁结构、廊桥体系、木材主导",
+        "同属结构簇：廊桥体系型",
+        "同属材料主类：木材类",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.2895,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.6421,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "878",
+      "target": "1661",
+      "weight": 0.2459,
+      "reasons": [
+        "共享结构：廊桥体系、木材主导",
+        "共享材料：木材",
+        "同属结构簇：廊桥体系型",
+        "同属材料主类：木材类",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.1601,
+        "layout_terms": 0.0,
+        "material_terms": 0.247,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1775",
+      "target": "428",
+      "weight": 0.2409,
+      "reasons": [
+        "共享结构：廊桥体系、单孔单跨、木材主导",
+        "共享材料：木材",
+        "共享功能：交通通行",
+        "同属结构簇：木拱廊桥型",
+        "同属材料主类：木材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.1264,
+        "layout_terms": 0.0,
+        "material_terms": 0.122,
+        "craft_terms": 0.0,
+        "function_terms": 0.136,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "428",
+      "target": "1679",
+      "weight": 0.2392,
+      "reasons": [
+        "共享结构：廊桥体系、木材主导",
+        "共享材料：木材",
+        "共享功能：交通通行",
+        "同属结构簇：木拱廊桥型",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.1473,
+        "layout_terms": 0.0,
+        "material_terms": 0.2957,
+        "craft_terms": 0.0,
+        "function_terms": 0.1385,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.5,
+        "time": 0.7857,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "2017",
+      "target": "1679",
+      "weight": 0.2388,
+      "reasons": [
+        "共享结构：廊桥体系、木材主导",
+        "共享材料：木材",
+        "同属结构簇：木拱廊桥型",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.1852,
+        "layout_terms": 0.0,
+        "material_terms": 0.2957,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.5,
+        "time": 0.7857,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "2017",
+      "target": "878",
+      "weight": 0.2386,
+      "reasons": [
+        "共享结构：廊桥体系、木材主导",
+        "共享材料：木构、木材",
+        "同属材料主类：木材类",
+        "同省：福建省"
+      ],
+      "components": {
+        "structure_terms": 0.1814,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 0.0,
+        "material_cluster": 1.0,
+        "time": 0.1958,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "1655",
+      "target": "1679",
+      "weight": 0.2315,
+      "reasons": [
+        "共享结构：木材主导、石材主导",
+        "共享材料：木材、石材",
+        "共享技艺：榫卯结构"
+      ],
+      "components": {
+        "structure_terms": 0.1245,
+        "layout_terms": 0.0,
+        "material_terms": 1.0,
+        "craft_terms": 0.1919,
+        "function_terms": 0.0,
+        "structure_cluster": 0.0,
+        "material_cluster": 1.0,
+        "time": 0.4357,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "878",
+      "target": "1655",
+      "weight": 0.2279,
+      "reasons": [
+        "共享结构：木材主导",
+        "共享材料：木材",
+        "同属结构簇：廊桥体系型",
+        "同属材料主类：木材类",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.0749,
+        "layout_terms": 0.0,
+        "material_terms": 0.2957,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1517",
+      "target": "1661",
+      "weight": 0.2278,
+      "reasons": [
+        "共享结构：廊桥体系、木材主导、石材主导",
+        "同属结构簇：廊桥体系型",
+        "同属材料主类：木材类",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.1707,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "510",
+      "target": "1655",
+      "weight": 0.2251,
+      "reasons": [
+        "共享结构：木材主导、石材主导",
+        "共享材料：木材",
+        "同属结构簇：廊桥体系型",
+        "同属材料主类：木材类",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.0897,
+        "layout_terms": 0.0,
+        "material_terms": 0.2861,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.6421,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1517",
+      "target": "878",
+      "weight": 0.223,
+      "reasons": [
+        "共享结构：廊桥体系、木材主导",
+        "同属结构簇：廊桥体系型",
+        "同属材料主类：木材类",
+        "同属华东",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.1412,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "843",
+      "target": "1661",
+      "weight": 0.2222,
+      "reasons": [
+        "共享结构：廊桥体系、木材主导、石材主导",
+        "共享材料：木材",
+        "同属结构簇：廊桥体系型",
+        "同属材料主类：木材类"
+      ],
+      "components": {
+        "structure_terms": 0.1318,
+        "layout_terms": 0.0,
+        "material_terms": 0.1605,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.65,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "510",
+      "target": "1661",
+      "weight": 0.216,
+      "reasons": [
+        "共享结构：木材主导、石材主导",
+        "共享材料：木材",
+        "同属结构簇：廊桥体系型",
+        "同属材料主类：木材类",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.0768,
+        "layout_terms": 0.0,
+        "material_terms": 0.2403,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.6421,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "510",
+      "target": "878",
+      "weight": 0.2128,
+      "reasons": [
+        "共享结构：木材主导",
+        "共享材料：木材",
+        "同属结构簇：廊桥体系型",
+        "同属材料主类：木材类",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.0501,
+        "layout_terms": 0.0,
+        "material_terms": 0.2282,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1517",
+      "target": "843",
+      "weight": 0.2119,
+      "reasons": [
+        "共享结构：廊桥体系、木材主导、石材主导",
+        "同属结构簇：廊桥体系型",
+        "同属材料主类：木材类",
+        "同属华东"
+      ],
+      "components": {
+        "structure_terms": 0.121,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.65,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "843",
+      "target": "1655",
+      "weight": 0.2086,
+      "reasons": [
+        "共享结构：木材主导、石材主导",
+        "共享材料：木材",
+        "同属结构簇：廊桥体系型",
+        "同属材料主类：木材类"
+      ],
+      "components": {
+        "structure_terms": 0.075,
+        "layout_terms": 0.0,
+        "material_terms": 0.1798,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.65,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1517",
+      "target": "1655",
+      "weight": 0.2078,
+      "reasons": [
+        "共享结构：木材主导、石材主导",
+        "同属结构簇：廊桥体系型",
+        "同属材料主类：木材类",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.0993,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1775",
+      "target": "2017",
+      "weight": 0.2059,
+      "reasons": [
+        "共享结构：廊桥体系、木材主导",
+        "共享材料：木材",
+        "同属结构簇：木拱廊桥型",
+        "同属材料主类：木材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.0912,
+        "layout_terms": 0.0,
+        "material_terms": 0.122,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.6421,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "843",
+      "target": "534",
+      "weight": 0.2051,
+      "reasons": [
+        "共享结构：廊桥体系、木材主导",
+        "共享材料：木材",
+        "同属结构簇：廊桥体系型",
+        "同属材料主类：木材类"
+      ],
+      "components": {
+        "structure_terms": 0.1016,
+        "layout_terms": 0.0,
+        "material_terms": 0.2077,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.2921,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1775",
+      "target": "1679",
+      "weight": 0.1939,
+      "reasons": [
+        "共享结构：廊桥体系、木材主导",
+        "共享材料：木材",
+        "共享功能：交通通行",
+        "同属结构簇：木拱廊桥型",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.0893,
+        "layout_terms": 0.0,
+        "material_terms": 0.1368,
+        "craft_terms": 0.0,
+        "function_terms": 0.1385,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.25,
+        "time": 0.7857,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "510",
+      "target": "843",
+      "weight": 0.1859,
+      "reasons": [
+        "共享结构：木材主导、石材主导",
+        "共享材料：木材",
+        "同属结构簇：廊桥体系型",
+        "同属材料主类：木材类"
+      ],
+      "components": {
+        "structure_terms": 0.0569,
+        "layout_terms": 0.0,
+        "material_terms": 0.1524,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.2921,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1517",
+      "target": "510",
+      "weight": 0.1853,
+      "reasons": [
+        "共享结构：木材主导、石材主导",
+        "同属结构簇：廊桥体系型",
+        "同属材料主类：木材类",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.0699,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.6421,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "428",
+      "target": "843",
+      "weight": 0.18,
+      "reasons": [
+        "共享结构：木拱廊桥、廊桥体系、单孔单跨",
+        "共享材料：木材",
+        "同属材料主类：木材类",
+        "同省：浙江省"
+      ],
+      "components": {
+        "structure_terms": 0.2694,
+        "layout_terms": 0.0,
+        "material_terms": 0.155,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 0.0,
+        "material_cluster": 1.0,
+        "time": 0.65,
+        "region": 1.0
+      }
+    }
+  ]
+}

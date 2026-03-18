@@ -1,0 +1,4102 @@
+[
+  {
+    "line_no": "275",
+    "name": "䌽衣堂",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L03",
+    "lineage_name": "明-合院布局·木构架-青砖谱系",
+    "graph_file": "topk_graphs/275.json"
+  },
+  {
+    "line_no": "140",
+    "name": "丁村民宅",
+    "building_type": "民居",
+    "province": "山西省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L04",
+    "lineage_name": "明-围院结构·砖石混合-砖雕谱系",
+    "graph_file": "topk_graphs/140.json"
+  },
+  {
+    "line_no": "312",
+    "name": "丁氏故宅",
+    "building_type": "民居",
+    "province": "山东省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/312.json"
+  },
+  {
+    "line_no": "1399",
+    "name": "七家厅",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L04",
+    "lineage_name": "明-围院结构·砖石混合-砖雕谱系",
+    "graph_file": "topk_graphs/1399.json"
+  },
+  {
+    "line_no": "1428",
+    "name": "三门源叶氏民居",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L05",
+    "lineage_name": "清-围院结构·合院布局-生土谱系",
+    "graph_file": "topk_graphs/1428.json"
+  },
+  {
+    "line_no": "1449",
+    "name": "上庄古建筑群",
+    "building_type": "民居",
+    "province": "安徽省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L04",
+    "lineage_name": "明-围院结构·砖石混合-砖雕谱系",
+    "graph_file": "topk_graphs/1449.json"
+  },
+  {
+    "line_no": "862",
+    "name": "世太史第",
+    "building_type": "民居",
+    "province": "安徽省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L02",
+    "lineage_name": "明-中轴对称·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/862.json"
+  },
+  {
+    "line_no": "293",
+    "name": "丘浚故居及墓",
+    "building_type": "民居",
+    "province": "海南省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L02",
+    "lineage_name": "明-中轴对称·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/293.json"
+  },
+  {
+    "line_no": "503",
+    "name": "东华里古建筑群",
+    "building_type": "民居",
+    "province": "广东省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/503.json"
+  },
+  {
+    "line_no": "813",
+    "name": "东山民居",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L03",
+    "lineage_name": "明-合院布局·木构架-青砖谱系",
+    "graph_file": "topk_graphs/813.json"
+  },
+  {
+    "line_no": "1527",
+    "name": "东生围",
+    "building_type": "民居",
+    "province": "江西省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L05",
+    "lineage_name": "清-围院结构·合院布局-生土谱系",
+    "graph_file": "topk_graphs/1527.json"
+  },
+  {
+    "line_no": "142",
+    "name": "东阳卢宅",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "宋",
+    "lineage_id": "民居-L03",
+    "lineage_name": "明-合院布局·木构架-青砖谱系",
+    "graph_file": "topk_graphs/142.json"
+  },
+  {
+    "line_no": "1989",
+    "name": "东阳白坦民宅",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L07",
+    "lineage_name": "清-多进院落·合院布局-木雕谱系",
+    "graph_file": "topk_graphs/1989.json"
+  },
+  {
+    "line_no": "151",
+    "name": "个园",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L09",
+    "lineage_name": "江苏-西宅东园·合院布局-假山石谱系",
+    "graph_file": "topk_graphs/151.json"
+  },
+  {
+    "line_no": "2078",
+    "name": "中田村古建筑群",
+    "building_type": "民居",
+    "province": "湖南省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L02",
+    "lineage_name": "明-中轴对称·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/2078.json"
+  },
+  {
+    "line_no": "394",
+    "name": "乔家大院",
+    "building_type": "民居",
+    "province": "山西省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L07",
+    "lineage_name": "清-多进院落·合院布局-木雕谱系",
+    "graph_file": "topk_graphs/394.json"
+  },
+  {
+    "line_no": "1483",
+    "name": "九头马民居",
+    "building_type": "民居",
+    "province": "福建省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L05",
+    "lineage_name": "清-围院结构·合院布局-生土谱系",
+    "graph_file": "topk_graphs/1483.json"
+  },
+  {
+    "line_no": "1705",
+    "name": "乡城夯土碉楼",
+    "building_type": "民居",
+    "province": "四川省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L02",
+    "lineage_name": "明-中轴对称·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1705.json"
+  },
+  {
+    "line_no": "310",
+    "name": "二宜楼",
+    "building_type": "民居",
+    "province": "福建省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L05",
+    "lineage_name": "清-围院结构·合院布局-生土谱系",
+    "graph_file": "topk_graphs/310.json"
+  },
+  {
+    "line_no": "1946",
+    "name": "于成龙故居",
+    "building_type": "民居",
+    "province": "山西省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L04",
+    "lineage_name": "明-围院结构·砖石混合-砖雕谱系",
+    "graph_file": "topk_graphs/1946.json"
+  },
+  {
+    "line_no": "2125",
+    "name": "井研雷氏民居",
+    "building_type": "民居",
+    "province": "四川省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/2125.json"
+  },
+  {
+    "line_no": "1484",
+    "name": "亭店杨氏民居",
+    "building_type": "民居",
+    "province": "福建省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L05",
+    "lineage_name": "清-围院结构·合院布局-生土谱系",
+    "graph_file": "topk_graphs/1484.json"
+  },
+  {
+    "line_no": "2010",
+    "name": "休宁同安堂",
+    "building_type": "民居",
+    "province": "安徽省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L07",
+    "lineage_name": "清-多进院落·合院布局-木雕谱系",
+    "graph_file": "topk_graphs/2010.json"
+  },
+  {
+    "line_no": "150",
+    "name": "何园",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L07",
+    "lineage_name": "清-多进院落·合院布局-木雕谱系",
+    "graph_file": "topk_graphs/150.json"
+  },
+  {
+    "line_no": "1415",
+    "name": "余庆堂",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L02",
+    "lineage_name": "明-中轴对称·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1415.json"
+  },
+  {
+    "line_no": "1864",
+    "name": "保安古屯田寨堡古建筑群",
+    "building_type": "民居",
+    "province": "青海省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L08",
+    "lineage_name": "明-背山面水·干栏体系-生土谱系",
+    "graph_file": "topk_graphs/1864.json"
+  },
+  {
+    "line_no": "467",
+    "name": "关西新围、燕翼围",
+    "building_type": "民居",
+    "province": "江西省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L05",
+    "lineage_name": "清-围院结构·合院布局-生土谱系",
+    "graph_file": "topk_graphs/467.json"
+  },
+  {
+    "line_no": "1492",
+    "name": "凤岐吴氏大宅",
+    "building_type": "民居",
+    "province": "福建省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L05",
+    "lineage_name": "清-围院结构·合院布局-生土谱系",
+    "graph_file": "topk_graphs/1492.json"
+  },
+  {
+    "line_no": "148",
+    "name": "十笏园",
+    "building_type": "民居",
+    "province": "山东省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L06",
+    "lineage_name": "清-围院结构·砖石混合-生土谱系",
+    "graph_file": "topk_graphs/148.json"
+  },
+  {
+    "line_no": "2036",
+    "name": "十都王家大屋",
+    "building_type": "民居",
+    "province": "江西省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/2036.json"
+  },
+  {
+    "line_no": "1486",
+    "name": "南安中宪第",
+    "building_type": "民居",
+    "province": "福建省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L06",
+    "lineage_name": "清-围院结构·砖石混合-生土谱系",
+    "graph_file": "topk_graphs/1486.json"
+  },
+  {
+    "line_no": "1485",
+    "name": "南安林氏民居",
+    "building_type": "民居",
+    "province": "福建省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L05",
+    "lineage_name": "清-围院结构·合院布局-生土谱系",
+    "graph_file": "topk_graphs/1485.json"
+  },
+  {
+    "line_no": "855",
+    "name": "南屏村古建筑群",
+    "building_type": "民居",
+    "province": "安徽省",
+    "start_dynasty": "宋",
+    "lineage_id": "民居-L03",
+    "lineage_name": "明-合院布局·木构架-青砖谱系",
+    "graph_file": "topk_graphs/855.json"
+  },
+  {
+    "line_no": "2075",
+    "name": "南边民居",
+    "building_type": "民居",
+    "province": "湖北省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/2075.json"
+  },
+  {
+    "line_no": "1375",
+    "name": "卢氏盐商住宅",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L09",
+    "lineage_name": "江苏-西宅东园·合院布局-假山石谱系",
+    "graph_file": "topk_graphs/1375.json"
+  },
+  {
+    "line_no": "1364",
+    "name": "卫道观前潘宅",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1364.json"
+  },
+  {
+    "line_no": "1979",
+    "name": "厚吴村古建筑群",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "宋",
+    "lineage_id": "民居-L03",
+    "lineage_name": "明-合院布局·木构架-青砖谱系",
+    "graph_file": "topk_graphs/1979.json"
+  },
+  {
+    "line_no": "328",
+    "name": "可园",
+    "building_type": "民居",
+    "province": "北京市",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/328.json"
+  },
+  {
+    "line_no": "2147",
+    "name": "同乐傈僳族民居建筑群",
+    "building_type": "民居",
+    "province": "云南省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/2147.json"
+  },
+  {
+    "line_no": "1067",
+    "name": "吴堡石城",
+    "building_type": "民居",
+    "province": "陕西省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L04",
+    "lineage_name": "明-围院结构·砖石混合-砖雕谱系",
+    "graph_file": "topk_graphs/1067.json"
+  },
+  {
+    "line_no": "819",
+    "name": "吴氏宅第",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/819.json"
+  },
+  {
+    "line_no": "536",
+    "name": "喜洲白族古建筑群",
+    "building_type": "民居",
+    "province": "云南省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L02",
+    "lineage_name": "明-中轴对称·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/536.json"
+  },
+  {
+    "line_no": "2023",
+    "name": "坂埔古厝",
+    "building_type": "民居",
+    "province": "福建省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/2023.json"
+  },
+  {
+    "line_no": "322",
+    "name": "夕佳山民居",
+    "building_type": "民居",
+    "province": "四川省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L02",
+    "lineage_name": "明-中轴对称·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/322.json"
+  },
+  {
+    "line_no": "2105",
+    "name": "大埔光禄第",
+    "building_type": "民居",
+    "province": "广东省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L08",
+    "lineage_name": "明-背山面水·干栏体系-生土谱系",
+    "graph_file": "topk_graphs/2105.json"
+  },
+  {
+    "line_no": "2102",
+    "name": "大埔泰安楼",
+    "building_type": "民居",
+    "province": "广东省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L05",
+    "lineage_name": "清-围院结构·合院布局-生土谱系",
+    "graph_file": "topk_graphs/2102.json"
+  },
+  {
+    "line_no": "492",
+    "name": "大水井古建筑群",
+    "building_type": "民居",
+    "province": "湖北省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L06",
+    "lineage_name": "清-围院结构·砖石混合-生土谱系",
+    "graph_file": "topk_graphs/492.json"
+  },
+  {
+    "line_no": "1476",
+    "name": "大田土堡群",
+    "building_type": "民居",
+    "province": "福建省",
+    "start_dynasty": "宋",
+    "lineage_id": "民居-L05",
+    "lineage_name": "清-围院结构·合院布局-生土谱系",
+    "graph_file": "topk_graphs/1476.json"
+  },
+  {
+    "line_no": "1678",
+    "name": "大芦村古建筑群",
+    "building_type": "民居",
+    "province": "广西壮族自治区",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L02",
+    "lineage_name": "明-中轴对称·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1678.json"
+  },
+  {
+    "line_no": "2037",
+    "name": "奎璧联辉民宅",
+    "building_type": "民居",
+    "province": "江西省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/2037.json"
+  },
+  {
+    "line_no": "1077",
+    "name": "姜氏庄园",
+    "building_type": "民居",
+    "province": "陕西省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L02",
+    "lineage_name": "明-中轴对称·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1077.json"
+  },
+  {
+    "line_no": "253",
+    "name": "姬氏民居",
+    "building_type": "民居",
+    "province": "山西省",
+    "start_dynasty": "元",
+    "lineage_id": "民居-L16",
+    "lineage_name": "山西-面阔三间·三柱式-砂岩谱系",
+    "graph_file": "topk_graphs/253.json"
+  },
+  {
+    "line_no": "2018",
+    "name": "安溪土楼",
+    "building_type": "民居",
+    "province": "福建省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L02",
+    "lineage_name": "明-中轴对称·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/2018.json"
+  },
+  {
+    "line_no": "457",
+    "name": "安贞堡",
+    "building_type": "民居",
+    "province": "福建省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L05",
+    "lineage_name": "清-围院结构·合院布局-生土谱系",
+    "graph_file": "topk_graphs/457.json"
+  },
+  {
+    "line_no": "452",
+    "name": "宏村古建筑群",
+    "building_type": "民居",
+    "province": "安徽省",
+    "start_dynasty": "宋",
+    "lineage_id": "民居-L10",
+    "lineage_name": "江苏-内园紧凑·多进院落-砖瓦谱系",
+    "graph_file": "topk_graphs/452.json"
+  },
+  {
+    "line_no": "1030",
+    "name": "宝山石头城",
+    "building_type": "民居",
+    "province": "云南省",
+    "start_dynasty": "元",
+    "lineage_id": "民居-L11",
+    "lineage_name": "云南-石上村落·山地石构-石头谱系",
+    "graph_file": "topk_graphs/1030.json"
+  },
+  {
+    "line_no": "1012",
+    "name": "宝箴塞",
+    "building_type": "民居",
+    "province": "四川省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1012.json"
+  },
+  {
+    "line_no": "2092",
+    "name": "宝镜何家大院",
+    "building_type": "民居",
+    "province": "湖南省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/2092.json"
+  },
+  {
+    "line_no": "1591",
+    "name": "寨卜昌村古建筑群",
+    "building_type": "民居",
+    "province": "河南省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L08",
+    "lineage_name": "明-背山面水·干栏体系-生土谱系",
+    "graph_file": "topk_graphs/1591.json"
+  },
+  {
+    "line_no": "1017",
+    "name": "寨英村古建筑群",
+    "building_type": "民居",
+    "province": "贵州省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L08",
+    "lineage_name": "明-背山面水·干栏体系-生土谱系",
+    "graph_file": "topk_graphs/1017.json"
+  },
+  {
+    "line_no": "1404",
+    "name": "寺平村乡土建筑",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L04",
+    "lineage_name": "明-围院结构·砖石混合-砖雕谱系",
+    "graph_file": "topk_graphs/1404.json"
+  },
+  {
+    "line_no": "1738",
+    "name": "寿安陈家大院",
+    "building_type": "民居",
+    "province": "四川省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1738.json"
+  },
+  {
+    "line_no": "821",
+    "name": "小盘谷",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/821.json"
+  },
+  {
+    "line_no": "2126",
+    "name": "屏山龙氏山庄",
+    "building_type": "民居",
+    "province": "四川省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L06",
+    "lineage_name": "清-围院结构·砖石混合-生土谱系",
+    "graph_file": "topk_graphs/2126.json"
+  },
+  {
+    "line_no": "847",
+    "name": "崇仁村建筑群",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "宋",
+    "lineage_id": "民居-L03",
+    "lineage_name": "明-合院布局·木构架-青砖谱系",
+    "graph_file": "topk_graphs/847.json"
+  },
+  {
+    "line_no": "144",
+    "name": "崇礼住宅",
+    "building_type": "民居",
+    "province": "北京市",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L06",
+    "lineage_name": "清-围院结构·砖石混合-生土谱系",
+    "graph_file": "topk_graphs/144.json"
+  },
+  {
+    "line_no": "2004",
+    "name": "巴慰祖宅",
+    "building_type": "民居",
+    "province": "安徽省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L04",
+    "lineage_name": "明-围院结构·砖石混合-砖雕谱系",
+    "graph_file": "topk_graphs/2004.json"
+  },
+  {
+    "line_no": "817",
+    "name": "师俭堂",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L07",
+    "lineage_name": "清-多进院落·合院布局-木雕谱系",
+    "graph_file": "topk_graphs/817.json"
+  },
+  {
+    "line_no": "766",
+    "name": "师家沟古建筑群",
+    "building_type": "民居",
+    "province": "山西省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L05",
+    "lineage_name": "清-围院结构·合院布局-生土谱系",
+    "graph_file": "topk_graphs/766.json"
+  },
+  {
+    "line_no": "1963",
+    "name": "常州唐氏民宅",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L03",
+    "lineage_name": "明-合院布局·木构架-青砖谱系",
+    "graph_file": "topk_graphs/1963.json"
+  },
+  {
+    "line_no": "472",
+    "name": "康百万庄园",
+    "building_type": "民居",
+    "province": "河南省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/472.json"
+  },
+  {
+    "line_no": "1784",
+    "name": "建水朱家花园",
+    "building_type": "民居",
+    "province": "云南省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L06",
+    "lineage_name": "清-围院结构·砖石混合-生土谱系",
+    "graph_file": "topk_graphs/1784.json"
+  },
+  {
+    "line_no": "812",
+    "name": "张溥宅第",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L02",
+    "lineage_name": "明-中轴对称·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/812.json"
+  },
+  {
+    "line_no": "499",
+    "name": "张谷英村古建筑群",
+    "building_type": "民居",
+    "province": "湖南省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L04",
+    "lineage_name": "明-围院结构·砖石混合-砖雕谱系",
+    "graph_file": "topk_graphs/499.json"
+  },
+  {
+    "line_no": "1620",
+    "name": "彭家寨古建筑群",
+    "building_type": "民居",
+    "province": "湖北省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L08",
+    "lineage_name": "明-背山面水·干栏体系-生土谱系",
+    "graph_file": "topk_graphs/1620.json"
+  },
+  {
+    "line_no": "415",
+    "name": "徐霞客故居及晴山堂石刻",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L04",
+    "lineage_name": "明-围院结构·砖石混合-砖雕谱系",
+    "graph_file": "topk_graphs/415.json"
+  },
+  {
+    "line_no": "806",
+    "name": "户部山古建筑群",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L05",
+    "lineage_name": "清-围院结构·合院布局-生土谱系",
+    "graph_file": "topk_graphs/806.json"
+  },
+  {
+    "line_no": "1793",
+    "name": "拉让宁巴",
+    "building_type": "民居",
+    "province": "西藏自治区",
+    "start_dynasty": "唐",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1793.json"
+  },
+  {
+    "line_no": "1800",
+    "name": "拉鲁颇章",
+    "building_type": "民居",
+    "province": "西藏自治区",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L07",
+    "lineage_name": "清-多进院落·合院布局-木雕谱系",
+    "graph_file": "topk_graphs/1800.json"
+  },
+  {
+    "line_no": "1367",
+    "name": "敬业堂",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L07",
+    "lineage_name": "清-多进院落·合院布局-木雕谱系",
+    "graph_file": "topk_graphs/1367.json"
+  },
+  {
+    "line_no": "441",
+    "name": "斯氏古民居建筑群",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "唐",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/441.json"
+  },
+  {
+    "line_no": "1357",
+    "name": "日涉园",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L12",
+    "lineage_name": "江苏-前后两园·歇山顶-石笋谱系",
+    "graph_file": "topk_graphs/1357.json"
+  },
+  {
+    "line_no": "1503",
+    "name": "明园",
+    "building_type": "民居",
+    "province": "江西省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L04",
+    "lineage_name": "明-围院结构·砖石混合-砖雕谱系",
+    "graph_file": "topk_graphs/1503.json"
+  },
+  {
+    "line_no": "1950",
+    "name": "曲沃薛家大院",
+    "building_type": "民居",
+    "province": "山西省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1950.json"
+  },
+  {
+    "line_no": "748",
+    "name": "曹家大院",
+    "building_type": "民居",
+    "province": "山西省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L04",
+    "lineage_name": "明-围院结构·砖石混合-砖雕谱系",
+    "graph_file": "topk_graphs/748.json"
+  },
+  {
+    "line_no": "539",
+    "name": "朗色林庄园",
+    "building_type": "民居",
+    "province": "西藏自治区",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L02",
+    "lineage_name": "明-中轴对称·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/539.json"
+  },
+  {
+    "line_no": "2083",
+    "name": "杉木桥胡家大院",
+    "building_type": "民居",
+    "province": "湖南省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/2083.json"
+  },
+  {
+    "line_no": "73",
+    "name": "杜甫草堂",
+    "building_type": "民居",
+    "province": "四川省",
+    "start_dynasty": "唐",
+    "lineage_id": "民居-L06",
+    "lineage_name": "清-围院结构·砖石混合-生土谱系",
+    "graph_file": "topk_graphs/73.json"
+  },
+  {
+    "line_no": "1612",
+    "name": "杨家湾老屋",
+    "building_type": "民居",
+    "province": "湖北省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1612.json"
+  },
+  {
+    "line_no": "1362",
+    "name": "杨柳村古建筑群",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L03",
+    "lineage_name": "明-合院布局·木构架-青砖谱系",
+    "graph_file": "topk_graphs/1362.json"
+  },
+  {
+    "line_no": "1365",
+    "name": "杨氏宅第",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L07",
+    "lineage_name": "清-多进院落·合院布局-木雕谱系",
+    "graph_file": "topk_graphs/1365.json"
+  },
+  {
+    "line_no": "2080",
+    "name": "板梁村古建筑群",
+    "building_type": "民居",
+    "province": "湖南省",
+    "start_dynasty": "元",
+    "lineage_id": "民居-L03",
+    "lineage_name": "明-合院布局·木构架-青砖谱系",
+    "graph_file": "topk_graphs/2080.json"
+  },
+  {
+    "line_no": "1420",
+    "name": "林宅",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L06",
+    "lineage_name": "清-围院结构·砖石混合-生土谱系",
+    "graph_file": "topk_graphs/1420.json"
+  },
+  {
+    "line_no": "736",
+    "name": "柳氏民居",
+    "building_type": "民居",
+    "province": "山西省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L02",
+    "lineage_name": "明-中轴对称·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/736.json"
+  },
+  {
+    "line_no": "2090",
+    "name": "桃树湾刘氏大屋",
+    "building_type": "民居",
+    "province": "湖南省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/2090.json"
+  },
+  {
+    "line_no": "1797",
+    "name": "桑珠颇章",
+    "building_type": "民居",
+    "province": "西藏自治区",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L04",
+    "lineage_name": "明-围院结构·砖石混合-砖雕谱系",
+    "graph_file": "topk_graphs/1797.json"
+  },
+  {
+    "line_no": "1447",
+    "name": "棠樾古民居",
+    "building_type": "民居",
+    "province": "安徽省",
+    "start_dynasty": "宋",
+    "lineage_id": "民居-L04",
+    "lineage_name": "明-围院结构·砖石混合-砖雕谱系",
+    "graph_file": "topk_graphs/1447.json"
+  },
+  {
+    "line_no": "1754",
+    "name": "榕江大利村古建筑群",
+    "building_type": "民居",
+    "province": "贵州省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L08",
+    "lineage_name": "明-背山面水·干栏体系-生土谱系",
+    "graph_file": "topk_graphs/1754.json"
+  },
+  {
+    "line_no": "420",
+    "name": "水绘园",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L06",
+    "lineage_name": "清-围院结构·砖石混合-生土谱系",
+    "graph_file": "topk_graphs/420.json"
+  },
+  {
+    "line_no": "2027",
+    "name": "水美土堡群",
+    "building_type": "民居",
+    "province": "福建省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L05",
+    "lineage_name": "清-围院结构·合院布局-生土谱系",
+    "graph_file": "topk_graphs/2027.json"
+  },
+  {
+    "line_no": "2025",
+    "name": "永泰庄寨建筑群",
+    "building_type": "民居",
+    "province": "福建省",
+    "start_dynasty": "唐",
+    "lineage_id": "民居-L08",
+    "lineage_name": "明-背山面水·干栏体系-生土谱系",
+    "graph_file": "topk_graphs/2025.json"
+  },
+  {
+    "line_no": "856",
+    "name": "江村古建筑群",
+    "building_type": "民居",
+    "province": "安徽省",
+    "start_dynasty": "隋",
+    "lineage_id": "民居-L17",
+    "lineage_name": "安徽-聚秀湖布局·民居建筑-石材谱系",
+    "graph_file": "topk_graphs/856.json"
+  },
+  {
+    "line_no": "1373",
+    "name": "汪氏盐商住宅",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L07",
+    "lineage_name": "清-多进院落·合院布局-木雕谱系",
+    "graph_file": "topk_graphs/1373.json"
+  },
+  {
+    "line_no": "1618",
+    "name": "沈鸿宾故居",
+    "building_type": "民居",
+    "province": "湖北省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L06",
+    "lineage_name": "清-围院结构·砖石混合-生土谱系",
+    "graph_file": "topk_graphs/1618.json"
+  },
+  {
+    "line_no": "1408",
+    "name": "河阳村乡土建筑",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "五代十国",
+    "lineage_id": "民居-L04",
+    "lineage_name": "明-围院结构·砖石混合-砖雕谱系",
+    "graph_file": "topk_graphs/1408.json"
+  },
+  {
+    "line_no": "2022",
+    "name": "泉港土坑村古建筑群",
+    "building_type": "民居",
+    "province": "福建省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L02",
+    "lineage_name": "明-中轴对称·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/2022.json"
+  },
+  {
+    "line_no": "1431",
+    "name": "泰顺土楼",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L05",
+    "lineage_name": "清-围院结构·合院布局-生土谱系",
+    "graph_file": "topk_graphs/1431.json"
+  },
+  {
+    "line_no": "1747",
+    "name": "泸县屈氏庄园",
+    "building_type": "民居",
+    "province": "四川省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1747.json"
+  },
+  {
+    "line_no": "2043",
+    "name": "洄村古楼",
+    "building_type": "民居",
+    "province": "山东省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L04",
+    "lineage_name": "明-围院结构·砖石混合-砖雕谱系",
+    "graph_file": "topk_graphs/2043.json"
+  },
+  {
+    "line_no": "466",
+    "name": "流坑村古建筑群",
+    "building_type": "民居",
+    "province": "江西省",
+    "start_dynasty": "五代十国",
+    "lineage_id": "民居-L03",
+    "lineage_name": "明-合院布局·木构架-青砖谱系",
+    "graph_file": "topk_graphs/466.json"
+  },
+  {
+    "line_no": "1633",
+    "name": "涧岩头周家大院古建筑群",
+    "building_type": "民居",
+    "province": "湖南省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L04",
+    "lineage_name": "明-围院结构·砖石混合-砖雕谱系",
+    "graph_file": "topk_graphs/1633.json"
+  },
+  {
+    "line_no": "1672",
+    "name": "清晖园",
+    "building_type": "民居",
+    "province": "广东省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L14",
+    "lineage_name": "广东-巷院兼通结构·轻巧灵活结构-古树名木谱系",
+    "graph_file": "topk_graphs/1672.json"
+  },
+  {
+    "line_no": "760",
+    "name": "渠家大院",
+    "building_type": "民居",
+    "province": "山西省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L07",
+    "lineage_name": "清-多进院落·合院布局-木雕谱系",
+    "graph_file": "topk_graphs/760.json"
+  },
+  {
+    "line_no": "737",
+    "name": "湘峪古堡",
+    "building_type": "民居",
+    "province": "山西省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L02",
+    "lineage_name": "明-中轴对称·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/737.json"
+  },
+  {
+    "line_no": "2114",
+    "name": "湾底谭氏民居",
+    "building_type": "民居",
+    "province": "重庆市",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/2114.json"
+  },
+  {
+    "line_no": "318",
+    "name": "满堂围",
+    "building_type": "民居",
+    "province": "广东省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L06",
+    "lineage_name": "清-围院结构·砖石混合-生土谱系",
+    "graph_file": "topk_graphs/318.json"
+  },
+  {
+    "line_no": "141",
+    "name": "潜口民宅",
+    "building_type": "民居",
+    "province": "安徽省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L04",
+    "lineage_name": "明-围院结构·砖石混合-砖雕谱系",
+    "graph_file": "topk_graphs/141.json"
+  },
+  {
+    "line_no": "1667",
+    "name": "潮州老城古民居建筑群",
+    "building_type": "民居",
+    "province": "广东省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1667.json"
+  },
+  {
+    "line_no": "1635",
+    "name": "濂溪故里古建筑群",
+    "building_type": "民居",
+    "province": "湖南省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L02",
+    "lineage_name": "明-中轴对称·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1635.json"
+  },
+  {
+    "line_no": "145",
+    "name": "牟氏庄园",
+    "building_type": "民居",
+    "province": "山东省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L05",
+    "lineage_name": "清-围院结构·合院布局-生土谱系",
+    "graph_file": "topk_graphs/145.json"
+  },
+  {
+    "line_no": "1488",
+    "name": "玉井坊郑氏大厝",
+    "building_type": "民居",
+    "province": "福建省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L06",
+    "lineage_name": "清-围院结构·砖石混合-生土谱系",
+    "graph_file": "topk_graphs/1488.json"
+  },
+  {
+    "line_no": "309",
+    "name": "玉海楼",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/309.json"
+  },
+  {
+    "line_no": "1352",
+    "name": "玉燕堂",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L04",
+    "lineage_name": "明-围院结构·砖石混合-砖雕谱系",
+    "graph_file": "topk_graphs/1352.json"
+  },
+  {
+    "line_no": "840",
+    "name": "王守仁故居和墓",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L02",
+    "lineage_name": "明-中轴对称·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/840.json"
+  },
+  {
+    "line_no": "744",
+    "name": "王家大院",
+    "building_type": "民居",
+    "province": "山西省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L02",
+    "lineage_name": "明-中轴对称·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/744.json"
+  },
+  {
+    "line_no": "1619",
+    "name": "王明璠府第",
+    "building_type": "民居",
+    "province": "湖北省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L06",
+    "lineage_name": "清-围院结构·砖石混合-生土谱系",
+    "graph_file": "topk_graphs/1619.json"
+  },
+  {
+    "line_no": "2044",
+    "name": "王渔洋故居",
+    "building_type": "民居",
+    "province": "山东省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L02",
+    "lineage_name": "明-中轴对称·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/2044.json"
+  },
+  {
+    "line_no": "1659",
+    "name": "王船山故居及墓",
+    "building_type": "民居",
+    "province": "湖南省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1659.json"
+  },
+  {
+    "line_no": "894",
+    "name": "理坑村民居",
+    "building_type": "民居",
+    "province": "江西省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L04",
+    "lineage_name": "明-围院结构·砖石混合-砖雕谱系",
+    "graph_file": "topk_graphs/894.json"
+  },
+  {
+    "line_no": "2112",
+    "name": "琼山侯家大院",
+    "building_type": "民居",
+    "province": "海南省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L15",
+    "lineage_name": "海南-三进式布局·砖木结构-灰塑谱系",
+    "graph_file": "topk_graphs/2112.json"
+  },
+  {
+    "line_no": "823",
+    "name": "甘熙宅第",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L07",
+    "lineage_name": "清-多进院落·合院布局-木雕谱系",
+    "graph_file": "topk_graphs/823.json"
+  },
+  {
+    "line_no": "1660",
+    "name": "田家大院",
+    "building_type": "民居",
+    "province": "湖南省",
+    "start_dynasty": "宋",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1660.json"
+  },
+  {
+    "line_no": "1613",
+    "name": "百宝寨岩屋",
+    "building_type": "民居",
+    "province": "湖北省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L08",
+    "lineage_name": "明-背山面水·干栏体系-生土谱系",
+    "graph_file": "topk_graphs/1613.json"
+  },
+  {
+    "line_no": "1662",
+    "name": "石堰坪古建筑群",
+    "building_type": "民居",
+    "province": "湖南省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L08",
+    "lineage_name": "明-背山面水·干栏体系-生土谱系",
+    "graph_file": "topk_graphs/1662.json"
+  },
+  {
+    "line_no": "600",
+    "name": "石家大院",
+    "building_type": "民居",
+    "province": "天津市",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/600.json"
+  },
+  {
+    "line_no": "143",
+    "name": "祥集弄民宅",
+    "building_type": "民居",
+    "province": "江西省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L03",
+    "lineage_name": "明-合院布局·木构架-青砖谱系",
+    "graph_file": "topk_graphs/143.json"
+  },
+  {
+    "line_no": "1438",
+    "name": "程大位故居",
+    "building_type": "民居",
+    "province": "安徽省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L03",
+    "lineage_name": "明-合院布局·木构架-青砖谱系",
+    "graph_file": "topk_graphs/1438.json"
+  },
+  {
+    "line_no": "449",
+    "name": "程氏三宅",
+    "building_type": "民居",
+    "province": "安徽省",
+    "start_dynasty": "元",
+    "lineage_id": "民居-L03",
+    "lineage_name": "明-合院布局·木构架-青砖谱系",
+    "graph_file": "topk_graphs/449.json"
+  },
+  {
+    "line_no": "2161",
+    "name": "米脂常氏庄园",
+    "building_type": "民居",
+    "province": "陕西省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/2161.json"
+  },
+  {
+    "line_no": "1976",
+    "name": "紫薇山民居",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L03",
+    "lineage_name": "明-合院布局·木构架-青砖谱系",
+    "graph_file": "topk_graphs/1976.json"
+  },
+  {
+    "line_no": "1790",
+    "name": "红河县东门楼及迤萨民居",
+    "building_type": "民居",
+    "province": "云南省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L06",
+    "lineage_name": "清-围院结构·砖石混合-生土谱系",
+    "graph_file": "topk_graphs/1790.json"
+  },
+  {
+    "line_no": "440",
+    "name": "绮园",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L05",
+    "lineage_name": "清-围院结构·合院布局-生土谱系",
+    "graph_file": "topk_graphs/440.json"
+  },
+  {
+    "line_no": "103",
+    "name": "网师园",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "宋",
+    "lineage_id": "民居-L10",
+    "lineage_name": "江苏-内园紧凑·多进院落-砖瓦谱系",
+    "graph_file": "topk_graphs/103.json"
+  },
+  {
+    "line_no": "1516",
+    "name": "羽琌山馆和云亭别墅",
+    "building_type": "民居",
+    "province": "江西省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1516.json"
+  },
+  {
+    "line_no": "280",
+    "name": "老屋阁及绿绕亭",
+    "building_type": "民居",
+    "province": "安徽省",
+    "start_dynasty": "元",
+    "lineage_id": "民居-L03",
+    "lineage_name": "明-合院布局·木构架-青砖谱系",
+    "graph_file": "topk_graphs/280.json"
+  },
+  {
+    "line_no": "1369",
+    "name": "耕乐堂",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L04",
+    "lineage_name": "明-围院结构·砖石混合-砖雕谱系",
+    "graph_file": "topk_graphs/1369.json"
+  },
+  {
+    "line_no": "418",
+    "name": "耦园",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L09",
+    "lineage_name": "江苏-西宅东园·合院布局-假山石谱系",
+    "graph_file": "topk_graphs/418.json"
+  },
+  {
+    "line_no": "2097",
+    "name": "联丰花萼楼",
+    "building_type": "民居",
+    "province": "广东省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L02",
+    "lineage_name": "明-中轴对称·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/2097.json"
+  },
+  {
+    "line_no": "563",
+    "name": "胡氏古民居建筑",
+    "building_type": "民居",
+    "province": "甘肃省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L03",
+    "lineage_name": "明-合院布局·木构架-青砖谱系",
+    "graph_file": "topk_graphs/563.json"
+  },
+  {
+    "line_no": "353",
+    "name": "腰山王氏庄园",
+    "building_type": "民居",
+    "province": "河北省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/353.json"
+  },
+  {
+    "line_no": "814",
+    "name": "艺圃",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L03",
+    "lineage_name": "明-合院布局·木构架-青砖谱系",
+    "graph_file": "topk_graphs/814.json"
+  },
+  {
+    "line_no": "500",
+    "name": "芋头侗寨古建筑群",
+    "building_type": "民居",
+    "province": "湖南省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L08",
+    "lineage_name": "明-背山面水·干栏体系-生土谱系",
+    "graph_file": "topk_graphs/500.json"
+  },
+  {
+    "line_no": "834",
+    "name": "芙蓉村古建筑群",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "唐",
+    "lineage_id": "民居-L03",
+    "lineage_name": "明-合院布局·木构架-青砖谱系",
+    "graph_file": "topk_graphs/834.json"
+  },
+  {
+    "line_no": "833",
+    "name": "芝堰村建筑群",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "宋",
+    "lineage_id": "民居-L03",
+    "lineage_name": "明-合院布局·木构架-青砖谱系",
+    "graph_file": "topk_graphs/833.json"
+  },
+  {
+    "line_no": "2020",
+    "name": "芷溪宗祠建筑",
+    "building_type": "民居",
+    "province": "福建省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L07",
+    "lineage_name": "清-多进院落·合院布局-木雕谱系",
+    "graph_file": "topk_graphs/2020.json"
+  },
+  {
+    "line_no": "1645",
+    "name": "荫家堂",
+    "building_type": "民居",
+    "province": "湖南省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1645.json"
+  },
+  {
+    "line_no": "850",
+    "name": "莫氏庄园",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L05",
+    "lineage_name": "清-围院结构·合院布局-生土谱系",
+    "graph_file": "topk_graphs/850.json"
+  },
+  {
+    "line_no": "905",
+    "name": "蒲松龄故宅",
+    "building_type": "民居",
+    "province": "山东省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L02",
+    "lineage_name": "明-中轴对称·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/905.json"
+  },
+  {
+    "line_no": "459",
+    "name": "蔡氏古民居建筑群",
+    "building_type": "民居",
+    "province": "福建省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L07",
+    "lineage_name": "清-多进院落·合院布局-木雕谱系",
+    "graph_file": "topk_graphs/459.json"
+  },
+  {
+    "line_no": "1603",
+    "name": "西蒋村马氏庄园",
+    "building_type": "民居",
+    "province": "河南省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1603.json"
+  },
+  {
+    "line_no": "453",
+    "name": "西递村古建筑群",
+    "building_type": "民居",
+    "province": "安徽省",
+    "start_dynasty": "宋",
+    "lineage_id": "民居-L04",
+    "lineage_name": "明-围院结构·砖石混合-砖雕谱系",
+    "graph_file": "topk_graphs/453.json"
+  },
+  {
+    "line_no": "289",
+    "name": "许驸马府",
+    "building_type": "民居",
+    "province": "广东省",
+    "start_dynasty": "宋",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/289.json"
+  },
+  {
+    "line_no": "276",
+    "name": "诸葛、长乐村民居",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "宋",
+    "lineage_id": "民居-L03",
+    "lineage_name": "明-合院布局·木构架-青砖谱系",
+    "graph_file": "topk_graphs/276.json"
+  },
+  {
+    "line_no": "2109",
+    "name": "贺州江氏客家围屋",
+    "building_type": "民居",
+    "province": "广西壮族自治区",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L05",
+    "lineage_name": "清-围院结构·合院布局-生土谱系",
+    "graph_file": "topk_graphs/2109.json"
+  },
+  {
+    "line_no": "1374",
+    "name": "贾氏盐商住宅",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1374.json"
+  },
+  {
+    "line_no": "1978",
+    "name": "赤岸朱宅建筑群",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L03",
+    "lineage_name": "明-合院布局·木构架-青砖谱系",
+    "graph_file": "topk_graphs/1978.json"
+  },
+  {
+    "line_no": "465",
+    "name": "赵家堡—诒安堡",
+    "building_type": "民居",
+    "province": "福建省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L02",
+    "lineage_name": "明-中轴对称·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/465.json"
+  },
+  {
+    "line_no": "811",
+    "name": "赵用贤宅",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L03",
+    "lineage_name": "明-合院布局·木构架-青砖谱系",
+    "graph_file": "topk_graphs/811.json"
+  },
+  {
+    "line_no": "1361",
+    "name": "近园",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L09",
+    "lineage_name": "江苏-西宅东园·合院布局-假山石谱系",
+    "graph_file": "topk_graphs/1361.json"
+  },
+  {
+    "line_no": "416",
+    "name": "退思园",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L06",
+    "lineage_name": "清-围院结构·砖石混合-生土谱系",
+    "graph_file": "topk_graphs/416.json"
+  },
+  {
+    "line_no": "1376",
+    "name": "逸圃",
+    "building_type": "民居",
+    "province": "江苏省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L13",
+    "lineage_name": "江苏-西宅东园·步廊木栏杆-瓷板谱系",
+    "graph_file": "topk_graphs/1376.json"
+  },
+  {
+    "line_no": "970",
+    "name": "道韵楼",
+    "building_type": "民居",
+    "province": "广东省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L02",
+    "lineage_name": "明-中轴对称·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/970.json"
+  },
+  {
+    "line_no": "1601",
+    "name": "邓城叶氏庄园",
+    "building_type": "民居",
+    "province": "河南省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L07",
+    "lineage_name": "清-多进院落·合院布局-木雕谱系",
+    "graph_file": "topk_graphs/1601.json"
+  },
+  {
+    "line_no": "1795",
+    "name": "邦达仓",
+    "building_type": "民居",
+    "province": "西藏自治区",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L02",
+    "lineage_name": "明-中轴对称·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1795.json"
+  },
+  {
+    "line_no": "532",
+    "name": "郎德上寨古建筑群",
+    "building_type": "民居",
+    "province": "贵州省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L08",
+    "lineage_name": "明-背山面水·干栏体系-生土谱系",
+    "graph_file": "topk_graphs/532.json"
+  },
+  {
+    "line_no": "1673",
+    "name": "长围村围屋",
+    "building_type": "民居",
+    "province": "广东省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L05",
+    "lineage_name": "清-围院结构·合院布局-生土谱系",
+    "graph_file": "topk_graphs/1673.json"
+  },
+  {
+    "line_no": "1302",
+    "name": "闫景李家大院",
+    "building_type": "民居",
+    "province": "山西省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L07",
+    "lineage_name": "清-多进院落·合院布局-木雕谱系",
+    "graph_file": "topk_graphs/1302.json"
+  },
+  {
+    "line_no": "1261",
+    "name": "陈廷敬故居",
+    "building_type": "民居",
+    "province": "山西省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L02",
+    "lineage_name": "明-中轴对称·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1261.json"
+  },
+  {
+    "line_no": "1986",
+    "name": "雅端村古建筑群",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L06",
+    "lineage_name": "清-围院结构·砖石混合-生土谱系",
+    "graph_file": "topk_graphs/1986.json"
+  },
+  {
+    "line_no": "1421",
+    "name": "雪溪胡氏大院",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L09",
+    "lineage_name": "江苏-西宅东园·合院布局-假山石谱系",
+    "graph_file": "topk_graphs/1421.json"
+  },
+  {
+    "line_no": "1292",
+    "name": "雷履泰旧居",
+    "building_type": "民居",
+    "province": "山西省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L07",
+    "lineage_name": "清-多进院落·合院布局-木雕谱系",
+    "graph_file": "topk_graphs/1292.json"
+  },
+  {
+    "line_no": "1852",
+    "name": "青城古民居",
+    "building_type": "民居",
+    "province": "甘肃省",
+    "start_dynasty": "宋",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1852.json"
+  },
+  {
+    "line_no": "841",
+    "name": "青藤书屋和徐渭墓",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L04",
+    "lineage_name": "明-围院结构·砖石混合-砖雕谱系",
+    "graph_file": "topk_graphs/841.json"
+  },
+  {
+    "line_no": "849",
+    "name": "顺溪古建筑群",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L06",
+    "lineage_name": "清-围院结构·砖石混合-生土谱系",
+    "graph_file": "topk_graphs/849.json"
+  },
+  {
+    "line_no": "1425",
+    "name": "马上桥花厅",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L06",
+    "lineage_name": "清-围院结构·砖石混合-生土谱系",
+    "graph_file": "topk_graphs/1425.json"
+  },
+  {
+    "line_no": "1521",
+    "name": "驿前石屋里民宅",
+    "building_type": "民居",
+    "province": "江西省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L05",
+    "lineage_name": "清-围院结构·合院布局-生土谱系",
+    "graph_file": "topk_graphs/1521.json"
+  },
+  {
+    "line_no": "2074",
+    "name": "高家花屋",
+    "building_type": "民居",
+    "province": "湖北省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L07",
+    "lineage_name": "清-多进院落·合院布局-木雕谱系",
+    "graph_file": "topk_graphs/2074.json"
+  },
+  {
+    "line_no": "956",
+    "name": "高椅村古建筑群",
+    "building_type": "民居",
+    "province": "湖南省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L04",
+    "lineage_name": "明-围院结构·砖石混合-砖雕谱系",
+    "graph_file": "topk_graphs/956.json"
+  },
+  {
+    "line_no": "311",
+    "name": "魏氏庄园",
+    "building_type": "民居",
+    "province": "山东省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/311.json"
+  },
+  {
+    "line_no": "945",
+    "name": "鱼木寨",
+    "building_type": "民居",
+    "province": "湖北省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L18",
+    "lineage_name": "湖北-闭合区域·三阳关-石作谱系",
+    "graph_file": "topk_graphs/945.json"
+  },
+  {
+    "line_no": "422",
+    "name": "黄山八面厅",
+    "building_type": "民居",
+    "province": "浙江省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L01",
+    "lineage_name": "清-合院布局-青砖谱系",
+    "graph_file": "topk_graphs/422.json"
+  },
+  {
+    "line_no": "2032",
+    "name": "龙南乌石围",
+    "building_type": "民居",
+    "province": "江西省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L05",
+    "lineage_name": "清-围院结构·合院布局-生土谱系",
+    "graph_file": "topk_graphs/2032.json"
+  },
+  {
+    "line_no": "1639",
+    "name": "龙家大院",
+    "building_type": "民居",
+    "province": "湖南省",
+    "start_dynasty": "宋",
+    "lineage_id": "民居-L03",
+    "lineage_name": "明-合院布局·木构架-青砖谱系",
+    "graph_file": "topk_graphs/1639.json"
+  },
+  {
+    "line_no": "1632",
+    "name": "龙溪李家大院",
+    "building_type": "民居",
+    "province": "湖南省",
+    "start_dynasty": "明",
+    "lineage_id": "民居-L03",
+    "lineage_name": "明-合院布局·木构架-青砖谱系",
+    "graph_file": "topk_graphs/1632.json"
+  },
+  {
+    "line_no": "2104",
+    "name": "龙门鹤湖围",
+    "building_type": "民居",
+    "province": "广东省",
+    "start_dynasty": "清",
+    "lineage_id": "民居-L05",
+    "lineage_name": "清-围院结构·合院布局-生土谱系",
+    "graph_file": "topk_graphs/2104.json"
+  },
+  {
+    "line_no": "633",
+    "name": "万全右卫城",
+    "building_type": "官府",
+    "province": "河北省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L03",
+    "lineage_name": "明-瓮城布局·城防单元-生土谱系",
+    "graph_file": "topk_graphs/633.json"
+  },
+  {
+    "line_no": "1500",
+    "name": "万安城墙",
+    "building_type": "官府",
+    "province": "江西省",
+    "start_dynasty": "宋",
+    "lineage_id": "官府-L12",
+    "lineage_name": "江西-观澜门·垛口结构-青砖谱系",
+    "graph_file": "topk_graphs/1500.json"
+  },
+  {
+    "line_no": "783",
+    "name": "中前所城",
+    "building_type": "官府",
+    "province": "辽宁省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L03",
+    "lineage_name": "明-瓮城布局·城防单元-生土谱系",
+    "graph_file": "topk_graphs/783.json"
+  },
+  {
+    "line_no": "1078",
+    "name": "丰图义仓",
+    "building_type": "官府",
+    "province": "陕西省",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L07",
+    "lineage_name": "清-面阔三间·高台基座-夯土谱系",
+    "graph_file": "topk_graphs/1078.json"
+  },
+  {
+    "line_no": "388",
+    "name": "临晋县衙",
+    "building_type": "官府",
+    "province": "山西省",
+    "start_dynasty": "元",
+    "lineage_id": "官府-L08",
+    "lineage_name": "河南-坐北朝南·硬山顶-灰瓦屋面谱系",
+    "graph_file": "topk_graphs/388.json"
+  },
+  {
+    "line_no": "469",
+    "name": "临清运河钞关",
+    "building_type": "官府",
+    "province": "山东省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L01",
+    "lineage_name": "明-围院结构·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/469.json"
+  },
+  {
+    "line_no": "2139",
+    "name": "云南提督府旧址",
+    "building_type": "官府",
+    "province": "云南省",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L04",
+    "lineage_name": "清-中轴对称·合院布局-砖谱系",
+    "graph_file": "topk_graphs/2139.json"
+  },
+  {
+    "line_no": "326",
+    "name": "伊犁将军府",
+    "building_type": "官府",
+    "province": "新疆维吾尔自治区",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L04",
+    "lineage_name": "清-中轴对称·合院布局-砖谱系",
+    "graph_file": "topk_graphs/326.json"
+  },
+  {
+    "line_no": "1773",
+    "name": "侬氏土司衙署",
+    "building_type": "官府",
+    "province": "云南省",
+    "start_dynasty": "元",
+    "lineage_id": "官府-L02",
+    "lineage_name": "清-中轴对称·砖石混合-琉璃瓦谱系",
+    "graph_file": "topk_graphs/1773.json"
+  },
+  {
+    "line_no": "1142",
+    "name": "保定钟楼",
+    "building_type": "官府",
+    "province": "河北省",
+    "start_dynasty": "金",
+    "lineage_id": "官府-L07",
+    "lineage_name": "清-面阔三间·高台基座-夯土谱系",
+    "graph_file": "topk_graphs/1142.json"
+  },
+  {
+    "line_no": "780",
+    "name": "僧格林沁王府",
+    "building_type": "官府",
+    "province": "内蒙古自治区",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L02",
+    "lineage_name": "清-中轴对称·砖石混合-琉璃瓦谱系",
+    "graph_file": "topk_graphs/780.json"
+  },
+  {
+    "line_no": "118",
+    "name": "光岳楼",
+    "building_type": "官府",
+    "province": "山东省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L05",
+    "lineage_name": "明-坐北朝南·楼阁化-青砖谱系",
+    "graph_file": "topk_graphs/118.json"
+  },
+  {
+    "line_no": "1107",
+    "name": "克勤郡王府",
+    "building_type": "官府",
+    "province": "北京市",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L02",
+    "lineage_name": "清-中轴对称·砖石混合-琉璃瓦谱系",
+    "graph_file": "topk_graphs/1107.json"
+  },
+  {
+    "line_no": "315",
+    "name": "内乡县衙",
+    "building_type": "官府",
+    "province": "河南省",
+    "start_dynasty": "元",
+    "lineage_id": "官府-L08",
+    "lineage_name": "河南-坐北朝南·硬山顶-灰瓦屋面谱系",
+    "graph_file": "topk_graphs/315.json"
+  },
+  {
+    "line_no": "1799",
+    "name": "冲赛康",
+    "building_type": "官府",
+    "province": "西藏自治区",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L02",
+    "lineage_name": "清-中轴对称·砖石混合-琉璃瓦谱系",
+    "graph_file": "topk_graphs/1799.json"
+  },
+  {
+    "line_no": "963",
+    "name": "凤凰古城堡",
+    "building_type": "官府",
+    "province": "湖南省",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L22",
+    "lineage_name": "湖南-多重军事设施布局·错缝砌筑-桐油谱系",
+    "graph_file": "topk_graphs/963.json"
+  },
+  {
+    "line_no": "268",
+    "name": "北京鼓楼、钟楼",
+    "building_type": "官府",
+    "province": "北京市",
+    "start_dynasty": "元",
+    "lineage_id": "官府-L18",
+    "lineage_name": "北京-十字形券洞·歇山顶-绿琉璃剪边谱系",
+    "graph_file": "topk_graphs/268.json"
+  },
+  {
+    "line_no": "125",
+    "name": "卓克基土司官寨",
+    "building_type": "官府",
+    "province": "四川省",
+    "start_dynasty": "元",
+    "lineage_id": "官府-L10",
+    "lineage_name": "四川-四方碉楼·中轴对称-黄泥谱系",
+    "graph_file": "topk_graphs/125.json"
+  },
+  {
+    "line_no": "1961",
+    "name": "南京鼓楼",
+    "building_type": "官府",
+    "province": "江苏省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L03",
+    "lineage_name": "明-瓮城布局·城防单元-生土谱系",
+    "graph_file": "topk_graphs/1961.json"
+  },
+  {
+    "line_no": "477",
+    "name": "南阳知府衙门",
+    "building_type": "官府",
+    "province": "河南省",
+    "start_dynasty": "元",
+    "lineage_id": "官府-L01",
+    "lineage_name": "明-围院结构·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/477.json"
+  },
+  {
+    "line_no": "94",
+    "name": "古观象台",
+    "building_type": "官府",
+    "province": "北京市",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L01",
+    "lineage_name": "明-围院结构·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/94.json"
+  },
+  {
+    "line_no": "436",
+    "name": "台州府城墙",
+    "building_type": "官府",
+    "province": "浙江省",
+    "start_dynasty": "东晋",
+    "lineage_id": "官府-L06",
+    "lineage_name": "河北-瓮城布局·城防单元-青砖谱系",
+    "graph_file": "topk_graphs/436.json"
+  },
+  {
+    "line_no": "922",
+    "name": "叶县县衙",
+    "building_type": "官府",
+    "province": "河南省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L01",
+    "lineage_name": "明-围院结构·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/922.json"
+  },
+  {
+    "line_no": "2140",
+    "name": "叶枝土司衙署",
+    "building_type": "官府",
+    "province": "云南省",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L01",
+    "lineage_name": "明-围院结构·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/2140.json"
+  },
+  {
+    "line_no": "434",
+    "name": "吕府",
+    "building_type": "官府",
+    "province": "浙江省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L01",
+    "lineage_name": "明-围院结构·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/434.json"
+  },
+  {
+    "line_no": "412",
+    "name": "和硕恪靖公主府",
+    "building_type": "官府",
+    "province": "内蒙古自治区",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L07",
+    "lineage_name": "清-面阔三间·高台基座-夯土谱系",
+    "graph_file": "topk_graphs/412.json"
+  },
+  {
+    "line_no": "1276",
+    "name": "唱经楼",
+    "building_type": "官府",
+    "province": "山西省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L05",
+    "lineage_name": "明-坐北朝南·楼阁化-青砖谱系",
+    "graph_file": "topk_graphs/1276.json"
+  },
+  {
+    "line_no": "66",
+    "name": "国子监",
+    "building_type": "官府",
+    "province": "北京市",
+    "start_dynasty": "隋",
+    "lineage_id": "官府-L04",
+    "lineage_name": "清-中轴对称·合院布局-砖谱系",
+    "graph_file": "topk_graphs/66.json"
+  },
+  {
+    "line_no": "1615",
+    "name": "大丰仓",
+    "building_type": "官府",
+    "province": "湖北省",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L07",
+    "lineage_name": "清-面阔三间·高台基座-夯土谱系",
+    "graph_file": "topk_graphs/1615.json"
+  },
+  {
+    "line_no": "126",
+    "name": "大屯土司庄园",
+    "building_type": "官府",
+    "province": "贵州省",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L04",
+    "lineage_name": "清-中轴对称·合院布局-砖谱系",
+    "graph_file": "topk_graphs/126.json"
+  },
+  {
+    "line_no": "1041",
+    "name": "孟连宣抚司署",
+    "building_type": "官府",
+    "province": "云南省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L01",
+    "lineage_name": "明-围院结构·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1041.json"
+  },
+  {
+    "line_no": "1370",
+    "name": "学政试院",
+    "building_type": "官府",
+    "province": "江苏省",
+    "start_dynasty": "五代十国",
+    "lineage_id": "官府-L01",
+    "lineage_name": "明-围院结构·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1370.json"
+  },
+  {
+    "line_no": "836",
+    "name": "安城城墙",
+    "building_type": "官府",
+    "province": "浙江省",
+    "start_dynasty": "元",
+    "lineage_id": "官府-L21",
+    "lineage_name": "浙江-四门布局·环城马道-黄土杂石混筑谱系",
+    "graph_file": "topk_graphs/836.json"
+  },
+  {
+    "line_no": "598",
+    "name": "安徽会馆",
+    "building_type": "官府",
+    "province": "北京市",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L02",
+    "lineage_name": "清-中轴对称·砖石混合-琉璃瓦谱系",
+    "graph_file": "topk_graphs/598.json"
+  },
+  {
+    "line_no": "345",
+    "name": "定州贡院",
+    "building_type": "官府",
+    "province": "河北省",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L07",
+    "lineage_name": "清-面阔三间·高台基座-夯土谱系",
+    "graph_file": "topk_graphs/345.json"
+  },
+  {
+    "line_no": "1727",
+    "name": "宜宾大观楼",
+    "building_type": "官府",
+    "province": "四川省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L05",
+    "lineage_name": "明-坐北朝南·楼阁化-青砖谱系",
+    "graph_file": "topk_graphs/1727.json"
+  },
+  {
+    "line_no": "1595",
+    "name": "密县县衙",
+    "building_type": "官府",
+    "province": "河南省",
+    "start_dynasty": "隋",
+    "lineage_id": "官府-L01",
+    "lineage_name": "明-围院结构·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1595.json"
+  },
+  {
+    "line_no": "1756",
+    "name": "岩门长官司城",
+    "building_type": "官府",
+    "province": "贵州省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L13",
+    "lineage_name": "贵州-背山面水·墙垛结构-料石谱系",
+    "graph_file": "topk_graphs/1756.json"
+  },
+  {
+    "line_no": "119",
+    "name": "岳阳楼",
+    "building_type": "官府",
+    "province": "湖南省",
+    "start_dynasty": "东汉",
+    "lineage_id": "官府-L09",
+    "lineage_name": "湖南-后移布局·纯木结构-玻璃筒瓦谱系",
+    "graph_file": "topk_graphs/119.json"
+  },
+  {
+    "line_no": "1741",
+    "name": "川北道贡院",
+    "building_type": "官府",
+    "province": "四川省",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L01",
+    "lineage_name": "明-围院结构·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1741.json"
+  },
+  {
+    "line_no": "624",
+    "name": "常平仓",
+    "building_type": "官府",
+    "province": "河北省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L02",
+    "lineage_name": "清-中轴对称·砖石混合-琉璃瓦谱系",
+    "graph_file": "topk_graphs/624.json"
+  },
+  {
+    "line_no": "784",
+    "name": "广宁城",
+    "building_type": "官府",
+    "province": "辽宁省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L03",
+    "lineage_name": "明-瓮城布局·城防单元-生土谱系",
+    "graph_file": "topk_graphs/784.json"
+  },
+  {
+    "line_no": "1335",
+    "name": "延吉边务督办公署旧址",
+    "building_type": "官府",
+    "province": "吉林省",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L11",
+    "lineage_name": "吉林-四面围廊·围廊式-红漆圆柱谱系",
+    "graph_file": "topk_graphs/1335.json"
+  },
+  {
+    "line_no": "2146",
+    "name": "建水学政考棚",
+    "building_type": "官府",
+    "province": "云南省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L02",
+    "lineage_name": "清-中轴对称·砖石混合-琉璃瓦谱系",
+    "graph_file": "topk_graphs/2146.json"
+  },
+  {
+    "line_no": "2169",
+    "name": "张掖高总兵宅院",
+    "building_type": "官府",
+    "province": "甘肃省",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L04",
+    "lineage_name": "清-中轴对称·合院布局-砖谱系",
+    "graph_file": "topk_graphs/2169.json"
+  },
+  {
+    "line_no": "1084",
+    "name": "张掖鼓楼",
+    "building_type": "官府",
+    "province": "甘肃省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L05",
+    "lineage_name": "明-坐北朝南·楼阁化-青砖谱系",
+    "graph_file": "topk_graphs/1084.json"
+  },
+  {
+    "line_no": "284",
+    "name": "归德府城墙",
+    "building_type": "官府",
+    "province": "河南省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L03",
+    "lineage_name": "明-瓮城布局·城防单元-生土谱系",
+    "graph_file": "topk_graphs/284.json"
+  },
+  {
+    "line_no": "585",
+    "name": "德胜门箭楼",
+    "building_type": "官府",
+    "province": "北京市",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L03",
+    "lineage_name": "明-瓮城布局·城防单元-生土谱系",
+    "graph_file": "topk_graphs/585.json"
+  },
+  {
+    "line_no": "102",
+    "name": "恭王府及花园",
+    "building_type": "官府",
+    "province": "北京市",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L04",
+    "lineage_name": "清-中轴对称·合院布局-砖谱系",
+    "graph_file": "topk_graphs/102.json"
+  },
+  {
+    "line_no": "1885",
+    "name": "惠远钟鼓楼",
+    "building_type": "官府",
+    "province": "新疆维吾尔自治区",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L07",
+    "lineage_name": "清-面阔三间·高台基座-夯土谱系",
+    "graph_file": "topk_graphs/1885.json"
+  },
+  {
+    "line_no": "431",
+    "name": "文澜阁",
+    "building_type": "官府",
+    "province": "浙江省",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L02",
+    "lineage_name": "清-中轴对称·砖石混合-琉璃瓦谱系",
+    "graph_file": "topk_graphs/431.json"
+  },
+  {
+    "line_no": "213",
+    "name": "旅顺监狱旧址",
+    "building_type": "官府",
+    "province": "辽宁省",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L16",
+    "lineage_name": "辽宁-东部工厂区·双层牢房楼-青砖谱系",
+    "graph_file": "topk_graphs/213.json"
+  },
+  {
+    "line_no": "1037",
+    "name": "朝阳楼",
+    "building_type": "官府",
+    "province": "云南省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L03",
+    "lineage_name": "明-瓮城布局·城防单元-生土谱系",
+    "graph_file": "topk_graphs/1037.json"
+  },
+  {
+    "line_no": "2106",
+    "name": "桂林静江府城墙",
+    "building_type": "官府",
+    "province": "广西壮族自治区",
+    "start_dynasty": "唐",
+    "lineage_id": "官府-L06",
+    "lineage_name": "河北-瓮城布局·城防单元-青砖谱系",
+    "graph_file": "topk_graphs/2106.json"
+  },
+  {
+    "line_no": "1069",
+    "name": "榆林卫城",
+    "building_type": "官府",
+    "province": "陕西省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L03",
+    "lineage_name": "明-瓮城布局·城防单元-生土谱系",
+    "graph_file": "topk_graphs/1069.json"
+  },
+  {
+    "line_no": "1143",
+    "name": "正定城墙",
+    "building_type": "官府",
+    "province": "河北省",
+    "start_dynasty": "东晋",
+    "lineage_id": "官府-L06",
+    "lineage_name": "河北-瓮城布局·城防单元-青砖谱系",
+    "graph_file": "topk_graphs/1143.json"
+  },
+  {
+    "line_no": "116",
+    "name": "正阳门",
+    "building_type": "官府",
+    "province": "北京市",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L03",
+    "lineage_name": "明-瓮城布局·城防单元-生土谱系",
+    "graph_file": "topk_graphs/116.json"
+  },
+  {
+    "line_no": "1677",
+    "name": "永宁州城城墙",
+    "building_type": "官府",
+    "province": "广西壮族自治区",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L03",
+    "lineage_name": "明-瓮城布局·城防单元-生土谱系",
+    "graph_file": "topk_graphs/1677.json"
+  },
+  {
+    "line_no": "1137",
+    "name": "永平府城墙",
+    "building_type": "官府",
+    "province": "河北省",
+    "start_dynasty": "东汉",
+    "lineage_id": "官府-L06",
+    "lineage_name": "河北-瓮城布局·城防单元-青砖谱系",
+    "graph_file": "topk_graphs/1137.json"
+  },
+  {
+    "line_no": "628",
+    "name": "永年城",
+    "building_type": "官府",
+    "province": "河北省",
+    "start_dynasty": "唐",
+    "lineage_id": "官府-L06",
+    "lineage_name": "河北-瓮城布局·城防单元-青砖谱系",
+    "graph_file": "topk_graphs/628.json"
+  },
+  {
+    "line_no": "1087",
+    "name": "永昌钟鼓楼",
+    "building_type": "官府",
+    "province": "甘肃省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L05",
+    "lineage_name": "明-坐北朝南·楼阁化-青砖谱系",
+    "graph_file": "topk_graphs/1087.json"
+  },
+  {
+    "line_no": "139",
+    "name": "泰宁尚书第",
+    "building_type": "官府",
+    "province": "福建省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L01",
+    "lineage_name": "明-围院结构·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/139.json"
+  },
+  {
+    "line_no": "1849",
+    "name": "洮州卫城",
+    "building_type": "官府",
+    "province": "甘肃省",
+    "start_dynasty": "东汉",
+    "lineage_id": "官府-L03",
+    "lineage_name": "明-瓮城布局·城防单元-生土谱系",
+    "graph_file": "topk_graphs/1849.json"
+  },
+  {
+    "line_no": "2038",
+    "name": "浮梁县衙",
+    "building_type": "官府",
+    "province": "江西省",
+    "start_dynasty": "唐",
+    "lineage_id": "官府-L01",
+    "lineage_name": "明-围院结构·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/2038.json"
+  },
+  {
+    "line_no": "533",
+    "name": "海龙屯",
+    "building_type": "官府",
+    "province": "贵州省",
+    "start_dynasty": "宋",
+    "lineage_id": "官府-L20",
+    "lineage_name": "贵州-前低后高·城防单元-拱券结构谱系",
+    "graph_file": "topk_graphs/533.json"
+  },
+  {
+    "line_no": "1156",
+    "name": "淮军公所",
+    "building_type": "官府",
+    "province": "河北省",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L01",
+    "lineage_name": "明-围院结构·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1156.json"
+  },
+  {
+    "line_no": "816",
+    "name": "淮安府衙",
+    "building_type": "官府",
+    "province": "江苏省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L02",
+    "lineage_name": "清-中轴对称·砖石混合-琉璃瓦谱系",
+    "graph_file": "topk_graphs/816.json"
+  },
+  {
+    "line_no": "1158",
+    "name": "深州盈亿义仓",
+    "building_type": "官府",
+    "province": "河北省",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L01",
+    "lineage_name": "明-围院结构·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1158.json"
+  },
+  {
+    "line_no": "1157",
+    "name": "清河道署",
+    "building_type": "官府",
+    "province": "河北省",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L04",
+    "lineage_name": "清-中轴对称·合院布局-砖谱系",
+    "graph_file": "topk_graphs/1157.json"
+  },
+  {
+    "line_no": "117",
+    "name": "清远楼",
+    "building_type": "官府",
+    "province": "河北省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L05",
+    "lineage_name": "明-坐北朝南·楼阁化-青砖谱系",
+    "graph_file": "topk_graphs/117.json"
+  },
+  {
+    "line_no": "759",
+    "name": "潞安府衙",
+    "building_type": "官府",
+    "province": "山西省",
+    "start_dynasty": "隋",
+    "lineage_id": "官府-L01",
+    "lineage_name": "明-围院结构·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/759.json"
+  },
+  {
+    "line_no": "1716",
+    "name": "潼川古城墙",
+    "building_type": "官府",
+    "province": "四川省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L03",
+    "lineage_name": "明-瓮城布局·城防单元-生土谱系",
+    "graph_file": "topk_graphs/1716.json"
+  },
+  {
+    "line_no": "1131",
+    "name": "灵寿石牌坊",
+    "building_type": "官府",
+    "province": "河北省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L05",
+    "lineage_name": "明-坐北朝南·楼阁化-青砖谱系",
+    "graph_file": "topk_graphs/1131.json"
+  },
+  {
+    "line_no": "2039",
+    "name": "玉山考棚",
+    "building_type": "官府",
+    "province": "江西省",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L15",
+    "lineage_name": "江西-甬道·青砖瓦房-卵石谱系",
+    "graph_file": "topk_graphs/2039.json"
+  },
+  {
+    "line_no": "91",
+    "name": "皇史宬",
+    "building_type": "官府",
+    "province": "北京市",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L04",
+    "lineage_name": "清-中轴对称·合院布局-砖谱系",
+    "graph_file": "topk_graphs/91.json"
+  },
+  {
+    "line_no": "308",
+    "name": "盂城驿",
+    "building_type": "官府",
+    "province": "江苏省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L01",
+    "lineage_name": "明-围院结构·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/308.json"
+  },
+  {
+    "line_no": "801",
+    "name": "盘门",
+    "building_type": "官府",
+    "province": "江苏省",
+    "start_dynasty": "东周",
+    "lineage_id": "官府-L06",
+    "lineage_name": "河北-瓮城布局·城防单元-青砖谱系",
+    "graph_file": "topk_graphs/801.json"
+  },
+  {
+    "line_no": "124",
+    "name": "直隶总督署",
+    "building_type": "官府",
+    "province": "河北省",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L02",
+    "lineage_name": "清-中轴对称·砖石混合-琉璃瓦谱系",
+    "graph_file": "topk_graphs/124.json"
+  },
+  {
+    "line_no": "807",
+    "name": "瞻园",
+    "building_type": "官府",
+    "province": "江苏省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L02",
+    "lineage_name": "清-中轴对称·砖石混合-琉璃瓦谱系",
+    "graph_file": "topk_graphs/807.json"
+  },
+  {
+    "line_no": "1734",
+    "name": "筹边楼",
+    "building_type": "官府",
+    "province": "四川省",
+    "start_dynasty": "唐",
+    "lineage_id": "官府-L01",
+    "lineage_name": "明-围院结构·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1734.json"
+  },
+  {
+    "line_no": "255",
+    "name": "绛州大堂",
+    "building_type": "官府",
+    "province": "山西省",
+    "start_dynasty": "唐",
+    "lineage_id": "官府-L17",
+    "lineage_name": "山西-进深八椽·歇山顶-古朴木材谱系",
+    "graph_file": "topk_graphs/255.json"
+  },
+  {
+    "line_no": "774",
+    "name": "绥远城墙和将军衙署",
+    "building_type": "官府",
+    "province": "内蒙古自治区",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L04",
+    "lineage_name": "清-中轴对称·合院布局-砖谱系",
+    "graph_file": "topk_graphs/774.json"
+  },
+  {
+    "line_no": "507",
+    "name": "肇庆古城墙",
+    "building_type": "官府",
+    "province": "广东省",
+    "start_dynasty": "宋",
+    "lineage_id": "官府-L19",
+    "lineage_name": "广东-角楼·敌台-铭文砖谱系",
+    "graph_file": "topk_graphs/507.json"
+  },
+  {
+    "line_no": "1363",
+    "name": "苏州织造署旧址",
+    "building_type": "官府",
+    "province": "江苏省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L02",
+    "lineage_name": "清-中轴对称·砖石混合-琉璃瓦谱系",
+    "graph_file": "topk_graphs/1363.json"
+  },
+  {
+    "line_no": "291",
+    "name": "莫土司衙署",
+    "building_type": "官府",
+    "province": "广西壮族自治区",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L04",
+    "lineage_name": "清-中轴对称·合院布局-砖谱系",
+    "graph_file": "topk_graphs/291.json"
+  },
+  {
+    "line_no": "1093",
+    "name": "董府",
+    "building_type": "官府",
+    "province": "宁夏回族自治区",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L04",
+    "lineage_name": "清-中轴对称·合院布局-砖谱系",
+    "graph_file": "topk_graphs/1093.json"
+  },
+  {
+    "line_no": "2160",
+    "name": "蒲城考院",
+    "building_type": "官府",
+    "province": "陕西省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L02",
+    "lineage_name": "清-中轴对称·砖石混合-琉璃瓦谱系",
+    "graph_file": "topk_graphs/2160.json"
+  },
+  {
+    "line_no": "1482",
+    "name": "蓝廷珍府第",
+    "building_type": "官府",
+    "province": "福建省",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L02",
+    "lineage_name": "清-中轴对称·砖石混合-琉璃瓦谱系",
+    "graph_file": "topk_graphs/1482.json"
+  },
+  {
+    "line_no": "99",
+    "name": "蓬莱水城及蓬莱阁",
+    "building_type": "官府",
+    "province": "山东省",
+    "start_dynasty": "宋",
+    "lineage_id": "官府-L23",
+    "lineage_name": "山东-南宽北窄·防波堤-土城谱系",
+    "graph_file": "topk_graphs/99.json"
+  },
+  {
+    "line_no": "891",
+    "name": "袁州谯楼",
+    "building_type": "官府",
+    "province": "江西省",
+    "start_dynasty": "五代十国",
+    "lineage_id": "官府-L01",
+    "lineage_name": "明-围院结构·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/891.json"
+  },
+  {
+    "line_no": "1578",
+    "name": "襄城城墙",
+    "building_type": "官府",
+    "province": "河南省",
+    "start_dynasty": "东周",
+    "lineage_id": "官府-L06",
+    "lineage_name": "河北-瓮城布局·城防单元-青砖谱系",
+    "graph_file": "topk_graphs/1578.json"
+  },
+  {
+    "line_no": "1949",
+    "name": "解州同善义仓",
+    "building_type": "官府",
+    "province": "山西省",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L02",
+    "lineage_name": "清-中轴对称·砖石混合-琉璃瓦谱系",
+    "graph_file": "topk_graphs/1949.json"
+  },
+  {
+    "line_no": "2079",
+    "name": "许家桥将军府",
+    "building_type": "官府",
+    "province": "湖南省",
+    "start_dynasty": "元",
+    "lineage_id": "官府-L01",
+    "lineage_name": "明-围院结构·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/2079.json"
+  },
+  {
+    "line_no": "367",
+    "name": "边靖楼",
+    "building_type": "官府",
+    "province": "山西省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L05",
+    "lineage_name": "明-坐北朝南·楼阁化-青砖谱系",
+    "graph_file": "topk_graphs/367.json"
+  },
+  {
+    "line_no": "1896",
+    "name": "邢台清风楼",
+    "building_type": "官府",
+    "province": "河北省",
+    "start_dynasty": "唐",
+    "lineage_id": "官府-L05",
+    "lineage_name": "明-坐北朝南·楼阁化-青砖谱系",
+    "graph_file": "topk_graphs/1896.json"
+  },
+  {
+    "line_no": "1856",
+    "name": "酒泉鼓楼",
+    "building_type": "官府",
+    "province": "甘肃省",
+    "start_dynasty": "东晋",
+    "lineage_id": "官府-L14",
+    "lineage_name": "甘肃-十字街心·外檐柱-青砖谱系",
+    "graph_file": "topk_graphs/1856.json"
+  },
+  {
+    "line_no": "1398",
+    "name": "金昭牌坊和宪台牌坊",
+    "building_type": "官府",
+    "province": "浙江省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L05",
+    "lineage_name": "明-坐北朝南·楼阁化-青砖谱系",
+    "graph_file": "topk_graphs/1398.json"
+  },
+  {
+    "line_no": "1668",
+    "name": "镇海楼与广州明城墙",
+    "building_type": "官府",
+    "province": "广东省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L03",
+    "lineage_name": "明-瓮城布局·城防单元-生土谱系",
+    "graph_file": "topk_graphs/1668.json"
+  },
+  {
+    "line_no": "1750",
+    "name": "镇远城墙",
+    "building_type": "官府",
+    "province": "贵州省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L03",
+    "lineage_name": "明-瓮城布局·城防单元-生土谱系",
+    "graph_file": "topk_graphs/1750.json"
+  },
+  {
+    "line_no": "1422",
+    "name": "陈阁老宅",
+    "building_type": "官府",
+    "province": "浙江省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L02",
+    "lineage_name": "清-中轴对称·砖石混合-琉璃瓦谱系",
+    "graph_file": "topk_graphs/1422.json"
+  },
+  {
+    "line_no": "1242",
+    "name": "隰县鼓楼",
+    "building_type": "官府",
+    "province": "山西省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L05",
+    "lineage_name": "明-坐北朝南·楼阁化-青砖谱系",
+    "graph_file": "topk_graphs/1242.json"
+  },
+  {
+    "line_no": "257",
+    "name": "霍州州署大堂",
+    "building_type": "官府",
+    "province": "山西省",
+    "start_dynasty": "元",
+    "lineage_id": "官府-L02",
+    "lineage_name": "清-中轴对称·砖石混合-琉璃瓦谱系",
+    "graph_file": "topk_graphs/257.json"
+  },
+  {
+    "line_no": "1834",
+    "name": "骡帮会馆",
+    "building_type": "官府",
+    "province": "陕西省",
+    "start_dynasty": "清",
+    "lineage_id": "官府-L02",
+    "lineage_name": "清-中轴对称·砖石混合-琉璃瓦谱系",
+    "graph_file": "topk_graphs/1834.json"
+  },
+  {
+    "line_no": "343",
+    "name": "鸡鸣驿城",
+    "building_type": "官府",
+    "province": "河北省",
+    "start_dynasty": "辽",
+    "lineage_id": "官府-L03",
+    "lineage_name": "明-瓮城布局·城防单元-生土谱系",
+    "graph_file": "topk_graphs/343.json"
+  },
+  {
+    "line_no": "1439",
+    "name": "黄村进士第",
+    "building_type": "官府",
+    "province": "安徽省",
+    "start_dynasty": "明",
+    "lineage_id": "官府-L01",
+    "lineage_name": "明-围院结构·合院布局-青砖谱系",
+    "graph_file": "topk_graphs/1439.json"
+  },
+  {
+    "line_no": "1405",
+    "name": "㹧𱮒湖避塘",
+    "building_type": "桥梁",
+    "province": "浙江省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L05",
+    "lineage_name": "清-飞阁三座·石材主导-条石谱系",
+    "graph_file": "topk_graphs/1405.json"
+  },
+  {
+    "line_no": "1349",
+    "name": "七桥瓮",
+    "building_type": "桥梁",
+    "province": "江苏省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L01",
+    "lineage_name": "明-东西走向·石材主导-花岗岩谱系",
+    "graph_file": "topk_graphs/1349.json"
+  },
+  {
+    "line_no": "274",
+    "name": "万里长城－九门口",
+    "building_type": "桥梁",
+    "province": "辽宁省",
+    "start_dynasty": "南北朝",
+    "lineage_id": "桥梁-L12",
+    "lineage_name": "辽宁-烽火台配置·敌楼-巨型木门谱系",
+    "graph_file": "topk_graphs/274.json"
+  },
+  {
+    "line_no": "1138",
+    "name": "下胡良桥",
+    "building_type": "桥梁",
+    "province": "河北省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L01",
+    "lineage_name": "明-东西走向·石材主导-花岗岩谱系",
+    "graph_file": "topk_graphs/1138.json"
+  },
+  {
+    "line_no": "1343",
+    "name": "东庙桥",
+    "building_type": "桥梁",
+    "province": "江苏省",
+    "start_dynasty": "宋",
+    "lineage_id": "桥梁-L04",
+    "lineage_name": "宋-南北走向·石材主导-条石谱系",
+    "graph_file": "topk_graphs/1343.json"
+  },
+  {
+    "line_no": "844",
+    "name": "仕水矴步",
+    "building_type": "桥梁",
+    "province": "浙江省",
+    "start_dynasty": "清",
+    "lineage_id": "桥梁-L13",
+    "lineage_name": "浙江-一字形延伸·石材主导-双色石材谱系",
+    "graph_file": "topk_graphs/844.json"
+  },
+  {
+    "line_no": "632",
+    "name": "伍仁桥",
+    "building_type": "桥梁",
+    "province": "河北省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L02",
+    "lineage_name": "宋-弧形桥面·拱桥体系-条石谱系",
+    "graph_file": "topk_graphs/632.json"
+  },
+  {
+    "line_no": "2009",
+    "name": "休宁登封桥",
+    "building_type": "桥梁",
+    "province": "安徽省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L01",
+    "lineage_name": "明-东西走向·石材主导-花岗岩谱系",
+    "graph_file": "topk_graphs/2009.json"
+  },
+  {
+    "line_no": "1982",
+    "name": "余姚通济桥",
+    "building_type": "桥梁",
+    "province": "浙江省",
+    "start_dynasty": "宋",
+    "lineage_id": "桥梁-L04",
+    "lineage_name": "宋-南北走向·石材主导-条石谱系",
+    "graph_file": "topk_graphs/1982.json"
+  },
+  {
+    "line_no": "1392",
+    "name": "八卦桥和河西桥",
+    "building_type": "桥梁",
+    "province": "浙江省",
+    "start_dynasty": "宋",
+    "lineage_id": "桥梁-L04",
+    "lineage_name": "宋-南北走向·石材主导-条石谱系",
+    "graph_file": "topk_graphs/1392.json"
+  },
+  {
+    "line_no": "433",
+    "name": "八字桥",
+    "building_type": "桥梁",
+    "province": "浙江省",
+    "start_dynasty": "宋",
+    "lineage_id": "桥梁-L01",
+    "lineage_name": "明-东西走向·石材主导-花岗岩谱系",
+    "graph_file": "topk_graphs/433.json"
+  },
+  {
+    "line_no": "1985",
+    "name": "兰溪通洲桥",
+    "building_type": "桥梁",
+    "province": "浙江省",
+    "start_dynasty": "清",
+    "lineage_id": "桥梁-L05",
+    "lineage_name": "清-飞阁三座·石材主导-条石谱系",
+    "graph_file": "topk_graphs/1985.json"
+  },
+  {
+    "line_no": "1655",
+    "name": "兵书阁与文星桥",
+    "building_type": "桥梁",
+    "province": "湖南省",
+    "start_dynasty": "清",
+    "lineage_id": "桥梁-L03",
+    "lineage_name": "清-九间廊屋·木材主导-木构谱系",
+    "graph_file": "topk_graphs/1655.json"
+  },
+  {
+    "line_no": "1460",
+    "name": "北岸廊桥",
+    "building_type": "桥梁",
+    "province": "安徽省",
+    "start_dynasty": "清",
+    "lineage_id": "桥梁-L05",
+    "lineage_name": "清-飞阁三座·石材主导-条石谱系",
+    "graph_file": "topk_graphs/1460.json"
+  },
+  {
+    "line_no": "626",
+    "name": "单桥",
+    "building_type": "桥梁",
+    "province": "河北省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L01",
+    "lineage_name": "明-东西走向·石材主导-花岗岩谱系",
+    "graph_file": "topk_graphs/626.json"
+  },
+  {
+    "line_no": "1970",
+    "name": "南渡广济桥",
+    "building_type": "桥梁",
+    "province": "浙江省",
+    "start_dynasty": "宋",
+    "lineage_id": "桥梁-L04",
+    "lineage_name": "宋-南北走向·石材主导-条石谱系",
+    "graph_file": "topk_graphs/1970.json"
+  },
+  {
+    "line_no": "898",
+    "name": "卞桥",
+    "building_type": "桥梁",
+    "province": "山东省",
+    "start_dynasty": "唐",
+    "lineage_id": "桥梁-L01",
+    "lineage_name": "明-东西走向·石材主导-花岗岩谱系",
+    "graph_file": "topk_graphs/898.json"
+  },
+  {
+    "line_no": "1904",
+    "name": "原平普济桥",
+    "building_type": "桥梁",
+    "province": "山西省",
+    "start_dynasty": "金",
+    "lineage_id": "桥梁-L02",
+    "lineage_name": "宋-弧形桥面·拱桥体系-条石谱系",
+    "graph_file": "topk_graphs/1904.json"
+  },
+  {
+    "line_no": "1423",
+    "name": "双林三桥",
+    "building_type": "桥梁",
+    "province": "浙江省",
+    "start_dynasty": "元",
+    "lineage_id": "桥梁-L01",
+    "lineage_name": "明-东西走向·石材主导-花岗岩谱系",
+    "graph_file": "topk_graphs/1423.json"
+  },
+  {
+    "line_no": "1043",
+    "name": "双龙桥",
+    "building_type": "桥梁",
+    "province": "云南省",
+    "start_dynasty": "清",
+    "lineage_id": "桥梁-L05",
+    "lineage_name": "清-飞阁三座·石材主导-条石谱系",
+    "graph_file": "topk_graphs/1043.json"
+  },
+  {
+    "line_no": "421",
+    "name": "古月桥",
+    "building_type": "桥梁",
+    "province": "浙江省",
+    "start_dynasty": "宋",
+    "lineage_id": "桥梁-L02",
+    "lineage_name": "宋-弧形桥面·拱桥体系-条石谱系",
+    "graph_file": "topk_graphs/421.json"
+  },
+  {
+    "line_no": "123",
+    "name": "古纤道",
+    "building_type": "桥梁",
+    "province": "浙江省",
+    "start_dynasty": "唐",
+    "lineage_id": "桥梁-L02",
+    "lineage_name": "宋-弧形桥面·拱桥体系-条石谱系",
+    "graph_file": "topk_graphs/123.json"
+  },
+  {
+    "line_no": "534",
+    "name": "地坪风雨桥",
+    "building_type": "桥梁",
+    "province": "贵州省",
+    "start_dynasty": "清",
+    "lineage_id": "桥梁-L03",
+    "lineage_name": "清-九间廊屋·木材主导-木构谱系",
+    "graph_file": "topk_graphs/534.json"
+  },
+  {
+    "line_no": "960",
+    "name": "坪坦风雨桥",
+    "building_type": "桥梁",
+    "province": "湖南省",
+    "start_dynasty": "清",
+    "lineage_id": "桥梁-L03",
+    "lineage_name": "清-九间廊屋·木材主导-木构谱系",
+    "graph_file": "topk_graphs/960.json"
+  },
+  {
+    "line_no": "1957",
+    "name": "垂虹断桥",
+    "building_type": "桥梁",
+    "province": "江苏省",
+    "start_dynasty": "宋",
+    "lineage_id": "桥梁-L04",
+    "lineage_name": "宋-南北走向·石材主导-条石谱系",
+    "graph_file": "topk_graphs/1957.json"
+  },
+  {
+    "line_no": "1545",
+    "name": "大汶口古石桥",
+    "building_type": "桥梁",
+    "province": "山东省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L04",
+    "lineage_name": "宋-南北走向·石材主导-条石谱系",
+    "graph_file": "topk_graphs/1545.json"
+  },
+  {
+    "line_no": "800",
+    "name": "太仓石拱桥",
+    "building_type": "桥梁",
+    "province": "江苏省",
+    "start_dynasty": "元",
+    "lineage_id": "桥梁-L02",
+    "lineage_name": "宋-弧形桥面·拱桥体系-条石谱系",
+    "graph_file": "topk_graphs/800.json"
+  },
+  {
+    "line_no": "1515",
+    "name": "太平桥",
+    "building_type": "桥梁",
+    "province": "江西省",
+    "start_dynasty": "清",
+    "lineage_id": "桥梁-L02",
+    "lineage_name": "宋-弧形桥面·拱桥体系-条石谱系",
+    "graph_file": "topk_graphs/1515.json"
+  },
+  {
+    "line_no": "428",
+    "name": "如龙桥",
+    "building_type": "桥梁",
+    "province": "浙江省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L03",
+    "lineage_name": "清-九间廊屋·木材主导-木构谱系",
+    "graph_file": "topk_graphs/428.json"
+  },
+  {
+    "line_no": "1468",
+    "name": "宁海桥",
+    "building_type": "桥梁",
+    "province": "福建省",
+    "start_dynasty": "元",
+    "lineage_id": "桥梁-L10",
+    "lineage_name": "福建-桥侧佛塔·船形墩-巨石谱系",
+    "graph_file": "topk_graphs/1468.json"
+  },
+  {
+    "line_no": "1661",
+    "name": "安化风雨桥",
+    "building_type": "桥梁",
+    "province": "湖南省",
+    "start_dynasty": "清",
+    "lineage_id": "桥梁-L03",
+    "lineage_name": "清-九间廊屋·木材主导-木构谱系",
+    "graph_file": "topk_graphs/1661.json"
+  },
+  {
+    "line_no": "11",
+    "name": "安济桥",
+    "building_type": "桥梁",
+    "province": "河北省",
+    "start_dynasty": "隋",
+    "lineage_id": "桥梁-L02",
+    "lineage_name": "宋-弧形桥面·拱桥体系-条石谱系",
+    "graph_file": "topk_graphs/11.json"
+  },
+  {
+    "line_no": "2045",
+    "name": "安阳永和桥",
+    "building_type": "桥梁",
+    "province": "河南省",
+    "start_dynasty": "宋",
+    "lineage_id": "桥梁-L06",
+    "lineage_name": "广东-十八梭船廿四洲·拱桥体系-铁件谱系",
+    "graph_file": "topk_graphs/2045.json"
+  },
+  {
+    "line_no": "417",
+    "name": "宝带桥",
+    "building_type": "桥梁",
+    "province": "江苏省",
+    "start_dynasty": "唐",
+    "lineage_id": "桥梁-L04",
+    "lineage_name": "宋-南北走向·石材主导-条石谱系",
+    "graph_file": "topk_graphs/417.json"
+  },
+  {
+    "line_no": "1679",
+    "name": "富川瑶族风雨桥群",
+    "building_type": "桥梁",
+    "province": "广西壮族自治区",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L03",
+    "lineage_name": "清-九间廊屋·木材主导-木构谱系",
+    "graph_file": "topk_graphs/1679.json"
+  },
+  {
+    "line_no": "828",
+    "name": "寿昌桥",
+    "building_type": "桥梁",
+    "province": "浙江省",
+    "start_dynasty": "宋",
+    "lineage_id": "桥梁-L02",
+    "lineage_name": "宋-弧形桥面·拱桥体系-条石谱系",
+    "graph_file": "topk_graphs/828.json"
+  },
+  {
+    "line_no": "476",
+    "name": "小商桥",
+    "building_type": "桥梁",
+    "province": "河南省",
+    "start_dynasty": "隋",
+    "lineage_id": "桥梁-L07",
+    "lineage_name": "河北-桥面梯形平面·副拱伏设-拱券结构谱系",
+    "graph_file": "topk_graphs/476.json"
+  },
+  {
+    "line_no": "1997",
+    "name": "屯溪镇海桥",
+    "building_type": "桥梁",
+    "province": "安徽省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L01",
+    "lineage_name": "明-东西走向·石材主导-花岗岩谱系",
+    "graph_file": "topk_graphs/1997.json"
+  },
+  {
+    "line_no": "510",
+    "name": "岜团桥",
+    "building_type": "桥梁",
+    "province": "广西壮族自治区",
+    "start_dynasty": "清",
+    "lineage_id": "桥梁-L03",
+    "lineage_name": "清-九间廊屋·木材主导-木构谱系",
+    "graph_file": "topk_graphs/510.json"
+  },
+  {
+    "line_no": "1291",
+    "name": "平遥惠济桥",
+    "building_type": "桥梁",
+    "province": "山西省",
+    "start_dynasty": "清",
+    "lineage_id": "桥梁-L02",
+    "lineage_name": "宋-弧形桥面·拱桥体系-条石谱系",
+    "graph_file": "topk_graphs/1291.json"
+  },
+  {
+    "line_no": "1539",
+    "name": "平阴永济桥",
+    "building_type": "桥梁",
+    "province": "山东省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L02",
+    "lineage_name": "宋-弧形桥面·拱桥体系-条石谱系",
+    "graph_file": "topk_graphs/1539.json"
+  },
+  {
+    "line_no": "1656",
+    "name": "广利桥",
+    "building_type": "桥梁",
+    "province": "湖南省",
+    "start_dynasty": "清",
+    "lineage_id": "桥梁-L03",
+    "lineage_name": "清-九间廊屋·木材主导-木构谱系",
+    "graph_file": "topk_graphs/1656.json"
+  },
+  {
+    "line_no": "122",
+    "name": "广济桥",
+    "building_type": "桥梁",
+    "province": "广东省",
+    "start_dynasty": "宋",
+    "lineage_id": "桥梁-L06",
+    "lineage_name": "广东-十八梭船廿四洲·拱桥体系-铁件谱系",
+    "graph_file": "topk_graphs/122.json"
+  },
+  {
+    "line_no": "2017",
+    "name": "建瓯值庆桥",
+    "building_type": "桥梁",
+    "province": "福建省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L03",
+    "lineage_name": "清-九间廊屋·木材主导-木构谱系",
+    "graph_file": "topk_graphs/2017.json"
+  },
+  {
+    "line_no": "627",
+    "name": "弘济桥",
+    "building_type": "桥梁",
+    "province": "河北省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L02",
+    "lineage_name": "宋-弧形桥面·拱桥体系-条石谱系",
+    "graph_file": "topk_graphs/627.json"
+  },
+  {
+    "line_no": "1342",
+    "name": "思本桥",
+    "building_type": "桥梁",
+    "province": "江苏省",
+    "start_dynasty": "宋",
+    "lineage_id": "桥梁-L02",
+    "lineage_name": "宋-弧形桥面·拱桥体系-条石谱系",
+    "graph_file": "topk_graphs/1342.json"
+  },
+  {
+    "line_no": "1682",
+    "name": "惠爱桥",
+    "building_type": "桥梁",
+    "province": "广西壮族自治区",
+    "start_dynasty": "清",
+    "lineage_id": "桥梁-L02",
+    "lineage_name": "宋-弧形桥面·拱桥体系-条石谱系",
+    "graph_file": "topk_graphs/1682.json"
+  },
+  {
+    "line_no": "826",
+    "name": "新河闸桥群",
+    "building_type": "桥梁",
+    "province": "浙江省",
+    "start_dynasty": "宋",
+    "lineage_id": "桥梁-L04",
+    "lineage_name": "宋-南北走向·石材主导-条石谱系",
+    "graph_file": "topk_graphs/826.json"
+  },
+  {
+    "line_no": "1146",
+    "name": "方顺桥",
+    "building_type": "桥梁",
+    "province": "河北省",
+    "start_dynasty": "西晋",
+    "lineage_id": "桥梁-L02",
+    "lineage_name": "宋-弧形桥面·拱桥体系-条石谱系",
+    "graph_file": "topk_graphs/1146.json"
+  },
+  {
+    "line_no": "1782",
+    "name": "星宿桥和丰裕桥",
+    "building_type": "桥梁",
+    "province": "云南省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L01",
+    "lineage_name": "明-东西走向·石材主导-花岗岩谱系",
+    "graph_file": "topk_graphs/1782.json"
+  },
+  {
+    "line_no": "1967",
+    "name": "杭州忠义桥",
+    "building_type": "桥梁",
+    "province": "浙江省",
+    "start_dynasty": "宋",
+    "lineage_id": "桥梁-L02",
+    "lineage_name": "宋-弧形桥面·拱桥体系-条石谱系",
+    "graph_file": "topk_graphs/1967.json"
+  },
+  {
+    "line_no": "1835",
+    "name": "桥上桥",
+    "building_type": "桥梁",
+    "province": "陕西省",
+    "start_dynasty": "清",
+    "lineage_id": "桥梁-L01",
+    "lineage_name": "明-东西走向·石材主导-花岗岩谱系",
+    "graph_file": "topk_graphs/1835.json"
+  },
+  {
+    "line_no": "2003",
+    "name": "歙县太平桥",
+    "building_type": "桥梁",
+    "province": "安徽省",
+    "start_dynasty": "宋",
+    "lineage_id": "桥梁-L01",
+    "lineage_name": "明-东西走向·石材主导-花岗岩谱系",
+    "graph_file": "topk_graphs/2003.json"
+  },
+  {
+    "line_no": "1837",
+    "name": "毓秀桥",
+    "building_type": "桥梁",
+    "province": "陕西省",
+    "start_dynasty": "清",
+    "lineage_id": "桥梁-L05",
+    "lineage_name": "清-飞阁三座·石材主导-条石谱系",
+    "graph_file": "topk_graphs/1837.json"
+  },
+  {
+    "line_no": "1956",
+    "name": "永安石桥",
+    "building_type": "桥梁",
+    "province": "辽宁省",
+    "start_dynasty": "清",
+    "lineage_id": "桥梁-L05",
+    "lineage_name": "清-飞阁三座·石材主导-条石谱系",
+    "graph_file": "topk_graphs/1956.json"
+  },
+  {
+    "line_no": "617",
+    "name": "永济桥",
+    "building_type": "桥梁",
+    "province": "河北省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L01",
+    "lineage_name": "明-东西走向·石材主导-花岗岩谱系",
+    "graph_file": "topk_graphs/617.json"
+  },
+  {
+    "line_no": "1582",
+    "name": "永济桥",
+    "building_type": "桥梁",
+    "province": "河南省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L01",
+    "lineage_name": "明-东西走向·石材主导-花岗岩谱系",
+    "graph_file": "topk_graphs/1582.json"
+  },
+  {
+    "line_no": "13",
+    "name": "永通桥",
+    "building_type": "桥梁",
+    "province": "河北省",
+    "start_dynasty": "唐",
+    "lineage_id": "桥梁-L07",
+    "lineage_name": "河北-桥面梯形平面·副拱伏设-拱券结构谱系",
+    "graph_file": "topk_graphs/13.json"
+  },
+  {
+    "line_no": "1517",
+    "name": "永镇桥",
+    "building_type": "桥梁",
+    "province": "江西省",
+    "start_dynasty": "清",
+    "lineage_id": "桥梁-L03",
+    "lineage_name": "清-九间廊屋·木材主导-木构谱系",
+    "graph_file": "topk_graphs/1517.json"
+  },
+  {
+    "line_no": "2052",
+    "name": "汝宁石桥",
+    "building_type": "桥梁",
+    "province": "河南省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L01",
+    "lineage_name": "明-东西走向·石材主导-花岗岩谱系",
+    "graph_file": "topk_graphs/2052.json"
+  },
+  {
+    "line_no": "464",
+    "name": "江东桥",
+    "building_type": "桥梁",
+    "province": "福建省",
+    "start_dynasty": "宋",
+    "lineage_id": "桥梁-L04",
+    "lineage_name": "宋-南北走向·石材主导-条石谱系",
+    "graph_file": "topk_graphs/464.json"
+  },
+  {
+    "line_no": "1994",
+    "name": "池河太平桥",
+    "building_type": "桥梁",
+    "province": "安徽省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L01",
+    "lineage_name": "明-东西走向·石材主导-花岗岩谱系",
+    "graph_file": "topk_graphs/1994.json"
+  },
+  {
+    "line_no": "1775",
+    "name": "沘江古桥梁群",
+    "building_type": "桥梁",
+    "province": "云南省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L03",
+    "lineage_name": "清-九间廊屋·木材主导-木构谱系",
+    "graph_file": "topk_graphs/1775.json"
+  },
+  {
+    "line_no": "1005",
+    "name": "波日桥",
+    "building_type": "桥梁",
+    "province": "四川省",
+    "start_dynasty": "元",
+    "lineage_id": "桥梁-L08",
+    "lineage_name": "四川-窄幅长桥·木构桥梁-原木谱系",
+    "graph_file": "topk_graphs/1005.json"
+  },
+  {
+    "line_no": "843",
+    "name": "泰顺廊桥",
+    "building_type": "桥梁",
+    "province": "浙江省",
+    "start_dynasty": "唐",
+    "lineage_id": "桥梁-L03",
+    "lineage_name": "清-九间廊屋·木材主导-木构谱系",
+    "graph_file": "topk_graphs/843.json"
+  },
+  {
+    "line_no": "1714",
+    "name": "泸县龙桥群",
+    "building_type": "桥梁",
+    "province": "四川省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L04",
+    "lineage_name": "宋-南北走向·石材主导-条石谱系",
+    "graph_file": "topk_graphs/1714.json"
+  },
+  {
+    "line_no": "2141",
+    "name": "洄澜桥阁",
+    "building_type": "桥梁",
+    "province": "云南省",
+    "start_dynasty": "清",
+    "lineage_id": "桥梁-L03",
+    "lineage_name": "清-九间廊屋·木材主导-木构谱系",
+    "graph_file": "topk_graphs/2141.json"
+  },
+  {
+    "line_no": "2145",
+    "name": "海口川字闸",
+    "building_type": "桥梁",
+    "province": "云南省",
+    "start_dynasty": "清",
+    "lineage_id": "桥梁-L05",
+    "lineage_name": "清-飞阁三座·石材主导-条石谱系",
+    "graph_file": "topk_graphs/2145.json"
+  },
+  {
+    "line_no": "890",
+    "name": "清华彩虹桥",
+    "building_type": "桥梁",
+    "province": "江西省",
+    "start_dynasty": "宋",
+    "lineage_id": "桥梁-L04",
+    "lineage_name": "宋-南北走向·石材主导-条石谱系",
+    "graph_file": "topk_graphs/890.json"
+  },
+  {
+    "line_no": "1974",
+    "name": "湖州潮音桥",
+    "building_type": "桥梁",
+    "province": "浙江省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L01",
+    "lineage_name": "明-东西走向·石材主导-花岗岩谱系",
+    "graph_file": "topk_graphs/1974.json"
+  },
+  {
+    "line_no": "1409",
+    "name": "潘公桥及潘孝墓",
+    "building_type": "桥梁",
+    "province": "浙江省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L01",
+    "lineage_name": "明-东西走向·石材主导-花岗岩谱系",
+    "graph_file": "topk_graphs/1409.json"
+  },
+  {
+    "line_no": "2087",
+    "name": "澧县多安桥",
+    "building_type": "桥梁",
+    "province": "湖南省",
+    "start_dynasty": "清",
+    "lineage_id": "桥梁-L01",
+    "lineage_name": "明-东西走向·石材主导-花岗岩谱系",
+    "graph_file": "topk_graphs/2087.json"
+  },
+  {
+    "line_no": "1518",
+    "name": "玉带桥",
+    "building_type": "桥梁",
+    "province": "江西省",
+    "start_dynasty": "清",
+    "lineage_id": "桥梁-L02",
+    "lineage_name": "宋-弧形桥面·拱桥体系-条石谱系",
+    "graph_file": "topk_graphs/1518.json"
+  },
+  {
+    "line_no": "1103",
+    "name": "琉璃河大桥",
+    "building_type": "桥梁",
+    "province": "北京市",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L01",
+    "lineage_name": "明-东西走向·石材主导-花岗岩谱系",
+    "graph_file": "topk_graphs/1103.json"
+  },
+  {
+    "line_no": "1147",
+    "name": "登瀛桥",
+    "building_type": "桥梁",
+    "province": "河北省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L03",
+    "lineage_name": "清-九间廊屋·木材主导-木构谱系",
+    "graph_file": "topk_graphs/1147.json"
+  },
+  {
+    "line_no": "1501",
+    "name": "紫阳堤",
+    "building_type": "桥梁",
+    "province": "江西省",
+    "start_dynasty": "宋",
+    "lineage_id": "桥梁-L01",
+    "lineage_name": "明-东西走向·石材主导-花岗岩谱系",
+    "graph_file": "topk_graphs/1501.json"
+  },
+  {
+    "line_no": "1022",
+    "name": "葛镜桥",
+    "building_type": "桥梁",
+    "province": "贵州省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L01",
+    "lineage_name": "明-东西走向·石材主导-花岗岩谱系",
+    "graph_file": "topk_graphs/1022.json"
+  },
+  {
+    "line_no": "1350",
+    "name": "蒲塘桥",
+    "building_type": "桥梁",
+    "province": "江苏省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L01",
+    "lineage_name": "明-东西走向·石材主导-花岗岩谱系",
+    "graph_file": "topk_graphs/1350.json"
+  },
+  {
+    "line_no": "1154",
+    "name": "衡水安济桥",
+    "building_type": "桥梁",
+    "province": "河北省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L01",
+    "lineage_name": "明-东西走向·石材主导-花岗岩谱系",
+    "graph_file": "topk_graphs/1154.json"
+  },
+  {
+    "line_no": "1183",
+    "name": "襄垣永惠桥",
+    "building_type": "桥梁",
+    "province": "山西省",
+    "start_dynasty": "金",
+    "lineage_id": "桥梁-L02",
+    "lineage_name": "宋-弧形桥面·拱桥体系-条石谱系",
+    "graph_file": "topk_graphs/1183.json"
+  },
+  {
+    "line_no": "1394",
+    "name": "西山桥",
+    "building_type": "桥梁",
+    "province": "浙江省",
+    "start_dynasty": "宋",
+    "lineage_id": "桥梁-L02",
+    "lineage_name": "宋-弧形桥面·拱桥体系-条石谱系",
+    "graph_file": "topk_graphs/1394.json"
+  },
+  {
+    "line_no": "120",
+    "name": "观音桥",
+    "building_type": "桥梁",
+    "province": "江西省",
+    "start_dynasty": "宋",
+    "lineage_id": "桥梁-L02",
+    "lineage_name": "宋-弧形桥面·拱桥体系-条石谱系",
+    "graph_file": "topk_graphs/120.json"
+  },
+  {
+    "line_no": "829",
+    "name": "赤溪五洞桥",
+    "building_type": "桥梁",
+    "province": "浙江省",
+    "start_dynasty": "宋",
+    "lineage_id": "桥梁-L04",
+    "lineage_name": "宋-南北走向·石材主导-条石谱系",
+    "graph_file": "topk_graphs/829.json"
+  },
+  {
+    "line_no": "1497",
+    "name": "逢渠桥",
+    "building_type": "桥梁",
+    "province": "江西省",
+    "start_dynasty": "宋",
+    "lineage_id": "桥梁-L02",
+    "lineage_name": "宋-弧形桥面·拱桥体系-条石谱系",
+    "graph_file": "topk_graphs/1497.json"
+  },
+  {
+    "line_no": "1760",
+    "name": "金勾风雨桥",
+    "building_type": "桥梁",
+    "province": "贵州省",
+    "start_dynasty": "清",
+    "lineage_id": "桥梁-L03",
+    "lineage_name": "清-九间廊屋·木材主导-木构谱系",
+    "graph_file": "topk_graphs/1760.json"
+  },
+  {
+    "line_no": "1528",
+    "name": "金口坝",
+    "building_type": "桥梁",
+    "province": "山东省",
+    "start_dynasty": "南北朝",
+    "lineage_id": "桥梁-L11",
+    "lineage_name": "山东-五洞闸门布局·五孔闸坝-条石谱系",
+    "graph_file": "topk_graphs/1528.json"
+  },
+  {
+    "line_no": "1983",
+    "name": "金清大桥",
+    "building_type": "桥梁",
+    "province": "浙江省",
+    "start_dynasty": "清",
+    "lineage_id": "桥梁-L05",
+    "lineage_name": "清-飞阁三座·石材主导-条石谱系",
+    "graph_file": "topk_graphs/1983.json"
+  },
+  {
+    "line_no": "1040",
+    "name": "金龙桥",
+    "building_type": "桥梁",
+    "province": "云南省",
+    "start_dynasty": "清",
+    "lineage_id": "桥梁-L09",
+    "lineage_name": "云南-桥廊休息空间·悬索结构-扁钢条谱系",
+    "graph_file": "topk_graphs/1040.json"
+  },
+  {
+    "line_no": "878",
+    "name": "闽东北廊桥",
+    "building_type": "桥梁",
+    "province": "福建省",
+    "start_dynasty": "清",
+    "lineage_id": "桥梁-L03",
+    "lineage_name": "清-九间廊屋·木材主导-木构谱系",
+    "graph_file": "topk_graphs/878.json"
+  },
+  {
+    "line_no": "889",
+    "name": "鸣水桥",
+    "building_type": "桥梁",
+    "province": "江西省",
+    "start_dynasty": "宋",
+    "lineage_id": "桥梁-L02",
+    "lineage_name": "宋-弧形桥面·拱桥体系-条石谱系",
+    "graph_file": "topk_graphs/889.json"
+  },
+  {
+    "line_no": "2055",
+    "name": "龙泉澧河石桥",
+    "building_type": "桥梁",
+    "province": "河南省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L01",
+    "lineage_name": "明-东西走向·石材主导-花岗岩谱系",
+    "graph_file": "topk_graphs/2055.json"
+  },
+  {
+    "line_no": "217",
+    "name": "龙脑桥",
+    "building_type": "桥梁",
+    "province": "四川省",
+    "start_dynasty": "明",
+    "lineage_id": "桥梁-L04",
+    "lineage_name": "宋-南北走向·石材主导-条石谱系",
+    "graph_file": "topk_graphs/217.json"
+  },
+  {
+    "line_no": "1312",
+    "name": "四子王旗王府",
+    "building_type": "宫殿",
+    "province": "内蒙古自治区",
+    "start_dynasty": "清",
+    "lineage_id": "宫殿-L01",
+    "lineage_name": "内蒙古-合院布局-琉璃瓦谱系",
+    "graph_file": "topk_graphs/1312.json"
+  },
+  {
+    "line_no": "357",
+    "name": "大同九龙壁",
+    "building_type": "宫殿",
+    "province": "山西省",
+    "start_dynasty": "明",
+    "lineage_id": "宫殿-L09",
+    "lineage_name": "山西-临街设置·须弥座-灰砖谱系",
+    "graph_file": "topk_graphs/357.json"
+  },
+  {
+    "line_no": "1306",
+    "name": "奈曼蒙古王府",
+    "building_type": "宫殿",
+    "province": "内蒙古自治区",
+    "start_dynasty": "清",
+    "lineage_id": "宫殿-L01",
+    "lineage_name": "内蒙古-合院布局-琉璃瓦谱系",
+    "graph_file": "topk_graphs/1306.json"
+  },
+  {
+    "line_no": "329",
+    "name": "孚王府",
+    "building_type": "宫殿",
+    "province": "北京市",
+    "start_dynasty": "清",
+    "lineage_id": "宫殿-L01",
+    "lineage_name": "内蒙古-合院布局-琉璃瓦谱系",
+    "graph_file": "topk_graphs/329.json"
+  },
+  {
+    "line_no": "53",
+    "name": "故宫",
+    "building_type": "宫殿",
+    "province": "北京市",
+    "start_dynasty": "明",
+    "lineage_id": "宫殿-L01",
+    "lineage_name": "内蒙古-合院布局-琉璃瓦谱系",
+    "graph_file": "topk_graphs/53.json"
+  },
+  {
+    "line_no": "330",
+    "name": "景山",
+    "building_type": "宫殿",
+    "province": "北京市",
+    "start_dynasty": "金",
+    "lineage_id": "宫殿-L08",
+    "lineage_name": "北京-殿宇移建·土山结构-渣土谱系",
+    "graph_file": "topk_graphs/330.json"
+  },
+  {
+    "line_no": "930",
+    "name": "望京楼",
+    "building_type": "宫殿",
+    "province": "河南省",
+    "start_dynasty": "明",
+    "lineage_id": "宫殿-L14",
+    "lineage_name": "河南-坐北朝南·无梁殿-白石谱系",
+    "graph_file": "topk_graphs/930.json"
+  },
+  {
+    "line_no": "65",
+    "name": "沈阳故宫",
+    "building_type": "宫殿",
+    "province": "辽宁省",
+    "start_dynasty": "清",
+    "lineage_id": "宫殿-L12",
+    "lineage_name": "辽宁-东路-中路-西路三段式·重檐八角亭式-黑琉璃瓦谱系",
+    "graph_file": "topk_graphs/65.json"
+  },
+  {
+    "line_no": "1366",
+    "name": "燕园",
+    "building_type": "宫殿",
+    "province": "江苏省",
+    "start_dynasty": "金",
+    "lineage_id": "宫殿-L03",
+    "lineage_name": "江苏-园林化布局·高台基座-太湖石谱系",
+    "graph_file": "topk_graphs/1366.json"
+  },
+  {
+    "line_no": "1076",
+    "name": "盘龙山古建筑群",
+    "building_type": "宫殿",
+    "province": "陕西省",
+    "start_dynasty": "明",
+    "lineage_id": "宫殿-L02",
+    "lineage_name": "陕西-多进建筑·砖石混合-木材谱系",
+    "graph_file": "topk_graphs/1076.json"
+  },
+  {
+    "line_no": "149",
+    "name": "罗布林卡",
+    "building_type": "宫殿",
+    "province": "西藏自治区",
+    "start_dynasty": "清",
+    "lineage_id": "宫殿-L04",
+    "lineage_name": "西藏-多组院落群·歇山顶-贝玛草谱系",
+    "graph_file": "topk_graphs/149.json"
+  },
+  {
+    "line_no": "1541",
+    "name": "衡王府石坊",
+    "building_type": "宫殿",
+    "province": "山东省",
+    "start_dynasty": "明",
+    "lineage_id": "宫殿-L05",
+    "lineage_name": "山东-轴线排列·石构架-巨石谱系",
+    "graph_file": "topk_graphs/1541.json"
+  },
+  {
+    "line_no": "494",
+    "name": "襄阳王府绿影壁",
+    "building_type": "宫殿",
+    "province": "湖北省",
+    "start_dynasty": "明",
+    "lineage_id": "宫殿-L10",
+    "lineage_name": "湖北-坐南朝北·壁座壁身壁顶三段式-汉白玉谱系",
+    "graph_file": "topk_graphs/494.json"
+  },
+  {
+    "line_no": "2152",
+    "name": "达律王府",
+    "building_type": "宫殿",
+    "province": "西藏自治区",
+    "start_dynasty": "元",
+    "lineage_id": "宫殿-L06",
+    "lineage_name": "西藏-集中式布局·平屋顶-生土谱系",
+    "graph_file": "topk_graphs/2152.json"
+  },
+  {
+    "line_no": "76",
+    "name": "避暑山庄",
+    "building_type": "宫殿",
+    "province": "河北省",
+    "start_dynasty": "清",
+    "lineage_id": "宫殿-L13",
+    "lineage_name": "河北-宫殿区与苑景区·藏式寺庙-铜谱系",
+    "graph_file": "topk_graphs/76.json"
+  },
+  {
+    "line_no": "594",
+    "name": "醇亲王府",
+    "building_type": "宫殿",
+    "province": "北京市",
+    "start_dynasty": "清",
+    "lineage_id": "宫殿-L11",
+    "lineage_name": "北京-坐北朝南·马号-石谱系",
+    "graph_file": "topk_graphs/594.json"
+  },
+  {
+    "line_no": "928",
+    "name": "阳台宫",
+    "building_type": "宫殿",
+    "province": "河南省",
+    "start_dynasty": "明",
+    "lineage_id": "宫殿-L02",
+    "lineage_name": "陕西-多进建筑·砖石混合-木材谱系",
+    "graph_file": "topk_graphs/928.json"
+  },
+  {
+    "line_no": "292",
+    "name": "靖江王府及王陵",
+    "building_type": "宫殿",
+    "province": "广西壮族自治区",
+    "start_dynasty": "明",
+    "lineage_id": "宫殿-L07",
+    "lineage_name": "广西-围山布局·城砖包砌-城砖谱系",
+    "graph_file": "topk_graphs/292.json"
+  }
+]

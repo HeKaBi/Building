@@ -1366,7 +1366,7 @@ watch(
 }
 
 .catalog-shell--with-hud .stage--groups {
-  padding-top: 0;
+  padding-top: var(--catalog-hud-offset);
 }
 
 .catalog-shell--with-hud .stage--gallery {
@@ -2739,7 +2739,7 @@ watch(
   }
 
   .catalog-shell--with-hud .stage--groups {
-    padding-top: 0;
+    padding-top: var(--catalog-hud-offset);
   }
 
   .stage--home,

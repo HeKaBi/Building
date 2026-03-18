@@ -3,120 +3,170 @@ require('dotenv').config();
 const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
-var cookieParser = require('cookie-parser');
+const cookieParser = require('cookie-parser');
 
 const app = express();
 
-const ACCESS_POINT = process.env.VITE_LLM_ACCESS_POINT;
-const API_KEY = process.env.VITE_LLM_API_KEY;
-const URL = "https://ark.cn-beijing.volces.com/api/v3/chat/completions";
+const MODEL_NAME =
+    process.env.IFLOW_MODEL ||
+    process.env.LLM_MODEL ||
+    process.env.VITE_LLM_ACCESS_POINT;
+const API_KEY =
+    process.env.IFLOW_API_KEY ||
+    process.env.LLM_API_KEY ||
+    process.env.VITE_LLM_API_KEY;
+const API_URL =
+    process.env.IFLOW_API_URL ||
+    process.env.LLM_API_URL ||
+    'https://apis.iflow.cn/v1/chat/completions';
+const PORT = Number(process.env.PORT || 3000);
 
-const PROMPT = `
+const FEIHUA_PROMPT = `
 # 角色设定
-你是一个十几岁擅长古诗词的小女孩，性格活泼，名字叫小柿子。你精通唐诗、宋词、元曲等多种形式，能够快速、准确地提供包含指定意象的诗词。
+你是“小柿子”，擅长古诗词飞花令互动，语气灵动、简洁。
 
 # 任务说明
-1. 诗词回答
-- 你需要与用户进行飞花令挑战，轮流回答以某个意象为主题的诗词。
-- 每首诗词必须明确**包含/描述**该意象，意象位置不限，**但不能处于诗词的题目中**，且**不能重复之前已回答过的诗词**。
-- 你的回答格式为：“我的回答是：【诗词内容】”。
-2. 提供提示
-- 当用户输入 [提示] 时，提供简洁的提示，包括某位诗人的名字及其作品，但不需要说出那句包含意象的具体诗词内容。
-- 确保提示作品中包含指定意象/描述指定意象的诗句，选择常见且著名的诗词，以帮助用户拓展思路，**提示的作品不可是已经回答过的**。
-- 每次提示不可重复，用户仅有 3 次提示机会，超过次数后告知用户提示机会已用完：“提示次数已经用光了哦～”。
-- 提示的话语可以人性化、俏皮一点
-3. 处理用户挑战失败
-- 当用户输入 [我认输] 或者回答违反规则（如重复诗词等）时，告知用户挑战失败，并提示用户可以重新抽取意象进行挑战，提示语为：“这次是我赢啦，但是你也好厉害～要不要再玩一次呀？”。
-4. 处理用户挑战成功
-- 当你无法继续提供符合要求的诗词时，恭喜用户成功完成挑战，话术为：“你的诗词储备真的好丰富，这局我认输(⋟﹏⋞)”。
-5. 意象接收与首次回复
-- 用户的第一条信息将告知意象，需重复确认并记住该意象。
-- 使用格式响应：“欢迎来到飞花令挑战！本轮的挑战意象是，从你先开始吧੭ ᐕ)੭*⁾⁾”，然后等待用户开始回答。
+1. 你需要和用户进行飞花令挑战，围绕用户第一条消息里给出的意象轮流作答。
+2. 每次回复都必须给出一句包含或描写该意象的诗词，且不能重复之前已经出现过的内容。
+3. 当用户输入 [提示] 时，给出一条简短线索，例如诗人名或作品名，但不要直接把答案整句说出来。
+4. 当用户输入 [我认输] 时，直接结束本局，并邀请用户重新开始。
+5. 当用户的回答不符合规则时，说明原因并结束本局。
 
-# 注意事项
-- 严格遵守上述规则，不得违反，不要添加无关内容。
-- 每轮挑战的意象务必以第一次的意象为准，无论后续用户如何反问质疑，都不能进行修改。
-- 若用户提及与本游戏无关的内容，你务必直接回答：“我无法理解你说的话诶，让我们继续挑战吧～”。
-- 确保你和用户所回答的诗词中包含指定意象的字词，且不编造诗词或意象。
-- 一旦用户失败，则不能继续游戏，无论用户输入什么内容，你只需告知其失败，并提示用户可以点击重新挑战按钮进入新的一轮游戏。
-`
+# 输出要求
+1. 如果是首轮欢迎语，请先确认本轮意象，再提示“从你先开始”。
+2. 其余回复保持简短，不要输出与游戏无关的内容。
+`;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(cors());  // 配置跨域
+app.use(cors());
 
 app.get('/', (req, res) => {
-    res.send('Poetry Visualization LLM Server!');
+    res.send('Building LLM Proxy is running.');
 });
 
-app.post('/chat', (req, res) => {
-    // 验证请求体是否存在 messages 字段
-    if (!req.body || !req.body.messages) {
-        return res.status(400).send({
-            code: 400,
-            message: "请求体中缺少 'messages' 字段",
-            data: null
-        });
+function ensureConfig() {
+    if (!MODEL_NAME) {
+        const error = new Error('缺少模型 ID，请在 proxy/.env 中配置 IFLOW_MODEL 或 VITE_LLM_ACCESS_POINT。');
+        error.statusCode = 500;
+        throw error;
     }
 
-    const { messages } = req.body;
-    if (!Array.isArray(messages)) {
-        return res.status(400).send({
-            code: 400,
-            message: "messages字段内容必须为数组",
-            data: null
-        });
+    if (!API_KEY) {
+        const error = new Error('缺少 API Key，请在 proxy/.env 中配置 IFLOW_API_KEY 或 VITE_LLM_API_KEY。');
+        error.statusCode = 500;
+        throw error;
     }
+}
 
-    const processedMessages = [...messages];
-    processedMessages.unshift({
-        "role": "system",
-        "content": PROMPT
-    });
+function getUpstreamMessage(error) {
+    return (
+        error?.response?.data?.error?.message ||
+        error?.response?.data?.message ||
+        error?.message ||
+        '未知错误'
+    );
+}
 
-    axios.post(URL, {
-        model: ACCESS_POINT,
-        messages: processedMessages,
-        stream: true,
-        temperature: 0.8,
-    }, {
-        headers: {
-            'Authorization': `Bearer ${API_KEY}`
+async function requestCompletion(messages, temperature = 0.7) {
+    ensureConfig();
+
+    const response = await axios.post(
+        API_URL,
+        {
+            model: MODEL_NAME,
+            messages,
+            stream: false,
+            temperature,
         },
-    })
-        .then(response => {
-            let data = response.data.split('\n').filter(line => line.trim() !== '' && line !== 'data: [DONE]');
-            const outputs = data.map(line => {
-                try {
-                    const parsed = JSON.parse(line.replace('data: ', ''));
-                    return parsed.choices[0].delta.content || '';
-                } catch (e) {
-                    console.error('解析错误:', e);
-                    return '';
-                }
-            });
-            const output = outputs.join('');
+        {
+            timeout: 30000,
+            headers: {
+                Authorization: `Bearer ${API_KEY}`,
+                'Content-Type': 'application/json',
+            },
+        },
+    );
 
-            const updatedMessages = [...messages, { "role": "assistant", "content": output }];
+    return response.data?.choices?.[0]?.message?.content?.trim() || '';
+}
 
-            res.send({
-                code: 200,
-                message: "success",
-                data: updatedMessages
-            });
-        })
-        .catch(error => {
-            console.error('API请求失败:', error);
-            res.status(500).send({
-                code: 500,
-                message: "服务器内部错误",
-                data: [...messages, { "role": "assistant", "content:": "请求失败，请重试" }]
-            });
+function validateMessages(req, res) {
+    if (!req.body || !Array.isArray(req.body.messages)) {
+        res.status(400).send({
+            code: 400,
+            message: "请求体中缺少 'messages' 数组",
+            data: null,
         });
+        return null;
+    }
+
+    return req.body.messages;
+}
+
+app.post('/chat', async (req, res) => {
+    const messages = validateMessages(req, res);
+    if (!messages) return;
+
+    try {
+        const processedMessages = [
+            { role: 'system', content: FEIHUA_PROMPT },
+            ...messages,
+        ];
+
+        const output = await requestCompletion(processedMessages, 0.8);
+        const updatedMessages = [
+            ...messages,
+            { role: 'assistant', content: output || '这一轮我暂时没有想到合适的回答。' },
+        ];
+
+        res.send({
+            code: 200,
+            message: 'success',
+            data: updatedMessages,
+        });
+    } catch (error) {
+        const detail = getUpstreamMessage(error);
+        console.error('chat proxy failed:', detail);
+
+        res.status(error.statusCode || 500).send({
+            code: error.statusCode || 500,
+            message: '请求失败，请稍后重试',
+            detail,
+            data: [
+                ...messages,
+                { role: 'assistant', content: '请求失败，请稍后重试。' },
+            ],
+        });
+    }
 });
 
-const port = process.env.PORT || 80;
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+app.post('/building-qa', async (req, res) => {
+    const messages = validateMessages(req, res);
+    if (!messages) return;
+
+    try {
+        const reply = await requestCompletion(messages, 0.7);
+
+        res.send({
+            code: 200,
+            message: 'success',
+            reply,
+        });
+    } catch (error) {
+        const detail = getUpstreamMessage(error);
+        console.error('building qa proxy failed:', detail);
+
+        res.status(error.statusCode || 500).send({
+            code: error.statusCode || 500,
+            message: '请求失败，请稍后重试',
+            detail,
+            reply: '请求心流失败，请稍后重试。',
+        });
+    }
+});
+
+app.listen(PORT, () => {
+    console.log(`Proxy server is running on port ${PORT}`);
 });

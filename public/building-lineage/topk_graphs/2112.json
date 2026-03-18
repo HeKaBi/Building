@@ -1,0 +1,176 @@
+{
+  "center_building": {
+    "line_no": "2112",
+    "name": "琼山侯家大院",
+    "building_type": "民居",
+    "start_dynasty": "清",
+    "century_num": 19,
+    "province": "海南省",
+    "region": "华南",
+    "address": "海南省海口市琼山区",
+    "start_time_confidence": 0.98,
+    "structure_terms": [
+      "砖木结构",
+      "四进式正屋",
+      "三进式正屋",
+      "横屋"
+    ],
+    "layout_terms": [
+      "四进式布局",
+      "三进式布局",
+      "横屋布局",
+      "琼北民居布局"
+    ],
+    "material_terms": [
+      "坤甸木",
+      "菠萝蜜木",
+      "花梨木",
+      "灰塑",
+      "彩绘"
+    ],
+    "craft_terms": [
+      "木雕",
+      "彩绘",
+      "吉祥纹样雕刻",
+      "传统雕刻技艺"
+    ],
+    "function_terms": [
+      "客厅",
+      "卧房",
+      "神龛",
+      "屏风"
+    ],
+    "material_categories": [
+      "木材类",
+      "灰浆胶结类",
+      "其他材料"
+    ],
+    "structure_cluster": "砖木民居型",
+    "structure_cluster_summary": "采用砖木混合结构，布局含多进正屋与横屋，体现清代民居典型形制。",
+    "material_primary_category": "木材类",
+    "structure_evidence": "共有十二幢主房，均为砖木混合结构 || 主要由并列的一幢四进式正屋、三幢三进式正屋和一排横屋组成 || 房屋错落分布，主要由并列的一幢四进式正屋、三幢三进式正屋和一排横屋组成 || 内部结构基本延续了当时琼北民居的建筑风格 || 木材大都是坤甸木与菠萝蜜木，还有部分是花梨木 || 墙上有彩绘、灰塑，木质构件均饰雕刻",
+    "semantic_terms": [
+      "砖木结构",
+      "四进式正屋",
+      "三进式正屋",
+      "横屋",
+      "四进式布局",
+      "三进式布局",
+      "横屋布局",
+      "琼北民居布局",
+      "坤甸木",
+      "菠萝蜜木",
+      "花梨木",
+      "灰塑",
+      "彩绘",
+      "木雕",
+      "吉祥纹样雕刻",
+      "传统雕刻技艺",
+      "客厅",
+      "卧房",
+      "神龛",
+      "屏风",
+      "木材类",
+      "灰浆胶结类",
+      "其他材料"
+    ]
+  },
+  "lineage_id": "民居-L15",
+  "lineage_name": "海南-三进式布局·砖木结构-灰塑谱系",
+  "building_type": "民居",
+  "signature_features": {
+    "primary_structure": "砖木结构",
+    "primary_layout": "三进式布局",
+    "support_material": "灰塑",
+    "support_craft": "传统雕刻技艺",
+    "dominant_province": "海南",
+    "dominant_dynasty": "清",
+    "dominant_region": "华南"
+  },
+  "signature_summary": "以三进式布局、砖木结构为核心，辅以灰塑，在海南样本中形成稳定的营造共同体。",
+  "community_member_count": 1,
+  "nodes": [
+    {
+      "line_no": "2112",
+      "name": "琼山侯家大院",
+      "building_type": "民居",
+      "start_dynasty": "清",
+      "century_num": 19,
+      "province": "海南省",
+      "region": "华南",
+      "address": "海南省海口市琼山区",
+      "start_time_confidence": 0.98,
+      "structure_terms": [
+        "砖木结构",
+        "四进式正屋",
+        "三进式正屋",
+        "横屋"
+      ],
+      "layout_terms": [
+        "四进式布局",
+        "三进式布局",
+        "横屋布局",
+        "琼北民居布局"
+      ],
+      "material_terms": [
+        "坤甸木",
+        "菠萝蜜木",
+        "花梨木",
+        "灰塑",
+        "彩绘"
+      ],
+      "craft_terms": [
+        "木雕",
+        "彩绘",
+        "吉祥纹样雕刻",
+        "传统雕刻技艺"
+      ],
+      "function_terms": [
+        "客厅",
+        "卧房",
+        "神龛",
+        "屏风"
+      ],
+      "material_categories": [
+        "木材类",
+        "灰浆胶结类",
+        "其他材料"
+      ],
+      "structure_cluster": "砖木民居型",
+      "structure_cluster_summary": "采用砖木混合结构，布局含多进正屋与横屋，体现清代民居典型形制。",
+      "material_primary_category": "木材类",
+      "structure_evidence": "共有十二幢主房，均为砖木混合结构 || 主要由并列的一幢四进式正屋、三幢三进式正屋和一排横屋组成 || 房屋错落分布，主要由并列的一幢四进式正屋、三幢三进式正屋和一排横屋组成 || 内部结构基本延续了当时琼北民居的建筑风格 || 木材大都是坤甸木与菠萝蜜木，还有部分是花梨木 || 墙上有彩绘、灰塑，木质构件均饰雕刻",
+      "semantic_terms": [
+        "砖木结构",
+        "四进式正屋",
+        "三进式正屋",
+        "横屋",
+        "四进式布局",
+        "三进式布局",
+        "横屋布局",
+        "琼北民居布局",
+        "坤甸木",
+        "菠萝蜜木",
+        "花梨木",
+        "灰塑",
+        "彩绘",
+        "木雕",
+        "吉祥纹样雕刻",
+        "传统雕刻技艺",
+        "客厅",
+        "卧房",
+        "神龛",
+        "屏风",
+        "木材类",
+        "灰浆胶结类",
+        "其他材料"
+      ],
+      "id": "2112",
+      "role": "center",
+      "hop": 0,
+      "score": 1.0,
+      "shared_features": []
+    }
+  ],
+  "edges": []
+}

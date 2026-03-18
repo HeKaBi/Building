@@ -1,0 +1,126 @@
+{
+  "center_building": {
+    "line_no": "2039",
+    "name": "玉山考棚",
+    "building_type": "官府",
+    "start_dynasty": "清",
+    "century_num": 18,
+    "province": "江西省",
+    "region": "华东",
+    "address": "江西省玉山县",
+    "start_time_confidence": 0.95,
+    "structure_terms": [
+      "青砖瓦房"
+    ],
+    "layout_terms": [
+      "甬道",
+      "两排号舍",
+      "单间布局"
+    ],
+    "material_terms": [
+      "青石条",
+      "卵石"
+    ],
+    "craft_terms": [
+      "青砖砌筑",
+      "卵石铺地"
+    ],
+    "function_terms": [
+      "科举考场",
+      "号舍"
+    ],
+    "material_categories": [
+      "石材类"
+    ],
+    "structure_cluster": "青砖瓦房型",
+    "structure_cluster_summary": "以青砖砌墙、灰瓦覆顶，布局规整，常设多幢单体建筑与石铺甬道，用于官府考棚等正式用途。",
+    "material_primary_category": "石材类",
+    "structure_evidence": "共有四幢青砖瓦房 || 两排号舍中间为长100米，宽3米，用青石条、卵石铺就的甬道 || 共有100个单间 || 青石条、卵石铺就的甬道",
+    "semantic_terms": [
+      "青砖瓦房",
+      "甬道",
+      "两排号舍",
+      "单间布局",
+      "青石条",
+      "卵石",
+      "青砖砌筑",
+      "卵石铺地",
+      "科举考场",
+      "号舍",
+      "石材类"
+    ]
+  },
+  "lineage_id": "官府-L15",
+  "lineage_name": "江西-甬道·青砖瓦房-卵石谱系",
+  "building_type": "官府",
+  "signature_features": {
+    "primary_structure": "青砖瓦房",
+    "primary_layout": "甬道",
+    "support_material": "卵石",
+    "support_craft": "青砖砌筑",
+    "dominant_province": "江西",
+    "dominant_dynasty": "清",
+    "dominant_region": "华东"
+  },
+  "signature_summary": "以甬道、青砖瓦房为核心，辅以卵石，在江西样本中形成稳定的营造共同体。",
+  "community_member_count": 1,
+  "nodes": [
+    {
+      "line_no": "2039",
+      "name": "玉山考棚",
+      "building_type": "官府",
+      "start_dynasty": "清",
+      "century_num": 18,
+      "province": "江西省",
+      "region": "华东",
+      "address": "江西省玉山县",
+      "start_time_confidence": 0.95,
+      "structure_terms": [
+        "青砖瓦房"
+      ],
+      "layout_terms": [
+        "甬道",
+        "两排号舍",
+        "单间布局"
+      ],
+      "material_terms": [
+        "青石条",
+        "卵石"
+      ],
+      "craft_terms": [
+        "青砖砌筑",
+        "卵石铺地"
+      ],
+      "function_terms": [
+        "科举考场",
+        "号舍"
+      ],
+      "material_categories": [
+        "石材类"
+      ],
+      "structure_cluster": "青砖瓦房型",
+      "structure_cluster_summary": "以青砖砌墙、灰瓦覆顶，布局规整，常设多幢单体建筑与石铺甬道，用于官府考棚等正式用途。",
+      "material_primary_category": "石材类",
+      "structure_evidence": "共有四幢青砖瓦房 || 两排号舍中间为长100米，宽3米，用青石条、卵石铺就的甬道 || 共有100个单间 || 青石条、卵石铺就的甬道",
+      "semantic_terms": [
+        "青砖瓦房",
+        "甬道",
+        "两排号舍",
+        "单间布局",
+        "青石条",
+        "卵石",
+        "青砖砌筑",
+        "卵石铺地",
+        "科举考场",
+        "号舍",
+        "石材类"
+      ],
+      "id": "2039",
+      "role": "center",
+      "hop": 0,
+      "score": 1.0,
+      "shared_features": []
+    }
+  ],
+  "edges": []
+}

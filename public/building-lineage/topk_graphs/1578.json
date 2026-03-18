@@ -1,0 +1,654 @@
+{
+  "center_building": {
+    "line_no": "1578",
+    "name": "襄城城墙",
+    "building_type": "官府",
+    "start_dynasty": "东周",
+    "century_num": -6,
+    "province": "河南省",
+    "region": "华中",
+    "address": "河南省许昌市襄城县",
+    "start_time_confidence": 0.96,
+    "structure_terms": [
+      "夯土城墙",
+      "砖券拱形",
+      "瓮城",
+      "城防单元",
+      "土石夯筑",
+      "砖石混合"
+    ],
+    "layout_terms": [
+      "瓮城布局",
+      "半圆形瓮城"
+    ],
+    "material_terms": [
+      "黄土",
+      "青砖",
+      "红石",
+      "砖石"
+    ],
+    "craft_terms": [
+      "夯土技术",
+      "砖券砌筑",
+      "砖石包砌"
+    ],
+    "function_terms": [
+      "军事防御",
+      "城池驻守"
+    ],
+    "material_categories": [
+      "砖瓦类",
+      "石材类",
+      "土类"
+    ],
+    "structure_cluster": "城防瓮马型",
+    "structure_cluster_summary": "以夯土或砖石构筑城墙，设瓮城、马面及护城河，依山就势布局，强化防御功能。",
+    "material_primary_category": "砖瓦类",
+    "structure_evidence": "现存城墙长2297米，高6.5米，宽5米。 || 襄城城墙长2297米、高6.8米、上宽8米、下宽15米，基座高1米 || 西城门为砖砌成，城墙高12米，门高6.5米，宽5米，上部为砖券拱形瓮城呈半圆形，长96米，保存完整 || 西城门为砖砌成……上部为砖券拱形瓮城呈半圆形，长96米，保存完整 || 城墙外部根基用长条形红石垒砌，整个城墙是用黄土夯制而成，城墙里面部分地段用青砖覆面，但大部分是用黄土夯成。 || 明朝，始以砖石筑城。",
+    "semantic_terms": [
+      "夯土城墙",
+      "砖券拱形",
+      "瓮城",
+      "城防单元",
+      "土石夯筑",
+      "砖石混合",
+      "瓮城布局",
+      "半圆形瓮城",
+      "黄土",
+      "青砖",
+      "红石",
+      "砖石",
+      "夯土技术",
+      "砖券砌筑",
+      "砖石包砌",
+      "军事防御",
+      "城池驻守",
+      "砖瓦类",
+      "石材类",
+      "土类"
+    ]
+  },
+  "lineage_id": "官府-L06",
+  "lineage_name": "河北-瓮城布局·城防单元-青砖谱系",
+  "building_type": "官府",
+  "signature_features": {
+    "primary_structure": "城防单元",
+    "primary_layout": "瓮城布局",
+    "support_material": "青砖",
+    "support_craft": "砖石包砌",
+    "dominant_province": "河北",
+    "dominant_dynasty": "东晋",
+    "dominant_region": "华北"
+  },
+  "signature_summary": "以瓮城布局、城防单元为核心，辅以青砖，在河北样本中形成稳定的营造共同体。",
+  "community_member_count": 7,
+  "nodes": [
+    {
+      "id": "1578",
+      "line_no": "1578",
+      "name": "襄城城墙",
+      "building_type": "官府",
+      "province": "河南省",
+      "start_dynasty": "东周",
+      "century_num": -6,
+      "role": "center",
+      "hop": 0,
+      "score": 1.0,
+      "shared_features": [],
+      "structure_terms": [
+        "夯土城墙",
+        "砖券拱形",
+        "瓮城",
+        "城防单元",
+        "土石夯筑",
+        "砖石混合"
+      ],
+      "layout_terms": [
+        "瓮城布局",
+        "半圆形瓮城"
+      ],
+      "material_terms": [
+        "黄土",
+        "青砖",
+        "红石",
+        "砖石"
+      ],
+      "craft_terms": [
+        "夯土技术",
+        "砖券砌筑",
+        "砖石包砌"
+      ],
+      "function_terms": [
+        "军事防御",
+        "城池驻守"
+      ]
+    },
+    {
+      "id": "1143",
+      "line_no": "1143",
+      "name": "正定城墙",
+      "building_type": "官府",
+      "province": "河北省",
+      "start_dynasty": "东晋",
+      "century_num": 4,
+      "role": "member",
+      "hop": 1,
+      "score": 0.5638,
+      "shared_features": [
+        "瓮城",
+        "城防单元",
+        "瓮城布局",
+        "青砖",
+        "砖石包砌"
+      ],
+      "structure_terms": [
+        "砖城",
+        "瓮城",
+        "月城",
+        "角楼",
+        "护城河",
+        "城防单元"
+      ],
+      "layout_terms": [
+        "官帽形制",
+        "四门直角瓮城",
+        "曲折迂回布局",
+        "南北长东西窄"
+      ],
+      "material_terms": [
+        "大青砖",
+        "土墙",
+        "青石",
+        "条石"
+      ],
+      "craft_terms": [
+        "拱券结构",
+        "青石铺基",
+        "条石甬道",
+        "垛口",
+        "马面"
+      ],
+      "function_terms": [
+        "防御体系",
+        "拱卫京师",
+        "望河楼",
+        "看花楼"
+      ]
+    },
+    {
+      "id": "436",
+      "line_no": "436",
+      "name": "台州府城墙",
+      "building_type": "官府",
+      "province": "浙江省",
+      "start_dynasty": "东晋",
+      "century_num": 4,
+      "role": "member",
+      "hop": 1,
+      "score": 0.5552,
+      "shared_features": [
+        "瓮城",
+        "城防单元",
+        "砖石",
+        "砖石包砌",
+        "军事防御",
+        "瓮城布局"
+      ],
+      "structure_terms": [
+        "马面",
+        "瓮城",
+        "弧形马面",
+        "依山就势布局",
+        "城防单元",
+        "砖石混合"
+      ],
+      "layout_terms": [
+        "子母双城",
+        "棋盘式街巷",
+        "两山两水格局",
+        "不规则城池轮廓"
+      ],
+      "material_terms": [
+        "砖石",
+        "糯米灰浆"
+      ],
+      "craft_terms": [
+        "砖石包砌",
+        "弧形马面工艺",
+        "天窗结构",
+        "捍城护城技术"
+      ],
+      "function_terms": [
+        "军事防御",
+        "防洪堤",
+        "城门防洪"
+      ]
+    },
+    {
+      "id": "628",
+      "line_no": "628",
+      "name": "永年城",
+      "building_type": "官府",
+      "province": "河北省",
+      "start_dynasty": "唐",
+      "century_num": 7,
+      "role": "member",
+      "hop": 1,
+      "score": 0.5438,
+      "shared_features": [
+        "瓮城",
+        "城防单元",
+        "瓮城布局",
+        "青砖",
+        "砖石包砌"
+      ],
+      "structure_terms": [
+        "城墙",
+        "重门楼",
+        "瓮城",
+        "护城河",
+        "城防单元"
+      ],
+      "layout_terms": [
+        "卧牛城",
+        "四角设门",
+        "环城街道",
+        "护城河环绕"
+      ],
+      "material_terms": [
+        "砖",
+        "土"
+      ],
+      "craft_terms": [
+        "砖包土筑",
+        "大堤修筑",
+        "瓮城建造"
+      ],
+      "function_terms": [
+        "府治",
+        "县治",
+        "防御"
+      ]
+    },
+    {
+      "id": "801",
+      "line_no": "801",
+      "name": "盘门",
+      "building_type": "官府",
+      "province": "江苏省",
+      "start_dynasty": "东周",
+      "century_num": -6,
+      "role": "member",
+      "hop": 1,
+      "score": 0.5101,
+      "shared_features": [
+        "瓮城",
+        "城防单元",
+        "瓮城布局",
+        "砖石",
+        "青砖",
+        "砖石包砌"
+      ],
+      "structure_terms": [
+        "瓮城",
+        "水陆城门",
+        "曲尺形布局",
+        "双重城垣",
+        "城防单元",
+        "砖石混合"
+      ],
+      "layout_terms": [
+        "曲尺形",
+        "瓮城布局",
+        "内外两重",
+        "暗道连接"
+      ],
+      "material_terms": [
+        "木材",
+        "木制蟠龙",
+        "砖石"
+      ],
+      "craft_terms": [
+        "城垣砌筑",
+        "水陆门交错布局",
+        "飞檐翘角构造"
+      ],
+      "function_terms": [
+        "防御设施",
+        "藏兵洞",
+        "水闸",
+        "射孔"
+      ]
+    },
+    {
+      "id": "1137",
+      "line_no": "1137",
+      "name": "永平府城墙",
+      "building_type": "官府",
+      "province": "河北省",
+      "start_dynasty": "东汉",
+      "century_num": 3,
+      "role": "member",
+      "hop": 1,
+      "score": 0.4405,
+      "shared_features": [
+        "土石夯筑",
+        "城防单元",
+        "青砖",
+        "军事防御",
+        "瓮城布局",
+        "砖石包砌"
+      ],
+      "structure_terms": [
+        "砖石结构",
+        "垛口墙",
+        "瞭望孔",
+        "城防单元",
+        "土石夯筑",
+        "砖石混合"
+      ],
+      "layout_terms": [
+        "不规则矩形平面",
+        "四门制",
+        "瓮城"
+      ],
+      "material_terms": [
+        "青砖",
+        "夯土"
+      ],
+      "craft_terms": [
+        "垛口墙砌筑",
+        "护城河整修"
+      ],
+      "function_terms": [
+        "军事防御",
+        "长城防御体系"
+      ]
+    },
+    {
+      "id": "2106",
+      "line_no": "2106",
+      "name": "桂林静江府城墙",
+      "building_type": "官府",
+      "province": "广西壮族自治区",
+      "start_dynasty": "唐",
+      "century_num": 7,
+      "role": "member",
+      "hop": 2,
+      "score": 0.2757,
+      "shared_features": [
+        "城防单元",
+        "瓮城布局",
+        "青砖",
+        "砖石包砌"
+      ],
+      "structure_terms": [
+        "石砌城墙",
+        "月城",
+        "瓮城",
+        "护城河",
+        "城防单元"
+      ],
+      "layout_terms": [
+        "子城-外城结构",
+        "南北主干道",
+        "东西主干道",
+        "城门对位布局",
+        "隔墙分域"
+      ],
+      "material_terms": [
+        "大型石块",
+        "石材"
+      ],
+      "craft_terms": [
+        "石砌工艺",
+        "城墙砌筑"
+      ],
+      "function_terms": [
+        "军事防御",
+        "城池守御",
+        "抗洪防攻"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "1143",
+      "target": "2106",
+      "weight": 0.294,
+      "reasons": [
+        "共享结构：月城、护城河、瓮城",
+        "同属结构簇：城防瓮马型",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 0.5222,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.1958,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1578",
+      "target": "801",
+      "weight": 0.2707,
+      "reasons": [
+        "共享结构：瓮城、城防单元、砖石混合",
+        "共享布局：瓮城布局",
+        "共享材料：砖石",
+        "同属结构簇：城防瓮马型",
+        "同朝代：东周"
+      ],
+      "components": {
+        "structure_terms": 0.2223,
+        "layout_terms": 0.163,
+        "material_terms": 0.105,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.5,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "628",
+      "target": "2106",
+      "weight": 0.2403,
+      "reasons": [
+        "共享结构：护城河、瓮城、城防单元",
+        "同属结构簇：城防瓮马型",
+        "同朝代：唐"
+      ],
+      "components": {
+        "structure_terms": 0.3582,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.0,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "628",
+      "target": "1143",
+      "weight": 0.2402,
+      "reasons": [
+        "共享结构：护城河、瓮城、城防单元",
+        "同属结构簇：城防瓮马型",
+        "同省：河北省"
+      ],
+      "components": {
+        "structure_terms": 0.306,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.6667,
+        "time": 0.1958,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "1578",
+      "target": "1137",
+      "weight": 0.2336,
+      "reasons": [
+        "共享结构：土石夯筑、城防单元、砖石混合",
+        "共享材料：青砖",
+        "共享功能：军事防御",
+        "同属结构簇：城防瓮马型",
+        "同属材料主类：砖瓦类"
+      ],
+      "components": {
+        "structure_terms": 0.2102,
+        "layout_terms": 0.0,
+        "material_terms": 0.1281,
+        "craft_terms": 0.0,
+        "function_terms": 0.2333,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.0178,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1578",
+      "target": "436",
+      "weight": 0.2264,
+      "reasons": [
+        "共享结构：瓮城、城防单元、砖石混合",
+        "共享材料：砖石",
+        "共享技艺：砖石包砌",
+        "共享功能：军事防御",
+        "同属结构簇：城防瓮马型"
+      ],
+      "components": {
+        "structure_terms": 0.2249,
+        "layout_terms": 0.0,
+        "material_terms": 0.1146,
+        "craft_terms": 0.1573,
+        "function_terms": 0.1686,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.5,
+        "time": 0.0119,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "436",
+      "target": "801",
+      "weight": 0.2101,
+      "reasons": [
+        "共享结构：瓮城、城防单元、砖石混合",
+        "共享材料：砖石",
+        "同属结构簇：城防瓮马型",
+        "同属华东"
+      ],
+      "components": {
+        "structure_terms": 0.2103,
+        "layout_terms": 0.0,
+        "material_terms": 0.1566,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.5,
+        "time": 0.0119,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "436",
+      "target": "1143",
+      "weight": 0.1997,
+      "reasons": [
+        "共享结构：瓮城、城防单元",
+        "同属结构簇：城防瓮马型",
+        "同朝代：东晋"
+      ],
+      "components": {
+        "structure_terms": 0.1417,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.5,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1578",
+      "target": "628",
+      "weight": 0.1876,
+      "reasons": [
+        "共享结构：瓮城、城防单元",
+        "同属结构簇：城防瓮马型",
+        "同属材料主类：砖瓦类"
+      ],
+      "components": {
+        "structure_terms": 0.1694,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.0036,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1578",
+      "target": "1143",
+      "weight": 0.1822,
+      "reasons": [
+        "共享结构：瓮城、城防单元",
+        "同属结构簇：城防瓮马型"
+      ],
+      "components": {
+        "structure_terms": 0.1491,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.0119,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "628",
+      "target": "1137",
+      "weight": 0.1814,
+      "reasons": [
+        "共享结构：城防单元",
+        "同属结构簇：城防瓮马型",
+        "同属材料主类：砖瓦类",
+        "同省：河北省"
+      ],
+      "components": {
+        "structure_terms": 0.0578,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.1312,
+        "region": 1.0
+      }
+    }
+  ]
+}

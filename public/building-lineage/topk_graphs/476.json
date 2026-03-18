@@ -1,0 +1,205 @@
+{
+  "center_building": {
+    "line_no": "476",
+    "name": "小商桥",
+    "building_type": "桥梁",
+    "start_dynasty": "隋",
+    "century_num": 6,
+    "province": "河南省",
+    "region": "华中",
+    "address": "河南省临颍县",
+    "start_time_confidence": 0.99,
+    "structure_terms": [
+      "单拱敞肩",
+      "坦拱敞肩石桥",
+      "拱券结构",
+      "腰铁加固",
+      "拱桥体系",
+      "石材主导",
+      "铁件加固",
+      "副拱伏设",
+      "并列券砌筑",
+      "敞肩券"
+    ],
+    "layout_terms": [
+      "南北走向",
+      "单主拱双小拱",
+      "对称敞肩布局"
+    ],
+    "material_terms": [
+      "红砂岩"
+    ],
+    "craft_terms": [
+      "并列砌筑法",
+      "腰铁连接",
+      "咬铁连接",
+      "石刻装饰"
+    ],
+    "function_terms": [
+      "跨河桥梁",
+      "交通通道"
+    ],
+    "material_categories": [
+      "石材类"
+    ],
+    "structure_cluster": "敞肩石拱桥型",
+    "structure_cluster_summary": "采用单主拱配双小拱的敞肩结构，石材并列砌筑，腰铁加固，属早期石拱桥典型形制。",
+    "material_primary_category": "石材类",
+    "structure_evidence": "小商桥是一座单拱敞肩的古拱桥。 || 该桥为坦拱敞肩石桥，其建筑风格属北宋早期。 || 主拱与两侧小拱横券均用20道拱石并列砌筑而成，拱券纵向使用腰铁加固。 || 小商桥南北走向，跨于小商河（古颍河）上 || 仅有一个主拱，净跨11.6米……两侧各有一个小拱，净跨2.13米，两岩小拱脚间距20.2米。 || 小商桥采用红砂岩砌成。",
+    "semantic_terms": [
+      "单拱敞肩",
+      "坦拱敞肩石桥",
+      "拱券结构",
+      "腰铁加固",
+      "拱桥体系",
+      "石材主导",
+      "铁件加固",
+      "副拱伏设",
+      "并列券砌筑",
+      "敞肩券",
+      "南北走向",
+      "单主拱双小拱",
+      "对称敞肩布局",
+      "红砂岩",
+      "并列砌筑法",
+      "腰铁连接",
+      "咬铁连接",
+      "石刻装饰",
+      "跨河桥梁",
+      "交通通道",
+      "石材类"
+    ]
+  },
+  "lineage_id": "桥梁-L07",
+  "lineage_name": "河北-桥面梯形平面·副拱伏设-拱券结构谱系",
+  "building_type": "桥梁",
+  "signature_features": {
+    "primary_structure": "副拱伏设",
+    "primary_layout": "桥面梯形平面",
+    "support_material": "拱券结构",
+    "support_craft": "荷叶墩",
+    "dominant_province": "河北",
+    "dominant_dynasty": "唐",
+    "dominant_region": "华北"
+  },
+  "signature_summary": "以桥面梯形平面、副拱伏设为核心，辅以拱券结构，在河北样本中形成稳定的营造共同体。",
+  "community_member_count": 2,
+  "nodes": [
+    {
+      "id": "476",
+      "line_no": "476",
+      "name": "小商桥",
+      "building_type": "桥梁",
+      "province": "河南省",
+      "start_dynasty": "隋",
+      "century_num": 6,
+      "role": "center",
+      "hop": 0,
+      "score": 1.0,
+      "shared_features": [],
+      "structure_terms": [
+        "单拱敞肩",
+        "坦拱敞肩石桥",
+        "拱券结构",
+        "腰铁加固",
+        "拱桥体系",
+        "石材主导",
+        "铁件加固",
+        "副拱伏设",
+        "并列券砌筑",
+        "敞肩券"
+      ],
+      "layout_terms": [
+        "南北走向",
+        "单主拱双小拱",
+        "对称敞肩布局"
+      ],
+      "material_terms": [
+        "红砂岩"
+      ],
+      "craft_terms": [
+        "并列砌筑法",
+        "腰铁连接",
+        "咬铁连接",
+        "石刻装饰"
+      ],
+      "function_terms": [
+        "跨河桥梁",
+        "交通通道"
+      ]
+    },
+    {
+      "id": "13",
+      "line_no": "13",
+      "name": "永通桥",
+      "building_type": "桥梁",
+      "province": "河北省",
+      "start_dynasty": "唐",
+      "century_num": 8,
+      "role": "member",
+      "hop": 1,
+      "score": 0.6305,
+      "shared_features": [
+        "副拱伏设",
+        "并列券砌筑",
+        "桥面梯形平面",
+        "拱券结构",
+        "荷叶墩"
+      ],
+      "structure_terms": [
+        "单孔敞肩弧形坦拱",
+        "并列券敞肩式",
+        "纵向并列砌筑",
+        "拱桥体系",
+        "石材主导",
+        "单孔单跨",
+        "副拱伏设",
+        "并列券砌筑",
+        "敞肩券"
+      ],
+      "layout_terms": [
+        "主副拱组合",
+        "四小拱伏设",
+        "桥面梯形平面"
+      ],
+      "material_terms": [
+        "石桥",
+        "拱券结构",
+        "浮雕石材"
+      ],
+      "craft_terms": [
+        "纵向并列砌筑法",
+        "斗子蜀柱",
+        "荷叶墩",
+        "驼峰托斗"
+      ],
+      "function_terms": [
+        "交通桥梁",
+        "车行便桥"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "476",
+      "target": "13",
+      "weight": 0.2301,
+      "reasons": [
+        "共享结构：副拱伏设、并列券砌筑、敞肩券",
+        "同属结构簇：敞肩石拱桥型",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 0.2801,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.2921,
+        "region": 0.0
+      }
+    }
+  ]
+}

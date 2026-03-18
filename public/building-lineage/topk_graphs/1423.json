@@ -1,0 +1,1208 @@
+{
+  "center_building": {
+    "line_no": "1423",
+    "name": "双林三桥",
+    "building_type": "桥梁",
+    "start_dynasty": "元",
+    "century_num": 14,
+    "province": "浙江省",
+    "region": "华东",
+    "address": "浙江省湖州市南浔区",
+    "start_time_confidence": 0.92,
+    "structure_terms": [
+      "石拱桥",
+      "拱桥体系",
+      "石材主导",
+      "多孔多跨"
+    ],
+    "layout_terms": [
+      "线性排列",
+      "等距分布"
+    ],
+    "material_terms": [
+      "花岗岩",
+      "青石"
+    ],
+    "craft_terms": [
+      "纵联分节并列砌置法",
+      "靴钉式砌置法",
+      "券睑石",
+      "系梁",
+      "间壁石"
+    ],
+    "function_terms": [
+      "交通桥梁",
+      "跨河通道"
+    ],
+    "material_categories": [
+      "石材类"
+    ],
+    "structure_cluster": "薄墩联拱石桥型",
+    "structure_cluster_summary": "采用三孔薄墩薄拱实腹结构，以石材为主，多孔等距线性排列的联拱石桥。",
+    "material_primary_category": "石材类",
+    "structure_evidence": "均为三孔薄墩薄拱实腹石拱桥 || 三桥皆为薄墩薄拱实腹三孔联拱石拱桥 || 双林三桥由西至东依次为万魁桥、化成桥、万元桥 || 万魁桥离化成桥西122米处 || 万元桥距化成桥东225米处 || 万魁桥由花岗岩和青石构建，化成桥、万元桥花岗岩造",
+    "semantic_terms": [
+      "石拱桥",
+      "拱桥体系",
+      "石材主导",
+      "多孔多跨",
+      "线性排列",
+      "等距分布",
+      "花岗岩",
+      "青石",
+      "纵联分节并列砌置法",
+      "靴钉式砌置法",
+      "券睑石",
+      "系梁",
+      "间壁石",
+      "交通桥梁",
+      "跨河通道",
+      "石材类"
+    ]
+  },
+  "lineage_id": "桥梁-L01",
+  "lineage_name": "明-东西走向·石材主导-花岗岩谱系",
+  "building_type": "桥梁",
+  "signature_features": {
+    "primary_structure": "石材主导",
+    "primary_layout": "东西走向",
+    "support_material": "花岗岩",
+    "support_craft": "拱券结构",
+    "dominant_province": "河北",
+    "dominant_dynasty": "明",
+    "dominant_region": "华东"
+  },
+  "signature_summary": "以东西走向、石材主导为核心，辅以花岗岩，在明样本中形成稳定的营造共同体。",
+  "community_member_count": 24,
+  "nodes": [
+    {
+      "id": "1423",
+      "line_no": "1423",
+      "name": "双林三桥",
+      "building_type": "桥梁",
+      "province": "浙江省",
+      "start_dynasty": "元",
+      "century_num": 14,
+      "role": "center",
+      "hop": 0,
+      "score": 1.0,
+      "shared_features": [],
+      "structure_terms": [
+        "石拱桥",
+        "拱桥体系",
+        "石材主导",
+        "多孔多跨"
+      ],
+      "layout_terms": [
+        "线性排列",
+        "等距分布"
+      ],
+      "material_terms": [
+        "花岗岩",
+        "青石"
+      ],
+      "craft_terms": [
+        "纵联分节并列砌置法",
+        "靴钉式砌置法",
+        "券睑石",
+        "系梁",
+        "间壁石"
+      ],
+      "function_terms": [
+        "交通桥梁",
+        "跨河通道"
+      ]
+    },
+    {
+      "id": "1138",
+      "line_no": "1138",
+      "name": "下胡良桥",
+      "building_type": "桥梁",
+      "province": "河北省",
+      "start_dynasty": "明",
+      "century_num": 16,
+      "role": "member",
+      "hop": 1,
+      "score": 0.6462,
+      "shared_features": [
+        "石拱桥",
+        "多孔多跨",
+        "花岗岩",
+        "交通桥梁",
+        "石材主导",
+        "东西走向"
+      ],
+      "structure_terms": [
+        "石拱桥",
+        "五孔拱",
+        "拱桥体系",
+        "石材主导",
+        "多孔多跨"
+      ],
+      "layout_terms": [
+        "对称栏板",
+        "双侧望柱",
+        "线性桥面"
+      ],
+      "material_terms": [
+        "花岗岩",
+        "石材"
+      ],
+      "craft_terms": [
+        "望柱雕刻",
+        "素面柱身",
+        "卷尖叶纹"
+      ],
+      "function_terms": [
+        "交通桥梁",
+        "京畿要道"
+      ]
+    },
+    {
+      "id": "1350",
+      "line_no": "1350",
+      "name": "蒲塘桥",
+      "building_type": "桥梁",
+      "province": "江苏省",
+      "start_dynasty": "明",
+      "century_num": 16,
+      "role": "member",
+      "hop": 2,
+      "score": 0.3127,
+      "shared_features": [
+        "石拱桥",
+        "多孔多跨",
+        "花岗岩",
+        "石材主导",
+        "东西走向",
+        "拱券结构"
+      ],
+      "structure_terms": [
+        "九孔不等跨连续坦拱桥",
+        "石拱桥",
+        "分水尖桥墩",
+        "拱桥体系",
+        "石材主导",
+        "多孔多跨",
+        "分水桥墩"
+      ],
+      "layout_terms": [
+        "中孔最大两侧递减",
+        "石栏杆与石狮柱",
+        "燕翅墙"
+      ],
+      "material_terms": [
+        "火山凝灰岩",
+        "花岗岩",
+        "仰天石"
+      ],
+      "craft_terms": [
+        "无铰横联砌置",
+        "桩木基础",
+        "条石收分砌筑"
+      ],
+      "function_terms": [
+        "驿路桥",
+        "公路桥",
+        "步行桥"
+      ]
+    },
+    {
+      "id": "1974",
+      "line_no": "1974",
+      "name": "湖州潮音桥",
+      "building_type": "桥梁",
+      "province": "浙江省",
+      "start_dynasty": "明",
+      "century_num": 16,
+      "role": "member",
+      "hop": 2,
+      "score": 0.2795,
+      "shared_features": [
+        "石拱桥",
+        "多孔多跨",
+        "石材主导",
+        "东西走向",
+        "花岗岩",
+        "拱券结构"
+      ],
+      "structure_terms": [
+        "石拱桥",
+        "拱桥",
+        "拱桥体系",
+        "石材主导",
+        "多孔多跨"
+      ],
+      "layout_terms": [
+        "东西向跨河",
+        "临河街市"
+      ],
+      "material_terms": [
+        "石材",
+        "石质栏板",
+        "石狮"
+      ],
+      "craft_terms": [
+        "并列石阶",
+        "次孔人行道"
+      ],
+      "function_terms": [
+        "人行桥",
+        "桥里桥"
+      ]
+    },
+    {
+      "id": "1835",
+      "line_no": "1835",
+      "name": "桥上桥",
+      "building_type": "桥梁",
+      "province": "陕西省",
+      "start_dynasty": "清",
+      "century_num": 17,
+      "role": "member",
+      "hop": 2,
+      "score": 0.244,
+      "shared_features": [
+        "石拱桥",
+        "多孔多跨",
+        "花岗岩",
+        "石材主导",
+        "东西走向",
+        "拱券结构"
+      ],
+      "structure_terms": [
+        "石拱桥",
+        "桥上桥结构",
+        "多孔拱桥",
+        "拱桥体系",
+        "石材主导",
+        "多孔多跨"
+      ],
+      "layout_terms": [
+        "东西走向",
+        "上下桥垂直对应",
+        "九孔对称布局"
+      ],
+      "material_terms": [
+        "花岗岩",
+        "石条砌筑"
+      ],
+      "craft_terms": [
+        "叠桥建造",
+        "石拱砌筑",
+        "因势加建"
+      ],
+      "function_terms": [
+        "界桥",
+        "交通水利设施",
+        "历史地标"
+      ]
+    },
+    {
+      "id": "1409",
+      "line_no": "1409",
+      "name": "潘公桥及潘孝墓",
+      "building_type": "桥梁",
+      "province": "浙江省",
+      "start_dynasty": "明",
+      "century_num": 16,
+      "role": "member",
+      "hop": 2,
+      "score": 0.2425,
+      "shared_features": [
+        "石拱桥",
+        "多孔多跨",
+        "石材主导",
+        "东西走向",
+        "花岗岩",
+        "拱券结构"
+      ],
+      "structure_terms": [
+        "石拱桥",
+        "石室墓圹",
+        "三合土墓圹",
+        "拱桥体系",
+        "石材主导",
+        "多孔多跨"
+      ],
+      "layout_terms": [
+        "轴线式墓道",
+        "垣墉围合",
+        "西北—东南向布局"
+      ],
+      "material_terms": [
+        "石材",
+        "三合土"
+      ],
+      "craft_terms": [
+        "石拱砌筑",
+        "三合土夯筑"
+      ],
+      "function_terms": [
+        "交通要道",
+        "墓葬"
+      ]
+    },
+    {
+      "id": "626",
+      "line_no": "626",
+      "name": "单桥",
+      "building_type": "桥梁",
+      "province": "河北省",
+      "start_dynasty": "明",
+      "century_num": 17,
+      "role": "member",
+      "hop": 2,
+      "score": 0.22,
+      "shared_features": [
+        "石拱桥",
+        "多孔多跨",
+        "青石",
+        "石材主导",
+        "东西走向",
+        "花岗岩"
+      ],
+      "structure_terms": [
+        "石拱桥",
+        "五孔拱桥",
+        "不对称拱桥",
+        "拱桥体系",
+        "石材主导",
+        "多孔多跨"
+      ],
+      "layout_terms": [
+        "南高北低",
+        "不对称布局",
+        "随形就势"
+      ],
+      "material_terms": [
+        "青石",
+        "石材"
+      ],
+      "craft_terms": [
+        "依地势设计",
+        "腹拱减重法",
+        "非对称起拱"
+      ],
+      "function_terms": [
+        "泄水腹拱",
+        "通航孔",
+        "减重结构"
+      ]
+    },
+    {
+      "id": "1103",
+      "line_no": "1103",
+      "name": "琉璃河大桥",
+      "building_type": "桥梁",
+      "province": "北京市",
+      "start_dynasty": "明",
+      "century_num": 15,
+      "role": "member",
+      "hop": 2,
+      "score": 0.1836,
+      "shared_features": [
+        "石材主导",
+        "东西走向",
+        "花岗岩",
+        "拱券结构"
+      ],
+      "structure_terms": [
+        "石拱桥",
+        "拱券结构",
+        "桥墩台",
+        "拱桥体系",
+        "石材主导",
+        "多孔多跨",
+        "分水桥墩"
+      ],
+      "layout_terms": [
+        "南北轴线",
+        "对称桥孔",
+        "牌坊入口"
+      ],
+      "material_terms": [
+        "石材",
+        "石栏板",
+        "石望柱"
+      ],
+      "craft_terms": [
+        "铁梁镇河",
+        "石雕",
+        "车辙留痕"
+      ],
+      "function_terms": [
+        "交通桥梁",
+        "古驿道节点",
+        "公路桥（历史）"
+      ]
+    },
+    {
+      "id": "2009",
+      "line_no": "2009",
+      "name": "休宁登封桥",
+      "building_type": "桥梁",
+      "province": "安徽省",
+      "start_dynasty": "明",
+      "century_num": 16,
+      "role": "member",
+      "hop": 3,
+      "score": 0.1868,
+      "shared_features": [
+        "石拱桥",
+        "多孔多跨",
+        "青石",
+        "石材主导",
+        "东西走向",
+        "花岗岩"
+      ],
+      "structure_terms": [
+        "纵列式法券",
+        "石拱桥",
+        "九孔半圆形拱",
+        "拱桥体系",
+        "石材主导",
+        "多孔多跨",
+        "引桥衔接"
+      ],
+      "layout_terms": [
+        "引桥",
+        "石阶坡道",
+        "二柱冲天式石牌坊"
+      ],
+      "material_terms": [
+        "青石",
+        "石栏"
+      ],
+      "craft_terms": [
+        "石砌筑",
+        "石阶砌筑"
+      ],
+      "function_terms": [
+        "登山通道",
+        "桥亭",
+        "桥庙"
+      ]
+    },
+    {
+      "id": "1349",
+      "line_no": "1349",
+      "name": "七桥瓮",
+      "building_type": "桥梁",
+      "province": "江苏省",
+      "start_dynasty": "明",
+      "century_num": 15,
+      "role": "member",
+      "hop": 3,
+      "score": 0.1744,
+      "shared_features": [
+        "石材主导",
+        "东西走向",
+        "花岗岩",
+        "拱券结构"
+      ],
+      "structure_terms": [
+        "石拱桥",
+        "梭形桥墩",
+        "分水尖",
+        "拱桥体系",
+        "石材主导",
+        "砖材参与",
+        "多孔多跨",
+        "分水桥墩"
+      ],
+      "layout_terms": [
+        "七孔联拱",
+        "中孔最大",
+        "对称递减跨径"
+      ],
+      "material_terms": [
+        "花岗岩",
+        "糯米灰浆",
+        "桐油灰浆",
+        "石灰岩"
+      ],
+      "craft_terms": [
+        "并列砌筑",
+        "素平技法",
+        "拱券结构"
+      ],
+      "function_terms": [
+        "交通要道",
+        "水位标识",
+        "军事要冲"
+      ]
+    },
+    {
+      "id": "1997",
+      "line_no": "1997",
+      "name": "屯溪镇海桥",
+      "building_type": "桥梁",
+      "province": "安徽省",
+      "start_dynasty": "明",
+      "century_num": 15,
+      "role": "member",
+      "hop": 3,
+      "score": 0.1547,
+      "shared_features": [
+        "石材主导",
+        "东西走向",
+        "花岗岩",
+        "拱券结构"
+      ],
+      "structure_terms": [
+        "石拱桥",
+        "六墩七孔",
+        "等腰三角形桥墩",
+        "拱桥体系",
+        "石材主导",
+        "多孔多跨",
+        "分水桥墩",
+        "引桥衔接"
+      ],
+      "layout_terms": [
+        "横跨横江",
+        "引桥结构",
+        "三江口位置"
+      ],
+      "material_terms": [
+        "石材",
+        "望柱石"
+      ],
+      "craft_terms": [
+        "分水头",
+        "船头状桥墩"
+      ],
+      "function_terms": [
+        "交通连接",
+        "门户桥梁",
+        "步行通道"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "1138",
+      "target": "1974",
+      "weight": 0.3125,
+      "reasons": [
+        "共享结构：石拱桥、多孔多跨、拱桥体系",
+        "共享材料：石材",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.4188,
+        "layout_terms": 0.0,
+        "material_terms": 0.1271,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1138",
+      "target": "626",
+      "weight": 0.3028,
+      "reasons": [
+        "共享结构：石拱桥、多孔多跨、拱桥体系",
+        "共享材料：石材",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同省：河北省",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.2986,
+        "layout_terms": 0.0,
+        "material_terms": 0.2312,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "1409",
+      "target": "1974",
+      "weight": 0.3022,
+      "reasons": [
+        "共享结构：石拱桥、多孔多跨、拱桥体系",
+        "共享材料：石材",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同省：浙江省",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.3154,
+        "layout_terms": 0.0,
+        "material_terms": 0.1155,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "1138",
+      "target": "1103",
+      "weight": 0.2921,
+      "reasons": [
+        "共享结构：石拱桥、多孔多跨、拱桥体系",
+        "共享材料：石材",
+        "共享功能：交通桥梁",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同属华北"
+      ],
+      "components": {
+        "structure_terms": 0.29,
+        "layout_terms": 0.0,
+        "material_terms": 0.1333,
+        "craft_terms": 0.0,
+        "function_terms": 0.144,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1350",
+      "target": "1349",
+      "weight": 0.2877,
+      "reasons": [
+        "共享结构：分水桥墩、石拱桥、多孔多跨",
+        "共享材料：花岗岩",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同省：江苏省",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.2896,
+        "layout_terms": 0.0,
+        "material_terms": 0.1262,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "1138",
+      "target": "1409",
+      "weight": 0.2862,
+      "reasons": [
+        "共享结构：石拱桥、多孔多跨、拱桥体系",
+        "共享材料：石材",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.2986,
+        "layout_terms": 0.0,
+        "material_terms": 0.1882,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1350",
+      "target": "1138",
+      "weight": 0.2815,
+      "reasons": [
+        "共享结构：石拱桥、多孔多跨、拱桥体系",
+        "共享材料：花岗岩",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.2666,
+        "layout_terms": 0.0,
+        "material_terms": 0.2237,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1835",
+      "target": "1138",
+      "weight": 0.2808,
+      "reasons": [
+        "共享结构：石拱桥、多孔多跨、拱桥体系",
+        "共享材料：花岗岩",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 0.2986,
+        "layout_terms": 0.0,
+        "material_terms": 0.3312,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.4357,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1997",
+      "target": "1103",
+      "weight": 0.2788,
+      "reasons": [
+        "共享结构：分水桥墩、石拱桥、多孔多跨",
+        "共享材料：石材",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.3011,
+        "layout_terms": 0.0,
+        "material_terms": 0.1205,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1997",
+      "target": "2009",
+      "weight": 0.2768,
+      "reasons": [
+        "共享结构：引桥衔接、石拱桥、多孔多跨",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同省：安徽省",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.305,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 1.0
+      }
+    },
+    {
+      "source": "626",
+      "target": "1974",
+      "weight": 0.2754,
+      "reasons": [
+        "共享结构：石拱桥、多孔多跨、拱桥体系",
+        "共享材料：石材",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.3154,
+        "layout_terms": 0.0,
+        "material_terms": 0.1303,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1138",
+      "target": "1423",
+      "weight": 0.275,
+      "reasons": [
+        "共享结构：石拱桥、多孔多跨、拱桥体系",
+        "共享材料：花岗岩",
+        "共享功能：交通桥梁",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 0.5609,
+        "layout_terms": 0.0,
+        "material_terms": 0.4069,
+        "craft_terms": 0.0,
+        "function_terms": 0.2179,
+        "structure_cluster": 0.0,
+        "material_cluster": 1.0,
+        "time": 0.2921,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1350",
+      "target": "1974",
+      "weight": 0.2704,
+      "reasons": [
+        "共享结构：石拱桥、多孔多跨、拱桥体系",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同属华东",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.2798,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "2009",
+      "target": "1974",
+      "weight": 0.2698,
+      "reasons": [
+        "共享结构：石拱桥、多孔多跨、拱桥体系",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同属华东",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.2779,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "626",
+      "target": "2009",
+      "weight": 0.2696,
+      "reasons": [
+        "共享结构：石拱桥、多孔多跨、拱桥体系",
+        "共享材料：青石",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.2193,
+        "layout_terms": 0.0,
+        "material_terms": 0.3059,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1103",
+      "target": "1974",
+      "weight": 0.2681,
+      "reasons": [
+        "共享结构：石拱桥、多孔多跨、拱桥体系",
+        "共享材料：石材",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.3058,
+        "layout_terms": 0.0,
+        "material_terms": 0.0922,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1997",
+      "target": "1974",
+      "weight": 0.2673,
+      "reasons": [
+        "共享结构：石拱桥、多孔多跨、拱桥体系",
+        "共享材料：石材",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同属华东",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.2499,
+        "layout_terms": 0.0,
+        "material_terms": 0.1155,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1349",
+      "target": "1103",
+      "weight": 0.2665,
+      "reasons": [
+        "共享结构：分水桥墩、石拱桥、多孔多跨",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.3089,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1349",
+      "target": "1997",
+      "weight": 0.2665,
+      "reasons": [
+        "共享结构：分水桥墩、石拱桥、多孔多跨",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同属华东",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.2661,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1350",
+      "target": "1103",
+      "weight": 0.2642,
+      "reasons": [
+        "共享结构：分水桥墩、石拱桥、多孔多跨",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.3315,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1350",
+      "target": "1997",
+      "weight": 0.2626,
+      "reasons": [
+        "共享结构：分水桥墩、石拱桥、多孔多跨",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同属华东",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.2827,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "626",
+      "target": "1409",
+      "weight": 0.2626,
+      "reasons": [
+        "共享结构：石拱桥、多孔多跨、拱桥体系",
+        "共享材料：石材",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.242,
+        "layout_terms": 0.0,
+        "material_terms": 0.1953,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 0.0
+      }
+    },
+    {
+      "source": "1997",
+      "target": "1409",
+      "weight": 0.2595,
+      "reasons": [
+        "共享结构：石拱桥、多孔多跨、拱桥体系",
+        "共享材料：石材",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同属华东",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.2016,
+        "layout_terms": 0.0,
+        "material_terms": 0.1637,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1349",
+      "target": "1409",
+      "weight": 0.2546,
+      "reasons": [
+        "共享结构：石拱桥、多孔多跨、拱桥体系",
+        "共享功能：交通要道",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同属华东",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.2065,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.1668,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.7857,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1350",
+      "target": "1409",
+      "weight": 0.2538,
+      "reasons": [
+        "共享结构：石拱桥、多孔多跨、拱桥体系",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同属华东",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.2206,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1350",
+      "target": "2009",
+      "weight": 0.2484,
+      "reasons": [
+        "共享结构：石拱桥、多孔多跨、拱桥体系",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类",
+        "同属华东",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.2016,
+        "layout_terms": 0.0,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 1.0,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1350",
+      "target": "1835",
+      "weight": 0.2416,
+      "reasons": [
+        "共享结构：石拱桥、多孔多跨、拱桥体系",
+        "共享材料：花岗岩",
+        "同属结构簇：石拱桥型",
+        "同属材料主类：石材类"
+      ],
+      "components": {
+        "structure_terms": 0.2206,
+        "layout_terms": 0.0,
+        "material_terms": 0.1868,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 1.0,
+        "time": 0.4357,
+        "region": 0.0
+      }
+    }
+  ]
+}

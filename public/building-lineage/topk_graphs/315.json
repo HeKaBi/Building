@@ -1,0 +1,211 @@
+{
+  "center_building": {
+    "line_no": "315",
+    "name": "内乡县衙",
+    "building_type": "官府",
+    "start_dynasty": "元",
+    "century_num": 14,
+    "province": "河南省",
+    "region": "华中",
+    "address": "河南省内乡县",
+    "start_time_confidence": 0.98,
+    "structure_terms": [
+      "单檐硬山",
+      "面阔五间",
+      "飞椽",
+      "中轴对称",
+      "砖石混合",
+      "硬山顶"
+    ],
+    "layout_terms": [
+      "坐北朝南",
+      "前朝后寝",
+      "左文右武",
+      "狱房居南",
+      "五门制度"
+    ],
+    "material_terms": [
+      "木材",
+      "砖石"
+    ],
+    "craft_terms": [
+      "清代官式营造",
+      "南北风格融合",
+      "礼制规制施工"
+    ],
+    "function_terms": [
+      "政务活动场所",
+      "审案空间",
+      "办公起居",
+      "监狱",
+      "狱神庙"
+    ],
+    "material_categories": [
+      "木材类",
+      "石材类",
+      "砖瓦类"
+    ],
+    "structure_cluster": "硬山官署型",
+    "structure_cluster_summary": "单檐硬山顶，面阔五间，中轴线布局，前朝后寝，坐北朝南，体现传统官署礼制。",
+    "material_primary_category": "木材类",
+    "structure_evidence": "大堂、二堂、三堂为中轴线上体量不同的三大主体建筑，是知县举行重大政务活动、预审案件和办公起居的场所，均面阔五间，单檐硬山建筑，前檐为飞椽。 || 现存各类房舍二十余间，是一个独立的小院，分为内监、外监、女监，四周高墙环绕，狱内有狱神庙，庙中供奉着狱神皋陶的塑像。 || 它在整体布局上严格按照清代地方官署规制，表现了“坐北朝南、左文右武、前朝后寝、狱房居南”的传统礼制思想。 || 整个建筑群融长江南北风格于一体，规模宏大，布局严谨，深邃森严，变幻无穷。 || 从县衙的五门，即宣化坊、大门、仪门、屏门、内宅门隐约暗示古代天子的五门。县衙的前衙后邸的建筑格局充分体现了古代的前朝后寝制度。 || 有六百多年历史的县官审案时用的三尺法案、原告被告跪石、清 咸丰皇帝 降下的圣旨、宣讲 圣谕 广训的招牌、关押重犯的脚镣，以及县官们使用过的生活用品",
+    "semantic_terms": [
+      "单檐硬山",
+      "面阔五间",
+      "飞椽",
+      "中轴对称",
+      "砖石混合",
+      "硬山顶",
+      "坐北朝南",
+      "前朝后寝",
+      "左文右武",
+      "狱房居南",
+      "五门制度",
+      "木材",
+      "砖石",
+      "清代官式营造",
+      "南北风格融合",
+      "礼制规制施工",
+      "政务活动场所",
+      "审案空间",
+      "办公起居",
+      "监狱",
+      "狱神庙",
+      "木材类",
+      "石材类",
+      "砖瓦类"
+    ]
+  },
+  "lineage_id": "官府-L08",
+  "lineage_name": "河南-坐北朝南·硬山顶-灰瓦屋面谱系",
+  "building_type": "官府",
+  "signature_features": {
+    "primary_structure": "硬山顶",
+    "primary_layout": "坐北朝南",
+    "support_material": "灰瓦屋面",
+    "support_craft": "清代官式营造",
+    "dominant_province": "河南",
+    "dominant_dynasty": "元",
+    "dominant_region": "华中"
+  },
+  "signature_summary": "以坐北朝南、硬山顶为核心，辅以灰瓦屋面，在河南样本中形成稳定的营造共同体。",
+  "community_member_count": 2,
+  "nodes": [
+    {
+      "id": "315",
+      "line_no": "315",
+      "name": "内乡县衙",
+      "building_type": "官府",
+      "province": "河南省",
+      "start_dynasty": "元",
+      "century_num": 14,
+      "role": "center",
+      "hop": 0,
+      "score": 1.0,
+      "shared_features": [],
+      "structure_terms": [
+        "单檐硬山",
+        "面阔五间",
+        "飞椽",
+        "中轴对称",
+        "砖石混合",
+        "硬山顶"
+      ],
+      "layout_terms": [
+        "坐北朝南",
+        "前朝后寝",
+        "左文右武",
+        "狱房居南",
+        "五门制度"
+      ],
+      "material_terms": [
+        "木材",
+        "砖石"
+      ],
+      "craft_terms": [
+        "清代官式营造",
+        "南北风格融合",
+        "礼制规制施工"
+      ],
+      "function_terms": [
+        "政务活动场所",
+        "审案空间",
+        "办公起居",
+        "监狱",
+        "狱神庙"
+      ]
+    },
+    {
+      "id": "388",
+      "line_no": "388",
+      "name": "临晋县衙",
+      "building_type": "官府",
+      "province": "山西省",
+      "start_dynasty": "元",
+      "century_num": 13,
+      "role": "member",
+      "hop": 1,
+      "score": 0.6363,
+      "shared_features": [
+        "面阔五间",
+        "硬山顶",
+        "坐北朝南",
+        "灰瓦屋面",
+        "清代官式营造"
+      ],
+      "structure_terms": [
+        "单檐硬山顶",
+        "面阔五间",
+        "进深六椽",
+        "进深三间",
+        "木构架",
+        "中轴对称",
+        "硬山顶"
+      ],
+      "layout_terms": [
+        "坐北朝南",
+        "中轴对称",
+        "三堂序列"
+      ],
+      "material_terms": [
+        "木构架",
+        "青砖墙体",
+        "灰瓦屋面"
+      ],
+      "craft_terms": [
+        "抬梁式",
+        "斗栱铺作",
+        "榫卯结构"
+      ],
+      "function_terms": [
+        "县级行政机构",
+        "理政场所",
+        "衙署建筑"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "315",
+      "target": "388",
+      "weight": 0.2467,
+      "reasons": [
+        "共享结构：面阔五间、硬山顶、中轴对称",
+        "共享布局：坐北朝南",
+        "同属结构簇：硬山官署型",
+        "同朝代：元"
+      ],
+      "components": {
+        "structure_terms": 0.2431,
+        "layout_terms": 0.0933,
+        "material_terms": 0.0,
+        "craft_terms": 0.0,
+        "function_terms": 0.0,
+        "structure_cluster": 1.0,
+        "material_cluster": 0.6667,
+        "time": 0.7857,
+        "region": 0.0
+      }
+    }
+  ]
+}
