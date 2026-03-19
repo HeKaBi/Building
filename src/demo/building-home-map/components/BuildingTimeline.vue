@@ -63,7 +63,7 @@ const emit = defineEmits<{
 const BUCKET_SPAN = 50;
 const MAJOR_YEAR_INTERVAL = 100;
 const JAGGED_YEAR_STEP = 10;
-const BASE_X_MAX = 5.6;
+const BASE_X_MAX = 4.95;
 
 const uiText = {
   yearTitle: '年份',
@@ -124,15 +124,15 @@ const bucketMetrics = computed<BucketMetric[]>(() =>
     return {
       start: bucket.start,
       centerYear: bucket.start + BUCKET_SPAN / 2,
-      primaryWidth: 1.05 + countRatio * 2.55,
-      secondaryWidth: 0.52 + dominantRatio * 1.18 + countRatio * 0.68,
+      primaryWidth: 0.86 + countRatio * 2.18,
+      secondaryWidth: 0.48 + dominantRatio * 0.98 + countRatio * 0.56,
     };
   }),
 );
 
 const xAxisMax = computed(() => {
   const widestPrimary = Math.max(0, ...bucketMetrics.value.map((item) => item.primaryWidth));
-  return Math.max(BASE_X_MAX, widestPrimary + 2.1);
+  return Math.max(BASE_X_MAX, widestPrimary + 1.76);
 });
 
 const selectedBucketStart = computed(() => {
@@ -196,14 +196,14 @@ const buildJaggedAreaData = (key: 'primaryWidth' | 'secondaryWidth', amplitude: 
   for (let year = start; year <= end; year += JAGGED_YEAR_STEP) {
     const base = interpolateMetric(year, key);
     const noise = deterministicNoise(year + (key === 'primaryWidth' ? 17 : 43), amplitude);
-    const fallbackMax = xAxisMax.value - (key === 'primaryWidth' ? 1.46 : 2.08);
+    const fallbackMax = xAxisMax.value - (key === 'primaryWidth' ? 1.14 : 1.76);
     values.push([clamp(base + noise, 0.24, fallbackMax), year]);
   }
 
   if (!values.length || values[values.length - 1][1] !== end) {
     const base = interpolateMetric(end, key);
     const noise = deterministicNoise(end + (key === 'primaryWidth' ? 17 : 43), amplitude);
-    const fallbackMax = xAxisMax.value - (key === 'primaryWidth' ? 1.46 : 2.08);
+    const fallbackMax = xAxisMax.value - (key === 'primaryWidth' ? 1.14 : 1.76);
     values.push([clamp(base + noise, 0.24, fallbackMax), end]);
   }
 
@@ -237,20 +237,8 @@ const renderChart = () => {
     });
   }
 
-  const primaryAreaData = buildJaggedAreaData('primaryWidth', 0.24);
-  const secondaryAreaData = buildJaggedAreaData('secondaryWidth', 0.2);
-
-  const pointData = buckets.value.map((bucket) => ({
-    value: [interpolateMetric(bucket.start + BUCKET_SPAN / 2, 'secondaryWidth'), bucket.start + BUCKET_SPAN / 2],
-    bucketStart: bucket.start,
-    count: bucket.count,
-    itemStyle: {
-      color: getStructureColor(getDominantStructure(bucket.buildings)),
-      borderColor: 'rgba(236, 227, 210, 0.98)',
-      borderWidth: 1,
-    },
-    symbolSize: 8 + Math.sqrt(bucket.count) * 1.2,
-  }));
+  const primaryAreaData = buildJaggedAreaData('primaryWidth', 0.2);
+  const secondaryAreaData = buildJaggedAreaData('secondaryWidth', 0.17);
 
   const hitAreaData = buckets.value.map((bucket) => ({
     value: [interpolateMetric(bucket.start + BUCKET_SPAN / 2, 'secondaryWidth'), bucket.start + BUCKET_SPAN / 2],
@@ -265,7 +253,7 @@ const renderChart = () => {
   const focusData = selectedBucket.value && selectedBucketYear.value !== null
     ? [
       {
-        value: [interpolateMetric(selectedBucketYear.value, 'secondaryWidth'), selectedBucketYear.value],
+        value: [0.38, selectedBucketYear.value],
         bucketStart: selectedBucket.value.start,
         itemStyle: {
           color: selectedMarkerColor.value,
@@ -277,8 +265,8 @@ const renderChart = () => {
     ]
     : [];
 
-  const rightWideStripX = xAxisMax.value - 0.78;
-  const rightThinStripX = xAxisMax.value - 0.28;
+  const rightWideStripX = xAxisMax.value - 0.72;
+  const rightThinStripX = xAxisMax.value - 0.24;
   const selectedBandHalf = 20;
   const selectedBandStart =
     selectedBucketYear.value === null ? null : clamp(selectedBucketYear.value - selectedBandHalf, minYear.value, maxYear.value);
@@ -290,41 +278,13 @@ const renderChart = () => {
     animationDurationUpdate: 280,
     animationEasingUpdate: 'cubicOut',
     grid: {
-      top: 18,
-      right: 8,
-      bottom: 14,
-      left: 38,
+      top: 14,
+      right: 5,
+      bottom: 8,
+      left: 24,
       containLabel: false,
     },
-    tooltip: {
-      trigger: 'item',
-      confine: true,
-      backgroundColor: 'rgba(92, 86, 76, 0.94)',
-      borderColor: 'rgba(112, 147, 120, 0.44)',
-      borderWidth: 1,
-      className: 'line-timeline-tooltip',
-      textStyle: {
-        color: '#f4eee1',
-        fontFamily: "'STSong', 'SimSun', serif",
-        fontSize: 11,
-      },
-      formatter: (params: { data?: { bucketStart?: number } }) => {
-        const bucketStart = params.data?.bucketStart;
-        if (bucketStart === undefined) {
-          return '';
-        }
-
-        const bucket = buckets.value.find((item) => item.start === bucketStart);
-        if (!bucket) {
-          return '';
-        }
-
-        return [
-          `<div>建置：${bucket.start} - ${bucket.end}</div>`,
-          `<div>样本数：${bucket.count}</div>`,
-        ].join('');
-      },
-    },
+    tooltip: { show: false },
     xAxis: {
       type: 'value',
       min: 0,
@@ -345,10 +305,12 @@ const renderChart = () => {
       max: maxYear.value,
       interval: MAJOR_YEAR_INTERVAL,
       axisLabel: {
+        inside: true,
+        align: 'left',
         color: '#705749',
         fontFamily: "'STSong', 'SimSun', serif",
         fontSize: 11,
-        margin: 6,
+        margin: 5,
       },
       splitLine: {
         show: false,
@@ -356,7 +318,7 @@ const renderChart = () => {
       axisTick: {
         show: true,
         inside: false,
-        length: 5,
+        length: 4,
         lineStyle: {
           color: 'rgba(168, 60, 59, 0.92)',
           width: 1,
@@ -387,11 +349,11 @@ const renderChart = () => {
         silent: true,
         z: 1,
         lineStyle: {
-          color: 'rgba(155, 161, 157, 0.64)',
+          color: 'rgba(155, 161, 157, 0.56)',
           width: 1,
         },
         areaStyle: {
-          color: 'rgba(155, 161, 157, 0.5)',
+          color: 'rgba(155, 161, 157, 0.42)',
           opacity: 1,
           origin: 'start',
         },
@@ -404,11 +366,11 @@ const renderChart = () => {
         silent: true,
         z: 2,
         lineStyle: {
-          color: 'rgba(101, 126, 101, 0.9)',
+          color: 'rgba(101, 126, 101, 0.84)',
           width: 1,
         },
         areaStyle: {
-          color: 'rgba(101, 126, 101, 0.7)',
+          color: 'rgba(101, 126, 101, 0.62)',
           opacity: 1,
           origin: 'start',
         },
@@ -423,8 +385,8 @@ const renderChart = () => {
         silent: true,
         z: 1,
         lineStyle: {
-          color: 'rgba(170, 178, 166, 0.96)',
-          width: 12,
+          color: 'rgba(168, 178, 162, 0.94)',
+          width: 11,
         },
       },
       {
@@ -438,7 +400,7 @@ const renderChart = () => {
         z: 1,
         lineStyle: {
           color: 'rgba(212, 219, 204, 0.88)',
-          width: 9,
+          width: 8,
         },
       },
       {
@@ -455,13 +417,8 @@ const renderChart = () => {
         z: 4,
         lineStyle: {
           color: '#4c755e',
-          width: 7,
+          width: 6,
         },
-      },
-      {
-        type: 'scatter',
-        data: pointData,
-        z: 5,
       },
       {
         type: 'scatter',
@@ -478,7 +435,7 @@ const renderChart = () => {
           formatter: '*',
           color: '#f8f2e8',
           fontFamily: "'STSong', 'SimSun', serif",
-          fontSize: 10,
+          fontSize: 11,
         },
       },
     ],
@@ -516,11 +473,11 @@ onUnmounted(() => {
   position: relative;
   display: grid;
   grid-template-rows: auto minmax(0, 1fr);
-  gap: 8px;
+  gap: 6px;
   width: 100%;
   height: 100%;
   min-height: 0;
-  padding: 4px 0 0;
+  padding: 2px 0 0;
   overflow: hidden;
   background: rgba(228, 220, 203, 0.14);
 }
@@ -529,20 +486,20 @@ onUnmounted(() => {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 10px;
-  padding: 2px 0 0 4px;
+  gap: 8px;
+  padding: 2px 0 0 2px;
 }
 
 .line-timeline__titles {
   display: flex;
   align-items: baseline;
-  gap: 24px;
+  gap: 18px;
   min-width: 0;
 }
 
 .line-timeline__title-item {
   font-family: 'STKaiti', 'KaiTi', 'Kaiti SC', serif;
-  font-size: 28px;
+  font-size: 27px;
   line-height: 1;
   letter-spacing: 0.02em;
   color: #a83c3b;
@@ -551,24 +508,24 @@ onUnmounted(() => {
 
 .line-timeline__legend {
   display: grid;
-  gap: 4px;
-  margin-top: 2px;
-  padding-right: 4px;
+  gap: 3px;
+  margin-top: 4px;
+  padding-right: 2px;
 }
 
 .line-timeline__legend-item {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
   font-family: 'STSong', 'SimSun', serif;
-  font-size: 11px;
+  font-size: 10px;
   line-height: 1.25;
   color: #65584a;
 }
 
 .line-timeline__legend-dot {
-  width: 9px;
-  height: 9px;
+  width: 8px;
+  height: 8px;
   border-radius: 999px;
   border: 1px solid rgba(255, 250, 241, 0.65);
   box-shadow: 0 0 0 1px rgba(121, 106, 91, 0.24);
@@ -592,7 +549,7 @@ onUnmounted(() => {
   background:
     linear-gradient(180deg, rgba(233, 225, 211, 0.38), rgba(233, 225, 211, 0.1)),
     radial-gradient(circle at 36% 18%, rgba(255, 255, 255, 0.14), transparent 30%);
-  border-left: 1px solid rgba(168, 60, 59, 0.08);
+  border-left: 1px solid rgba(168, 60, 59, 0.07);
   border-right: 1px solid rgba(130, 119, 103, 0.12);
 }
 
@@ -602,8 +559,4 @@ onUnmounted(() => {
   min-height: 0;
 }
 
-:deep(.line-timeline-tooltip) {
-  border-radius: 6px;
-  box-shadow: 0 5px 16px rgba(48, 39, 31, 0.2);
-}
 </style>
