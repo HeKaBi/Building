@@ -64,6 +64,8 @@ const BUCKET_SPAN = 50;
 const MAJOR_YEAR_INTERVAL = 100;
 const JAGGED_YEAR_STEP = 10;
 const BASE_X_MAX = 4.95;
+const RIGHT_WIDE_STRIP_OFFSET = 0.16;
+const RIGHT_THIN_STRIP_OFFSET = 0.05;
 
 const uiText = {
   yearTitle: '年份',
@@ -155,12 +157,6 @@ const selectedMarkerColor = computed(() =>
 
 const clamp = (value: number, min: number, max: number) => Math.min(max, Math.max(min, value));
 
-const deterministicNoise = (seed: number, amplitude: number) => {
-  const value = Math.sin(seed * 12.9898 + 78.233) * 43758.5453123;
-  const normalized = value - Math.floor(value);
-  return (normalized * 2 - 1) * amplitude;
-};
-
 const interpolateMetric = (year: number, key: 'primaryWidth' | 'secondaryWidth') => {
   const metrics = bucketMetrics.value;
   if (!metrics.length) {
@@ -188,27 +184,43 @@ const interpolateMetric = (year: number, key: 'primaryWidth' | 'secondaryWidth')
   return last[key];
 };
 
-const buildJaggedAreaData = (key: 'primaryWidth' | 'secondaryWidth', amplitude: number) => {
+const buildJaggedAreaData = (key: 'primaryWidth' | 'secondaryWidth') => {
   const values: [number, number][] = [];
   const start = minYear.value;
   const end = maxYear.value;
 
   for (let year = start; year <= end; year += JAGGED_YEAR_STEP) {
     const base = interpolateMetric(year, key);
-    const noise = deterministicNoise(year + (key === 'primaryWidth' ? 17 : 43), amplitude);
     const fallbackMax = xAxisMax.value - (key === 'primaryWidth' ? 1.14 : 1.76);
-    values.push([clamp(base + noise, 0.24, fallbackMax), year]);
+    values.push([clamp(base, 0.24, fallbackMax), year]);
   }
 
   if (!values.length || values[values.length - 1][1] !== end) {
     const base = interpolateMetric(end, key);
-    const noise = deterministicNoise(end + (key === 'primaryWidth' ? 17 : 43), amplitude);
     const fallbackMax = xAxisMax.value - (key === 'primaryWidth' ? 1.14 : 1.76);
-    values.push([clamp(base + noise, 0.24, fallbackMax), end]);
+    values.push([clamp(base, 0.24, fallbackMax), end]);
   }
 
   return values;
 };
+
+const smoothWidthData = (values: [number, number][], radius = 2) =>
+  values.map(([, year], index) => {
+    let sum = 0;
+    let count = 0;
+
+    for (let offset = -radius; offset <= radius; offset += 1) {
+      const point = values[index + offset];
+      if (!point) {
+        continue;
+      }
+
+      sum += point[0];
+      count += 1;
+    }
+
+    return [sum / Math.max(1, count), year] as [number, number];
+  });
 
 const handleBucketClick = (bucketStart: number | null | undefined) => {
   if (bucketStart === null || bucketStart === undefined) {
@@ -237,11 +249,31 @@ const renderChart = () => {
     });
   }
 
-  const primaryAreaData = buildJaggedAreaData('primaryWidth', 0.2);
-  const secondaryAreaData = buildJaggedAreaData('secondaryWidth', 0.17);
+  const rightWideStripX = xAxisMax.value - RIGHT_WIDE_STRIP_OFFSET;
+  const rightThinStripX = xAxisMax.value - RIGHT_THIN_STRIP_OFFSET;
+
+  const primaryWidthData = smoothWidthData(buildJaggedAreaData('primaryWidth'), 2);
+  const secondaryWidthData = smoothWidthData(buildJaggedAreaData('secondaryWidth'), 2);
+  const primaryAreaData = primaryWidthData.map(([width, year]) => [
+    // Shared right baseline at xAxisMax; width only extends to the left.
+    clamp(xAxisMax.value - width, 0.14, xAxisMax.value - 0.08),
+    year,
+  ] as [number, number]);
+  const secondaryAreaData = secondaryWidthData.map(([width, year], index) => {
+    const primaryWidth = primaryWidthData[index]?.[0] ?? width;
+    const clampedWidth = Math.min(width, Math.max(0.16, primaryWidth - 0.09));
+
+    return [
+      clamp(xAxisMax.value - clampedWidth, 0.18, xAxisMax.value - 0.08),
+      year,
+    ] as [number, number];
+  });
 
   const hitAreaData = buckets.value.map((bucket) => ({
-    value: [interpolateMetric(bucket.start + BUCKET_SPAN / 2, 'secondaryWidth'), bucket.start + BUCKET_SPAN / 2],
+    value: [
+      clamp(xAxisMax.value - interpolateMetric(bucket.start + BUCKET_SPAN / 2, 'secondaryWidth'), 0.18, xAxisMax.value - 0.08),
+      bucket.start + BUCKET_SPAN / 2,
+    ],
     bucketStart: bucket.start,
     count: bucket.count,
     symbolSize: 18,
@@ -265,8 +297,6 @@ const renderChart = () => {
     ]
     : [];
 
-  const rightWideStripX = xAxisMax.value - 0.72;
-  const rightThinStripX = xAxisMax.value - 0.24;
   const selectedBandHalf = 20;
   const selectedBandStart =
     selectedBucketYear.value === null ? null : clamp(selectedBucketYear.value - selectedBandHalf, minYear.value, maxYear.value);
@@ -349,13 +379,13 @@ const renderChart = () => {
         silent: true,
         z: 1,
         lineStyle: {
-          color: 'rgba(155, 161, 157, 0.56)',
-          width: 1,
+          color: 'transparent',
+          width: 0,
         },
         areaStyle: {
           color: 'rgba(155, 161, 157, 0.42)',
           opacity: 1,
-          origin: 'start',
+          origin: 'end',
         },
       },
       {
@@ -366,13 +396,13 @@ const renderChart = () => {
         silent: true,
         z: 2,
         lineStyle: {
-          color: 'rgba(101, 126, 101, 0.84)',
-          width: 1,
+          color: 'transparent',
+          width: 0,
         },
         areaStyle: {
           color: 'rgba(101, 126, 101, 0.62)',
           opacity: 1,
-          origin: 'start',
+          origin: 'end',
         },
       },
       {
