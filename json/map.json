@@ -1,0 +1,130 @@
+{
+  "designSystem": {
+    "metadata": {
+      "themeName": "Classical Chinese Historical Archive",
+      "styleKeywords": ["traditional", "historical", "muted", "elegant", "museum-exhibit", "timeline", "infographic"],
+      "description": "A design system inspired by ancient Chinese manuscripts and architectural archives. It uses muted earthy tones, delicate linework, and traditional typography to convey a sense of history and academic rigor."
+    },
+    "colors": {
+      "background": {
+        "primary": "#E4DCCB",
+        "description": "Aged paper, parchment, or unbleached silk. Should have subtle texture if possible."
+      },
+      "text": {
+        "primary": "#3B332D",
+        "secondary": "#A83C3B",
+        "description": "Dark brownish-grey for main readability. Deep cinnabar red for titles, emphasis, or timeline axes."
+      },
+      "accents": {
+        "red_cinnabar": "#A83C3B",
+        "green_jade": "#657E65",
+        "gold_ochre": "#A89673",
+        "grey_stone": "#9BA19D",
+        "description": "Red used for time progression and main structure. Jade green used for primary data areas and category badges. Gold used for secondary event labels. Stone grey used for secondary data mapping."
+      }
+    },
+    "typography": {
+      "fontFamilies": {
+        "primary": "KaiTi, STKaiti, BiauKai, 'Times New Roman', serif",
+        "secondary": "SimSun, STSong, NSimSun, serif",
+        "description": "Must use traditional Chinese serif or brush-style fonts. Avoid modern sans-serif fonts (like Helvetica or PingFang) to maintain historical authenticity."
+      },
+      "styles": {
+        "h1_title": {
+          "color": "$colors.text.secondary",
+          "fontWeight": "bold",
+          "letterSpacing": "0.1em"
+        },
+        "body_text": {
+          "color": "$colors.text.primary",
+          "fontWeight": "normal"
+        },
+        "label_text": {
+          "color": "#FFFFFF",
+          "fontWeight": "normal",
+          "fontSize": "0.85em"
+        }
+      }
+    },
+    "shapesAndBorders": {
+      "lines": {
+        "axis_main": {
+          "color": "$colors.accents.red_cinnabar",
+          "width": "1px",
+          "style": "solid"
+        },
+        "axis_ticks": {
+          "color": "$colors.accents.red_cinnabar",
+          "width": "1px",
+          "style": "solid",
+          "length": "4px"
+        },
+        "connectors": {
+          "color": "$colors.accents.green_jade",
+          "width": "1px",
+          "style": "solid"
+        }
+      },
+      "geometry": {
+        "rounded_rect": {
+          "borderRadius": "4px",
+          "description": "Soft rounded corners used for event timeline labels (ochre background)."
+        },
+        "chamfered_rect": {
+          "clipPath": "polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%)",
+          "description": "Octagonal or chamfered corners used for era/dynasty badges (jade green background)."
+        },
+        "organic_area": {
+          "edgeStyle": "jagged, irregular",
+          "description": "Used for area charts to represent natural or historical data bounds, mimicking rough terrain or ruins."
+        }
+      }
+    },
+    "components": {
+      "verticalTimeline": {
+        "structure": "Central or left-aligned vertical axis. Ticks at regular intervals indicating years/eras.",
+        "labels": "Placed on the left, connected by a thin horizontal line to a specific point on the axis."
+      },
+      "eventLabel": {
+        "background": "$colors.accents.gold_ochre",
+        "textColor": "#FFFFFF",
+        "shape": "$shapesAndBorders.geometry.rounded_rect",
+        "padding": "4px 12px"
+      },
+      "eraBadge": {
+        "background": "$colors.accents.green_jade",
+        "textColor": "#FFFFFF",
+        "shape": "$shapesAndBorders.geometry.chamfered_rect",
+        "padding": "4px 8px"
+      },
+      "dataAreaChart": {
+        "fillColor": "$colors.accents.green_jade",
+        "opacity": "0.6",
+        "orientation": "Vertical",
+        "edge": "$shapesAndBorders.geometry.organic_area"
+      },
+      "legend": {
+        "position": "Top right",
+        "layout": "Vertical stacking",
+        "markerShape": "Circle or simple square"
+      }
+    },
+    "effects": {
+      "backgroundWatermark": {
+        "type": "image/illustration",
+        "opacity": "0.1",
+        "blendMode": "multiply",
+        "description": "A faint, low-opacity traditional line-drawing illustration (e.g., architecture, mountains, clouds) placed in the background to provide texture and depth without distracting from the data."
+      }
+    },
+    "aiGenerationGuidelines": {
+      "promptRules": [
+        "1. STRICT COLOR PALETTE: Only use the colors defined in this system. Do not use pure white (#FFFFFF) for backgrounds or pure black (#000000) for text. Always use the muted parchment backgrounds and brownish/reddish text.",
+        "2. TYPOGRAPHY ENFORCEMENT: When generating HTML/CSS, explicitly declare fonts like 'Kaiti', 'STKaiti', or default to generic 'serif'. Never use sans-serif.",
+        "3. COMPONENT STYLING: When asked to create a label or tag, use the `gold_ochre` with rounded corners, or `green_jade` with chamfered (cut) corners.",
+        "4. LAYOUT AESTHETIC: Prioritize vertical alignments. Use thin (1px) delicate lines for dividers and axes. Avoid thick borders, heavy shadows, or modern flat-design UI paradigms.",
+        "5. DATA VISUALIZATION: If generating charts, use vertical orientations. Area charts should have irregular, jagged outer edges rather than smooth bezier curves, simulating historical/archaeological data."
+      ]
+    }
+  }
+}

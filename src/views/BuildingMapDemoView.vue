@@ -264,10 +264,10 @@ watch(
 }
 
 .side-panel--right {
-  top: 122px;
+  top: 86px;
   right: 26px;
-  bottom: 26px;
-  width: 244px;
+  bottom: 20px;
+  width: 236px;
   padding: 0;
   display: flex;
   background: transparent;
