@@ -12,18 +12,14 @@
             @mouseleave="scheduleClose"
         >
             <button
-                v-for="(item, index) in buildingSections"
+                v-for="item in buildingSections"
                 :key="item.key"
                 type="button"
                 class="building-nav-item"
                 :class="{ active: activePath === item.path }"
                 @click="navigate(item.path)"
             >
-                <span class="building-nav-item__index">0{{ index + 1 }}</span>
-                <span class="building-nav-item__copy">
-                    <strong>{{ item.title }}</strong>
-                    <em>{{ item.subtitle }}</em>
-                </span>
+                <span class="building-nav-item__title">{{ item.title }}</span>
             </button>
         </div>
     </div>
@@ -90,19 +86,18 @@ onBeforeUnmount(() => {
 .building-nav-zone {
     position: fixed;
     top: 0;
-    left: 50%;
-    width: min(320px, calc(100vw - 40px));
-    height: 22px;
+    left: 0;
+    width: 100vw;
+    height: 24px;
     z-index: 1790;
-    transform: translateX(-50%);
 }
 
 .building-nav-dock {
     position: fixed;
     top: 0;
-    left: 50%;
+    left: 0;
+    right: 0;
     z-index: 1800;
-    transform: translateX(-50%);
     pointer-events: none;
 }
 
@@ -113,113 +108,103 @@ onBeforeUnmount(() => {
 
 .building-nav-panel {
     margin-top: 0;
-    padding: 14px;
+    width: 100vw;
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 12px;
-    width: min(1080px, calc(100vw - 64px));
-    border: 1px solid rgba(99, 66, 45, 0.28);
-    border-radius: 24px;
-    background:
-        linear-gradient(180deg, rgba(243, 235, 224, 0.97), rgba(232, 222, 206, 0.96)),
-        radial-gradient(circle at top, rgba(255, 255, 255, 0.24), transparent 46%);
-    box-shadow: 0 20px 48px rgba(56, 35, 24, 0.18);
-    backdrop-filter: blur(10px);
+    gap: 0;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
     opacity: 0;
-    transform: translateY(calc(-100% - 10px)) scale(0.98);
+    transform: translateY(calc(-100% - 4px));
     transform-origin: top center;
     pointer-events: none;
-    transition: opacity 0.24s ease, transform 0.24s ease;
+    transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .building-nav-dock--open .building-nav-panel {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: translateY(0);
     pointer-events: auto;
 }
 
 .building-nav-item {
-    min-height: 88px;
-    border: 1px solid rgba(111, 75, 53, 0.16);
-    border-radius: 18px;
-    background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.54), rgba(255, 255, 255, 0.2)),
-        linear-gradient(135deg, rgba(198, 158, 120, 0.08), rgba(122, 79, 54, 0.06));
-    color: #4b2e1d;
+    height: 78px;
+    border: none;
+    border-bottom: 1px solid rgba(154, 67, 54, 0.16);
+    background: transparent;
+    color: rgba(61, 40, 30, 0.92);
     cursor: pointer;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 14px;
-    padding: 14px 16px;
-    text-align: left;
-    transition: transform 0.24s ease, border-color 0.24s ease, box-shadow 0.24s ease, color 0.24s ease;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 180ms ease, color 180ms ease;
+    position: relative;
+}
+
+.building-nav-item__title {
+    font-family: 'NavFont', 'ChartTitleFont', 'Noto Serif TC', 'STKaiti', 'KaiTi', serif;
+    font-size: clamp(22px, 2.15vw, 33px);
+    line-height: 1;
+    letter-spacing: 0.08em;
+}
+
+.building-nav-item::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%) scaleX(0.2);
+    transform-origin: center;
+    width: min(70%, 170px);
+    height: 3px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(154, 67, 54, 0.14), rgba(154, 67, 54, 0.98), rgba(154, 67, 54, 0.14));
+    opacity: 0;
+    transition: opacity 180ms ease, transform 180ms ease;
 }
 
 .building-nav-item:hover,
 .building-nav-item.active {
-    transform: translateY(-2px);
-    border-color: rgba(138, 64, 42, 0.44);
-    box-shadow: 0 12px 22px rgba(122, 66, 43, 0.16);
-    color: #8f2f1f;
+    background: rgba(244, 237, 226, 0.64);
+    color: #8f3128;
 }
 
-.building-nav-item__index {
-    font-family: 'TitleFont', 'Times New Roman', serif;
-    font-size: 14px;
-    letter-spacing: 0.14em;
-    color: rgba(89, 61, 42, 0.68);
+.building-nav-item:hover::after,
+.building-nav-item.active::after {
+    opacity: 1;
+    transform: translateX(-50%) scaleX(1);
 }
 
-.building-nav-item__copy {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.building-nav-item__copy strong {
-    font-family: 'NavFont', 'STKaiti', 'KaiTi', serif;
-    font-size: 24px;
-    font-weight: 500;
-    letter-spacing: 0.08em;
-}
-
-.building-nav-item__copy em {
-    font-family: 'ContentFont', 'STSong', 'SimSun', serif;
-    font-size: 12px;
-    font-style: normal;
-    letter-spacing: 0.16em;
-    color: rgba(89, 61, 42, 0.78);
-}
-
-@media (max-width: 1120px) {
-    .building-nav-panel {
-        width: min(920px, calc(100vw - 32px));
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-}
-
-@media (max-width: 720px) {
+@media (max-width: 980px) {
     .building-nav-zone {
-        height: 18px;
-        width: min(220px, calc(100vw - 24px));
-    }
-
-    .building-nav-panel {
-        width: min(520px, calc(100vw - 20px));
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 10px;
-        padding: 12px;
+        height: 20px;
     }
 
     .building-nav-item {
-        min-height: 76px;
-        padding: 12px 14px;
+        height: 62px;
     }
 
-    .building-nav-item__copy strong {
-        font-size: 20px;
+    .building-nav-item__title {
+        font-size: clamp(14px, 2.8vw, 20px);
+        letter-spacing: 0.05em;
+    }
+
+    .building-nav-item::after {
+        bottom: 7px;
+        height: 2px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .building-nav-panel,
+    .building-nav-item,
+    .building-nav-item::after {
+        transition: none;
     }
 }
 </style>
