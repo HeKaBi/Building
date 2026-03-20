@@ -1,0 +1,262 @@
+{
+  "$schema": "https://example.com/design-style.schema.json",
+  "name": "heritage-editorial-map-style",
+  "version": "1.0.0",
+  "purpose": "Reusable visual design system extracted from reference screens for generating new compositions in a consistent style.",
+  "design_intent": {
+    "keywords": [
+      "muted",
+      "editorial",
+      "heritage",
+      "archival",
+      "cartographic",
+      "refined",
+      "low-contrast",
+      "scholarly"
+    ],
+    "summary": "A quiet, historical editorial aesthetic combining map-like linework, subdued earth tones, soft overlays, and sparse accent markers. The overall feeling is cultural, documentary, and understated rather than modern, glossy, or high-saturation."
+  },
+  "art_direction": {
+    "mood": "calm, historical, premium, restrained",
+    "avoid": [
+      "bright saturated colors",
+      "high contrast UI styling",
+      "thick outlines",
+      "heavy shadows",
+      "neon accents",
+      "dense interface chrome",
+      "playful cartoon styling"
+    ],
+    "visual_balance": "large soft background shapes with lightly emphasized data or annotation layers above",
+    "density": "medium-sparse",
+    "composition_bias": "broad central focus with wide negative space and gently distributed detail"
+  },
+  "color_system": {
+    "palette": {
+      "background_base": "#E6E0D3",
+      "background_wash": "#D8D1C4",
+      "line_subtle": "#F2EEE6",
+      "line_soft": "#D9D2C7",
+      "text_primary": "#8C3F30",
+      "text_secondary": "#9B6D5F",
+      "accent_red": "#9A4336",
+      "accent_red_muted": "#B05A4A",
+      "accent_green": "#97ACA0",
+      "accent_green_soft": "#B4C1B8",
+      "accent_earth": "#B89A82",
+      "fog_white": "rgba(255,255,255,0.28)",
+      "overlay_sep": "rgba(120,105,85,0.08)"
+    },
+    "rules": {
+      "saturation": "low",
+      "contrast": "soft",
+      "temperature": "warm-neutral overall with cool muted green counterpoints",
+      "usage_ratio": {
+        "background_neutrals": 0.7,
+        "linework_and_overlays": 0.15,
+        "typography": 0.07,
+        "data_markers": 0.08
+      },
+      "accent_distribution": "Use muted red and muted green as the main contrasting pair. Earth tones may appear sparingly as tertiary accents."
+    }
+  },
+  "typography": {
+    "style": "editorial serif or serif-like Chinese typography",
+    "tone": "formal, cultural, print-like",
+    "recommended_characteristics": {
+      "weight": "regular to semibold",
+      "tracking": "slightly open",
+      "case": "mixed or native script labels",
+      "rendering": "sharp but not bold-heavy"
+    },
+    "scale": {
+      "label_small": {
+        "font_size": 12,
+        "line_height": 1.2,
+        "weight": 400
+      },
+      "label_medium": {
+        "font_size": 18,
+        "line_height": 1.25,
+        "weight": 500
+      },
+      "title_large": {
+        "font_size": 28,
+        "line_height": 1.15,
+        "weight": 600
+      }
+    },
+    "color_usage": {
+      "primary": "#8C3F30",
+      "secondary": "#9B6D5F"
+    }
+  },
+  "surface_treatment": {
+    "background_texture": {
+      "enabled": true,
+      "style": "paper-like wash with faint historical illustration or etched architectural texture",
+      "opacity": 0.08,
+      "blend_mode": "multiply or normal at low opacity"
+    },
+    "mist_layer": {
+      "enabled": true,
+      "style": "soft atmospheric haze",
+      "opacity": 0.16
+    },
+    "grain": {
+      "enabled": false,
+      "optional": true,
+      "recommended_if_added": "very subtle film or paper grain only"
+    }
+  },
+  "linework": {
+    "stroke_style": "thin, delicate, semi-transparent",
+    "weights": {
+      "primary_boundary": 2.0,
+      "secondary_boundary": 1.0,
+      "decorative_contour": 0.75
+    },
+    "color": "#F2EEE6",
+    "opacity": 0.7,
+    "corner_style": "smooth",
+    "avoid": [
+      "hard black outlines",
+      "thick geometric borders",
+      "high-frequency pattern clutter"
+    ]
+  },
+  "layout": {
+    "canvas_feel": "full-bleed composition",
+    "margins": "minimal explicit framing",
+    "alignment": "freeform but balanced",
+    "hierarchy_pattern": [
+      "base field/background",
+      "structural outlines or geographic scaffolding",
+      "text labels",
+      "small distributed markers or data glyphs"
+    ],
+    "negative_space": "important; allow large quiet regions",
+    "clustering": "detail may cluster in one primary region while surrounding space stays calm"
+  },
+  "shapes_and_markers": {
+    "style": "small simple geometric glyphs used as annotations or data points",
+    "allowed_shapes": [
+      "circle",
+      "square",
+      "triangle",
+      "pentagon",
+      "dot"
+    ],
+    "marker_properties": {
+      "size_range_px": [6, 12],
+      "opacity": 0.9,
+      "fill_only": true,
+      "stroke": "none or minimal",
+      "distribution": "scattered with slight clustering",
+      "overlap_tolerance": "low to moderate"
+    },
+    "color_logic": {
+      "primary_series": ["#9A4336", "#97ACA0"],
+      "secondary_series": ["#B89A82", "#B05A4A", "#B4C1B8"],
+      "semantic_behavior": "Use color and shape combinations to imply categories while preserving low visual intensity."
+    }
+  },
+  "labeling": {
+    "placement": "offset from major forms with generous spacing",
+    "priority": "few labels, carefully placed",
+    "style": "muted dark red editorial labels",
+    "collision_strategy": "prefer omission over clutter",
+    "rotation": "mostly horizontal"
+  },
+  "depth_and_contrast": {
+    "shadow_use": "minimal to none",
+    "depth_creation": "achieved via overlays, haze, and tone separation instead of drop shadows",
+    "contrast_strategy": "soft local contrast rather than global contrast",
+    "foreground_background_separation": "text and markers slightly darker/saturated than the base field"
+  },
+  "pattern_language": {
+    "motifs": [
+      "archival cartography",
+      "historical print texture",
+      "scholarly infographic restraint",
+      "cultural heritage visual tone"
+    ],
+    "repetition": "subtle and irregular",
+    "ornament": "embedded into background only; not dominant"
+  },
+  "component_guidelines": {
+    "titles": {
+      "appearance": "serif-like, muted red, medium emphasis",
+      "spacing": "airy",
+      "recommended_use": "short and sparse"
+    },
+    "maps_or_diagrams": {
+      "base": "warm parchment-like field",
+      "outlines": "thin pale strokes",
+      "overlay_texture": "faint historical illustration",
+      "annotations": "small geometric markers in muted dual-tone palette"
+    },
+    "legends": {
+      "style": "compact and understated",
+      "background": "transparent or lightly fogged",
+      "borders": "none or very soft"
+    },
+    "cards_or_panels": {
+      "use": "only if necessary",
+      "fill": "semi-transparent warm neutral",
+      "border": "1px subtle line",
+      "radius": 0,
+      "shadow": "none"
+    }
+  },
+  "prompting_hints_for_ai": {
+    "positive": [
+      "muted heritage editorial visual language",
+      "warm parchment background",
+      "faint historical engraved texture",
+      "thin pale linework",
+      "sparse geometric markers in dusty red and sage green",
+      "soft atmospheric wash",
+      "low saturation, low contrast, premium documentary feel",
+      "balanced negative space"
+    ],
+    "negative": [
+      "vivid colors",
+      "glossy gradients",
+      "modern dashboard UI",
+      "thick strokes",
+      "bold shadows",
+      "glassmorphism",
+      "cartoon look",
+      "tech startup style"
+    ]
+  },
+  "implementation_tokens": {
+    "border_radius": 0,
+    "shadow": "none",
+    "primary_stroke": "2px solid rgba(242,238,230,0.7)",
+    "secondary_stroke": "1px solid rgba(242,238,230,0.5)",
+    "font_stack_sans_fallback": [
+      "Noto Serif SC",
+      "Source Han Serif SC",
+      "Songti SC",
+      "STSong",
+      "serif"
+    ],
+    "spacing_scale": [4, 8, 12, 16, 24, 32, 48],
+    "opacity_scale": {
+      "faint": 0.08,
+      "soft": 0.16,
+      "medium": 0.28,
+      "strong": 0.9
+    }
+  },
+  "consistency_rules": [
+    "Always keep the overall palette subdued and warm-neutral.",
+    "Prefer atmosphere and texture over decorative interface elements.",
+    "Use sparse labels and avoid cluttered annotation density.",
+    "Keep geometric markers small and understated.",
+    "Use red-green contrast in a dusty, desaturated way rather than vivid complementary contrast.",
+    "Maintain a print-editorial sensibility, not a software-product sensibility."
+  ]
+}

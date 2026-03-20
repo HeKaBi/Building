@@ -11,7 +11,7 @@
       <div class="building-map-chart__preview-art">
         <ArchitectureSketch
           :variant="getBuildingSketchVariant(hoverPreview.building)"
-          :accent="getStructureColor(hoverPreview.building)"
+          :accent="getMapMarkerColor(hoverPreview.building)"
           ink="#5b4435"
         />
         <div class="building-map-chart__preview-era">{{ hoverPreview.building.eraLabel }}</div>
@@ -84,6 +84,17 @@ const INITIAL_GEO_CENTER: [number, number] = [113.7, 37.9];
 const INITIAL_LAYOUT_CENTER: [string, string] = ['48%', '56%'];
 const INITIAL_LAYOUT_SIZE = '118%';
 const HIT_SYMBOL_SIZE = 24;
+const MAP_TEXT_PRIMARY = '#8C3F30';
+const MAP_TEXT_SECONDARY = '#9B6D5F';
+const MAP_BOUNDARY = 'rgba(242, 238, 230, 0.76)';
+const MAP_BOUNDARY_SOFT = 'rgba(242, 238, 230, 0.52)';
+const MAP_AREA = 'rgba(216, 209, 196, 0.74)';
+const MAP_AREA_HOVER = 'rgba(224, 216, 202, 0.84)';
+const MARKER_RED = '#9A4336';
+const MARKER_RED_MUTED = '#B05A4A';
+const MARKER_GREEN = '#97ACA0';
+const MARKER_GREEN_SOFT = '#B4C1B8';
+const MARKER_EARTH = '#B89A82';
 const clamp = (value: number, min: number, max: number) => Math.min(Math.max(value, min), max);
 
 const chartRef = ref<HTMLDivElement | null>(null);
@@ -91,6 +102,7 @@ const hoverPreview = ref<HoverPreviewState | null>(null);
 
 let chart: echarts.ECharts | null = null;
 let zrGlobalOutHandler: (() => void) | null = null;
+let syncingGeoRoam = false;
 
 const geoZoom = ref(INITIAL_GEO_ZOOM);
 const geoCenter = ref<[number, number] | undefined>(INITIAL_GEO_CENTER);
@@ -109,13 +121,24 @@ const previewStyle = computed<CSSProperties | undefined>(() => {
     top: `${hoverPreview.value.top}px`,
     width: `${hoverPreview.value.width}px`,
     '--preview-arrow-left': `${hoverPreview.value.arrowLeft}px`,
-    '--preview-accent': getStructureColor(hoverPreview.value.building),
+    '--preview-accent': getMapMarkerColor(hoverPreview.value.building),
   } as CSSProperties;
 });
 
+const getMapMarkerColor = (building: BuildingRecord) => {
+  const baseColor = getStructureColor(building).toLowerCase();
+  if (baseColor === '#a3473a') return MARKER_RED;
+  if (baseColor === '#6f7f8f') return MARKER_RED_MUTED;
+  if (baseColor === '#b67a4a') return MARKER_GREEN_SOFT;
+  if (baseColor === '#4b765f') return MARKER_GREEN;
+  if ((building.importance ?? 0) <= 1) return MARKER_EARTH;
+  return getStructureColor(building);
+};
+
 const createPoint = (building: BuildingRecord, options?: { focused?: boolean; hitArea?: boolean }) => {
-  const color = getStructureColor(building);
+  const color = getMapMarkerColor(building);
   const baseSize = getBuildingSymbolSize(building);
+  const markerSize = clamp(baseSize - 3, 6, 12);
   const focused = options?.focused ?? false;
   const hitArea = options?.hitArea ?? false;
 
@@ -125,18 +148,18 @@ const createPoint = (building: BuildingRecord, options?: { focused?: boolean; hi
     buildingId: building.id,
     building,
     symbol: getBuildingSymbol(building),
-    symbolSize: hitArea ? Math.max(HIT_SYMBOL_SIZE, baseSize + 12) : focused ? baseSize + 5 : baseSize,
+    symbolSize: hitArea ? Math.max(HIT_SYMBOL_SIZE, markerSize + 14) : focused ? markerSize + 2 : markerSize,
     itemStyle: {
       color: hitArea ? 'rgba(0, 0, 0, 0.001)' : color,
       borderColor: hitArea
         ? 'rgba(0, 0, 0, 0)'
         : focused
-          ? 'rgba(248, 241, 229, 0.96)'
-          : 'rgba(245, 236, 222, 0.88)',
-      borderWidth: hitArea ? 0 : focused ? 1.8 : 1.05,
-      shadowBlur: hitArea ? 0 : focused ? 18 : 10,
-      shadowColor: hitArea ? 'transparent' : focused ? `${color}66` : `${color}3d`,
-      opacity: hitArea ? 1 : 0.98,
+          ? 'rgba(242, 238, 230, 0.72)'
+          : 'rgba(0, 0, 0, 0)',
+      borderWidth: hitArea ? 0 : focused ? 1.2 : 0.2,
+      shadowBlur: hitArea ? 0 : focused ? 7 : 0,
+      shadowColor: hitArea ? 'transparent' : focused ? `${color}40` : 'transparent',
+      opacity: hitArea ? 1 : focused ? 0.95 : 0.9,
     },
   };
 };
@@ -211,17 +234,42 @@ const renderChart = () => {
     });
 
     chart.on('georoam', () => {
+      if (syncingGeoRoam) {
+        return;
+      }
+
       clearHoverPreview();
 
       const option = chart?.getOption() as { geo?: Array<{ zoom?: number; center?: [number, number] }> } | undefined;
-      const geoOption = option?.geo?.[0];
+      const geos = option?.geo ?? [];
+      const mainGeo = geos[1] ?? geos[0];
 
-      if (geoOption?.zoom) {
-        geoZoom.value = geoOption.zoom;
+      if (mainGeo?.zoom) {
+        geoZoom.value = mainGeo.zoom;
       }
 
-      if (geoOption?.center) {
-        geoCenter.value = geoOption.center;
+      if (mainGeo?.center) {
+        geoCenter.value = mainGeo.center;
+      }
+
+      if (chart && geos.length > 1 && mainGeo?.zoom && mainGeo?.center) {
+        syncingGeoRoam = true;
+        chart.setOption(
+          {
+            geo: [
+              {
+                zoom: mainGeo.zoom,
+                center: mainGeo.center,
+              },
+              {
+                zoom: mainGeo.zoom,
+                center: mainGeo.center,
+              },
+            ],
+          },
+          { lazyUpdate: true },
+        );
+        syncingGeoRoam = false;
       }
     });
 
@@ -232,6 +280,33 @@ const renderChart = () => {
   }
 
   echarts.registerMap('china-building-demo', chinaJson as never);
+
+  const outerOutlineGeoOption = {
+    map: 'china-building-demo',
+    roam: false,
+    zoom: geoZoom.value,
+    center: geoCenter.value,
+    aspectScale: 0.88,
+    scaleLimit: {
+      min: MIN_GEO_ZOOM,
+      max: MAX_GEO_ZOOM,
+    },
+    layoutCenter: INITIAL_LAYOUT_CENTER,
+    layoutSize: INITIAL_LAYOUT_SIZE,
+    selectedMode: false,
+    silent: true,
+    label: {
+      show: false,
+    },
+    emphasis: {
+      disabled: true,
+    },
+    itemStyle: {
+      areaColor: 'rgba(0, 0, 0, 0)',
+      borderColor: MAP_BOUNDARY,
+      borderWidth: 2,
+    },
+  };
 
   const geoOption = {
     map: 'china-building-demo',
@@ -248,24 +323,26 @@ const renderChart = () => {
     selectedMode: false,
     label: {
       show: true,
-      color: 'rgba(152, 91, 72, 0.48)',
-      fontSize: 14,
-      fontFamily: 'ContentFont',
+      color: MAP_TEXT_PRIMARY,
+      opacity: 0.9,
+      fontSize: 17,
+      fontWeight: 500,
+      fontFamily: "'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', 'STSong', serif",
     },
     emphasis: {
       label: {
-        color: '#8d392c',
+        color: MAP_TEXT_PRIMARY,
       },
       itemStyle: {
-        areaColor: 'rgba(225, 213, 194, 0.54)',
-        borderColor: 'rgba(167, 137, 112, 0.98)',
-        borderWidth: 1.8,
+        areaColor: MAP_AREA_HOVER,
+        borderColor: MAP_BOUNDARY,
+        borderWidth: 1.2,
       },
     },
     itemStyle: {
-      areaColor: 'rgba(207, 194, 175, 0.34)',
-      borderColor: 'rgba(147, 125, 106, 0.9)',
-      borderWidth: 1.38,
+      areaColor: MAP_AREA,
+      borderColor: MAP_BOUNDARY_SOFT,
+      borderWidth: 1,
     },
   };
 
@@ -280,11 +357,12 @@ const renderChart = () => {
   chart.setOption({
     backgroundColor: 'transparent',
     animationDurationUpdate: 0,
-    geo: geoOption,
+    geo: [outerOutlineGeoOption, geoOption],
     series: [
       {
         type: 'scatter',
         coordinateSystem: 'geo',
+        geoIndex: 1,
         data: interactivePoints,
         z: 6,
         emphasis: {
@@ -294,6 +372,7 @@ const renderChart = () => {
       {
         type: 'scatter',
         coordinateSystem: 'geo',
+        geoIndex: 1,
         data: normalPoints,
         silent: true,
         z: 4,
@@ -304,12 +383,13 @@ const renderChart = () => {
       {
         type: 'effectScatter',
         coordinateSystem: 'geo',
+        geoIndex: 1,
         data: focusPoints,
         silent: true,
         z: 5,
         showEffectOn: 'render',
         rippleEffect: {
-          scale: 3.4,
+          scale: 2.6,
           brushType: 'stroke',
         },
         label: {
@@ -317,12 +397,12 @@ const renderChart = () => {
           position: 'right',
           distance: 8,
           formatter: ({ data }: { data?: { building?: BuildingRecord } }) => data?.building?.name ?? '',
-          color: '#5d2a21',
-          fontSize: 13,
-          fontFamily: 'ContentFont',
-          backgroundColor: 'rgba(244, 236, 223, 0.94)',
-          borderColor: 'rgba(149, 117, 94, 0.24)',
-          borderWidth: 1,
+          color: MAP_TEXT_SECONDARY,
+          fontSize: 11,
+          fontFamily: "'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', 'STSong', serif",
+          backgroundColor: 'rgba(230, 224, 211, 0.72)',
+          borderColor: 'rgba(0, 0, 0, 0)',
+          borderWidth: 0,
           borderRadius: 999,
           padding: [4, 9, 3, 9],
         },

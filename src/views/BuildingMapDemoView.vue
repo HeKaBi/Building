@@ -14,7 +14,7 @@
     <div class="screen-ui">
       <div class="map-legend">
         <div v-for="item in structureLegend" :key="item.key" class="map-legend__item">
-          <span class="map-legend__dot" :style="{ '--legend-color': item.color }"></span>
+          <span class="map-legend__dot" :style="{ '--legend-color': getMapLegendColor(item.key) }"></span>
           <span>{{ item.label }}</span>
         </div>
       </div>
@@ -37,7 +37,7 @@
               <small>{{ item.description }}</small>
             </span>
             <span class="legend-row__meta">
-              <i class="legend-row__dot" :style="{ '--legend-color': item.color }"></i>
+              <i class="legend-row__dot" :style="{ '--legend-color': getMapLegendColor(item.key) }"></i>
               <em>{{ structureCounts[item.key] }}</em>
             </span>
           </button>
@@ -109,6 +109,13 @@ const uiText = {
   noteCopy: '\u989c\u8272\u770b\u5efa\u7b51\u7c7b\u578b\uff0c\u6807\u8bb0\u770b\u91cd\u8981\u7b49\u7ea7\u3002',
 } as const;
 
+const mapLegendColorByType: Record<StructureType, string> = {
+  民居: '#3A6351',
+  官府: '#2F5646',
+  皇宫: '#A04A3C',
+  桥梁: '#8F5647',
+};
+
 const activeStructure = ref<StructureType | null>(null);
 const selectedBuildingId = ref<string | null>(buildings[0]?.id ?? null);
 
@@ -129,6 +136,8 @@ const toggleStructure = (structure: StructureType) => {
   activeStructure.value = activeStructure.value === structure ? null : structure;
 };
 
+const getMapLegendColor = (type: StructureType) => mapLegendColorByType[type] ?? '#3A6351';
+
 const handleSelect = (buildingId: string) => {
   selectedBuildingId.value = buildingId;
 };
@@ -146,23 +155,23 @@ watch(
 
 <style scoped lang="scss">
 .building-map-screen {
-  --paper: #ece3d2;
-  --paper-soft: rgba(242, 234, 219, 0.92);
-  --paper-strong: rgba(235, 226, 210, 0.96);
-  --line: rgba(147, 116, 93, 0.3);
-  --ink: #514033;
-  --ink-soft: rgba(81, 64, 51, 0.74);
-  --red: #a3473a;
-  --green: #4c755e;
-  --earth: #b97747;
-  --shadow: rgba(72, 52, 40, 0.1);
+  --paper: #e6e0d3;
+  --paper-soft: rgba(230, 224, 211, 0.9);
+  --paper-strong: rgba(230, 224, 211, 0.96);
+  --line: rgba(120, 105, 85, 0.08);
+  --ink: #8c3f30;
+  --ink-soft: rgba(155, 109, 95, 0.82);
+  --red: #9a4336;
+  --green: #97aca0;
+  --earth: #b89a82;
+  --shadow: rgba(50, 44, 35, 0.05);
   box-sizing: border-box;
   position: fixed;
   inset: 0;
   overflow: hidden;
   background:
-    linear-gradient(180deg, rgba(242, 234, 219, 0.98), rgba(232, 223, 208, 0.98)),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.14), transparent 28%, transparent 72%, rgba(255, 255, 255, 0.12));
+    linear-gradient(180deg, rgba(230, 224, 211, 0.98), rgba(216, 209, 196, 0.98)),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06), transparent 28%, transparent 72%, rgba(255, 255, 255, 0.06));
 }
 
 .building-map-screen__chart,
@@ -181,21 +190,22 @@ watch(
   z-index: 1;
   pointer-events: none;
   background:
-    radial-gradient(circle at 18% 12%, rgba(255, 255, 255, 0.34), transparent 18%),
-    radial-gradient(circle at 82% 18%, rgba(255, 255, 255, 0.24), transparent 20%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+    radial-gradient(circle at 16% 12%, rgba(255, 255, 255, 0.26), transparent 26%),
+    radial-gradient(circle at 82% 16%, rgba(255, 255, 255, 0.22), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.08));
 }
 
 .building-map-screen__grain {
+  display: none;
   z-index: 1;
   pointer-events: none;
   background:
     repeating-linear-gradient(
       135deg,
-      rgba(124, 96, 76, 0.03) 0,
-      rgba(124, 96, 76, 0.03) 1px,
+      rgba(123, 108, 89, 0.02) 0,
+      rgba(123, 108, 89, 0.02) 1px,
       transparent 1px,
-      transparent 14px
+      transparent 16px
     );
   mix-blend-mode: multiply;
 }
@@ -203,10 +213,10 @@ watch(
 .building-map-screen__motif {
   z-index: 1;
   pointer-events: none;
-  opacity: 0.18;
+  opacity: 0.1;
   background:
-    radial-gradient(circle at 38% 46%, rgba(128, 96, 77, 0.11), transparent 24%),
-    radial-gradient(circle at 70% 58%, rgba(128, 96, 77, 0.08), transparent 22%);
+    radial-gradient(circle at 35% 44%, rgba(120, 105, 85, 0.08), transparent 26%),
+    radial-gradient(circle at 70% 56%, rgba(120, 105, 85, 0.06), transparent 24%);
 }
 
 .screen-ui {
@@ -229,8 +239,9 @@ watch(
   align-items: center;
   gap: 18px;
   padding: 8px 10px;
-  background: rgba(241, 233, 218, 0.74);
-  border: 1px solid rgba(154, 121, 98, 0.14);
+  background: rgba(235, 228, 213, 0.75);
+  border: 1px solid rgba(156, 58, 53, 0.14);
+  border-radius: 4px;
 }
 
 .map-legend__item {
@@ -239,7 +250,7 @@ watch(
   gap: 8px;
   font-family: 'ContentFont', serif;
   font-size: 13px;
-  color: var(--ink);
+  color: #4a433a;
 }
 
 .map-legend__dot {
@@ -250,17 +261,18 @@ watch(
 }
 
 .side-panel {
-  background: rgba(239, 231, 215, 0.78);
-  border: 1px solid rgba(154, 121, 98, 0.12);
-  box-shadow: 0 12px 28px rgba(72, 52, 40, 0.08);
-  backdrop-filter: blur(6px);
+  background: rgba(235, 228, 213, 0.85);
+  border: 1px solid rgba(156, 58, 53, 0.16);
+  box-shadow: 0 4px 12px rgba(60, 52, 42, 0.06);
+  backdrop-filter: blur(4px);
+  border-radius: 4px;
 }
 
 .side-panel--left {
-  top: 94px;
-  left: 26px;
-  width: 220px;
-  padding: 12px 14px;
+  top: 72px;
+  left: 20px;
+  width: 190px;
+  padding: 10px 12px 8px;
 }
 
 .side-panel--right {
@@ -282,27 +294,23 @@ watch(
 }
 
 .legend-block + .legend-block {
-  margin-top: 12px;
+  margin-top: 8px;
 }
 
 .legend-block__title {
   margin: 0;
-  padding-bottom: 8px;
-  border-bottom: 2px solid rgba(163, 72, 58, 0.38);
-  font-family: 'STKaiti', 'KaiTi', 'Kaiti SC', 'Songti SC', serif;
-  font-size: 17px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(156, 58, 53, 0.44);
+  font-family: 'STKaiti', 'KaiTi', 'Kaiti SC', serif;
+  font-size: 15px;
   line-height: 1.1;
-  color: #a13f33;
-  letter-spacing: 0.04em;
+  color: #9c3a35;
+  letter-spacing: 0.03em;
 }
 
 .legend-block__copy,
 .legend-block__hint {
-  margin: 6px 0 0;
-  font-family: 'STSong', 'SimSun', 'Songti SC', serif;
-  font-size: 10px;
-  line-height: 1.45;
-  color: rgba(92, 67, 55, 0.76);
+  display: none;
 }
 
 .legend-row {
@@ -310,19 +318,19 @@ watch(
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 8px;
-  padding: 6px 0 5px;
+  gap: 6px;
+  padding: 4px 0 4px;
   border: none;
-  border-bottom: 1px dashed rgba(149, 117, 94, 0.18);
+  border-bottom: 1px solid rgba(156, 58, 53, 0.14);
   background: transparent;
   text-align: left;
   cursor: pointer;
-  transition: transform 0.18s ease, color 0.18s ease;
+  transition: color 0.18s ease;
 }
 
 .legend-row:hover,
 .legend-row.active {
-  transform: translateX(2px);
+  background: rgba(245, 240, 230, 0.35);
 }
 
 .legend-row__text {
@@ -332,72 +340,69 @@ watch(
 }
 
 .legend-row__text strong {
-  font-family: 'STKaiti', 'KaiTi', 'Kaiti SC', 'Songti SC', serif;
-  font-size: 14px;
-  color: #5f4032;
+  font-family: 'STKaiti', 'KaiTi', 'Kaiti SC', serif;
+  font-size: 13px;
+  color: #4a433a;
   font-weight: 600;
 }
 
 .legend-row__text small {
-  font-family: 'STSong', 'SimSun', 'Songti SC', serif;
-  font-size: 8px;
-  line-height: 1.35;
-  color: rgba(96, 74, 61, 0.72);
+  display: none;
 }
 
 .legend-row.active .legend-row__text strong {
-  color: #953f32;
+  color: #9c3a35;
 }
 
 .legend-row__meta {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
   margin-top: 2px;
 }
 
 .legend-row__dot {
-  width: 11px;
-  height: 11px;
+  width: 9px;
+  height: 9px;
   border-radius: 999px;
   background: var(--legend-color);
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.24);
+  box-shadow: 0 0 0 2px rgba(245, 240, 230, 0.52);
 }
 
 .legend-row__meta em {
-  font-family: 'STSong', 'SimSun', 'Songti SC', serif;
-  font-size: 10px;
+  font-family: 'STSong', 'SimSun', serif;
+  font-size: 9px;
   font-style: normal;
-  color: rgba(88, 64, 52, 0.72);
+  color: rgba(74, 67, 58, 0.74);
 }
 
 .importance-legend {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 6px;
-  margin-top: 8px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 4px;
+  margin-top: 6px;
 }
 
 .importance-row {
   display: grid;
-  grid-template-columns: 24px minmax(0, 1fr);
-  gap: 8px;
+  grid-template-columns: 20px minmax(0, 1fr);
+  gap: 6px;
   align-items: start;
-  padding: 7px 8px;
-  border: 1px dashed rgba(149, 117, 94, 0.18);
-  border-radius: 12px;
-  background: rgba(246, 240, 230, 0.54);
+  padding: 4px 0;
+  border-bottom: 1px solid rgba(156, 58, 53, 0.12);
+  border-radius: 0;
+  background: transparent;
 }
 
 .importance-row:last-child {
-  grid-column: 1 / -1;
+  border-bottom: 1px solid rgba(156, 58, 53, 0.12);
 }
 
 .importance-row__marker {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 24px;
+  min-height: 18px;
 }
 
 .importance-row__copy {
@@ -407,25 +412,18 @@ watch(
 }
 
 .importance-row__copy strong {
-  font-family: 'STKaiti', 'KaiTi', 'Kaiti SC', 'Songti SC', serif;
-  font-size: 13px;
+  font-family: 'STKaiti', 'KaiTi', 'Kaiti SC', serif;
+  font-size: 12px;
   font-weight: 600;
-  color: #5f4032;
+  color: #4a433a;
 }
 
 .importance-row__copy em {
-  font-family: 'STSong', 'SimSun', 'Songti SC', serif;
-  font-style: normal;
-  font-size: 9px;
-  letter-spacing: 0.08em;
-  color: rgba(147, 63, 51, 0.82);
+  display: none;
 }
 
 .importance-row__copy small {
-  font-family: 'STSong', 'SimSun', 'Songti SC', serif;
-  font-size: 9px;
-  line-height: 1.35;
-  color: rgba(96, 74, 61, 0.72);
+  display: none;
 }
 
 .plan-shape {
@@ -438,19 +436,19 @@ watch(
   height: 0;
   border-left: calc(var(--shape-size) * 0.5) solid transparent;
   border-right: calc(var(--shape-size) * 0.5) solid transparent;
-  border-bottom: var(--shape-size) solid var(--green);
+  border-bottom: var(--shape-size) solid #3a6351;
 }
 
 .plan-shape--rect {
   width: var(--shape-size);
   height: var(--shape-size);
-  background: var(--green);
+  background: #3a6351;
 }
 
 .plan-shape--pentagon {
   width: var(--shape-size);
   height: var(--shape-size);
-  background: var(--green);
+  background: #3a6351;
   clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
 }
 
@@ -459,7 +457,7 @@ watch(
   width: var(--shape-size);
   height: var(--shape-size);
   border-radius: 999px;
-  background: var(--green);
+  background: #3a6351;
 }
 
 .legend-block--note {
