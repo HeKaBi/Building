@@ -61,6 +61,8 @@ const emit = defineEmits<{
 }>();
 
 const BUCKET_SPAN = 50;
+const AXIS_MIN_YEAR = 100;
+const AXIS_MAX_YEAR = 2000;
 const MAJOR_YEAR_INTERVAL = 100;
 const JAGGED_YEAR_STEP = 10;
 const BASE_X_MAX = 4.95;
@@ -106,15 +108,9 @@ const maxCount = computed(() =>
   ),
 );
 
-const minYear = computed(() => {
-  const values = props.buildings.map((building) => building.year);
-  return values.length ? Math.floor(Math.min(...values) / 100) * 100 : 0;
-});
+const minYear = computed(() => AXIS_MIN_YEAR);
 
-const maxYear = computed(() => {
-  const values = props.buildings.map((building) => building.year);
-  return values.length ? Math.ceil(Math.max(...values) / 100) * 100 : 100;
-});
+const maxYear = computed(() => AXIS_MAX_YEAR);
 
 const bucketMetrics = computed<BucketMetric[]>(() =>
   buckets.value.map((bucket) => {
