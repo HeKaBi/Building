@@ -7,13 +7,6 @@
     <div class="dashboard-shell">
       <aside class="dashboard-side-panel dashboard-side-panel--left">
         <section class="paper-card legend-block">
-          <div class="legend-block__header">
-            <p class="legend-block__eyebrow">第三部分</p>
-            <h2 class="legend-block__title">建筑可视化</h2>
-            <p class="legend-block__description">
-              将 `graph_4` 新绘制的玫瑰图、词云、桑基图和旭日图收束进中部 2x2 图窗，并统一缩放细节以适配当前版面。
-            </p>
-          </div>
 
           <div class="type-list">
             <button
@@ -35,79 +28,24 @@
             </button>
           </div>
         </section>
-
-        <section class="paper-card metric-block">
-          <div class="metric-block__head">
-            <p class="metric-block__eyebrow">当前类型</p>
-            <h3 class="metric-block__title">{{ activeType }}画像</h3>
-          </div>
-
-          <div class="metric-grid">
-            <article v-for="metric in overviewMetrics" :key="metric.label" class="metric-item">
-              <span class="metric-item__label">{{ metric.label }}</span>
-              <strong class="metric-item__value">{{ metric.value }}</strong>
-            </article>
-          </div>
-        </section>
       </aside>
 
       <main class="dashboard-main">
-        <header class="paper-card dashboard-status">
-          <div class="dashboard-status__heading">
-            <p class="dashboard-status__eyebrow">graph_4 集成版</p>
-            <h1>{{ activeType }}图谱矩阵</h1>
-            <p>{{ activeTypeConfig.description }}</p>
-          </div>
-
-          <div class="dashboard-status__group">
-            <span v-for="tag in statusTags" :key="tag" class="dashboard-status__tag">
-              {{ tag }}
-            </span>
-          </div>
-        </header>
 
         <section class="chart-grid">
           <article class="paper-card dashboard-panel dashboard-panel--frameless">
-            <div class="dashboard-panel__head">
-              <div>
-                <h3>朝代-功能-材料玫瑰图</h3>
-                <p>保留三层玫瑰环结构，压缩半径与标签字号以适配 2x2 区域。</p>
-              </div>
-              <div class="dashboard-panel__meta">{{ rosePanelMeta }}</div>
-            </div>
             <div :ref="chartRefs.rose" class="dashboard-panel__chart"></div>
           </article>
 
           <article class="paper-card dashboard-panel dashboard-panel--frameless">
-            <div class="dashboard-panel__head">
-              <div>
-                <h3>术语词云</h3>
-                <p>沿用词权重排序，但重新计算尺寸映射，避免面板内溢出。</p>
-              </div>
-              <div class="dashboard-panel__meta">{{ wordCloudPanelMeta }}</div>
-            </div>
             <div :ref="chartRefs.cloud" class="dashboard-panel__chart"></div>
           </article>
 
           <article class="paper-card dashboard-panel dashboard-panel--frameless">
-            <div class="dashboard-panel__head">
-              <div>
-                <h3>朝代-结构-材料桑基图</h3>
-                <p>保留三层语义流向，缩窄节点宽度与间距，让关系图稳妥塞进格子。</p>
-              </div>
-              <div class="dashboard-panel__meta">{{ sankeyPanelMeta }}</div>
-            </div>
             <div :ref="chartRefs.sankey" class="dashboard-panel__chart"></div>
           </article>
 
           <article class="paper-card dashboard-panel dashboard-panel--frameless">
-            <div class="dashboard-panel__head">
-              <div>
-                <h3>朝代-地区-结构旭日图</h3>
-                <p>缩小外圈标签与半径层级，保留整体层次关系和悬浮说明。</p>
-              </div>
-              <div class="dashboard-panel__meta">{{ sunburstPanelMeta }}</div>
-            </div>
             <div :ref="chartRefs.sunburst" class="dashboard-panel__chart"></div>
           </article>
         </section>
@@ -121,7 +59,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onBeforeUnmount, onMounted, ref, watch, type Ref } from 'vue';
+import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch, type Ref } from 'vue';
 import * as echarts from 'echarts/core';
 import 'echarts-wordcloud';
 import { GraphicComponent, TooltipComponent } from 'echarts/components';
@@ -231,7 +169,7 @@ const buildingTypes = [
     label: '民居',
     slug: 'minju',
     color: '#b67a4a',
-    description: '聚焦居住、宗族与防御空间在不同时代中的层次分布。',
+    description: '聚焦居住、宗族与防御空间在不同时代中的分布。',
   },
   {
     label: '桥梁',
@@ -297,86 +235,6 @@ const activeSankeyGraph = computed(() => dashboardGraphs.value?.sankey[activeTyp
 const activeSunburstGraph = computed(() => dashboardGraphs.value?.sunburst[activeType.value] ?? null);
 const activeWordCloud = computed(() => dashboardGraphs.value?.wordCloud[activeType.value] ?? null);
 
-const getLeadingItem = (items: Array<{ name: string; value: number }> | undefined | null) => {
-  if (!items || items.length === 0) return null;
-  return [...items].sort((left, right) => right.value - left.value)[0];
-};
-
-const countSunburstLeaves = (nodes: SunburstNode[]) =>
-  nodes.reduce((sum, node) => sum + (node.children && node.children.length > 0 ? countSunburstLeaves(node.children) : 1), 0);
-
-const overviewMetrics = computed(() => {
-  const rose = activeRoseGraph.value;
-  const sankey = activeSankeyGraph.value;
-  const cloud = activeWordCloud.value;
-  const sunburst = activeSunburstGraph.value;
-  return [
-    { label: '建筑样本', value: rose ? `${rose.summary.building_count}` : '--' },
-    { label: '词云词数', value: cloud ? `${Math.min(cloud.length, 80)}` : '--' },
-    { label: '桑基节点', value: sankey ? `${sankey.nodes.length}` : '--' },
-    { label: '旭日叶路径', value: sunburst ? `${countSunburstLeaves(sunburst.data)}` : '--' },
-  ];
-});
-
-const statusTags = computed(() => {
-  const rose = activeRoseGraph.value;
-  const sankey = activeSankeyGraph.value;
-  const sunburst = activeSunburstGraph.value;
-  const cloud = activeWordCloud.value;
-  return [
-    `${activeType.value}总览`,
-    rose ? `${rose.summary.building_count} 处建筑` : '等待数据',
-    cloud ? `${Math.min(cloud.length, 80)} 个高频词` : '词云待载入',
-    sankey ? `${sankey.links.length} 条关系连线` : '桑基待载入',
-    sunburst ? `${countSunburstLeaves(sunburst.data)} 条层级路径` : '旭日待载入',
-  ];
-});
-
-const highlightMetrics = computed(() => {
-  const rose = activeRoseGraph.value;
-  return [
-    {
-      label: '主导朝代',
-      value: getLeadingItem(rose?.rings.dynasty)?.name ?? '暂无',
-    },
-    {
-      label: '主导功能',
-      value: getLeadingItem(rose?.rings.function)?.name ?? '暂无',
-    },
-    {
-      label: '主导材料',
-      value: getLeadingItem(rose?.rings.material)?.name ?? '暂无',
-    },
-  ];
-});
-
-const highlightWords = computed(() => (activeWordCloud.value ?? []).slice(0, 8).map((item) => ({ name: item.name, count: item.term_count })));
-
-const rosePanelMeta = computed(() => {
-  const graph = activeRoseGraph.value;
-  if (isLoading.value) return '正在载入';
-  if (!graph) return '暂无数据';
-  return `${graph.summary.building_count} 处 · ${graph.summary.rose_dynasty_count}/${graph.summary.rose_function_count}/${graph.summary.rose_material_count} 层`;
-});
-
-const wordCloudPanelMeta = computed(() => {
-  if (isLoading.value) return '正在载入';
-  const words = activeWordCloud.value;
-  return words ? `${Math.min(words.length, 80)} 个高频词` : '暂无数据';
-});
-
-const sankeyPanelMeta = computed(() => {
-  if (isLoading.value) return '正在载入';
-  const graph = activeSankeyGraph.value;
-  return graph ? `${graph.nodes.length} 节点 · ${graph.links.length} 连线` : '暂无数据';
-});
-
-const sunburstPanelMeta = computed(() => {
-  if (isLoading.value) return '正在载入';
-  const graph = activeSunburstGraph.value;
-  return graph ? `${graph.data.length} 个朝代分支 · ${countSunburstLeaves(graph.data)} 条路径` : '暂无数据';
-});
-
 const formatTypeCount = (type: BuildingType) => {
   const count = dashboardGraphs.value?.rose[type]?.summary.building_count;
   return count === undefined ? '载入中' : `${count}处`;
@@ -385,7 +243,7 @@ const formatTypeCount = (type: BuildingType) => {
 const fetchGraphJson = async <T,>(fileName: string): Promise<T> => {
   const response = await fetch(`${import.meta.env.BASE_URL}building-dashboard-graph4/${fileName}`, { cache: 'no-store' });
   if (!response.ok) {
-    throw new Error(`无法读取 ${fileName}`);
+    throw new Error(`鏃犳硶璇诲彇 ${fileName}`);
   }
   return response.json() as Promise<T>;
 };
@@ -426,7 +284,7 @@ const loadDashboardGraphs = async () => {
     dashboardGraphs.value = payload;
   } catch (error) {
     dashboardGraphs.value = null;
-    loadError.value = error instanceof Error ? error.message : '图表数据加载失败';
+    loadError.value = error instanceof Error ? error.message : '鍥捐〃鏁版嵁鍔犺浇澶辫触';
   } finally {
     isLoading.value = false;
     renderAllCharts();
@@ -531,12 +389,12 @@ const buildRoseSeries = (name: string, radius: [string, string], data: RoseRingI
 
 const renderRoseChart = () => {
   if (isLoading.value) {
-    setChartState('rose', '正在加载图表', '读取 graph_4 玫瑰图数据');
+    setChartState('rose', '正在加载图表', '正在读取 graph_4 玫瑰图数据');
     return;
   }
 
   if (loadError.value) {
-    setChartState('rose', '图表加载失败', loadError.value);
+    setChartState('rose', '鍥捐〃鍔犺浇澶辫触', loadError.value);
     return;
   }
 
@@ -565,7 +423,14 @@ const renderRoseChart = () => {
           fontSize: 13,
         },
         formatter: (params: any) =>
-          `${params.seriesName}<br/>${params.name}<br/>数量：${params.value}<br/>占比：${(params.data.percent ?? 0).toFixed(1)}%`,
+          String(params.seriesName) +
+          '<br/>' +
+          String(params.name) +
+          '<br/>数量：' +
+          String(params.value) +
+          '<br/>占比：' +
+          String((params.data.percent ?? 0).toFixed(1)) +
+          '%',
       },
       graphic: [
         {
@@ -573,7 +438,7 @@ const renderRoseChart = () => {
           left: 'center',
           top: '41%',
           style: {
-            text: `${activeType.value}\n${graph.summary.building_count} 处`,
+            text: `${activeType.value}\n${graph.summary.building_count}处`,
             fill: '#5a3427',
             font: '600 18px ContentFont',
             textAlign: 'center',
@@ -582,9 +447,9 @@ const renderRoseChart = () => {
         },
       ],
       series: [
-        buildRoseSeries('主要朝代', ['8%', '24%'], dynastyData, false),
-        buildRoseSeries('建筑功能', ['30%', '48%'], functionData, false),
-        buildRoseSeries('建筑材料', ['55%', '74%'], materialData, true),
+        buildRoseSeries('涓昏鏈濅唬', ['8%', '24%'], dynastyData, false),
+        buildRoseSeries('寤虹瓚鍔熻兘', ['30%', '48%'], functionData, false),
+        buildRoseSeries('寤虹瓚鏉愭枡', ['55%', '74%'], materialData, true),
       ],
     },
     { notMerge: true },
@@ -635,19 +500,19 @@ const getWordCloudLayout = () => {
 
 const renderWordCloudChart = () => {
   if (isLoading.value) {
-    setChartState('cloud', '正在加载图表', '读取 graph_4 词云数据');
+    setChartState('cloud', '姝ｅ湪鍔犺浇鍥捐〃', '璇诲彇 graph_4 璇嶄簯鏁版嵁');
     return;
   }
 
   if (loadError.value) {
-    setChartState('cloud', '图表加载失败', loadError.value);
+    setChartState('cloud', '鍥捐〃鍔犺浇澶辫触', loadError.value);
     return;
   }
 
   const words = activeWordCloud.value;
   const chart = chartInstances.get('cloud');
   if (!chart || !words || words.length === 0) {
-    setChartState('cloud', '暂无图表数据', '当前类型没有可用词云');
+    setChartState('cloud', '鏆傛棤鍥捐〃鏁版嵁', '褰撳墠绫诲瀷娌℃湁鍙敤璇嶄簯');
     return;
   }
 
@@ -668,8 +533,20 @@ const renderWordCloudChart = () => {
           fontFamily: 'ContentFont',
           fontSize: 13,
         },
-        formatter: (params: any) =>
-          `${params.data.name}<br/>词权重：${params.data.originalValue?.toFixed(2) ?? params.data.originalValue}<br/>出现次数：${params.data.term_count}<br/>覆盖维度：${params.data.dimensions.join('、')}`,
+        formatter: (params: any) => {
+          const rawWeight = params.data.originalValue;
+          const weight = typeof rawWeight === 'number' ? rawWeight.toFixed(2) : rawWeight;
+          const dimensions = Array.isArray(params.data.dimensions) ? params.data.dimensions.join('、') : '';
+          return (
+            String(params.data.name) +
+            '<br/>词权重：' +
+            String(weight ?? '') +
+            '<br/>出现次数：' +
+            String(params.data.term_count ?? '') +
+            '<br/>覆盖维度：' +
+            dimensions
+          );
+        },
       },
       series: [
         {
@@ -725,12 +602,12 @@ const decorateSankeyNodes = (nodes: SankeyNode[]) => {
 
 const renderSankeyChart = () => {
   if (isLoading.value) {
-    setChartState('sankey', '正在加载图表', '读取 graph_4 桑基图数据');
+    setChartState('sankey', '正在加载图表', '正在读取 graph_4 桑基图数据');
     return;
   }
 
   if (loadError.value) {
-    setChartState('sankey', '图表加载失败', loadError.value);
+    setChartState('sankey', '鍥捐〃鍔犺浇澶辫触', loadError.value);
     return;
   }
 
@@ -761,7 +638,13 @@ const renderSankeyChart = () => {
           if (params.dataType === 'node') {
             return params.name;
           }
-          return `${params.data.source} → ${params.data.target}<br/>数量：${params.data.value}`;
+          return (
+            String(params.data.source) +
+            ' → ' +
+            String(params.data.target) +
+            '<br/>数量：' +
+            String(params.data.value)
+          );
         },
       },
       series: [
@@ -817,12 +700,12 @@ const decorateSunburstData = (data: SunburstNode[]) => {
 
 const renderSunburstChart = () => {
   if (isLoading.value) {
-    setChartState('sunburst', '正在加载图表', '读取 graph_4 旭日图数据');
+    setChartState('sunburst', '正在加载图表', '正在读取 graph_4 旭日图数据');
     return;
   }
 
   if (loadError.value) {
-    setChartState('sunburst', '图表加载失败', loadError.value);
+    setChartState('sunburst', '鍥捐〃鍔犺浇澶辫触', loadError.value);
     return;
   }
 
@@ -847,8 +730,8 @@ const renderSunburstChart = () => {
           fontSize: 13,
         },
         formatter: (params: any) => {
-          const path = params.treePathInfo.slice(1).map((item: { name: string }) => item.name).join(' · ');
-          return `${path}<br/>数量：${params.value}`;
+          const path = params.treePathInfo.slice(1).map((item: { name: string }) => item.name).join(' 路 ');
+          return String(path) + '<br/>数量：' + String(params.value);
         },
       },
       series: [
@@ -933,13 +816,17 @@ const initCharts = () => {
   });
 };
 
+const resizeAllCharts = () => {
+  chartInstances.forEach((chart) => chart.resize());
+};
+
 const handleResize = () => {
   if (resizeFrame) {
     window.cancelAnimationFrame(resizeFrame);
   }
 
   resizeFrame = window.requestAnimationFrame(() => {
-    chartInstances.forEach((chart) => chart.resize());
+    resizeAllCharts();
     renderWordCloudChart();
     resizeFrame = 0;
   });
@@ -951,9 +838,16 @@ watch(activeType, () => {
 
 onMounted(async () => {
   initCharts();
+  await nextTick();
+  resizeAllCharts();
   renderAllCharts();
   window.addEventListener('resize', handleResize);
   await loadDashboardGraphs();
+  await nextTick();
+  window.requestAnimationFrame(() => {
+    resizeAllCharts();
+    renderAllCharts();
+  });
 });
 
 onBeforeUnmount(() => {
@@ -1007,52 +901,50 @@ onBeforeUnmount(() => {
   position: relative;
   z-index: 10;
   height: 100vh;
-  padding: 14px;
+  padding: 6px 8px;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: minmax(220px, 238px) minmax(0, 1fr) minmax(300px, 340px);
-  gap: 12px;
+  grid-template-columns: minmax(70px, 84px) minmax(0, 1fr) minmax(136px, 156px);
+  gap: 6px;
 }
 
 .dashboard-side-panel {
   min-height: 0;
   display: grid;
-  gap: 12px;
-  align-content: start;
+  gap: 8px;
+  align-content: center;
 }
 
 .dashboard-main {
   min-height: 0;
+  height: 100%;
   display: grid;
-  grid-template-rows: auto minmax(0, 1fr);
-  gap: 10px;
+  grid-template-rows: minmax(0, 1fr);
+  gap: 0;
 }
 
 .paper-card {
-  border: 1px solid transparent;
-  border-radius: 28px 22px 26px 18px;
-  background:
-    linear-gradient(180deg, rgba(248, 242, 233, 0.76), rgba(237, 228, 214, 0.58)),
-    radial-gradient(circle at 10% 12%, rgba(255, 255, 255, 0.18), transparent 28%);
-  box-shadow: 0 18px 36px rgba(72, 52, 40, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.22);
-  backdrop-filter: blur(10px);
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
 }
 
 .legend-block,
 .metric-block,
 .insight-block,
 .note-block {
-  padding: 14px;
+  padding: 0;
   display: grid;
-  gap: 12px;
+  gap: 8px;
 }
 
 .legend-block__header,
 .metric-block__head,
 .insight-block__head,
 .note-block__head {
-  display: grid;
-  gap: 4px;
+  display: none;
 }
 
 .legend-block__eyebrow,
@@ -1099,34 +991,30 @@ onBeforeUnmount(() => {
 
 .type-list {
   display: grid;
-  gap: 8px;
+  gap: 4px;
 }
 
 .type-card {
   width: 100%;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 10px;
+  display: flex;
   align-items: center;
-  padding: 10px 12px;
-  border: 1px solid transparent;
-  border-radius: 22px 16px 20px 14px;
-  background: linear-gradient(180deg, rgba(248, 242, 234, 0.78), rgba(245, 237, 227, 0.56));
-  text-align: left;
+  justify-content: center;
+  padding: 10px 4px;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  text-align: center;
   cursor: pointer;
-  transition: transform 0.18s ease, border-color 0.18s ease, background-color 0.18s ease, box-shadow 0.18s ease;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.26);
+  transition: background-color 0.18s ease, color 0.18s ease;
+  box-shadow: none;
 }
 
 .type-card:hover {
-  transform: translateX(2px);
-  border-color: rgba(160, 74, 59, 0.22);
+  background: rgba(244, 237, 226, 0.48);
 }
 
 .type-card.active {
-  border-color: rgba(160, 74, 59, 0.16);
-  background: linear-gradient(180deg, rgba(246, 238, 228, 0.92), rgba(241, 231, 218, 0.72));
-  box-shadow: 0 10px 22px rgba(125, 74, 53, 0.08), inset 0 0 0 1px rgba(160, 74, 59, 0.04);
+  background: rgba(244, 237, 226, 0.72);
 }
 
 .type-card__label {
@@ -1134,9 +1022,14 @@ onBeforeUnmount(() => {
   gap: 2px;
 }
 
+.type-card__label small,
+.type-card__meta {
+  display: none;
+}
+
 .type-card__label strong {
   font-family: 'ChartTitleFont', 'TitleFont', serif;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1;
   letter-spacing: 0.04em;
   color: #6d3026;
@@ -1172,9 +1065,7 @@ onBeforeUnmount(() => {
 }
 
 .metric-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
+  display: none;
 }
 
 .metric-item,
@@ -1208,13 +1099,7 @@ onBeforeUnmount(() => {
 }
 
 .dashboard-status {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 14px;
-  padding: 14px 16px;
-  min-height: 0;
-  background: linear-gradient(180deg, rgba(248, 242, 233, 0.62), rgba(238, 228, 214, 0.4));
+  display: none;
 }
 
 .dashboard-status__heading {
@@ -1251,35 +1136,30 @@ onBeforeUnmount(() => {
 
 .chart-grid {
   min-height: 0;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-auto-rows: minmax(0, 1fr);
-  gap: 10px;
+  gap: 4px;
 }
 
 .dashboard-panel {
   min-height: 0;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 12px 14px 10px;
+  padding: 0;
   overflow: hidden;
-  background: linear-gradient(180deg, rgba(248, 242, 233, 0.6), rgba(236, 225, 210, 0.36));
-}
-
-.dashboard-panel--frameless {
   border: none;
   border-radius: 0;
   background: transparent;
   box-shadow: none;
   backdrop-filter: none;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .dashboard-panel__head {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  align-items: flex-start;
+  display: none;
 }
 
 .dashboard-panel__head h3 {
@@ -1294,18 +1174,37 @@ onBeforeUnmount(() => {
 
 .dashboard-panel__chart {
   flex: 1;
+  width: 100%;
+  height: 100%;
   min-height: 0;
-  margin-top: 8px;
+  margin-top: 0;
   overflow: visible;
 }
 
 .dashboard-side-panel--right {
   min-height: 0;
+  height: 100%;
   align-content: stretch;
   grid-template-rows: minmax(0, 1fr);
 }
 
 .dashboard-side-panel--right :deep(.art-timeline) {
+  height: 100%;
+  min-height: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.dashboard-side-panel--right :deep(.art-timeline__wash),
+.dashboard-side-panel--right :deep(.art-timeline__mountain),
+.dashboard-side-panel--right :deep(.art-timeline__petal),
+.dashboard-side-panel--right :deep(.art-timeline__header) {
+  display: none;
+}
+
+.dashboard-side-panel--right :deep(.art-timeline__chart) {
+  width: 100%;
   height: 100%;
   min-height: 0;
 }
@@ -1365,17 +1264,9 @@ onBeforeUnmount(() => {
 
 @media (max-width: 1420px) {
   .dashboard-shell {
-    grid-template-columns: minmax(210px, 226px) minmax(0, 1fr) minmax(280px, 320px);
-    gap: 10px;
-    padding: 10px;
-  }
-
-  .dashboard-status {
-    padding: 12px 14px;
-  }
-
-  .dashboard-status__heading h1 {
-    font-size: 26px;
+    grid-template-columns: minmax(66px, 80px) minmax(0, 1fr) minmax(126px, 146px);
+    gap: 5px;
+    padding: 8px;
   }
 }
 
@@ -1406,26 +1297,15 @@ onBeforeUnmount(() => {
     padding: 10px;
   }
 
-  .dashboard-status {
-    flex-direction: column;
-  }
-
-  .dashboard-status__group {
-    justify-content: flex-start;
-  }
-
   .metric-grid {
     grid-template-columns: 1fr;
   }
 
   .type-card {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .type-card__meta {
-    justify-items: start;
-    grid-auto-flow: column;
-    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
   }
 }
 </style>
+
+
