@@ -12,13 +12,6 @@
     <div class="building-map-screen__motif"></div>
 
     <div class="screen-ui">
-      <div class="map-legend">
-        <div v-for="item in structureLegend" :key="item.key" class="map-legend__item">
-          <span class="map-legend__dot" :style="{ '--legend-color': getMapLegendColor(item.key) }"></span>
-          <span>{{ item.label }}</span>
-        </div>
-      </div>
-
       <aside class="side-panel side-panel--left">
         <section class="legend-block">
           <h2 class="legend-block__title">{{ uiText.structureTitle }}</h2>
@@ -226,38 +219,9 @@ watch(
   pointer-events: none;
 }
 
-.map-legend,
 .side-panel {
   position: absolute;
   pointer-events: auto;
-}
-
-.map-legend {
-  top: 28px;
-  right: 26px;
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  padding: 8px 10px;
-  background: rgba(235, 228, 213, 0.75);
-  border: 1px solid rgba(156, 58, 53, 0.14);
-  border-radius: 4px;
-}
-
-.map-legend__item {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-family: 'ContentFont', serif;
-  font-size: 13px;
-  color: #4a433a;
-}
-
-.map-legend__dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  background: var(--legend-color);
 }
 
 .side-panel {
@@ -269,8 +233,9 @@ watch(
 }
 
 .side-panel--left {
-  top: 72px;
+  top: 50%;
   left: 20px;
+  transform: translateY(-50%);
   width: 190px;
   padding: 10px 12px 8px;
 }
@@ -475,18 +440,12 @@ watch(
     position: relative;
   }
 
-  .map-legend,
   .side-panel {
     position: relative;
     inset: auto;
     transform: none;
     width: calc(100% - 24px);
     margin: 12px;
-  }
-
-  .map-legend {
-    flex-wrap: wrap;
-    gap: 10px 16px;
   }
 
   .side-panel--left,

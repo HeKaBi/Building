@@ -3,7 +3,6 @@
     <div class="line-timeline__header">
       <div class="line-timeline__titles">
         <span class="line-timeline__title-item">{{ uiText.yearTitle }}</span>
-        <span class="line-timeline__title-item">{{ uiText.listTitle }}</span>
       </div>
 
       <div class="line-timeline__legend">
@@ -31,7 +30,7 @@ import { LineChart, ScatterChart } from 'echarts/charts';
 import { CanvasRenderer } from 'echarts/renderers';
 import { computed, onMounted, onUnmounted, ref, watch } from 'vue';
 
-import { getDominantStructure, getStructureColor, getStructureType } from '@/demo/building-home-map/metadata';
+import { getDominantStructure, getStructureType } from '@/demo/building-home-map/metadata';
 
 import type { BuildingRecord } from '../types';
 
@@ -145,11 +144,7 @@ const selectedBucket = computed(
   () => buckets.value.find((bucket) => bucket.start === selectedBucketStart.value) ?? null,
 );
 
-const selectedBucketYear = computed(() => (selectedBucket.value ? selectedBucket.value.start + BUCKET_SPAN / 2 : null));
-
-const selectedMarkerColor = computed(() =>
-  selectedBucket.value ? getStructureColor(getDominantStructure(selectedBucket.value.buildings)) : '#6d7a5e',
-);
+const selectedYear = computed(() => selectedBuilding.value?.year ?? null);
 
 const clamp = (value: number, min: number, max: number) => Math.min(max, Math.max(min, value));
 
@@ -278,33 +273,31 @@ const renderChart = () => {
     },
   }));
 
-  const focusData = selectedBucket.value && selectedBucketYear.value !== null
-    ? [
-      {
-        value: [0.38, selectedBucketYear.value],
-        bucketStart: selectedBucket.value.start,
-        itemStyle: {
-          color: selectedMarkerColor.value,
-          borderColor: 'rgba(236, 227, 210, 0.92)',
-          borderWidth: 1.4,
-        },
-        symbolSize: [26, 14],
-      },
-    ]
-    : [];
+  const selectedGuideStartX = 0.02;
+  const selectedGuideEndX =
+    selectedYear.value === null
+      ? null
+      : clamp(rightThinStripX - 0.03, selectedGuideStartX + 0.48, xAxisMax.value - 0.08);
+  const selectedGuideData =
+    selectedYear.value !== null && selectedGuideEndX !== null
+      ? [
+        [selectedGuideStartX, selectedYear.value],
+        [selectedGuideEndX, selectedYear.value],
+      ]
+      : [];
 
-  const selectedBandHalf = 20;
+  const selectedBandHalf = 10;
   const selectedBandStart =
-    selectedBucketYear.value === null ? null : clamp(selectedBucketYear.value - selectedBandHalf, minYear.value, maxYear.value);
+    selectedYear.value === null ? null : clamp(selectedYear.value - selectedBandHalf, minYear.value, maxYear.value);
   const selectedBandEnd =
-    selectedBucketYear.value === null ? null : clamp(selectedBucketYear.value + selectedBandHalf, minYear.value, maxYear.value);
+    selectedYear.value === null ? null : clamp(selectedYear.value + selectedBandHalf, minYear.value, maxYear.value);
 
   chart.setOption({
     backgroundColor: 'transparent',
     animationDurationUpdate: 280,
     animationEasingUpdate: 'cubicOut',
     grid: {
-      top: 14,
+      top: 10,
       right: 5,
       bottom: 8,
       left: 24,
@@ -333,10 +326,11 @@ const renderChart = () => {
       axisLabel: {
         inside: true,
         align: 'left',
-        color: '#705749',
-        fontFamily: "'STSong', 'SimSun', serif",
-        fontSize: 11,
-        margin: 5,
+        color: '#6f5a4c',
+        fontFamily: "'STKaiti', 'KaiTi', serif",
+        fontSize: 10,
+        fontWeight: 600,
+        margin: 4,
       },
       splitLine: {
         show: false,
@@ -447,22 +441,20 @@ const renderChart = () => {
         },
       },
       {
-        type: 'scatter',
-        data: hitAreaData,
-        z: 0,
+        type: 'line',
+        data: selectedGuideData,
+        symbol: 'none',
+        silent: true,
+        z: 5,
+        lineStyle: {
+          color: 'rgba(156, 58, 53, 0.78)',
+          width: 1.3,
+        },
       },
       {
         type: 'scatter',
-        data: focusData,
-        z: 6,
-        symbol: 'roundRect',
-        label: {
-          show: true,
-          formatter: '*',
-          color: '#f8f2e8',
-          fontFamily: "'STSong', 'SimSun', serif",
-          fontSize: 11,
-        },
+        data: hitAreaData,
+        z: 0,
       },
     ],
   });
@@ -499,7 +491,7 @@ onUnmounted(() => {
   position: relative;
   display: grid;
   grid-template-rows: auto minmax(0, 1fr);
-  gap: 6px;
+  gap: 4px;
   width: 100%;
   height: 100%;
   min-height: 0;
@@ -509,49 +501,53 @@ onUnmounted(() => {
 }
 
 .line-timeline__header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
   gap: 8px;
-  padding: 2px 0 0 2px;
+  padding: 0 6px 0 0;
 }
 
 .line-timeline__titles {
   display: flex;
-  align-items: baseline;
-  gap: 18px;
+  align-items: center;
+  gap: 0;
   min-width: 0;
+  padding-left: 20px;
 }
 
 .line-timeline__title-item {
   font-family: 'STKaiti', 'KaiTi', 'Kaiti SC', serif;
-  font-size: 27px;
+  font-size: 15px;
   line-height: 1;
-  letter-spacing: 0.02em;
-  color: #a83c3b;
+  letter-spacing: 0.03em;
+  color: #9c3a35;
   white-space: nowrap;
+  font-weight: 700;
 }
 
 .line-timeline__legend {
   display: grid;
-  gap: 3px;
-  margin-top: 4px;
-  padding-right: 2px;
+  justify-items: start;
+  gap: 4px;
+  margin-top: 2px;
+  padding-right: 8px;
 }
 
 .line-timeline__legend-item {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
-  font-family: 'STSong', 'SimSun', serif;
-  font-size: 10px;
-  line-height: 1.25;
-  color: #65584a;
+  gap: 4px;
+  font-family: 'STKaiti', 'KaiTi', 'Kaiti SC', serif;
+  font-size: 11px;
+  line-height: 1;
+  color: #4a433a;
+  white-space: nowrap;
 }
 
 .line-timeline__legend-dot {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   border-radius: 999px;
   border: 1px solid rgba(255, 250, 241, 0.65);
   box-shadow: 0 0 0 1px rgba(121, 106, 91, 0.24);
@@ -577,6 +573,7 @@ onUnmounted(() => {
     radial-gradient(circle at 36% 18%, rgba(255, 255, 255, 0.14), transparent 30%);
   border-left: 1px solid rgba(168, 60, 59, 0.07);
   border-right: 1px solid rgba(130, 119, 103, 0.12);
+  margin-top: -2px;
 }
 
 .line-timeline__chart {
