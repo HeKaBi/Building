@@ -3,6 +3,11 @@
     <div class="building-dashboard-screen__wash"></div>
     <div class="building-dashboard-screen__grain"></div>
     <div class="building-dashboard-screen__motif"></div>
+    <div class="building-dashboard-screen__roof"></div>
+    <span class="building-dashboard-screen__petal building-dashboard-screen__petal--a"></span>
+    <span class="building-dashboard-screen__petal building-dashboard-screen__petal--b"></span>
+    <span class="building-dashboard-screen__petal building-dashboard-screen__petal--c"></span>
+    <span class="building-dashboard-screen__petal building-dashboard-screen__petal--d"></span>
 
     <div class="dashboard-shell">
       <aside class="dashboard-side-panel dashboard-side-panel--left">
@@ -19,11 +24,6 @@
             >
               <span class="type-card__label">
                 <strong>{{ type.label }}</strong>
-                <small>{{ type.description }}</small>
-              </span>
-              <span class="type-card__meta">
-                <i class="type-card__dot" :style="{ '--type-color': type.color }"></i>
-                <em>{{ formatTypeCount(type.label) }}</em>
               </span>
             </button>
           </div>
@@ -33,8 +33,8 @@
       <main class="dashboard-main">
 
         <section class="chart-grid">
-          <article class="paper-card dashboard-panel dashboard-panel--frameless">
-            <div :ref="chartRefs.rose" class="dashboard-panel__chart"></div>
+          <article class="paper-card dashboard-panel dashboard-panel--frameless dashboard-panel--sankey">
+            <div :ref="chartRefs.sankey" class="dashboard-panel__chart"></div>
           </article>
 
           <article class="paper-card dashboard-panel dashboard-panel--frameless">
@@ -42,7 +42,7 @@
           </article>
 
           <article class="paper-card dashboard-panel dashboard-panel--frameless">
-            <div :ref="chartRefs.sankey" class="dashboard-panel__chart"></div>
+            <div :ref="chartRefs.rose" class="dashboard-panel__chart"></div>
           </article>
 
           <article class="paper-card dashboard-panel dashboard-panel--frameless">
@@ -191,19 +191,13 @@ const buildingTypes = [
   },
 ] as const satisfies ReadonlyArray<TypeConfig>;
 
-const typeConfigMap = Object.fromEntries(buildingTypes.map((item) => [item.label, item])) as Record<BuildingType, TypeConfig>;
-
 const roseRingPalettes = {
   dynasty: ['#b65e48', '#c97858', '#d6a16f', '#b58347', '#8b6b57', '#c7b08a'],
   function: ['#4b765f', '#68866f', '#8da16a', '#7c9468', '#5a8c7f', '#93a08d', '#547062'],
   material: ['#7a6c92', '#9274a3', '#6d88a2', '#5d7a95', '#8d94a6', '#b39478', '#7f8b9b'],
 } as const;
 
-const sankeyDepthColors = {
-  0: ['#b65f49', '#cc7e63', '#d7ab82', '#a46a53', '#8b5d48', '#c99870'],
-  1: ['#8f8f76', '#7c8e74', '#78866f', '#8e7f6d', '#93a08d', '#6d8667'],
-  2: ['#6a879d', '#7da2b5', '#5d7b91', '#8fa7b3', '#50718a', '#6e93ad'],
-} as const;
+const sankeyNodeColors = ['#60554A', '#4B8C9A', '#788D8E', '#A88463', '#C58370', '#4A5052', '#CDA77C', '#889585'] as const;
 
 const sunburstLevelColors = {
   level0: ['#d87c7c', '#919e8b', '#d7ab82', '#95a5a6', '#c28f6a'],
@@ -229,16 +223,10 @@ const chartRefs: Record<ChartKey, Ref<HTMLDivElement | null>> = {
 const chartInstances = new Map<ChartKey, echarts.EChartsType>();
 let resizeFrame = 0;
 
-const activeTypeConfig = computed(() => typeConfigMap[activeType.value]);
 const activeRoseGraph = computed(() => dashboardGraphs.value?.rose[activeType.value] ?? null);
 const activeSankeyGraph = computed(() => dashboardGraphs.value?.sankey[activeType.value] ?? null);
 const activeSunburstGraph = computed(() => dashboardGraphs.value?.sunburst[activeType.value] ?? null);
 const activeWordCloud = computed(() => dashboardGraphs.value?.wordCloud[activeType.value] ?? null);
-
-const formatTypeCount = (type: BuildingType) => {
-  const count = dashboardGraphs.value?.rose[type]?.summary.building_count;
-  return count === undefined ? '载入中' : `${count}处`;
-};
 
 const fetchGraphJson = async <T,>(fileName: string): Promise<T> => {
   const response = await fetch(`${import.meta.env.BASE_URL}building-dashboard-graph4/${fileName}`, { cache: 'no-store' });
@@ -353,7 +341,7 @@ const buildRoseSeries = (name: string, radius: [string, string], data: RoseRingI
   type: 'pie',
   roseType: 'radius',
   radius,
-  center: ['50%', '55%'],
+  center: ['50%', '53%'],
   minAngle: 3,
   selectedMode: false,
   itemStyle: {
@@ -432,24 +420,10 @@ const renderRoseChart = () => {
           String((params.data.percent ?? 0).toFixed(1)) +
           '%',
       },
-      graphic: [
-        {
-          type: 'text',
-          left: 'center',
-          top: '41%',
-          style: {
-            text: `${activeType.value}\n${graph.summary.building_count}处`,
-            fill: '#5a3427',
-            font: '600 18px ContentFont',
-            textAlign: 'center',
-            lineHeight: 24,
-          },
-        },
-      ],
       series: [
-        buildRoseSeries('涓昏鏈濅唬', ['8%', '24%'], dynastyData, false),
-        buildRoseSeries('寤虹瓚鍔熻兘', ['30%', '48%'], functionData, false),
-        buildRoseSeries('寤虹瓚鏉愭枡', ['55%', '74%'], materialData, true),
+        buildRoseSeries('主要朝代', ['8%', '22%'], dynastyData, false),
+        buildRoseSeries('建筑功能', ['28%', '44%'], functionData, false),
+        buildRoseSeries('建筑材料', ['50%', '68%'], materialData, true),
       ],
     },
     { notMerge: true },
@@ -554,8 +528,8 @@ const renderWordCloudChart = () => {
           shape: 'circle',
           left: 'center',
           top: 'center',
-          width: '86%',
-          height: '110%',
+          width: '82%',
+          height: '102%',
           sizeRange: layout.sizeRange,
           gridSize: layout.gridSize,
           rotationRange: [0, 0],
@@ -581,20 +555,19 @@ const renderWordCloudChart = () => {
 };
 
 const decorateSankeyNodes = (nodes: SankeyNode[]) => {
-  const depthIndex = { 0: 0, 1: 0, 2: 0 };
+  let nodeIndex = 0;
 
   return nodes.map((node) => {
-    const depth = Number(node.depth || 0) as 0 | 1 | 2;
-    const palette = sankeyDepthColors[depth] ?? sankeyDepthColors[2];
-    const color = palette[depthIndex[depth] % palette.length];
-    depthIndex[depth] += 1;
+    const color = sankeyNodeColors[nodeIndex % sankeyNodeColors.length];
+    nodeIndex += 1;
 
     return {
       ...node,
       itemStyle: {
         color,
-        borderColor: 'rgba(80, 49, 34, 0.18)',
-        borderWidth: 1,
+        borderColor: 'transparent',
+        borderWidth: 0,
+        borderRadius: 0,
       },
     };
   });
@@ -621,16 +594,16 @@ const renderSankeyChart = () => {
   chart.setOption(
     {
       backgroundColor: 'transparent',
-      animationDuration: 650,
-      animationDurationUpdate: 420,
+      animationDuration: 520,
+      animationDurationUpdate: 360,
       tooltip: {
         trigger: 'item',
         triggerOn: 'mousemove',
-        backgroundColor: 'rgba(247, 239, 228, 0.96)',
-        borderColor: 'rgba(142, 92, 70, 0.2)',
+        backgroundColor: 'rgba(245, 244, 240, 0.96)',
+        borderColor: 'rgba(96, 85, 74, 0.12)',
         borderWidth: 1,
         textStyle: {
-          color: '#3a271d',
+          color: '#333333',
           fontFamily: 'ContentFont',
           fontSize: 13,
         },
@@ -650,27 +623,40 @@ const renderSankeyChart = () => {
       series: [
         {
           type: 'sankey',
-          left: '3%',
-          top: '5%',
-          right: '12%',
-          bottom: '5%',
+          left: '4%',
+          top: '4%',
+          right: '14%',
+          bottom: '4%',
           draggable: false,
-          emphasis: { focus: 'adjacency' },
+          blendMode: 'multiply',
+          nodeAlign: 'justify',
+          emphasis: {
+            focus: 'adjacency',
+            lineStyle: { color: '#C6C1B8', opacity: 0.9, width: 1.6 },
+            itemStyle: { opacity: 1 },
+            label: { color: '#2f241d' },
+          },
+          blur: {
+            lineStyle: { opacity: 0.18 },
+            itemStyle: { opacity: 0.34 },
+            label: { opacity: 0.42 },
+          },
           data: decorateSankeyNodes(graph.nodes),
           links: graph.links,
-          lineStyle: { color: 'gradient', curveness: 0.52, opacity: 0.42 },
-          nodeGap: activeType.value === '宫殿' ? 12 : 10,
-          nodeWidth: 12,
+          lineStyle: { color: '#DDD9D2', curveness: 0.56, opacity: 0.56 },
+          nodeGap: 10,
+          nodeWidth: 16,
           label: {
-            color: '#2f241d',
+            color: '#333333',
             fontFamily: 'ContentFont',
-            fontSize: 10,
-            formatter: (params: { name: string }) => truncateLabel(params.name, 8),
+            fontSize: 12,
+            fontWeight: 400,
+            formatter: (params: { name: string }) => truncateLabel(params.name, 12),
           },
           levels: [
-            { depth: 0, itemStyle: { borderRadius: 5 }, lineStyle: { opacity: 0.3 } },
-            { depth: 1, itemStyle: { borderRadius: 6 }, lineStyle: { opacity: 0.34 } },
-            { depth: 2, itemStyle: { borderRadius: 7 }, lineStyle: { opacity: 0.38 } },
+            { depth: 0, itemStyle: { borderRadius: 0, borderWidth: 0 }, lineStyle: { color: '#DDD9D2', opacity: 0.56 } },
+            { depth: 1, itemStyle: { borderRadius: 0, borderWidth: 0 }, lineStyle: { color: '#DDD9D2', opacity: 0.56 } },
+            { depth: 2, itemStyle: { borderRadius: 0, borderWidth: 0 }, lineStyle: { color: '#DDD9D2', opacity: 0.56 } },
           ],
         },
       ],
@@ -866,13 +852,15 @@ onBeforeUnmount(() => {
   inset: 0;
   overflow: hidden;
   background:
-    linear-gradient(180deg, rgba(243, 235, 221, 0.98), rgba(232, 222, 206, 0.98)),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.18), transparent 28%, transparent 72%, rgba(255, 255, 255, 0.12));
+    linear-gradient(180deg, rgba(247, 241, 231, 0.76), rgba(240, 231, 218, 0.72)),
+    radial-gradient(circle at 12% 10%, rgba(255, 255, 255, 0.52), transparent 18%),
+    radial-gradient(circle at 84% 20%, rgba(255, 255, 255, 0.36), transparent 20%);
 }
 
 .building-dashboard-screen__wash,
 .building-dashboard-screen__grain,
-.building-dashboard-screen__motif {
+.building-dashboard-screen__motif,
+.building-dashboard-screen__roof {
   position: absolute;
   inset: 0;
   pointer-events: none;
@@ -880,21 +868,66 @@ onBeforeUnmount(() => {
 
 .building-dashboard-screen__wash {
   background:
-    radial-gradient(circle at 18% 12%, rgba(255, 255, 255, 0.34), transparent 18%),
-    radial-gradient(circle at 82% 18%, rgba(255, 255, 255, 0.22), transparent 18%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    radial-gradient(circle at 20% 16%, rgba(255, 255, 255, 0.4), transparent 22%),
+    radial-gradient(circle at 74% 24%, rgba(214, 186, 164, 0.18), transparent 22%);
 }
 
 .building-dashboard-screen__grain {
-  background: repeating-linear-gradient(135deg, rgba(124, 96, 76, 0.03) 0, rgba(124, 96, 76, 0.03) 1px, transparent 1px, transparent 16px);
+  background: repeating-linear-gradient(135deg, rgba(129, 99, 77, 0.025) 0, rgba(129, 99, 77, 0.025) 1px, transparent 1px, transparent 16px);
   mix-blend-mode: multiply;
 }
 
 .building-dashboard-screen__motif {
-  opacity: 0.18;
+  opacity: 0.3;
   background:
     radial-gradient(circle at 24% 74%, rgba(128, 96, 77, 0.1), transparent 18%),
-    radial-gradient(circle at 74% 38%, rgba(128, 96, 77, 0.08), transparent 20%);
+    radial-gradient(circle at 74% 38%, rgba(128, 96, 77, 0.08), transparent 20%),
+    radial-gradient(circle at 78% 78%, rgba(128, 96, 77, 0.12), transparent 22%);
+}
+
+.building-dashboard-screen__roof {
+  inset: auto 0 0 auto;
+  width: 26%;
+  height: 24%;
+  background:
+    linear-gradient(180deg, transparent, rgba(126, 104, 86, 0.14)),
+    radial-gradient(circle at 58% 86%, rgba(110, 95, 83, 0.16), transparent 54%);
+  clip-path: polygon(34% 22%, 74% 8%, 100% 38%, 100% 100%, 0 100%, 0 62%);
+  opacity: 0.52;
+  filter: blur(0.6px);
+}
+
+.building-dashboard-screen__petal {
+  position: absolute;
+  width: 14px;
+  height: 24px;
+  border-radius: 50% 50% 46% 46%;
+  background: rgba(244, 176, 196, 0.68);
+  filter: blur(0.3px);
+  transform: rotate(20deg);
+  pointer-events: none;
+}
+
+.building-dashboard-screen__petal--a {
+  top: 4%;
+  left: 40%;
+}
+
+.building-dashboard-screen__petal--b {
+  top: 18%;
+  right: 7%;
+  transform: rotate(-20deg);
+}
+
+.building-dashboard-screen__petal--c {
+  top: 74%;
+  left: -0.1%;
+}
+
+.building-dashboard-screen__petal--d {
+  top: 48%;
+  right: 18%;
+  transform: rotate(-16deg);
 }
 
 .dashboard-shell {
@@ -1007,10 +1040,11 @@ onBeforeUnmount(() => {
   cursor: pointer;
   transition: background-color 0.18s ease, color 0.18s ease;
   box-shadow: none;
+  position: relative;
 }
 
 .type-card:hover {
-  background: rgba(244, 237, 226, 0.48);
+  background: rgba(244, 237, 226, 0.52);
 }
 
 .type-card.active {
@@ -1018,13 +1052,9 @@ onBeforeUnmount(() => {
 }
 
 .type-card__label {
-  display: grid;
-  gap: 2px;
-}
-
-.type-card__label small,
-.type-card__meta {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .type-card__label strong {
@@ -1034,34 +1064,33 @@ onBeforeUnmount(() => {
   letter-spacing: 0.04em;
   color: #6d3026;
   font-weight: 400;
+  transition: color 0.18s ease;
 }
 
-.type-card__label small {
-  font-family: 'ContentFont', serif;
-  font-size: 10px;
-  line-height: 1.4;
-  color: rgba(92, 70, 58, 0.62);
-}
-
-.type-card__meta {
-  display: grid;
-  justify-items: end;
-  gap: 4px;
-}
-
-.type-card__dot {
-  width: 10px;
-  height: 10px;
+.type-card::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 2px;
+  transform: translateX(-50%) scaleX(0.2);
+  transform-origin: center;
+  width: min(74%, 76px);
+  height: 2px;
   border-radius: 999px;
-  background: var(--type-color);
-  box-shadow: 0 0 0 4px color-mix(in srgb, var(--type-color) 18%, transparent);
+  background: linear-gradient(90deg, rgba(154, 67, 54, 0.14), rgba(154, 67, 54, 0.98), rgba(154, 67, 54, 0.14));
+  opacity: 0;
+  transition: opacity 0.18s ease, transform 0.18s ease;
 }
 
-.type-card__meta em {
-  font-family: 'ContentFont', serif;
-  font-style: normal;
-  font-size: 10px;
-  color: rgba(83, 61, 49, 0.78);
+.type-card:hover .type-card__label strong,
+.type-card.active .type-card__label strong {
+  color: #8f3128;
+}
+
+.type-card:hover::after,
+.type-card.active::after {
+  opacity: 1;
+  transform: translateX(-50%) scaleX(1);
 }
 
 .metric-grid {
@@ -1158,6 +1187,11 @@ onBeforeUnmount(() => {
   overflow: hidden;
 }
 
+.dashboard-panel--sankey {
+  --sankey-panel-shift: 12px;
+  overflow: visible;
+}
+
 .dashboard-panel__head {
   display: none;
 }
@@ -1174,11 +1208,18 @@ onBeforeUnmount(() => {
 
 .dashboard-panel__chart {
   flex: 1;
+  width: 97%;
+  height: 97%;
+  min-height: 0;
+  margin: auto;
+  overflow: visible;
+}
+
+.dashboard-panel--sankey .dashboard-panel__chart {
   width: 100%;
   height: 100%;
-  min-height: 0;
-  margin-top: 0;
-  overflow: visible;
+  transform: translateX(var(--sankey-panel-shift));
+  transform-origin: center center;
 }
 
 .dashboard-side-panel--right {
@@ -1307,5 +1348,3 @@ onBeforeUnmount(() => {
   }
 }
 </style>
-
-
