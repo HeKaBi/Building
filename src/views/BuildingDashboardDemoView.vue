@@ -1,5 +1,7 @@
 <template>
   <section class="building-dashboard-screen">
+    <img class="building-dashboard-screen__icon" :src="matrixIconUrl" alt="" aria-hidden="true" />
+    <div class="building-dashboard-screen__scene" :style="{ backgroundImage: `url(${matrixBackgroundUrl})` }"></div>
     <div class="building-dashboard-screen__wash"></div>
     <div class="building-dashboard-screen__grain"></div>
     <div class="building-dashboard-screen__motif"></div>
@@ -37,15 +39,15 @@
             <div :ref="chartRefs.sankey" class="dashboard-panel__chart"></div>
           </article>
 
-          <article class="paper-card dashboard-panel dashboard-panel--frameless">
+          <article class="paper-card dashboard-panel dashboard-panel--frameless dashboard-panel--cloud">
             <div :ref="chartRefs.cloud" class="dashboard-panel__chart"></div>
           </article>
 
-          <article class="paper-card dashboard-panel dashboard-panel--frameless">
+          <article class="paper-card dashboard-panel dashboard-panel--frameless dashboard-panel--rose">
             <div :ref="chartRefs.rose" class="dashboard-panel__chart"></div>
           </article>
 
-          <article class="paper-card dashboard-panel dashboard-panel--frameless">
+          <article class="paper-card dashboard-panel dashboard-panel--frameless dashboard-panel--sunburst">
             <div :ref="chartRefs.sunburst" class="dashboard-panel__chart"></div>
           </article>
         </section>
@@ -197,7 +199,7 @@ const roseRingPalettes = {
   material: ['#4A5255', '#786E56', '#9AA391', '#D08A73', '#D5A08A', '#6D7460', '#50858B'],
 } as const;
 const ROSE_LABEL_FONT = 'ContentFont, STKaiti, KaiTi, serif';
-const ROSE_RING_CENTER = ['50%', '53%'] as [string, string];
+const ROSE_RING_CENTER = ['46%', '57%'] as [string, string];
 const ROSE_STROKE_COLOR = 'rgba(255, 255, 255, 0.96)';
 const ROSE_CONNECTOR_COLOR = 'rgba(216, 180, 156, 0.94)';
 const sankeyNodeColors = ['#60554A', '#4B8C9A', '#788D8E', '#A88463', '#C58370', '#4A5052', '#CDA77C', '#889585'] as const;
@@ -235,6 +237,8 @@ const deriveSunburstChildColor = (parentColor: string, index: number) => {
 };
 
 const wordCloudColors = ['#d87c7c', '#919e8b', '#6e7074', '#61a0a8', '#787464', '#cc7e63', '#724e58', '#4b565b'];
+const matrixBackgroundUrl = new URL('../../json/bg.png', import.meta.url).href;
+const matrixIconUrl = new URL('../../json/icon.png', import.meta.url).href;
 
 const activeType = ref<BuildingType>('\u6c11\u5c45');
 const dashboardGraphs = ref<DashboardGraphs | null>(null);
@@ -479,9 +483,9 @@ const renderRoseChart = () => {
           '%',
       },
       series: [
-        buildRoseSeries('主要朝代', ['10%', '22%'], dynastyData, false),
-        buildRoseSeries('建筑功能', ['30%', '45%'], functionData, false),
-        buildRoseSeries('建筑材料', ['53%', '72%'], materialData, true),
+        buildRoseSeries('主要朝代', ['12%', '26%'], dynastyData, false),
+        buildRoseSeries('建筑功能', ['34%', '52%'], functionData, false),
+        buildRoseSeries('建筑材料', ['59%', '82%'], materialData, true),
       ],
     },
     { notMerge: true },
@@ -925,12 +929,23 @@ onBeforeUnmount(() => {
   position: fixed;
   inset: 0;
   overflow: hidden;
-  background:
-    linear-gradient(180deg, rgba(247, 241, 231, 0.76), rgba(240, 231, 218, 0.72)),
-    radial-gradient(circle at 12% 10%, rgba(255, 255, 255, 0.52), transparent 18%),
-    radial-gradient(circle at 84% 20%, rgba(255, 255, 255, 0.36), transparent 20%);
+  background: #f3ecde;
 }
 
+.building-dashboard-screen__icon {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  z-index: 12;
+  width: clamp(120px, 10vw, 168px);
+  height: auto;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.94;
+}
+
+.building-dashboard-screen__scene,
 .building-dashboard-screen__wash,
 .building-dashboard-screen__grain,
 .building-dashboard-screen__motif,
@@ -940,85 +955,54 @@ onBeforeUnmount(() => {
   pointer-events: none;
 }
 
+.building-dashboard-screen__scene {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.86;
+}
+
 .building-dashboard-screen__wash {
   background:
-    radial-gradient(circle at 20% 16%, rgba(255, 255, 255, 0.4), transparent 22%),
-    radial-gradient(circle at 74% 24%, rgba(214, 186, 164, 0.18), transparent 22%);
+    linear-gradient(180deg, rgba(252, 248, 241, 0.12), rgba(246, 239, 228, 0.04)),
+    radial-gradient(circle at 18% 92%, rgba(248, 243, 234, 0.72), transparent 24%),
+    radial-gradient(circle at 86% 92%, rgba(248, 243, 234, 0.72), transparent 24%),
+    radial-gradient(circle at 20% 16%, rgba(255, 255, 255, 0.12), transparent 24%),
+    radial-gradient(circle at 74% 24%, rgba(214, 186, 164, 0.05), transparent 24%);
 }
 
 .building-dashboard-screen__grain {
-  background: repeating-linear-gradient(135deg, rgba(129, 99, 77, 0.025) 0, rgba(129, 99, 77, 0.025) 1px, transparent 1px, transparent 16px);
+  background: repeating-linear-gradient(135deg, rgba(129, 99, 77, 0.018) 0, rgba(129, 99, 77, 0.018) 1px, transparent 1px, transparent 18px);
   mix-blend-mode: multiply;
 }
 
 .building-dashboard-screen__motif {
-  opacity: 0.3;
-  background:
-    radial-gradient(circle at 24% 74%, rgba(128, 96, 77, 0.1), transparent 18%),
-    radial-gradient(circle at 74% 38%, rgba(128, 96, 77, 0.08), transparent 20%),
-    radial-gradient(circle at 78% 78%, rgba(128, 96, 77, 0.12), transparent 22%);
+  display: none;
 }
 
 .building-dashboard-screen__roof {
-  inset: auto 0 0 auto;
-  width: 26%;
-  height: 24%;
-  background:
-    linear-gradient(180deg, transparent, rgba(126, 104, 86, 0.14)),
-    radial-gradient(circle at 58% 86%, rgba(110, 95, 83, 0.16), transparent 54%);
-  clip-path: polygon(34% 22%, 74% 8%, 100% 38%, 100% 100%, 0 100%, 0 62%);
-  opacity: 0.52;
-  filter: blur(0.6px);
+  display: none;
 }
 
 .building-dashboard-screen__petal {
-  position: absolute;
-  width: 14px;
-  height: 24px;
-  border-radius: 50% 50% 46% 46%;
-  background: rgba(244, 176, 196, 0.68);
-  filter: blur(0.3px);
-  transform: rotate(20deg);
-  pointer-events: none;
-}
-
-.building-dashboard-screen__petal--a {
-  top: 4%;
-  left: 40%;
-}
-
-.building-dashboard-screen__petal--b {
-  top: 18%;
-  right: 7%;
-  transform: rotate(-20deg);
-}
-
-.building-dashboard-screen__petal--c {
-  top: 74%;
-  left: -0.1%;
-}
-
-.building-dashboard-screen__petal--d {
-  top: 48%;
-  right: 18%;
-  transform: rotate(-16deg);
+  display: none;
 }
 
 .dashboard-shell {
   position: relative;
   z-index: 10;
   height: 100vh;
-  padding: 6px 8px;
+  padding: 8px 10px 10px;
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: minmax(70px, 84px) minmax(0, 1fr) minmax(136px, 156px);
-  gap: 6px;
+  grid-template-columns: minmax(64px, 78px) minmax(0, 1fr) minmax(112px, 128px);
+  gap: 10px;
 }
 
 .dashboard-side-panel {
   min-height: 0;
   display: grid;
-  gap: 8px;
+  gap: 10px;
   align-content: center;
 }
 
@@ -1028,6 +1012,7 @@ onBeforeUnmount(() => {
   display: grid;
   grid-template-rows: minmax(0, 1fr);
   gap: 0;
+  padding: 2px 0 4px;
 }
 
 .paper-card {
@@ -1098,7 +1083,7 @@ onBeforeUnmount(() => {
 
 .type-list {
   display: grid;
-  gap: 4px;
+  gap: 8px;
 }
 
 .type-card {
@@ -1106,7 +1091,8 @@ onBeforeUnmount(() => {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 4px;
+  min-height: 58px;
+  padding: 12px 4px;
   border: none;
   border-radius: 0;
   background: transparent;
@@ -1241,9 +1227,13 @@ onBeforeUnmount(() => {
   min-height: 0;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  grid-auto-rows: minmax(0, 1fr);
-  gap: 4px;
+  grid-template-columns: minmax(0, 1.32fr) minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1.04fr) minmax(0, 0.96fr);
+  grid-template-areas:
+    'sankey cloud'
+    'rose sunburst';
+  gap: 10px;
+  align-items: stretch;
 }
 
 .dashboard-panel {
@@ -1251,7 +1241,7 @@ onBeforeUnmount(() => {
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 0;
+  padding: 4px;
   overflow: hidden;
   border: none;
   border-radius: 0;
@@ -1262,8 +1252,23 @@ onBeforeUnmount(() => {
 }
 
 .dashboard-panel--sankey {
-  --sankey-panel-shift: 12px;
+  grid-area: sankey;
+  --sankey-panel-shift-x: 18px;
+  --sankey-panel-shift-y: 10px;
+  --sankey-panel-scale: 0.92;
   overflow: visible;
+}
+
+.dashboard-panel--cloud {
+  grid-area: cloud;
+}
+
+.dashboard-panel--rose {
+  grid-area: rose;
+}
+
+.dashboard-panel--sunburst {
+  grid-area: sunburst;
 }
 
 .dashboard-panel__head {
@@ -1282,8 +1287,8 @@ onBeforeUnmount(() => {
 
 .dashboard-panel__chart {
   flex: 1;
-  width: 97%;
-  height: 97%;
+  width: 100%;
+  height: 100%;
   min-height: 0;
   margin: auto;
   overflow: visible;
@@ -1292,7 +1297,7 @@ onBeforeUnmount(() => {
 .dashboard-panel--sankey .dashboard-panel__chart {
   width: 100%;
   height: 100%;
-  transform: translateX(var(--sankey-panel-shift));
+  transform: translate(var(--sankey-panel-shift-x), var(--sankey-panel-shift-y)) scale(var(--sankey-panel-scale));
   transform-origin: center center;
 }
 
@@ -1379,9 +1384,14 @@ onBeforeUnmount(() => {
 
 @media (max-width: 1420px) {
   .dashboard-shell {
-    grid-template-columns: minmax(66px, 80px) minmax(0, 1fr) minmax(126px, 146px);
-    gap: 5px;
+    grid-template-columns: minmax(60px, 74px) minmax(0, 1fr) minmax(106px, 122px);
+    gap: 8px;
     padding: 8px;
+  }
+
+  .chart-grid {
+    grid-template-columns: minmax(0, 1.24fr) minmax(0, 1fr);
+    gap: 8px;
   }
 }
 
@@ -1394,10 +1404,15 @@ onBeforeUnmount(() => {
     height: auto;
     min-height: 100vh;
     grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .chart-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: minmax(280px, 0.96fr) minmax(280px, 1.04fr);
+    grid-template-areas:
+      'sankey cloud'
+      'rose sunburst';
   }
 }
 
@@ -1408,18 +1423,38 @@ onBeforeUnmount(() => {
     min-height: 100vh;
   }
 
+  .building-dashboard-screen__icon {
+    top: 18px;
+    left: 12px;
+    width: clamp(92px, 24vw, 126px);
+  }
+
   .dashboard-shell {
     padding: 10px;
   }
 
-  .metric-grid {
-    grid-template-columns: 1fr;
+  .type-list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px;
   }
 
   .type-card {
-    justify-content: flex-start;
-    padding-left: 10px;
+    min-height: 48px;
+    padding: 10px 2px;
+  }
+
+  .type-card__label strong {
+    font-size: 17px;
+  }
+
+  .chart-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, minmax(240px, 1fr));
+    grid-template-areas:
+      'sankey'
+      'cloud'
+      'rose'
+      'sunburst';
   }
 }
 </style>
-
