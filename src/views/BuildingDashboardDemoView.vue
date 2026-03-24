@@ -75,7 +75,7 @@ echarts.use([TooltipComponent, GraphicComponent, PieChart, SankeyChart, Sunburst
 const THEME_NAME = 'building-dashboard-vintage';
 echarts.registerTheme(THEME_NAME, vintage);
 
-type BuildingType = '民居' | '桥梁' | '官府' | '宫殿';
+type BuildingType = '\u6c11\u5c45' | '\u6865\u6881' | '\u5b98\u5e9c' | '\u5bab\u6bbf';
 type TypeSlug = 'minju' | 'qiaoliang' | 'guanfu' | 'gongdian';
 type ChartKey = 'rose' | 'cloud' | 'sankey' | 'sunburst';
 
@@ -166,48 +166,77 @@ interface DashboardGraphs {
 
 const buildingTypes = [
   {
-    label: '民居',
+    label: '\u6c11\u5c45',
     slug: 'minju',
     color: '#b67a4a',
-    description: '聚焦居住、宗族与防御空间在不同时代中的分布。',
+    description: 'Residential buildings.',
   },
   {
-    label: '桥梁',
+    label: '\u6865\u6881',
     slug: 'qiaoliang',
     color: '#6f7f8f',
-    description: '突出交通、水利与桥体结构之间的组合关系。',
+    description: 'Bridge structures and water transport.',
   },
   {
-    label: '官府',
+    label: '\u5b98\u5e9c',
     slug: 'guanfu',
     color: '#4b765f',
-    description: '观察官署体系在朝代、结构和材料上的组织特征。',
+    description: 'Official complexes and institutional architecture.',
   },
   {
-    label: '宫殿',
+    label: '\u5bab\u6bbf',
     slug: 'gongdian',
     color: '#a3473a',
-    description: '样本较少，但中轴、殿阁与宫苑特征更集中。',
+    description: 'Palace buildings and court compounds.',
   },
 ] as const satisfies ReadonlyArray<TypeConfig>;
 
 const roseRingPalettes = {
-  dynasty: ['#b65e48', '#c97858', '#d6a16f', '#b58347', '#8b6b57', '#c7b08a'],
-  function: ['#4b765f', '#68866f', '#8da16a', '#7c9468', '#5a8c7f', '#93a08d', '#547062'],
-  material: ['#7a6c92', '#9274a3', '#6d88a2', '#5d7a95', '#8d94a6', '#b39478', '#7f8b9b'],
+  dynasty: ['#6D7460', '#D46F6B', '#4A5255', '#786E56', '#D5A08A', '#C98F66', '#50858B'],
+  function: ['#50858B', '#D5A08A', '#6D7460', '#D46F6B', '#786E56', '#4A5255', '#C98F66', '#87907D', '#B68F7C'],
+  material: ['#4A5255', '#786E56', '#9AA391', '#D08A73', '#D5A08A', '#6D7460', '#50858B'],
 } as const;
-
+const ROSE_LABEL_FONT = 'ContentFont, STKaiti, KaiTi, serif';
+const ROSE_RING_CENTER = ['50%', '53%'] as [string, string];
+const ROSE_STROKE_COLOR = 'rgba(255, 255, 255, 0.96)';
+const ROSE_CONNECTOR_COLOR = 'rgba(216, 180, 156, 0.94)';
 const sankeyNodeColors = ['#60554A', '#4B8C9A', '#788D8E', '#A88463', '#C58370', '#4A5052', '#CDA77C', '#889585'] as const;
 
-const sunburstLevelColors = {
-  level0: ['#d87c7c', '#919e8b', '#d7ab82', '#95a5a6', '#c28f6a'],
-  level1: ['#e9967a', '#a8c3a8', '#e0b890', '#b7c3c8', '#d3b085'],
-  level2: ['#f4a460', '#8fbc8f', '#d2b48c', '#8b7355', '#b22222', '#6b8e23', '#a0522d'],
-} as const;
+const sunburstLevelColors = ['#D4736E', '#82937E', '#D2A271', '#EE9C5D'] as const;
+const SUNBURST_DYNASTY_COLOR_MAP: Record<string, string> = {
+  '\u6e05': '#D4736E',
+  '\u5176\u4ed6\u671d\u4ee3': '#EE9C5D',
+};
+const SUNBURST_LABEL_FONT = ROSE_LABEL_FONT;
+const SUNBURST_INK_COLOR = '#2B2824';
+const SUNBURST_GAP_COLOR = 'rgba(255, 255, 255, 0.98)';
+const SUNBURST_LIGHT_TARGET = '#F4F1EC';
+const SUNBURST_DARK_TARGET = '#8B2825';
+
+const blendHexColor = (sourceHex: string, targetHex: string, ratio: number) => {
+  const source = sourceHex.replace('#', '');
+  const target = targetHex.replace('#', '');
+  const channels = [0, 2, 4].map((offset) => {
+    const sourceValue = Number.parseInt(source.slice(offset, offset + 2), 16);
+    const targetValue = Number.parseInt(target.slice(offset, offset + 2), 16);
+    return Math.round(sourceValue + (targetValue - sourceValue) * ratio)
+      .toString(16)
+      .padStart(2, '0');
+  });
+  return `#${channels.join('')}`;
+};
+
+const deriveSunburstChildColor = (parentColor: string, index: number) => {
+  const variations = [0.18, 0.08, -0.06, 0.26, 0.12];
+  const offset = variations[index % variations.length];
+  return offset >= 0
+    ? blendHexColor(parentColor, SUNBURST_LIGHT_TARGET, offset)
+    : blendHexColor(parentColor, SUNBURST_DARK_TARGET, Math.abs(offset) * 0.55);
+};
 
 const wordCloudColors = ['#d87c7c', '#919e8b', '#6e7074', '#61a0a8', '#787464', '#cc7e63', '#724e58', '#4b565b'];
 
-const activeType = ref<BuildingType>('民居');
+const activeType = ref<BuildingType>('\u6c11\u5c45');
 const dashboardGraphs = ref<DashboardGraphs | null>(null);
 const isLoading = ref(true);
 const loadError = ref<string | null>(null);
@@ -231,7 +260,7 @@ const activeWordCloud = computed(() => dashboardGraphs.value?.wordCloud[activeTy
 const fetchGraphJson = async <T,>(fileName: string): Promise<T> => {
   const response = await fetch(`${import.meta.env.BASE_URL}building-dashboard-graph4/${fileName}`, { cache: 'no-store' });
   if (!response.ok) {
-    throw new Error(`鏃犳硶璇诲彇 ${fileName}`);
+    throw new Error(`Failed to load ${fileName}`);
   }
   return response.json() as Promise<T>;
 };
@@ -272,14 +301,14 @@ const loadDashboardGraphs = async () => {
     dashboardGraphs.value = payload;
   } catch (error) {
     dashboardGraphs.value = null;
-    loadError.value = error instanceof Error ? error.message : '鍥捐〃鏁版嵁鍔犺浇澶辫触';
+    loadError.value = error instanceof Error ? error.message : 'Failed to load chart data';
   } finally {
     isLoading.value = false;
     renderAllCharts();
   }
 };
 
-const truncateLabel = (value: string, maxLength: number) => (value.length > maxLength ? `${value.slice(0, maxLength)}…` : value);
+const truncateLabel = (value: string, maxLength: number) => (value.length > maxLength ? `${value.slice(0, maxLength)}...` : value);
 
 const buildStateGraphic = (title: string, note: string) => [
   {
@@ -328,8 +357,9 @@ const setChartState = (key: ChartKey, title: string, note: string) => {
 };
 
 const decorateRoseItems = (items: RoseRingItem[], palette: readonly string[]) => {
-  const total = items.reduce((sum, item) => sum + item.value, 0);
-  return items.map((item, index) => ({
+  const sortedItems = [...items].sort((left, right) => right.value - left.value);
+  const total = sortedItems.reduce((sum, item) => sum + item.value, 0);
+  return sortedItems.map((item, index) => ({
     ...item,
     percent: total > 0 ? (item.value / total) * 100 : 0,
     itemStyle: { color: palette[index % palette.length] },
@@ -341,34 +371,61 @@ const buildRoseSeries = (name: string, radius: [string, string], data: RoseRingI
   type: 'pie',
   roseType: 'radius',
   radius,
-  center: ['50%', '53%'],
-  minAngle: 3,
+  center: ROSE_RING_CENTER,
+  startAngle: 92,
+  clockwise: false,
+  minAngle: 6,
   selectedMode: false,
+  avoidLabelOverlap: showOuterLabel,
   itemStyle: {
-    borderRadius: 4,
-    borderWidth: 1.4,
-    borderColor: 'rgba(255,255,255,0.92)',
+    borderRadius: 6,
+    borderWidth: 2.2,
+    borderColor: ROSE_STROKE_COLOR,
   },
-  label: {
-    show: true,
-    position: showOuterLabel ? 'outside' : 'inside',
-    fontFamily: 'ContentFont',
-    fontSize: showOuterLabel ? 10 : 9,
-    fontWeight: 600,
-    color: '#4a372b',
-    textBorderColor: 'rgba(255, 255, 255, 0.82)',
-    textBorderWidth: 2,
-    formatter: (params: { name: string }) => truncateLabel(params.name, showOuterLabel ? 8 : 4),
-  },
+  label: showOuterLabel
+    ? {
+        show: true,
+        position: 'outside',
+        fontFamily: ROSE_LABEL_FONT,
+        fontSize: 12,
+        fontWeight: 700,
+        color: '#2c2c2c',
+        textBorderColor: 'rgba(255, 255, 255, 0.78)',
+        textBorderWidth: 3,
+        padding: [1, 0, 0, 0],
+        formatter: (params: { name: string }) => params.name,
+      }
+    : {
+        show: false,
+      },
   labelLine: {
     show: showOuterLabel,
-    smooth: 0.45,
-    length: 4,
-    length2: 4,
+    smooth: 0.36,
+    length: 10,
+    length2: 14,
+    lineStyle: {
+      color: ROSE_CONNECTOR_COLOR,
+      width: 1.1,
+    },
+  },
+  labelLayout: showOuterLabel
+    ? {
+        hideOverlap: false,
+        moveOverlap: 'shiftY',
+      }
+    : {
+        hideOverlap: true,
+      },
+  emphasis: {
+    scale: false,
+    itemStyle: {
+      borderWidth: 2.6,
+      borderColor: ROSE_STROKE_COLOR,
+    },
   },
   tooltip: {
     textStyle: {
-      fontFamily: 'ContentFont',
+      fontFamily: ROSE_LABEL_FONT,
       fontSize: 13,
     },
   },
@@ -382,7 +439,7 @@ const renderRoseChart = () => {
   }
 
   if (loadError.value) {
-    setChartState('rose', '鍥捐〃鍔犺浇澶辫触', loadError.value);
+    setChartState('rose', '图表数据读取失败', loadError.value);
     return;
   }
 
@@ -399,7 +456,8 @@ const renderRoseChart = () => {
 
   chart.setOption(
     {
-      animationDuration: 500,
+      animationDuration: 650,
+      animationEasing: 'cubicOut',
       tooltip: {
         trigger: 'item',
         backgroundColor: 'rgba(248, 242, 232, 0.96)',
@@ -407,7 +465,7 @@ const renderRoseChart = () => {
         borderWidth: 1,
         textStyle: {
           color: '#4f3b2f',
-          fontFamily: 'ContentFont',
+          fontFamily: ROSE_LABEL_FONT,
           fontSize: 13,
         },
         formatter: (params: any) =>
@@ -421,9 +479,9 @@ const renderRoseChart = () => {
           '%',
       },
       series: [
-        buildRoseSeries('主要朝代', ['8%', '22%'], dynastyData, false),
-        buildRoseSeries('建筑功能', ['28%', '44%'], functionData, false),
-        buildRoseSeries('建筑材料', ['50%', '68%'], materialData, true),
+        buildRoseSeries('主要朝代', ['10%', '22%'], dynastyData, false),
+        buildRoseSeries('建筑功能', ['30%', '45%'], functionData, false),
+        buildRoseSeries('建筑材料', ['53%', '72%'], materialData, true),
       ],
     },
     { notMerge: true },
@@ -474,19 +532,19 @@ const getWordCloudLayout = () => {
 
 const renderWordCloudChart = () => {
   if (isLoading.value) {
-    setChartState('cloud', '姝ｅ湪鍔犺浇鍥捐〃', '璇诲彇 graph_4 璇嶄簯鏁版嵁');
+    setChartState('cloud', '\u6b63\u5728\u52a0\u8f7d\u56fe\u8868', '\u6b63\u5728\u8bfb\u53d6 graph_4 \u8bcd\u4e91\u6570\u636e');
     return;
   }
 
   if (loadError.value) {
-    setChartState('cloud', '鍥捐〃鍔犺浇澶辫触', loadError.value);
+    setChartState('cloud', '\u56fe\u8868\u6570\u636e\u8bfb\u53d6\u5931\u8d25', loadError.value);
     return;
   }
 
   const words = activeWordCloud.value;
   const chart = chartInstances.get('cloud');
   if (!chart || !words || words.length === 0) {
-    setChartState('cloud', '鏆傛棤鍥捐〃鏁版嵁', '褰撳墠绫诲瀷娌℃湁鍙敤璇嶄簯');
+    setChartState('cloud', '\u6682\u65e0\u56fe\u8868\u6570\u636e', '\u5f53\u524d\u7c7b\u578b\u6ca1\u6709\u53ef\u7528\u8bcd\u4e91');
     return;
   }
 
@@ -510,14 +568,14 @@ const renderWordCloudChart = () => {
         formatter: (params: any) => {
           const rawWeight = params.data.originalValue;
           const weight = typeof rawWeight === 'number' ? rawWeight.toFixed(2) : rawWeight;
-          const dimensions = Array.isArray(params.data.dimensions) ? params.data.dimensions.join('、') : '';
+          const dimensions = Array.isArray(params.data.dimensions) ? params.data.dimensions.join(' / ') : '';
           return (
             String(params.data.name) +
-            '<br/>词权重：' +
+            '<br/>\u8bcd\u6743\u91cd\uff1a' +
             String(weight ?? '') +
-            '<br/>出现次数：' +
+            '<br/>\u51fa\u73b0\u6b21\u6570\uff1a' +
             String(params.data.term_count ?? '') +
-            '<br/>覆盖维度：' +
+            '<br/>\u8986\u76d6\u7ef4\u5ea6\uff1a' +
             dimensions
           );
         },
@@ -575,19 +633,19 @@ const decorateSankeyNodes = (nodes: SankeyNode[]) => {
 
 const renderSankeyChart = () => {
   if (isLoading.value) {
-    setChartState('sankey', '正在加载图表', '正在读取 graph_4 桑基图数据');
+    setChartState('sankey', '\u6b63\u5728\u52a0\u8f7d\u56fe\u8868', '\u6b63\u5728\u8bfb\u53d6 graph_4 \u6851\u57fa\u56fe\u6570\u636e');
     return;
   }
 
   if (loadError.value) {
-    setChartState('sankey', '鍥捐〃鍔犺浇澶辫触', loadError.value);
+    setChartState('sankey', '\u56fe\u8868\u6570\u636e\u8bfb\u53d6\u5931\u8d25', loadError.value);
     return;
   }
 
   const graph = activeSankeyGraph.value;
   const chart = chartInstances.get('sankey');
   if (!chart || !graph || graph.nodes.length === 0) {
-    setChartState('sankey', '暂无图表数据', '当前类型没有可用桑基图');
+    setChartState('sankey', '\u6682\u65e0\u56fe\u8868\u6570\u636e', '\u5f53\u524d\u7c7b\u578b\u6ca1\u6709\u53ef\u7528\u6851\u57fa\u56fe');
     return;
   }
 
@@ -613,9 +671,9 @@ const renderSankeyChart = () => {
           }
           return (
             String(params.data.source) +
-            ' → ' +
+            ' -> ' +
             String(params.data.target) +
-            '<br/>数量：' +
+            '<br/>\u6570\u91cf\uff1a' +
             String(params.data.value)
           );
         },
@@ -665,46 +723,50 @@ const renderSankeyChart = () => {
   );
 };
 
-const decorateSunburstData = (data: SunburstNode[]) => {
-  let level0Index = 0;
-  let level1Index = 0;
-  let level2Index = 0;
-
-  return data.map((dynastyNode) => ({
-    ...dynastyNode,
-    itemStyle: { color: sunburstLevelColors.level0[level0Index++ % sunburstLevelColors.level0.length] },
-    children: (dynastyNode.children ?? []).map((regionNode) => ({
-      ...regionNode,
-      itemStyle: { color: sunburstLevelColors.level1[level1Index++ % sunburstLevelColors.level1.length] },
-      children: (regionNode.children ?? []).map((structureNode) => ({
-        ...structureNode,
-        itemStyle: { color: sunburstLevelColors.level2[level2Index++ % sunburstLevelColors.level2.length] },
-      })),
-    })),
-  }));
-};
+const decorateSunburstData = (data: SunburstNode[]) =>
+  data.map((dynastyNode, dynastyIndex) => {
+    const dynastyColor =
+      SUNBURST_DYNASTY_COLOR_MAP[dynastyNode.name] ??
+      sunburstLevelColors[dynastyIndex % sunburstLevelColors.length];
+    return {
+      ...dynastyNode,
+      itemStyle: { color: dynastyColor },
+      children: (dynastyNode.children ?? []).map((regionNode, regionIndex) => {
+        const regionColor = deriveSunburstChildColor(dynastyColor, regionIndex);
+        return {
+          ...regionNode,
+          itemStyle: { color: regionColor },
+          children: (regionNode.children ?? []).map((structureNode) => ({
+            ...structureNode,
+            itemStyle: { color: regionColor },
+          })),
+        };
+      }),
+    };
+  });
 
 const renderSunburstChart = () => {
   if (isLoading.value) {
-    setChartState('sunburst', '正在加载图表', '正在读取 graph_4 旭日图数据');
+    setChartState('sunburst', '\u6b63\u5728\u52a0\u8f7d\u56fe\u8868', '\u6b63\u5728\u8bfb\u53d6 graph_4 \u65ed\u65e5\u56fe\u6570\u636e');
     return;
   }
 
   if (loadError.value) {
-    setChartState('sunburst', '鍥捐〃鍔犺浇澶辫触', loadError.value);
+    setChartState('sunburst', '\u56fe\u8868\u6570\u636e\u8bfb\u53d6\u5931\u8d25', loadError.value);
     return;
   }
 
   const graph = activeSunburstGraph.value;
   const chart = chartInstances.get('sunburst');
   if (!chart || !graph || graph.data.length === 0) {
-    setChartState('sunburst', '暂无图表数据', '当前类型没有可用旭日图');
+    setChartState('sunburst', '\u6682\u65e0\u56fe\u8868\u6570\u636e', '\u5f53\u524d\u7c7b\u578b\u6ca1\u6709\u53ef\u7528\u65ed\u65e5\u56fe');
     return;
   }
 
   chart.setOption(
     {
-      animationDuration: 500,
+      animationDuration: 680,
+      animationEasing: 'cubicOut',
       tooltip: {
         show: true,
         backgroundColor: 'rgba(248, 242, 232, 0.98)',
@@ -712,71 +774,83 @@ const renderSunburstChart = () => {
         borderWidth: 1,
         textStyle: {
           color: '#4f3b2f',
-          fontFamily: 'ContentFont',
+          fontFamily: SUNBURST_LABEL_FONT,
           fontSize: 13,
         },
         formatter: (params: any) => {
-          const path = params.treePathInfo.slice(1).map((item: { name: string }) => item.name).join(' 路 ');
-          return String(path) + '<br/>数量：' + String(params.value);
+          const path = params.treePathInfo.slice(1).map((item: { name: string }) => item.name).join(' / ');
+          return String(path) + '<br/>\u6570\u91cf\uff1a' + String(params.value);
         },
       },
       series: [
         {
           type: 'sunburst',
           data: decorateSunburstData(graph.data),
-          radius: ['16%', '86%'],
-          center: ['50%', '54%'],
+          radius: ['18%', '84%'],
+          center: ['50%', '53%'],
           nodeClick: false,
           sort: null,
           emphasis: {
             focus: 'ancestor',
           },
           itemStyle: {
-            borderRadius: 6,
-            borderWidth: 1.2,
-            borderColor: 'rgba(255,255,255,0.78)',
+            borderRadius: 8,
+            borderWidth: 2,
+            borderColor: SUNBURST_GAP_COLOR,
           },
           label: {
-            fontFamily: 'ContentFont',
-            fontSize: 10,
+            fontFamily: SUNBURST_LABEL_FONT,
             fontWeight: 'bold',
-            color: '#52392c',
+            color: SUNBURST_INK_COLOR,
           },
           levels: [
             {},
             {
-              r0: '16%',
-              r: '36%',
+              r0: '18%',
+              r: '48%',
+              itemStyle: {
+                borderRadius: 10,
+                borderWidth: 2.4,
+                borderColor: SUNBURST_GAP_COLOR,
+              },
               label: {
                 rotate: 0,
-                fontSize: 10,
-                minAngle: 8,
+                fontSize: 17,
+                minAngle: 12,
+                color: SUNBURST_INK_COLOR,
               },
             },
             {
-              r0: '36%',
-              r: '60%',
+              r0: '49%',
+              r: '68%',
+              itemStyle: {
+                borderRadius: 9,
+                borderWidth: 2.2,
+                borderColor: SUNBURST_GAP_COLOR,
+              },
               label: {
                 rotate: 'tangential',
-                fontSize: 9,
+                fontSize: 12,
                 minAngle: 6,
+                color: SUNBURST_INK_COLOR,
               },
             },
             {
-              r0: '60%',
-              r: '86%',
+              r0: '72%',
+              r: '80%',
+              itemStyle: {
+                borderRadius: 8,
+                borderWidth: 2.1,
+                borderColor: SUNBURST_GAP_COLOR,
+              },
               label: {
                 show: true,
                 position: 'outside',
-                distance: 2,
-                minAngle: 5,
-                fontSize: 8,
-              },
-              labelLine: {
-                show: true,
-                showAbove: true,
-                smooth: true,
-                minTurnAngle: 45,
+                rotate: 'radial',
+                distance: 4,
+                minAngle: 2,
+                fontSize: 10,
+                color: SUNBURST_INK_COLOR,
               },
             },
           ],
@@ -1348,3 +1422,4 @@ onBeforeUnmount(() => {
   }
 }
 </style>
+

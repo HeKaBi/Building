@@ -1,0 +1,88 @@
+{
+  "designSystem": {
+    "name": "Classical Chinese Sunburst Chart",
+    "description": "基于传统中国风的多层环形图/旭日图设计规范，强调历史厚重感、水墨书法元素以及自然的配色过渡。",
+    "globalCanvas": {
+      "backgroundColor": "#F4F1EC",
+      "backgroundTexture": "rice_paper_grain (宣纸纹理/细微杂色)",
+      "overlays": [
+        {
+          "type": "floating_particles",
+          "shape": "cherry_blossom_petals (樱花/桃花花瓣)",
+          "color": "#FFC0CB",
+          "distribution": "random_scattered"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamily": "Traditional Chinese Calligraphy / Xingkai (行楷或行书)",
+      "globalTextColor": "#2B2824",
+      "title": {
+        "fontSize": "28px",
+        "fontWeight": "bold",
+        "letterSpacing": "4px",
+        "alignment": "top_center"
+      },
+      "labels": {
+        "innerRings": {
+          "fontSize": "16px",
+          "textOrientation": "radial_aligned_or_horizontal"
+        },
+        "outerRing": {
+          "fontSize": "12px",
+          "textOrientation": "radial_aligned",
+          "placement": "outside_of_arc"
+        }
+      }
+    },
+    "colorPalette": {
+      "themeReds": {
+        "base": "#D4736E",
+        "dark": "#8B2825",
+        "light": "#E89B84"
+      },
+      "themeGreens": {
+        "base": "#82937E",
+        "light": "#96B88B",
+        "dark": "#637A5F"
+      },
+      "themeBrowns": {
+        "base": "#D2A271",
+        "light": "#E3C096",
+        "dark": "#A67A4F"
+      },
+      "themeOranges": {
+        "base": "#EE9C5D",
+        "light": "#F5B47F"
+      }
+    },
+    "chartStructure": {
+      "componentType": "Sunburst / Multi-level Donut Chart",
+      "totalLevels": 3,
+      "globalStyles": {
+        "gapWidth": "2px",
+        "gapColor": "#FFFFFF",
+        "cornerRadius": "8px (圆角扇形)"
+      },
+      "levelRules": {
+        "level1": {
+          "description": "内层核心分类 (Inner Core)",
+          "style": "solid_fill",
+          "colorAssignment": "Assign base color from different theme palettes (e.g., Red, Green, Brown)"
+        },
+        "level2": {
+          "description": "中层子分类 (Middle Ring)",
+          "style": "solid_fill",
+          "colorAssignment": "Derive from parent level1 color (use dark/light variants of the parent's theme)"
+        },
+        "level3": {
+          "description": "外层属性/标签环 (Outer Attribute Ring)",
+          "style": "thin_segmented_arc",
+          "width": "very_thin",
+          "colorAssignment": "Match parent level2 color exactly",
+          "labeling": "Text floats outside the arc, aligned to the segment's angle"
+        }
+      }
+    }
+  }
+}

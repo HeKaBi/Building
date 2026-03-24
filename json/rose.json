@@ -1,0 +1,80 @@
+{
+  "designSystem": {
+    "name": "Traditional Chinese Data Visualization",
+    "version": "1.0",
+    "theme": "Classical Elegance",
+    "global": {
+      "background": {
+        "color": "#F4F1E8",
+        "texture": "subtle_paper_noise",
+        "description": "Off-white, textured background resembling traditional rice paper"
+      },
+      "padding": "24px",
+      "antiAliasing": true
+    },
+    "colorPalette": {
+      "primary": [
+        "#6D7460", 
+        "#D46F6B", 
+        "#4A5255", 
+        "#786E56", 
+        "#D5A08A", 
+        "#C98F66", 
+        "#50858B"  
+      ],
+      "neutral": {
+        "text": "#2C2C2C",
+        "stroke": "#FFFFFF",
+        "connectorLines": "#D8B49C"
+      },
+      "description": "Muted, earthy tones inspired by traditional Chinese painting (olive green, terracotta red, charcoal, ochre, muted teal)."
+    },
+    "typography": {
+      "fontFamily": "STKaiti, KaiTi, 'Brush Script MT', cursive, serif",
+      "styles": {
+        "chartTitle": {
+          "fontSize": "28px",
+          "fontWeight": "bold",
+          "color": "$neutral.text",
+          "textAlign": "center",
+          "letterSpacing": "2px",
+          "marginBottom": "40px"
+        },
+        "labels": {
+          "fontSize": "14px",
+          "fontWeight": "normal",
+          "color": "$neutral.text",
+          "fontStyle": "italic"
+        }
+      },
+      "description": "Calligraphic or brush-style typography to match the traditional theme."
+    },
+    "chartConfiguration": {
+      "type": "Nightingale Rose Chart / Multi-level Sunburst",
+      "geometry": {
+        "shape": "concentric_rings_with_variable_radius",
+        "itemGap": "3px",
+        "itemBorder": {
+          "width": "2px",
+          "color": "$neutral.stroke",
+          "radius": "4px"
+        }
+      },
+      "labelingSystem": {
+        "position": "outside",
+        "connectorLines": {
+          "enabled": true,
+          "style": "curved",
+          "width": "1px",
+          "colorMode": "match_segment_or_neutral",
+          "defaultColor": "$neutral.connectorLines"
+        },
+        "distanceFromChart": "15px"
+      },
+      "layout": {
+        "centerOffset": "0",
+        "ringSpacing": "adaptive"
+      }
+    }
+  }
+}
