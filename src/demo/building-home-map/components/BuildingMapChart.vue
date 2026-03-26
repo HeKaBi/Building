@@ -9,7 +9,14 @@
       :style="previewStyle"
     >
       <div class="building-map-chart__preview-art">
+        <img
+          v-if="hoverPreviewImageUrl"
+          class="building-map-chart__preview-photo"
+          :src="hoverPreviewImageUrl"
+          :alt="hoverPreview.building.name"
+        />
         <ArchitectureSketch
+          v-else
           :variant="getBuildingSketchVariant(hoverPreview.building)"
           :accent="getMapMarkerColor(hoverPreview.building)"
           ink="#5b4435"
@@ -19,12 +26,8 @@
 
       <div class="building-map-chart__preview-body">
         <div class="building-map-chart__preview-title">{{ hoverPreview.building.name }}</div>
-
-        <div class="building-map-chart__preview-meta">
-          <span>{{ getStructureType(hoverPreview.building) }}</span>
-          <span>{{ hoverPreview.building.level }}</span>
-          <span>{{ hoverPreview.building.dynasty }}</span>
-          <span>{{ hoverPreview.building.province }} {{ hoverPreview.building.city }}</span>
+        <div class="building-map-chart__preview-location">
+          {{ hoverPreview.building.province }} {{ hoverPreview.building.city }}
         </div>
 
         <p>{{ hoverPreview.building.description }}</p>
@@ -42,12 +45,12 @@ import { computed, onMounted, onUnmounted, ref, watch } from 'vue';
 
 import chinaJson from '@/assets/map/china.json';
 import ArchitectureSketch from '@/demo/building-section-catalog/components/ArchitectureSketch.vue';
+import { buildingImageMap } from '@/demo/building-section-catalog/generatedImageMap';
 import {
   getBuildingSketchVariant,
   getBuildingSymbol,
   getBuildingSymbolSize,
   getStructureColor,
-  getStructureType,
 } from '@/demo/building-home-map/metadata';
 
 import type { CSSProperties } from 'vue';
@@ -124,6 +127,23 @@ const previewStyle = computed<CSSProperties | undefined>(() => {
     '--preview-accent': getMapMarkerColor(hoverPreview.value.building),
   } as CSSProperties;
 });
+
+const resolvePublicImageUrl = (url?: string) => {
+  if (!url) {
+    return '';
+  }
+
+  if (/^(https?:)?\/\//.test(url)) {
+    return url;
+  }
+
+  const normalizedBase = import.meta.env.BASE_URL ?? '/';
+  return `${normalizedBase}${url.replace(/^\/+/, '')}`;
+};
+
+const hoverPreviewImageUrl = computed(() =>
+  hoverPreview.value ? resolvePublicImageUrl(buildingImageMap[hoverPreview.value.building.id]) : '',
+);
 
 const getMapMarkerColor = (building: BuildingRecord) => {
   const baseColor = getStructureColor(building).toLowerCase();
@@ -493,12 +513,38 @@ onUnmounted(() => {
 
 .building-map-chart__preview-art {
   position: relative;
-  height: 128px;
-  padding: 12px 14px 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  height: 142px;
+  padding: 0;
   background:
     radial-gradient(circle at 18% 28%, rgba(255, 255, 255, 0.24), transparent 24%),
     linear-gradient(180deg, rgba(255, 250, 242, 0.8), rgba(240, 232, 219, 0.54));
   border-bottom: 1px solid rgba(151, 116, 91, 0.14);
+}
+
+.building-map-chart__preview-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  filter: saturate(0.92) contrast(1.02) brightness(0.97);
+}
+
+.building-map-chart__preview-art :deep(.architecture-sketch) {
+  width: 100%;
+  height: 100%;
+}
+
+.building-map-chart__preview-art::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(255, 249, 238, 0.06), rgba(82, 58, 43, 0.14)),
+    linear-gradient(0deg, rgba(255, 245, 230, 0.14), transparent 34%);
+  pointer-events: none;
 }
 
 .building-map-chart__preview-era {
@@ -529,24 +575,12 @@ onUnmounted(() => {
   color: #5b261d;
 }
 
-.building-map-chart__preview-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin: 10px 0 9px;
-}
-
-.building-map-chart__preview-meta span {
-  display: inline-flex;
-  align-items: center;
-  min-height: 24px;
-  padding: 0 8px;
-  border-radius: 999px;
-  border: 1px solid color-mix(in srgb, var(--preview-accent) 18%, #c89e74 82%);
-  background: rgba(249, 244, 236, 0.84);
+.building-map-chart__preview-location {
+  margin: 8px 0 9px;
   font-family: 'ContentFont', serif;
-  font-size: 11px;
-  color: rgba(82, 58, 46, 0.82);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: rgba(92, 67, 53, 0.74);
 }
 
 .building-map-chart__preview-body p {

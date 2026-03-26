@@ -178,7 +178,7 @@ const groupSeedsByCategory: Record<SourceCategory, GroupSeed[]> = {
       useCoverAsPoster: true,
     },
     {
-      title: '围屋土楼碉楼',
+      title: '土楼碉堡',
       subtitle: '围护聚居与垂直防御',
       description: '这组样本强调厚墙、围合、瞭望和聚族而居，是辨识度最高的民居形制之一。',
       previewVariant: 'residence-tulou',
@@ -394,7 +394,7 @@ const provinceToMacroRegion: Record<string, string> = {
 
 const structureRulesByCategory: Record<SourceCategory, Array<[string, RegExp]>> = {
   民居: [
-    ['围屋土楼碉楼', /土楼|围屋|碉楼|碉堡|碉寨|碉|土堡|堡/],
+    ['土楼碉堡', /土楼|围屋|碉楼|碉堡|碉寨|碉|土堡|堡/],
     ['吊脚干栏', /吊脚|干栏/],
     ['聚落村寨', /古建筑群|建筑群|村|寨|乡土建筑|聚落|故里|老城/],
     ['园居草堂', /园|草堂|亭|阁/],
@@ -435,8 +435,10 @@ const unique = (items: string[]) => Array.from(new Set(items.filter(Boolean)));
 const formatYear = (year: number) => (year < 0 ? `前${Math.abs(year)}年` : `${year}年`);
 
 const getStructureType = (item: SourceBuildingRecord) => {
-  if (item.structureType?.trim()) {
-    return item.structureType.trim();
+  const normalizedStructureType = item.structureType?.trim();
+
+  if (normalizedStructureType) {
+    return normalizedStructureType === '围屋土楼碉楼' ? '土楼碉堡' : normalizedStructureType;
   }
 
   const rules = structureRulesByCategory[item.category];
@@ -466,6 +468,7 @@ const getSketchVariant = (item: SourceBuildingRecord, structureType: string): Sk
   const text = `${item.name} ${item.description}`;
 
   switch (structureType) {
+    case '土楼碉堡':
     case '围屋土楼碉楼':
       return /碉楼|碉|塔/.test(text) ? 'residence-diaolou' : 'residence-tulou';
     case '吊脚干栏':

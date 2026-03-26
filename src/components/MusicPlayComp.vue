@@ -11,58 +11,91 @@
     </div>
 </template>
 <script setup>
-import { defineComponent, getCurrentInstance, ref, reactive, watch } from 'vue';
+import { getCurrentInstance, onBeforeUnmount, onMounted, ref, watch } from 'vue';
 
 import musicUrl from '@/assets/music/bgm.mp3'
 
-//使用vue的getCurrentInstance 方法获取当前组件实例
 const { proxy } = getCurrentInstance()
 
-let audioPlayer = ref(null) //音乐
-let isPlaying = ref(false) //是否播放动画效果
+let audioPlayer = ref(null)
+let isPlaying = ref(false)
+let isMusic = ref(false)
 
-//播放按钮
+const removeAutoplayUnlockListeners = () => {
+    window.removeEventListener('pointerdown', handleAutoplayUnlock)
+    window.removeEventListener('keydown', handleAutoplayUnlock)
+    window.removeEventListener('touchstart', handleAutoplayUnlock)
+}
+
+const tryPlayAudio = () => {
+    if (!audioPlayer.value) return
+    const playPromise = audioPlayer.value.play()
+    if (playPromise && typeof playPromise.then === 'function') {
+        playPromise
+            .then(() => {
+                isPlaying.value = true
+                localStorage.setItem('isPlaying', 'true')
+                removeAutoplayUnlockListeners()
+            })
+            .catch(() => {
+                isPlaying.value = false
+                addAutoplayUnlockListeners()
+            })
+    }
+}
+
+const handleAutoplayUnlock = (event) => {
+    const target = event?.target
+    if (target instanceof Element && target.closest('.music')) return
+    removeAutoplayUnlockListeners()
+    if (localStorage.getItem('isPlaying') === 'false') return
+    tryPlayAudio()
+}
+
+const addAutoplayUnlockListeners = () => {
+    removeAutoplayUnlockListeners()
+    window.addEventListener('pointerdown', handleAutoplayUnlock, { passive: true })
+    window.addEventListener('keydown', handleAutoplayUnlock)
+    window.addEventListener('touchstart', handleAutoplayUnlock, { passive: true })
+}
+
 const musicPlay = () => {
+    removeAutoplayUnlockListeners()
+    if (!audioPlayer.value) return
     if (isPlaying.value) {
         audioPlayer.value.pause()
         isPlaying.value = false
+        localStorage.setItem('isPlaying', 'false')
     } else {
-        audioPlayer.value.play()
-        isPlaying.value = true
+        tryPlayAudio()
     }
 }
 
-//播放监听
 const handlePlay = () => {
-    isPlaying.value = true;
-    localStorage.setItem('isPlaying', true)
+    isPlaying.value = true
+    localStorage.setItem('isPlaying', 'true')
 }
 
-//暂停监听
 const handlePause = () => {
     isPlaying.value = false
-    localStorage.setItem('isPlaying', false)
+    localStorage.setItem('isPlaying', 'false')
 }
 
-//通过路由地址判断音乐是否播放 图标是否显示
-let isMusic = ref(false)
-watch(() => proxy.$router.currentRoute.value.path, (newV, oldV) => {
-    if (newV != '/') {
-        isMusic.value = true
-        if (localStorage.getItem('isPlaying')) {
-            isPlaying.value = localStorage.getItem('isPlaying') == 'true' ? true : false
-            if (isPlaying.value) audioPlayer.value.play()
-        }
-        else {
-            isPlaying.value = true
-            audioPlayer.value.play()
-        }
-    } else {
-        isMusic.value = false
+const syncMusicState = () => {
+    isMusic.value = true
+    if (!audioPlayer.value) return
+    if (localStorage.getItem('isPlaying') === 'false') {
         isPlaying.value = false
         audioPlayer.value.pause()
+        removeAutoplayUnlockListeners()
+        return
     }
-})
+    tryPlayAudio()
+}
+
+watch(() => proxy.$router.currentRoute.value.path, syncMusicState)
+onMounted(syncMusicState)
+onBeforeUnmount(removeAutoplayUnlockListeners)
 </script>
 <style>
 .music {

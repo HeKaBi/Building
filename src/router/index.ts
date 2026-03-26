@@ -8,8 +8,7 @@ const routes = [
         name: 'Entry',
         component: EntryView,
         meta: {
-            hideNavbar: true,
-            hideMusic: true
+            hideNavbar: true
         }
     },
     {
@@ -41,8 +40,7 @@ const routes = [
         path: '/building',
         component: () => import('@/views/BuildingLayoutView.vue'),
         meta: {
-            hideNavbar: true,
-            hideMusic: true
+            hideNavbar: true
         },
         children: [
             {

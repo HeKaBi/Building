@@ -5,7 +5,7 @@
     <div class="building-section-screen__motif"></div>
 
     <div class="catalog-shell" :class="{ 'catalog-shell--with-hud': !!currentCategory }">
-      <div v-if="currentCategory" class="catalog-hud">
+      <div v-if="currentCategory && currentGroup" class="catalog-hud">
         <div class="catalog-breadcrumb">
           <span>四分首页</span>
           <span>{{ currentCategory.title }}</span>
@@ -92,6 +92,15 @@
         </div>
 
         <div v-else-if="currentCategory && !currentGroup" key="groups" class="stage stage--groups">
+          <div class="stage-actions stage-actions--floating">
+            <button type="button" class="catalog-action" @click="goBackOneLevel">
+              {{ '\u8fd4\u56de\u4e0a\u4e00\u5c42' }}
+            </button>
+            <button type="button" class="catalog-action catalog-action--ghost" @click="resetToHome">
+              {{ '\u56de\u5230\u9996\u9875' }}
+            </button>
+          </div>
+
           <div class="group-grid">
             <button
               v-for="group in currentCategory.groups"
@@ -118,9 +127,23 @@
 
               <div v-if="!group.useCoverAsPoster" class="category-slab__content group-slab__content">
                 <div class="category-slab__seal">{{ getGroupSeal(group.title) }}</div>
-                <div class="category-slab__title-wrap group-slab__title-wrap">
+                <div
+                  :class="[
+                    'category-slab__title-wrap',
+                    'group-slab__title-wrap',
+                    { 'group-slab__title-wrap--right': group.title === '土楼碉堡' },
+                  ]"
+                >
                   <div class="group-slab__eyebrow">{{ currentCategory.title }} · 二级图册</div>
-                  <div class="category-slab__title group-slab__title">{{ group.title }}</div>
+                  <div
+                    :class="[
+                      'category-slab__title',
+                      'group-slab__title',
+                      { 'group-slab__title--right': group.title === '土楼碉堡' },
+                    ]"
+                  >
+                    {{ group.title }}
+                  </div>
                   <div class="category-slab__alias">{{ group.subtitle }}</div>
                   <div class="category-slab__english">{{ currentCategory.english }} Section</div>
                   <p>{{ group.description }}</p>
@@ -130,8 +153,21 @@
                 <div class="group-slab__eyebrow">{{ currentCategory.title }} · 二级图册</div>
                 <div class="category-slab__poster-head">
                   <div class="category-slab__seal">{{ getGroupSeal(group.title) }}</div>
-                  <div class="category-slab__poster-title-wrap">
-                    <div class="category-slab__title group-slab__title">{{ group.title }}</div>
+                  <div
+                    :class="[
+                      'category-slab__poster-title-wrap',
+                      { 'group-slab__title-wrap--right': group.title === '土楼碉堡' },
+                    ]"
+                  >
+                    <div
+                      :class="[
+                        'category-slab__title',
+                        'group-slab__title',
+                        { 'group-slab__title--right': group.title === '土楼碉堡' },
+                      ]"
+                    >
+                      {{ group.title }}
+                    </div>
                     <div class="category-slab__alias">{{ group.subtitle }}</div>
                     <div class="category-slab__english">{{ currentCategory.english }} Section</div>
                   </div>
@@ -172,7 +208,6 @@
               <template v-if="isAtlasDetailView && detailItem">
                 <section class="detail-side">
                   <div class="detail-side__brand">
-                    <div class="detail-side__eyebrow">{{ atlasEyebrow }}</div>
                     <h2>{{ detailItem.name }}</h2>
                     <button type="button" class="atlas-reset" @click="closeAtlasDetail">
                       返回图册
@@ -207,7 +242,6 @@
                   <p class="legend-block__copy">{{ currentGroup.description }}</p>
                   <div class="legend-block__chips">
                     <span>{{ currentCategory.title }}</span>
-                    <span>{{ currentGroup.subtitle }}</span>
                     <span>{{ visibleCountLabel }} 样本</span>
                   </div>
                 </section>
@@ -315,14 +349,7 @@
               <template v-else>
                 <div class="atlas-strip">
                   <div class="atlas-strip__title">
-                    <div class="atlas-strip__eyebrow">{{ atlasEyebrow }}</div>
                     <h3>{{ currentGroup.title }}</h3>
-                    <p>{{ atlasStripCopy }}</p>
-                  </div>
-
-                  <div class="atlas-strip__meta">
-                    <span>{{ atlasFilterSummary }}</span>
-                    <span>{{ visibleCountLabel }} 样本</span>
                   </div>
                 </div>
 
@@ -365,7 +392,6 @@
                       </div>
 
                       <div class="atlas-card__badge">{{ item.dynasty }}</div>
-                      <div class="atlas-card__action">点击查看线稿与详解</div>
                       <div class="atlas-card__veil"></div>
                     </div>
 
@@ -670,25 +696,6 @@ const visibleCountLabel = computed(() => {
   return `${start}-${end}/${total}`;
 });
 
-const atlasEyebrow = computed(() =>
-  `${currentCategory.value?.english ?? 'Architecture'} Album`,
-);
-
-const atlasFilterSummary = computed(() => {
-  if (!hasAtlasFilters.value) {
-    return currentGroup.value?.subtitle ?? '专题图册';
-  }
-
-  const dynastyLabel = activeDynastyFilter.value === ALL_FILTER ? '全部朝代' : activeDynastyFilter.value;
-  const regionLabel = activeRegionFilter.value === ALL_FILTER ? '全部地域' : activeRegionFilter.value;
-  return `${dynastyLabel} · ${regionLabel}`;
-});
-
-const atlasStripCopy = computed(() =>
-  hasAtlasFilters.value
-    ? '点击卡片进入线稿与详细说明页，可结合左侧朝代、地域筛选与右侧时间轴对比样本。'
-    : '点击卡片进入线稿与详细说明页，可结合滚轮切换与右侧时间轴快速浏览当前专题。',
-);
 
 const dynastyFilterDescriptions: Record<string, string> = {
   全部: '查看全部时代样本',
@@ -721,7 +728,7 @@ const groupSealByTitle: Record<string, string> = {
   宅院府第: '宅',
   聚落村寨: '聚',
   园居草堂: '园',
-  围屋土楼碉楼: '围',
+  土楼碉堡: '土',
   吊脚干栏: '吊',
   城墙城防: '城',
   衙署公堂: '衙',
@@ -852,7 +859,7 @@ const featureDetailCopy: Record<string, { spatial: string; craft: string }> = {
     spatial: '院落、园景、书斋和居室常被交错布置，空间节奏比普通宅院更自由，也更强调停驻与游观。',
     craft: '可重点观察亭、廊、堂、窗与景框关系，理解日常起居和观赏性空间如何彼此嵌套。',
   },
-  围屋土楼碉楼: {
+  土楼碉堡: {
     spatial: '厚墙、角楼或塔楼与向心院落共同构成强边界，内部交通和生活空间则围绕核心院心组织。',
     craft: '先抓外围防护体量，再看开窗节制、楼层关系和内部单元重复，防御逻辑通常比立面装饰更重要。',
   },
@@ -1360,13 +1367,8 @@ watch(
   min-height: 0;
 }
 
-.catalog-shell--with-hud .stage--groups,
 .catalog-shell--with-hud .stage--gallery {
   box-sizing: border-box;
-}
-
-.catalog-shell--with-hud .stage--groups {
-  padding-top: var(--catalog-hud-offset);
 }
 
 .catalog-shell--with-hud .stage--gallery {
@@ -1377,6 +1379,20 @@ watch(
 .stage--groups {
   margin: -14px;
   height: calc(100% + 28px);
+}
+
+.stage--groups {
+  position: relative;
+}
+
+.stage-actions--floating {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  z-index: 20;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .category-grid {
@@ -1645,6 +1661,80 @@ watch(
   backdrop-filter: blur(5px);
 }
 
+.stage--home .category-slab__seal,
+.stage--groups .category-slab__seal,
+.stage--home .category-slab__alias,
+.stage--groups .category-slab__alias,
+.stage--home .category-slab__english,
+.stage--groups .category-slab__english,
+.stage--home .category-slab__title-wrap p,
+.stage--groups .category-slab__title-wrap p,
+.stage--home .category-slab__poster-copy p,
+.stage--groups .category-slab__poster-copy p,
+.stage--groups .group-slab__eyebrow,
+.stage--home .category-slab__enter,
+.stage--groups .category-slab__enter,
+.stage--groups .group-slab__footer,
+.stage--groups .group-slab__count {
+  display: none;
+}
+
+.stage--home .category-slab,
+.stage--groups .category-slab {
+  justify-content: flex-end;
+}
+
+.stage--home .category-slab__content,
+.stage--groups .category-slab__content {
+  grid-template-columns: 1fr;
+  gap: 0;
+  max-width: none;
+  align-self: flex-end;
+}
+
+.stage--home .category-slab__poster-copy,
+.stage--groups .category-slab__poster-copy {
+  gap: 0;
+  align-self: flex-end;
+  width: auto;
+  padding: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.stage--home .category-slab__poster-head,
+.stage--groups .category-slab__poster-head {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.stage--home .category-slab__title-wrap,
+.stage--groups .category-slab__title-wrap,
+.stage--home .category-slab__poster-title-wrap,
+.stage--groups .category-slab__poster-title-wrap,
+.stage--groups .group-slab__title-wrap {
+  max-width: none;
+}
+
+.stage--home .category-slab__title,
+.stage--groups .category-slab__title {
+  font-size: clamp(42px, 4.8vw, 68px);
+  line-height: 0.96;
+  color: #2e1f19;
+  text-shadow: 0 3px 16px rgba(255, 247, 236, 0.22);
+}
+
+.stage--groups .group-slab__title {
+  font-size: clamp(40px, 4.4vw, 62px);
+}
+
+.stage--home .category-slab__art,
+.stage--groups .category-slab__art {
+  margin-top: 0;
+}
+
 .group-grid {
   height: 100%;
   min-height: 0;
@@ -1684,6 +1774,16 @@ watch(
 
 .group-slab__title {
   font-size: clamp(28px, 3vw, 40px);
+}
+
+.group-slab__title-wrap--right {
+  margin-left: auto;
+  text-align: right;
+}
+
+.group-slab__title--right {
+  margin-left: auto;
+  text-align: right;
 }
 
 .group-slab__art {
@@ -2738,15 +2838,20 @@ watch(
     grid-template-columns: 1fr;
   }
 
-  .catalog-shell--with-hud .stage--groups {
-    padding-top: var(--catalog-hud-offset);
-  }
-
   .stage--home,
   .stage--groups {
     margin: -10px;
     height: auto;
     min-height: calc(100vh - 20px);
+  }
+
+  .stage--groups {
+    padding-top: 62px;
+  }
+
+  .stage-actions--floating {
+    top: 12px;
+    right: 12px;
   }
 
   .category-slab__art {

@@ -1,51 +1,51 @@
 <template>
-  <aside class="era-timeline">
-    <div ref="chartRef" class="era-timeline__chart"></div>
+  <aside class="era-timeline line-timeline">
+    <div class="line-timeline__header">
+      <div class="line-timeline__titles">
+        <span class="line-timeline__title-item">{{ uiText.yearTitle }}</span>
+      </div>
+
+      <div class="line-timeline__legend">
+        <div class="line-timeline__legend-item">
+          <i class="line-timeline__legend-dot line-timeline__legend-dot--primary"></i>
+          <span>{{ uiText.primaryLegend }}</span>
+        </div>
+        <div class="line-timeline__legend-item">
+          <i class="line-timeline__legend-dot line-timeline__legend-dot--secondary"></i>
+          <span>{{ uiText.secondaryLegend }}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="line-timeline__chart-shell">
+      <div ref="chartRef" class="line-timeline__chart"></div>
+    </div>
   </aside>
 </template>
 
 <script setup lang="ts">
 import * as echarts from 'echarts/core';
-import { GridComponent, TitleComponent, TooltipComponent } from 'echarts/components';
-import { EffectScatterChart, ScatterChart } from 'echarts/charts';
+import { GridComponent, TooltipComponent } from 'echarts/components';
+import { LineChart, ScatterChart } from 'echarts/charts';
 import { CanvasRenderer } from 'echarts/renderers';
-import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue';
+import { computed, onMounted, onUnmounted, ref, watch } from 'vue';
 
 import type { BuildingGalleryItem } from '../types';
 
-echarts.use([TitleComponent, GridComponent, TooltipComponent, ScatterChart, EffectScatterChart, CanvasRenderer]);
+echarts.use([GridComponent, TooltipComponent, LineChart, ScatterChart, CanvasRenderer]);
 
-interface EraBucket {
+interface DensityBucket {
   start: number;
   end: number;
   count: number;
   items: BuildingGalleryItem[];
 }
 
-interface TimelinePointDatum {
-  value: [number, number, number];
-  itemId: string;
-  itemName: string;
-  yearLabel: string;
-  bucketStart: number;
-  bucketLabel: string;
-  bucketCount: number;
-  symbolSize: number;
-  itemStyle: {
-    color: string;
-    shadowBlur: number;
-    shadowColor: string;
-  };
-  label: {
-    show: boolean;
-    position: 'right';
-    distance: number;
-    formatter: string;
-    fontFamily: string;
-    fontSize: number;
-    fontWeight: number;
-    color: string;
-  };
+interface BucketMetric {
+  start: number;
+  centerYear: number;
+  primaryWidth: number;
+  secondaryWidth: number;
 }
 
 const props = withDefaults(
@@ -64,180 +64,206 @@ const emit = defineEmits<{
   hover: [id: string | null];
 }>();
 
+const BUCKET_SPAN = 50;
+const MAJOR_YEAR_INTERVAL = 100;
+const JAGGED_YEAR_STEP = 10;
+const BASE_X_MAX = 4.95;
+const RIGHT_WIDE_STRIP_OFFSET = 0.16;
+const RIGHT_THIN_STRIP_OFFSET = 0.05;
+
+const uiText = {
+  yearTitle: '年份',
+  primaryLegend: '建筑数量',
+  secondaryLegend: '聚集强度',
+} as const;
+
 const chartRef = ref<HTMLDivElement | null>(null);
 let chart: echarts.ECharts | null = null;
-let resizeObserver: ResizeObserver | null = null;
 
-const POINT_COLOR = '#e59a80';
-const AXIS_COLOR = '#333333';
+const selectedItem = computed(() => props.items.find((item) => item.id === props.activeId) ?? null);
 
-const withAlpha = (color: string, alpha: number) => {
-  const normalized = color.replace('#', '');
-
-  if (normalized.length === 3) {
-    const [r, g, b] = normalized.split('').map((token) => Number.parseInt(token + token, 16));
-    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
-  }
-
-  if (normalized.length === 6) {
-    const r = Number.parseInt(normalized.slice(0, 2), 16);
-    const g = Number.parseInt(normalized.slice(2, 4), 16);
-    const b = Number.parseInt(normalized.slice(4, 6), 16);
-    return `rgba(${r}, ${g}, ${b}, ${alpha})`;
-  }
-
-  return color;
-};
-
-const formatYear = (year: number) => (year < 0 ? `前${Math.abs(year)}年` : `${year}年`);
-
-const orderedItems = computed(() => [...props.items].sort((left, right) => left.year - right.year));
-
-const rawMinYear = computed(() => {
-  const values = orderedItems.value.map((item) => item.year);
-  return values.length ? Math.min(...values) : 0;
-});
-
-const rawMaxYear = computed(() => {
-  const values = orderedItems.value.map((item) => item.year);
-  return values.length ? Math.max(...values) : 100;
-});
-
-const yearInterval = computed(() => {
-  const range = rawMaxYear.value - rawMinYear.value;
-
-  if (range > 520) {
-    return 100;
-  }
-
-  if (range > 280) {
-    return 50;
-  }
-
-  return 25;
-});
-
-const bucketSpan = computed(() => {
-  const range = rawMaxYear.value - rawMinYear.value;
-
-  if (range > 520) {
-    return 60;
-  }
-
-  if (range > 280) {
-    return 40;
-  }
-
-  return 25;
-});
-
-const minYear = computed(() =>
-  Math.floor(rawMinYear.value / yearInterval.value) * yearInterval.value,
-);
-
-const maxYear = computed(() =>
-  Math.ceil(rawMaxYear.value / yearInterval.value) * yearInterval.value,
-);
-
-const buckets = computed<EraBucket[]>(() => {
+const buckets = computed<DensityBucket[]>(() => {
   const grouped = new Map<number, BuildingGalleryItem[]>();
 
-  for (const item of orderedItems.value) {
-    const start = Math.floor(item.year / bucketSpan.value) * bucketSpan.value;
-    const list = grouped.get(start) ?? [];
+  for (const item of props.items) {
+    const bucketStart = Math.floor(item.year / BUCKET_SPAN) * BUCKET_SPAN;
+    const list = grouped.get(bucketStart) ?? [];
     list.push(item);
-    grouped.set(start, list);
+    grouped.set(bucketStart, list);
   }
 
   return Array.from(grouped.entries())
     .sort((left, right) => left[0] - right[0])
     .map(([start, items]) => ({
       start,
-      end: start + bucketSpan.value - 1,
+      end: start + BUCKET_SPAN - 1,
       count: items.length,
-      items: [...items].sort((left, right) => left.year - right.year),
+      items: [...items].sort((left, right) => left.year - right.year || left.name.localeCompare(right.name)),
     }));
 });
 
-const bucketMap = computed(() => new Map(buckets.value.map((bucket) => [bucket.start, bucket])));
-const maxCount = computed(() => Math.max(1, ...buckets.value.map((bucket) => bucket.count)));
-const countEmphasisThreshold = computed(() => Math.max(2, Math.ceil(maxCount.value * 0.7)));
-
-const getBucketLabel = (bucket: EraBucket) =>
-  bucket.start === bucket.end
-    ? formatYear(bucket.start)
-    : `${formatYear(bucket.start)} - ${formatYear(bucket.end)}`;
-
-const getSymbolSize = (bucketCount: number) => {
-  const ratio = bucketCount / Math.max(1, maxCount.value);
-  return Math.round(8 + ratio * 20);
-};
-
-const getDensityOffset = (bucketCount: number, indexInBucket: number) => {
-  const base = 1 + bucketCount * 0.78;
-  const spread = indexInBucket * 0.58;
-  return Number((base + spread).toFixed(2));
-};
-
-const pointData = computed<TimelinePointDatum[]>(() =>
-  buckets.value.flatMap((bucket) =>
-    bucket.items.map((item, indexInBucket) => {
-      const symbolSize = getSymbolSize(bucket.count);
-      const isEmphasis = bucket.count >= countEmphasisThreshold.value;
-      const isLabelAnchor = bucket.count > 1 && indexInBucket === bucket.items.length - 1;
-
-      return {
-        value: [getDensityOffset(bucket.count, indexInBucket), item.year, bucket.count],
-        itemId: item.id,
-        itemName: item.name,
-        yearLabel: formatYear(item.year),
-        bucketStart: bucket.start,
-        bucketLabel: getBucketLabel(bucket),
-        bucketCount: bucket.count,
-        symbolSize,
-        itemStyle: {
-          color: POINT_COLOR,
-          shadowBlur: isEmphasis ? 12 : 8,
-          shadowColor: withAlpha(POINT_COLOR, isEmphasis ? 0.28 : 0.16),
-        },
-        label: {
-          show: isLabelAnchor,
-          position: 'right',
-          distance: Math.max(10, Math.round(symbolSize * 0.42)),
-          formatter: `${bucket.count}`,
-          fontFamily: 'ContentFont',
-          fontSize: isEmphasis ? 16 : 13,
-          fontWeight: isEmphasis ? 700 : 400,
-          color: AXIS_COLOR,
-        },
-      };
-    }),
+const maxCount = computed(() =>
+  Math.max(
+    1,
+    ...buckets.value.map((bucket) => bucket.count),
   ),
 );
 
-const xAxisMax = computed(() => {
-  const offsets = pointData.value.map((item) => item.value[0]);
-  return Math.max(6, ...(offsets.length ? offsets : [0])) + 4;
+const floorToCentury = (year: number) => Math.floor(year / MAJOR_YEAR_INTERVAL) * MAJOR_YEAR_INTERVAL;
+const ceilToCentury = (year: number) => Math.ceil(year / MAJOR_YEAR_INTERVAL) * MAJOR_YEAR_INTERVAL;
+
+const minYear = computed(() => {
+  if (!props.items.length) {
+    return 100;
+  }
+
+  const earliestYear = Math.min(...props.items.map((item) => item.year));
+  return floorToCentury(earliestYear);
 });
 
-const selectedPoint = computed(
-  () => pointData.value.find((item) => item.itemId === props.activeId) ?? null,
+const maxYear = computed(() => {
+  if (!props.items.length) {
+    return 2000;
+  }
+
+  const latestYear = Math.max(...props.items.map((item) => item.year));
+  const normalizedMax = ceilToCentury(latestYear);
+  return Math.max(normalizedMax, minYear.value + MAJOR_YEAR_INTERVAL);
+});
+
+const getDominantClusterCount = (items: BuildingGalleryItem[]) => {
+  const counts = new Map<string, number>();
+
+  for (const item of items) {
+    const key = item.regionFamily ?? item.dynasty ?? item.region;
+    counts.set(key, (counts.get(key) ?? 0) + 1);
+  }
+
+  return Math.max(1, ...counts.values());
+};
+
+const bucketMetrics = computed<BucketMetric[]>(() =>
+  buckets.value.map((bucket) => {
+    const dominantCount = getDominantClusterCount(bucket.items);
+    const countRatio = bucket.count / maxCount.value;
+    const dominantRatio = dominantCount / Math.max(1, bucket.count);
+
+    return {
+      start: bucket.start,
+      centerYear: bucket.start + BUCKET_SPAN / 2,
+      primaryWidth: 0.86 + countRatio * 2.18,
+      secondaryWidth: 0.48 + dominantRatio * 0.98 + countRatio * 0.56,
+    };
+  }),
 );
 
-const handleChartClick = (params: { data?: TimelinePointDatum }) => {
-  const itemId = params.data?.itemId;
+const xAxisMax = computed(() => {
+  const widestPrimary = Math.max(0, ...bucketMetrics.value.map((item) => item.primaryWidth));
+  return Math.max(BASE_X_MAX, widestPrimary + 1.76);
+});
 
-  if (itemId) {
-    emit('select', itemId);
+const selectedBucketStart = computed(() => {
+  if (selectedItem.value) {
+    return Math.floor(selectedItem.value.year / BUCKET_SPAN) * BUCKET_SPAN;
+  }
+
+  return buckets.value[0]?.start ?? null;
+});
+
+const selectedBucket = computed(
+  () => buckets.value.find((bucket) => bucket.start === selectedBucketStart.value) ?? null,
+);
+
+const selectedYear = computed(() => selectedItem.value?.year ?? null);
+
+const clamp = (value: number, min: number, max: number) => Math.min(max, Math.max(min, value));
+
+const interpolateMetric = (year: number, key: 'primaryWidth' | 'secondaryWidth') => {
+  const metrics = bucketMetrics.value;
+
+  if (!metrics.length) {
+    return key === 'primaryWidth' ? 1.2 : 0.72;
+  }
+
+  if (year <= metrics[0].centerYear) {
+    return metrics[0][key];
+  }
+
+  const last = metrics[metrics.length - 1];
+  if (year >= last.centerYear) {
+    return last[key];
+  }
+
+  for (let index = 1; index < metrics.length; index += 1) {
+    const previous = metrics[index - 1];
+    const current = metrics[index];
+
+    if (year <= current.centerYear) {
+      const progress = (year - previous.centerYear) / Math.max(1, current.centerYear - previous.centerYear);
+      return previous[key] + (current[key] - previous[key]) * progress;
+    }
+  }
+
+  return last[key];
+};
+
+const buildJaggedAreaData = (key: 'primaryWidth' | 'secondaryWidth') => {
+  const values: [number, number][] = [];
+  const start = minYear.value;
+  const end = maxYear.value;
+
+  for (let year = start; year <= end; year += JAGGED_YEAR_STEP) {
+    const base = interpolateMetric(year, key);
+    const fallbackMax = xAxisMax.value - (key === 'primaryWidth' ? 1.14 : 1.76);
+    values.push([clamp(base, 0.24, fallbackMax), year]);
+  }
+
+  if (!values.length || values[values.length - 1][1] !== end) {
+    const base = interpolateMetric(end, key);
+    const fallbackMax = xAxisMax.value - (key === 'primaryWidth' ? 1.14 : 1.76);
+    values.push([clamp(base, 0.24, fallbackMax), end]);
+  }
+
+  return values;
+};
+
+const smoothWidthData = (values: [number, number][], radius = 2) =>
+  values.map(([, year], index) => {
+    let sum = 0;
+    let count = 0;
+
+    for (let offset = -radius; offset <= radius; offset += 1) {
+      const point = values[index + offset];
+      if (!point) {
+        continue;
+      }
+
+      sum += point[0];
+      count += 1;
+    }
+
+    return [sum / Math.max(1, count), year] as [number, number];
+  });
+
+const getBucketPreferredItem = (bucketStart: number | null | undefined) => {
+  if (bucketStart === null || bucketStart === undefined) {
+    return null;
+  }
+
+  const bucket = buckets.value.find((item) => item.start === bucketStart);
+  return bucket?.items.find((item) => item.id === props.activeId) ?? bucket?.items[0] ?? null;
+};
+
+const handleBucketClick = (bucketStart: number | null | undefined) => {
+  const preferred = getBucketPreferredItem(bucketStart);
+
+  if (preferred) {
+    emit('select', preferred.id);
   }
 };
 
-const handleChartMouseOver = (params: { data?: TimelinePointDatum }) => {
-  emit('hover', params.data?.itemId ?? null);
-};
-
-const handleChartGlobalOut = () => {
-  emit('hover', null);
+const handleBucketHover = (bucketStart: number | null | undefined) => {
+  emit('hover', getBucketPreferredItem(bucketStart)?.id ?? null);
 };
 
 const renderChart = () => {
@@ -245,151 +271,252 @@ const renderChart = () => {
     return;
   }
 
-  if (!orderedItems.value.length) {
+  if (!props.items.length) {
     chart?.clear();
+    emit('hover', null);
     return;
   }
 
   if (!chart) {
     chart = echarts.init(chartRef.value);
-    chart.on('click', handleChartClick);
-    chart.on('mouseover', handleChartMouseOver);
-    chart.on('globalout', handleChartGlobalOut);
+
+    chart.on('click', (params) => {
+      const bucketStart = (params.data as { bucketStart?: number } | undefined)?.bucketStart;
+      handleBucketClick(bucketStart);
+    });
+
+    chart.on('mouseover', (params) => {
+      const bucketStart = (params.data as { bucketStart?: number } | undefined)?.bucketStart;
+      handleBucketHover(bucketStart);
+    });
+
+    chart.on('globalout', () => {
+      emit('hover', null);
+    });
   }
 
-  const focusData = selectedPoint.value
-    ? [
-        {
-          ...selectedPoint.value,
-          itemStyle: {
-            color: props.accent,
-            shadowBlur: 16,
-            shadowColor: withAlpha(props.accent, 0.28),
-          },
-          symbolSize: Math.max(20, selectedPoint.value.symbolSize + 6),
-        },
+  const rightWideStripX = xAxisMax.value - RIGHT_WIDE_STRIP_OFFSET;
+  const rightThinStripX = xAxisMax.value - RIGHT_THIN_STRIP_OFFSET;
+
+  const primaryWidthData = smoothWidthData(buildJaggedAreaData('primaryWidth'), 2);
+  const secondaryWidthData = smoothWidthData(buildJaggedAreaData('secondaryWidth'), 2);
+
+  const primaryAreaData = primaryWidthData.map(([width, year]) => [
+    clamp(xAxisMax.value - width, 0.14, xAxisMax.value - 0.08),
+    year,
+  ] as [number, number]);
+
+  const secondaryAreaData = secondaryWidthData.map(([width, year], index) => {
+    const primaryWidth = primaryWidthData[index]?.[0] ?? width;
+    const clampedWidth = Math.min(width, Math.max(0.16, primaryWidth - 0.09));
+
+    return [
+      clamp(xAxisMax.value - clampedWidth, 0.18, xAxisMax.value - 0.08),
+      year,
+    ] as [number, number];
+  });
+
+  const hitAreaData = buckets.value.map((bucket) => ({
+    value: (() => {
+      const primaryWidth = interpolateMetric(bucket.start + BUCKET_SPAN / 2, 'primaryWidth');
+      const secondaryWidth = interpolateMetric(bucket.start + BUCKET_SPAN / 2, 'secondaryWidth');
+      const clampedWidth = Math.min(secondaryWidth, Math.max(0.16, primaryWidth - 0.09));
+
+      return [
+        clamp(
+          xAxisMax.value - clampedWidth,
+          0.18,
+          xAxisMax.value - 0.08,
+        ),
+        bucket.start + BUCKET_SPAN / 2,
+      ];
+    })(),
+    bucketStart: bucket.start,
+    count: bucket.count,
+    symbolSize: 18,
+    itemStyle: {
+      color: 'rgba(0,0,0,0)',
+    },
+  }));
+
+  const selectedGuideStartX = 0.02;
+  const selectedGuideEndX =
+    selectedYear.value === null
+      ? null
+      : clamp(rightThinStripX - 0.03, selectedGuideStartX + 0.48, xAxisMax.value - 0.08);
+
+  const selectedGuideData =
+    selectedYear.value !== null && selectedGuideEndX !== null
+      ? [
+        [selectedGuideStartX, selectedYear.value],
+        [selectedGuideEndX, selectedYear.value],
       ]
-    : [];
+      : [];
+
+  const selectedBandHalf = 10;
+  const selectedBandStart =
+    selectedYear.value === null ? null : clamp(selectedYear.value - selectedBandHalf, minYear.value, maxYear.value);
+  const selectedBandEnd =
+    selectedYear.value === null ? null : clamp(selectedYear.value + selectedBandHalf, minYear.value, maxYear.value);
 
   chart.setOption(
     {
       backgroundColor: 'transparent',
-      animationDurationUpdate: 260,
+      animationDurationUpdate: 280,
+      animationEasingUpdate: 'cubicOut',
       grid: {
-        top: 56,
-        right: 42,
-        bottom: 16,
-        left: 52,
+        top: 10,
+        right: 5,
+        bottom: 8,
+        left: 32,
         containLabel: false,
       },
-      title: {
-        text: '建筑时间轴',
-        left: 'center',
-        top: 8,
-        textStyle: {
-          fontFamily: 'ChartTitleFont',
-          fontSize: 24,
-          fontWeight: 'bold',
-          color: AXIS_COLOR,
-        },
-      },
-      tooltip: {
-        trigger: 'item',
-        position: 'right',
-        textStyle: {
-          fontFamily: 'ContentFont',
-          fontSize: 14,
-          fontWeight: 'bold',
-          color: AXIS_COLOR,
-        },
-        extraCssText:
-          'max-width: 260px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.2); white-space: normal;',
-        formatter: (params: { data?: TimelinePointDatum }) => {
-          const item = params.data;
-
-          if (!item) {
-            return '';
-          }
-
-          const bucket = bucketMap.value.get(item.bucketStart);
-          const names = bucket?.items.map((entry) => entry.name) ?? [item.itemName];
-          const preview = names.slice(0, 4).join('、');
-          const suffix = names.length > 4 ? ` 等${names.length}处` : '';
-
-          return [
-            '<div style="max-width: 240px">',
-            `<h3 style="margin: 0; font-size: 18px">${item.itemName}</h3>`,
-            `<p style="margin: 6px 0">${item.yearLabel}</p>`,
-            `<p style="margin: 6px 0">时段：${item.bucketLabel}</p>`,
-            `<p style="margin: 6px 0">该时段建筑数量：${item.bucketCount}</p>`,
-            `<p style="margin: 0; line-height: 1.5; font-weight: 400;">${preview}${suffix}</p>`,
-            '</div>',
-          ].join('');
-        },
-      },
+      tooltip: { show: false },
       xAxis: {
         type: 'value',
         min: 0,
         max: xAxisMax.value,
-        show: false,
+        axisLabel: { show: false },
+        splitLine: { show: false },
+        axisLine: { show: false },
+        axisTick: { show: false },
       },
       yAxis: {
         type: 'value',
         inverse: true,
         min: minYear.value,
         max: maxYear.value,
-        interval: yearInterval.value,
+        interval: MAJOR_YEAR_INTERVAL,
         axisLabel: {
-          fontFamily: 'ContentFont',
-          fontSize: 12,
-          fontWeight: 'bold',
-          color: AXIS_COLOR,
-          margin: 10,
-          formatter: (value: number) => `${value}`,
+          inside: true,
+          align: 'left',
+          color: '#6f5a4c',
+          fontFamily: "'STKaiti', 'KaiTi', serif",
+          fontSize: 10,
+          fontWeight: 600,
+          margin: 4,
         },
+        splitLine: { show: false },
         axisTick: {
           show: true,
           inside: false,
           length: 4,
           lineStyle: {
-            color: AXIS_COLOR,
+            color: 'rgba(168, 60, 59, 0.92)',
+            width: 1,
+          },
+        },
+        minorTick: {
+          show: true,
+          splitNumber: 10,
+          length: 2,
+          lineStyle: {
+            color: 'rgba(168, 60, 59, 0.68)',
           },
         },
         axisLine: {
-          show: true,
           lineStyle: {
-            color: AXIS_COLOR,
-            width: 1.2,
+            color: '#a83c3b',
+            width: 1,
+            type: 'solid',
           },
-        },
-        splitLine: {
-          show: false,
         },
       },
       series: [
         {
-          type: 'scatter',
-          data: pointData.value,
-          symbol: 'circle',
-          symbolSize: (value: number[]) => {
-            const density = value[2] ?? 1;
-            return getSymbolSize(density);
+          type: 'line',
+          data: primaryAreaData,
+          smooth: false,
+          symbol: 'none',
+          silent: true,
+          z: 1,
+          lineStyle: {
+            color: 'transparent',
+            width: 0,
           },
-          z: 4,
+          areaStyle: {
+            color: 'rgba(155, 161, 157, 0.42)',
+            opacity: 1,
+            origin: 'end',
+          },
         },
         {
-          type: 'effectScatter',
-          data: focusData,
-          symbol: 'circle',
-          symbolSize: (value: number[]) => {
-            const density = value[2] ?? 1;
-            return Math.max(20, getSymbolSize(density) + 6);
+          type: 'line',
+          data: secondaryAreaData,
+          smooth: false,
+          symbol: 'none',
+          silent: true,
+          z: 2,
+          lineStyle: {
+            color: 'transparent',
+            width: 0,
           },
+          areaStyle: {
+            color: 'rgba(101, 126, 101, 0.62)',
+            opacity: 1,
+            origin: 'end',
+          },
+        },
+        {
+          type: 'line',
+          data: [
+            [rightWideStripX, minYear.value],
+            [rightWideStripX, maxYear.value],
+          ],
+          symbol: 'none',
+          silent: true,
+          z: 1,
+          lineStyle: {
+            color: 'rgba(168, 178, 162, 0.94)',
+            width: 11,
+          },
+        },
+        {
+          type: 'line',
+          data: [
+            [rightThinStripX, minYear.value],
+            [rightThinStripX, maxYear.value],
+          ],
+          symbol: 'none',
+          silent: true,
+          z: 1,
+          lineStyle: {
+            color: 'rgba(212, 219, 204, 0.88)',
+            width: 8,
+          },
+        },
+        {
+          type: 'line',
+          data:
+            selectedBandStart !== null && selectedBandEnd !== null
+              ? [
+                  [rightThinStripX, selectedBandStart],
+                  [rightThinStripX, selectedBandEnd],
+                ]
+              : [],
+          symbol: 'none',
+          silent: true,
+          z: 4,
+          lineStyle: {
+            color: '#4c755e',
+            width: 6,
+          },
+        },
+        {
+          type: 'line',
+          data: selectedGuideData,
+          symbol: 'none',
+          silent: true,
           z: 5,
-          rippleEffect: {
-            scale: 3.2,
-            brushType: 'stroke',
+          lineStyle: {
+            color: 'rgba(156, 58, 53, 0.78)',
+            width: 1.3,
           },
+        },
+        {
+          type: 'scatter',
+          data: hitAreaData,
+          z: 0,
         },
       ],
     },
@@ -404,53 +531,116 @@ const handleResize = () => {
 };
 
 watch(
-  () => [props.items, props.activeId, props.accent],
+  () => [props.items, props.activeId],
   () => {
-    nextTick(() => {
-      renderChart();
-    });
+    renderChart();
   },
-  { deep: true, flush: 'post' },
+  { deep: true },
 );
 
 onMounted(() => {
-  nextTick(() => {
-    renderChart();
-  });
+  renderChart();
   window.addEventListener('resize', handleResize);
-
-  if (typeof ResizeObserver !== 'undefined' && chartRef.value) {
-    resizeObserver = new ResizeObserver(() => {
-      handleResize();
-    });
-    resizeObserver.observe(chartRef.value);
-  }
 });
 
 onUnmounted(() => {
   window.removeEventListener('resize', handleResize);
-  resizeObserver?.disconnect();
-  resizeObserver = null;
-  chart?.off('click', handleChartClick);
-  chart?.off('mouseover', handleChartMouseOver);
-  chart?.off('globalout', handleChartGlobalOut);
   chart?.dispose();
   chart = null;
 });
 </script>
 
 <style scoped lang="scss">
-.era-timeline {
+.line-timeline {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: 4px;
   width: 100%;
   height: 100%;
   min-height: 0;
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  background: transparent;
+  padding: 2px 0 0;
+  overflow: hidden;
+  background: rgba(228, 220, 203, 0.14);
 }
 
-.era-timeline__chart {
+.line-timeline__header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  gap: 8px;
+  padding: 0 6px 0 0;
+}
+
+.line-timeline__titles {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  min-width: 0;
+  padding-left: 20px;
+}
+
+.line-timeline__title-item {
+  font-family: 'STKaiti', 'KaiTi', 'Kaiti SC', serif;
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  color: #9c3a35;
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.line-timeline__legend {
+  display: grid;
+  justify-items: start;
+  gap: 4px;
+  margin-top: 2px;
+  padding-right: 8px;
+}
+
+.line-timeline__legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'STKaiti', 'KaiTi', 'Kaiti SC', serif;
+  font-size: 11px;
+  line-height: 1;
+  color: #4a433a;
+  white-space: nowrap;
+}
+
+.line-timeline__legend-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 250, 241, 0.65);
+  box-shadow: 0 0 0 1px rgba(121, 106, 91, 0.24);
+}
+
+.line-timeline__legend-dot--primary {
+  background: #657e65;
+}
+
+.line-timeline__legend-dot--secondary {
+  background: #9ba19d;
+}
+
+.line-timeline__chart-shell {
+  position: relative;
+  flex: 1 1 auto;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 0;
+  background:
+    linear-gradient(180deg, rgba(233, 225, 211, 0.38), rgba(233, 225, 211, 0.1)),
+    radial-gradient(circle at 36% 18%, rgba(255, 255, 255, 0.14), transparent 30%);
+  border-left: 1px solid rgba(168, 60, 59, 0.07);
+  border-right: 1px solid rgba(130, 119, 103, 0.12);
+  margin-top: -2px;
+}
+
+.line-timeline__chart {
   width: 100%;
   height: 100%;
   min-height: 0;

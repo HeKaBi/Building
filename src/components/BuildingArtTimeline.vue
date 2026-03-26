@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <aside class="art-timeline">
     <div class="art-timeline__wash"></div>
     <div class="art-timeline__petal art-timeline__petal--a"></div>
@@ -27,41 +27,35 @@
 <script setup lang="ts">
 import * as echarts from 'echarts/core';
 import { GridComponent, TooltipComponent } from 'echarts/components';
-import { LineChart, ScatterChart } from 'echarts/charts';
+import { ScatterChart } from 'echarts/charts';
 import { CanvasRenderer } from 'echarts/renderers';
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue';
 
 import type { DashboardBuilding, DashboardCategory } from '@/demo/building-dashboard/types';
+import vintage from '@/assets/theme/vintage.json';
 
-echarts.use([GridComponent, TooltipComponent, LineChart, ScatterChart, CanvasRenderer]);
+echarts.use([GridComponent, TooltipComponent, ScatterChart, CanvasRenderer]);
 
 interface TimelinePalette {
   color: string;
   accentColor: string;
 }
 
-interface TimelineBucket {
-  start: number;
-  end: number;
-  centerYear: number;
+interface TimelineYearStat {
+  year: number;
   count: number;
-  importance: number;
   items: DashboardBuilding[];
 }
 
 interface TimelinePointDatum {
-  value: [number, number];
-  kind: 'bubble' | 'milestone';
+  value: [number, number, number];
   bucketLabel: string;
   yearLabel: string;
   count: number;
   symbolSize: number;
-  importance: number;
   itemStyle: {
     color: string;
     opacity: number;
-    shadowBlur?: number;
-    shadowColor?: string;
   };
   names: string[];
 }
@@ -81,26 +75,12 @@ const categoryPalettes: Record<DashboardCategory, TimelinePalette> = {
 const chartRef = ref<HTMLDivElement | null>(null);
 let chart: echarts.ECharts | null = null;
 let resizeObserver: ResizeObserver | null = null;
+const TIMELINE_THEME_NAME = 'building-art-vintage';
+let themeRegistered = false;
 
 const activePalette = computed(() => categoryPalettes[props.activeType]);
 
 const formatYear = (year: number) => (year < 0 ? `前${Math.abs(year)}` : `${year}`);
-
-const withAlpha = (hex: string, alpha: number) => {
-  const normalized = hex.replace('#', '');
-  const r = Number.parseInt(normalized.slice(0, 2), 16);
-  const g = Number.parseInt(normalized.slice(2, 4), 16);
-  const b = Number.parseInt(normalized.slice(4, 6), 16);
-  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
-};
-
-const hashToUnit = (value: string) => {
-  let hash = 0;
-  for (let index = 0; index < value.length; index += 1) {
-    hash = (hash * 33 + value.charCodeAt(index)) % 9973;
-  }
-  return (hash % 1000) / 1000;
-};
 
 const activeBuildings = computed(() =>
   props.buildings
@@ -130,122 +110,46 @@ const tickInterval = computed(() => {
   return 10;
 });
 
-const bucketSpan = computed(() => {
-  if (activeYearSpan.value > 2000) return 80;
-  if (activeYearSpan.value > 1200) return 50;
-  if (activeYearSpan.value > 700) return 30;
-  if (activeYearSpan.value > 240) return 20;
-  return 10;
-});
-
-const axisPadding = computed(() => Math.max(tickInterval.value, Math.ceil(activeYearSpan.value * 0.06)));
-
-const axisMin = computed(() => {
-  if (!activeBuildings.value.length) return 0;
-  return Math.floor((rawMinYear.value - axisPadding.value) / tickInterval.value) * tickInterval.value;
-});
-
-const axisMax = computed(() => {
-  if (!activeBuildings.value.length) return 100;
-  return Math.ceil((rawMaxYear.value + axisPadding.value) / tickInterval.value) * tickInterval.value;
-});
-
-const yAxisMin = computed(() => (axisMin.value === axisMax.value ? axisMin.value - tickInterval.value : axisMin.value));
-const yAxisMax = computed(() => (axisMin.value === axisMax.value ? axisMax.value + tickInterval.value : axisMax.value));
-
-const activeBuckets = computed(() => {
+const activeTimeline = computed(() => {
   const grouped = new Map<number, DashboardBuilding[]>();
 
   activeBuildings.value.forEach((item) => {
-    const bucketStart = Math.floor(item.year / bucketSpan.value) * bucketSpan.value;
-    const items = grouped.get(bucketStart) ?? [];
+    const items = grouped.get(item.year) ?? [];
     items.push(item);
-    grouped.set(bucketStart, items);
+    grouped.set(item.year, items);
   });
 
-  return Array.from(grouped.entries())
-    .sort((left, right) => left[0] - right[0])
-    .map(([start, items]) => {
-      const centerYear = items.reduce((sum, item) => sum + item.year, 0) / items.length;
-      const importance = items.reduce((sum, item) => sum + item.importance, 0);
-
-      return {
-        start,
-        end: start + bucketSpan.value - 1,
-        centerYear,
+  return {
+    begin: rawMinYear.value,
+    end: rawMaxYear.value,
+    timeline: Array.from(grouped.entries())
+      .sort((left, right) => left[0] - right[0])
+      .map(([year, items]) => ({
+        year,
         count: items.length,
-        importance,
-        items: [...items].sort((left, right) => right.importance - left.importance || left.year - right.year),
-      } satisfies TimelineBucket;
-    });
+        items: [...items].sort((left, right) => right.importance - left.importance || left.name.localeCompare(right.name)),
+      })) satisfies TimelineYearStat[],
+  };
 });
 
-const maxBucketCount = computed(() => Math.max(1, ...activeBuckets.value.map((bucket) => bucket.count), 0));
-const maxImportance = computed(() => Math.max(1, ...activeBuckets.value.map((bucket) => bucket.importance), 0));
+const maxYearCount = computed(() => Math.max(1, ...activeTimeline.value.timeline.map((item) => item.count), 0));
 
-const buildBucketLabel = (bucket: TimelineBucket) => `${formatYear(bucket.start)} - ${formatYear(bucket.end)}`;
+const bubbleSizeForYear = (count: number) => Math.round(5 + (count / Math.max(1, maxYearCount.value)) * 22);
 
-const bubbleSizeForBucket = (bucket: TimelineBucket) => {
-  const countRatio = bucket.count / Math.max(1, maxBucketCount.value);
-  const importanceRatio = bucket.importance / Math.max(1, maxImportance.value);
-  return Math.round(10 + countRatio * 22 + importanceRatio * 6);
-};
-
-const bubbleXOffset = (bucket: TimelineBucket) => {
-  const seed = hashToUnit(`${props.activeType}-${bucket.start}`);
-  const densityTighten = Math.min(0.06, (bucket.count / Math.max(1, maxBucketCount.value)) * 0.05);
-  const span = 0.22 - densityTighten;
-  return Number((0.46 + (seed - 0.5) * span).toFixed(3));
-};
-
-const milestoneBuckets = computed(() => {
-  const sorted = [...activeBuckets.value].sort(
-    (left, right) => right.count - left.count || right.importance - left.importance || left.centerYear - right.centerYear,
-  );
-
-  if (!sorted.length) return [];
-
-  const threshold = sorted[0].count;
-  return sorted.filter((bucket) => bucket.count >= 2 || bucket.count === threshold).slice(0, 3);
+const bubbleSeriesData = computed<TimelinePointDatum[]>(() => {
+  return activeTimeline.value.timeline.map((item) => ({
+    value: [0.18, item.year, item.count],
+    bucketLabel: formatYear(item.year),
+    yearLabel: formatYear(item.year),
+    count: item.count,
+    symbolSize: bubbleSizeForYear(item.count),
+    itemStyle: {
+      color: '#D98888',
+      opacity: 0.8,
+    },
+    names: item.items.slice(0, 6).map((building) => building.name),
+  }));
 });
-
-const bubbleSeriesData = computed<TimelinePointDatum[]>(() =>
-  activeBuckets.value.map((bucket) => ({
-    value: [bubbleXOffset(bucket), Number(bucket.centerYear.toFixed(1))],
-    kind: 'bubble',
-    bucketLabel: buildBucketLabel(bucket),
-    yearLabel: `${formatYear(Math.round(bucket.centerYear))}年`,
-    count: bucket.count,
-    symbolSize: bubbleSizeForBucket(bucket),
-    importance: bucket.importance,
-    itemStyle: {
-      color: activePalette.value.color,
-      opacity: 0.68,
-      shadowBlur: 16,
-      shadowColor: withAlpha(activePalette.value.color, 0.24),
-    },
-    names: bucket.items.slice(0, 5).map((item) => item.name),
-  })),
-);
-
-const milestoneSeriesData = computed<TimelinePointDatum[]>(() =>
-  milestoneBuckets.value.map((bucket) => ({
-    value: [0.46, Number(bucket.centerYear.toFixed(1))],
-    kind: 'milestone',
-    bucketLabel: buildBucketLabel(bucket),
-    yearLabel: `${formatYear(Math.round(bucket.centerYear))}年`,
-    count: bucket.count,
-    symbolSize: Math.max(16, bubbleSizeForBucket(bucket) * 0.78),
-    importance: bucket.importance,
-    itemStyle: {
-      color: activePalette.value.accentColor,
-      opacity: 0.82,
-      shadowBlur: 0,
-      shadowColor: 'transparent',
-    },
-    names: bucket.items.slice(0, 4).map((item) => item.name),
-  })),
-);
 
 const yearRangeLabel = computed(() => {
   if (!activeBuildings.value.length) return '暂无';
@@ -290,7 +194,11 @@ const renderChart = () => {
   if (!chartRef.value) return;
 
   if (!chart) {
-    chart = echarts.init(chartRef.value);
+    if (!themeRegistered) {
+      echarts.registerTheme(TIMELINE_THEME_NAME, JSON.parse(JSON.stringify(vintage)));
+      themeRegistered = true;
+    }
+    chart = echarts.init(chartRef.value, TIMELINE_THEME_NAME);
   }
 
   if (!activeBuildings.value.length) {
@@ -325,24 +233,23 @@ const renderChart = () => {
           if (!item) return '';
 
           const preview = item.names.join('、');
-          const title = item.kind === 'milestone' ? '高峰时段' : '样本分布';
+          const title = '年份统计';
 
           return [
-            `<div style="max-width: 220px">`,
+            '<div style="max-width: 220px">',
             `<div style="font-weight:700; margin-bottom:4px;">${props.activeType} · ${title}</div>`,
             `<div>年份：${item.yearLabel}</div>`,
-            `<div>区段：${item.bucketLabel}</div>`,
-            `<div>样本数：${item.count}</div>`,
+            `<div>数量：${item.count}</div>`,
             preview ? `<div style="margin-top:6px; line-height:1.5;">样本：${preview}</div>` : '',
-            `</div>`,
+            '</div>',
           ].join('');
         },
       },
       grid: {
-        left: '24%',
-        right: '12%',
-        top: '4%',
-        bottom: '5%',
+        left: '42%',
+        right: '3%',
+        top: '2%',
+        bottom: '3%',
         containLabel: false,
       },
       xAxis: {
@@ -353,30 +260,36 @@ const renderChart = () => {
       },
       yAxis: {
         type: 'value',
-        min: yAxisMin.value,
-        max: yAxisMax.value,
+        min: activeTimeline.value.begin,
+        max: activeTimeline.value.end,
         inverse: true,
+        position: 'left',
         interval: tickInterval.value,
         axisLabel: {
           showMinLabel: true,
           showMaxLabel: true,
           hideOverlap: true,
-          margin: 12,
-          color: '#2C2A29',
+          margin: 3,
+          color: '#4A4A4A',
           fontFamily: "Georgia, 'Times New Roman', serif",
           fontWeight: 'bold',
-          fontSize: 11,
-          formatter: (value: number) => (value === yAxisMax.value ? `${formatYear(value)}(年)` : formatYear(value)),
+          fontSize: 9,
+          formatter: (value: number) => (value === activeTimeline.value.end ? `${formatYear(value)}(年)` : formatYear(value)),
         },
         axisTick: {
           show: true,
-          length: 4,
+          interval: tickInterval.value,
+          length: 3,
           lineStyle: {
-            color: 'rgba(92, 89, 85, 0.78)',
+            color: 'rgba(140, 140, 140, 0.82)',
           },
         },
         axisLine: {
-          show: false,
+          show: true,
+          lineStyle: {
+            color: 'rgba(140, 140, 140, 0.92)',
+            width: 1,
+          },
         },
         splitLine: {
           show: false,
@@ -384,44 +297,47 @@ const renderChart = () => {
       },
       series: [
         {
-          type: 'line',
-          data: [
-            [0.46, yAxisMin.value],
-            [0.46, yAxisMax.value],
-          ],
-          symbol: 'none',
-          silent: true,
-          lineStyle: {
-            color: 'rgba(92, 89, 85, 0.76)',
-            width: 1.2,
-          },
-          z: 1,
-        },
-        {
           type: 'scatter',
-          symbol: 'circle',
           data: bubbleSeriesData.value,
-          symbolSize: (value: number[], params: { data: TimelinePointDatum }) => params.data.symbolSize,
+          symbol: 'circle',
+          symbolSize: (_value: number[], params: { data: TimelinePointDatum }) => params.data.symbolSize,
+          itemStyle: {
+            color: '#D98888',
+            opacity: 0.8,
+          },
+          emphasis: {
+            scale: false,
+            itemStyle: {
+              color: '#D98888',
+              opacity: 1,
+            },
+          },
           z: 3,
-        },
-        {
-          type: 'scatter',
-          symbol: 'triangle',
-          symbolRotate: 0,
-          data: milestoneSeriesData.value,
-          symbolSize: (value: number[], params: { data: TimelinePointDatum }) => params.data.symbolSize,
-          z: 4,
         },
       ],
     },
     true,
   );
 
-  chart.resize();
+  if (chartRef.value) {
+    chart.resize({
+      width: chartRef.value.clientWidth,
+      height: chartRef.value.clientHeight,
+    });
+  } else {
+    chart.resize();
+  }
 };
 
 const handleResize = () => {
-  chart?.resize();
+  if (chart && chartRef.value) {
+    chart.resize({
+      width: chartRef.value.clientWidth,
+      height: chartRef.value.clientHeight,
+    });
+  } else {
+    chart?.resize();
+  }
 };
 
 watch(
@@ -437,6 +353,10 @@ watch(
 onMounted(() => {
   nextTick(() => {
     renderChart();
+    requestAnimationFrame(() => {
+      handleResize();
+      renderChart();
+    });
   });
 
   window.addEventListener('resize', handleResize);

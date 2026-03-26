@@ -1,0 +1,84 @@
+{
+  "designSystem": {
+    "name": "Traditional Historical Timeline",
+    "theme": {
+      "aesthetic": "Classical, organic, traditional Asian art",
+      "texture": "Rice paper / Washi paper with subtle fiber speckles",
+      "backgroundMotif": "Faint, low-opacity overlapping waves or mountain silhouettes in the background"
+    },
+    "colorPalette": {
+      "background": {
+        "base": "#F4F1EB",
+        "textureSpeckles": "#D2CFC9",
+        "mountainMotif": "rgba(200, 205, 195, 0.2)"
+      },
+      "text": {
+        "primary": "#1A1A1A",
+        "secondary": "#4A4A4A"
+      },
+      "accent": {
+        "primary": "#D87A7B",
+        "secondary": "#E8A3A8",
+        "transparent": "rgba(216, 122, 123, 0.6)"
+      },
+      "structural": {
+        "axis": "#8C8C8C"
+      }
+    },
+    "typography": {
+      "heading": {
+        "style": "Traditional Calligraphy / Brush Script",
+        "weight": "bold",
+        "color": "$colorPalette.text.primary"
+      },
+      "labels": {
+        "style": "Clean Serif or traditional Sans-Serif",
+        "size": "small",
+        "color": "$colorPalette.text.secondary"
+      }
+    },
+    "components": {
+      "timelineAxis": {
+        "type": "horizontal",
+        "line": {
+          "thickness": "1px",
+          "style": "solid",
+          "color": "$colorPalette.structural.axis"
+        },
+        "ticks": {
+          "thickness": "1px",
+          "length": "4px",
+          "direction": "downward",
+          "color": "$colorPalette.structural.axis"
+        }
+      },
+      "dataPoints": {
+        "type": "bubble-scatter",
+        "shape": "circle",
+        "fill": "$colorPalette.accent.primary",
+        "opacity": "variable (0.4 to 0.9)",
+        "sizing": "variable (mapped to data weight/volume)",
+        "positioning": "distributed horizontally, hovering slightly above the main axis line"
+      },
+      "markers": {
+        "type": "milestone",
+        "shape": "triangle",
+        "orientation": "pointing upwards",
+        "fill": "$colorPalette.accent.primary",
+        "opacity": "0.8",
+        "positioning": "base resting directly on the axis line"
+      },
+      "decorativeElements": {
+        "flair": {
+          "type": "falling petal",
+          "fill": "$colorPalette.accent.secondary",
+          "usage": "Placed sparsely near significant start/end anchors to enhance the organic aesthetic"
+        }
+      }
+    },
+    "layout": {
+      "spacing": "Spacious, allowing the background texture to breathe",
+      "alignment": "Center-aligned data points relative to the horizontal axis"
+    }
+  }
+}
