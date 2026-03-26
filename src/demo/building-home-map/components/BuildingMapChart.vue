@@ -474,6 +474,7 @@ onUnmounted(() => {
   width: 100%;
   height: 100%;
   min-height: 100vh;
+  background: rgba(252, 249, 242, 0.22);
 }
 
 .building-map-chart__preview {

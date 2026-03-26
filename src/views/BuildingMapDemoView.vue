@@ -1,5 +1,7 @@
 <template>
   <section class="building-map-screen">
+    <img class="building-map-screen__icon" :src="mapIconUrl" alt="" aria-hidden="true" />
+
     <BuildingMapChart
       class="building-map-screen__chart"
       :buildings="filteredBuildings"
@@ -92,6 +94,7 @@ import {
 import type { BuildingRecord } from '@/demo/building-home-map/types';
 
 const buildings = rawBuildings as BuildingRecord[];
+const mapIconUrl = new URL('../../json/icon.png', import.meta.url).href;
 
 const uiText = {
   structureTitle: '\u5efa\u7b51\u5206\u7c7b',
@@ -168,11 +171,25 @@ watch(
 }
 
 .building-map-screen__chart,
+.building-map-screen__icon,
 .building-map-screen__wash,
 .building-map-screen__grain,
 .building-map-screen__motif {
   position: absolute;
   inset: 0;
+}
+
+.building-map-screen__icon {
+  inset: auto;
+  top: 20px;
+  left: 0;
+  z-index: 12;
+  width: clamp(120px, 10vw, 168px);
+  height: auto;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.94;
 }
 
 .building-map-screen__chart {
@@ -438,6 +455,12 @@ watch(
 
   .screen-ui {
     position: relative;
+  }
+
+  .building-map-screen__icon {
+    top: 18px;
+    left: 0;
+    width: clamp(92px, 24vw, 126px);
   }
 
   .side-panel {

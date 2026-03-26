@@ -1,17 +1,13 @@
 <template>
   <section class="building-section-screen">
+    <img class="building-section-screen__icon" :src="sectionIconUrl" alt="" aria-hidden="true" />
+    <div class="building-section-screen__scene" :style="{ backgroundImage: `url(${sectionBackgroundUrl})` }"></div>
     <div class="building-section-screen__wash"></div>
     <div class="building-section-screen__grain"></div>
     <div class="building-section-screen__motif"></div>
 
     <div class="catalog-shell" :class="{ 'catalog-shell--with-hud': !!currentCategory }">
       <div v-if="currentCategory && currentGroup" class="catalog-hud">
-        <div class="catalog-breadcrumb">
-          <span>四分首页</span>
-          <span>{{ currentCategory.title }}</span>
-          <span v-if="currentGroup">{{ currentGroup.title }}</span>
-        </div>
-
         <div class="catalog-actions">
           <button
             type="button"
@@ -237,18 +233,8 @@
               </template>
 
               <template v-else>
-                <section class="legend-block legend-block--note">
-                  <h2 class="legend-block__title">图册说明</h2>
-                  <p class="legend-block__copy">{{ currentGroup.description }}</p>
-                  <div class="legend-block__chips">
-                    <span>{{ currentCategory.title }}</span>
-                    <span>{{ visibleCountLabel }} 样本</span>
-                  </div>
-                </section>
-
                 <section v-if="hasDynastyFilterOptions" class="legend-block">
                   <h2 class="legend-block__title">时代筛选</h2>
-                  <p class="legend-block__copy">二级目录已经按结构展开，这里改为按朝代继续缩小当前图册范围。</p>
 
                   <button
                     v-for="item in dynastyFilterRows"
@@ -260,50 +246,11 @@
                   >
                     <span class="legend-row__text">
                       <strong>{{ item.label }}</strong>
-                      <small>{{ item.description }}</small>
                     </span>
                     <span class="legend-row__meta">
                       <i class="legend-row__dot" :style="{ '--legend-color': item.color }"></i>
                       <em>{{ item.count }}</em>
                     </span>
-                  </button>
-                </section>
-
-                <section v-if="hasRegionFilterOptions" class="legend-block">
-                  <h2 class="legend-block__title">地域谱系</h2>
-                  <div class="legend-block__hint">按地域建造传统缩小图册范围。</div>
-
-                  <button
-                    v-for="item in regionFilterRows"
-                    :key="item.label"
-                    type="button"
-                    class="legend-row"
-                    :class="{ active: activeRegionFilter === item.label }"
-                    @click="selectRegionFilter(item.label)"
-                  >
-                    <span class="legend-row__text">
-                      <strong>{{ item.label }}</strong>
-                      <small>{{ item.description }}</small>
-                    </span>
-                    <span class="legend-row__meta">
-                      <i class="legend-row__dot" :style="{ '--legend-color': item.color }"></i>
-                      <em>{{ item.count }}</em>
-                    </span>
-                  </button>
-                </section>
-
-                <section class="legend-block legend-block--note">
-                  <h2 class="legend-block__title">当前样本</h2>
-                  <p class="legend-block__copy">{{ selectedItem.summary }}</p>
-                  <div class="legend-block__chips">
-                    <span>{{ selectedItem.name }}</span>
-                    <span>{{ selectedItem.eraLabel }}</span>
-                    <span>{{ selectedItem.region }}</span>
-                    <span>{{ selectedItem.dynasty }}</span>
-                    <span>{{ visibleCountLabel }}</span>
-                  </div>
-                  <button v-if="hasAtlasFilters" type="button" class="atlas-reset" @click="clearAtlasFilters">
-                    重置筛选
                   </button>
                 </section>
               </template>
@@ -531,6 +478,8 @@ const atlasWindowStart = ref(0);
 const ALL_FILTER = '全部';
 const activeDynastyFilter = ref(ALL_FILTER);
 const activeRegionFilter = ref(ALL_FILTER);
+const sectionIconUrl = new URL('../../json/icon.png', import.meta.url).href;
+const sectionBackgroundUrl = new URL('../../json/bg.png', import.meta.url).href;
 const ATLAS_WINDOW_SIZE = 9;
 const WHEEL_SWITCH_COOLDOWN = 180;
 let lastWheelSwitchAt = 0;
@@ -1255,11 +1204,23 @@ watch(
   position: fixed;
   inset: 0;
   overflow: hidden;
-  background:
-    linear-gradient(180deg, rgba(244, 237, 223, 0.98), rgba(234, 225, 210, 0.98)),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.18), transparent 26%, transparent 74%, rgba(255, 255, 255, 0.1));
+  background: #f3ecde;
 }
 
+.building-section-screen__icon {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: 28;
+  width: clamp(120px, 10vw, 168px);
+  height: auto;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.94;
+}
+
+.building-section-screen__scene,
 .building-section-screen__wash,
 .building-section-screen__grain,
 .building-section-screen__motif {
@@ -1268,30 +1229,29 @@ watch(
   pointer-events: none;
 }
 
+.building-section-screen__scene {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.86;
+}
+
 .building-section-screen__wash {
   background:
-    radial-gradient(circle at 14% 12%, rgba(255, 255, 255, 0.34), transparent 18%),
-    radial-gradient(circle at 86% 16%, rgba(255, 255, 255, 0.22), transparent 22%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+    linear-gradient(180deg, rgba(252, 248, 241, 0.12), rgba(246, 239, 228, 0.04)),
+    radial-gradient(circle at 18% 92%, rgba(248, 243, 234, 0.72), transparent 24%),
+    radial-gradient(circle at 86% 92%, rgba(248, 243, 234, 0.72), transparent 24%),
+    radial-gradient(circle at 20% 16%, rgba(255, 255, 255, 0.12), transparent 24%),
+    radial-gradient(circle at 74% 24%, rgba(214, 186, 164, 0.05), transparent 24%);
 }
 
 .building-section-screen__grain {
-  background:
-    repeating-linear-gradient(
-      135deg,
-      rgba(124, 96, 76, 0.028) 0,
-      rgba(124, 96, 76, 0.028) 1px,
-      transparent 1px,
-      transparent 13px
-    );
+  background: repeating-linear-gradient(135deg, rgba(129, 99, 77, 0.018) 0, rgba(129, 99, 77, 0.018) 1px, transparent 1px, transparent 18px);
   mix-blend-mode: multiply;
 }
 
 .building-section-screen__motif {
-  opacity: 0.16;
-  background:
-    radial-gradient(circle at 22% 68%, rgba(134, 100, 76, 0.12), transparent 24%),
-    radial-gradient(circle at 76% 44%, rgba(134, 100, 76, 0.08), transparent 22%);
+  display: none;
 }
 
 .catalog-shell {
@@ -1314,7 +1274,7 @@ watch(
   z-index: 30;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 12px;
   pointer-events: none;
 }
@@ -1327,14 +1287,6 @@ watch(
   pointer-events: auto;
 }
 
-.catalog-breadcrumb {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  pointer-events: auto;
-}
-
-.catalog-breadcrumb span,
 .catalog-action {
   display: inline-flex;
   align-items: center;
@@ -2227,6 +2179,13 @@ watch(
 .side-panel--atlas-left {
   min-height: 0;
   padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+
+.side-panel--atlas-left .legend-block {
+  width: 100%;
 }
 
 .side-panel--atlas-detail-left {
@@ -2816,8 +2775,7 @@ watch(
     top: 10px;
     left: 10px;
     right: 10px;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
   }
 
   .catalog-shell--with-hud {
@@ -2825,8 +2783,14 @@ watch(
   }
 
   .catalog-actions {
-    width: 100%;
-    justify-content: flex-start;
+    width: auto;
+    justify-content: flex-end;
+  }
+
+  .building-section-screen__icon {
+    top: 18px;
+    left: 0;
+    width: clamp(92px, 24vw, 126px);
   }
 
   .category-grid {
