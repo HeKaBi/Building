@@ -1,19 +1,15 @@
-<template>
+﻿<template>
   <aside class="era-timeline line-timeline">
     <div class="line-timeline__header">
-      <div class="line-timeline__titles">
-        <span class="line-timeline__title-item">{{ uiText.yearTitle }}</span>
-      </div>
-
       <div class="line-timeline__legend">
         <div class="line-timeline__legend-item">
-          <i class="line-timeline__legend-dot line-timeline__legend-dot--primary"></i>
-          <span>{{ uiText.primaryLegend }}</span>
+          <i class="line-timeline__legend-dot line-timeline__legend-dot--count"></i>
+          <span>{{ uiText.countLegend }}</span>
         </div>
-        <div class="line-timeline__legend-item">
-          <i class="line-timeline__legend-dot line-timeline__legend-dot--secondary"></i>
-          <span>{{ uiText.secondaryLegend }}</span>
-        </div>
+      </div>
+
+      <div class="line-timeline__titles">
+        <span class="line-timeline__title-item">{{ uiText.yearTitle }}</span>
       </div>
     </div>
 
@@ -26,13 +22,13 @@
 <script setup lang="ts">
 import * as echarts from 'echarts/core';
 import { GridComponent, TooltipComponent } from 'echarts/components';
-import { LineChart, ScatterChart } from 'echarts/charts';
+import { CustomChart, LineChart } from 'echarts/charts';
 import { CanvasRenderer } from 'echarts/renderers';
 import { computed, onMounted, onUnmounted, ref, watch } from 'vue';
 
 import type { BuildingGalleryItem } from '../types';
 
-echarts.use([GridComponent, TooltipComponent, LineChart, ScatterChart, CanvasRenderer]);
+echarts.use([GridComponent, TooltipComponent, CustomChart, LineChart, CanvasRenderer]);
 
 interface DensityBucket {
   start: number;
@@ -41,11 +37,11 @@ interface DensityBucket {
   items: BuildingGalleryItem[];
 }
 
-interface BucketMetric {
-  start: number;
-  centerYear: number;
-  primaryWidth: number;
-  secondaryWidth: number;
+interface BarDatum {
+  value: [number, number, number];
+  bucketStart: number;
+  count: number;
+  selected: boolean;
 }
 
 const props = withDefaults(
@@ -55,7 +51,7 @@ const props = withDefaults(
     accent?: string;
   }>(),
   {
-    accent: '#4f7462',
+    accent: '#923f30',
   },
 );
 
@@ -66,15 +62,13 @@ const emit = defineEmits<{
 
 const BUCKET_SPAN = 50;
 const MAJOR_YEAR_INTERVAL = 100;
-const JAGGED_YEAR_STEP = 10;
-const BASE_X_MAX = 4.95;
-const RIGHT_WIDE_STRIP_OFFSET = 0.16;
-const RIGHT_THIN_STRIP_OFFSET = 0.05;
+const BAR_GAP_PX = 4;
+const BAR_AXIS_PADDING = 2;
+const BAR_MIN_VISIBLE_COUNT = 1;
 
 const uiText = {
-  yearTitle: '年份',
-  primaryLegend: '建筑数量',
-  secondaryLegend: '聚集强度',
+  yearTitle: '\u5e74\u4efd',
+  countLegend: '\u5efa\u7b51\u6570\u91cf',
 } as const;
 
 const chartRef = ref<HTMLDivElement | null>(null);
@@ -102,23 +96,18 @@ const buckets = computed<DensityBucket[]>(() => {
     }));
 });
 
-const maxCount = computed(() =>
-  Math.max(
-    1,
-    ...buckets.value.map((bucket) => bucket.count),
-  ),
-);
+const maxCount = computed(() => Math.max(1, ...buckets.value.map((bucket) => bucket.count)));
 
 const floorToCentury = (year: number) => Math.floor(year / MAJOR_YEAR_INTERVAL) * MAJOR_YEAR_INTERVAL;
 const ceilToCentury = (year: number) => Math.ceil(year / MAJOR_YEAR_INTERVAL) * MAJOR_YEAR_INTERVAL;
+const clamp = (value: number, min: number, max: number) => Math.min(max, Math.max(min, value));
 
 const minYear = computed(() => {
   if (!props.items.length) {
     return 100;
   }
 
-  const earliestYear = Math.min(...props.items.map((item) => item.year));
-  return floorToCentury(earliestYear);
+  return floorToCentury(Math.min(...props.items.map((item) => item.year)));
 });
 
 const maxYear = computed(() => {
@@ -127,40 +116,10 @@ const maxYear = computed(() => {
   }
 
   const latestYear = Math.max(...props.items.map((item) => item.year));
-  const normalizedMax = ceilToCentury(latestYear);
-  return Math.max(normalizedMax, minYear.value + MAJOR_YEAR_INTERVAL);
+  return Math.max(ceilToCentury(latestYear), minYear.value + MAJOR_YEAR_INTERVAL);
 });
 
-const getDominantClusterCount = (items: BuildingGalleryItem[]) => {
-  const counts = new Map<string, number>();
-
-  for (const item of items) {
-    const key = item.regionFamily ?? item.dynasty ?? item.region;
-    counts.set(key, (counts.get(key) ?? 0) + 1);
-  }
-
-  return Math.max(1, ...counts.values());
-};
-
-const bucketMetrics = computed<BucketMetric[]>(() =>
-  buckets.value.map((bucket) => {
-    const dominantCount = getDominantClusterCount(bucket.items);
-    const countRatio = bucket.count / maxCount.value;
-    const dominantRatio = dominantCount / Math.max(1, bucket.count);
-
-    return {
-      start: bucket.start,
-      centerYear: bucket.start + BUCKET_SPAN / 2,
-      primaryWidth: 0.86 + countRatio * 2.18,
-      secondaryWidth: 0.48 + dominantRatio * 0.98 + countRatio * 0.56,
-    };
-  }),
-);
-
-const xAxisMax = computed(() => {
-  const widestPrimary = Math.max(0, ...bucketMetrics.value.map((item) => item.primaryWidth));
-  return Math.max(BASE_X_MAX, widestPrimary + 1.76);
-});
+const xAxisMax = computed(() => Math.max(6, maxCount.value + BAR_AXIS_PADDING));
 
 const selectedBucketStart = computed(() => {
   if (selectedItem.value) {
@@ -170,80 +129,16 @@ const selectedBucketStart = computed(() => {
   return buckets.value[0]?.start ?? null;
 });
 
-const selectedBucket = computed(
-  () => buckets.value.find((bucket) => bucket.start === selectedBucketStart.value) ?? null,
-);
-
 const selectedYear = computed(() => selectedItem.value?.year ?? null);
 
-const clamp = (value: number, min: number, max: number) => Math.min(max, Math.max(min, value));
-
-const interpolateMetric = (year: number, key: 'primaryWidth' | 'secondaryWidth') => {
-  const metrics = bucketMetrics.value;
-
-  if (!metrics.length) {
-    return key === 'primaryWidth' ? 1.2 : 0.72;
-  }
-
-  if (year <= metrics[0].centerYear) {
-    return metrics[0][key];
-  }
-
-  const last = metrics[metrics.length - 1];
-  if (year >= last.centerYear) {
-    return last[key];
-  }
-
-  for (let index = 1; index < metrics.length; index += 1) {
-    const previous = metrics[index - 1];
-    const current = metrics[index];
-
-    if (year <= current.centerYear) {
-      const progress = (year - previous.centerYear) / Math.max(1, current.centerYear - previous.centerYear);
-      return previous[key] + (current[key] - previous[key]) * progress;
-    }
-  }
-
-  return last[key];
-};
-
-const buildJaggedAreaData = (key: 'primaryWidth' | 'secondaryWidth') => {
-  const values: [number, number][] = [];
-  const start = minYear.value;
-  const end = maxYear.value;
-
-  for (let year = start; year <= end; year += JAGGED_YEAR_STEP) {
-    const base = interpolateMetric(year, key);
-    const fallbackMax = xAxisMax.value - (key === 'primaryWidth' ? 1.14 : 1.76);
-    values.push([clamp(base, 0.24, fallbackMax), year]);
-  }
-
-  if (!values.length || values[values.length - 1][1] !== end) {
-    const base = interpolateMetric(end, key);
-    const fallbackMax = xAxisMax.value - (key === 'primaryWidth' ? 1.14 : 1.76);
-    values.push([clamp(base, 0.24, fallbackMax), end]);
-  }
-
-  return values;
-};
-
-const smoothWidthData = (values: [number, number][], radius = 2) =>
-  values.map(([, year], index) => {
-    let sum = 0;
-    let count = 0;
-
-    for (let offset = -radius; offset <= radius; offset += 1) {
-      const point = values[index + offset];
-      if (!point) {
-        continue;
-      }
-
-      sum += point[0];
-      count += 1;
-    }
-
-    return [sum / Math.max(1, count), year] as [number, number];
-  });
+const barSeriesData = computed<BarDatum[]>(() =>
+  buckets.value.map((bucket) => ({
+    value: [Math.max(BAR_MIN_VISIBLE_COUNT, bucket.count), bucket.start, bucket.end + 1],
+    bucketStart: bucket.start,
+    count: bucket.count,
+    selected: bucket.start === selectedBucketStart.value,
+  })),
+);
 
 const getBucketPreferredItem = (bucketStart: number | null | undefined) => {
   if (bucketStart === null || bucketStart === undefined) {
@@ -256,7 +151,6 @@ const getBucketPreferredItem = (bucketStart: number | null | undefined) => {
 
 const handleBucketClick = (bucketStart: number | null | undefined) => {
   const preferred = getBucketPreferredItem(bucketStart);
-
   if (preferred) {
     emit('select', preferred.id);
   }
@@ -295,69 +189,22 @@ const renderChart = () => {
     });
   }
 
-  const rightWideStripX = xAxisMax.value - RIGHT_WIDE_STRIP_OFFSET;
-  const rightThinStripX = xAxisMax.value - RIGHT_THIN_STRIP_OFFSET;
-
-  const primaryWidthData = smoothWidthData(buildJaggedAreaData('primaryWidth'), 2);
-  const secondaryWidthData = smoothWidthData(buildJaggedAreaData('secondaryWidth'), 2);
-
-  const primaryAreaData = primaryWidthData.map(([width, year]) => [
-    clamp(xAxisMax.value - width, 0.14, xAxisMax.value - 0.08),
-    year,
-  ] as [number, number]);
-
-  const secondaryAreaData = secondaryWidthData.map(([width, year], index) => {
-    const primaryWidth = primaryWidthData[index]?.[0] ?? width;
-    const clampedWidth = Math.min(width, Math.max(0.16, primaryWidth - 0.09));
-
-    return [
-      clamp(xAxisMax.value - clampedWidth, 0.18, xAxisMax.value - 0.08),
-      year,
-    ] as [number, number];
-  });
-
-  const hitAreaData = buckets.value.map((bucket) => ({
-    value: (() => {
-      const primaryWidth = interpolateMetric(bucket.start + BUCKET_SPAN / 2, 'primaryWidth');
-      const secondaryWidth = interpolateMetric(bucket.start + BUCKET_SPAN / 2, 'secondaryWidth');
-      const clampedWidth = Math.min(secondaryWidth, Math.max(0.16, primaryWidth - 0.09));
-
-      return [
-        clamp(
-          xAxisMax.value - clampedWidth,
-          0.18,
-          xAxisMax.value - 0.08,
-        ),
-        bucket.start + BUCKET_SPAN / 2,
-      ];
-    })(),
-    bucketStart: bucket.start,
-    count: bucket.count,
-    symbolSize: 18,
-    itemStyle: {
-      color: 'rgba(0,0,0,0)',
-    },
-  }));
-
-  const selectedGuideStartX = 0.02;
-  const selectedGuideEndX =
-    selectedYear.value === null
-      ? null
-      : clamp(rightThinStripX - 0.03, selectedGuideStartX + 0.48, xAxisMax.value - 0.08);
-
+  const bars = barSeriesData.value;
   const selectedGuideData =
-    selectedYear.value !== null && selectedGuideEndX !== null
-      ? [
-        [selectedGuideStartX, selectedYear.value],
-        [selectedGuideEndX, selectedYear.value],
-      ]
-      : [];
-
+    selectedYear.value === null
+      ? []
+      : [
+          [xAxisMax.value, selectedYear.value],
+          [0, selectedYear.value],
+        ];
   const selectedBandHalf = 10;
-  const selectedBandStart =
-    selectedYear.value === null ? null : clamp(selectedYear.value - selectedBandHalf, minYear.value, maxYear.value);
-  const selectedBandEnd =
-    selectedYear.value === null ? null : clamp(selectedYear.value + selectedBandHalf, minYear.value, maxYear.value);
+  const selectedBandData =
+    selectedYear.value === null
+      ? []
+      : [
+          [0, clamp(selectedYear.value - selectedBandHalf, minYear.value, maxYear.value)],
+          [0, clamp(selectedYear.value + selectedBandHalf, minYear.value, maxYear.value)],
+        ];
 
   chart.setOption(
     {
@@ -366,9 +213,9 @@ const renderChart = () => {
       animationEasingUpdate: 'cubicOut',
       grid: {
         top: 10,
-        right: 5,
+        right: 34,
         bottom: 8,
-        left: 32,
+        left: 8,
         containLabel: false,
       },
       tooltip: { show: false },
@@ -376,6 +223,7 @@ const renderChart = () => {
         type: 'value',
         min: 0,
         max: xAxisMax.value,
+        inverse: true,
         axisLabel: { show: false },
         splitLine: { show: false },
         axisLine: { show: false },
@@ -384,17 +232,18 @@ const renderChart = () => {
       yAxis: {
         type: 'value',
         inverse: true,
+        position: 'right',
         min: minYear.value,
         max: maxYear.value,
         interval: MAJOR_YEAR_INTERVAL,
         axisLabel: {
-          inside: true,
+          inside: false,
           align: 'left',
           color: '#6f5a4c',
           fontFamily: "'STKaiti', 'KaiTi', serif",
           fontSize: 10,
           fontWeight: 600,
-          margin: 4,
+          margin: 6,
         },
         splitLine: { show: false },
         axisTick: {
@@ -409,6 +258,7 @@ const renderChart = () => {
         minorTick: {
           show: true,
           splitNumber: 10,
+          inside: false,
           length: 2,
           lineStyle: {
             color: 'rgba(168, 60, 59, 0.68)',
@@ -417,89 +267,77 @@ const renderChart = () => {
         axisLine: {
           lineStyle: {
             color: '#a83c3b',
-            width: 1,
+            width: 1.2,
             type: 'solid',
           },
         },
       },
       series: [
         {
-          type: 'line',
-          data: primaryAreaData,
-          smooth: false,
-          symbol: 'none',
-          silent: true,
-          z: 1,
-          lineStyle: {
-            color: 'transparent',
-            width: 0,
-          },
-          areaStyle: {
-            color: 'rgba(155, 161, 157, 0.42)',
-            opacity: 1,
-            origin: 'end',
-          },
-        },
-        {
-          type: 'line',
-          data: secondaryAreaData,
-          smooth: false,
-          symbol: 'none',
-          silent: true,
+          type: 'custom',
+          data: bars,
           z: 2,
-          lineStyle: {
-            color: 'transparent',
-            width: 0,
-          },
-          areaStyle: {
-            color: 'rgba(101, 126, 101, 0.62)',
-            opacity: 1,
-            origin: 'end',
+          renderItem(params, api) {
+            const dataItem = bars[params.dataIndex];
+            const count = api.value(0) as number;
+            const yearStart = api.value(1) as number;
+            const yearEnd = api.value(2) as number;
+            const axisPoint = api.coord([0, yearStart]);
+            const valuePoint = api.coord([count, yearStart]);
+            const startPoint = api.coord([0, yearStart]);
+            const endPoint = api.coord([0, yearEnd]);
+            const rawHeight = Math.abs(endPoint[1] - startPoint[1]);
+            const height = Math.max(8, rawHeight - BAR_GAP_PX);
+            const y = Math.min(startPoint[1], endPoint[1]) + (rawHeight - height) / 2;
+            const x = Math.min(axisPoint[0], valuePoint[0]);
+            const width = Math.max(6, Math.abs(axisPoint[0] - valuePoint[0]));
+            const rect = echarts.graphic.clipRectByRect(
+              {
+                x,
+                y,
+                width,
+                height,
+              },
+              {
+                x: params.coordSys.x,
+                y: params.coordSys.y,
+                width: params.coordSys.width,
+                height: params.coordSys.height,
+              },
+            );
+
+            if (!rect) {
+              return null;
+            }
+
+            const fill = dataItem?.selected ? 'rgba(129, 146, 123, 0.96)' : 'rgba(161, 171, 154, 0.96)';
+
+            return {
+              type: 'rect',
+              transition: ['shape', 'style'],
+              shape: rect,
+              style: {
+                fill,
+                stroke: dataItem?.selected ? 'rgba(123, 136, 117, 0.9)' : 'rgba(146, 156, 141, 0.82)',
+                lineWidth: 0.8,
+              },
+              styleEmphasis: {
+                fill: 'rgba(139, 155, 133, 0.98)',
+                stroke: 'rgba(116, 130, 109, 0.94)',
+                lineWidth: 0.9,
+              },
+            };
           },
         },
         {
           type: 'line',
-          data: [
-            [rightWideStripX, minYear.value],
-            [rightWideStripX, maxYear.value],
-          ],
-          symbol: 'none',
-          silent: true,
-          z: 1,
-          lineStyle: {
-            color: 'rgba(168, 178, 162, 0.94)',
-            width: 11,
-          },
-        },
-        {
-          type: 'line',
-          data: [
-            [rightThinStripX, minYear.value],
-            [rightThinStripX, maxYear.value],
-          ],
-          symbol: 'none',
-          silent: true,
-          z: 1,
-          lineStyle: {
-            color: 'rgba(212, 219, 204, 0.88)',
-            width: 8,
-          },
-        },
-        {
-          type: 'line',
-          data:
-            selectedBandStart !== null && selectedBandEnd !== null
-              ? [
-                  [rightThinStripX, selectedBandStart],
-                  [rightThinStripX, selectedBandEnd],
-                ]
-              : [],
+          data: selectedBandData,
           symbol: 'none',
           silent: true,
           z: 4,
           lineStyle: {
-            color: '#4c755e',
-            width: 6,
+            color: 'rgba(146, 63, 48, 0.92)',
+            width: 5,
           },
         },
         {
@@ -512,11 +350,6 @@ const renderChart = () => {
             color: 'rgba(156, 58, 53, 0.78)',
             width: 1.3,
           },
-        },
-        {
-          type: 'scatter',
-          data: hitAreaData,
-          z: 0,
         },
       ],
     },
@@ -565,24 +398,29 @@ onUnmounted(() => {
 }
 
 .line-timeline__header {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: start;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
   gap: 8px;
-  padding: 0 6px 0 0;
+  padding: 0 68px 0 0;
 }
 
 .line-timeline__titles {
+  position: absolute;
+  top: 50%;
+  right: 34px;
   display: flex;
   align-items: center;
   gap: 0;
+  justify-content: center;
   min-width: 0;
-  padding-left: 20px;
+  transform: translate(50%, -50%);
 }
 
 .line-timeline__title-item {
   font-family: 'STKaiti', 'KaiTi', 'Kaiti SC', serif;
-  font-size: 15px;
+  font-size: 19px;
   line-height: 1;
   letter-spacing: 0.03em;
   color: #9c3a35;
@@ -591,11 +429,12 @@ onUnmounted(() => {
 }
 
 .line-timeline__legend {
-  display: grid;
-  justify-items: start;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   gap: 4px;
-  margin-top: 2px;
-  padding-right: 8px;
+  margin-top: 0;
+  padding-right: 0;
 }
 
 .line-timeline__legend-item {
@@ -617,12 +456,8 @@ onUnmounted(() => {
   box-shadow: 0 0 0 1px rgba(121, 106, 91, 0.24);
 }
 
-.line-timeline__legend-dot--primary {
+.line-timeline__legend-dot--count {
   background: #657e65;
-}
-
-.line-timeline__legend-dot--secondary {
-  background: #9ba19d;
 }
 
 .line-timeline__chart-shell {
@@ -632,11 +467,9 @@ onUnmounted(() => {
   min-height: 0;
   overflow: hidden;
   border-radius: 0;
-  background:
-    linear-gradient(180deg, rgba(233, 225, 211, 0.38), rgba(233, 225, 211, 0.1)),
-    radial-gradient(circle at 36% 18%, rgba(255, 255, 255, 0.14), transparent 30%);
-  border-left: 1px solid rgba(168, 60, 59, 0.07);
-  border-right: 1px solid rgba(130, 119, 103, 0.12);
+  background: transparent;
+  border-left: none;
+  border-right: none;
   margin-top: -2px;
 }
 
