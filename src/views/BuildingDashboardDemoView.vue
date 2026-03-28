@@ -64,7 +64,7 @@
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch, type Ref } from 'vue';
 import * as echarts from 'echarts/core';
 import 'echarts-wordcloud';
-import { GraphicComponent, TooltipComponent } from 'echarts/components';
+import { GraphicComponent, TitleComponent, TooltipComponent } from 'echarts/components';
 import { PieChart, SankeyChart, SunburstChart } from 'echarts/charts';
 import { LabelLayout } from 'echarts/features';
 import { CanvasRenderer } from 'echarts/renderers';
@@ -72,7 +72,7 @@ import vintage from '@/assets/theme/vintage.json';
 import BuildingArtTimeline from '@/components/BuildingArtTimeline.vue';
 import rawBuildings from '../../building.json';
 
-echarts.use([TooltipComponent, GraphicComponent, PieChart, SankeyChart, SunburstChart, CanvasRenderer, LabelLayout]);
+echarts.use([TitleComponent, TooltipComponent, GraphicComponent, PieChart, SankeyChart, SunburstChart, CanvasRenderer, LabelLayout]);
 
 const THEME_NAME = 'building-dashboard-vintage';
 echarts.registerTheme(THEME_NAME, vintage);
@@ -214,6 +214,12 @@ const SUNBURST_INK_COLOR = '#2B2824';
 const SUNBURST_GAP_COLOR = 'rgba(255, 255, 255, 0.98)';
 const SUNBURST_LIGHT_TARGET = '#F4F1EC';
 const SUNBURST_DARK_TARGET = '#8B2825';
+const MATRIX_CHART_TITLE_STYLE = {
+  fontFamily: 'MatrixRefTitleFont',
+  fontSize: 25,
+  color: '#333333',
+  fontWeight: 400,
+} as const;
 
 const blendHexColor = (sourceHex: string, targetHex: string, ratio: number) => {
   const source = sourceHex.replace('#', '');
@@ -239,6 +245,27 @@ const deriveSunburstChildColor = (parentColor: string, index: number) => {
 const wordCloudColors = ['#d87c7c', '#919e8b', '#6e7074', '#61a0a8', '#787464', '#cc7e63', '#724e58', '#4b565b'];
 const matrixBackgroundUrl = new URL('../../json/bg.png', import.meta.url).href;
 const matrixIconUrl = new URL('../../json/icon.png', import.meta.url).href;
+
+const buildMatrixChartTitle = (text: string, top = '1%', fontSize = 25) => ({
+  text,
+  left: 'center',
+  top,
+  textStyle: {
+    ...MATRIX_CHART_TITLE_STYLE,
+    fontSize,
+  },
+});
+
+const ensureMatrixTitleFontReady = async () => {
+  if (typeof document === 'undefined' || !('fonts' in document)) return;
+  try {
+    await (document as Document & {
+      fonts: { load: (font: string) => Promise<unknown> };
+    }).fonts.load('25px MatrixRefTitleFont');
+  } catch {
+    // Ignore font loading failures and keep the fallback render.
+  }
+};
 
 const activeType = ref<BuildingType>('\u6c11\u5c45');
 const dashboardGraphs = ref<DashboardGraphs | null>(null);
@@ -460,6 +487,7 @@ const renderRoseChart = () => {
 
   chart.setOption(
     {
+      title: buildMatrixChartTitle('\u671d\u4ee3\u00b7\u529f\u80fd\u00b7\u6750\u6599\u73ab\u7470\u56fe', '-1%', 25),
       animationDuration: 650,
       animationEasing: 'cubicOut',
       tooltip: {
@@ -557,6 +585,7 @@ const renderWordCloudChart = () => {
 
   chart.setOption(
     {
+      title: buildMatrixChartTitle('\u5efa\u7b51\u610f\u8c61\u8bcd\u4e91', '1%', 25),
       animationDurationUpdate: 1200,
       animationEasingUpdate: 'quarticOut',
       tooltip: {
@@ -589,9 +618,9 @@ const renderWordCloudChart = () => {
           type: 'wordCloud',
           shape: 'circle',
           left: 'center',
-          top: 'center',
+          top: '6%',
           width: '82%',
-          height: '102%',
+          height: '94%',
           sizeRange: layout.sizeRange,
           gridSize: layout.gridSize,
           rotationRange: [0, 0],
@@ -655,6 +684,7 @@ const renderSankeyChart = () => {
 
   chart.setOption(
     {
+      title: buildMatrixChartTitle('\u671d\u4ee3-\u7ed3\u6784-\u6750\u6599\u6851\u57fa\u56fe', '0%', 25),
       backgroundColor: 'transparent',
       animationDuration: 520,
       animationDurationUpdate: 360,
@@ -686,9 +716,9 @@ const renderSankeyChart = () => {
         {
           type: 'sankey',
           left: '4%',
-          top: '4%',
+          top: '10%',
           right: '14%',
-          bottom: '4%',
+          bottom: '6%',
           draggable: false,
           blendMode: 'multiply',
           nodeAlign: 'justify',
@@ -769,6 +799,7 @@ const renderSunburstChart = () => {
 
   chart.setOption(
     {
+      title: buildMatrixChartTitle('\u671d\u4ee3\u00b7\u5730\u57df\u00b7\u7ed3\u6784\u65ed\u65e5\u56fe', '0%', 25),
       animationDuration: 680,
       animationEasing: 'cubicOut',
       tooltip: {
@@ -791,7 +822,7 @@ const renderSunburstChart = () => {
           type: 'sunburst',
           data: decorateSunburstData(graph.data),
           radius: ['18%', '84%'],
-          center: ['50%', '53%'],
+          center: ['50%', '56%'],
           nodeClick: false,
           sort: null,
           emphasis: {
@@ -907,6 +938,7 @@ onMounted(async () => {
   renderAllCharts();
   window.addEventListener('resize', handleResize);
   await loadDashboardGraphs();
+  await ensureMatrixTitleFontReady();
   await nextTick();
   window.requestAnimationFrame(() => {
     resizeAllCharts();

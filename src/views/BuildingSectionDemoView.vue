@@ -2057,10 +2057,10 @@ watch(
 
 .legend-block__title {
   margin: 0;
-  padding-bottom: 8px;
+  padding-bottom: 10px;
   border-bottom: 2px solid rgba(163, 72, 58, 0.38);
   font-family: 'STKaiti', 'KaiTi', 'Kaiti SC', 'Songti SC', serif;
-  font-size: 17px;
+  font-size: 19px;
   line-height: 1.1;
   color: #a13f33;
   letter-spacing: 0.04em;
@@ -2101,7 +2101,7 @@ watch(
   align-items: flex-start;
   justify-content: space-between;
   gap: 8px;
-  padding: 6px 0 5px;
+  padding: 8px 0 7px;
   border: none;
   border-bottom: 1px dashed rgba(149, 117, 94, 0.18);
   background: transparent;
@@ -2117,13 +2117,13 @@ watch(
 
 .legend-row__text {
   display: grid;
-  gap: 2px;
+  gap: 3px;
   min-width: 0;
 }
 
 .legend-row__text strong {
   font-family: 'STKaiti', 'KaiTi', 'Kaiti SC', 'Songti SC', serif;
-  font-size: 14px;
+  font-size: 16px;
   color: #5f4032;
   font-weight: 600;
 }
@@ -2143,12 +2143,12 @@ watch(
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
 .legend-row__dot {
-  width: 11px;
-  height: 11px;
+  width: 12px;
+  height: 12px;
   border-radius: 999px;
   background: var(--legend-color);
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.24);
@@ -2156,7 +2156,7 @@ watch(
 
 .legend-row__meta em {
   font-family: 'STSong', 'SimSun', 'Songti SC', serif;
-  font-size: 10px;
+  font-size: 11px;
   font-style: normal;
   color: rgba(88, 64, 52, 0.72);
 }

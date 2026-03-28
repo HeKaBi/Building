@@ -86,6 +86,14 @@ body {
 }
 
 @font-face {
+    font-family: 'MatrixRefTitleFont';
+    src: url('../assets/fonts/FZZJ-YLWBJW.TTF') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'NavFont';
     src: url('../assets/fonts/FZXKJW.TTF') format('truetype');
     font-style: normal;

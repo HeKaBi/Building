@@ -1,9 +1,9 @@
 {
   "building_type": "官府",
-  "title": "官府：主要朝代-主要地区-建筑结构",
+  "title": "官府：主要朝代-主要地域-建筑结构",
   "dimension_order": [
     "主要朝代",
-    "主要地区",
+    "主要地域",
     "建筑结构"
   ],
   "data": [
@@ -16,8 +16,16 @@
           "value": 3,
           "children": [
             {
-              "name": "官署合院体系",
-              "value": 3
+              "name": "其他官府体系",
+              "value": 1
+            },
+            {
+              "name": "抬梁式",
+              "value": 1
+            },
+            {
+              "name": "抬梁式木构架",
+              "value": 1
             }
           ]
         },
@@ -26,7 +34,7 @@
           "value": 1,
           "children": [
             {
-              "name": "城防防御体系",
+              "name": "城防体系",
               "value": 1
             }
           ]
@@ -36,12 +44,8 @@
           "value": 3,
           "children": [
             {
-              "name": "官署合院体系",
-              "value": 2
-            },
-            {
-              "name": "楼阁台榭体系",
-              "value": 1
+              "name": "其他官府体系",
+              "value": 3
             }
           ]
         },
@@ -50,8 +54,12 @@
           "value": 2,
           "children": [
             {
-              "name": "官署合院体系",
-              "value": 2
+              "name": "其他官府体系",
+              "value": 1
+            },
+            {
+              "name": "抬梁式",
+              "value": 1
             }
           ]
         }
@@ -66,12 +74,16 @@
           "value": 7,
           "children": [
             {
-              "name": "城防防御体系",
+              "name": "其他官府体系",
               "value": 4
             },
             {
-              "name": "楼阁台榭体系",
-              "value": 3
+              "name": "城防体系",
+              "value": 2
+            },
+            {
+              "name": "抬梁式",
+              "value": 1
             }
           ]
         },
@@ -80,16 +92,12 @@
           "value": 7,
           "children": [
             {
-              "name": "城防防御体系",
+              "name": "其他官府体系",
               "value": 4
             },
             {
-              "name": "官署合院体系",
-              "value": 1
-            },
-            {
-              "name": "楼阁台榭体系",
-              "value": 2
+              "name": "抬梁式",
+              "value": 3
             }
           ]
         },
@@ -99,15 +107,15 @@
           "children": [
             {
               "name": "其他官府体系",
-              "value": 1
+              "value": 5
             },
             {
-              "name": "城防防御体系",
-              "value": 4
+              "name": "城防体系",
+              "value": 2
             },
             {
-              "name": "楼阁台榭体系",
-              "value": 4
+              "name": "抬梁式",
+              "value": 2
             }
           ]
         },
@@ -116,11 +124,11 @@
           "value": 2,
           "children": [
             {
-              "name": "城防防御体系",
+              "name": "其他官府体系",
               "value": 1
             },
             {
-              "name": "楼阁台榭体系",
+              "name": "抬梁式",
               "value": 1
             }
           ]
@@ -136,16 +144,20 @@
           "value": 11,
           "children": [
             {
-              "name": "城防防御体系",
-              "value": 6
+              "name": "其他官府体系",
+              "value": 4
             },
             {
-              "name": "官署合院体系",
-              "value": 3
+              "name": "城防体系",
+              "value": 4
             },
             {
-              "name": "楼阁台榭体系",
+              "name": "抬梁式",
               "value": 2
+            },
+            {
+              "name": "抬梁式木构架",
+              "value": 1
             }
           ]
         },
@@ -154,16 +166,16 @@
           "value": 12,
           "children": [
             {
-              "name": "城防防御体系",
-              "value": 1
+              "name": "其他官府体系",
+              "value": 5
             },
             {
-              "name": "官署合院体系",
-              "value": 9
-            },
-            {
-              "name": "楼阁台榭体系",
+              "name": "抬梁合院",
               "value": 2
+            },
+            {
+              "name": "抬梁式",
+              "value": 5
             }
           ]
         },
@@ -172,16 +184,16 @@
           "value": 11,
           "children": [
             {
-              "name": "城防防御体系",
+              "name": "其他官府体系",
+              "value": 7
+            },
+            {
+              "name": "城防体系",
+              "value": 1
+            },
+            {
+              "name": "抬梁式木构架",
               "value": 3
-            },
-            {
-              "name": "官署合院体系",
-              "value": 2
-            },
-            {
-              "name": "楼阁台榭体系",
-              "value": 6
             }
           ]
         },
@@ -190,15 +202,19 @@
           "value": 7,
           "children": [
             {
-              "name": "城防防御体系",
+              "name": "其他官府体系",
               "value": 4
             },
             {
-              "name": "官署合院体系",
-              "value": 2
+              "name": "城防体系",
+              "value": 1
             },
             {
-              "name": "楼阁台榭体系",
+              "name": "抬梁式",
+              "value": 1
+            },
+            {
+              "name": "抬梁式木构架",
               "value": 1
             }
           ]
@@ -215,19 +231,15 @@
           "children": [
             {
               "name": "其他官府体系",
-              "value": 1
+              "value": 5
             },
             {
-              "name": "城防防御体系",
-              "value": 1
-            },
-            {
-              "name": "官署合院体系",
-              "value": 6
-            },
-            {
-              "name": "楼阁台榭体系",
+              "name": "抬梁合院",
               "value": 2
+            },
+            {
+              "name": "抬梁式木构架",
+              "value": 3
             }
           ]
         },
@@ -240,11 +252,11 @@
               "value": 1
             },
             {
-              "name": "官署合院体系",
+              "name": "抬梁式",
               "value": 1
             },
             {
-              "name": "楼阁台榭体系",
+              "name": "抬梁式木构架",
               "value": 1
             }
           ]
@@ -254,12 +266,16 @@
           "value": 12,
           "children": [
             {
-              "name": "官署合院体系",
-              "value": 11
+              "name": "抬梁合院",
+              "value": 7
             },
             {
-              "name": "楼阁台榭体系",
-              "value": 1
+              "name": "抬梁式",
+              "value": 3
+            },
+            {
+              "name": "抬梁式木构架",
+              "value": 2
             }
           ]
         },
@@ -268,8 +284,12 @@
           "value": 5,
           "children": [
             {
-              "name": "官署合院体系",
-              "value": 5
+              "name": "抬梁合院",
+              "value": 3
+            },
+            {
+              "name": "抬梁式木构架",
+              "value": 2
             }
           ]
         }
@@ -280,8 +300,8 @@
     "building_count": 105,
     "dynasty_node_count": 4,
     "region_node_count": 4,
-    "structure_node_count": 4,
-    "leaf_path_count": 37,
+    "structure_node_count": 5,
+    "leaf_path_count": 42,
     "dynasty_nodes": [
       "元",
       "其他朝代",
@@ -296,9 +316,10 @@
     ],
     "structure_nodes": [
       "其他官府体系",
-      "城防防御体系",
-      "官署合院体系",
-      "楼阁台榭体系"
+      "城防体系",
+      "抬梁合院",
+      "抬梁式",
+      "抬梁式木构架"
     ]
   }
 }

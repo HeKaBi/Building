@@ -1,9 +1,9 @@
 {
   "building_type": "宫殿",
-  "title": "宫殿：主要朝代-主要地区-建筑结构",
+  "title": "宫殿：主要朝代-主要地域-建筑结构",
   "dimension_order": [
     "主要朝代",
-    "主要地区",
+    "主要地域",
     "建筑结构"
   ],
   "data": [
@@ -16,7 +16,7 @@
           "value": 1,
           "children": [
             {
-              "name": "特殊宫殿体系",
+              "name": "其他宫殿体系",
               "value": 1
             }
           ]
@@ -46,15 +46,11 @@
           "value": 3,
           "children": [
             {
-              "name": "中轴合院体系",
-              "value": 1
-            },
-            {
               "name": "其他宫殿体系",
-              "value": 1
+              "value": 2
             },
             {
-              "name": "特殊宫殿体系",
+              "name": "抬梁式",
               "value": 1
             }
           ]
@@ -64,12 +60,8 @@
           "value": 2,
           "children": [
             {
-              "name": "中轴合院体系",
-              "value": 1
-            },
-            {
               "name": "其他宫殿体系",
-              "value": 1
+              "value": 2
             }
           ]
         }
@@ -95,10 +87,14 @@
           "children": [
             {
               "name": "中轴合院体系",
-              "value": 4
+              "value": 1
             },
             {
-              "name": "特殊宫殿体系",
+              "name": "其他宫殿体系",
+              "value": 3
+            },
+            {
+              "name": "抬梁式",
               "value": 1
             }
           ]
@@ -108,7 +104,7 @@
           "value": 1,
           "children": [
             {
-              "name": "中轴合院体系",
+              "name": "其他宫殿体系",
               "value": 1
             }
           ]
@@ -147,7 +143,7 @@
     "dynasty_node_count": 4,
     "region_node_count": 4,
     "structure_node_count": 4,
-    "leaf_path_count": 14,
+    "leaf_path_count": 13,
     "dynasty_nodes": [
       "元",
       "明",
@@ -163,8 +159,8 @@
     "structure_nodes": [
       "中轴合院体系",
       "其他宫殿体系",
-      "殿阁体系",
-      "特殊宫殿体系"
+      "抬梁式",
+      "殿阁体系"
     ]
   }
 }

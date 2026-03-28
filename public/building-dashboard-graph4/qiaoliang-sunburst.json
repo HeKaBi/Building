@@ -1,9 +1,9 @@
 {
   "building_type": "桥梁",
-  "title": "桥梁：主要朝代-主要地区-建筑结构",
+  "title": "桥梁：主要朝代-主要地域-建筑结构",
   "dimension_order": [
     "主要朝代",
-    "主要地区",
+    "主要地域",
     "建筑结构"
   ],
   "data": [
@@ -17,11 +17,7 @@
           "children": [
             {
               "name": "其他桥梁体系",
-              "value": 1
-            },
-            {
-              "name": "石拱桥体系",
-              "value": 1
+              "value": 2
             }
           ]
         },
@@ -31,15 +27,11 @@
           "children": [
             {
               "name": "其他桥梁体系",
-              "value": 3
+              "value": 7
             },
             {
               "name": "石拱桥体系",
-              "value": 3
-            },
-            {
-              "name": "石梁桥体系",
-              "value": 2
+              "value": 1
             }
           ]
         },
@@ -48,8 +40,16 @@
           "value": 5,
           "children": [
             {
+              "name": "其他桥梁体系",
+              "value": 3
+            },
+            {
+              "name": "拱券结构",
+              "value": 1
+            },
+            {
               "name": "石拱桥体系",
-              "value": 5
+              "value": 1
             }
           ]
         },
@@ -58,7 +58,7 @@
           "value": 1,
           "children": [
             {
-              "name": "廊桥木构体系",
+              "name": "其他桥梁体系",
               "value": 1
             }
           ]
@@ -74,7 +74,7 @@
           "value": 2,
           "children": [
             {
-              "name": "石梁桥体系",
+              "name": "其他桥梁体系",
               "value": 2
             }
           ]
@@ -84,16 +84,16 @@
           "value": 20,
           "children": [
             {
-              "name": "廊桥木构体系",
+              "name": "其他桥梁体系",
+              "value": 10
+            },
+            {
+              "name": "拱券结构",
               "value": 1
             },
             {
               "name": "石拱桥体系",
-              "value": 12
-            },
-            {
-              "name": "石梁桥体系",
-              "value": 7
+              "value": 9
             }
           ]
         }
@@ -109,11 +109,15 @@
           "children": [
             {
               "name": "其他桥梁体系",
+              "value": 2
+            },
+            {
+              "name": "多孔石拱桥",
               "value": 1
             },
             {
               "name": "石拱桥体系",
-              "value": 3
+              "value": 1
             }
           ]
         },
@@ -123,15 +127,15 @@
           "children": [
             {
               "name": "其他桥梁体系",
-              "value": 2
+              "value": 4
+            },
+            {
+              "name": "多孔石拱桥",
+              "value": 5
             },
             {
               "name": "石拱桥体系",
-              "value": 9
-            },
-            {
-              "name": "石梁桥体系",
-              "value": 1
+              "value": 3
             }
           ]
         },
@@ -144,8 +148,12 @@
               "value": 1
             },
             {
+              "name": "多孔石拱桥",
+              "value": 6
+            },
+            {
               "name": "石拱桥体系",
-              "value": 7
+              "value": 1
             }
           ]
         },
@@ -155,14 +163,10 @@
           "children": [
             {
               "name": "其他桥梁体系",
-              "value": 1
+              "value": 3
             },
             {
-              "name": "石拱桥体系",
-              "value": 2
-            },
-            {
-              "name": "石梁桥体系",
+              "name": "多孔石拱桥",
               "value": 2
             }
           ]
@@ -178,12 +182,20 @@
           "value": 10,
           "children": [
             {
-              "name": "廊桥木构体系",
+              "name": "其他桥梁体系",
               "value": 5
             },
             {
+              "name": "多孔石拱桥",
+              "value": 1
+            },
+            {
+              "name": "拱券结构",
+              "value": 2
+            },
+            {
               "name": "石拱桥体系",
-              "value": 5
+              "value": 2
             }
           ]
         },
@@ -193,15 +205,15 @@
           "children": [
             {
               "name": "其他桥梁体系",
-              "value": 2
+              "value": 3
             },
             {
-              "name": "廊桥木构体系",
-              "value": 1
+              "name": "拱券结构",
+              "value": 4
             },
             {
               "name": "石拱桥体系",
-              "value": 5
+              "value": 1
             }
           ]
         },
@@ -210,7 +222,7 @@
           "value": 1,
           "children": [
             {
-              "name": "石拱桥体系",
+              "name": "拱券结构",
               "value": 1
             }
           ]
@@ -220,12 +232,16 @@
           "value": 6,
           "children": [
             {
-              "name": "廊桥木构体系",
-              "value": 3
+              "name": "其他桥梁体系",
+              "value": 4
+            },
+            {
+              "name": "拱券结构",
+              "value": 1
             },
             {
               "name": "石拱桥体系",
-              "value": 3
+              "value": 1
             }
           ]
         }
@@ -237,7 +253,7 @@
     "dynasty_node_count": 4,
     "region_node_count": 4,
     "structure_node_count": 4,
-    "leaf_path_count": 29,
+    "leaf_path_count": 33,
     "dynasty_nodes": [
       "其他朝代",
       "宋",
@@ -252,9 +268,9 @@
     ],
     "structure_nodes": [
       "其他桥梁体系",
-      "廊桥木构体系",
-      "石拱桥体系",
-      "石梁桥体系"
+      "多孔石拱桥",
+      "拱券结构",
+      "石拱桥体系"
     ]
   }
 }
