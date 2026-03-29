@@ -8,102 +8,86 @@
   ],
   "data": [
     {
-      "name": "其他朝代",
-      "value": 13,
+      "name": "清",
+      "value": 98,
       "children": [
         {
-          "name": "其他地区",
-          "value": 1,
+          "name": "其他",
+          "value": 21,
           "children": [
             {
-              "name": "其他民居体系",
+              "name": "其他",
               "value": 1
+            },
+            {
+              "name": "合院",
+              "value": 15
+            },
+            {
+              "name": "抬梁",
+              "value": 3
+            },
+            {
+              "name": "穿斗",
+              "value": 2
             }
           ]
         },
         {
           "name": "华东",
-          "value": 8,
+          "value": 51,
           "children": [
             {
-              "name": "其他民居体系",
-              "value": 5
-            },
-            {
-              "name": "抬梁穿斗混合",
-              "value": 2
-            },
-            {
-              "name": "抬梁穿斗混合体系",
+              "name": "其他",
               "value": 1
+            },
+            {
+              "name": "合院",
+              "value": 26
+            },
+            {
+              "name": "抬梁",
+              "value": 14
+            },
+            {
+              "name": "穿斗",
+              "value": 10
             }
           ]
         },
         {
           "name": "华中",
-          "value": 1,
+          "value": 15,
           "children": [
             {
-              "name": "其他民居体系",
+              "name": "合院",
+              "value": 9
+            },
+            {
+              "name": "抬梁",
               "value": 1
+            },
+            {
+              "name": "穿斗",
+              "value": 5
             }
           ]
         },
         {
           "name": "西南",
-          "value": 3,
-          "children": [
-            {
-              "name": "其他民居体系",
-              "value": 3
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "宋",
-      "value": 15,
-      "children": [
-        {
-          "name": "其他地区",
-          "value": 2,
-          "children": [
-            {
-              "name": "抬梁穿斗混合体系",
-              "value": 2
-            }
-          ]
-        },
-        {
-          "name": "华东",
           "value": 11,
           "children": [
             {
-              "name": "其他民居体系",
-              "value": 2
-            },
-            {
-              "name": "抬梁合院体系",
+              "name": "合院",
               "value": 1
             },
             {
-              "name": "抬梁穿斗混合",
+              "name": "抬梁",
+              "value": 3
+            },
+            {
+              "name": "穿斗",
               "value": 7
-            },
-            {
-              "name": "抬梁穿斗混合体系",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "name": "华中",
-          "value": 2,
-          "children": [
-            {
-              "name": "抬梁穿斗混合体系",
-              "value": 2
             }
           ]
         }
@@ -114,20 +98,16 @@
       "value": 69,
       "children": [
         {
-          "name": "其他地区",
+          "name": "其他",
           "value": 15,
           "children": [
             {
-              "name": "其他民居体系",
+              "name": "其他",
               "value": 1
             },
             {
-              "name": "抬梁合院体系",
-              "value": 12
-            },
-            {
-              "name": "抬梁穿斗混合体系",
-              "value": 2
+              "name": "抬梁",
+              "value": 14
             }
           ]
         },
@@ -136,24 +116,16 @@
           "value": 35,
           "children": [
             {
-              "name": "其他民居体系",
-              "value": 9
+              "name": "其他",
+              "value": 2
             },
             {
-              "name": "合院穿斗体系",
+              "name": "合院",
               "value": 1
             },
             {
-              "name": "抬梁合院体系",
-              "value": 17
-            },
-            {
-              "name": "抬梁穿斗混合",
-              "value": 7
-            },
-            {
-              "name": "抬梁穿斗混合体系",
-              "value": 1
+              "name": "抬梁",
+              "value": 32
             }
           ]
         },
@@ -162,20 +134,20 @@
           "value": 11,
           "children": [
             {
-              "name": "其他民居体系",
-              "value": 3
-            },
-            {
-              "name": "合院穿斗体系",
+              "name": "其他",
               "value": 1
             },
             {
-              "name": "抬梁合院体系",
-              "value": 4
+              "name": "合院",
+              "value": 1
             },
             {
-              "name": "抬梁穿斗混合",
-              "value": 3
+              "name": "抬梁",
+              "value": 8
+            },
+            {
+              "name": "穿斗",
+              "value": 1
             }
           ]
         },
@@ -184,113 +156,47 @@
           "value": 8,
           "children": [
             {
-              "name": "其他民居体系",
-              "value": 1
-            },
-            {
-              "name": "抬梁合院体系",
-              "value": 6
-            },
-            {
-              "name": "抬梁穿斗混合",
-              "value": 1
+              "name": "抬梁",
+              "value": 8
             }
           ]
         }
       ]
     },
     {
-      "name": "清",
-      "value": 98,
+      "name": "宋",
+      "value": 15,
       "children": [
         {
-          "name": "其他地区",
-          "value": 21,
+          "name": "其他",
+          "value": 2,
           "children": [
             {
-              "name": "其他民居体系",
-              "value": 3
-            },
-            {
-              "name": "合院穿斗体系",
-              "value": 15
-            },
-            {
-              "name": "抬梁合院体系",
-              "value": 1
-            },
-            {
-              "name": "抬梁穿斗混合",
-              "value": 1
-            },
-            {
-              "name": "抬梁穿斗混合体系",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "name": "华东",
-          "value": 51,
-          "children": [
-            {
-              "name": "其他民居体系",
-              "value": 11
-            },
-            {
-              "name": "合院穿斗体系",
-              "value": 26
-            },
-            {
-              "name": "抬梁合院体系",
-              "value": 1
-            },
-            {
-              "name": "抬梁穿斗混合",
-              "value": 11
-            },
-            {
-              "name": "抬梁穿斗混合体系",
+              "name": "抬梁",
               "value": 2
             }
           ]
         },
         {
-          "name": "华中",
-          "value": 15,
+          "name": "华东",
+          "value": 11,
           "children": [
             {
-              "name": "其他民居体系",
-              "value": 5
+              "name": "合院",
+              "value": 2
             },
             {
-              "name": "合院穿斗体系",
+              "name": "抬梁",
               "value": 9
-            },
-            {
-              "name": "抬梁穿斗混合",
-              "value": 1
             }
           ]
         },
         {
-          "name": "西南",
-          "value": 11,
+          "name": "华中",
+          "value": 2,
           "children": [
             {
-              "name": "其他民居体系",
-              "value": 7
-            },
-            {
-              "name": "合院穿斗体系",
-              "value": 1
-            },
-            {
-              "name": "抬梁合院体系",
-              "value": 1
-            },
-            {
-              "name": "抬梁穿斗混合",
+              "name": "抬梁",
               "value": 2
             }
           ]
@@ -299,29 +205,27 @@
     }
   ],
   "summary": {
-    "building_count": 195,
-    "dynasty_node_count": 4,
+    "building_count": 182,
+    "dynasty_node_count": 3,
     "region_node_count": 4,
-    "structure_node_count": 5,
-    "leaf_path_count": 44,
+    "structure_node_count": 4,
+    "leaf_path_count": 28,
     "dynasty_nodes": [
-      "其他朝代",
-      "宋",
+      "清",
       "明",
-      "清"
+      "宋"
     ],
     "region_nodes": [
-      "其他地区",
+      "其他",
       "华东",
       "华中",
       "西南"
     ],
     "structure_nodes": [
-      "其他民居体系",
-      "合院穿斗体系",
-      "抬梁合院体系",
-      "抬梁穿斗混合",
-      "抬梁穿斗混合体系"
+      "其他",
+      "合院",
+      "抬梁",
+      "穿斗"
     ]
   }
 }

@@ -8,156 +8,28 @@
   ],
   "data": [
     {
-      "name": "元",
-      "value": 9,
-      "children": [
-        {
-          "name": "其他地区",
-          "value": 3,
-          "children": [
-            {
-              "name": "其他官府体系",
-              "value": 1
-            },
-            {
-              "name": "抬梁式",
-              "value": 1
-            },
-            {
-              "name": "抬梁式木构架",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "name": "华东",
-          "value": 1,
-          "children": [
-            {
-              "name": "城防体系",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "name": "华北",
-          "value": 3,
-          "children": [
-            {
-              "name": "其他官府体系",
-              "value": 3
-            }
-          ]
-        },
-        {
-          "name": "西南",
-          "value": 2,
-          "children": [
-            {
-              "name": "其他官府体系",
-              "value": 1
-            },
-            {
-              "name": "抬梁式",
-              "value": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "其他朝代",
-      "value": 25,
-      "children": [
-        {
-          "name": "其他地区",
-          "value": 7,
-          "children": [
-            {
-              "name": "其他官府体系",
-              "value": 4
-            },
-            {
-              "name": "城防体系",
-              "value": 2
-            },
-            {
-              "name": "抬梁式",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "name": "华东",
-          "value": 7,
-          "children": [
-            {
-              "name": "其他官府体系",
-              "value": 4
-            },
-            {
-              "name": "抬梁式",
-              "value": 3
-            }
-          ]
-        },
-        {
-          "name": "华北",
-          "value": 9,
-          "children": [
-            {
-              "name": "其他官府体系",
-              "value": 5
-            },
-            {
-              "name": "城防体系",
-              "value": 2
-            },
-            {
-              "name": "抬梁式",
-              "value": 2
-            }
-          ]
-        },
-        {
-          "name": "西南",
-          "value": 2,
-          "children": [
-            {
-              "name": "其他官府体系",
-              "value": 1
-            },
-            {
-              "name": "抬梁式",
-              "value": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "明",
       "value": 41,
       "children": [
         {
-          "name": "其他地区",
+          "name": "其他",
           "value": 11,
           "children": [
             {
-              "name": "其他官府体系",
-              "value": 4
-            },
-            {
-              "name": "城防体系",
-              "value": 4
-            },
-            {
-              "name": "抬梁式",
-              "value": 2
-            },
-            {
-              "name": "抬梁式木构架",
+              "name": "其他",
               "value": 1
+            },
+            {
+              "name": "城防",
+              "value": 5
+            },
+            {
+              "name": "抬梁",
+              "value": 3
+            },
+            {
+              "name": "楼阁",
+              "value": 2
             }
           ]
         },
@@ -166,16 +38,16 @@
           "value": 12,
           "children": [
             {
-              "name": "其他官府体系",
-              "value": 5
+              "name": "其他",
+              "value": 1
             },
             {
-              "name": "抬梁合院",
+              "name": "抬梁",
+              "value": 9
+            },
+            {
+              "name": "楼阁",
               "value": 2
-            },
-            {
-              "name": "抬梁式",
-              "value": 5
             }
           ]
         },
@@ -184,16 +56,20 @@
           "value": 11,
           "children": [
             {
-              "name": "其他官府体系",
-              "value": 7
+              "name": "其他",
+              "value": 2
             },
             {
-              "name": "城防体系",
+              "name": "城防",
               "value": 1
             },
             {
-              "name": "抬梁式木构架",
+              "name": "抬梁",
               "value": 3
+            },
+            {
+              "name": "楼阁",
+              "value": 5
             }
           ]
         },
@@ -202,19 +78,19 @@
           "value": 7,
           "children": [
             {
-              "name": "其他官府体系",
-              "value": 4
-            },
-            {
-              "name": "城防体系",
+              "name": "其他",
               "value": 1
             },
             {
-              "name": "抬梁式",
-              "value": 1
+              "name": "城防",
+              "value": 2
             },
             {
-              "name": "抬梁式木构架",
+              "name": "抬梁",
+              "value": 3
+            },
+            {
+              "name": "楼阁",
               "value": 1
             }
           ]
@@ -226,20 +102,20 @@
       "value": 30,
       "children": [
         {
-          "name": "其他地区",
+          "name": "其他",
           "value": 10,
           "children": [
             {
-              "name": "其他官府体系",
-              "value": 5
-            },
-            {
-              "name": "抬梁合院",
+              "name": "其他",
               "value": 2
             },
             {
-              "name": "抬梁式木构架",
-              "value": 3
+              "name": "城防",
+              "value": 1
+            },
+            {
+              "name": "抬梁",
+              "value": 7
             }
           ]
         },
@@ -248,16 +124,12 @@
           "value": 3,
           "children": [
             {
-              "name": "其他官府体系",
+              "name": "其他",
               "value": 1
             },
             {
-              "name": "抬梁式",
-              "value": 1
-            },
-            {
-              "name": "抬梁式木构架",
-              "value": 1
+              "name": "抬梁",
+              "value": 2
             }
           ]
         },
@@ -266,16 +138,8 @@
           "value": 12,
           "children": [
             {
-              "name": "抬梁合院",
-              "value": 7
-            },
-            {
-              "name": "抬梁式",
-              "value": 3
-            },
-            {
-              "name": "抬梁式木构架",
-              "value": 2
+              "name": "抬梁",
+              "value": 12
             }
           ]
         },
@@ -284,12 +148,66 @@
           "value": 5,
           "children": [
             {
-              "name": "抬梁合院",
-              "value": 3
+              "name": "抬梁",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "元",
+      "value": 9,
+      "children": [
+        {
+          "name": "其他",
+          "value": 3,
+          "children": [
+            {
+              "name": "其他",
+              "value": 1
             },
             {
-              "name": "抬梁式木构架",
+              "name": "抬梁",
               "value": 2
+            }
+          ]
+        },
+        {
+          "name": "华东",
+          "value": 1,
+          "children": [
+            {
+              "name": "城防",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "华北",
+          "value": 3,
+          "children": [
+            {
+              "name": "其他",
+              "value": 2
+            },
+            {
+              "name": "抬梁",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "西南",
+          "value": 2,
+          "children": [
+            {
+              "name": "其他",
+              "value": 1
+            },
+            {
+              "name": "抬梁",
+              "value": 1
             }
           ]
         }
@@ -297,29 +215,27 @@
     }
   ],
   "summary": {
-    "building_count": 105,
-    "dynasty_node_count": 4,
+    "building_count": 80,
+    "dynasty_node_count": 3,
     "region_node_count": 4,
-    "structure_node_count": 5,
-    "leaf_path_count": 42,
+    "structure_node_count": 4,
+    "leaf_path_count": 29,
     "dynasty_nodes": [
-      "元",
-      "其他朝代",
       "明",
-      "清"
+      "清",
+      "元"
     ],
     "region_nodes": [
-      "其他地区",
+      "其他",
       "华东",
       "华北",
       "西南"
     ],
     "structure_nodes": [
-      "其他官府体系",
-      "城防体系",
-      "抬梁合院",
-      "抬梁式",
-      "抬梁式木构架"
+      "其他",
+      "城防",
+      "抬梁",
+      "楼阁"
     ]
   }
 }
