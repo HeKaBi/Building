@@ -298,8 +298,8 @@ $color-text: #491f1f;
     bottom: 0;
     left: 2%;
     z-index: 1;
-    width: 46%;
-    height: 58%;
+    width: 50%;
+    height: 50%;
     pointer-events: none;
 }
 

@@ -1072,205 +1072,110 @@ const arcAngles = (count: number, startDeg: number, endDeg: number) => {
 const lineageEdgeKey = (edge: Pick<LineageGraphEdge, 'source' | 'target'>) =>
   [String(edge.source), String(edge.target)].sort().join('::');
 
-const filterLineageEdges = (graph: LineageGraph) => {
+const buildCenterStarEdges = (graph: LineageGraph) => {
   const edges = graph.edges ?? [];
-  if (edges.length === 0) return [] as LineageGraphEdge[];
-
   const centerId = String(graph.center_building?.line_no ?? '');
+  if (!centerId) return [] as LineageGraphEdge[];
+
   const nodeById = new Map((graph.nodes ?? []).map((node) => [String(node.id), node]));
-  const selected: LineageGraphEdge[] = [];
-  const selectedKeys = new Set<string>();
-  const primaryKeys = new Set<string>();
 
-  const priority = (edge: LineageGraphEdge) => {
-    const sourceNode = nodeById.get(String(edge.source));
-    const targetNode = nodeById.get(String(edge.target));
-    let score = Number(edge.weight || 0);
+  return (graph.nodes ?? [])
+    .filter((node) => String(node.id) !== centerId)
+    .map((node) => {
+      const nodeId = String(node.id);
+      const directEdge = edges.find(
+        (edge) =>
+          (String(edge.source) === centerId && String(edge.target) === nodeId) ||
+          (String(edge.source) === nodeId && String(edge.target) === centerId),
+      );
 
-    if (String(edge.source) === centerId || String(edge.target) === centerId) score += 0.9;
-    if (sourceNode?.role === 'bridge' || targetNode?.role === 'bridge') score += 0.18;
-    if (typeof sourceNode?.hop === 'number' && typeof targetNode?.hop === 'number') {
-      score += Math.max(0, 0.14 - Math.abs(sourceNode.hop - targetNode.hop) * 0.04);
-    }
+      if (directEdge) {
+        return {
+          ...directEdge,
+          source: centerId,
+          target: nodeId,
+          primary: true,
+        };
+      }
 
-    return score;
-  };
+      const bestProxyEdge = edges
+        .filter((edge) => String(edge.source) === nodeId || String(edge.target) === nodeId)
+        .sort((left, right) => Number(right.weight || 0) - Number(left.weight || 0))[0];
 
-  const pushEdge = (edge: LineageGraphEdge | undefined, primary: boolean) => {
-    if (!edge) return;
-    const key = lineageEdgeKey(edge);
-    if (selectedKeys.has(key)) {
-      if (primary) primaryKeys.add(key);
-      return;
-    }
+      const proxyNodeId =
+        bestProxyEdge
+          ? String(bestProxyEdge.source) === nodeId
+            ? String(bestProxyEdge.target)
+            : String(bestProxyEdge.source)
+          : null;
+      const proxyNode = proxyNodeId ? nodeById.get(proxyNodeId) : null;
+      const syntheticReasons = [
+        ...(node.shared_features?.length ? [`共享特征：${node.shared_features.join('、')}`] : []),
+        proxyNode ? `经由${proxyNode.name}接入谱系` : '',
+        `节点性质：${lineageRoleLabel(node)}`,
+      ].filter(Boolean);
 
-    selectedKeys.add(key);
-    if (primary) primaryKeys.add(key);
-    selected.push(edge);
-  };
-
-  const orderedNodes = (graph.nodes ?? [])
-    .filter((node) => node.role !== 'center')
-    .sort((left, right) => left.hop - right.hop || right.score - left.score || left.name.localeCompare(right.name, 'zh-CN'));
-
-  orderedNodes.forEach((node) => {
-    const best = edges
-      .filter((edge) => String(edge.source) === String(node.id) || String(edge.target) === String(node.id))
-      .sort((left, right) => priority(right) - priority(left))
-      .find((edge) => {
-        const otherId = String(edge.source) === String(node.id) ? String(edge.target) : String(edge.source);
-        const other = nodeById.get(otherId);
-        if (otherId === centerId) return true;
-        if (!other) return false;
-        return other.role === 'bridge' || other.hop < node.hop;
-      })
-      ?? edges
-        .filter((edge) => String(edge.source) === String(node.id) || String(edge.target) === String(node.id))
-        .sort((left, right) => priority(right) - priority(left))[0];
-
-    pushEdge(best, true);
-  });
-
-  const supportBudget = orderedNodes.length <= 4 ? 1 : orderedNodes.length <= 8 ? 2 : 4;
-  edges
-    .filter((edge) => !selectedKeys.has(lineageEdgeKey(edge)) && Number(edge.weight || 0) >= 0.28)
-    .sort((left, right) => priority(right) - priority(left))
-    .slice(0, supportBudget)
-    .forEach((edge) => pushEdge(edge, false));
-
-  return selected.map((edge) => ({ ...edge, primary: primaryKeys.has(lineageEdgeKey(edge)) }));
-};
-
-const polarPoint = (centerX: number, centerY: number, radiusX: number, radiusY: number, angle: number) => {
-  const rad = (angle * Math.PI) / 180;
-  return {
-    x: centerX + Math.cos(rad) * radiusX,
-    y: centerY + Math.sin(rad) * radiusY,
-  };
-};
-
-const buildLineageInitialLayout = (graph: LineageGraph) => {
-  const width = Math.max(graphChartRef.value?.clientWidth ?? 0, 520);
-  const height = Math.max(graphChartRef.value?.clientHeight ?? 0, 520);
-  const centerX = width * 0.5;
-  const centerY = height * 0.52;
-  const positions = new Map<string, { x: number; y: number }>();
-  const centerId = String(graph.center_building?.line_no ?? '');
-  const nodeCount = graph.nodes.length;
-  const compact = nodeCount <= 4 ? 0.74 : nodeCount <= 8 ? 0.88 : 1;
-
-  positions.set(centerId, { x: centerX, y: centerY });
-
-  const buckets = [
-    { nodes: graph.nodes.filter((node) => node.role === 'bridge'), radiusX: 70 * compact, radiusY: 58 * compact, start: -120, end: 120 },
-    { nodes: graph.nodes.filter((node) => node.role !== 'center' && node.role !== 'bridge' && node.hop === 1), radiusX: 110 * compact, radiusY: 88 * compact, start: -158, end: 158 },
-    { nodes: graph.nodes.filter((node) => node.role !== 'center' && node.role !== 'bridge' && node.hop === 2), radiusX: 152 * compact, radiusY: 120 * compact, start: -176, end: 176 },
-    { nodes: graph.nodes.filter((node) => node.role !== 'center' && node.role !== 'bridge' && node.hop >= 3), radiusX: 196 * compact, radiusY: 154 * compact, start: -180, end: 180 },
-  ];
-
-  buckets.forEach((bucket) => {
-    const ordered = bucket.nodes
-      .slice()
-      .sort((left, right) => right.score - left.score || left.name.localeCompare(right.name, 'zh-CN'));
-    const angles = ordered.length <= 3
-      ? Array.from({ length: ordered.length }, (_value, index) => -90 + (360 / Math.max(ordered.length, 1)) * index)
-      : arcAngles(ordered.length, bucket.start, bucket.end);
-
-    ordered.forEach((node, index) => {
-      const point = polarPoint(centerX, centerY, bucket.radiusX, bucket.radiusY, angles[index] ?? -90);
-      positions.set(String(node.id), {
-        x: point.x + (index % 2 === 0 ? -6 : 6),
-        y: point.y + ((index % 3) - 1) * 4,
-      });
+      return {
+        source: centerId,
+        target: nodeId,
+        weight: Math.max(0.18, Number(node.score || 0)),
+        reasons: syntheticReasons,
+        primary: true,
+      } as LineageGraphEdge & { primary: boolean };
     });
-  });
-
-  return {
-    positions,
-    width,
-    height,
-    centerX,
-    centerY,
-    zoom: nodeCount <= 4 ? 1.22 : nodeCount <= 8 ? 1.1 : 1,
-  };
-};
-
-const buildLineageForceConfig = (nodeCount: number) => {
-  if (nodeCount <= 4) {
-    return { repulsion: 88, edgeLength: [34, 66], gravity: 0.22, friction: 0.18, layoutAnimation: !reducedMotion };
-  }
-
-  if (nodeCount <= 8) {
-    return { repulsion: 116, edgeLength: [44, 84], gravity: 0.18, friction: 0.16, layoutAnimation: !reducedMotion };
-  }
-
-  return { repulsion: 148, edgeLength: [56, 112], gravity: 0.13, friction: 0.14, layoutAnimation: !reducedMotion };
 };
 
 const buildLineageGraphOption = (graph: LineageGraph): echarts.EChartsCoreOption => {
-  const visibleEdges = filterLineageEdges(graph);
-  const layout = buildLineageInitialLayout(graph);
-  const forceConfig = buildLineageForceConfig(graph.nodes.length);
+  const visibleEdges = buildCenterStarEdges(graph);
 
   const nodes = graph.nodes.map((node) => {
     const roleKey = getLineageRoleKey(node);
-    const baseColor = lineageRoleColorMap[roleKey] ?? '#8f7b68';
-    const entityKind = detectLineageEntityKind(node.name);
+    const baseColor = lineageRoleColorMap[roleKey] ?? '#c5c9c1';
     const isCenter = node.role === 'center';
-    const isCollection = entityKind === 'collection';
-    const position = layout.positions.get(String(node.id)) ?? { x: layout.centerX, y: layout.centerY };
-    const symbolSize = isCenter
-      ? [152, 48]
-      : isCollection
-        ? [Math.min(148, 82 + node.name.length * 10), 36 + Math.max(0, wrapLineageLabel(node.name, 8).split('\n').length - 1) * 14]
-        : Math.round(18 + Math.min(12, Math.max(0, Number(node.score || 0) * 14)));
+    const symbolSize = isCenter ? [132, 46] : 24;
 
     return {
       id: String(node.id),
       name: node.name,
-      x: position.x,
-      y: position.y,
-      fixed: isCenter,
-      symbol: isCenter || isCollection ? 'roundRect' : 'circle',
+      symbol: isCenter ? 'roundRect' : 'circle',
       symbolSize,
       value: Number(node.score || 0),
       itemStyle: {
-        color: isCenter ? '#e6c3c9' : isCollection ? withAlpha(baseColor, 0.24) : baseColor,
+        color: isCenter ? '#e6c3c9' : withAlpha(baseColor, 0.86),
         borderWidth: 0,
-        shadowBlur: isCenter ? 16 : 10,
-        shadowColor: isCenter ? 'rgba(72, 54, 54, 0.18)' : 'rgba(0, 0, 0, 0.14)',
-        shadowOffsetX: 2,
-        shadowOffsetY: 2,
+        shadowBlur: isCenter ? 10 : 6,
+        shadowColor: isCenter ? 'rgba(124, 95, 105, 0.12)' : 'rgba(93, 85, 72, 0.08)',
+        shadowOffsetX: 1,
+        shadowOffsetY: 1,
       },
       label: {
         show: true,
-        position: isCenter || isCollection ? 'inside' : 'bottom',
-        distance: isCenter || isCollection ? 0 : 8,
-        formatter: isCenter ? wrapLineageLabel(node.name, 10) : isCollection ? wrapLineageLabel(node.name, 8) : wrapLineageLabel(node.name, 7),
-        color: '#3b3028',
-        fontFamily: 'ContentFont, serif',
+        position: isCenter ? 'inside' : 'bottom',
+        distance: isCenter ? 0 : 6,
+        formatter: isCenter ? wrapLineageLabel(node.name, 10) : wrapLineageLabel(node.name, 7),
+        color: '#333333',
+        fontFamily: 'PortraitRefContentFont, ContentFont, serif',
         fontWeight: 'bold',
-        fontSize: isCenter ? 16 : 13,
-        lineHeight: 16,
-        textBorderColor: isCenter || isCollection ? 'transparent' : 'rgba(254, 248, 239, 0.96)',
-        textBorderWidth: isCenter || isCollection ? 0 : 4,
+        fontSize: isCenter ? 18 : 14,
+        lineHeight: 18,
+        textBorderColor: isCenter ? 'transparent' : 'rgba(255, 250, 243, 0.95)',
+        textBorderWidth: isCenter ? 0 : 3,
       },
       raw: node,
     };
   });
 
-  const links = visibleEdges.map((edge, index) => {
+  const links = visibleEdges.map((edge) => {
     const isPrimary = Boolean(edge.primary);
-    const sign = index % 2 === 0 ? 1 : -1;
     return {
       source: String(edge.source),
       target: String(edge.target),
       value: Number(edge.weight || 0),
       lineStyle: {
-        width: isPrimary ? 1.3 + Number(edge.weight || 0) * 3.4 : 0.8 + Number(edge.weight || 0) * 1.3,
-        color: isPrimary ? 'rgba(146, 142, 130, 0.72)' : 'rgba(146, 142, 130, 0.28)',
-        opacity: isPrimary ? 0.78 : 0.26,
-        curveness: isPrimary ? 0.08 * sign : 0.18 * sign,
+        width: isPrimary ? 1.8 : 1.1,
+        color: isPrimary ? '#928e82' : 'rgba(146, 142, 130, 0.34)',
+        opacity: isPrimary ? 0.72 : 0.3,
+        curveness: 0.4,
       },
       raw: edge,
     };
@@ -1287,9 +1192,9 @@ const buildLineageGraphOption = (graph: LineageGraph): echarts.EChartsCoreOption
       borderColor: 'rgba(151, 117, 93, 0.22)',
       borderWidth: 1,
       textStyle: {
-        color: '#4f3b2f',
-        fontFamily: 'ContentFont',
-        fontSize: 13,
+        color: '#333333',
+        fontFamily: 'PortraitRefContentFont, ContentFont, serif',
+        fontSize: 16,
         fontWeight: 'bold',
       },
       formatter: (params: { dataType: 'node' | 'edge'; data: any }) => {
@@ -1315,20 +1220,25 @@ const buildLineageGraphOption = (graph: LineageGraph): echarts.EChartsCoreOption
     series: [
       {
         type: 'graph',
-        top: '10%',
+        top: '8%',
         right: '6%',
-        bottom: '10%',
+        bottom: '8%',
         left: '6%',
         layout: 'force',
-        force: forceConfig,
+        force: {
+          repulsion: 180,
+          edgeLength: [130, 240],
+          friction: 0.1,
+          layoutAnimation: !reducedMotion,
+        },
         data: nodes,
         links,
         roam: true,
         draggable: true,
         focusNodeAdjacency: true,
         autoCurveness: true,
-        edgeSymbol: ['none', 'none'],
-        zoom: layout.zoom,
+        edgeSymbol: ['none', 'arrow'],
+        edgeSymbolSize: 8,
         scaleLimit: {
           min: 0.55,
           max: 1.9,
@@ -1337,7 +1247,7 @@ const buildLineageGraphOption = (graph: LineageGraph): echarts.EChartsCoreOption
           hideOverlap: true,
         },
         lineStyle: {
-          opacity: 0.58,
+          opacity: 0.6,
         },
       },
     ],
@@ -1858,8 +1768,8 @@ onBeforeUnmount(() => {
 .chart-card__header h3,
 .network-panel__header h2 {
   margin: 0;
-  font-family: 'ChartTitleFont', 'TitleFont', serif;
-  color: #241b15;
+  font-family: 'PortraitRefTitleFont', 'TitleFont', serif;
+  color: #333333;
   line-height: 1.08;
 }
 
@@ -1870,8 +1780,8 @@ onBeforeUnmount(() => {
 .chart-card__header span,
 .network-panel__header p,
 .network-panel__legend-item {
-  font-family: 'ContentFont', serif;
-  color: rgba(78, 61, 51, 0.76);
+  font-family: 'PortraitRefContentFont', 'ContentFont', serif;
+  color: rgba(82, 74, 63, 0.82);
 }
 
 .chart-card__header span,
@@ -1899,32 +1809,35 @@ onBeforeUnmount(() => {
 
 .network-panel__header {
   display: grid;
-  gap: 10px;
-  margin-bottom: 6px;
+  gap: 8px;
+  margin-bottom: 4px;
 }
 
 .network-panel__header h2 {
-  font-size: 42px;
+  font-size: 40px;
   text-align: center;
 }
 
 .network-panel__header p {
   margin: 0;
   text-align: center;
+  font-size: 13px;
+  line-height: 1.45;
 }
 
 .network-panel__legend {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px 12px;
+  gap: 8px 12px;
 }
 
 .network-panel__legend-item {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 700;
 }
 
 .network-panel__legend-item i {
@@ -1936,6 +1849,7 @@ onBeforeUnmount(() => {
 .network-panel__canvas {
   flex: 1;
   min-height: 0;
+  margin-top: 2px;
 }
 
 @media (max-width: 1460px) {
