@@ -487,7 +487,7 @@ const renderRoseChart = () => {
 
   chart.setOption(
     {
-      title: buildMatrixChartTitle('\u671d\u4ee3\u00b7\u529f\u80fd\u00b7\u6750\u6599\u73ab\u7470\u56fe', '-1%', 25),
+      title: buildMatrixChartTitle('\u671d\u4ee3\u00b7\u529f\u80fd\u00b7\u6750\u6599\u73ab\u7470\u56fe', '2%', 25),
       animationDuration: 650,
       animationEasing: 'cubicOut',
       tooltip: {
@@ -799,7 +799,7 @@ const renderSunburstChart = () => {
 
   chart.setOption(
     {
-      title: buildMatrixChartTitle('\u671d\u4ee3\u00b7\u5730\u57df\u00b7\u7ed3\u6784\u65ed\u65e5\u56fe', '0%', 25),
+      title: buildMatrixChartTitle('\u671d\u4ee3\u00b7\u5730\u57df\u00b7\u7ed3\u6784\u65ed\u65e5\u56fe', '-1%', 25),
       animationDuration: 680,
       animationEasing: 'cubicOut',
       tooltip: {
@@ -822,7 +822,7 @@ const renderSunburstChart = () => {
           type: 'sunburst',
           data: decorateSunburstData(graph.data),
           radius: ['18%', '84%'],
-          center: ['50%', '56%'],
+          center: ['50%', '54%'],
           nodeClick: false,
           sort: null,
           emphasis: {
@@ -1259,8 +1259,8 @@ onBeforeUnmount(() => {
   min-height: 0;
   height: 100%;
   display: grid;
-  grid-template-columns: minmax(0, 1.32fr) minmax(0, 1fr);
-  grid-template-rows: minmax(0, 1.04fr) minmax(0, 0.96fr);
+  grid-template-columns: minmax(0, 1.42fr) minmax(0, 0.94fr);
+  grid-template-rows: minmax(0, 0.94fr) minmax(0, 1.06fr);
   grid-template-areas:
     'sankey cloud'
     'rose sunburst';
@@ -1297,6 +1297,8 @@ onBeforeUnmount(() => {
 
 .dashboard-panel--rose {
   grid-area: rose;
+  padding: 0;
+  overflow: visible;
 }
 
 .dashboard-panel--sunburst {
@@ -1324,6 +1326,13 @@ onBeforeUnmount(() => {
   min-height: 0;
   margin: auto;
   overflow: visible;
+}
+
+.dashboard-panel--rose .dashboard-panel__chart {
+  width: 106%;
+  height: 106%;
+  margin-left: -3%;
+  margin-top: -2%;
 }
 
 .dashboard-panel--sankey .dashboard-panel__chart {
@@ -1422,7 +1431,7 @@ onBeforeUnmount(() => {
   }
 
   .chart-grid {
-    grid-template-columns: minmax(0, 1.24fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1.34fr) minmax(0, 0.94fr);
     gap: 8px;
   }
 }

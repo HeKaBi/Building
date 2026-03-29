@@ -108,6 +108,9 @@ import { computed, nextTick, onBeforeUnmount, onMounted, ref, type Ref, watch } 
 import vintage from '@/assets/theme/vintage.json';
 import { buildingImageMap } from '@/demo/building-section-catalog/generatedImageMap';
 import rawBuildings from '../../building.json';
+import canonicalRawBuildings from '../../building-jittered.json';
+import lineageManifestData from '../../public/building-lineage/lineage_manifest.json';
+import lineageIndexData from '../../public/building-lineage/building_index.json';
 
 echarts.use([TooltipComponent, LegendComponent, PieChart, RadarChart, GraphChart, CanvasRenderer, LabelLayout]);
 
@@ -208,6 +211,9 @@ interface LineageGraph {
 }
 
 const buildings = rawBuildings as BuildingRecord[];
+const canonicalBuildings = canonicalRawBuildings as BuildingRecord[];
+const canonicalBuildingMap = new Map(canonicalBuildings.map((item) => [item.id, item] as const));
+const buildingMap = new Map(buildings.map((item) => [item.id, item] as const));
 
 const pieChartRef = ref<HTMLDivElement | null>(null);
 const cloudChartRef = ref<HTMLDivElement | null>(null);
@@ -223,6 +229,7 @@ const chartRefs: Record<ChartKey, Ref<HTMLDivElement | null>> = {
 
 const chartInstances = new Map<ChartKey, echarts.EChartsType>();
 const lineageGraphCache = new Map<string, LineageGraph>();
+const lineageGraphModules = import.meta.glob('../../public/building-lineage/topk_graphs/*.json');
 const reducedMotion = typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 
 const searchText = ref('故宫');
@@ -231,10 +238,14 @@ const lineageIndex = ref<LineageIndexEntry[]>([]);
 const activeLineageGraph = ref<LineageGraph | null>(null);
 const lineageLoading = ref(false);
 
-const defaultBuilding =
-  buildings.find((item) => item.name === '故宫') ??
-  buildings.find((item) => item.name === '岳阳楼') ??
-  buildings[0];
+const defaultBuilding = (() => {
+  const canonicalDefault =
+    canonicalBuildings.find((item) => item.name === '故宫') ??
+    canonicalBuildings.find((item) => item.name === '岳阳楼') ??
+    canonicalBuildings[0];
+
+  return buildingMap.get(canonicalDefault.id) ?? buildings[0];
+})();
 
 const selectedBuilding = ref<BuildingRecord>(defaultBuilding);
 
@@ -373,7 +384,12 @@ const cleanProvince = (value: string) =>
 
 const cleanCity = (value: string) => value.replace(/市|地区|自治州|自治县|盟/g, '').trim();
 
-const lineageBaseUrl = `${import.meta.env.BASE_URL}building-lineage`;
+const resolveCanonicalBuilding = (building: BuildingRecord) => canonicalBuildingMap.get(building.id) ?? building;
+
+const parseLineageLineNoFromBuildingId = (buildingId: string) => {
+  const matched = /^building-(\d+)-/i.exec(buildingId);
+  return matched?.[1] ?? null;
+};
 
 const normalizeLookupText = (value: string) =>
   value
@@ -383,38 +399,43 @@ const normalizeLookupText = (value: string) =>
     .trim()
     .toLowerCase();
 
-const fetchLineageJson = async <T>(path: string) => {
-  const response = await fetch(`${lineageBaseUrl}/${path}`, { cache: 'force-cache' });
-  if (!response.ok) {
-    throw new Error(`加载谱系图失败：${path}`);
-  }
-
-  return (await response.json()) as T;
-};
-
 const buildLineageIndexScore = (entry: LineageIndexEntry, building: BuildingRecord) => {
-  const buildingName = normalizeLookupText(building.name);
+  const canonicalBuilding = resolveCanonicalBuilding(building);
+  const buildingName = normalizeLookupText(canonicalBuilding.name);
   const entryName = normalizeLookupText(entry.name);
-  const buildingProvince = normalizeLookupText(cleanProvince(building.province));
+  const buildingProvince = normalizeLookupText(cleanProvince(canonicalBuilding.province));
   const entryProvince = normalizeLookupText(cleanProvince(entry.province));
-  const buildingDynasty = normalizeLookupText(building.dynasty);
+  const buildingDynasty = normalizeLookupText(canonicalBuilding.dynasty);
   const entryDynasty = normalizeLookupText(entry.start_dynasty);
 
   let score = 0;
 
   if (entryName === buildingName) score += 1200;
   if (entryName.includes(buildingName) || buildingName.includes(entryName)) score += 520 - Math.abs(entryName.length - buildingName.length) * 12;
-  if (entry.building_type === building.category) score += 180;
+  if (entry.building_type === canonicalBuilding.category) score += 180;
   if (entryProvince === buildingProvince) score += 80;
   if (entryProvince.includes(buildingProvince) || buildingProvince.includes(entryProvince)) score += 32;
   if (entryDynasty === buildingDynasty) score += 64;
-  if (`${entry.lineage_name}|${entry.name}`.includes(building.structureType)) score += 24;
+  if (`${entry.lineage_name}|${entry.name}`.includes(canonicalBuilding.structureType)) score += 24;
 
   return score;
 };
 
 const resolveLineageIndexEntry = (building: BuildingRecord) => {
   if (lineageIndex.value.length === 0) return null;
+
+  const directLineNo = parseLineageLineNoFromBuildingId(building.id);
+  if (directLineNo) {
+    const directEntry = lineageIndex.value.find((entry) => entry.line_no === directLineNo);
+    if (directEntry) {
+      const canonicalBuilding = resolveCanonicalBuilding(building);
+      const sameName = normalizeLookupText(directEntry.name) === normalizeLookupText(canonicalBuilding.name);
+      const sameType = directEntry.building_type === canonicalBuilding.category;
+      if (sameName || sameType) {
+        return directEntry;
+      }
+    }
+  }
 
   const ranked = lineageIndex.value
     .map((entry) => ({ entry, score: buildLineageIndexScore(entry, building) }))
@@ -426,11 +447,11 @@ const resolveLineageIndexEntry = (building: BuildingRecord) => {
 
 const resolveBuildingFromLineageEntry = (entry: LineageIndexEntry) => {
   const targetName = normalizeLookupText(entry.name);
-  const exactMatch = buildings.find(
+  const exactMatch = canonicalBuildings.find(
     (item) => item.category === entry.building_type && normalizeLookupText(item.name) === targetName,
   );
 
-  if (exactMatch) return exactMatch;
+  if (exactMatch) return buildingMap.get(exactMatch.id) ?? exactMatch;
   return findBestMatch(entry.name);
 };
 
@@ -506,12 +527,13 @@ const findBestMatch = (keyword: string) => {
   const trimmedKeyword = keyword.trim();
   if (!trimmedKeyword) return null;
 
-  const ranked = buildings
+  const ranked = canonicalBuildings
     .map((item) => ({ item, score: buildSearchScore(item, trimmedKeyword) }))
     .filter((item) => item.score > 0)
     .sort((left, right) => right.score - left.score || right.item.importance - left.item.importance || left.item.year - right.item.year);
 
-  return ranked[0]?.item ?? null;
+  const matched = ranked[0]?.item ?? null;
+  return matched ? (buildingMap.get(matched.id) ?? matched) : null;
 };
 
 const loadLineageGraph = async (lineNo: string) => {
@@ -519,7 +541,13 @@ const loadLineageGraph = async (lineNo: string) => {
     return lineageGraphCache.get(lineNo)!;
   }
 
-  const graph = await fetchLineageJson<LineageGraph>(`topk_graphs/${encodeURIComponent(lineNo)}.json`);
+  const importer = lineageGraphModules[`../../public/building-lineage/topk_graphs/${lineNo}.json`];
+  if (!importer) {
+    throw new Error(`未找到谱系子图文件：${lineNo}.json`);
+  }
+
+  const loaded = (await importer()) as { default?: LineageGraph } | LineageGraph;
+  const graph = ('default' in loaded ? loaded.default : loaded) as LineageGraph;
   lineageGraphCache.set(lineNo, graph);
   return graph;
 };
@@ -527,13 +555,12 @@ const loadLineageGraph = async (lineNo: string) => {
 let lineageRequestId = 0;
 
 const syncLineageGraph = async (building: BuildingRecord) => {
-  if (lineageIndex.value.length === 0) {
-    activeLineageGraph.value = null;
-    return;
-  }
-
-  const matchedEntry = resolveLineageIndexEntry(building);
-  if (!matchedEntry) {
+  const directLineNo = parseLineageLineNoFromBuildingId(building.id);
+  const matchedEntry = lineageIndex.value.length > 0 ? resolveLineageIndexEntry(building) : null;
+  const candidateLineNos = [directLineNo, matchedEntry?.line_no].filter(
+    (value, index, array): value is string => Boolean(value) && array.indexOf(value) === index,
+  );
+  if (candidateLineNos.length === 0) {
     activeLineageGraph.value = null;
     return;
   }
@@ -542,13 +569,19 @@ const syncLineageGraph = async (building: BuildingRecord) => {
   lineageLoading.value = true;
 
   try {
-    const graph = await loadLineageGraph(matchedEntry.line_no);
+    let loadedGraph: LineageGraph | null = null;
+
+    for (const lineNo of candidateLineNos) {
+      try {
+        loadedGraph = await loadLineageGraph(lineNo);
+        break;
+      } catch (error) {
+        console.error(`failed to load lineage graph ${lineNo}`, error);
+      }
+    }
+
     if (requestId !== lineageRequestId) return;
-    activeLineageGraph.value = graph;
-  } catch (error) {
-    if (requestId !== lineageRequestId) return;
-    console.error('failed to load lineage graph', error);
-    activeLineageGraph.value = null;
+    activeLineageGraph.value = loadedGraph;
   } finally {
     if (requestId === lineageRequestId) {
       lineageLoading.value = false;
@@ -558,12 +591,8 @@ const syncLineageGraph = async (building: BuildingRecord) => {
 
 const loadLineageResources = async () => {
   try {
-    const [manifest, index] = await Promise.all([
-      fetchLineageJson<LineageManifest>('lineage_manifest.json'),
-      fetchLineageJson<LineageIndexEntry[]>('building_index.json'),
-    ]);
-    lineageManifest.value = manifest;
-    lineageIndex.value = index;
+    lineageManifest.value = lineageManifestData as LineageManifest;
+    lineageIndex.value = lineageIndexData as LineageIndexEntry[];
     await syncLineageGraph(selectedBuilding.value);
   } catch (error) {
     console.error('failed to initialize lineage resources', error);
@@ -792,11 +821,21 @@ const radarMeta = computed(() => `${selectedBuilding.value.level} · 权重 ${se
 
 const networkSubtitle = computed(() => {
   if (lineageLoading.value) {
-    return '正在加载 stage10 建筑谱系图...';
+    return activeLineageEntry.value
+      ? `已命中谱系子图 #${activeLineageEntry.value.line_no}，正在加载...`
+      : '正在加载 stage10 建筑谱系图...';
   }
 
   if (activeLineageGraph.value && activeLineageEntry.value) {
-    return `谱系：${activeLineageGraph.value.lineage_name} · 社区成员 ${activeLineageGraph.value.community_member_count} · 子图节点 ${activeLineageGraph.value.nodes.length}`;
+    return `谱系 #${activeLineageEntry.value.line_no}：${activeLineageGraph.value.lineage_name} · 社区成员 ${activeLineageGraph.value.community_member_count} · 子图节点 ${activeLineageGraph.value.nodes.length}`;
+  }
+
+  if (activeLineageGraph.value) {
+    return `谱系子图已加载 · 社区成员 ${activeLineageGraph.value.community_member_count} · 子图节点 ${activeLineageGraph.value.nodes.length}`;
+  }
+
+  if (activeLineageEntry.value) {
+    return `已命中谱系子图 #${activeLineageEntry.value.line_no}，但子图未加载成功，已回退为默认关联网络`;
   }
 
   if (lineageManifest.value && lineageIndex.value.length > 0) {
