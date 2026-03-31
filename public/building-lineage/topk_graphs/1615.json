@@ -77,7 +77,7 @@
       "century_num": 19,
       "role": "center",
       "hop": 0,
-      "score": 1.0,
+      "score": 1,
       "shared_features": [],
       "structure_terms": [
         "木构架",
@@ -351,11 +351,11 @@
       "components": {
         "structure_terms": 0.0324,
         "layout_terms": 0.088,
-        "material_terms": 0.0,
+        "material_terms": 0,
         "craft_terms": 0.2484,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.7857,
         "region": 0.6
       }
@@ -373,13 +373,13 @@
       ],
       "components": {
         "structure_terms": 0.0708,
-        "layout_terms": 0.0,
+        "layout_terms": 0,
         "material_terms": 0.1899,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
         "material_cluster": 0.5,
-        "time": 1.0,
+        "time": 1,
         "region": 0.6
       }
     },
@@ -394,15 +394,15 @@
         "同朝代：清"
       ],
       "components": {
-        "structure_terms": 0.0,
-        "layout_terms": 0.0,
+        "structure_terms": 0,
+        "layout_terms": 0,
         "material_terms": 0.1143,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
-        "time": 1.0,
-        "region": 0.0
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 1,
+        "region": 0
       }
     },
     {
@@ -418,13 +418,13 @@
       "components": {
         "structure_terms": 0.0599,
         "layout_terms": 0.1906,
-        "material_terms": 0.0,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 0.0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 0,
         "time": 0.7857,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -440,13 +440,13 @@
       "components": {
         "structure_terms": 0.1292,
         "layout_terms": 0.1573,
-        "material_terms": 0.0,
-        "craft_terms": 0.0,
+        "material_terms": 0,
+        "craft_terms": 0,
         "function_terms": 0.1867,
         "structure_cluster": 0.6,
-        "material_cluster": 1.0,
+        "material_cluster": 1,
         "time": 0.0395,
-        "region": 0.0
+        "region": 0
       }
     }
   ]

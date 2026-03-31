@@ -93,12 +93,39 @@ const MAP_BOUNDARY = 'rgba(242, 238, 230, 0.76)';
 const MAP_BOUNDARY_SOFT = 'rgba(242, 238, 230, 0.52)';
 const MAP_AREA = 'rgba(216, 209, 196, 0.74)';
 const MAP_AREA_HOVER = 'rgba(224, 216, 202, 0.84)';
+const SOUTH_SEA_AREA = 'rgba(175, 164, 146, 0.9)';
+const SOUTH_SEA_AREA_HOVER = 'rgba(184, 171, 151, 0.94)';
+const SOUTH_SEA_BOUNDARY = 'rgba(126, 111, 94, 0.88)';
+const SOUTH_SEA_REGION_NAMES = ['南海诸岛', ''] as const;
 const MARKER_RED = '#9A4336';
 const MARKER_RED_MUTED = '#B05A4A';
 const MARKER_GREEN = '#97ACA0';
 const MARKER_GREEN_SOFT = '#B4C1B8';
 const MARKER_EARTH = '#B89A82';
 const clamp = (value: number, min: number, max: number) => Math.min(Math.max(value, min), max);
+
+const buildSouthSeaRegions = (borderWidth: number, areaColor: string) =>
+  SOUTH_SEA_REGION_NAMES.map((name) => ({
+    name,
+    label: {
+      show: false,
+    },
+    itemStyle: {
+      areaColor,
+      borderColor: SOUTH_SEA_BOUNDARY,
+      borderWidth,
+    },
+    emphasis: {
+      label: {
+        show: false,
+      },
+      itemStyle: {
+        areaColor: SOUTH_SEA_AREA_HOVER,
+        borderColor: SOUTH_SEA_BOUNDARY,
+        borderWidth: borderWidth + 0.4,
+      },
+    },
+  }));
 
 const chartRef = ref<HTMLDivElement | null>(null);
 const hoverPreview = ref<HoverPreviewState | null>(null);
@@ -326,6 +353,7 @@ const renderChart = () => {
       borderColor: MAP_BOUNDARY,
       borderWidth: 2,
     },
+    regions: buildSouthSeaRegions(2.2, SOUTH_SEA_AREA),
   };
 
   const geoOption = {
@@ -364,6 +392,7 @@ const renderChart = () => {
       borderColor: MAP_BOUNDARY_SOFT,
       borderWidth: 1,
     },
+    regions: buildSouthSeaRegions(1.6, SOUTH_SEA_AREA),
   };
 
   const interactivePoints = props.buildings.map((building) => createPoint(building, { hitArea: true }));

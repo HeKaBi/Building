@@ -431,7 +431,7 @@
       },
       {
         "line_no": 293,
-        "name": "丘浚故居及墓",
+        "name": "丘浚故居",
         "dimension": "营造技艺"
       },
       {
@@ -690,7 +690,7 @@
     "sample_buildings": [
       {
         "line_no": 293,
-        "name": "丘浚故居及墓",
+        "name": "丘浚故居",
         "dimension": "建筑空间布局"
       },
       {
@@ -1610,7 +1610,7 @@
       },
       {
         "line_no": 840,
-        "name": "王守仁故居和墓",
+        "name": "王守仁故居",
         "dimension": "建筑空间布局"
       },
       {
@@ -1707,7 +1707,7 @@
     "sample_buildings": [
       {
         "line_no": 841,
-        "name": "青藤书屋和徐渭墓",
+        "name": "青藤书屋",
         "dimension": "建筑结构体系"
       },
       {
@@ -1860,7 +1860,7 @@
       },
       {
         "line_no": 840,
-        "name": "王守仁故居和墓",
+        "name": "王守仁故居",
         "dimension": "建筑结构体系"
       },
       {
@@ -1966,7 +1966,7 @@
     "sample_buildings": [
       {
         "line_no": 293,
-        "name": "丘浚故居及墓",
+        "name": "丘浚故居",
         "dimension": "建筑材料"
       },
       {
@@ -2080,12 +2080,12 @@
     "sample_buildings": [
       {
         "line_no": 840,
-        "name": "王守仁故居和墓",
+        "name": "王守仁故居",
         "dimension": "建筑功能"
       },
       {
         "line_no": 841,
-        "name": "青藤书屋和徐渭墓",
+        "name": "青藤书屋",
         "dimension": "建筑功能"
       },
       {
@@ -2425,7 +2425,7 @@
       },
       {
         "line_no": 840,
-        "name": "王守仁故居和墓",
+        "name": "王守仁故居",
         "dimension": "营造技艺"
       },
       {
@@ -3220,7 +3220,7 @@
       },
       {
         "line_no": 841,
-        "name": "青藤书屋和徐渭墓",
+        "name": "青藤书屋",
         "dimension": "营造技艺"
       },
       {

@@ -102,7 +102,7 @@
       "century_num": 12,
       "role": "center",
       "hop": 0,
-      "score": 1.0,
+      "score": 1,
       "shared_features": [],
       "structure_terms": [
         "浮梁结合结构",
@@ -197,14 +197,14 @@
       ],
       "components": {
         "structure_terms": 0.1947,
-        "layout_terms": 0.0,
+        "layout_terms": 0,
         "material_terms": 0.1798,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
         "material_cluster": 0.3333,
         "time": 0.6421,
-        "region": 0.0
+        "region": 0
       }
     }
   ]

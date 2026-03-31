@@ -17,7 +17,7 @@
       },
       {
         "line_no": 292,
-        "name": "靖江王府及王陵",
+        "name": "靖江王府",
         "dimension": "建筑空间布局"
       },
       {
@@ -28,11 +28,6 @@
       {
         "line_no": 330,
         "name": "景山",
-        "dimension": "建筑空间布局"
-      },
-      {
-        "line_no": 928,
-        "name": "阳台宫",
         "dimension": "建筑空间布局"
       }
     ]
@@ -50,11 +45,6 @@
       {
         "line_no": 53,
         "name": "故宫",
-        "dimension": "建筑材料"
-      },
-      {
-        "line_no": 928,
-        "name": "阳台宫",
         "dimension": "建筑材料"
       },
       {
@@ -84,11 +74,6 @@
       "建筑材料"
     ],
     "sample_buildings": [
-      {
-        "line_no": 928,
-        "name": "阳台宫",
-        "dimension": "建筑材料"
-      },
       {
         "line_no": 930,
         "name": "望京楼",
@@ -204,7 +189,7 @@
     "sample_buildings": [
       {
         "line_no": 292,
-        "name": "靖江王府及王陵",
+        "name": "靖江王府",
         "dimension": "建筑功能"
       },
       {
@@ -231,7 +216,7 @@
     "sample_buildings": [
       {
         "line_no": 292,
-        "name": "靖江王府及王陵",
+        "name": "靖江王府",
         "dimension": "建筑材料"
       },
       {
@@ -294,11 +279,6 @@
         "line_no": 329,
         "name": "孚王府",
         "dimension": "营造技艺"
-      },
-      {
-        "line_no": 928,
-        "name": "阳台宫",
-        "dimension": "建筑结构体系"
       }
     ]
   },
@@ -337,7 +317,7 @@
     "sample_buildings": [
       {
         "line_no": 292,
-        "name": "靖江王府及王陵",
+        "name": "靖江王府",
         "dimension": "建筑结构体系"
       },
       {
@@ -491,7 +471,7 @@
     "sample_buildings": [
       {
         "line_no": 292,
-        "name": "靖江王府及王陵",
+        "name": "靖江王府",
         "dimension": "建筑空间布局"
       },
       {
@@ -578,11 +558,6 @@
       "营造技艺"
     ],
     "sample_buildings": [
-      {
-        "line_no": 928,
-        "name": "阳台宫",
-        "dimension": "营造技艺"
-      },
       {
         "line_no": 1306,
         "name": "奈曼蒙古王府",
@@ -840,7 +815,7 @@
     "sample_buildings": [
       {
         "line_no": 292,
-        "name": "靖江王府及王陵",
+        "name": "靖江王府",
         "dimension": "建筑空间布局"
       }
     ]
@@ -1214,7 +1189,7 @@
     "sample_buildings": [
       {
         "line_no": 292,
-        "name": "靖江王府及王陵",
+        "name": "靖江王府",
         "dimension": "建筑结构体系"
       }
     ]
@@ -1486,7 +1461,7 @@
     "sample_buildings": [
       {
         "line_no": 292,
-        "name": "靖江王府及王陵",
+        "name": "靖江王府",
         "dimension": "建筑空间布局"
       }
     ]
@@ -1503,7 +1478,7 @@
     "sample_buildings": [
       {
         "line_no": 292,
-        "name": "靖江王府及王陵",
+        "name": "靖江王府",
         "dimension": "建筑结构体系"
       }
     ]
@@ -1622,7 +1597,7 @@
     "sample_buildings": [
       {
         "line_no": 292,
-        "name": "靖江王府及王陵",
+        "name": "靖江王府",
         "dimension": "建筑结构体系"
       }
     ]
@@ -1792,7 +1767,7 @@
     "sample_buildings": [
       {
         "line_no": 292,
-        "name": "靖江王府及王陵",
+        "name": "靖江王府",
         "dimension": "建筑结构体系"
       }
     ]
@@ -1843,7 +1818,7 @@
     "sample_buildings": [
       {
         "line_no": 292,
-        "name": "靖江王府及王陵",
+        "name": "靖江王府",
         "dimension": "建筑空间布局"
       }
     ]

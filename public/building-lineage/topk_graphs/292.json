@@ -1,7 +1,7 @@
 {
   "center_building": {
     "line_no": "292",
-    "name": "靖江王府及王陵",
+    "name": "靖江王府",
     "building_type": "宫殿",
     "start_dynasty": "明",
     "century_num": 14,
@@ -98,7 +98,7 @@
   "nodes": [
     {
       "line_no": "292",
-      "name": "靖江王府及王陵",
+      "name": "靖江王府",
       "building_type": "宫殿",
       "start_dynasty": "明",
       "century_num": 14,
@@ -180,7 +180,7 @@
       "id": "292",
       "role": "center",
       "hop": 0,
-      "score": 1.0,
+      "score": 1,
       "shared_features": []
     }
   ],

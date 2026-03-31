@@ -101,7 +101,7 @@
       "century_num": 17,
       "role": "center",
       "hop": 0,
-      "score": 1.0,
+      "score": 1,
       "shared_features": [],
       "structure_terms": [
         "单檐歇山顶",
@@ -134,72 +134,7 @@
         "行宫",
         "古建筑群"
       ]
-    },
-    {
-      "id": "928",
-      "line_no": "928",
-      "name": "阳台宫",
-      "building_type": "宫殿",
-      "province": "河南省",
-      "start_dynasty": "明",
-      "century_num": 15,
-      "role": "member",
-      "hop": 1,
-      "score": 0.6252,
-      "shared_features": [
-        "砖石混合",
-        "合院布局",
-        "砖石",
-        "木材",
-        "多进建筑",
-        "楼阁营造"
-      ],
-      "structure_terms": [
-        "抬梁式",
-        "穿斗式",
-        "砖石混合",
-        "中轴对称",
-        "合院布局"
-      ],
-      "layout_terms": [
-        "中轴对称",
-        "院落式"
-      ],
-      "material_terms": [
-        "木材",
-        "砖石"
-      ],
-      "craft_terms": [
-        "榫卯结构",
-        "琉璃瓦作"
-      ],
-      "function_terms": [
-        "道教宫观"
-      ]
     }
   ],
-  "edges": [
-    {
-      "source": "928",
-      "target": "1076",
-      "weight": 0.2149,
-      "reasons": [
-        "共享结构：砖石混合、合院布局",
-        "共享材料：砖石、木材",
-        "同属材料主类：木材类",
-        "同朝代：明"
-      ],
-      "components": {
-        "structure_terms": 0.1045,
-        "layout_terms": 0.0,
-        "material_terms": 1.0,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 0.0,
-        "material_cluster": 1.0,
-        "time": 0.6421,
-        "region": 0.0
-      }
-    }
-  ]
+  "edges": []
 }

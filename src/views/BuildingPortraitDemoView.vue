@@ -1,5 +1,6 @@
 <template>
   <section class="building-portrait-view">
+    <div class="building-portrait-view__scene" :style="{ backgroundImage: `url(${matrixBackgroundUrl})` }"></div>
     <div class="building-portrait-view__wash"></div>
     <div class="building-portrait-view__grain"></div>
     <div class="building-portrait-view__roof"></div>
@@ -45,28 +46,25 @@
         </article>
 
         <div class="chart-grid">
-          <article class="chart-card">
+          <article class="chart-card chart-card--pie">
             <header class="chart-card__header">
               <h3>建筑要素占比图</h3>
-              <span>{{ selectedBuilding.structureType }}</span>
             </header>
-            <div ref="pieChartRef" class="chart-card__canvas"></div>
+            <div ref="pieChartRef" class="chart-card__canvas chart-card__canvas--pie"></div>
           </article>
 
-          <article class="chart-card">
+          <article class="chart-card chart-card--cloud">
             <header class="chart-card__header">
               <h3>营造关键词云图</h3>
-              <span>{{ wordCloudMeta }}</span>
             </header>
-            <div ref="cloudChartRef" class="chart-card__canvas"></div>
+            <div ref="cloudChartRef" class="chart-card__canvas chart-card__canvas--cloud"></div>
           </article>
 
-          <article class="chart-card">
+          <article class="chart-card chart-card--radar">
             <header class="chart-card__header">
               <h3>建筑维标雷达图</h3>
-              <span>{{ radarMeta }}</span>
             </header>
-            <div ref="radarChartRef" class="chart-card__canvas"></div>
+            <div ref="radarChartRef" class="chart-card__canvas chart-card__canvas--radar"></div>
           </article>
         </div>
       </section>
@@ -116,6 +114,7 @@ echarts.use([TooltipComponent, LegendComponent, PieChart, RadarChart, GraphChart
 
 const THEME_NAME = 'building-portrait-vintage';
 echarts.registerTheme(THEME_NAME, vintage);
+const matrixBackgroundUrl = new URL('../../json/bg.png', import.meta.url).href;
 
 type BuildingCategory = '民居' | '官府' | '宫殿' | '桥梁';
 type ChartKey = 'pie' | 'cloud' | 'radar' | 'graph';
@@ -147,6 +146,15 @@ interface RelationEntry {
 interface WeightedItem {
   name: string;
   value: number;
+}
+
+interface PortraitWordCloudEntry {
+  id: string;
+  name: string;
+  category: BuildingCategory;
+  source_mode: string;
+  llm_used: boolean;
+  keywords: WeightedItem[];
 }
 
 interface LineageIndexEntry {
@@ -232,14 +240,17 @@ const lineageGraphCache = new Map<string, LineageGraph>();
 const lineageGraphModules = import.meta.glob('../../public/building-lineage/topk_graphs/*.json');
 const reducedMotion = typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
 
-const searchText = ref('故宫');
+const searchText = ref('镇海楼');
 const lineageManifest = ref<LineageManifest | null>(null);
 const lineageIndex = ref<LineageIndexEntry[]>([]);
 const activeLineageGraph = ref<LineageGraph | null>(null);
 const lineageLoading = ref(false);
+const portraitWordCloudIndex = ref<Record<string, PortraitWordCloudEntry>>({});
 
 const defaultBuilding = (() => {
   const canonicalDefault =
+    canonicalBuildings.find((item) => item.name === '镇海楼') ??
+    canonicalBuildings.find((item) => item.name.includes('镇海楼')) ??
     canonicalBuildings.find((item) => item.name === '故宫') ??
     canonicalBuildings.find((item) => item.name === '岳阳楼') ??
     canonicalBuildings[0];
@@ -602,6 +613,23 @@ const loadLineageResources = async () => {
   }
 };
 
+const loadPortraitWordcloudIndex = async () => {
+  try {
+    const baseUrl = (import.meta.env.BASE_URL ?? '/').replace(/\?$/, '/');
+    const response = await fetch(`${baseUrl}building-portrait-wordcloud/index.json`);
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
+    portraitWordCloudIndex.value = (await response.json()) as Record<string, PortraitWordCloudEntry>;
+    nextTick(() => {
+      renderWordCloudChart();
+    });
+  } catch (error) {
+    console.error('failed to load portrait wordcloud index', error);
+    portraitWordCloudIndex.value = {};
+  }
+};
+
 const buildRelationPool = (target: BuildingRecord) => {
   const pool = new Map<string, RelationEntry>();
 
@@ -738,7 +766,7 @@ const addWeight = (map: Map<string, number>, name: string, value: number) => {
   map.set(trimmed, (map.get(trimmed) ?? 0) + value);
 };
 
-const wordCloudData = computed<WeightedItem[]>(() => {
+const localWordCloudFallbackData = computed<WeightedItem[]>(() => {
   const building = selectedBuilding.value;
   const weights = new Map<string, number>();
   const referenceText = `${building.name} ${building.structureType} ${building.description} ${building.eraLabel}`;
@@ -815,6 +843,8 @@ const radarValues = computed(() => {
   return [history, structure, spatial, regional, influence].map((value) => Math.round(value));
 });
 
+const wordCloudData = computed<WeightedItem[]>(() => portraitWordCloudIndex.value[selectedBuilding.value.id]?.keywords ?? localWordCloudFallbackData.value);
+
 const wordCloudMeta = computed(() => `${wordCloudData.value.length} 个关键词`);
 
 const radarMeta = computed(() => `${selectedBuilding.value.level} · 权重 ${selectedBuilding.value.importance}/5`);
@@ -868,8 +898,8 @@ const renderPieChart = () => {
       series: [
         {
           type: 'pie',
-          radius: ['24%', '68%'],
-          center: ['50%', '56%'],
+          radius: ['24%', '63%'],
+          center: ['47%', '40%'],
           minAngle: 8,
           avoidLabelOverlap: true,
           itemStyle: {
@@ -927,10 +957,10 @@ const renderWordCloudChart = () => {
         {
           type: 'wordCloud',
           shape: 'circle',
-          width: '88%',
-          height: '94%',
-          left: 'center',
-          top: 'center',
+          width: '91%',
+          height: '84%',
+          left: '-8%',
+          top: '-1%',
           sizeRange: [12, 42],
           gridSize: 5,
           rotationRange: [0, 0],
@@ -974,7 +1004,8 @@ const renderRadarChart = () => {
         },
       },
       radar: {
-        radius: '66%',
+        radius: '55%',
+        center: ['50%', '41%'],
         shape: 'circle',
         indicator: radarIndicators.value,
         axisName: {
@@ -1508,6 +1539,7 @@ onMounted(() => {
 
   window.addEventListener('resize', handleResize);
   void loadLineageResources();
+  void loadPortraitWordcloudIndex();
 });
 
 onBeforeUnmount(() => {
@@ -1524,19 +1556,17 @@ onBeforeUnmount(() => {
 
 <style scoped lang="scss">
 .building-portrait-view {
-  position: relative;
-  flex: 1;
-  min-height: 0;
+  position: fixed;
+  inset: 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   padding: 6px 20px 18px;
-  background:
-    linear-gradient(180deg, rgba(247, 241, 231, 0.76), rgba(240, 231, 218, 0.72)),
-    radial-gradient(circle at 12% 10%, rgba(255, 255, 255, 0.52), transparent 18%),
-    radial-gradient(circle at 84% 20%, rgba(255, 255, 255, 0.36), transparent 20%);
+  background: #f3ecde;
+  box-sizing: border-box;
 }
 
+.building-portrait-view__scene,
 .building-portrait-view__wash,
 .building-portrait-view__grain,
 .building-portrait-view__roof {
@@ -1545,26 +1575,29 @@ onBeforeUnmount(() => {
   pointer-events: none;
 }
 
+.building-portrait-view__scene {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.86;
+}
+
 .building-portrait-view__wash {
   background:
-    radial-gradient(circle at 20% 16%, rgba(255, 255, 255, 0.4), transparent 22%),
-    radial-gradient(circle at 74% 24%, rgba(214, 186, 164, 0.18), transparent 22%);
+    linear-gradient(180deg, rgba(252, 248, 241, 0.12), rgba(246, 239, 228, 0.04)),
+    radial-gradient(circle at 18% 92%, rgba(248, 243, 234, 0.72), transparent 24%),
+    radial-gradient(circle at 86% 92%, rgba(248, 243, 234, 0.72), transparent 24%),
+    radial-gradient(circle at 20% 16%, rgba(255, 255, 255, 0.12), transparent 24%),
+    radial-gradient(circle at 74% 24%, rgba(214, 186, 164, 0.05), transparent 24%);
 }
 
 .building-portrait-view__grain {
-  background: repeating-linear-gradient(135deg, rgba(129, 99, 77, 0.025) 0, rgba(129, 99, 77, 0.025) 1px, transparent 1px, transparent 16px);
+  background: repeating-linear-gradient(135deg, rgba(129, 99, 77, 0.018) 0, rgba(129, 99, 77, 0.018) 1px, transparent 1px, transparent 18px);
+  mix-blend-mode: multiply;
 }
 
 .building-portrait-view__roof {
-  inset: auto 0 0 auto;
-  width: 26%;
-  height: 24%;
-  background:
-    linear-gradient(180deg, transparent, rgba(126, 104, 86, 0.14)),
-    radial-gradient(circle at 58% 86%, rgba(110, 95, 83, 0.16), transparent 54%);
-  clip-path: polygon(34% 22%, 74% 8%, 100% 38%, 100% 100%, 0 100%, 0 62%);
-  opacity: 0.52;
-  filter: blur(0.6px);
+  display: none;
 }
 
 .building-portrait-view__petal {
@@ -1652,7 +1685,7 @@ onBeforeUnmount(() => {
   flex: 1;
   min-height: 0;
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.82fr);
+  grid-template-columns: minmax(0, 1.12fr) minmax(360px, 0.76fr);
   gap: 18px;
 }
 
@@ -1749,7 +1782,9 @@ onBeforeUnmount(() => {
   min-height: 0;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
+  column-gap: 42px;
+  row-gap: 14px;
+  overflow: visible;
 }
 
 .chart-card {
@@ -1757,6 +1792,20 @@ onBeforeUnmount(() => {
   display: flex;
   flex-direction: column;
   padding: 14px 14px 10px;
+  overflow: visible;
+  position: relative;
+}
+
+.chart-card--pie {
+  z-index: 1;
+}
+
+.chart-card--cloud {
+  z-index: 2;
+}
+
+.chart-card--radar {
+  z-index: 3;
 }
 
 .chart-card__header {
@@ -1793,6 +1842,25 @@ onBeforeUnmount(() => {
 .chart-card__canvas {
   flex: 1;
   min-height: 300px;
+  width: 100%;
+  margin-left: 0;
+  max-width: none;
+  overflow: visible;
+}
+
+.chart-card__canvas--pie {
+  width: 110%;
+  margin-left: -1%;
+}
+
+.chart-card__canvas--cloud {
+  width: 160%;
+  margin-left: -21%;
+}
+
+.chart-card__canvas--radar {
+  width: 134%;
+  margin-left: -21%;
 }
 
 .building-portrait-view__right {
@@ -1897,6 +1965,9 @@ onBeforeUnmount(() => {
 
   .chart-card__canvas {
     min-height: 260px;
+    width: 100%;
+    margin-left: 0;
+    max-width: 100%;
   }
 
   .network-panel__canvas {
@@ -1929,3 +2000,4 @@ onBeforeUnmount(() => {
   }
 }
 </style>
+

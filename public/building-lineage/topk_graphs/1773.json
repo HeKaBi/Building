@@ -92,7 +92,7 @@
       "century_num": 14,
       "role": "center",
       "hop": 0,
-      "score": 1.0,
+      "score": 1,
       "shared_features": [],
       "structure_terms": [
         "抬梁式",
@@ -593,13 +593,13 @@
         "同属材料主类：砖瓦类"
       ],
       "components": {
-        "structure_terms": 1.0,
-        "layout_terms": 1.0,
-        "material_terms": 1.0,
-        "craft_terms": 1.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "structure_terms": 1,
+        "layout_terms": 1,
+        "material_terms": 1,
+        "craft_terms": 1,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.7857,
         "region": 0.6
       }
@@ -618,14 +618,14 @@
       ],
       "components": {
         "structure_terms": 0.792,
-        "layout_terms": 1.0,
+        "layout_terms": 1,
         "material_terms": 0.3394,
-        "craft_terms": 1.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
+        "craft_terms": 1,
+        "function_terms": 0,
+        "structure_cluster": 1,
         "material_cluster": 0.75,
         "time": 0.7857,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -642,14 +642,14 @@
       ],
       "components": {
         "structure_terms": 0.792,
-        "layout_terms": 1.0,
+        "layout_terms": 1,
         "material_terms": 0.3394,
-        "craft_terms": 1.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
+        "craft_terms": 1,
+        "function_terms": 0,
+        "structure_cluster": 1,
         "material_cluster": 0.75,
         "time": 0.6421,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -665,15 +665,15 @@
         "同省：云南省"
       ],
       "components": {
-        "structure_terms": 1.0,
+        "structure_terms": 1,
         "layout_terms": 0.4046,
-        "material_terms": 1.0,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "material_terms": 1,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.65,
-        "region": 1.0
+        "region": 1
       }
     },
     {
@@ -688,15 +688,15 @@
         "同属结构簇：抬梁合院型"
       ],
       "components": {
-        "structure_terms": 1.0,
+        "structure_terms": 1,
         "layout_terms": 0.6303,
         "material_terms": 0.5017,
         "craft_terms": 0.169,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.1312,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -711,15 +711,15 @@
         "同属结构簇：抬梁合院型"
       ],
       "components": {
-        "structure_terms": 1.0,
+        "structure_terms": 1,
         "layout_terms": 0.6303,
         "material_terms": 0.5017,
         "craft_terms": 0.169,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.088,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -734,15 +734,15 @@
         "同属材料主类：木材类"
       ],
       "components": {
-        "structure_terms": 1.0,
+        "structure_terms": 1,
         "layout_terms": 0.3223,
-        "material_terms": 1.0,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "material_terms": 1,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.65,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -758,15 +758,15 @@
         "同属材料主类：木材类"
       ],
       "components": {
-        "structure_terms": 1.0,
+        "structure_terms": 1,
         "layout_terms": 0.1048,
-        "material_terms": 1.0,
+        "material_terms": 1,
         "craft_terms": 0.5682,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.1958,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -786,11 +786,11 @@
         "layout_terms": 0.6303,
         "material_terms": 0.5119,
         "craft_terms": 0.169,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.1958,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -806,15 +806,15 @@
         "同朝代：明"
       ],
       "components": {
-        "structure_terms": 1.0,
+        "structure_terms": 1,
         "layout_terms": 0.0976,
-        "material_terms": 1.0,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "material_terms": 1,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.5458,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -828,15 +828,15 @@
         "同属结构簇：抬梁合院型"
       ],
       "components": {
-        "structure_terms": 1.0,
+        "structure_terms": 1,
         "layout_terms": 0.1747,
         "material_terms": 0.5017,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.1312,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -850,15 +850,15 @@
         "同属结构簇：抬梁合院型"
       ],
       "components": {
-        "structure_terms": 1.0,
-        "layout_terms": 0.0,
+        "structure_terms": 1,
+        "layout_terms": 0,
         "material_terms": 0.5017,
         "craft_terms": 0.2466,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.4357,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -872,15 +872,15 @@
         "同属结构簇：抬梁合院型"
       ],
       "components": {
-        "structure_terms": 1.0,
+        "structure_terms": 1,
         "layout_terms": 0.1747,
         "material_terms": 0.5017,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.088,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -894,15 +894,15 @@
         "同属结构簇：抬梁合院型"
       ],
       "components": {
-        "structure_terms": 1.0,
-        "layout_terms": 0.0,
+        "structure_terms": 1,
+        "layout_terms": 0,
         "material_terms": 0.5017,
         "craft_terms": 0.2466,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.2921,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -920,12 +920,12 @@
         "structure_terms": 0.792,
         "layout_terms": 0.271,
         "material_terms": 0.5119,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.1958,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -942,12 +942,12 @@
       ],
       "components": {
         "structure_terms": 0.792,
-        "layout_terms": 0.0,
+        "layout_terms": 0,
         "material_terms": 0.5119,
         "craft_terms": 0.2466,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.65,
         "region": 0.6
       }
@@ -966,12 +966,12 @@
         "structure_terms": 0.792,
         "layout_terms": 0.3223,
         "material_terms": 0.3394,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
         "material_cluster": 0.75,
         "time": 0.4357,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -988,12 +988,12 @@
         "structure_terms": 0.792,
         "layout_terms": 0.3223,
         "material_terms": 0.3394,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
         "material_cluster": 0.75,
         "time": 0.2921,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -1011,12 +1011,12 @@
         "structure_terms": 0.792,
         "layout_terms": 0.1747,
         "material_terms": 0.5119,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.1958,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -1035,12 +1035,12 @@
         "structure_terms": 0.792,
         "layout_terms": 0.0958,
         "material_terms": 0.5119,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.5458,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -1056,14 +1056,14 @@
       ],
       "components": {
         "structure_terms": 0.792,
-        "layout_terms": 0.0,
+        "layout_terms": 0,
         "material_terms": 0.5119,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
-        "time": 1.0,
-        "region": 0.0
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 1,
+        "region": 0
       }
     },
     {
@@ -1080,13 +1080,13 @@
       "components": {
         "structure_terms": 0.2284,
         "layout_terms": 0.3791,
-        "material_terms": 1.0,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "material_terms": 1,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.65,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -1103,13 +1103,13 @@
       "components": {
         "structure_terms": 0.3876,
         "layout_terms": 0.1382,
-        "material_terms": 1.0,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "material_terms": 1,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.2921,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -1126,13 +1126,13 @@
       "components": {
         "structure_terms": 0.3876,
         "layout_terms": 0.1585,
-        "material_terms": 1.0,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "material_terms": 1,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.088,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -1150,11 +1150,11 @@
       "components": {
         "structure_terms": 0.2701,
         "layout_terms": 0.1087,
-        "material_terms": 1.0,
+        "material_terms": 1,
         "craft_terms": 0.2803,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.1312,
         "region": 0.6
       }
@@ -1175,11 +1175,11 @@
         "structure_terms": 0.3876,
         "layout_terms": 0.1904,
         "material_terms": 0.5017,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
-        "time": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 1,
         "region": 0.6
       }
     },
@@ -1198,12 +1198,12 @@
         "structure_terms": 0.2284,
         "layout_terms": 0.4875,
         "material_terms": 0.5017,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.1312,
-        "region": 1.0
+        "region": 1
       }
     },
     {
@@ -1222,10 +1222,10 @@
         "structure_terms": 0.3876,
         "layout_terms": 0.1904,
         "material_terms": 0.5017,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.7857,
         "region": 0.6
       }
@@ -1245,13 +1245,13 @@
       "components": {
         "structure_terms": 0.2284,
         "layout_terms": 0.1237,
-        "material_terms": 1.0,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
-        "time": 1.0,
-        "region": 0.0
+        "material_terms": 1,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 1,
+        "region": 0
       }
     },
     {
@@ -1269,10 +1269,10 @@
         "structure_terms": 0.2284,
         "layout_terms": 0.4875,
         "material_terms": 0.5017,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.088,
         "region": 0.6
       }
@@ -1293,12 +1293,12 @@
         "structure_terms": 0.5695,
         "layout_terms": 0.1587,
         "material_terms": 0.1224,
-        "craft_terms": 0.0,
+        "craft_terms": 0,
         "function_terms": 0.2344,
-        "structure_cluster": 1.0,
+        "structure_cluster": 1,
         "material_cluster": 0.6667,
         "time": 0.6421,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -1316,12 +1316,12 @@
         "structure_terms": 0.2043,
         "layout_terms": 0.4875,
         "material_terms": 0.5119,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.1958,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -1336,14 +1336,14 @@
       ],
       "components": {
         "structure_terms": 0.3876,
-        "layout_terms": 0.0,
-        "material_terms": 1.0,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "layout_terms": 0,
+        "material_terms": 1,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.088,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -1361,12 +1361,12 @@
         "structure_terms": 0.5695,
         "layout_terms": 0.1587,
         "material_terms": 0.1224,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
         "material_cluster": 0.6667,
         "time": 0.7857,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -1385,12 +1385,12 @@
         "structure_terms": 0.2701,
         "layout_terms": 0.1437,
         "material_terms": 0.5017,
-        "craft_terms": 0.0,
+        "craft_terms": 0,
         "function_terms": 0.2184,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
-        "time": 1.0,
-        "region": 0.0
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 1,
+        "region": 0
       }
     },
     {
@@ -1409,11 +1409,11 @@
         "layout_terms": 0.1171,
         "material_terms": 0.1566,
         "craft_terms": 0.23,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
+        "function_terms": 0,
+        "structure_cluster": 1,
         "material_cluster": 0.6667,
         "time": 0.1958,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -1432,12 +1432,12 @@
         "structure_terms": 0.3266,
         "layout_terms": 0.1904,
         "material_terms": 0.5119,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.6421,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -1452,14 +1452,14 @@
       ],
       "components": {
         "structure_terms": 0.2701,
-        "layout_terms": 0.0,
-        "material_terms": 1.0,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "layout_terms": 0,
+        "material_terms": 1,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.4357,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -1477,11 +1477,11 @@
       "components": {
         "structure_terms": 0.1467,
         "layout_terms": 0.1399,
-        "material_terms": 1.0,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "material_terms": 1,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.088,
         "region": 0.6
       }
@@ -1500,13 +1500,13 @@
       "components": {
         "structure_terms": 0.1942,
         "layout_terms": 0.1073,
-        "material_terms": 1.0,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "material_terms": 1,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.1312,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -1524,12 +1524,12 @@
         "structure_terms": 0.4704,
         "layout_terms": 0.1587,
         "material_terms": 0.1234,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
         "material_cluster": 0.5,
-        "time": 1.0,
-        "region": 0.0
+        "time": 1,
+        "region": 0
       }
     },
     {
@@ -1545,14 +1545,14 @@
       ],
       "components": {
         "structure_terms": 0.172,
-        "layout_terms": 0.0,
-        "material_terms": 1.0,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "layout_terms": 0,
+        "material_terms": 1,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.7857,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -1571,12 +1571,12 @@
         "structure_terms": 0.2043,
         "layout_terms": 0.2407,
         "material_terms": 0.5119,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.5458,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -1594,12 +1594,12 @@
         "structure_terms": 0.4704,
         "layout_terms": 0.0908,
         "material_terms": 0.1234,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
         "material_cluster": 0.5,
         "time": 0.65,
-        "region": 1.0
+        "region": 1
       }
     },
     {
@@ -1618,12 +1618,12 @@
         "structure_terms": 0.2371,
         "layout_terms": 0.1437,
         "material_terms": 0.5119,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.7857,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -1641,12 +1641,12 @@
         "structure_terms": 0.3266,
         "layout_terms": 0.1105,
         "material_terms": 0.5119,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.2921,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -1664,12 +1664,12 @@
         "structure_terms": 0.2371,
         "layout_terms": 0.0857,
         "material_terms": 0.5119,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.4357,
-        "region": 0.0
+        "region": 0
       }
     }
   ]

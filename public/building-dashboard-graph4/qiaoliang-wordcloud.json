@@ -149,7 +149,7 @@
   },
   {
     "name": "交通要道",
-    "value": 13.0,
+    "value": 13,
     "term_count": 14,
     "avg_confidence": 0.9286,
     "building_count": 14,
@@ -169,7 +169,7 @@
       },
       {
         "line_no": 1409,
-        "name": "潘公桥及潘孝墓",
+        "name": "潘公桥",
         "dimension": "建筑功能"
       },
       {
@@ -1125,7 +1125,7 @@
     "sample_buildings": [
       {
         "line_no": 1409,
-        "name": "潘公桥及潘孝墓",
+        "name": "潘公桥",
         "dimension": "营造技艺"
       },
       {
@@ -1221,7 +1221,7 @@
     "sample_buildings": [
       {
         "line_no": 1409,
-        "name": "潘公桥及潘孝墓",
+        "name": "潘公桥",
         "dimension": "建筑结构体系"
       },
       {

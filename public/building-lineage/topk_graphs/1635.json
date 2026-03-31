@@ -81,7 +81,7 @@
       "century_num": 14,
       "role": "center",
       "hop": 0,
-      "score": 1.0,
+      "score": 1,
       "shared_features": [],
       "structure_terms": [
         "天井式院落",
@@ -198,7 +198,7 @@
     {
       "id": "293",
       "line_no": "293",
-      "name": "丘浚故居及墓",
+      "name": "丘浚故居",
       "building_type": "民居",
       "province": "海南省",
       "start_dynasty": "明",
@@ -668,12 +668,12 @@
       ],
       "components": {
         "structure_terms": 0.1314,
-        "layout_terms": 0.0,
+        "layout_terms": 0,
         "material_terms": 0.4489,
-        "craft_terms": 1.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "craft_terms": 1,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.7857,
         "region": 0.6
       }
@@ -691,14 +691,14 @@
       ],
       "components": {
         "structure_terms": 0.4161,
-        "layout_terms": 0.0,
+        "layout_terms": 0,
         "material_terms": 0.5092,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
-        "time": 1.0,
-        "region": 0.0
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 1,
+        "region": 0
       }
     },
     {
@@ -714,14 +714,14 @@
       ],
       "components": {
         "structure_terms": 0.4269,
-        "layout_terms": 0.0,
+        "layout_terms": 0,
         "material_terms": 0.2275,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
-        "time": 1.0,
-        "region": 0.0
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 1,
+        "region": 0
       }
     },
     {
@@ -738,13 +738,13 @@
       ],
       "components": {
         "structure_terms": 0.3424,
-        "layout_terms": 0.0,
+        "layout_terms": 0,
         "material_terms": 0.1791,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
-        "time": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 1,
         "region": 0.6
       }
     },
@@ -762,12 +762,12 @@
       ],
       "components": {
         "structure_terms": 0.2548,
-        "layout_terms": 0.0,
+        "layout_terms": 0,
         "material_terms": 0.1637,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.7857,
         "region": 0.6
       }
@@ -785,14 +785,14 @@
       ],
       "components": {
         "structure_terms": 0.0462,
-        "layout_terms": 0.0,
+        "layout_terms": 0,
         "material_terms": 0.5516,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.7857,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -810,13 +810,13 @@
       "components": {
         "structure_terms": 0.0302,
         "layout_terms": 0.0794,
-        "material_terms": 0.0,
+        "material_terms": 0,
         "craft_terms": 0.1762,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.7857,
-        "region": 1.0
+        "region": 1
       }
     },
     {
@@ -833,14 +833,14 @@
       ],
       "components": {
         "structure_terms": 0.0386,
-        "layout_terms": 0.0,
+        "layout_terms": 0,
         "material_terms": 0.2419,
         "craft_terms": 0.2527,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.6421,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -857,12 +857,12 @@
       ],
       "components": {
         "structure_terms": 0.0321,
-        "layout_terms": 0.0,
-        "material_terms": 0.0,
+        "layout_terms": 0,
+        "material_terms": 0,
         "craft_terms": 0.3191,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.5458,
         "region": 0.6
       }
@@ -878,15 +878,15 @@
         "同朝代：明"
       ],
       "components": {
-        "structure_terms": 0.0,
-        "layout_terms": 0.0,
+        "structure_terms": 0,
+        "layout_terms": 0,
         "material_terms": 0.2895,
         "craft_terms": 0.1786,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
+        "function_terms": 0,
+        "structure_cluster": 1,
         "material_cluster": 0.5,
-        "time": 1.0,
-        "region": 0.0
+        "time": 1,
+        "region": 0
       }
     },
     {
@@ -902,14 +902,14 @@
       ],
       "components": {
         "structure_terms": 0.0742,
-        "layout_terms": 0.0,
-        "material_terms": 0.0,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.7857,
-        "region": 1.0
+        "region": 1
       }
     },
     {
@@ -924,14 +924,14 @@
       ],
       "components": {
         "structure_terms": 0.098,
-        "layout_terms": 0.0,
-        "material_terms": 0.0,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
-        "time": 1.0,
-        "region": 0.0
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 1,
+        "region": 0
       }
     },
     {
@@ -947,12 +947,12 @@
       ],
       "components": {
         "structure_terms": 0.0969,
-        "layout_terms": 0.0,
-        "material_terms": 0.0,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.6421,
         "region": 0.6
       }

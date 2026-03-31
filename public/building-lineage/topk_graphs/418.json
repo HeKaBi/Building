@@ -88,7 +88,7 @@
       "century_num": 18,
       "role": "center",
       "hop": 0,
-      "score": 1.0,
+      "score": 1,
       "shared_features": [],
       "structure_terms": [
         "重楼连接",
@@ -316,15 +316,15 @@
         "同朝代：清"
       ],
       "components": {
-        "structure_terms": 0.0,
-        "layout_terms": 0.0,
+        "structure_terms": 0,
+        "layout_terms": 0,
         "material_terms": 0.6486,
-        "craft_terms": 0.0,
+        "craft_terms": 0,
         "function_terms": 0.1685,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.7857,
-        "region": 1.0
+        "region": 1
       }
     },
     {
@@ -339,14 +339,14 @@
       ],
       "components": {
         "structure_terms": 0.1992,
-        "layout_terms": 0.0,
-        "material_terms": 0.0,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.65,
-        "region": 1.0
+        "region": 1
       }
     },
     {
@@ -363,12 +363,12 @@
       ],
       "components": {
         "structure_terms": 0.0609,
-        "layout_terms": 0.0,
-        "material_terms": 0.0,
-        "craft_terms": 0.0,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
         "function_terms": 0.1503,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.7857,
         "region": 0.6
       }
@@ -384,15 +384,15 @@
         "同省：江苏省"
       ],
       "components": {
-        "structure_terms": 0.0,
-        "layout_terms": 0.0,
+        "structure_terms": 0,
+        "layout_terms": 0,
         "material_terms": 0.3083,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.2921,
-        "region": 1.0
+        "region": 1
       }
     },
     {
@@ -406,15 +406,15 @@
         "同省：江苏省"
       ],
       "components": {
-        "structure_terms": 0.0,
-        "layout_terms": 0.0,
+        "structure_terms": 0,
+        "layout_terms": 0,
         "material_terms": 0.2297,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.4357,
-        "region": 1.0
+        "region": 1
       }
     }
   ]

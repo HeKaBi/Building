@@ -6,10 +6,6 @@
     <div class="art-timeline__mountain"></div>
 
     <div class="art-timeline__header">
-      <div class="art-timeline__header-copy">
-        <div class="art-timeline__title">建筑样本竖向时间轴</div>
-      </div>
-
       <div class="art-timeline__focus">
         <strong :style="{ color: activePalette.accentColor }">{{ activeType }}</strong>
         <div class="art-timeline__focus-count">
@@ -21,6 +17,7 @@
     </div>
 
     <div ref="chartRef" class="art-timeline__chart"></div>
+    <div class="art-timeline__axis-title">建筑数量分布时间轴</div>
   </aside>
 </template>
 
@@ -219,35 +216,12 @@ const renderChart = () => {
       animationDuration: 420,
       animationDurationUpdate: 300,
       tooltip: {
+        show: false,
         trigger: 'item',
-        backgroundColor: 'rgba(250, 246, 240, 0.96)',
-        borderColor: 'rgba(92, 89, 85, 0.16)',
-        borderWidth: 1,
-        textStyle: {
-          color: '#2C2A29',
-          fontFamily: 'ContentFont',
-          fontSize: 13,
-        },
-        formatter: (params: { data?: TimelinePointDatum }) => {
-          const item = params.data;
-          if (!item) return '';
-
-          const preview = item.names.join('、');
-          const title = '年份统计';
-
-          return [
-            '<div style="max-width: 220px">',
-            `<div style="font-weight:700; margin-bottom:4px;">${props.activeType} · ${title}</div>`,
-            `<div>年份：${item.yearLabel}</div>`,
-            `<div>数量：${item.count}</div>`,
-            preview ? `<div style="margin-top:6px; line-height:1.5;">样本：${preview}</div>` : '',
-            '</div>',
-          ].join('');
-        },
       },
       grid: {
         left: '42%',
-        right: '3%',
+        right: '18%',
         top: '2%',
         bottom: '3%',
         containLabel: false,
@@ -449,22 +423,9 @@ onUnmounted(() => {
   z-index: 2;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 10px;
   padding: 16px 16px 8px;
-}
-
-.art-timeline__header-copy {
-  display: grid;
-  gap: 0;
-  min-width: 0;
-}
-
-.art-timeline__title {
-  font-family: 'ChartTitleFont', 'TitleFont', serif;
-  font-size: 22px;
-  line-height: 1.08;
-  color: #2C2A29;
 }
 
 .art-timeline__focus {
@@ -524,13 +485,30 @@ onUnmounted(() => {
   width: 100%;
 }
 
-@media (max-width: 1400px) {
-  .art-timeline__title {
-    font-size: 20px;
-  }
+.art-timeline__axis-title {
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  z-index: 2;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  letter-spacing: 4px;
+  font-family: 'MatrixRefTitleFont', 'ChartTitleFont', 'TitleFont', serif;
+  font-size: 25px;
+  line-height: 1.08;
+  color: #333333;
+  pointer-events: none;
+}
 
+@media (max-width: 1400px) {
   .art-timeline__header {
     padding-bottom: 6px;
+  }
+
+  .art-timeline__axis-title {
+    right: 14px;
+    font-size: 22px;
   }
 }
 
@@ -546,6 +524,11 @@ onUnmounted(() => {
 
   .art-timeline__focus small {
     text-align: left;
+  }
+
+  .art-timeline__axis-title {
+    right: 10px;
+    font-size: 20px;
   }
 }
 </style>

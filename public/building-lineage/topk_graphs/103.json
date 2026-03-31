@@ -94,7 +94,7 @@
       "century_num": 12,
       "role": "center",
       "hop": 0,
-      "score": 1.0,
+      "score": 1,
       "shared_features": [],
       "structure_terms": [
         "宅园合一",
@@ -188,13 +188,13 @@
       ],
       "components": {
         "structure_terms": 0.1117,
-        "layout_terms": 0.0,
+        "layout_terms": 0,
         "material_terms": 0.0886,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
-        "time": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 1,
         "region": 0.6
       }
     }

@@ -96,7 +96,7 @@
       "century_num": 18,
       "role": "center",
       "hop": 0,
-      "score": 1.0,
+      "score": 1,
       "shared_features": [],
       "structure_terms": [
         "城堡式",
@@ -505,45 +505,6 @@
       ]
     },
     {
-      "id": "2020",
-      "line_no": "2020",
-      "name": "芷溪宗祠建筑",
-      "building_type": "民居",
-      "province": "福建省",
-      "start_dynasty": "清",
-      "century_num": 17,
-      "role": "member",
-      "hop": 2,
-      "score": 0.2699,
-      "shared_features": [
-        "多进院落",
-        "合院布局",
-        "木雕",
-        "砖雕"
-      ],
-      "structure_terms": [
-        "祠居合一",
-        "复合型结构",
-        "合院布局",
-        "多进院落"
-      ],
-      "layout_terms": [
-        "九厅十八井",
-        "多进院落"
-      ],
-      "material_terms": [
-        "石材"
-      ],
-      "craft_terms": [
-        "门楼装饰技艺",
-        "客家民居营造技艺"
-      ],
-      "function_terms": [
-        "祠居合一",
-        "祭祀与居住复合功能"
-      ]
-    },
-    {
       "id": "459",
       "line_no": "459",
       "name": "蔡氏古民居建筑群",
@@ -698,14 +659,14 @@
       ],
       "components": {
         "structure_terms": 0.5423,
-        "layout_terms": 0.0,
+        "layout_terms": 0,
         "material_terms": 0.0973,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
         "material_cluster": 0.6667,
-        "time": 1.0,
-        "region": 1.0
+        "time": 1,
+        "region": 1
       }
     },
     {
@@ -721,14 +682,14 @@
       ],
       "components": {
         "structure_terms": 0.2053,
-        "layout_terms": 0.0,
+        "layout_terms": 0,
         "material_terms": 0.6919,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
-        "time": 1.0,
-        "region": 1.0
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 1,
+        "region": 1
       }
     },
     {
@@ -748,9 +709,9 @@
         "layout_terms": 0.1092,
         "material_terms": 0.3799,
         "craft_terms": 0.1235,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.6421,
         "region": 0.6
       }
@@ -769,13 +730,13 @@
       "components": {
         "structure_terms": 0.4269,
         "layout_terms": 0.0909,
-        "material_terms": 0.0,
+        "material_terms": 0,
         "craft_terms": 0.1398,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
+        "function_terms": 0,
+        "structure_cluster": 1,
         "material_cluster": 0.5,
         "time": 0.6421,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -791,15 +752,15 @@
         "同朝代：清"
       ],
       "components": {
-        "structure_terms": 0.0,
-        "layout_terms": 0.0,
+        "structure_terms": 0,
+        "layout_terms": 0,
         "material_terms": 0.5092,
         "craft_terms": 0.4577,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.7857,
-        "region": 1.0
+        "region": 1
       }
     },
     {
@@ -816,37 +777,13 @@
       "components": {
         "structure_terms": 0.2693,
         "layout_terms": 0.1928,
-        "material_terms": 0.0,
+        "material_terms": 0,
         "craft_terms": 0.1249,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
+        "function_terms": 0,
+        "structure_cluster": 1,
         "material_cluster": 0.6667,
         "time": 0.7857,
-        "region": 0.0
-      }
-    },
-    {
-      "source": "2020",
-      "target": "459",
-      "weight": 0.2867,
-      "reasons": [
-        "共享结构：多进院落、合院布局",
-        "共享布局：多进院落",
-        "共享材料：石材",
-        "同属结构簇：合院穿斗民居型",
-        "同属材料主类：石材类",
-        "同省：福建省"
-      ],
-      "components": {
-        "structure_terms": 0.0915,
-        "layout_terms": 0.1353,
-        "material_terms": 0.3802,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
-        "time": 0.6421,
-        "region": 1.0
+        "region": 0
       }
     },
     {
@@ -864,12 +801,12 @@
       "components": {
         "structure_terms": 0.2349,
         "layout_terms": 0.1041,
-        "material_terms": 0.0,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
-        "time": 1.0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 1,
         "region": 0.6
       }
     },
@@ -886,12 +823,12 @@
       ],
       "components": {
         "structure_terms": 0.1204,
-        "layout_terms": 0.0,
+        "layout_terms": 0,
         "material_terms": 0.5168,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.6421,
         "region": 0.6
       }
@@ -913,35 +850,11 @@
         "layout_terms": 0.0757,
         "material_terms": 0.1099,
         "craft_terms": 0.1679,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.7857,
-        "region": 0.0
-      }
-    },
-    {
-      "source": "2020",
-      "target": "1373",
-      "weight": 0.269,
-      "reasons": [
-        "共享结构：多进院落、合院布局",
-        "共享布局：多进院落",
-        "同属结构簇：合院穿斗民居型",
-        "同属材料主类：石材类",
-        "同属华东",
-        "同朝代：清"
-      ],
-      "components": {
-        "structure_terms": 0.2053,
-        "layout_terms": 0.1535,
-        "material_terms": 0.0,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
-        "time": 0.6421,
-        "region": 0.6
+        "region": 0
       }
     },
     {
@@ -959,13 +872,13 @@
       "components": {
         "structure_terms": 0.2325,
         "layout_terms": 0.1267,
-        "material_terms": 0.0,
+        "material_terms": 0,
         "craft_terms": 0.1015,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
+        "function_terms": 0,
+        "structure_cluster": 1,
         "material_cluster": 0.3333,
         "time": 0.7857,
-        "region": 1.0
+        "region": 1
       }
     },
     {
@@ -980,14 +893,14 @@
       ],
       "components": {
         "structure_terms": 0.0516,
-        "layout_terms": 0.0,
+        "layout_terms": 0,
         "material_terms": 0.6756,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
         "material_cluster": 0.75,
-        "time": 1.0,
-        "region": 0.0
+        "time": 1,
+        "region": 0
       }
     },
     {
@@ -1006,12 +919,12 @@
         "structure_terms": 0.0884,
         "layout_terms": 0.0987,
         "material_terms": 0.308,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
-        "time": 1.0,
-        "region": 0.0
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 1,
+        "region": 0
       }
     },
     {
@@ -1030,12 +943,12 @@
         "structure_terms": 0.1274,
         "layout_terms": 0.1365,
         "material_terms": 0.0999,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
         "material_cluster": 0.5,
-        "time": 1.0,
-        "region": 1.0
+        "time": 1,
+        "region": 1
       }
     },
     {
@@ -1053,13 +966,13 @@
       "components": {
         "structure_terms": 0.1156,
         "layout_terms": 0.0976,
-        "material_terms": 0.0,
+        "material_terms": 0,
         "craft_terms": 0.1654,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
-        "time": 1.0,
-        "region": 0.0
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 1,
+        "region": 0
       }
     },
     {
@@ -1074,14 +987,14 @@
       ],
       "components": {
         "structure_terms": 0.043,
-        "layout_terms": 0.0,
+        "layout_terms": 0,
         "material_terms": 0.5513,
-        "craft_terms": 0.0,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
         "material_cluster": 0.75,
         "time": 0.7857,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -1098,14 +1011,14 @@
       ],
       "components": {
         "structure_terms": 0.0436,
-        "layout_terms": 0.0,
+        "layout_terms": 0,
         "material_terms": 0.3722,
         "craft_terms": 0.1654,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
-        "material_cluster": 1.0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
         "time": 0.6421,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -1121,14 +1034,14 @@
       ],
       "components": {
         "structure_terms": 0.0373,
-        "layout_terms": 0.0,
+        "layout_terms": 0,
         "material_terms": 0.3117,
         "craft_terms": 0.2761,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
+        "function_terms": 0,
+        "structure_cluster": 1,
         "material_cluster": 0.75,
         "time": 0.7857,
-        "region": 0.0
+        "region": 0
       }
     },
     {
@@ -1144,14 +1057,14 @@
       ],
       "components": {
         "structure_terms": 0.0466,
-        "layout_terms": 0.0,
+        "layout_terms": 0,
         "material_terms": 0.4359,
         "craft_terms": 0.1422,
-        "function_terms": 0.0,
-        "structure_cluster": 1.0,
+        "function_terms": 0,
+        "structure_cluster": 1,
         "material_cluster": 0.6,
         "time": 0.7857,
-        "region": 0.0
+        "region": 0
       }
     }
   ]

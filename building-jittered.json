@@ -1757,7 +1757,7 @@
     "city": "甘孜藏族自治州",
     "coordinates": [
       100.08,
-      29.0
+      29
     ],
     "level": "国保",
     "importance": 3,
@@ -2161,7 +2161,7 @@
   },
   {
     "id": "building-293-e88ce237",
-    "name": "丘浚故居及墓",
+    "name": "丘浚故居",
     "category": "民居",
     "structureType": "宅院府第",
     "dynasty": "明",
@@ -2175,7 +2175,7 @@
     ],
     "level": "国保",
     "importance": 4,
-    "description": "明代名臣丘浚故居及墓，三进院落黄棱木构，藏书石室遗址尚存，体现海南士人文化与明代民居特色。"
+    "description": "明代名臣丘浚故居，三进院落黄棱木构，藏书石室遗址尚存，体现海南士人文化与明代民居特色。"
   },
   {
     "id": "building-922-bd86830c",
@@ -2287,7 +2287,7 @@
   },
   {
     "id": "building-292-1dbab3bc",
-    "name": "靖江王府及王陵",
+    "name": "靖江王府",
     "category": "宫殿",
     "structureType": "王府宫苑",
     "dynasty": "明",
@@ -2808,24 +2808,6 @@
     "description": "中前所城为明代千户所驻地，方形城制完整，是辽东明代卫所体系重要遗存。"
   },
   {
-    "id": "building-928-4a7e1668",
-    "name": "阳台宫",
-    "category": "宫殿",
-    "structureType": "宫殿宫城",
-    "dynasty": "明",
-    "year": 1428,
-    "eraLabel": "明·宣德三年（1428）",
-    "province": "河南省",
-    "city": "济源市",
-    "coordinates": [
-      112.59,
-      35.09
-    ],
-    "level": "国保",
-    "importance": 4,
-    "description": "阳台宫为明代道教宫观，采用抬梁穿斗混合结构，具中轴对称与琉璃瓦作特色。"
-  },
-  {
     "id": "building-1261-d4986f03",
     "name": "陈廷敬故居",
     "category": "民居",
@@ -3043,7 +3025,7 @@
   },
   {
     "id": "building-840-c7cb23b3",
-    "name": "王守仁故居和墓",
+    "name": "王守仁故居",
     "category": "民居",
     "structureType": "宅院府第",
     "dynasty": "明",
@@ -3125,7 +3107,7 @@
     "city": "汝南县",
     "coordinates": [
       114.36,
-      33.0
+      33
     ],
     "level": "国保",
     "importance": 4,
@@ -3331,7 +3313,7 @@
   },
   {
     "id": "building-841-b27fb9db",
-    "name": "青藤书屋和徐渭墓",
+    "name": "青藤书屋",
     "category": "民居",
     "structureType": "宅院府第",
     "dynasty": "明",
@@ -3701,7 +3683,7 @@
     "city": "南通市",
     "coordinates": [
       120.5,
-      32.0
+      32
     ],
     "level": "国保",
     "importance": 4,
@@ -3871,7 +3853,7 @@
   },
   {
     "id": "building-1409-91291c8f",
-    "name": "潘公桥及潘孝墓",
+    "name": "潘公桥",
     "category": "桥梁",
     "structureType": "拱桥",
     "dynasty": "明",
@@ -4770,24 +4752,6 @@
     "description": "五进徽商住宅，砖木雕饰精美，为全国重点文物保护单位。"
   },
   {
-    "id": "building-2020-2212dd69",
-    "name": "芷溪宗祠建筑",
-    "category": "民居",
-    "structureType": "宅院府第",
-    "dynasty": "清",
-    "year": 1644,
-    "eraLabel": "清·1644年",
-    "province": "福建省",
-    "city": "连城县",
-    "coordinates": [
-      116.7833,
-      25.7167
-    ],
-    "level": "国保",
-    "importance": 4,
-    "description": "74座“祠居合一”客家宗祠群，以“九厅十八井”布局著称。"
-  },
-  {
     "id": "building-2025-9710ffb4",
     "name": "永泰庄寨建筑群",
     "category": "民居",
@@ -5221,7 +5185,7 @@
   },
   {
     "id": "building-1659-d42e208e",
-    "name": "王船山故居及墓",
+    "name": "王船山故居",
     "category": "民居",
     "structureType": "园居草堂",
     "dynasty": "清",
@@ -7229,7 +7193,7 @@
     "city": "深州市",
     "coordinates": [
       115.56,
-      38.0
+      38
     ],
     "level": "国保",
     "importance": 4,
@@ -7247,29 +7211,11 @@
     "city": "吴忠市",
     "coordinates": [
       106.2,
-      38.0
+      38
     ],
     "level": "国保",
     "importance": 3,
     "description": "清末甘军将领董福祥府邸，融合西北夯土与官式建筑，具晚清边疆军事家族特征。"
-  },
-  {
-    "id": "building-213-33364d3e",
-    "name": "旅顺监狱旧址",
-    "category": "官府",
-    "structureType": "监狱设施",
-    "dynasty": "清",
-    "year": 1902,
-    "eraLabel": "清·1902年",
-    "province": "辽宁省",
-    "city": "大连市",
-    "coordinates": [
-      121.6147,
-      38.914
-    ],
-    "level": "国保",
-    "importance": 4,
-    "description": "日俄统治时期监狱旧址，见证近代东北殖民历史与抗日斗争。"
   },
   {
     "id": "building-1485-bf6ab84e",

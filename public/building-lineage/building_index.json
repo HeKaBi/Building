@@ -71,7 +71,7 @@
   },
   {
     "line_no": "293",
-    "name": "丘浚故居及墓",
+    "name": "丘浚故居",
     "building_type": "民居",
     "province": "海南省",
     "start_dynasty": "明",
@@ -1231,7 +1231,7 @@
   },
   {
     "line_no": "840",
-    "name": "王守仁故居和墓",
+    "name": "王守仁故居",
     "building_type": "民居",
     "province": "浙江省",
     "start_dynasty": "明",
@@ -1271,7 +1271,7 @@
   },
   {
     "line_no": "1659",
-    "name": "王船山故居及墓",
+    "name": "王船山故居",
     "building_type": "民居",
     "province": "湖南省",
     "start_dynasty": "清",
@@ -1538,16 +1538,6 @@
     "lineage_id": "民居-L03",
     "lineage_name": "明-合院布局·木构架-青砖谱系",
     "graph_file": "topk_graphs/833.json"
-  },
-  {
-    "line_no": "2020",
-    "name": "芷溪宗祠建筑",
-    "building_type": "民居",
-    "province": "福建省",
-    "start_dynasty": "清",
-    "lineage_id": "民居-L07",
-    "lineage_name": "清-多进院落·合院布局-木雕谱系",
-    "graph_file": "topk_graphs/2020.json"
   },
   {
     "line_no": "1645",
@@ -1821,7 +1811,7 @@
   },
   {
     "line_no": "841",
-    "name": "青藤书屋和徐渭墓",
+    "name": "青藤书屋",
     "building_type": "民居",
     "province": "浙江省",
     "start_dynasty": "明",
@@ -2458,16 +2448,6 @@
     "lineage_id": "官府-L02",
     "lineage_name": "清-中轴对称·砖石混合-琉璃瓦谱系",
     "graph_file": "topk_graphs/431.json"
-  },
-  {
-    "line_no": "213",
-    "name": "旅顺监狱旧址",
-    "building_type": "官府",
-    "province": "辽宁省",
-    "start_dynasty": "清",
-    "lineage_id": "官府-L16",
-    "lineage_name": "辽宁-东部工厂区·双层牢房楼-青砖谱系",
-    "graph_file": "topk_graphs/213.json"
   },
   {
     "line_no": "1037",
@@ -3701,7 +3681,7 @@
   },
   {
     "line_no": "1409",
-    "name": "潘公桥及潘孝墓",
+    "name": "潘公桥",
     "building_type": "桥梁",
     "province": "浙江省",
     "start_dynasty": "明",
@@ -4080,18 +4060,8 @@
     "graph_file": "topk_graphs/594.json"
   },
   {
-    "line_no": "928",
-    "name": "阳台宫",
-    "building_type": "宫殿",
-    "province": "河南省",
-    "start_dynasty": "明",
-    "lineage_id": "宫殿-L02",
-    "lineage_name": "陕西-多进建筑·砖石混合-木材谱系",
-    "graph_file": "topk_graphs/928.json"
-  },
-  {
     "line_no": "292",
-    "name": "靖江王府及王陵",
+    "name": "靖江王府",
     "building_type": "宫殿",
     "province": "广西壮族自治区",
     "start_dynasty": "明",
