@@ -1,5 +1,6 @@
 <template>
-  <section class="building-portrait-view">
+  <section id="building-portrait-total" class="building-portrait-view">
+    <button class="tour-button portrait-tour-button" @click="startTour">界面导引</button>
     <div class="building-portrait-view__scene" :style="{ backgroundImage: `url(${matrixBackgroundUrl})` }"></div>
     <div class="building-portrait-view__wash"></div>
     <div class="building-portrait-view__grain"></div>
@@ -9,7 +10,7 @@
     <span class="building-portrait-view__petal building-portrait-view__petal--c"></span>
     <span class="building-portrait-view__petal building-portrait-view__petal--d"></span>
 
-    <div class="building-portrait-view__search-row">
+    <div id="building-portrait-search" class="building-portrait-view__search-row">
       <div class="building-search">
         <input
           v-model.trim="searchText"
@@ -23,8 +24,8 @@
     </div>
 
     <div class="building-portrait-view__body">
-      <section class="building-portrait-view__left">
-        <article class="profile-card">
+      <section id="building-portrait-left" class="building-portrait-view__left">
+        <article id="building-portrait-profile" class="profile-card">
           <div class="profile-card__media">
             <img :src="selectedCover" :alt="selectedBuilding.name" />
             <span class="profile-card__seal">{{ selectedBuilding.category }}</span>
@@ -45,22 +46,22 @@
           </div>
         </article>
 
-        <div class="chart-grid">
-          <article class="chart-card chart-card--pie">
+        <div id="building-portrait-charts" class="chart-grid">
+          <article id="building-portrait-pie" class="chart-card chart-card--pie">
             <header class="chart-card__header">
               <h3>建筑要素占比图</h3>
             </header>
             <div ref="pieChartRef" class="chart-card__canvas chart-card__canvas--pie"></div>
           </article>
 
-          <article class="chart-card chart-card--cloud">
+          <article id="building-portrait-cloud" class="chart-card chart-card--cloud">
             <header class="chart-card__header">
               <h3>营造关键词云图</h3>
             </header>
             <div ref="cloudChartRef" class="chart-card__canvas chart-card__canvas--cloud"></div>
           </article>
 
-          <article class="chart-card chart-card--radar">
+          <article id="building-portrait-radar" class="chart-card chart-card--radar">
             <header class="chart-card__header">
               <h3>建筑维标雷达图</h3>
             </header>
@@ -69,7 +70,7 @@
         </div>
       </section>
 
-      <section class="building-portrait-view__right">
+      <section id="building-portrait-network" class="building-portrait-view__right">
         <div class="network-panel">
           <header class="network-panel__header">
             <div>
@@ -89,6 +90,31 @@
         </div>
       </section>
     </div>
+
+    <teleport to="body">
+      <div
+        v-if="tourVisible"
+        class="tour-comp building-portrait-tour-comp"
+        :style="{ bottom: `${tourSteps[currentIndex]?.tour_bottom ?? 0}%` }"
+      >
+        <TourComp
+          :content="currentIntro"
+          :step-count="tourSteps.length"
+          v-model="currentIndex"
+          :left="tourSteps[currentIndex]?.left ?? 0"
+          :bottom="tourSteps[currentIndex]?.bottom ?? 0"
+        />
+      </div>
+    </teleport>
+
+    <el-tour id="building-portrait-tour" v-model="tourVisible" :z-index="3000" v-model:current="currentIndex">
+      <el-tour-step v-for="(step, index) in tourSteps" :key="index" :target="step.target" :placement="step.placement">
+        <template #header style="display: none;"></template>
+      </el-tour-step>
+      <template #indicators>
+        <span></span>
+      </template>
+    </el-tour>
   </section>
 </template>
 
@@ -103,7 +129,9 @@ import { LabelLayout } from 'echarts/features';
 import { CanvasRenderer } from 'echarts/renderers';
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, type Ref, watch } from 'vue';
 
+import TourComp from '@/components/TourComp.vue';
 import vintage from '@/assets/theme/vintage.json';
+import BuildingPortraitTourJson from '@/assets/tour/BuildingPortraitDemoView.json';
 import { buildingImageMap } from '@/demo/building-section-catalog/generatedImageMap';
 import rawBuildings from '../../building.json';
 import canonicalRawBuildings from '../../building-jittered.json';
@@ -259,6 +287,10 @@ const defaultBuilding = (() => {
 })();
 
 const selectedBuilding = ref<BuildingRecord>(defaultBuilding);
+const tourVisible = ref(false);
+const currentIndex = ref(0);
+const currentIntro = ref('');
+const tourSteps = ref(Array.from(BuildingPortraitTourJson));
 
 const coverModules = import.meta.glob('../assets/images/building-covers/*.png', {
   eager: true,
@@ -1509,6 +1541,23 @@ const handleSearch = () => {
 };
 
 watch(
+  currentIndex,
+  () => {
+    if (currentIndex.value === tourSteps.value.length) {
+      tourVisible.value = false;
+      currentIndex.value = 0;
+      return;
+    }
+    currentIntro.value = tourSteps.value[currentIndex.value]?.content ?? '';
+  },
+  { immediate: true },
+);
+
+const startTour = () => {
+  tourVisible.value = true;
+};
+
+watch(
   selectedBuilding,
   () => {
     activeLineageGraph.value = null;
@@ -1544,6 +1593,7 @@ onMounted(() => {
 
 onBeforeUnmount(() => {
   window.removeEventListener('resize', handleResize);
+  tourVisible.value = false;
 
   if (resizeFrame) {
     window.cancelAnimationFrame(resizeFrame);
@@ -1564,6 +1614,12 @@ onBeforeUnmount(() => {
   padding: 6px 20px 18px;
   background: #f3ecde;
   box-sizing: border-box;
+}
+
+.portrait-tour-button {
+  top: 14px;
+  left: 16px;
+  z-index: 38;
 }
 
 .building-portrait-view__scene,
@@ -1637,6 +1693,42 @@ onBeforeUnmount(() => {
 .building-portrait-view__body {
   position: relative;
   z-index: 2;
+}
+
+.building-portrait-tour-comp {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 300px;
+  z-index: 4000;
+}
+
+.building-portrait-tour-comp :deep(.live-canvas) {
+  width: 460px;
+  height: 230px;
+}
+
+.building-portrait-tour-comp :deep(.tour-content) {
+  top: auto;
+  height: 100%;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding-left: 220px;
+  padding-bottom: 12px;
+}
+
+.building-portrait-tour-comp :deep(.tour-content .txt-btn) {
+  width: min(460px, 38vw);
+  font-size: 20px;
+}
+
+.building-portrait-tour-comp :deep(.tour-content .txt-btn .next-btn) {
+  width: 120px;
+}
+
+:global(.el-tour__content) {
+  display: none;
 }
 
 .building-portrait-view__search-row {

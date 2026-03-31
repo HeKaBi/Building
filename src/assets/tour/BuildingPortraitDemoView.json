@@ -1,0 +1,42 @@
+[
+  {
+    "target": "#building-portrait-total",
+    "placement": "right",
+    "content": "<p>这里是“建筑画像”页。你可以围绕一处建筑，从基本信息、要素图谱到关联网络，快速完成全景了解。</p>",
+    "left": 0,
+    "bottom": 0,
+    "tour_bottom": 0
+  },
+  {
+    "target": "#building-portrait-search",
+    "placement": "bottom",
+    "content": "<p>先用顶部搜索框定位建筑。支持建筑名、类别、结构类型关键词，例如“镇海楼”“宫殿”“拱桥”。</p>",
+    "left": 0,
+    "bottom": 0,
+    "tour_bottom": 0
+  },
+  {
+    "target": "#building-portrait-profile",
+    "placement": "right",
+    "content": "<p>左上是建筑基础画像，包含类别、结构、朝代、地点、年代和简介，方便你先建立背景认知。</p>",
+    "left": 0,
+    "bottom": 0,
+    "tour_bottom": 0
+  },
+  {
+    "target": "#building-portrait-charts",
+    "placement": "top",
+    "content": "<p>左下三图分别展示建筑要素占比、营造关键词云、建筑维标雷达。用于观察结构特征与文化表达重点。</p>",
+    "left": 0,
+    "bottom": 0,
+    "tour_bottom": 0
+  },
+  {
+    "target": "#building-portrait-network",
+    "placement": "left",
+    "content": "<p>右侧是关联图谱。优先显示谱系子图，未命中时回退到结构/地域/时代关联网络。你可以拖拽、缩放并点击节点继续探索。</p>",
+    "left": 0,
+    "bottom": 0,
+    "tour_bottom": 0
+  }
+]
