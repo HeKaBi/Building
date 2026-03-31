@@ -57,6 +57,41 @@ interface TimelinePointDatum {
   names: string[];
 }
 
+interface CategoryTimelineBundle {
+  minYear: number;
+  maxYear: number;
+  bins: TimelineBin[];
+  changepoints: number[];
+  keypoints: TimelineKeypoint[];
+}
+
+interface TimelineBin {
+  startYear: number;
+  endYear: number;
+  totalCount: number;
+  peakYear: number;
+  normalizedCount: number;
+}
+
+interface TimelineKeypoint {
+  year: number;
+  strength: number;
+  delta: number;
+}
+
+interface TimelineArrowDatum {
+  value: [number, number, number];
+  symbolSize: number;
+  symbolRotate: number;
+  symbolOffset: [number, number];
+  itemStyle: {
+    color: string;
+    opacity: number;
+    shadowColor: string;
+    shadowBlur: number;
+  };
+}
+
 const props = defineProps<{
   buildings: DashboardBuilding[];
   activeType: DashboardCategory;
@@ -78,6 +113,77 @@ let themeRegistered = false;
 const activePalette = computed(() => categoryPalettes[props.activeType]);
 
 const formatYear = (year: number) => (year < 0 ? `前${Math.abs(year)}` : `${year}`);
+const categoryOrder: DashboardCategory[] = ['民居', '官府', '宫殿', '桥梁'];
+const PELT_EPSILON = 1e-8;
+
+const sumRange = (prefix: number[], start: number, end: number) => prefix[end] - prefix[start];
+
+const calcSegmentSse = (prefix: number[], prefixSquares: number[], start: number, end: number) => {
+  const length = end - start;
+  if (length <= 0) return 0;
+  const sum = sumRange(prefix, start, end);
+  const squares = sumRange(prefixSquares, start, end);
+  const meanSquare = (sum * sum) / length;
+  return Math.max(0, squares - meanSquare);
+};
+
+const peltDetect = (series: number[], penalty: number) => {
+  const n = series.length;
+  if (n < 4) return [];
+
+  const prefix = new Array(n + 1).fill(0);
+  const prefixSquares = new Array(n + 1).fill(0);
+
+  for (let i = 0; i < n; i += 1) {
+    prefix[i + 1] = prefix[i] + series[i];
+    prefixSquares[i + 1] = prefixSquares[i] + series[i] * series[i];
+  }
+
+  const bestCost = new Array(n + 1).fill(Number.POSITIVE_INFINITY);
+  const prevIndex = new Array(n + 1).fill(-1);
+
+  bestCost[0] = -penalty;
+
+  for (let end = 1; end <= n; end += 1) {
+    for (let start = 0; start < end; start += 1) {
+      const candidate =
+        bestCost[start] +
+        calcSegmentSse(prefix, prefixSquares, start, end) +
+        penalty;
+      if (candidate + PELT_EPSILON < bestCost[end]) {
+        bestCost[end] = candidate;
+        prevIndex[end] = start;
+      }
+    }
+  }
+
+  const changepoints: number[] = [];
+  let cursor = n;
+
+  while (cursor > 0 && prevIndex[cursor] >= 0) {
+    const prev = prevIndex[cursor];
+    if (prev > 0) {
+      changepoints.unshift(prev);
+    }
+    cursor = prev;
+  }
+
+  return changepoints;
+};
+
+const chooseWindowSize = (span: number) => {
+  if (span > 1800) return 20;
+  if (span > 1100) return 15;
+  if (span > 500) return 10;
+  return 5;
+};
+
+const nearestExistingYear = (targetYear: number, years: number[]) => {
+  if (!years.length) return targetYear;
+  return years.reduce((closest, year) =>
+    Math.abs(year - targetYear) < Math.abs(closest - targetYear) ? year : closest,
+  years[0]);
+};
 
 const activeBuildings = computed(() =>
   props.buildings
@@ -145,6 +251,142 @@ const bubbleSeriesData = computed<TimelinePointDatum[]>(() => {
       opacity: 0.8,
     },
     names: item.items.slice(0, 6).map((building) => building.name),
+  }));
+});
+
+const categoryPeltBundles = computed<Record<DashboardCategory, CategoryTimelineBundle>>(() => {
+  const groupedByCategory = new Map<DashboardCategory, DashboardBuilding[]>();
+  categoryOrder.forEach((category) => groupedByCategory.set(category, []));
+
+  props.buildings.forEach((item) => {
+    const bucket = groupedByCategory.get(item.category);
+    if (bucket) {
+      bucket.push(item);
+    }
+  });
+
+  const result = {} as Record<DashboardCategory, CategoryTimelineBundle>;
+
+  categoryOrder.forEach((category) => {
+    const buildings = (groupedByCategory.get(category) ?? [])
+      .slice()
+      .sort((left, right) => left.year - right.year || right.importance - left.importance);
+
+    if (!buildings.length) {
+      result[category] = {
+        minYear: 0,
+        maxYear: 0,
+        bins: [],
+        changepoints: [],
+        keypoints: [],
+      };
+      return;
+    }
+
+    const minYear = Math.min(...buildings.map((item) => item.year));
+    const maxYear = Math.max(...buildings.map((item) => item.year));
+    const span = Math.max(1, maxYear - minYear + 1);
+    const windowSize = chooseWindowSize(span);
+
+    const yearCount = new Map<number, number>();
+    buildings.forEach((item) => {
+      yearCount.set(item.year, (yearCount.get(item.year) ?? 0) + 1);
+    });
+
+    const denseCounts = Array.from({ length: span }, (_, offset) => yearCount.get(minYear + offset) ?? 0);
+    const bins: TimelineBin[] = [];
+
+    for (let start = 0; start < denseCounts.length; start += windowSize) {
+      const end = Math.min(start + windowSize, denseCounts.length);
+      const slice = denseCounts.slice(start, end);
+      const totalCount = slice.reduce((sum, value) => sum + value, 0);
+      const peakOffset = slice.reduce((best, value, index) => (value > slice[best] ? index : best), 0);
+      const startYear = minYear + start;
+      const endYear = minYear + end - 1;
+      bins.push({
+        startYear,
+        endYear,
+        totalCount,
+        peakYear: startYear + peakOffset,
+        normalizedCount: 0,
+      });
+    }
+
+    const maxBinCount = Math.max(1, ...bins.map((item) => item.totalCount));
+    const normalized = bins.map((item) => item.totalCount / maxBinCount);
+    const mean =
+      normalized.reduce((sum, value) => sum + value, 0) / Math.max(1, normalized.length);
+    const variance =
+      normalized.reduce((sum, value) => sum + (value - mean) ** 2, 0) /
+      Math.max(1, normalized.length);
+    const penalty = Math.max(0.08, 0.12 * Math.log2(normalized.length + 1) + variance * 0.3);
+
+    bins.forEach((item, index) => {
+      item.normalizedCount = normalized[index];
+    });
+
+    const changepoints = peltDetect(normalized, penalty);
+    const boundaryIndexes =
+      changepoints.length > 0
+        ? changepoints
+        : Array.from({ length: Math.max(0, bins.length - 1) }, (_, index) => index + 1);
+    const availableYears = Array.from(yearCount.keys()).sort((a, b) => a - b);
+    const candidates = boundaryIndexes
+      .filter((index) => index > 0 && index < bins.length)
+      .map((index) => {
+        const left = bins[index - 1];
+        const right = bins[index];
+        const delta = right.normalizedCount - left.normalizedCount;
+        const targetYear = delta >= 0 ? right.peakYear : left.peakYear;
+        return {
+          year: nearestExistingYear(targetYear, availableYears),
+          strength: Math.abs(delta),
+          delta,
+        };
+      })
+      .sort((left, right) => right.strength - left.strength);
+
+    const keypoints: TimelineKeypoint[] = [];
+    const usedYear = new Set<number>();
+    candidates.forEach((point) => {
+      if (keypoints.length >= 6) return;
+      if (usedYear.has(point.year)) return;
+      usedYear.add(point.year);
+      keypoints.push(point);
+    });
+
+    result[category] = {
+      minYear,
+      maxYear,
+      bins,
+      changepoints,
+      keypoints,
+    };
+  });
+
+  return result;
+});
+
+const activeArrowData = computed<TimelineArrowDatum[]>(() => {
+  const bundle = categoryPeltBundles.value[props.activeType];
+  if (!bundle?.keypoints.length) return [];
+
+  const yearCountMap = new Map<number, number>();
+  activeTimeline.value.timeline.forEach((item) => {
+    yearCountMap.set(item.year, item.count);
+  });
+
+  return bundle.keypoints.map((point) => ({
+    value: [0.18, point.year, point.strength],
+    symbolSize: Math.max(8, Math.min(13, Math.round(4 + ((yearCountMap.get(point.year) ?? 1) / maxYearCount.value) * 9))),
+    symbolRotate: 270,
+    symbolOffset: [-12, 0],
+    itemStyle: {
+      color: activePalette.value.accentColor,
+      opacity: 0.88,
+      shadowColor: 'rgba(0, 0, 0, 0.12)',
+      shadowBlur: 2,
+    },
   }));
 });
 
@@ -287,6 +529,24 @@ const renderChart = () => {
             },
           },
           z: 3,
+        },
+        {
+          type: 'scatter',
+          data: activeArrowData.value,
+          symbol: 'triangle',
+          symbolSize: (_value: number[], params: { data: TimelineArrowDatum }) => params.data.symbolSize,
+          symbolRotate: (_value: number[], params: { data: TimelineArrowDatum }) => params.data.symbolRotate,
+          symbolOffset: (_value: number[], params: { data: TimelineArrowDatum }) => params.data.symbolOffset,
+          itemStyle: {
+            color: activePalette.value.accentColor,
+            opacity: 0.88,
+            shadowColor: 'rgba(0, 0, 0, 0.12)',
+            shadowBlur: 2,
+          },
+          emphasis: {
+            scale: false,
+          },
+          z: 6,
         },
       ],
     },
