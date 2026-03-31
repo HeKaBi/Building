@@ -1,8 +1,10 @@
 <template>
-  <section class="building-map-screen">
+  <section id="building-map-total" class="building-map-screen">
+    <button class="tour-button map-tour-button" @click="startTour">界面导引</button>
     <img class="building-map-screen__icon" :src="mapIconUrl" alt="" aria-hidden="true" />
 
     <BuildingMapChart
+      id="building-map-chart"
       class="building-map-screen__chart"
       :buildings="filteredBuildings"
       :selected-id="selectedBuildingId"
@@ -14,8 +16,8 @@
     <div class="building-map-screen__motif"></div>
 
     <div class="screen-ui">
-      <aside class="side-panel side-panel--left">
-        <section class="legend-block">
+      <aside id="building-map-left-panel" class="side-panel side-panel--left">
+        <section id="building-map-structure-legend" class="legend-block">
           <h2 class="legend-block__title">{{ uiText.structureTitle }}</h2>
           <p class="legend-block__copy">{{ uiText.structureCopy }}</p>
 
@@ -38,7 +40,7 @@
           </button>
         </section>
 
-        <section class="legend-block">
+        <section id="building-map-level-legend" class="legend-block">
           <h2 class="legend-block__title">{{ uiText.planTitle }}</h2>
           <div class="legend-block__hint">{{ uiText.planHint }}</div>
 
@@ -67,7 +69,7 @@
         </section>
       </aside>
 
-      <aside class="side-panel side-panel--right">
+      <aside id="building-map-timeline-panel" class="side-panel side-panel--right">
         <BuildingTimeline
           :buildings="filteredBuildings"
           :selected-id="selectedBuildingId"
@@ -75,15 +77,38 @@
         />
       </aside>
     </div>
+
+    <teleport to="body">
+      <div class="tour-comp" v-if="tourVisible" :style="{ bottom: `${tourSteps[currentIndex]?.tour_bottom ?? 0}%` }">
+        <TourComp
+          :content="currentIntro"
+          :step-count="tourSteps.length"
+          v-model="currentIndex"
+          :left="tourSteps[currentIndex]?.left ?? 0"
+          :bottom="tourSteps[currentIndex]?.bottom ?? 0"
+        />
+      </div>
+    </teleport>
+
+    <el-tour id="building-map-tour" v-model="tourVisible" :z-index="3000" v-model:current="currentIndex">
+      <el-tour-step v-for="(step, index) in tourSteps" :key="index" :target="step.target" :placement="step.placement">
+        <template #header style="display: none;"></template>
+      </el-tour-step>
+      <template #indicators>
+        <span></span>
+      </template>
+    </el-tour>
   </section>
 </template>
 
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue';
+import { computed, onBeforeUnmount, ref, watch } from 'vue';
 
 import rawBuildings from '../../building-jittered.json';
 import BuildingMapChart from '@/demo/building-home-map/components/BuildingMapChart.vue';
 import BuildingTimeline from '@/demo/building-home-map/components/BuildingTimeline.vue';
+import TourComp from '@/components/TourComp.vue';
+import BuildingMapTourJson from '@/assets/tour/BuildingMapDemoView.json';
 import {
   getStructureType,
   importanceLegend,
@@ -138,6 +163,28 @@ const handleSelect = (buildingId: string) => {
   selectedBuildingId.value = buildingId;
 };
 
+const tourVisible = ref(false);
+const currentIndex = ref(0);
+const currentIntro = ref('');
+const tourSteps = ref(Array.from(BuildingMapTourJson));
+
+watch(
+  currentIndex,
+  () => {
+    if (currentIndex.value === tourSteps.value.length) {
+      tourVisible.value = false;
+      currentIndex.value = 0;
+      return;
+    }
+    currentIntro.value = tourSteps.value[currentIndex.value]?.content ?? '';
+  },
+  { immediate: true },
+);
+
+const startTour = () => {
+  tourVisible.value = true;
+};
+
 watch(
   filteredBuildings,
   (items) => {
@@ -147,6 +194,10 @@ watch(
   },
   { immediate: true },
 );
+
+onBeforeUnmount(() => {
+  tourVisible.value = false;
+});
 </script>
 
 <style scoped lang="scss">
@@ -168,6 +219,12 @@ watch(
   background:
     linear-gradient(180deg, rgba(230, 224, 211, 0.98), rgba(216, 209, 196, 0.98)),
     linear-gradient(90deg, rgba(255, 255, 255, 0.06), transparent 28%, transparent 72%, rgba(255, 255, 255, 0.06));
+}
+
+.map-tour-button {
+  top: 16px;
+  left: 140px;
+  z-index: 38;
 }
 
 .building-map-screen__chart,
@@ -234,6 +291,20 @@ watch(
   inset: 0;
   z-index: 20;
   pointer-events: none;
+}
+
+.tour-comp {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 380px;
+  z-index: 4000;
+  pointer-events: auto;
+}
+
+:global(.el-tour__content) {
+  display: none;
 }
 
 .side-panel {

@@ -1,0 +1,42 @@
+[
+  {
+    "target": "#building-map-total",
+    "placement": "left",
+    "content": "<p>这一页是“营造山河”里的全国建筑分布图。你可以从地图、分类图例和右侧时间轴三个角度，快速了解不同类型古建筑在空间与时间上的分布特征。</p>",
+    "left": 5,
+    "bottom": 2,
+    "tour_bottom": 0
+  },
+  {
+    "target": "#building-map-chart",
+    "placement": "left",
+    "content": "<p>中间是全国主地图。每个点代表一处建筑样本，点击点位可以联动右侧时间轴并切换焦点建筑。</p><p>颜色区分建筑类别，点位的样式则反映样本等级，便于你快速识别重点建筑。</p>",
+    "left": 5,
+    "bottom": 2,
+    "tour_bottom": 0
+  },
+  {
+    "target": "#building-map-structure-legend",
+    "placement": "right",
+    "content": "<p>左侧上半区是“建筑分类”筛选。可按民居、官府、皇宫、桥梁切换，查看某一类建筑在全国的分布情况。</p><p>右侧数字表示该分类当前样本数量。</p>",
+    "left": 5,
+    "bottom": 2,
+    "tour_bottom": 0
+  },
+  {
+    "target": "#building-map-level-legend",
+    "placement": "right",
+    "content": "<p>左侧中部是“样本等级”说明。这里解释了地图点位大小和形态的含义，帮助你理解不同建筑在数据体系中的重要程度。</p>",
+    "left": 5,
+    "bottom": 2,
+    "tour_bottom": 0
+  },
+  {
+    "target": "#building-map-timeline-panel",
+    "placement": "left",
+    "content": "<p>右侧是建筑时间轴。它按年代展示建筑数量密度，你可以点击时间节点快速切换到对应时期的代表建筑。</p><p>地图与时间轴是联动的，建议结合使用以获得完整时空视角。</p>",
+    "left": 75,
+    "bottom": 2,
+    "tour_bottom": 0
+  }
+]
