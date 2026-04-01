@@ -1,6 +1,12 @@
 <template>
   <section class="building-section-screen">
-    <img class="building-section-screen__icon" :src="sectionIconUrl" alt="" aria-hidden="true" />
+    <img
+      v-if="!shouldHideSectionIcon"
+      class="building-section-screen__icon"
+      :src="sectionIconUrl"
+      alt=""
+      aria-hidden="true"
+    />
     <div class="building-section-screen__scene" :style="{ backgroundImage: `url(${sectionBackgroundUrl})` }"></div>
     <div class="building-section-screen__wash"></div>
     <div class="building-section-screen__grain"></div>
@@ -212,7 +218,7 @@
 
                   <section class="detail-side__block">
                     <h3>建筑介绍</h3>
-                    <p>{{ detailItem.summary }}</p>
+                    <p>{{ detailSummary }}</p>
                   </section>
 
                   <section
@@ -224,10 +230,8 @@
                     <p>{{ section.body }}</p>
                   </section>
 
-                  <div class="detail-side__meta">
-                    <span>{{ detailItem.eraLabel }}</span>
-                    <span>{{ detailItem.region }}</span>
-                    <span>{{ getItemStructureFeature(detailItem) }}</span>
+                  <div v-if="detailMetaChips.length" class="detail-side__meta">
+                    <span v-for="chip in detailMetaChips" :key="chip">{{ chip }}</span>
                   </div>
                 </section>
               </template>
@@ -256,36 +260,61 @@
               </template>
             </aside>
 
-            <div class="atlas-main" :style="{ '--accent-color': currentCategory.accent }">
+            <div
+              class="atlas-main"
+              :class="{ 'atlas-main--detail': isAtlasDetailView }"
+              :style="{ '--accent-color': currentCategory.accent }"
+            >
               <template v-if="isAtlasDetailView && detailItem">
                 <article
                   class="atlas-hero"
+                  :class="{ 'atlas-hero--paper-only': isQingchengDetail }"
                   :style="getAtlasCardStyle(detailItem)"
                   @wheel.capture.stop.prevent="handleImageWheel($event, detailItem.id)"
                 >
-                  <Transition name="hero-visual-fade">
-                    <div
-                      v-if="detailItem.image"
-                      :key="`${detailItem.id}-photo`"
-                      class="atlas-hero__photo"
-                      :style="{
-                        backgroundImage: `url(${detailItem.image})`,
-                        backgroundPosition: detailItem.imagePosition ?? 'center center',
-                      }"
-                    ></div>
-                    <div v-else :key="`${detailItem.id}-ghost`" class="atlas-hero__photo atlas-hero__photo--ghost">
-                      <ArchitectureSketch :variant="detailItem.variant" :accent="currentCategory.accent" muted />
-                    </div>
-                  </Transition>
+                  <template v-if="isQingchengDetail">
+                    <img
+                      class="atlas-hero__paper-clean"
+                      :src="qingchengPaperSketchFallback"
+                      :alt="`${detailItem.name}线稿`"
+                    />
+                  </template>
+                  <template v-else>
+                    <Transition name="hero-visual-fade">
+                      <div
+                        v-if="detailItem.image"
+                        :key="`${detailItem.id}-photo`"
+                        class="atlas-hero__photo"
+                        :style="{
+                          backgroundImage: `url(${detailItem.image})`,
+                          backgroundPosition: detailItem.imagePosition ?? 'center center',
+                        }"
+                      ></div>
+                      <div v-else :key="`${detailItem.id}-ghost`" class="atlas-hero__photo atlas-hero__photo--ghost">
+                        <ArchitectureSketch :variant="detailItem.variant" :accent="currentCategory.accent" muted />
+                      </div>
+                    </Transition>
 
-                  <div class="atlas-hero__sheet"></div>
-                  <Transition name="hero-visual-fade">
-                    <div :key="`${detailItem.id}-ink`" class="atlas-hero__ink">
-                      <ArchitectureSketch :variant="detailItem.variant" :accent="currentCategory.accent" />
-                    </div>
-                  </Transition>
+                    <div class="atlas-hero__sheet"></div>
+                    <Transition name="hero-visual-fade">
+                      <div :key="`${detailItem.id}-ink`" class="atlas-hero__ink">
+                        <img
+                          v-if="detailPaperSketchImage"
+                          class="atlas-hero__ink-image"
+                          :src="detailPaperSketchImage"
+                          :alt="`${detailItem.name}线稿`"
+                          @error="handleDetailPaperSketchError"
+                        />
+                        <ArchitectureSketch
+                          v-else
+                          :variant="detailItem.variant"
+                          :accent="currentCategory.accent"
+                        />
+                      </div>
+                    </Transition>
+                  </template>
 
-                  <div class="atlas-hero__caption">
+                  <div v-if="!isQingchengDetail" class="atlas-hero__caption">
                     <span>线稿</span>
                     <span>滚轮切换前后样本</span>
                     <span>{{ detailItem.tags.join(' · ') }}</span>
@@ -466,6 +495,7 @@ import ArchitectureSketch from '@/demo/building-section-catalog/components/Archi
 import BuildingEraTimeline from '@/demo/building-section-catalog/components/BuildingEraTimeline.vue';
 import { buildingCatalog } from '@/demo/building-section-catalog/realCatalog';
 import type { BuildingGalleryItem, BuildingPhotoMood, SketchVariant } from '@/demo/building-section-catalog/types';
+import qingchengPaperSketch from '@/assets/images/building-paper/building-1852-b868caf8.png';
 
 const route = useRoute();
 const router = useRouter();
@@ -628,6 +658,72 @@ const selectedItem = computed(
 const detailItem = computed(
   () => galleryItems.value.find((item) => item.id === atlasDetailItemId.value) ?? selectedItem.value,
 );
+
+const qingchengDetailId = 'building-1852-b868caf8';
+const isQingchengItem = (item: BuildingGalleryItem | null | undefined) =>
+  !!item && (item.id === qingchengDetailId || item.name.includes('青城古民居'));
+
+const isQingchengDetail = computed(() => isQingchengItem(detailItem.value));
+
+const qingchengPaperSketchFallback = `${import.meta.env.BASE_URL}building_paper/building-1852-b868caf8.png`;
+const paperSketchLoadStep = ref(0);
+
+const detailPaperSketchCandidates = computed(() => {
+  const item = detailItem.value;
+  if (!item) {
+    return [] as string[];
+  }
+
+  if (isQingchengItem(item)) {
+    return [qingchengPaperSketch, qingchengPaperSketchFallback];
+  }
+
+  return item.paperSketchImage ? [item.paperSketchImage] : [];
+});
+
+const detailPaperSketchImage = computed(() => {
+  const candidates = detailPaperSketchCandidates.value;
+  if (!candidates.length) {
+    return undefined;
+  }
+  return candidates[Math.min(paperSketchLoadStep.value, candidates.length - 1)];
+});
+
+const handleDetailPaperSketchError = () => {
+  const maxStep = detailPaperSketchCandidates.value.length - 1;
+  if (paperSketchLoadStep.value < maxStep) {
+    paperSketchLoadStep.value += 1;
+  }
+};
+
+const shouldHideSectionIcon = computed(() => isAtlasDetailView.value);
+
+const detailSummaryOverrideById: Record<string, string> = {
+  [qingchengDetailId]:
+    '青城古民居位于甘肃榆中青城古镇，现存格局以明清建筑为主，常见硬山顶、前出廊与砖木混合围护，体现西北传统民居的营造特征。',
+};
+
+const detailSummary = computed(() => {
+  const item = detailItem.value;
+  if (!item) {
+    return '';
+  }
+  if (isQingchengItem(item)) {
+    return detailSummaryOverrideById[qingchengDetailId];
+  }
+  return detailSummaryOverrideById[item.id] ?? item.summary;
+});
+
+const detailMetaChips = computed(() => {
+  const item = detailItem.value;
+  if (!item) {
+    return [];
+  }
+  if (isQingchengItem(item)) {
+    return [];
+  }
+  return [item.eraLabel, item.region, getItemStructureFeature(item)];
+});
 
 const visibleCountLabel = computed(() => {
   if (!isAtlasView.value) {
@@ -924,6 +1020,23 @@ const detailSections = computed(() => {
     return [];
   }
 
+  if (isQingchengItem(item)) {
+    return [
+      {
+        title: '空间格局',
+        body: '以“街巷-门厅-院落-正房”的纵深序列组织空间，兼具临街交流与内院起居。',
+      },
+      {
+        title: '地域与营造',
+        body: '受黄河上游气候与材料条件影响，常见厚墙围护、木梁架承重与廊檐缓冲。',
+      },
+      {
+        title: '线稿阅读',
+        body: '先看屋顶轮廓与院落边界，再看门厅、正房、厢房关系与梁架节点。',
+      },
+    ];
+  }
+
   const structureLabel = getItemStructureFeature(item);
   const regionLabel = getItemRegionFamily(item);
   const tagLabel = item.tags.slice(0, 3).join('、') || '体量、构架与界面';
@@ -1189,6 +1302,13 @@ watch(
     }
 
     syncAtlasWindow(detailItemId ?? activeItem);
+  },
+);
+
+watch(
+  () => detailItem.value?.id ?? null,
+  () => {
+    paperSketchLoadStep.value = 0;
   },
 );
 </script>
@@ -2290,6 +2410,10 @@ watch(
   min-height: 0;
 }
 
+.atlas-main--detail {
+  grid-template-rows: minmax(0, 1fr);
+}
+
 .atlas-strip__eyebrow {
   font-family: 'ContentFont', serif;
   font-size: 10px;
@@ -2337,6 +2461,7 @@ watch(
   position: relative;
   min-height: 0;
   height: 100%;
+  min-height: 420px;
   overflow: hidden;
   border: 1px solid rgba(147, 116, 93, 0.16);
   border-radius: 28px 10px 28px 10px;
@@ -2398,6 +2523,33 @@ watch(
 .atlas-hero__ink :deep(.architecture-sketch) {
   width: 100%;
   height: 100%;
+}
+
+.atlas-hero__ink-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  filter: sepia(0.18) saturate(0.92) contrast(0.96);
+}
+
+.atlas-hero--paper-only {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.atlas-hero__paper-clean {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: none;
+  transform: scale(1.01);
+  transform-origin: center center;
 }
 
 .atlas-hero__caption {

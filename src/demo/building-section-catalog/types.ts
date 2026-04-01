@@ -38,6 +38,7 @@ export interface BuildingGalleryItem {
   photoMood?: BuildingPhotoMood;
   image?: string;
   imagePosition?: string;
+  paperSketchImage?: string;
 }
 
 export interface BuildingGroup {

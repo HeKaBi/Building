@@ -27,6 +27,7 @@ import residenceGroupFortifiedCover from '@/assets/images/building-covers/reside
 import residenceGroupGardenCover from '@/assets/images/building-covers/residence-group-garden.png';
 import residenceGroupManorCover from '@/assets/images/building-covers/residence-group-manor.png';
 import residenceGroupSettlementCover from '@/assets/images/building-covers/residence-group-settlement.png';
+import qingchengPaperSketch from '@/assets/images/building-paper/building-1852-b868caf8.png';
 
 type SourceCategory = '民居' | '官府' | '宫殿' | '桥梁';
 
@@ -539,6 +540,10 @@ const resolvePublicImageUrl = (url?: string) => {
   return `${normalizedBase}${url.replace(/^\/+/, '')}`;
 };
 
+const paperSketchImageMap: Record<string, string> = {
+  'building-1852-b868caf8': qingchengPaperSketch,
+};
+
 const buildItem = (item: SourceBuildingRecord): BuildingGalleryItem => {
   const structureType = getStructureType(item);
 
@@ -555,6 +560,7 @@ const buildItem = (item: SourceBuildingRecord): BuildingGalleryItem => {
     structureFeature: structureType,
     regionFamily: getRegionFamily(item),
     image: resolvePublicImageUrl(buildingImageMap[item.id]),
+    paperSketchImage: paperSketchImageMap[item.id] ?? (item.name === '青城古民居' ? qingchengPaperSketch : undefined),
   };
 };
 
