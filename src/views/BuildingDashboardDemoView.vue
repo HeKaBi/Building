@@ -1,5 +1,6 @@
 <template>
-  <section class="building-dashboard-screen">
+  <section id="building-dashboard-total" class="building-dashboard-screen">
+    <button class="tour-button dashboard-tour-button" @click="startTour">界面导引</button>
     <img class="building-dashboard-screen__icon" :src="matrixIconUrl" alt="" aria-hidden="true" />
     <div class="building-dashboard-screen__scene" :style="{ backgroundImage: `url(${matrixBackgroundUrl})` }"></div>
     <div class="building-dashboard-screen__wash"></div>
@@ -12,7 +13,7 @@
     <span class="building-dashboard-screen__petal building-dashboard-screen__petal--d"></span>
 
     <div class="dashboard-shell">
-      <aside class="dashboard-side-panel dashboard-side-panel--left">
+      <aside id="building-dashboard-type-panel" class="dashboard-side-panel dashboard-side-panel--left">
         <section class="paper-card legend-block">
 
           <div class="type-list">
@@ -34,29 +35,50 @@
 
       <main class="dashboard-main">
 
-        <section class="chart-grid">
-          <article class="paper-card dashboard-panel dashboard-panel--frameless dashboard-panel--sankey">
+        <section id="building-dashboard-chart-grid" class="chart-grid">
+          <article id="building-dashboard-sankey" class="paper-card dashboard-panel dashboard-panel--frameless dashboard-panel--sankey">
             <div :ref="chartRefs.sankey" class="dashboard-panel__chart"></div>
           </article>
 
-          <article class="paper-card dashboard-panel dashboard-panel--frameless dashboard-panel--cloud">
+          <article id="building-dashboard-cloud" class="paper-card dashboard-panel dashboard-panel--frameless dashboard-panel--cloud">
             <div :ref="chartRefs.cloud" class="dashboard-panel__chart"></div>
           </article>
 
-          <article class="paper-card dashboard-panel dashboard-panel--frameless dashboard-panel--rose">
+          <article id="building-dashboard-rose" class="paper-card dashboard-panel dashboard-panel--frameless dashboard-panel--rose">
             <div :ref="chartRefs.rose" class="dashboard-panel__chart"></div>
           </article>
 
-          <article class="paper-card dashboard-panel dashboard-panel--frameless dashboard-panel--sunburst">
+          <article id="building-dashboard-sunburst" class="paper-card dashboard-panel dashboard-panel--frameless dashboard-panel--sunburst">
             <div :ref="chartRefs.sunburst" class="dashboard-panel__chart"></div>
           </article>
         </section>
       </main>
 
-      <aside class="dashboard-side-panel dashboard-side-panel--right">
+      <aside id="building-dashboard-timeline" class="dashboard-side-panel dashboard-side-panel--right">
         <BuildingArtTimeline :buildings="timelineBuildings" :active-type="activeType" />
       </aside>
     </div>
+
+    <teleport to="body">
+      <div class="tour-comp dashboard-tour-comp" v-if="tourVisible" :style="{ bottom: `${tourSteps[currentIndex]?.tour_bottom ?? 0}%` }">
+        <TourComp
+          :content="currentIntro"
+          :step-count="tourSteps.length"
+          v-model="currentIndex"
+          :left="tourSteps[currentIndex]?.left ?? 0"
+          :bottom="tourSteps[currentIndex]?.bottom ?? 0"
+        />
+      </div>
+    </teleport>
+
+    <el-tour id="building-dashboard-tour" v-model="tourVisible" :z-index="3000" v-model:current="currentIndex">
+      <el-tour-step v-for="(step, index) in tourSteps" :key="index" :target="step.target" :placement="step.placement">
+        <template #header style="display: none;"></template>
+      </el-tour-step>
+      <template #indicators>
+        <span></span>
+      </template>
+    </el-tour>
   </section>
 </template>
 
@@ -70,6 +92,8 @@ import { LabelLayout } from 'echarts/features';
 import { CanvasRenderer } from 'echarts/renderers';
 import vintage from '@/assets/theme/vintage.json';
 import BuildingArtTimeline from '@/components/BuildingArtTimeline.vue';
+import TourComp from '@/components/TourComp.vue';
+import BuildingDashboardTourJson from '@/assets/tour/BuildingDashboardDemoView.json';
 import rawBuildings from '../../building.json';
 
 echarts.use([TitleComponent, TooltipComponent, GraphicComponent, PieChart, SankeyChart, SunburstChart, CanvasRenderer, LabelLayout]);
@@ -198,18 +222,23 @@ const roseRingPalettes = {
   function: ['#50858B', '#D5A08A', '#6D7460', '#D46F6B', '#786E56', '#4A5255', '#C98F66', '#87907D', '#B68F7C'],
   material: ['#4A5255', '#786E56', '#9AA391', '#D08A73', '#D5A08A', '#6D7460', '#50858B'],
 } as const;
-const ROSE_LABEL_FONT = 'ContentFont, STKaiti, KaiTi, serif';
+const TITLE_MATCH_LABEL_FONT = 'MatrixRefTitleFont, ChartTitleFont, serif';
+const ROSE_LABEL_FONT = TITLE_MATCH_LABEL_FONT;
 const ROSE_RING_CENTER = ['46%', '57%'] as [string, string];
 const ROSE_STROKE_COLOR = 'rgba(255, 255, 255, 0.96)';
 const ROSE_CONNECTOR_COLOR = 'rgba(216, 180, 156, 0.94)';
 const sankeyNodeColors = ['#60554A', '#4B8C9A', '#788D8E', '#A88463', '#C58370', '#4A5052', '#CDA77C', '#889585'] as const;
 
-const sunburstLevelColors = ['#D4736E', '#82937E', '#D2A271', '#EE9C5D'] as const;
+const sunburstLevelColors = ['#D4736E', '#82937E', '#D2A271', '#6EA5A5', '#7A8FB4', '#C68A5B'] as const;
 const SUNBURST_DYNASTY_COLOR_MAP: Record<string, string> = {
-  '\u6e05': '#D4736E',
+  '\u660e': '#D4736E',
+  '\u6e05': '#82937E',
+  '\u5b8b': '#D2A271',
+  '\u5143': '#6EA5A5',
+  '\u91d1': '#7A8FB4',
   '\u5176\u4ed6\u671d\u4ee3': '#EE9C5D',
 };
-const SUNBURST_LABEL_FONT = ROSE_LABEL_FONT;
+const SUNBURST_LABEL_FONT = TITLE_MATCH_LABEL_FONT;
 const SUNBURST_INK_COLOR = '#2B2824';
 const SUNBURST_GAP_COLOR = 'rgba(255, 255, 255, 0.98)';
 const SUNBURST_LIGHT_TARGET = '#F4F1EC';
@@ -272,6 +301,10 @@ const dashboardGraphs = ref<DashboardGraphs | null>(null);
 const isLoading = ref(true);
 const loadError = ref<string | null>(null);
 const timelineBuildings = rawBuildings as Array<{ id: string; name: string; category: BuildingType; year: number; importance: number }>;
+const tourVisible = ref(false);
+const currentIndex = ref(0);
+const currentIntro = ref('');
+const tourSteps = ref(Array.from(BuildingDashboardTourJson));
 
 const chartRefs: Record<ChartKey, Ref<HTMLDivElement | null>> = {
   rose: ref<HTMLDivElement | null>(null),
@@ -418,8 +451,8 @@ const buildRoseSeries = (name: string, radius: [string, string], data: RoseRingI
         show: true,
         position: 'outside',
         fontFamily: ROSE_LABEL_FONT,
-        fontSize: 12,
-        fontWeight: 700,
+        fontSize: 16,
+        fontWeight: 800,
         color: '#2c2c2c',
         textBorderColor: 'rgba(255, 255, 255, 0.78)',
         textBorderWidth: 3,
@@ -835,7 +868,7 @@ const renderSunburstChart = () => {
           },
           label: {
             fontFamily: SUNBURST_LABEL_FONT,
-            fontWeight: 'bold',
+            fontWeight: 700,
             color: SUNBURST_INK_COLOR,
           },
           levels: [
@@ -850,7 +883,9 @@ const renderSunburstChart = () => {
               },
               label: {
                 rotate: 0,
-                fontSize: 17,
+                fontFamily: SUNBURST_LABEL_FONT,
+                fontWeight: 800,
+                fontSize: 21,
                 minAngle: 12,
                 color: SUNBURST_INK_COLOR,
               },
@@ -865,7 +900,9 @@ const renderSunburstChart = () => {
               },
               label: {
                 rotate: 'tangential',
-                fontSize: 12,
+                fontFamily: SUNBURST_LABEL_FONT,
+                fontWeight: 700,
+                fontSize: 16,
                 minAngle: 6,
                 color: SUNBURST_INK_COLOR,
               },
@@ -884,7 +921,9 @@ const renderSunburstChart = () => {
                 rotate: 'radial',
                 distance: 4,
                 minAngle: 2,
-                fontSize: 10,
+                fontFamily: SUNBURST_LABEL_FONT,
+                fontWeight: 700,
+                fontSize: 13,
                 color: SUNBURST_INK_COLOR,
               },
             },
@@ -931,6 +970,23 @@ watch(activeType, () => {
   renderAllCharts();
 });
 
+watch(
+  currentIndex,
+  () => {
+    if (currentIndex.value === tourSteps.value.length) {
+      tourVisible.value = false;
+      currentIndex.value = 0;
+      return;
+    }
+    currentIntro.value = tourSteps.value[currentIndex.value]?.content ?? '';
+  },
+  { immediate: true },
+);
+
+const startTour = () => {
+  tourVisible.value = true;
+};
+
 onMounted(async () => {
   initCharts();
   await nextTick();
@@ -947,6 +1003,7 @@ onMounted(async () => {
 });
 
 onBeforeUnmount(() => {
+  tourVisible.value = false;
   window.removeEventListener('resize', handleResize);
   if (resizeFrame) {
     window.cancelAnimationFrame(resizeFrame);
@@ -962,6 +1019,26 @@ onBeforeUnmount(() => {
   inset: 0;
   overflow: hidden;
   background: #f3ecde;
+}
+
+.dashboard-tour-button {
+  top: 16px;
+  left: 140px;
+  z-index: 38;
+}
+
+.dashboard-tour-comp {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 380px;
+  z-index: 4000;
+  pointer-events: auto;
+}
+
+:global(.el-tour__content) {
+  display: none;
 }
 
 .building-dashboard-screen__icon {

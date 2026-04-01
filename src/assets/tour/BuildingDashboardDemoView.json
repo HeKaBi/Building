@@ -1,0 +1,58 @@
+[
+  {
+    "target": "#building-dashboard-total",
+    "placement": "right",
+    "content": "<p>这里是“图谱矩阵”页，用四张关联图和右侧时间轴共同展示古建筑的结构关系与时序特征。</p><p>建议先从左侧类型切换开始，再按图表顺序阅读。</p>",
+    "left": 5,
+    "bottom": 2,
+    "tour_bottom": 0
+  },
+  {
+    "target": "#building-dashboard-type-panel",
+    "placement": "right",
+    "content": "<p>左侧是建筑类型切换区，可在民居、桥梁、官府、宫殿之间切换。</p><p>切换后，中间四张图和右侧时间轴会同步刷新。</p>",
+    "left": 5,
+    "bottom": 2,
+    "tour_bottom": 0
+  },
+  {
+    "target": "#building-dashboard-sankey",
+    "placement": "right",
+    "content": "<p>左上是朝代-结构-材料桑基图，重点看流向和粗细：越粗说明该路径样本越多。</p>",
+    "left": 5,
+    "bottom": 2,
+    "tour_bottom": 0
+  },
+  {
+    "target": "#building-dashboard-cloud",
+    "placement": "left",
+    "content": "<p>右上是建筑意象词云，词越大代表权重越高，可快速识别该类型的典型营造特征。</p>",
+    "left": 5,
+    "bottom": 2,
+    "tour_bottom": 0
+  },
+  {
+    "target": "#building-dashboard-rose",
+    "placement": "top",
+    "content": "<p>左下玫瑰图展示朝代、功能、材料三组比例关系，适合对比该类型建筑的构成重心。</p>",
+    "left": 5,
+    "bottom": 2,
+    "tour_bottom": 0
+  },
+  {
+    "target": "#building-dashboard-sunburst",
+    "placement": "left",
+    "content": "<p>右下旭日图按“朝代-地域-结构”展开，可逐层观察样本在不同维度上的分布。</p>",
+    "left": 5,
+    "bottom": 2,
+    "tour_bottom": 0
+  },
+  {
+    "target": "#building-dashboard-timeline",
+    "placement": "left",
+    "content": "<p>右侧是建筑数量分布时间轴，圆点表示当年样本规模，三角表示关键变化节点。</p><p>可结合中间四图一起使用，完成“结构关系 + 时间变化”的联读。</p>",
+    "left": 74,
+    "bottom": 2,
+    "tour_bottom": 0
+  }
+]

@@ -99,9 +99,9 @@ const props = defineProps<{
 
 const categoryPalettes: Record<DashboardCategory, TimelinePalette> = {
   民居: { color: '#CD8585', accentColor: '#B56D6D' },
-  官府: { color: '#9AA792', accentColor: '#7F8D79' },
-  宫殿: { color: '#DBAE81', accentColor: '#BF936A' },
-  桥梁: { color: '#8EA2AA', accentColor: '#6F8791' },
+  官府: { color: '#8FAA7D', accentColor: '#6E8D5D' },
+  宫殿: { color: '#D7A36A', accentColor: '#BD8450' },
+  桥梁: { color: '#C9B36A', accentColor: '#A58F48' },
 };
 
 const chartRef = ref<HTMLDivElement | null>(null);
@@ -247,7 +247,7 @@ const bubbleSeriesData = computed<TimelinePointDatum[]>(() => {
     count: item.count,
     symbolSize: bubbleSizeForYear(item.count),
     itemStyle: {
-      color: '#D98888',
+      color: activePalette.value.color,
       opacity: 0.8,
     },
     names: item.items.slice(0, 6).map((building) => building.name),
@@ -518,13 +518,13 @@ const renderChart = () => {
           symbol: 'circle',
           symbolSize: (_value: number[], params: { data: TimelinePointDatum }) => params.data.symbolSize,
           itemStyle: {
-            color: '#D98888',
+            color: activePalette.value.color,
             opacity: 0.8,
           },
           emphasis: {
             scale: false,
             itemStyle: {
-              color: '#D98888',
+              color: activePalette.value.color,
               opacity: 1,
             },
           },
