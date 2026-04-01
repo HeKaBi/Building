@@ -62,22 +62,24 @@ import {
     type BuildingQuizTopic,
 } from '@/utils/buildingQuiz';
 
-import bridgeCover from '@/assets/images/building-covers/bridge-cover.png';
-import landmarkCover from '@/assets/images/building-covers/palace-group-palace-city.png';
-import officeCover from '@/assets/images/building-covers/office-cover.png';
-import palaceCover from '@/assets/images/building-covers/palace-cover.png';
-import residenceCover from '@/assets/images/building-covers/residence-cover.png';
-
 type TopicCard = BuildingQuizTopic & { cover: string };
 
 (window as Window & { PIXI?: typeof PIXI }).PIXI = PIXI;
 
+const topicCoverUrls = {
+    dynasty: `${import.meta.env.BASE_URL}images/朝代.png`,
+    region: `${import.meta.env.BASE_URL}images/地域.png`,
+    category: `${import.meta.env.BASE_URL}images/类别.png`,
+    structure: `${import.meta.env.BASE_URL}images/结构.png`,
+    landmark: `${import.meta.env.BASE_URL}images/地标.png`,
+} as const;
+
 const topicCovers: Record<BuildingQuizTopic['id'], string> = {
-    dynasty: palaceCover,
-    region: residenceCover,
-    category: officeCover,
-    structure: bridgeCover,
-    landmark: landmarkCover,
+    dynasty: topicCoverUrls.dynasty,
+    region: topicCoverUrls.region,
+    category: topicCoverUrls.category,
+    structure: topicCoverUrls.structure,
+    landmark: topicCoverUrls.landmark,
 };
 
 const topics: TopicCard[] = buildingQuizTopics.map((topic) => ({

@@ -14,6 +14,10 @@
     <div class="building-map-screen__wash"></div>
     <div class="building-map-screen__grain"></div>
     <div class="building-map-screen__motif"></div>
+    <div class="building-map-screen__license" aria-label="地图审图号与来源">
+      <p>审图号：GS(2025)5996号</p>
+      <p>数据来源：高德地图</p>
+    </div>
 
     <div class="screen-ui">
       <aside id="building-map-left-panel" class="side-panel side-panel--left">
@@ -286,6 +290,25 @@ onBeforeUnmount(() => {
     radial-gradient(circle at 70% 56%, rgba(120, 105, 85, 0.06), transparent 24%);
 }
 
+.building-map-screen__license {
+  position: fixed;
+  right: 252px;
+  bottom: 20px;
+  z-index: 26;
+  pointer-events: none;
+  text-align: right;
+  color: rgba(24, 24, 24, 0.92);
+  font-family: 'STKaiti', 'KaiTi', 'Kaiti SC', serif;
+  font-size: 11px;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  text-shadow: 0 1px 0 rgba(255, 251, 244, 0.42);
+}
+
+.building-map-screen__license p {
+  margin: 0;
+}
+
 .screen-ui {
   position: absolute;
   inset: 0;
@@ -545,6 +568,12 @@ onBeforeUnmount(() => {
   .side-panel--left,
   .side-panel--right {
     padding: 14px 12px;
+  }
+
+  .building-map-screen__license {
+    right: 16px;
+    bottom: 10px;
+    font-size: 10px;
   }
 }
 </style>

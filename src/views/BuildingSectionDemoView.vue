@@ -1,5 +1,14 @@
 <template>
   <section class="building-section-screen">
+    <button
+      v-if="isAtlasView"
+      id="building-section-tour-button"
+      type="button"
+      class="tour-button building-section-tour-button"
+      @click="startSectionTour"
+    >
+      界面导引
+    </button>
     <img
       v-if="!shouldHideSectionIcon"
       class="building-section-screen__icon"
@@ -196,6 +205,7 @@
         <div
           v-else-if="currentCategory && currentGroup && selectedItem"
           key="gallery"
+          :id="isAtlasView ? 'building-section-atlas-total' : undefined"
           class="stage stage--gallery"
           :class="{
             'stage--atlas': isAtlasView,
@@ -208,10 +218,10 @@
               :class="isAtlasDetailView ? 'side-panel--atlas-detail-left' : 'side-panel--atlas-left'"
             >
               <template v-if="isAtlasDetailView && detailItem">
-                <section class="detail-side">
+                <section id="building-section-atlas-detail-info" class="detail-side">
                   <div class="detail-side__brand">
                     <h2>{{ detailItem.name }}</h2>
-                    <button type="button" class="atlas-reset" @click="closeAtlasDetail">
+                    <button id="building-section-atlas-reset" type="button" class="atlas-reset" @click="closeAtlasDetail">
                       返回图册
                     </button>
                   </div>
@@ -237,7 +247,7 @@
               </template>
 
               <template v-else>
-                <section v-if="hasDynastyFilterOptions" class="legend-block">
+                <section id="building-section-atlas-filter" v-if="hasDynastyFilterOptions" class="legend-block">
                   <h2 class="legend-block__title">时代筛选</h2>
 
                   <button
@@ -261,12 +271,14 @@
             </aside>
 
             <div
+              id="building-section-atlas-main"
               class="atlas-main"
               :class="{ 'atlas-main--detail': isAtlasDetailView }"
               :style="{ '--accent-color': currentCategory.accent }"
             >
               <template v-if="isAtlasDetailView && detailItem">
                 <article
+                  id="building-section-atlas-ink-panel"
                   class="atlas-hero"
                   :class="{ 'atlas-hero--paper-only': isQingchengDetail }"
                   :style="getAtlasCardStyle(detailItem)"
@@ -330,6 +342,7 @@
                 </div>
 
                 <div
+                  id="building-section-atlas-grid"
                   class="atlas-grid"
                   :class="{ 'atlas-grid--has-hover': hoveredItemId !== null }"
                   :style="atlasGridStyle"
@@ -339,6 +352,7 @@
                     :key="item.id"
                     type="button"
                     class="atlas-card"
+                    :id="index === 0 ? 'building-section-atlas-first-card' : undefined"
                     :class="[
                       getAtlasCardPositionClasses(index),
                       {
@@ -386,7 +400,7 @@
               </template>
             </div>
 
-            <aside class="side-panel side-panel--atlas-right">
+            <aside id="building-section-atlas-timeline" class="side-panel side-panel--atlas-right">
               <BuildingEraTimeline
                 :items="galleryItems"
                 :active-id="displayedItemId"
@@ -484,13 +498,44 @@
         </div>
       </transition>
     </div>
+
+    <teleport to="body">
+      <div
+        v-if="tourVisible"
+        class="tour-comp section-tour-comp"
+        :style="{ bottom: `${activeTourSteps[currentIndex]?.tour_bottom ?? 0}%` }"
+      >
+        <TourComp
+          :content="currentIntro"
+          :step-count="activeTourSteps.length"
+          v-model="currentIndex"
+          :left="activeTourSteps[currentIndex]?.left ?? 0"
+          :bottom="activeTourSteps[currentIndex]?.bottom ?? 0"
+        />
+      </div>
+    </teleport>
+
+    <el-tour id="building-section-tour" v-model="tourVisible" :z-index="3000" v-model:current="currentIndex">
+      <el-tour-step
+        v-for="(step, index) in activeTourSteps"
+        :key="index"
+        :target="step.target"
+        :placement="step.placement"
+      >
+        <template #header style="display: none;"></template>
+      </el-tour-step>
+      <template #indicators>
+        <span></span>
+      </template>
+    </el-tour>
   </section>
 </template>
 
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue';
+import { computed, nextTick, onBeforeUnmount, ref, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
+import TourComp from '@/components/TourComp.vue';
 import ArchitectureSketch from '@/demo/building-section-catalog/components/ArchitectureSketch.vue';
 import BuildingEraTimeline from '@/demo/building-section-catalog/components/BuildingEraTimeline.vue';
 import { buildingCatalog } from '@/demo/building-section-catalog/realCatalog';
@@ -512,7 +557,115 @@ const sectionIconUrl = new URL('../../json/icon.png', import.meta.url).href;
 const sectionBackgroundUrl = new URL('../../json/bg.png', import.meta.url).href;
 const ATLAS_WINDOW_SIZE = 9;
 const WHEEL_SWITCH_COOLDOWN = 180;
+const OVERVIEW_ENTER_DETAIL_STEP_INDEX = 5;
 let lastWheelSwitchAt = 0;
+
+type TourPlacement = 'top' | 'bottom' | 'left' | 'right';
+interface SectionTourStep {
+  target: string;
+  placement: TourPlacement;
+  content: string;
+  left: number;
+  bottom: number;
+  tour_bottom: number;
+}
+type SectionTourMode = 'overview' | 'detail';
+
+const sectionOverviewTourSteps: SectionTourStep[] = [
+  {
+    target: '#building-section-atlas-total',
+    placement: 'left',
+    content: '<p>当前是“建筑图册”的九分页主界面：左侧筛选，中部九宫格，右侧时间轴。</p><p>这一页用于按时代和年份快速浏览建筑样本。</p>',
+    left: 5,
+    bottom: 2,
+    tour_bottom: 0,
+  },
+  {
+    target: '#building-section-atlas-filter',
+    placement: 'right',
+    content: '<p>左侧是时代筛选区，可按朝代过滤当前图册样本。</p><p>每一行右侧数字表示当前条件下的样本数量。</p>',
+    left: 5,
+    bottom: 2,
+    tour_bottom: 0,
+  },
+  {
+    target: '#building-section-atlas-grid',
+    placement: 'top',
+    content: '<p>中部是九宫格样本区，默认一次展示 9 个建筑。</p><p>点击卡片可进入该建筑的线稿详情页。</p>',
+    left: 5,
+    bottom: 2,
+    tour_bottom: 0,
+  },
+  {
+    target: '#building-section-atlas-timeline',
+    placement: 'left',
+    content: '<p>右侧是年份时间轴，滚动或点击可快速跳到不同年代建筑。</p><p>它会和中部卡片联动。</p>',
+    left: 75,
+    bottom: 2,
+    tour_bottom: 0,
+  },
+  {
+    target: '#building-section-atlas-first-card',
+    placement: 'top',
+    content: '<p>下一步将自动进入九宫格中的第一个建筑详情页。</p><p>进入后可继续查看线稿展示的专用引导。</p>',
+    left: 5,
+    bottom: 2,
+    tour_bottom: 0,
+  },
+  {
+    target: '#building-section-tour-button',
+    placement: 'right',
+    content: '<p>已进入第一个建筑详情页。</p><p>在详情页点击左上“界面导引”按钮，可开启线稿页的专属引导。</p>',
+    left: 5,
+    bottom: 2,
+    tour_bottom: 0,
+  },
+];
+
+const sectionDetailTourSteps: SectionTourStep[] = [
+  {
+    target: '#building-section-tour-button',
+    placement: 'right',
+    content: '<p>当前是建筑详情线稿页导引。</p><p>下面会依次介绍左侧解读区、线稿主视区和返回图册操作。</p>',
+    left: 5,
+    bottom: 2,
+    tour_bottom: 0,
+  },
+  {
+    target: '#building-section-atlas-detail-info',
+    placement: 'right',
+    content: '<p>左侧是建筑解读区，包含建筑介绍、空间格局、地域营造和线稿阅读提示。</p>',
+    left: 5,
+    bottom: 2,
+    tour_bottom: 0,
+  },
+  {
+    target: '#building-section-atlas-ink-panel',
+    placement: 'left',
+    content: '<p>中部是线稿展示主区。</p><p>可用鼠标滚轮切换同图册样本，观察构造和立面差异。</p>',
+    left: 75,
+    bottom: 2,
+    tour_bottom: 0,
+  },
+  {
+    target: '#building-section-atlas-reset',
+    placement: 'right',
+    content: '<p>点击“返回图册”可回到九分页继续筛选和浏览。</p>',
+    left: 5,
+    bottom: 2,
+    tour_bottom: 0,
+  },
+];
+
+const tourMode = ref<SectionTourMode>('overview');
+const tourVisible = ref(false);
+const currentIndex = ref(0);
+const currentIntro = ref('');
+const overviewAutoOpenedDetail = ref(false);
+
+const activeTourSteps = computed(() =>
+  tourMode.value === 'detail' ? sectionDetailTourSteps : sectionOverviewTourSteps,
+);
 
 const currentCategory = computed(
   () => buildingCatalog.find((category) => category.id === activeCategoryId.value) ?? null,
@@ -1229,6 +1382,52 @@ const clearAtlasFilters = () => {
   syncDetailQuery(null);
 };
 
+const getFirstAtlasItemId = () => atlasItems.value[0]?.id ?? galleryItems.value[0]?.id ?? null;
+
+const startOverviewTour = () => {
+  if (!isAtlasView.value || isAtlasDetailView.value) {
+    return;
+  }
+
+  tourMode.value = 'overview';
+  overviewAutoOpenedDetail.value = false;
+  currentIndex.value = 0;
+  currentIntro.value = activeTourSteps.value[0]?.content ?? '';
+  tourVisible.value = true;
+};
+
+const startDetailTour = () => {
+  if (!isAtlasView.value) {
+    return;
+  }
+
+  if (!isAtlasDetailView.value) {
+    const firstId = getFirstAtlasItemId();
+    if (!firstId) {
+      return;
+    }
+    openAtlasDetail(firstId);
+  }
+
+  tourMode.value = 'detail';
+  currentIndex.value = 0;
+  currentIntro.value = activeTourSteps.value[0]?.content ?? '';
+  tourVisible.value = true;
+};
+
+const startSectionTour = () => {
+  if (!isAtlasView.value) {
+    return;
+  }
+
+  if (isAtlasDetailView.value) {
+    startDetailTour();
+    return;
+  }
+
+  startOverviewTour();
+};
+
 watch(
   () => activeGroupId.value,
   () => {
@@ -1311,6 +1510,59 @@ watch(
     paperSketchLoadStep.value = 0;
   },
 );
+
+watch(
+  currentIndex,
+  async () => {
+    const steps = activeTourSteps.value;
+
+    if (currentIndex.value === steps.length) {
+      tourVisible.value = false;
+      currentIndex.value = 0;
+      overviewAutoOpenedDetail.value = false;
+      return;
+    }
+
+    if (
+      tourVisible.value
+      && tourMode.value === 'overview'
+      && currentIndex.value === OVERVIEW_ENTER_DETAIL_STEP_INDEX
+      && !overviewAutoOpenedDetail.value
+    ) {
+      const firstId = getFirstAtlasItemId();
+      if (firstId) {
+        openAtlasDetail(firstId);
+        overviewAutoOpenedDetail.value = true;
+        await nextTick();
+      }
+    }
+
+    currentIntro.value = steps[currentIndex.value]?.content ?? '';
+  },
+  { immediate: true },
+);
+
+watch(tourVisible, (visible) => {
+  if (visible) {
+    return;
+  }
+  currentIndex.value = 0;
+  currentIntro.value = '';
+  overviewAutoOpenedDetail.value = false;
+});
+
+watch(
+  isAtlasView,
+  (enabled) => {
+    if (!enabled && tourVisible.value) {
+      tourVisible.value = false;
+    }
+  },
+);
+
+onBeforeUnmount(() => {
+  tourVisible.value = false;
+});
 </script>
 
 <style scoped lang="scss">
@@ -1325,6 +1577,26 @@ watch(
   inset: 0;
   overflow: hidden;
   background: #f3ecde;
+}
+
+.building-section-tour-button {
+  top: 16px;
+  left: 140px;
+  z-index: 38;
+}
+
+.section-tour-comp {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 380px;
+  z-index: 4000;
+  pointer-events: auto;
+}
+
+:global(.el-tour__content) {
+  display: none;
 }
 
 .building-section-screen__icon {
