@@ -1,0 +1,1336 @@
+{
+  "center_building": {
+    "line_no": "1716",
+    "name": "潼川古城墙",
+    "building_type": "官府",
+    "start_dynasty": "明",
+    "century_num": 16,
+    "province": "四川省",
+    "region": "西南",
+    "address": "四川省绵阳市三台县",
+    "start_time_confidence": 0.92,
+    "structure_terms": [
+      "纵联式券拱",
+      "谯楼",
+      "双扇铁皮木质大门",
+      "城防单元",
+      "中轴对称"
+    ],
+    "layout_terms": [
+      "四门制",
+      "东西南北对称布局"
+    ],
+    "material_terms": [
+      "条石",
+      "石头城墙",
+      "一钉石一横石相间垒砌"
+    ],
+    "craft_terms": [
+      "纵联式券拱",
+      "条石垒砌",
+      "浅浮雕花卉卷草纹饰"
+    ],
+    "function_terms": [
+      "军事防御",
+      "防洪"
+    ],
+    "material_categories": [
+      "石材类"
+    ],
+    "structure_cluster": "重檐城防型",
+    "structure_cluster_summary": "以重檐歇山顶城楼与箭楼为核心，结合瓮城、角楼等构成砖石混合的城防体系。",
+    "material_primary_category": "石材类",
+    "structure_evidence": "城墙高6米，厚9.8米。设有东西南北4门。 || 城门门洞分内、外洞。门洞为纵联式券拱，内、外门洞间有双扇铁皮木质大门。 || 各门上均建谯楼，现存南门谯楼，重建东门谯楼。 || 设有东西南北4门。 || 东、南城门依然保持良好。 || 潼川古城墙是四川境内现存明清古城墙中唯一的石头城墙",
+    "semantic_terms": [
+      "纵联式券拱",
+      "谯楼",
+      "双扇铁皮木质大门",
+      "城防单元",
+      "中轴对称",
+      "四门制",
+      "东西南北对称布局",
+      "条石",
+      "石头城墙",
+      "一钉石一横石相间垒砌",
+      "条石垒砌",
+      "浅浮雕花卉卷草纹饰",
+      "军事防御",
+      "防洪",
+      "石材类"
+    ]
+  },
+  "lineage_id": "官府-L03",
+  "lineage_name": "明-瓮城布局·城防单元-生土谱系",
+  "building_type": "官府",
+  "signature_features": {
+    "primary_structure": "城防单元",
+    "primary_layout": "瓮城布局",
+    "support_material": "生土",
+    "support_craft": "夯土筑城",
+    "dominant_province": "北京",
+    "dominant_dynasty": "明",
+    "dominant_region": "华北"
+  },
+  "signature_summary": "以瓮城布局、城防单元为核心，辅以生土，在明样本中形成稳定的营造共同体。",
+  "community_member_count": 15,
+  "nodes": [
+    {
+      "id": "1716",
+      "line_no": "1716",
+      "name": "潼川古城墙",
+      "building_type": "官府",
+      "province": "四川省",
+      "start_dynasty": "明",
+      "century_num": 16,
+      "role": "center",
+      "hop": 0,
+      "score": 1,
+      "shared_features": [],
+      "structure_terms": [
+        "纵联式券拱",
+        "谯楼",
+        "双扇铁皮木质大门",
+        "城防单元",
+        "中轴对称"
+      ],
+      "layout_terms": [
+        "四门制",
+        "东西南北对称布局"
+      ],
+      "material_terms": [
+        "条石",
+        "石头城墙",
+        "一钉石一横石相间垒砌"
+      ],
+      "craft_terms": [
+        "纵联式券拱",
+        "条石垒砌",
+        "浅浮雕花卉卷草纹饰"
+      ],
+      "function_terms": [
+        "军事防御",
+        "防洪"
+      ]
+    },
+    {
+      "id": "784",
+      "line_no": "784",
+      "name": "广宁城",
+      "building_type": "官府",
+      "province": "辽宁省",
+      "start_dynasty": "明",
+      "century_num": 14,
+      "role": "member",
+      "hop": 1,
+      "score": 0.5693,
+      "shared_features": [
+        "城防单元",
+        "条石",
+        "瓮城布局",
+        "生土",
+        "夯土筑城"
+      ],
+      "structure_terms": [
+        "瓮城",
+        "角楼",
+        "城楼",
+        "马道",
+        "女儿墙",
+        "城防单元",
+        "土石夯筑",
+        "砖石混合"
+      ],
+      "layout_terms": [
+        "十字街",
+        "四卫分驻",
+        "鼓楼居中",
+        "大街轴线"
+      ],
+      "material_terms": [
+        "砖石",
+        "夯土",
+        "条石",
+        "内石外砖"
+      ],
+      "craft_terms": [
+        "包砌砖石",
+        "夯土筑城",
+        "重修续筑",
+        "砖木结构"
+      ],
+      "function_terms": [
+        "卫所",
+        "点将台",
+        "军政中心"
+      ]
+    },
+    {
+      "id": "783",
+      "line_no": "783",
+      "name": "中前所城",
+      "building_type": "官府",
+      "province": "辽宁省",
+      "start_dynasty": "明",
+      "century_num": 15,
+      "role": "member",
+      "hop": 1,
+      "score": 0.5057,
+      "shared_features": [
+        "城防单元",
+        "军事防御",
+        "瓮城布局",
+        "生土",
+        "夯土筑城"
+      ],
+      "structure_terms": [
+        "城墙结构",
+        "方形城制",
+        "城防单元",
+        "土石夯筑",
+        "砖石混合",
+        "合院布局"
+      ],
+      "layout_terms": [
+        "方形布局",
+        "三门设瓮城",
+        "围院结构"
+      ],
+      "material_terms": [
+        "砖石",
+        "生土"
+      ],
+      "craft_terms": [
+        "明代筑城法",
+        "清代重修工艺"
+      ],
+      "function_terms": [
+        "军事防御",
+        "千户所驻地"
+      ]
+    },
+    {
+      "id": "1668",
+      "line_no": "1668",
+      "name": "镇海楼与广州明城墙",
+      "building_type": "官府",
+      "province": "广东省",
+      "start_dynasty": "明",
+      "century_num": 14,
+      "role": "member",
+      "hop": 1,
+      "score": 0.4747,
+      "shared_features": [
+        "城防单元",
+        "中轴对称",
+        "军事防御",
+        "瓮城布局",
+        "生土",
+        "夯土筑城"
+      ],
+      "structure_terms": [
+        "歇山顶",
+        "复檐五层",
+        "长方体状楼体",
+        "青砖墙",
+        "红石砌筑",
+        "城防单元",
+        "中轴对称"
+      ],
+      "layout_terms": [
+        "坐北朝南",
+        "长方形平面",
+        "中轴对称",
+        "敞开式正立面"
+      ],
+      "material_terms": [
+        "红砂岩",
+        "青砖",
+        "绿琉璃瓦",
+        "石湾鳌鱼花脊"
+      ],
+      "craft_terms": [
+        "逐层递减墙体",
+        "红石基础砌筑",
+        "青砖上层砌筑"
+      ],
+      "function_terms": [
+        "军事防御",
+        "博物院",
+        "历史陈列"
+      ]
+    },
+    {
+      "id": "1677",
+      "line_no": "1677",
+      "name": "永宁州城城墙",
+      "building_type": "官府",
+      "province": "广西壮族自治区",
+      "start_dynasty": "明",
+      "century_num": 15,
+      "role": "member",
+      "hop": 1,
+      "score": 0.4469,
+      "shared_features": [
+        "城防单元",
+        "四门制",
+        "瓮城布局",
+        "生土",
+        "夯土筑城"
+      ],
+      "structure_terms": [
+        "石砌城墙",
+        "矩形平面",
+        "城防单元"
+      ],
+      "layout_terms": [
+        "四门制",
+        "矩形城池"
+      ],
+      "material_terms": [
+        "料石",
+        "石城"
+      ],
+      "craft_terms": [
+        "土城始建",
+        "石城改筑"
+      ],
+      "function_terms": [
+        "州城",
+        "县城"
+      ]
+    },
+    {
+      "id": "1750",
+      "line_no": "1750",
+      "name": "镇远城墙",
+      "building_type": "官府",
+      "province": "贵州省",
+      "start_dynasty": "明",
+      "century_num": 14,
+      "role": "member",
+      "hop": 1,
+      "score": 0.3741,
+      "shared_features": [
+        "城防单元",
+        "瓮城布局",
+        "生土",
+        "夯土筑城"
+      ],
+      "structure_terms": [
+        "依山就势",
+        "环山围河",
+        "卫城体系",
+        "府卫双城",
+        "城防单元"
+      ],
+      "layout_terms": [
+        "太极格局",
+        "依山傍水",
+        "府卫隔河",
+        "环山抱水"
+      ],
+      "material_terms": [
+        "石屏山石",
+        "本地石材"
+      ],
+      "craft_terms": [
+        "因地制宜",
+        "山地筑城"
+      ],
+      "function_terms": [
+        "军事重镇",
+        "交通要道",
+        "边防防御",
+        "苗疆古城"
+      ]
+    },
+    {
+      "id": "1069",
+      "line_no": "1069",
+      "name": "榆林卫城",
+      "building_type": "官府",
+      "province": "陕西省",
+      "start_dynasty": "明",
+      "century_num": 15,
+      "role": "member",
+      "hop": 2,
+      "score": 0.3118,
+      "shared_features": [
+        "城防单元",
+        "瓮城布局",
+        "生土",
+        "夯土筑城"
+      ],
+      "structure_terms": [
+        "城墙",
+        "城门",
+        "夯土结构",
+        "包砖墙体",
+        "城防单元",
+        "土石夯筑",
+        "砖石混合"
+      ],
+      "layout_terms": [
+        "依山就势",
+        "东高西低",
+        "临河设防",
+        "半山半川格局"
+      ],
+      "material_terms": [
+        "生土",
+        "砖石"
+      ],
+      "craft_terms": [
+        "传统夯筑",
+        "城垣砌筑"
+      ],
+      "function_terms": [
+        "军事防御",
+        "卫所城池",
+        "城门建制"
+      ]
+    },
+    {
+      "id": "585",
+      "line_no": "585",
+      "name": "德胜门箭楼",
+      "building_type": "官府",
+      "province": "北京市",
+      "start_dynasty": "明",
+      "century_num": 14,
+      "role": "member",
+      "hop": 2,
+      "score": 0.3064,
+      "shared_features": [
+        "城防单元",
+        "瓮城布局",
+        "生土",
+        "夯土筑城"
+      ],
+      "structure_terms": [
+        "重檐歇山顶",
+        "金柱承重",
+        "穿插梁",
+        "跨空枋",
+        "砖石城台",
+        "城防单元",
+        "砖石混合",
+        "合院布局",
+        "歇山顶"
+      ],
+      "layout_terms": [
+        "前楼后厦",
+        "面阔七间",
+        "瓮城布局",
+        "围院结构"
+      ],
+      "material_terms": [
+        "砖石",
+        "灰筒瓦",
+        "绿琉璃"
+      ],
+      "craft_terms": [
+        "收分墙体",
+        "之字形台阶",
+        "券门砌筑"
+      ],
+      "function_terms": [
+        "箭孔",
+        "军事防御",
+        "展览馆"
+      ]
+    },
+    {
+      "id": "633",
+      "line_no": "633",
+      "name": "万全右卫城",
+      "building_type": "官府",
+      "province": "河北省",
+      "start_dynasty": "明",
+      "century_num": 14,
+      "role": "member",
+      "hop": 2,
+      "score": 0.2826,
+      "shared_features": [
+        "城防单元",
+        "瓮城布局",
+        "生土",
+        "夯土筑城"
+      ],
+      "structure_terms": [
+        "包砖夯土结构",
+        "城墙结构",
+        "城防单元",
+        "土石夯筑"
+      ],
+      "layout_terms": [
+        "十字街布局",
+        "功能分区布局"
+      ],
+      "material_terms": [
+        "青砖",
+        "夯土"
+      ],
+      "craft_terms": [
+        "夯筑技术",
+        "外包砖工艺"
+      ],
+      "function_terms": [
+        "军事防御",
+        "行政中心",
+        "仓储功能",
+        "居住功能",
+        "文教功能"
+      ]
+    },
+    {
+      "id": "343",
+      "line_no": "343",
+      "name": "鸡鸣驿城",
+      "building_type": "官府",
+      "province": "河北省",
+      "start_dynasty": "辽",
+      "century_num": 14,
+      "role": "member",
+      "hop": 2,
+      "score": 0.2528,
+      "shared_features": [
+        "城防单元",
+        "瓮城布局",
+        "生土",
+        "夯土筑城"
+      ],
+      "structure_terms": [
+        "夯土城墙",
+        "木构架",
+        "城防单元",
+        "土石夯筑",
+        "合院布局"
+      ],
+      "layout_terms": [
+        "贺家大院",
+        "明清古建筑群",
+        "围院结构"
+      ],
+      "material_terms": [
+        "青砖",
+        "灰瓦",
+        "夯土"
+      ],
+      "craft_terms": [
+        "夯筑",
+        "砖砌"
+      ],
+      "function_terms": [
+        "驿站",
+        "驿城"
+      ]
+    },
+    {
+      "id": "1037",
+      "line_no": "1037",
+      "name": "朝阳楼",
+      "building_type": "官府",
+      "province": "云南省",
+      "start_dynasty": "明",
+      "century_num": 14,
+      "role": "member",
+      "hop": 2,
+      "score": 0.2495,
+      "shared_features": [
+        "城防单元",
+        "瓮城布局",
+        "生土",
+        "夯土筑城"
+      ],
+      "structure_terms": [
+        "抬梁式",
+        "三重檐歇山式",
+        "木构架",
+        "城防单元",
+        "砖石混合",
+        "歇山顶"
+      ],
+      "layout_terms": [
+        "五开间",
+        "三进间",
+        "迥廊环绕"
+      ],
+      "material_terms": [
+        "木材",
+        "砖石",
+        "铜"
+      ],
+      "craft_terms": [
+        "分层支撑",
+        "迥廊周通",
+        "三重檐歇山式屋顶"
+      ],
+      "function_terms": [
+        "城门楼",
+        "防御建筑"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "783",
+      "target": "1069",
+      "weight": 0.3687,
+      "reasons": [
+        "共享结构：土石夯筑、城防单元、砖石混合",
+        "共享材料：生土、砖石",
+        "共享功能：军事防御",
+        "同属结构簇：重檐城防型",
+        "同属材料主类：土类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.1971,
+        "layout_terms": 0,
+        "material_terms": 1,
+        "craft_terms": 0,
+        "function_terms": 0.1686,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 1,
+        "region": 0
+      }
+    },
+    {
+      "source": "343",
+      "target": "633",
+      "weight": 0.3256,
+      "reasons": [
+        "共享结构：土石夯筑、城防单元",
+        "共享材料：夯土、青砖",
+        "同属结构簇：重檐城防型",
+        "同属材料主类：砖瓦类",
+        "同省：河北省"
+      ],
+      "components": {
+        "structure_terms": 0.2236,
+        "layout_terms": 0,
+        "material_terms": 0.6418,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.65,
+        "region": 1
+      }
+    },
+    {
+      "source": "783",
+      "target": "633",
+      "weight": 0.2828,
+      "reasons": [
+        "共享结构：城墙结构、土石夯筑、城防单元",
+        "共享功能：军事防御",
+        "同属结构簇：重檐城防型",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.4138,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0.1101,
+        "structure_cluster": 1,
+        "material_cluster": 0.6667,
+        "time": 0.7857,
+        "region": 0
+      }
+    },
+    {
+      "source": "1716",
+      "target": "1677",
+      "weight": 0.2597,
+      "reasons": [
+        "共享结构：城防单元",
+        "共享布局：四门制",
+        "同属结构簇：重檐城防型",
+        "同属材料主类：石材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.0789,
+        "layout_terms": 0.3008,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.7857,
+        "region": 0
+      }
+    },
+    {
+      "source": "784",
+      "target": "783",
+      "weight": 0.2557,
+      "reasons": [
+        "共享结构：土石夯筑、城防单元、砖石混合",
+        "共享材料：砖石",
+        "同属结构簇：重檐城防型",
+        "同省：辽宁省",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.1785,
+        "layout_terms": 0,
+        "material_terms": 0.1191,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.7857,
+        "region": 1
+      }
+    },
+    {
+      "source": "783",
+      "target": "585",
+      "weight": 0.2496,
+      "reasons": [
+        "共享结构：城防单元、砖石混合、合院布局",
+        "共享布局：围院结构",
+        "共享材料：砖石",
+        "共享功能：军事防御",
+        "同属结构簇：重檐城防型",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.1371,
+        "layout_terms": 0.102,
+        "material_terms": 0.1432,
+        "craft_terms": 0,
+        "function_terms": 0.1686,
+        "structure_cluster": 1,
+        "material_cluster": 0.6667,
+        "time": 0.7857,
+        "region": 0
+      }
+    },
+    {
+      "source": "783",
+      "target": "343",
+      "weight": 0.2462,
+      "reasons": [
+        "共享结构：土石夯筑、城防单元、合院布局",
+        "共享布局：围院结构",
+        "同属结构簇：重檐城防型"
+      ],
+      "components": {
+        "structure_terms": 0.2732,
+        "layout_terms": 0.1164,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 0.6667,
+        "time": 0.4357,
+        "region": 0
+      }
+    },
+    {
+      "source": "784",
+      "target": "633",
+      "weight": 0.2285,
+      "reasons": [
+        "共享结构：土石夯筑、城防单元",
+        "共享材料：夯土",
+        "同属结构簇：重檐城防型",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.132,
+        "layout_terms": 0,
+        "material_terms": 0.2075,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 0.6667,
+        "time": 1,
+        "region": 0
+      }
+    },
+    {
+      "source": "784",
+      "target": "1069",
+      "weight": 0.2282,
+      "reasons": [
+        "共享结构：土石夯筑、城防单元、砖石混合",
+        "共享材料：砖石",
+        "同属结构簇：重檐城防型",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.1516,
+        "layout_terms": 0,
+        "material_terms": 0.1191,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.7857,
+        "region": 0
+      }
+    },
+    {
+      "source": "343",
+      "target": "585",
+      "weight": 0.2271,
+      "reasons": [
+        "共享结构：城防单元、合院布局",
+        "共享布局：围院结构",
+        "同属结构簇：重檐城防型",
+        "同属材料主类：砖瓦类",
+        "同属华北"
+      ],
+      "components": {
+        "structure_terms": 0.0951,
+        "layout_terms": 0.102,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.65,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1037",
+      "target": "585",
+      "weight": 0.221,
+      "reasons": [
+        "共享结构：歇山顶、城防单元、砖石混合",
+        "共享材料：砖石",
+        "同属结构簇：重檐城防型",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.1666,
+        "layout_terms": 0,
+        "material_terms": 0.1196,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 0.5,
+        "time": 1,
+        "region": 0
+      }
+    },
+    {
+      "source": "1668",
+      "target": "633",
+      "weight": 0.2165,
+      "reasons": [
+        "共享结构：城防单元",
+        "共享材料：青砖",
+        "共享功能：军事防御",
+        "同属结构簇：重檐城防型",
+        "同属材料主类：砖瓦类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.0572,
+        "layout_terms": 0,
+        "material_terms": 0.1082,
+        "craft_terms": 0,
+        "function_terms": 0.0932,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 1,
+        "region": 0
+      }
+    },
+    {
+      "source": "585",
+      "target": "1668",
+      "weight": 0.2154,
+      "reasons": [
+        "共享结构：歇山顶、城防单元",
+        "共享功能：军事防御",
+        "同属结构簇：重檐城防型",
+        "同属材料主类：砖瓦类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.0886,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0.132,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 1,
+        "region": 0
+      }
+    },
+    {
+      "source": "585",
+      "target": "633",
+      "weight": 0.2135,
+      "reasons": [
+        "共享结构：城防单元",
+        "共享功能：军事防御",
+        "同属结构簇：重檐城防型",
+        "同属材料主类：砖瓦类",
+        "同属华北",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.0501,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0.0932,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 1,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "784",
+      "target": "343",
+      "weight": 0.2116,
+      "reasons": [
+        "共享结构：土石夯筑、城防单元",
+        "共享材料：夯土",
+        "同属结构簇：重檐城防型"
+      ],
+      "components": {
+        "structure_terms": 0.1357,
+        "layout_terms": 0,
+        "material_terms": 0.1743,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 0.6667,
+        "time": 0.65,
+        "region": 0
+      }
+    },
+    {
+      "source": "585",
+      "target": "1069",
+      "weight": 0.2087,
+      "reasons": [
+        "共享结构：城防单元、砖石混合",
+        "共享材料：砖石",
+        "共享功能：军事防御",
+        "同属结构簇：重檐城防型",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.0816,
+        "layout_terms": 0,
+        "material_terms": 0.1432,
+        "craft_terms": 0,
+        "function_terms": 0.132,
+        "structure_cluster": 1,
+        "material_cluster": 0.6667,
+        "time": 0.7857,
+        "region": 0
+      }
+    },
+    {
+      "source": "1037",
+      "target": "783",
+      "weight": 0.2082,
+      "reasons": [
+        "共享结构：城防单元、砖石混合",
+        "共享材料：砖石",
+        "同属结构簇：重檐城防型",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.1431,
+        "layout_terms": 0,
+        "material_terms": 0.1722,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 0.4,
+        "time": 0.7857,
+        "region": 0
+      }
+    },
+    {
+      "source": "1069",
+      "target": "633",
+      "weight": 0.2065,
+      "reasons": [
+        "共享结构：土石夯筑、城防单元",
+        "共享功能：军事防御",
+        "同属结构簇：重檐城防型",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.1464,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0.0932,
+        "structure_cluster": 1,
+        "material_cluster": 0.6667,
+        "time": 0.7857,
+        "region": 0
+      }
+    },
+    {
+      "source": "1037",
+      "target": "1069",
+      "weight": 0.2004,
+      "reasons": [
+        "共享结构：城防单元、砖石混合",
+        "共享材料：砖石",
+        "同属结构簇：重檐城防型",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.1155,
+        "layout_terms": 0,
+        "material_terms": 0.1722,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 0.4,
+        "time": 0.7857,
+        "region": 0
+      }
+    },
+    {
+      "source": "784",
+      "target": "585",
+      "weight": 0.1989,
+      "reasons": [
+        "共享结构：城防单元、砖石混合",
+        "共享材料：砖石",
+        "同属结构簇：重檐城防型",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.0761,
+        "layout_terms": 0,
+        "material_terms": 0.0913,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 0.6667,
+        "time": 1,
+        "region": 0
+      }
+    },
+    {
+      "source": "784",
+      "target": "1716",
+      "weight": 0.1981,
+      "reasons": [
+        "共享结构：城防单元",
+        "共享材料：条石",
+        "同属结构簇：重檐城防型",
+        "同属材料主类：石材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.0479,
+        "layout_terms": 0,
+        "material_terms": 0.1586,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.6421,
+        "region": 0
+      }
+    },
+    {
+      "source": "784",
+      "target": "1037",
+      "weight": 0.1976,
+      "reasons": [
+        "共享结构：城防单元、砖石混合",
+        "共享材料：砖石",
+        "同属结构簇：重檐城防型",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.1048,
+        "layout_terms": 0,
+        "material_terms": 0.1023,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 0.4,
+        "time": 1,
+        "region": 0
+      }
+    },
+    {
+      "source": "1037",
+      "target": "1668",
+      "weight": 0.195,
+      "reasons": [
+        "共享结构：歇山顶、城防单元",
+        "同属结构簇：重檐城防型",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.1251,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 0.5,
+        "time": 1,
+        "region": 0
+      }
+    },
+    {
+      "source": "1750",
+      "target": "1716",
+      "weight": 0.1937,
+      "reasons": [
+        "共享结构：城防单元",
+        "同属结构簇：重檐城防型",
+        "同属材料主类：石材类",
+        "同属西南",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.0573,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.6421,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "343",
+      "target": "1668",
+      "weight": 0.1937,
+      "reasons": [
+        "共享结构：城防单元",
+        "共享材料：青砖",
+        "同属结构簇：重檐城防型",
+        "同属材料主类：砖瓦类"
+      ],
+      "components": {
+        "structure_terms": 0.0588,
+        "layout_terms": 0,
+        "material_terms": 0.0937,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.65,
+        "region": 0
+      }
+    },
+    {
+      "source": "784",
+      "target": "1750",
+      "weight": 0.1926,
+      "reasons": [
+        "共享结构：城防单元",
+        "同属结构簇：重檐城防型",
+        "同属材料主类：石材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.0449,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 1,
+        "region": 0
+      }
+    },
+    {
+      "source": "1750",
+      "target": "1677",
+      "weight": 0.1913,
+      "reasons": [
+        "共享结构：城防单元",
+        "同属结构簇：重檐城防型",
+        "同属材料主类：石材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.0711,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.7857,
+        "region": 0
+      }
+    },
+    {
+      "source": "784",
+      "target": "1677",
+      "weight": 0.1874,
+      "reasons": [
+        "共享结构：城防单元",
+        "同属结构簇：重檐城防型",
+        "同属材料主类：石材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.0572,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.7857,
+        "region": 0
+      }
+    },
+    {
+      "source": "1716",
+      "target": "1668",
+      "weight": 0.1871,
+      "reasons": [
+        "共享结构：城防单元、中轴对称",
+        "共享功能：军事防御",
+        "同属结构簇：重檐城防型",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.0987,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0.1725,
+        "structure_cluster": 1,
+        "material_cluster": 0.5,
+        "time": 0.6421,
+        "region": 0
+      }
+    },
+    {
+      "source": "343",
+      "target": "1069",
+      "weight": 0.1864,
+      "reasons": [
+        "共享结构：土石夯筑、城防单元",
+        "同属结构簇：重檐城防型"
+      ],
+      "components": {
+        "structure_terms": 0.151,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 0.6667,
+        "time": 0.4357,
+        "region": 0
+      }
+    },
+    {
+      "source": "783",
+      "target": "1668",
+      "weight": 0.1862,
+      "reasons": [
+        "共享结构：城防单元",
+        "共享功能：军事防御",
+        "同属结构簇：重檐城防型",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.052,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0.1686,
+        "structure_cluster": 1,
+        "material_cluster": 0.6667,
+        "time": 0.7857,
+        "region": 0
+      }
+    },
+    {
+      "source": "783",
+      "target": "1716",
+      "weight": 0.1817,
+      "reasons": [
+        "共享结构：城防单元",
+        "共享功能：军事防御",
+        "同属结构簇：重檐城防型",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.0631,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0.2408,
+        "structure_cluster": 1,
+        "material_cluster": 0.3333,
+        "time": 0.7857,
+        "region": 0
+      }
+    },
+    {
+      "source": "1069",
+      "target": "1668",
+      "weight": 0.1811,
+      "reasons": [
+        "共享结构：城防单元",
+        "共享功能：军事防御",
+        "同属结构簇：重檐城防型",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.0445,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0.132,
+        "structure_cluster": 1,
+        "material_cluster": 0.6667,
+        "time": 0.7857,
+        "region": 0
+      }
+    },
+    {
+      "source": "1668",
+      "target": "1677",
+      "weight": 0.1809,
+      "reasons": [
+        "共享结构：城防单元",
+        "同属结构簇：重檐城防型",
+        "同属华南",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.0624,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 0.5,
+        "time": 0.7857,
+        "region": 0.6
+      }
+    }
+  ]
+}

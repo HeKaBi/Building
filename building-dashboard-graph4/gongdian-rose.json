@@ -1,0 +1,211 @@
+{
+  "building_type": "宫殿",
+  "summary": {
+    "building_count": 18,
+    "raw_dynasty_count": 4,
+    "raw_function_count": 6,
+    "raw_material_count": 4,
+    "rose_dynasty_count": 4,
+    "rose_function_count": 6,
+    "rose_material_count": 4
+  },
+  "limits": {
+    "dynasty_max": 10,
+    "function_max": 7,
+    "material_max": 7
+  },
+  "rings": {
+    "dynasty": [
+      {
+        "name": "金",
+        "value": 2
+      },
+      {
+        "name": "元",
+        "value": 1
+      },
+      {
+        "name": "明",
+        "value": 8
+      },
+      {
+        "name": "清",
+        "value": 7
+      }
+    ],
+    "function": [
+      {
+        "name": "理政与典礼",
+        "value": 6
+      },
+      {
+        "name": "其他功能",
+        "value": 5
+      },
+      {
+        "name": "皇家园林",
+        "value": 3
+      },
+      {
+        "name": "宗教祭祀",
+        "value": 2
+      },
+      {
+        "name": "居住生活",
+        "value": 1
+      },
+      {
+        "name": "文化藏贮",
+        "value": 1
+      }
+    ],
+    "material": [
+      {
+        "name": "石材类",
+        "value": 7
+      },
+      {
+        "name": "木材类",
+        "value": 7
+      },
+      {
+        "name": "砖瓦类",
+        "value": 3
+      },
+      {
+        "name": "土类",
+        "value": 1
+      }
+    ]
+  },
+  "paths": [
+    {
+      "building_type": "宫殿",
+      "dynasty": "明",
+      "function": "其他功能",
+      "material": "石材类",
+      "value": 2
+    },
+    {
+      "building_type": "宫殿",
+      "dynasty": "清",
+      "function": "理政与典礼",
+      "material": "木材类",
+      "value": 2
+    },
+    {
+      "building_type": "宫殿",
+      "dynasty": "清",
+      "function": "理政与典礼",
+      "material": "砖瓦类",
+      "value": 2
+    },
+    {
+      "building_type": "宫殿",
+      "dynasty": "元",
+      "function": "理政与典礼",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "宫殿",
+      "dynasty": "明",
+      "function": "其他功能",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "宫殿",
+      "dynasty": "明",
+      "function": "其他功能",
+      "material": "砖瓦类",
+      "value": 1
+    },
+    {
+      "building_type": "宫殿",
+      "dynasty": "明",
+      "function": "宗教祭祀",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "宫殿",
+      "dynasty": "明",
+      "function": "文化藏贮",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "宫殿",
+      "dynasty": "明",
+      "function": "理政与典礼",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "宫殿",
+      "dynasty": "明",
+      "function": "皇家园林",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "宫殿",
+      "dynasty": "清",
+      "function": "其他功能",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "宫殿",
+      "dynasty": "清",
+      "function": "宗教祭祀",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "宫殿",
+      "dynasty": "清",
+      "function": "居住生活",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "宫殿",
+      "dynasty": "金",
+      "function": "皇家园林",
+      "material": "土类",
+      "value": 1
+    },
+    {
+      "building_type": "宫殿",
+      "dynasty": "金",
+      "function": "皇家园林",
+      "material": "木材类",
+      "value": 1
+    }
+  ],
+  "mappings": {
+    "dynasty": {
+      "明": "明",
+      "清": "清",
+      "金": "金",
+      "元": "元"
+    },
+    "function": {
+      "理政与典礼": "理政与典礼",
+      "其他功能": "其他功能",
+      "皇家园林": "皇家园林",
+      "宗教祭祀": "宗教祭祀",
+      "居住生活": "居住生活",
+      "文化藏贮": "文化藏贮"
+    },
+    "material": {
+      "石材类": "石材类",
+      "木材类": "木材类",
+      "砖瓦类": "砖瓦类",
+      "土类": "土类"
+    }
+  },
+  "generated_at": "2026-03-17 17:12:38"
+}

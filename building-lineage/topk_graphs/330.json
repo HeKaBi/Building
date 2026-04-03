@@ -1,0 +1,148 @@
+{
+  "center_building": {
+    "line_no": "330",
+    "name": "景山",
+    "building_type": "宫殿",
+    "start_dynasty": "金",
+    "century_num": 12,
+    "province": "北京市",
+    "region": "华北",
+    "address": "北京市西城区",
+    "start_time_confidence": 0.85,
+    "structure_terms": [
+      "土山结构",
+      "亭台殿阁组合",
+      "城防单元",
+      "土石夯筑",
+      "中轴对称"
+    ],
+    "layout_terms": [
+      "中轴对称",
+      "制高点布局",
+      "殿宇移建"
+    ],
+    "material_terms": [
+      "生土",
+      "渣土"
+    ],
+    "craft_terms": [
+      "堆筑法",
+      "土山营造"
+    ],
+    "function_terms": [
+      "皇家园林",
+      "习射场所",
+      "祭祖空间",
+      "官学场所"
+    ],
+    "material_categories": [
+      "土类"
+    ],
+    "structure_cluster": "中轴殿阁型",
+    "structure_cluster_summary": "以中轴对称布局为核心，结合殿宇与制高点设计，多采用土石夯筑或移建手法形成结构集群。",
+    "material_primary_category": "土类",
+    "structure_evidence": "公园坐落在明清北京城的中轴线上，公园中心的景山，曾是全城的制高点。 || 山上建瑶广楼，称为金中都十二景之一。 || 乾隆十四年（1749年），移建寿皇殿至景山正北面。 || 明永乐十八年（1420年）在修建北京城时，用拆除元朝宫殿的渣土和挖掘紫禁城护城河的泥土，在元代延春阁的基础上堆筑起一座土山，取名万岁山，又称镇山。 || 考虑到所有的材料只能通过人、畜运输，其规模令人印象深刻。",
+    "semantic_terms": [
+      "土山结构",
+      "亭台殿阁组合",
+      "城防单元",
+      "土石夯筑",
+      "中轴对称",
+      "制高点布局",
+      "殿宇移建",
+      "生土",
+      "渣土",
+      "堆筑法",
+      "土山营造",
+      "皇家园林",
+      "习射场所",
+      "祭祖空间",
+      "官学场所",
+      "土类"
+    ]
+  },
+  "lineage_id": "宫殿-L08",
+  "lineage_name": "北京-殿宇移建·土山结构-渣土谱系",
+  "building_type": "宫殿",
+  "signature_features": {
+    "primary_structure": "土山结构",
+    "primary_layout": "殿宇移建",
+    "support_material": "渣土",
+    "support_craft": "堆筑法",
+    "dominant_province": "北京",
+    "dominant_dynasty": "金",
+    "dominant_region": "华北"
+  },
+  "signature_summary": "以殿宇移建、土山结构为核心，辅以渣土，在北京样本中形成稳定的营造共同体。",
+  "community_member_count": 1,
+  "nodes": [
+    {
+      "line_no": "330",
+      "name": "景山",
+      "building_type": "宫殿",
+      "start_dynasty": "金",
+      "century_num": 12,
+      "province": "北京市",
+      "region": "华北",
+      "address": "北京市西城区",
+      "start_time_confidence": 0.85,
+      "structure_terms": [
+        "土山结构",
+        "亭台殿阁组合",
+        "城防单元",
+        "土石夯筑",
+        "中轴对称"
+      ],
+      "layout_terms": [
+        "中轴对称",
+        "制高点布局",
+        "殿宇移建"
+      ],
+      "material_terms": [
+        "生土",
+        "渣土"
+      ],
+      "craft_terms": [
+        "堆筑法",
+        "土山营造"
+      ],
+      "function_terms": [
+        "皇家园林",
+        "习射场所",
+        "祭祖空间",
+        "官学场所"
+      ],
+      "material_categories": [
+        "土类"
+      ],
+      "structure_cluster": "中轴殿阁型",
+      "structure_cluster_summary": "以中轴对称布局为核心，结合殿宇与制高点设计，多采用土石夯筑或移建手法形成结构集群。",
+      "material_primary_category": "土类",
+      "structure_evidence": "公园坐落在明清北京城的中轴线上，公园中心的景山，曾是全城的制高点。 || 山上建瑶广楼，称为金中都十二景之一。 || 乾隆十四年（1749年），移建寿皇殿至景山正北面。 || 明永乐十八年（1420年）在修建北京城时，用拆除元朝宫殿的渣土和挖掘紫禁城护城河的泥土，在元代延春阁的基础上堆筑起一座土山，取名万岁山，又称镇山。 || 考虑到所有的材料只能通过人、畜运输，其规模令人印象深刻。",
+      "semantic_terms": [
+        "土山结构",
+        "亭台殿阁组合",
+        "城防单元",
+        "土石夯筑",
+        "中轴对称",
+        "制高点布局",
+        "殿宇移建",
+        "生土",
+        "渣土",
+        "堆筑法",
+        "土山营造",
+        "皇家园林",
+        "习射场所",
+        "祭祖空间",
+        "官学场所",
+        "土类"
+      ],
+      "id": "330",
+      "role": "center",
+      "hop": 0,
+      "score": 1,
+      "shared_features": []
+    }
+  ],
+  "edges": []
+}

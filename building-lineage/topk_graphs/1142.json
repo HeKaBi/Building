@@ -1,0 +1,482 @@
+{
+  "center_building": {
+    "line_no": "1142",
+    "name": "保定钟楼",
+    "building_type": "官府",
+    "start_dynasty": "金",
+    "century_num": 12,
+    "province": "河北省",
+    "region": "华北",
+    "address": "河北省保定市南市区",
+    "start_time_confidence": 0.75,
+    "structure_terms": [
+      "重檐歇山顶",
+      "抬梁式",
+      "六椽三柱",
+      "斗拱结构",
+      "歇山顶",
+      "斗拱承托",
+      "高台基座"
+    ],
+    "layout_terms": [
+      "台基式",
+      "面阔三间",
+      "廊柱环绕",
+      "金柱支撑"
+    ],
+    "material_terms": [
+      "木材",
+      "铁",
+      "布瓦",
+      "石柱"
+    ],
+    "craft_terms": [
+      "斗拱",
+      "彩画",
+      "清水砌墙",
+      "T型枋构"
+    ],
+    "function_terms": [
+      "报时",
+      "文物遗存",
+      "声学展示"
+    ],
+    "material_categories": [
+      "砖瓦类",
+      "木材类",
+      "石材类",
+      "金属类"
+    ],
+    "structure_cluster": "重檐歇山抬梁型",
+    "structure_cluster_summary": "采用抬梁式构架，重檐歇山顶，斗拱承托，高台基座，面阔三间，六椽三柱结构。",
+    "material_primary_category": "砖瓦类",
+    "structure_evidence": "保定钟楼为坐北朝南的重檐歇山顶，铺布瓦的建筑。 || 下层屋檐施三踩单昂斗拱，上层屋檐施单昂单翘五踩斗拱。 || 双层的钟楼下层为单一大间，面阔三间，进深三楹；上层为面阔三小间，进深二小间，上层梁架六椽三柱。 || 钟楼位于砖砌台基之上，台基高2米有余，台基四面围有女儿墙。 || 钟楼四面有12根八边形石制廊柱，墙内有12根檐柱，室内施2根金柱。 || 保定钟楼，属大型木式建筑",
+    "semantic_terms": [
+      "重檐歇山顶",
+      "抬梁式",
+      "六椽三柱",
+      "斗拱结构",
+      "歇山顶",
+      "斗拱承托",
+      "高台基座",
+      "台基式",
+      "面阔三间",
+      "廊柱环绕",
+      "金柱支撑",
+      "木材",
+      "铁",
+      "布瓦",
+      "石柱",
+      "斗拱",
+      "彩画",
+      "清水砌墙",
+      "T型枋构",
+      "报时",
+      "文物遗存",
+      "声学展示",
+      "砖瓦类",
+      "木材类",
+      "石材类",
+      "金属类"
+    ]
+  },
+  "lineage_id": "官府-L07",
+  "lineage_name": "清-面阔三间·高台基座-夯土谱系",
+  "building_type": "官府",
+  "signature_features": {
+    "primary_structure": "高台基座",
+    "primary_layout": "面阔三间",
+    "support_material": "夯土",
+    "support_craft": "中轴对称",
+    "dominant_province": "河北",
+    "dominant_dynasty": "清",
+    "dominant_region": "华北"
+  },
+  "signature_summary": "以面阔三间、高台基座为核心，辅以夯土，在清样本中形成稳定的营造共同体。",
+  "community_member_count": 6,
+  "nodes": [
+    {
+      "id": "1142",
+      "line_no": "1142",
+      "name": "保定钟楼",
+      "building_type": "官府",
+      "province": "河北省",
+      "start_dynasty": "金",
+      "century_num": 12,
+      "role": "center",
+      "hop": 0,
+      "score": 1,
+      "shared_features": [],
+      "structure_terms": [
+        "重檐歇山顶",
+        "抬梁式",
+        "六椽三柱",
+        "斗拱结构",
+        "歇山顶",
+        "斗拱承托",
+        "高台基座"
+      ],
+      "layout_terms": [
+        "台基式",
+        "面阔三间",
+        "廊柱环绕",
+        "金柱支撑"
+      ],
+      "material_terms": [
+        "木材",
+        "铁",
+        "布瓦",
+        "石柱"
+      ],
+      "craft_terms": [
+        "斗拱",
+        "彩画",
+        "清水砌墙",
+        "T型枋构"
+      ],
+      "function_terms": [
+        "报时",
+        "文物遗存",
+        "声学展示"
+      ]
+    },
+    {
+      "id": "1885",
+      "line_no": "1885",
+      "name": "惠远钟鼓楼",
+      "building_type": "官府",
+      "province": "新疆维吾尔自治区",
+      "start_dynasty": "清",
+      "century_num": 19,
+      "role": "member",
+      "hop": 1,
+      "score": 0.6156,
+      "shared_features": [
+        "高台基座",
+        "歇山顶",
+        "面阔三间",
+        "报时",
+        "夯土",
+        "中轴对称"
+      ],
+      "structure_terms": [
+        "砖台木架结构",
+        "三层三重檐歇山顶",
+        "十字交叉筒券通道",
+        "楼阁化",
+        "土石夯筑",
+        "歇山顶",
+        "高台基座"
+      ],
+      "layout_terms": [
+        "方形平面",
+        "面阔三间",
+        "三层柱网结构"
+      ],
+      "material_terms": [
+        "青砖",
+        "夯土",
+        "琉璃瓦",
+        "方砖"
+      ],
+      "craft_terms": [
+        "三出五进砌法",
+        "斗拱承檐",
+        "旋子彩画"
+      ],
+      "function_terms": [
+        "报时",
+        "交通节点",
+        "城市地标"
+      ]
+    },
+    {
+      "id": "345",
+      "line_no": "345",
+      "name": "定州贡院",
+      "building_type": "官府",
+      "province": "河北省",
+      "start_dynasty": "清",
+      "century_num": 18,
+      "role": "member",
+      "hop": 2,
+      "score": 0.1544,
+      "shared_features": [
+        "高台基座",
+        "面阔三间",
+        "夯土",
+        "中轴对称"
+      ],
+      "structure_terms": [
+        "半四角攒尖顶",
+        "楼阁式",
+        "面阔七间",
+        "进深九间",
+        "楼阁化",
+        "中轴对称",
+        "攒尖顶"
+      ],
+      "layout_terms": [
+        "中轴对称",
+        "坐北朝南",
+        "影壁起点",
+        "方形平面"
+      ],
+      "material_terms": [
+        "石碑"
+      ],
+      "craft_terms": [
+        "攒尖顶营造",
+        "中轴对称",
+        "木构架"
+      ],
+      "function_terms": [
+        "科举考场",
+        "考生应试场所",
+        "考官办公居住"
+      ]
+    },
+    {
+      "id": "1078",
+      "line_no": "1078",
+      "name": "丰图义仓",
+      "building_type": "官府",
+      "province": "陕西省",
+      "start_dynasty": "清",
+      "century_num": 19,
+      "role": "member",
+      "hop": 2,
+      "score": 0.1045,
+      "shared_features": [
+        "高台基座",
+        "面阔三间",
+        "夯土",
+        "中轴对称"
+      ],
+      "structure_terms": [
+        "仓墙合一",
+        "城中城",
+        "夯土筑城",
+        "土石夯筑"
+      ],
+      "layout_terms": [
+        "城中城",
+        "内城外城",
+        "仓墙合一"
+      ],
+      "material_terms": [
+        "夯土",
+        "生土"
+      ],
+      "craft_terms": [
+        "夯土版筑",
+        "仓城合构"
+      ],
+      "function_terms": [
+        "仓储",
+        "防御",
+        "粮仓"
+      ]
+    },
+    {
+      "id": "1615",
+      "line_no": "1615",
+      "name": "大丰仓",
+      "building_type": "官府",
+      "province": "湖北省",
+      "start_dynasty": "清",
+      "century_num": 19,
+      "role": "member",
+      "hop": 2,
+      "score": 0.0943,
+      "shared_features": [
+        "高台基座",
+        "面阔三间",
+        "夯土",
+        "中轴对称"
+      ],
+      "structure_terms": [
+        "木构架",
+        "框架结构"
+      ],
+      "layout_terms": [
+        "丁字形布局",
+        "主副仓布局"
+      ],
+      "material_terms": [
+        "青砖",
+        "黑瓦"
+      ],
+      "craft_terms": [
+        "通风窗",
+        "百叶窗式通风",
+        "排水沟系统"
+      ],
+      "function_terms": [
+        "粮仓",
+        "仓储建筑"
+      ]
+    },
+    {
+      "id": "412",
+      "line_no": "412",
+      "name": "和硕恪靖公主府",
+      "building_type": "官府",
+      "province": "内蒙古自治区",
+      "start_dynasty": "清",
+      "century_num": 17,
+      "role": "member",
+      "hop": 3,
+      "score": 0.1228,
+      "shared_features": [
+        "高台基座",
+        "面阔三间",
+        "夯土",
+        "中轴对称"
+      ],
+      "structure_terms": [
+        "硬山式",
+        "卷棚式",
+        "大木架结构",
+        "中轴对称",
+        "合院布局",
+        "多进院落",
+        "卷棚顶",
+        "硬山顶",
+        "高台基座"
+      ],
+      "layout_terms": [
+        "中轴对称",
+        "四进院落",
+        "东西厢房"
+      ],
+      "material_terms": [
+        "汉白玉",
+        "木材"
+      ],
+      "craft_terms": [
+        "传统礼制营造",
+        "中轴对称"
+      ],
+      "function_terms": [
+        "公主府邸",
+        "博物馆"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "345",
+      "target": "412",
+      "weight": 0.2367,
+      "reasons": [
+        "共享结构：中轴对称",
+        "共享布局：中轴对称",
+        "共享技艺：中轴对称",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：石材类",
+        "同属华北"
+      ],
+      "components": {
+        "structure_terms": 0.0324,
+        "layout_terms": 0.088,
+        "material_terms": 0,
+        "craft_terms": 0.2484,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.7857,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1078",
+      "target": "1885",
+      "weight": 0.2146,
+      "reasons": [
+        "共享结构：土石夯筑",
+        "共享材料：夯土",
+        "同属结构簇：抬梁合院型",
+        "同属西北",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.0708,
+        "layout_terms": 0,
+        "material_terms": 0.1899,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 0.5,
+        "time": 1,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1615",
+      "target": "1885",
+      "weight": 0.1937,
+      "reasons": [
+        "共享材料：青砖",
+        "同属结构簇：抬梁合院型",
+        "同属材料主类：砖瓦类",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0,
+        "layout_terms": 0,
+        "material_terms": 0.1143,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 1,
+        "region": 0
+      }
+    },
+    {
+      "source": "345",
+      "target": "1885",
+      "weight": 0.1901,
+      "reasons": [
+        "共享结构：楼阁化",
+        "共享布局：方形平面",
+        "同属结构簇：抬梁合院型",
+        "同朝代：清"
+      ],
+      "components": {
+        "structure_terms": 0.0599,
+        "layout_terms": 0.1906,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 0,
+        "time": 0.7857,
+        "region": 0
+      }
+    },
+    {
+      "source": "1885",
+      "target": "1142",
+      "weight": 0.1873,
+      "reasons": [
+        "共享结构：高台基座、歇山顶",
+        "共享布局：面阔三间",
+        "共享功能：报时",
+        "同属材料主类：砖瓦类"
+      ],
+      "components": {
+        "structure_terms": 0.1292,
+        "layout_terms": 0.1573,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0.1867,
+        "structure_cluster": 0.6,
+        "material_cluster": 1,
+        "time": 0.0395,
+        "region": 0
+      }
+    }
+  ]
+}

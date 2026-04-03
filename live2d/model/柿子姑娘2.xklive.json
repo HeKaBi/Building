@@ -1,0 +1,376 @@
+﻿{
+  "Version": 0,
+  "Name": "柿子姑娘2",
+  "FileReference": {
+    "Icon": "https://xk-live-cn-1302951512.cos.ap-guangzhou.myqcloud.com/xk_client/XKBC_AVATAR/RELEASE/29263/51c189390426525f50c216c873a69cc7.png",
+    "Model": "G:\\我的建模作品们\\￥￥￥出售模型￥￥￥\\柿子\\柿子姑娘模型文件2.0\\柿子姑娘2.0（作者：茶狄）\\柿子姑娘2.0 作者茶狄.model3.json"
+  },
+  "Transform": {
+    "Position": {
+      "X": 0.0,
+      "Y": 0.0,
+      "Z": 0.0
+    },
+    "Rotation": {
+      "X": 0.0,
+      "Y": 0.0,
+      "Z": 0.0
+    },
+    "Scale": {
+      "X": 0.0,
+      "Y": 0.0,
+      "Z": 0.0
+    }
+  },
+  "PhysicsSetting": {
+    "Enable": true,
+    "Strength": 50
+  },
+  "CollideSetting": {
+    "Collides": [
+      {
+        "Position": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Radius": 0.2,
+        "Height": 1.0
+      }
+    ]
+  },
+  "PosMovementSetting": {
+    "Enable": false,
+    "X": 50,
+    "Y": 50,
+    "Z": 50
+  },
+  "CaptureSetting": {
+    "BlinkSensitivity": 50,
+    "BrowSensitivity": 50,
+    "SmileSensitivity": 50,
+    "OpenMouthSensitivity": 50,
+    "HeadRotationSensitivity": 50,
+    "BodyRotationSensitivity": 50,
+    "EyeBlinkMirror": false,
+    "BrowMirror": false,
+    "AutoEyeBlink": false
+  },
+  "ExpressionSetting": {
+    "ResetHotKey": "",
+    "Expressions": [
+      {
+        "Name": "刘海",
+        "ExpFile": "../../小柿/刘海.exp3.json",
+        "HotKey": ""
+      },
+      {
+        "Name": "后发 ",
+        "ExpFile": "../../小柿/后发 .exp3.json",
+        "HotKey": ""
+      },
+      {
+        "Name": "大丸子",
+        "ExpFile": "../../小柿/大丸子.exp3.json",
+        "HotKey": ""
+      },
+      {
+        "Name": "头饰",
+        "ExpFile": "../../小柿/头饰.exp3.json",
+        "HotKey": ""
+      },
+      {
+        "Name": "小丸子",
+        "ExpFile": "../../小柿/小丸子.exp3.json",
+        "HotKey": ""
+      },
+      {
+        "Name": "手势1",
+        "ExpFile": "../../小柿/手势1.exp3.json",
+        "HotKey": ""
+      },
+      {
+        "Name": "柿子花花发髻",
+        "ExpFile": "../../小柿/柿子花花发髻.exp3.json",
+        "HotKey": ""
+      }
+    ]
+  },
+  "MotionSetting": {
+    "IdleMotionFile": "",
+    "NoCaptureMotionFile": "",
+    "Motions": []
+  },
+  "Parameters": [
+    {
+      "Enable": true,
+      "Input": "FaceAngleX",
+      "InputMin": -1.0,
+      "InputMax": 1.0,
+      "InputClamp": true,
+      "Output": "ParamAngleX",
+      "OutputMin": -30.0,
+      "OutputMax": 30.0,
+      "OutputClamp": true,
+      "Smooth": 50,
+      "OutputInvert": false
+    },
+    {
+      "Enable": true,
+      "Input": "FaceAngleY",
+      "InputMin": -1.0,
+      "InputMax": 1.0,
+      "InputClamp": true,
+      "Output": "ParamAngleY",
+      "OutputMin": -30.0,
+      "OutputMax": 30.0,
+      "OutputClamp": true,
+      "Smooth": 50,
+      "OutputInvert": false
+    },
+    {
+      "Enable": true,
+      "Input": "FaceAngleZ",
+      "InputMin": -1.0,
+      "InputMax": 1.0,
+      "InputClamp": true,
+      "Output": "ParamAngleZ",
+      "OutputMin": -30.0,
+      "OutputMax": 30.0,
+      "OutputClamp": true,
+      "Smooth": 50,
+      "OutputInvert": false
+    },
+    {
+      "Enable": true,
+      "Input": "FaceAngleX",
+      "InputMin": -1.0,
+      "InputMax": 1.0,
+      "InputClamp": true,
+      "Output": "ParamBodyAngleX",
+      "OutputMin": -10.0,
+      "OutputMax": 10.0,
+      "OutputClamp": true,
+      "Smooth": 50,
+      "OutputInvert": false
+    },
+    {
+      "Enable": true,
+      "Input": "FaceAngleY",
+      "InputMin": -1.0,
+      "InputMax": 1.0,
+      "InputClamp": true,
+      "Output": "ParamBodyAngleY",
+      "OutputMin": -10.0,
+      "OutputMax": 10.0,
+      "OutputClamp": true,
+      "Smooth": 50,
+      "OutputInvert": false
+    },
+    {
+      "Enable": true,
+      "Input": "FaceAngleZ",
+      "InputMin": -1.0,
+      "InputMax": 1.0,
+      "InputClamp": true,
+      "Output": "ParamBodyAngleZ",
+      "OutputMin": -10.0,
+      "OutputMax": 10.0,
+      "OutputClamp": true,
+      "Smooth": 50,
+      "OutputInvert": false
+    },
+    {
+      "Enable": true,
+      "Input": "EyeLOpen",
+      "InputMin": -1.0,
+      "InputMax": 1.0,
+      "InputClamp": true,
+      "Output": "ParamEyeLOpen",
+      "OutputMin": 0.0,
+      "OutputMax": 1.0,
+      "OutputClamp": true,
+      "Smooth": 50,
+      "OutputInvert": false
+    },
+    {
+      "Enable": true,
+      "Input": "EyeROpen",
+      "InputMin": -1.0,
+      "InputMax": 1.0,
+      "InputClamp": true,
+      "Output": "ParamEyeROpen",
+      "OutputMin": 0.0,
+      "OutputMax": 1.0,
+      "OutputClamp": true,
+      "Smooth": 50,
+      "OutputInvert": false
+    },
+    {
+      "Enable": true,
+      "Input": "EyeBallX",
+      "InputMin": -1.0,
+      "InputMax": 1.0,
+      "InputClamp": true,
+      "Output": "ParamEyeBallX",
+      "OutputMin": -1.0,
+      "OutputMax": 1.0,
+      "OutputClamp": true,
+      "Smooth": 50,
+      "OutputInvert": false
+    },
+    {
+      "Enable": true,
+      "Input": "EyeBallY",
+      "InputMin": -1.0,
+      "InputMax": 1.0,
+      "InputClamp": true,
+      "Output": "ParamEyeBallY",
+      "OutputMin": -1.0,
+      "OutputMax": 1.0,
+      "OutputClamp": true,
+      "Smooth": 50,
+      "OutputInvert": false
+    },
+    {
+      "Enable": true,
+      "Input": "BrowLY",
+      "InputMin": -1.0,
+      "InputMax": 1.0,
+      "InputClamp": true,
+      "Output": "ParamBrowLY",
+      "OutputMin": -1.0,
+      "OutputMax": 1.0,
+      "OutputClamp": true,
+      "Smooth": 50,
+      "OutputInvert": false
+    },
+    {
+      "Enable": true,
+      "Input": "BrowRY",
+      "InputMin": -1.0,
+      "InputMax": 1.0,
+      "InputClamp": true,
+      "Output": "ParamBrowRY",
+      "OutputMin": -1.0,
+      "OutputMax": 1.0,
+      "OutputClamp": true,
+      "Smooth": 50,
+      "OutputInvert": false
+    },
+    {
+      "Enable": true,
+      "Input": "BrowLForm",
+      "InputMin": -1.0,
+      "InputMax": 1.0,
+      "InputClamp": true,
+      "Output": "ParamBrowLForm",
+      "OutputMin": -1.0,
+      "OutputMax": 1.0,
+      "OutputClamp": true,
+      "Smooth": 50,
+      "OutputInvert": false
+    },
+    {
+      "Enable": true,
+      "Input": "BrowRForm",
+      "InputMin": -1.0,
+      "InputMax": 1.0,
+      "InputClamp": true,
+      "Output": "ParamBrowRForm",
+      "OutputMin": -1.0,
+      "OutputMax": 1.0,
+      "OutputClamp": true,
+      "Smooth": 50,
+      "OutputInvert": false
+    },
+    {
+      "Enable": true,
+      "Input": "MouthOpen",
+      "InputMin": -1.0,
+      "InputMax": 1.0,
+      "InputClamp": true,
+      "Output": "ParamMouthOpenY",
+      "OutputMin": 0.0,
+      "OutputMax": 1.0,
+      "OutputClamp": true,
+      "Smooth": 50,
+      "OutputInvert": false
+    },
+    {
+      "Enable": true,
+      "Input": "MouthSmile",
+      "InputMin": -1.0,
+      "InputMax": 1.0,
+      "InputClamp": true,
+      "Output": "ParamMouthForm",
+      "OutputMin": -1.0,
+      "OutputMax": 1.0,
+      "OutputClamp": true,
+      "Smooth": 50,
+      "OutputInvert": false
+    },
+    {
+      "Enable": true,
+      "Input": "MouthSmile",
+      "InputMin": -1.0,
+      "InputMax": 0.0,
+      "InputClamp": true,
+      "Output": "ParamEyeLSmile",
+      "OutputMin": 0.0,
+      "OutputMax": 1.0,
+      "OutputClamp": true,
+      "Smooth": 50,
+      "OutputInvert": false
+    },
+    {
+      "Enable": true,
+      "Input": "MouthSmile",
+      "InputMin": -1.0,
+      "InputMax": 0.0,
+      "InputClamp": true,
+      "Output": "ParamEyeRSmile",
+      "OutputMin": 0.0,
+      "OutputMax": 1.0,
+      "OutputClamp": true,
+      "Smooth": 50,
+      "OutputInvert": false
+    },
+    {
+      "Enable": true,
+      "Input": "Breath",
+      "InputMin": -1.0,
+      "InputMax": 1.0,
+      "InputClamp": true,
+      "Output": "ParamBreath",
+      "OutputMin": 0.0,
+      "OutputMax": 1.0,
+      "OutputClamp": true,
+      "Smooth": 50,
+      "OutputInvert": false
+    },
+    {
+      "Enable": true,
+      "Input": "CheekPuff",
+      "InputMin": -1.0,
+      "InputMax": 1.0,
+      "InputClamp": true,
+      "Output": "ParamCheek",
+      "OutputMin": 0.0,
+      "OutputMax": 1.0,
+      "OutputClamp": true,
+      "Smooth": 50,
+      "OutputInvert": false
+    }
+  ],
+  "DecorationSettings": {
+    "CurrentScheme": 0,
+    "DecorationSchemes": [
+      {
+        "Name": "默认方案",
+        "HotKey": "请设置快捷键",
+        "Decorations": []
+      }
+    ]
+  }
+}

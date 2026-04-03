@@ -1,0 +1,158 @@
+{
+  "center_building": {
+    "line_no": "1366",
+    "name": "燕园",
+    "building_type": "宫殿",
+    "start_dynasty": "金",
+    "century_num": 17,
+    "province": "江苏省",
+    "region": "华东",
+    "address": "江苏省苏州市常熟市",
+    "start_time_confidence": 0.75,
+    "structure_terms": [
+      "木构架",
+      "台基结构",
+      "高台基座"
+    ],
+    "layout_terms": [
+      "北方园林",
+      "江南山水园林",
+      "园林化布局",
+      "多园组合"
+    ],
+    "material_terms": [
+      "青砖",
+      "木材",
+      "太湖石"
+    ],
+    "craft_terms": [
+      "叠山理水",
+      "借景",
+      "传统园林造景"
+    ],
+    "function_terms": [
+      "皇家园林",
+      "校园环境",
+      "古典园林"
+    ],
+    "material_categories": [
+      "木材类",
+      "石材类",
+      "砖瓦类"
+    ],
+    "structure_cluster": "园林化殿阁型",
+    "structure_cluster_summary": "融合北方宏伟与江南秀丽风格，以木构架和高台基座为特征的园林化宫殿建筑。",
+    "material_primary_category": "木材类",
+    "structure_evidence": "现北京大学燕园校区是在原燕京大学校园的基础上逐步向周边拓展形成的 || 包括淑春园、勺园、朗润园、镜春园、鸣鹤园、蔚秀园、畅春园、承泽园等 || 北大校园既有北方园林的宏伟气度，又有江南山水园林的秀丽特色，可谓集江南山水园林精神之大成而自成一格。",
+    "semantic_terms": [
+      "木构架",
+      "台基结构",
+      "高台基座",
+      "北方园林",
+      "江南山水园林",
+      "园林化布局",
+      "多园组合",
+      "青砖",
+      "木材",
+      "太湖石",
+      "叠山理水",
+      "借景",
+      "传统园林造景",
+      "皇家园林",
+      "校园环境",
+      "古典园林",
+      "木材类",
+      "石材类",
+      "砖瓦类"
+    ]
+  },
+  "lineage_id": "宫殿-L03",
+  "lineage_name": "江苏-园林化布局·高台基座-太湖石谱系",
+  "building_type": "宫殿",
+  "signature_features": {
+    "primary_structure": "高台基座",
+    "primary_layout": "园林化布局",
+    "support_material": "太湖石",
+    "support_craft": "叠山理水",
+    "dominant_province": "江苏",
+    "dominant_dynasty": "金",
+    "dominant_region": "华东"
+  },
+  "signature_summary": "以园林化布局、高台基座为核心，辅以太湖石，在江苏样本中形成稳定的营造共同体。",
+  "community_member_count": 1,
+  "nodes": [
+    {
+      "line_no": "1366",
+      "name": "燕园",
+      "building_type": "宫殿",
+      "start_dynasty": "金",
+      "century_num": 17,
+      "province": "江苏省",
+      "region": "华东",
+      "address": "江苏省苏州市常熟市",
+      "start_time_confidence": 0.75,
+      "structure_terms": [
+        "木构架",
+        "台基结构",
+        "高台基座"
+      ],
+      "layout_terms": [
+        "北方园林",
+        "江南山水园林",
+        "园林化布局",
+        "多园组合"
+      ],
+      "material_terms": [
+        "青砖",
+        "木材",
+        "太湖石"
+      ],
+      "craft_terms": [
+        "叠山理水",
+        "借景",
+        "传统园林造景"
+      ],
+      "function_terms": [
+        "皇家园林",
+        "校园环境",
+        "古典园林"
+      ],
+      "material_categories": [
+        "木材类",
+        "石材类",
+        "砖瓦类"
+      ],
+      "structure_cluster": "园林化殿阁型",
+      "structure_cluster_summary": "融合北方宏伟与江南秀丽风格，以木构架和高台基座为特征的园林化宫殿建筑。",
+      "material_primary_category": "木材类",
+      "structure_evidence": "现北京大学燕园校区是在原燕京大学校园的基础上逐步向周边拓展形成的 || 包括淑春园、勺园、朗润园、镜春园、鸣鹤园、蔚秀园、畅春园、承泽园等 || 北大校园既有北方园林的宏伟气度，又有江南山水园林的秀丽特色，可谓集江南山水园林精神之大成而自成一格。",
+      "semantic_terms": [
+        "木构架",
+        "台基结构",
+        "高台基座",
+        "北方园林",
+        "江南山水园林",
+        "园林化布局",
+        "多园组合",
+        "青砖",
+        "木材",
+        "太湖石",
+        "叠山理水",
+        "借景",
+        "传统园林造景",
+        "皇家园林",
+        "校园环境",
+        "古典园林",
+        "木材类",
+        "石材类",
+        "砖瓦类"
+      ],
+      "id": "1366",
+      "role": "center",
+      "hop": 0,
+      "score": 1,
+      "shared_features": []
+    }
+  ],
+  "edges": []
+}

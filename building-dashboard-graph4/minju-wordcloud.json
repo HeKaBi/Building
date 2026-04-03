@@ -1,0 +1,3556 @@
+[
+  {
+    "name": "木材",
+    "value": 85.52,
+    "term_count": 114,
+    "avg_confidence": 0.7502,
+    "building_count": 114,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 73,
+        "name": "杜甫草堂",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 103,
+        "name": "网师园",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 140,
+        "name": "丁村民宅",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 141,
+        "name": "潜口民宅",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 142,
+        "name": "东阳卢宅",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "抬梁式",
+    "value": 38.9,
+    "term_count": 49,
+    "avg_confidence": 0.7939,
+    "building_count": 49,
+    "dimensions": [
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 141,
+        "name": "潜口民宅",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 143,
+        "name": "祥集弄民宅",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 144,
+        "name": "崇礼住宅",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 145,
+        "name": "牟氏庄园",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 311,
+        "name": "魏氏庄园",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "穿斗式",
+    "value": 37.3,
+    "term_count": 46,
+    "avg_confidence": 0.8109,
+    "building_count": 46,
+    "dimensions": [
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 141,
+        "name": "潜口民宅",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 143,
+        "name": "祥集弄民宅",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 145,
+        "name": "牟氏庄园",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 276,
+        "name": "诸葛、长乐村民居",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 322,
+        "name": "夕佳山民居",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "砖石",
+    "value": 36.91,
+    "term_count": 58,
+    "avg_confidence": 0.6364,
+    "building_count": 58,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 140,
+        "name": "丁村民宅",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 141,
+        "name": "潜口民宅",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 144,
+        "name": "崇礼住宅",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 145,
+        "name": "牟氏庄园",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 148,
+        "name": "十笏园",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "木雕",
+    "value": 33.23,
+    "term_count": 39,
+    "avg_confidence": 0.8521,
+    "building_count": 36,
+    "dimensions": [
+      "建筑材料",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 142,
+        "name": "东阳卢宅",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 328,
+        "name": "可园",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 353,
+        "name": "腰山王氏庄园",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 422,
+        "name": "黄山八面厅",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 422,
+        "name": "黄山八面厅",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "青砖",
+    "value": 32.04,
+    "term_count": 37,
+    "avg_confidence": 0.8659,
+    "building_count": 37,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 276,
+        "name": "诸葛、长乐村民居",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 289,
+        "name": "许驸马府",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 311,
+        "name": "魏氏庄园",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 328,
+        "name": "可园",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 353,
+        "name": "腰山王氏庄园",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "砖雕",
+    "value": 29.03,
+    "term_count": 34,
+    "avg_confidence": 0.8538,
+    "building_count": 32,
+    "dimensions": [
+      "建筑材料",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 328,
+        "name": "可园",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 353,
+        "name": "腰山王氏庄园",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 415,
+        "name": "徐霞客故居及晴山堂石刻",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 422,
+        "name": "黄山八面厅",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 440,
+        "name": "绮园",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "围院结构",
+    "value": 28.7,
+    "term_count": 33,
+    "avg_confidence": 0.8697,
+    "building_count": 33,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 73,
+        "name": "杜甫草堂",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 144,
+        "name": "崇礼住宅",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 151,
+        "name": "个园",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 318,
+        "name": "满堂围",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 441,
+        "name": "斯氏古民居建筑群",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "木构架",
+    "value": 26.38,
+    "term_count": 32,
+    "avg_confidence": 0.8244,
+    "building_count": 32,
+    "dimensions": [
+      "建筑材料",
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 143,
+        "name": "祥集弄民宅",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 144,
+        "name": "崇礼住宅",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 148,
+        "name": "十笏园",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 276,
+        "name": "诸葛、长乐村民居",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 289,
+        "name": "许驸马府",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "石材",
+    "value": 26.21,
+    "term_count": 33,
+    "avg_confidence": 0.7942,
+    "building_count": 33,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 103,
+        "name": "网师园",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 150,
+        "name": "何园",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 275,
+        "name": "䌽衣堂",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 322,
+        "name": "夕佳山民居",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 353,
+        "name": "腰山王氏庄园",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "民居",
+    "value": 25.42,
+    "term_count": 29,
+    "avg_confidence": 0.8766,
+    "building_count": 29,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 253,
+        "name": "姬氏民居",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 309,
+        "name": "玉海楼",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 311,
+        "name": "魏氏庄园",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 322,
+        "name": "夕佳山民居",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 449,
+        "name": "程氏三宅",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "石雕",
+    "value": 23.51,
+    "term_count": 27,
+    "avg_confidence": 0.8707,
+    "building_count": 24,
+    "dimensions": [
+      "建筑材料",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 143,
+        "name": "祥集弄民宅",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 293,
+        "name": "丘浚故居",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 353,
+        "name": "腰山王氏庄园",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 422,
+        "name": "黄山八面厅",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 449,
+        "name": "程氏三宅",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "坐北朝南",
+    "value": 23.42,
+    "term_count": 25,
+    "avg_confidence": 0.9368,
+    "building_count": 24,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 253,
+        "name": "姬氏民居",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 309,
+        "name": "玉海楼",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 415,
+        "name": "徐霞客故居及晴山堂石刻",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 600,
+        "name": "石家大院",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 736,
+        "name": "柳氏民居",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "砖木结构",
+    "value": 20.85,
+    "term_count": 23,
+    "avg_confidence": 0.9065,
+    "building_count": 23,
+    "dimensions": [
+      "建筑材料",
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 280,
+        "name": "老屋阁及绿绕亭",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 311,
+        "name": "魏氏庄园",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 312,
+        "name": "丁氏故宅",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 449,
+        "name": "程氏三宅",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 503,
+        "name": "东华里古建筑群",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "中轴对称",
+    "value": 19.07,
+    "term_count": 21,
+    "avg_confidence": 0.9081,
+    "building_count": 21,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 73,
+        "name": "杜甫草堂",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 103,
+        "name": "网师园",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 322,
+        "name": "夕佳山民居",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 418,
+        "name": "耦园",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 422,
+        "name": "黄山八面厅",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "砖",
+    "value": 18.96,
+    "term_count": 23,
+    "avg_confidence": 0.8243,
+    "building_count": 23,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 275,
+        "name": "䌽衣堂",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 280,
+        "name": "老屋阁及绿绕亭",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 309,
+        "name": "玉海楼",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 449,
+        "name": "程氏三宅",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 536,
+        "name": "喜洲白族古建筑群",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "住宅",
+    "value": 18.96,
+    "term_count": 21,
+    "avg_confidence": 0.9029,
+    "building_count": 21,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 144,
+        "name": "崇礼住宅",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 253,
+        "name": "姬氏民居",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 276,
+        "name": "诸葛、长乐村民居",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 328,
+        "name": "可园",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 440,
+        "name": "绮园",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "生土",
+    "value": 18.92,
+    "term_count": 25,
+    "avg_confidence": 0.7568,
+    "building_count": 25,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 145,
+        "name": "牟氏庄园",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 310,
+        "name": "二宜楼",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 457,
+        "name": "安贞堡",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 467,
+        "name": "关西新围、燕翼围",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 500,
+        "name": "芋头侗寨古建筑群",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "三进院落",
+    "value": 18.59,
+    "term_count": 20,
+    "avg_confidence": 0.9295,
+    "building_count": 18,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 293,
+        "name": "丘浚故居",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 322,
+        "name": "夕佳山民居",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 353,
+        "name": "腰山王氏庄园",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 415,
+        "name": "徐霞客故居及晴山堂石刻",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 415,
+        "name": "徐霞客故居及晴山堂石刻",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "多进院落",
+    "value": 17.09,
+    "term_count": 19,
+    "avg_confidence": 0.8995,
+    "building_count": 18,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 142,
+        "name": "东阳卢宅",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 459,
+        "name": "蔡氏古民居建筑群",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 467,
+        "name": "关西新围、燕翼围",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 760,
+        "name": "渠家大院",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 817,
+        "name": "师俭堂",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "宗祠",
+    "value": 16.59,
+    "term_count": 19,
+    "avg_confidence": 0.8732,
+    "building_count": 19,
+    "dimensions": [
+      "建筑功能",
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 276,
+        "name": "诸葛、长乐村民居",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 452,
+        "name": "宏村古建筑群",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 492,
+        "name": "大水井古建筑群",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 833,
+        "name": "芝堰村建筑群",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 834,
+        "name": "芙蓉村古建筑群",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "四合院",
+    "value": 15.88,
+    "term_count": 17,
+    "avg_confidence": 0.9341,
+    "building_count": 17,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 140,
+        "name": "丁村民宅",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 145,
+        "name": "牟氏庄园",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 353,
+        "name": "腰山王氏庄园",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 394,
+        "name": "乔家大院",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 472,
+        "name": "康百万庄园",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "榫卯结构",
+    "value": 15.23,
+    "term_count": 20,
+    "avg_confidence": 0.7615,
+    "building_count": 20,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 420,
+        "name": "水绘园",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 500,
+        "name": "芋头侗寨古建筑群",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 532,
+        "name": "郎德上寨古建筑群",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 563,
+        "name": "胡氏古民居建筑",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 736,
+        "name": "柳氏民居",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "祠堂",
+    "value": 14.03,
+    "term_count": 16,
+    "avg_confidence": 0.8769,
+    "building_count": 16,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 141,
+        "name": "潜口民宅",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 150,
+        "name": "何园",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 453,
+        "name": "西递村古建筑群",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 467,
+        "name": "关西新围、燕翼围",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 736,
+        "name": "柳氏民居",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "硬山顶",
+    "value": 13.9,
+    "term_count": 15,
+    "avg_confidence": 0.9267,
+    "building_count": 15,
+    "dimensions": [
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 275,
+        "name": "䌽衣堂",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 311,
+        "name": "魏氏庄园",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 312,
+        "name": "丁氏故宅",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 394,
+        "name": "乔家大院",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 440,
+        "name": "绮园",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "天井院落",
+    "value": 11.07,
+    "term_count": 12,
+    "avg_confidence": 0.9225,
+    "building_count": 11,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 276,
+        "name": "诸葛、长乐村民居",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 289,
+        "name": "许驸马府",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 452,
+        "name": "宏村古建筑群",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 499,
+        "name": "张谷英村古建筑群",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1447,
+        "name": "棠樾古民居",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "灰瓦",
+    "value": 9.54,
+    "term_count": 11,
+    "avg_confidence": 0.8673,
+    "building_count": 11,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 311,
+        "name": "魏氏庄园",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 563,
+        "name": "胡氏古民居建筑",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 760,
+        "name": "渠家大院",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1292,
+        "name": "雷履泰旧居",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1516,
+        "name": "羽琌山馆和云亭别墅",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "居住",
+    "value": 9.11,
+    "term_count": 10,
+    "avg_confidence": 0.911,
+    "building_count": 10,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 416,
+        "name": "退思园",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 532,
+        "name": "郎德上寨古建筑群",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 536,
+        "name": "喜洲白族古建筑群",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 766,
+        "name": "师家沟古建筑群",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1488,
+        "name": "玉井坊郑氏大厝",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "青石",
+    "value": 9.06,
+    "term_count": 10,
+    "avg_confidence": 0.906,
+    "building_count": 10,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 453,
+        "name": "西递村古建筑群",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 806,
+        "name": "户部山古建筑群",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 905,
+        "name": "蒲松龄故宅",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1362,
+        "name": "杨柳村古建筑群",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1484,
+        "name": "亭店杨氏民居",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "书斋",
+    "value": 8.02,
+    "term_count": 9,
+    "avg_confidence": 0.8911,
+    "building_count": 8,
+    "dimensions": [
+      "建筑功能",
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 73,
+        "name": "杜甫草堂",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 328,
+        "name": "可园",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 418,
+        "name": "耦园",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1361,
+        "name": "近园",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1376,
+        "name": "逸圃",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "书房",
+    "value": 7.24,
+    "term_count": 8,
+    "avg_confidence": 0.905,
+    "building_count": 8,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 103,
+        "name": "网师园",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 813,
+        "name": "东山民居",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 850,
+        "name": "莫氏庄园",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 905,
+        "name": "蒲松龄故宅",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1292,
+        "name": "雷履泰旧居",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "穿斗式木构架",
+    "value": 7.05,
+    "term_count": 9,
+    "avg_confidence": 0.7833,
+    "building_count": 9,
+    "dimensions": [
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 142,
+        "name": "东阳卢宅",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 466,
+        "name": "流坑村古建筑群",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1374,
+        "name": "贾氏盐商住宅",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1516,
+        "name": "羽琌山馆和云亭别墅",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1612,
+        "name": "杨家湾老屋",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "糯米灰浆",
+    "value": 7.02,
+    "term_count": 10,
+    "avg_confidence": 0.702,
+    "building_count": 10,
+    "dimensions": [
+      "建筑材料",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 145,
+        "name": "牟氏庄园",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 312,
+        "name": "丁氏故宅",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 467,
+        "name": "关西新围、燕翼围",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1352,
+        "name": "玉燕堂",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1449,
+        "name": "上庄古建筑群",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "天井",
+    "value": 6.49,
+    "term_count": 7,
+    "avg_confidence": 0.9271,
+    "building_count": 7,
+    "dimensions": [
+      "建筑功能",
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 143,
+        "name": "祥集弄民宅",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 449,
+        "name": "程氏三宅",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 850,
+        "name": "莫氏庄园",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1399,
+        "name": "七家厅",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1431,
+        "name": "泰顺土楼",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "传统木构",
+    "value": 6.3,
+    "term_count": 11,
+    "avg_confidence": 0.5727,
+    "building_count": 11,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 73,
+        "name": "杜甫草堂",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 420,
+        "name": "水绘园",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 849,
+        "name": "顺溪古建筑群",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 850,
+        "name": "莫氏庄园",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 894,
+        "name": "理坑村民居",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "彩绘",
+    "value": 6.24,
+    "term_count": 7,
+    "avg_confidence": 0.8914,
+    "building_count": 6,
+    "dimensions": [
+      "建筑材料",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 457,
+        "name": "安贞堡",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1639,
+        "name": "龙家大院",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1950,
+        "name": "曲沃薛家大院",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 2027,
+        "name": "水美土堡群",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 2112,
+        "name": "琼山侯家大院",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "依山就势",
+    "value": 6.23,
+    "term_count": 7,
+    "avg_confidence": 0.89,
+    "building_count": 7,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 457,
+        "name": "安贞堡",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 766,
+        "name": "师家沟古建筑群",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1030,
+        "name": "宝山石头城",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1261,
+        "name": "陈廷敬故居",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1492,
+        "name": "凤岐吴氏大宅",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "民俗博物馆",
+    "value": 6.13,
+    "term_count": 7,
+    "avg_confidence": 0.8757,
+    "building_count": 7,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 140,
+        "name": "丁村民宅",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 394,
+        "name": "乔家大院",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 563,
+        "name": "胡氏古民居建筑",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 806,
+        "name": "户部山古建筑群",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 823,
+        "name": "甘熙宅第",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "夯土墙",
+    "value": 6.05,
+    "term_count": 7,
+    "avg_confidence": 0.8643,
+    "building_count": 7,
+    "dimensions": [
+      "建筑材料",
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 457,
+        "name": "安贞堡",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 539,
+        "name": "朗色林庄园",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 737,
+        "name": "湘峪古堡",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1431,
+        "name": "泰顺土楼",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1790,
+        "name": "红河县东门楼及迤萨民居",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "抬梁式木构架",
+    "value": 5.85,
+    "term_count": 7,
+    "avg_confidence": 0.8357,
+    "building_count": 7,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 142,
+        "name": "东阳卢宅",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 563,
+        "name": "胡氏古民居建筑",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1374,
+        "name": "贾氏盐商住宅",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1516,
+        "name": "羽琌山馆和云亭别墅",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1619,
+        "name": "王明璠府第",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "石刻",
+    "value": 5.81,
+    "term_count": 8,
+    "avg_confidence": 0.7262,
+    "building_count": 8,
+    "dimensions": [
+      "建筑材料",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 465,
+        "name": "赵家堡—诒安堡",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1261,
+        "name": "陈廷敬故居",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1365,
+        "name": "杨氏宅第",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1483,
+        "name": "九头马民居",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1639,
+        "name": "龙家大院",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "四进院落",
+    "value": 5.73,
+    "term_count": 6,
+    "avg_confidence": 0.955,
+    "building_count": 6,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 103,
+        "name": "网师园",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 600,
+        "name": "石家大院",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1374,
+        "name": "贾氏盐商住宅",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1425,
+        "name": "马上桥花厅",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 2090,
+        "name": "桃树湾刘氏大屋",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "中轴线布局",
+    "value": 5.56,
+    "term_count": 6,
+    "avg_confidence": 0.9267,
+    "building_count": 6,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 73,
+        "name": "杜甫草堂",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 422,
+        "name": "黄山八面厅",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 833,
+        "name": "芝堰村建筑群",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 840,
+        "name": "王守仁故居",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 862,
+        "name": "世太史第",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "雕花装饰",
+    "value": 5.5,
+    "term_count": 7,
+    "avg_confidence": 0.7857,
+    "building_count": 7,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 563,
+        "name": "胡氏古民居建筑",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 833,
+        "name": "芝堰村建筑群",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 834,
+        "name": "芙蓉村古建筑群",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1408,
+        "name": "河阳村乡土建筑",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1486,
+        "name": "南安中宪第",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "花厅",
+    "value": 5.41,
+    "term_count": 6,
+    "avg_confidence": 0.9017,
+    "building_count": 6,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 600,
+        "name": "石家大院",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 813,
+        "name": "东山民居",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 850,
+        "name": "莫氏庄园",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 894,
+        "name": "理坑村民居",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1374,
+        "name": "贾氏盐商住宅",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "砖木混合结构",
+    "value": 5.05,
+    "term_count": 6,
+    "avg_confidence": 0.8417,
+    "building_count": 6,
+    "dimensions": [
+      "建筑材料",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 841,
+        "name": "青藤书屋",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1374,
+        "name": "贾氏盐商住宅",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1612,
+        "name": "杨家湾老屋",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1639,
+        "name": "龙家大院",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1950,
+        "name": "曲沃薛家大院",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "家族聚居",
+    "value": 4.88,
+    "term_count": 6,
+    "avg_confidence": 0.8133,
+    "building_count": 6,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 142,
+        "name": "东阳卢宅",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 2018,
+        "name": "安溪土楼",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 2027,
+        "name": "水美土堡群",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 2102,
+        "name": "大埔泰安楼",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 2114,
+        "name": "湾底谭氏民居",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "土木结构",
+    "value": 4.74,
+    "term_count": 5,
+    "avg_confidence": 0.948,
+    "building_count": 5,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1527,
+        "name": "东生围",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1747,
+        "name": "泸县屈氏庄园",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 2090,
+        "name": "桃树湾刘氏大屋",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 2097,
+        "name": "联丰花萼楼",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 2105,
+        "name": "大埔光禄第",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "雕花门窗",
+    "value": 4.72,
+    "term_count": 6,
+    "avg_confidence": 0.7867,
+    "building_count": 6,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 276,
+        "name": "诸葛、长乐村民居",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 311,
+        "name": "魏氏庄园",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 466,
+        "name": "流坑村古建筑群",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1516,
+        "name": "羽琌山馆和云亭别墅",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1976,
+        "name": "紫薇山民居",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "木结构",
+    "value": 4.72,
+    "term_count": 5,
+    "avg_confidence": 0.944,
+    "building_count": 5,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 532,
+        "name": "郎德上寨古建筑群",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 840,
+        "name": "王守仁故居",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1591,
+        "name": "寨卜昌村古建筑群",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1738,
+        "name": "寿安陈家大院",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 2147,
+        "name": "同乐傈僳族民居建筑群",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "吊脚楼",
+    "value": 4.69,
+    "term_count": 5,
+    "avg_confidence": 0.938,
+    "building_count": 5,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 532,
+        "name": "郎德上寨古建筑群",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1017,
+        "name": "寨英村古建筑群",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1620,
+        "name": "彭家寨古建筑群",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1662,
+        "name": "石堰坪古建筑群",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1754,
+        "name": "榕江大利村古建筑群",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "花岗岩",
+    "value": 4.66,
+    "term_count": 5,
+    "avg_confidence": 0.932,
+    "building_count": 5,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 312,
+        "name": "丁氏故宅",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 459,
+        "name": "蔡氏古民居建筑群",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1415,
+        "name": "余庆堂",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 2022,
+        "name": "泉港土坑村古建筑群",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 2097,
+        "name": "联丰花萼楼",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "石",
+    "value": 4.65,
+    "term_count": 6,
+    "avg_confidence": 0.775,
+    "building_count": 6,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 293,
+        "name": "丘浚故居",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 536,
+        "name": "喜洲白族古建筑群",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 744,
+        "name": "王家大院",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1077,
+        "name": "姜氏庄园",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1705,
+        "name": "乡城夯土碉楼",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "依山而建",
+    "value": 4.63,
+    "term_count": 5,
+    "avg_confidence": 0.926,
+    "building_count": 5,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 532,
+        "name": "郎德上寨古建筑群",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 744,
+        "name": "王家大院",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1012,
+        "name": "宝箴塞",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1492,
+        "name": "凤岐吴氏大宅",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1591,
+        "name": "寨卜昌村古建筑群",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "三合院",
+    "value": 4.59,
+    "term_count": 5,
+    "avg_confidence": 0.918,
+    "building_count": 5,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 422,
+        "name": "黄山八面厅",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 449,
+        "name": "程氏三宅",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 766,
+        "name": "师家沟古建筑群",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1986,
+        "name": "雅端村古建筑群",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1989,
+        "name": "东阳白坦民宅",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "故居",
+    "value": 4.58,
+    "term_count": 5,
+    "avg_confidence": 0.916,
+    "building_count": 5,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 840,
+        "name": "王守仁故居",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 841,
+        "name": "青藤书屋",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 862,
+        "name": "世太史第",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1660,
+        "name": "田家大院",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1946,
+        "name": "于成龙故居",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "门楼",
+    "value": 4.57,
+    "term_count": 5,
+    "avg_confidence": 0.914,
+    "building_count": 5,
+    "dimensions": [
+      "建筑功能",
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 500,
+        "name": "芋头侗寨古建筑群",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 813,
+        "name": "东山民居",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1425,
+        "name": "马上桥花厅",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1635,
+        "name": "濂溪故里古建筑群",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 2083,
+        "name": "杉木桥胡家大院",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "古民居",
+    "value": 4.55,
+    "term_count": 5,
+    "avg_confidence": 0.91,
+    "building_count": 5,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 453,
+        "name": "西递村古建筑群",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 855,
+        "name": "南屏村古建筑群",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1017,
+        "name": "寨英村古建筑群",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1408,
+        "name": "河阳村乡土建筑",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 2004,
+        "name": "巴慰祖宅",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "正厅",
+    "value": 4.5,
+    "term_count": 5,
+    "avg_confidence": 0.9,
+    "building_count": 5,
+    "dimensions": [
+      "建筑功能",
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 140,
+        "name": "丁村民宅",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 817,
+        "name": "师俭堂",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1352,
+        "name": "玉燕堂",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1367,
+        "name": "敬业堂",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1425,
+        "name": "马上桥花厅",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "院落组合",
+    "value": 4.46,
+    "term_count": 5,
+    "avg_confidence": 0.892,
+    "building_count": 5,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 311,
+        "name": "魏氏庄园",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 472,
+        "name": "康百万庄园",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1516,
+        "name": "羽琌山馆和云亭别墅",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1986,
+        "name": "雅端村古建筑群",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1989,
+        "name": "东阳白坦民宅",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "私家园林",
+    "value": 4.44,
+    "term_count": 5,
+    "avg_confidence": 0.888,
+    "building_count": 5,
+    "dimensions": [
+      "建筑功能",
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 148,
+        "name": "十笏园",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 309,
+        "name": "玉海楼",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 312,
+        "name": "丁氏故宅",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 452,
+        "name": "宏村古建筑群",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 2010,
+        "name": "休宁同安堂",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "马头墙",
+    "value": 4.27,
+    "term_count": 5,
+    "avg_confidence": 0.854,
+    "building_count": 5,
+    "dimensions": [
+      "建筑材料",
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 276,
+        "name": "诸葛、长乐村民居",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 823,
+        "name": "甘熙宅第",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1367,
+        "name": "敬业堂",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 2074,
+        "name": "高家花屋",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 2092,
+        "name": "宝镜何家大院",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "灰塑",
+    "value": 4.25,
+    "term_count": 5,
+    "avg_confidence": 0.85,
+    "building_count": 4,
+    "dimensions": [
+      "建筑材料",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 328,
+        "name": "可园",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 503,
+        "name": "东华里古建筑群",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1667,
+        "name": "潮州老城古民居建筑群",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1667,
+        "name": "潮州老城古民居建筑群",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 2112,
+        "name": "琼山侯家大院",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "厅堂",
+    "value": 4.18,
+    "term_count": 5,
+    "avg_confidence": 0.836,
+    "building_count": 5,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 276,
+        "name": "诸葛、长乐村民居",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 814,
+        "name": "艺圃",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1361,
+        "name": "近园",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1404,
+        "name": "寺平村乡土建筑",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1421,
+        "name": "雪溪胡氏大院",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "砖雕工艺",
+    "value": 4.08,
+    "term_count": 5,
+    "avg_confidence": 0.816,
+    "building_count": 5,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 140,
+        "name": "丁村民宅",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 840,
+        "name": "王守仁故居",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1672,
+        "name": "清晖园",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 2010,
+        "name": "休宁同安堂",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 2161,
+        "name": "米脂常氏庄园",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "夯土技术",
+    "value": 3.92,
+    "term_count": 6,
+    "avg_confidence": 0.6533,
+    "building_count": 6,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 467,
+        "name": "关西新围、燕翼围",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1476,
+        "name": "大田土堡群",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1705,
+        "name": "乡城夯土碉楼",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 2025,
+        "name": "永泰庄寨建筑群",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 2032,
+        "name": "龙南乌石围",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "天井排水系统",
+    "value": 3.9,
+    "term_count": 5,
+    "avg_confidence": 0.78,
+    "building_count": 5,
+    "dimensions": [
+      "建筑功能",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1516,
+        "name": "羽琌山馆和云亭别墅",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1645,
+        "name": "荫家堂",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1660,
+        "name": "田家大院",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 2036,
+        "name": "十都王家大屋",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 2105,
+        "name": "大埔光禄第",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "西宅东园",
+    "value": 3.85,
+    "term_count": 4,
+    "avg_confidence": 0.9625,
+    "building_count": 3,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 817,
+        "name": "师俭堂",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 817,
+        "name": "师俭堂",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1361,
+        "name": "近园",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1376,
+        "name": "逸圃",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "坐东朝西",
+    "value": 3.81,
+    "term_count": 4,
+    "avg_confidence": 0.9525,
+    "building_count": 4,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1352,
+        "name": "玉燕堂",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1367,
+        "name": "敬业堂",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1428,
+        "name": "三门源叶氏民居",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1527,
+        "name": "东生围",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "防御功能",
+    "value": 3.81,
+    "term_count": 4,
+    "avg_confidence": 0.9525,
+    "building_count": 4,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 457,
+        "name": "安贞堡",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1431,
+        "name": "泰顺土楼",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1613,
+        "name": "百宝寨岩屋",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 2097,
+        "name": "联丰花萼楼",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "五开间",
+    "value": 3.8,
+    "term_count": 4,
+    "avg_confidence": 0.95,
+    "building_count": 3,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 449,
+        "name": "程氏三宅",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 862,
+        "name": "世太史第",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1484,
+        "name": "亭店杨氏民居",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1484,
+        "name": "亭店杨氏民居",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "大厅",
+    "value": 3.75,
+    "term_count": 4,
+    "avg_confidence": 0.9375,
+    "building_count": 3,
+    "dimensions": [
+      "建筑功能",
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 813,
+        "name": "东山民居",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 813,
+        "name": "东山民居",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1374,
+        "name": "贾氏盐商住宅",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1376,
+        "name": "逸圃",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "背山面水",
+    "value": 3.73,
+    "term_count": 4,
+    "avg_confidence": 0.9325,
+    "building_count": 4,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 532,
+        "name": "郎德上寨古建筑群",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1591,
+        "name": "寨卜昌村古建筑群",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 2105,
+        "name": "大埔光禄第",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 2125,
+        "name": "井研雷氏民居",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "悬山顶",
+    "value": 3.72,
+    "term_count": 4,
+    "avg_confidence": 0.93,
+    "building_count": 4,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 322,
+        "name": "夕佳山民居",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 394,
+        "name": "乔家大院",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 736,
+        "name": "柳氏民居",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 760,
+        "name": "渠家大院",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "天井布局",
+    "value": 3.68,
+    "term_count": 4,
+    "avg_confidence": 0.92,
+    "building_count": 4,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 457,
+        "name": "安贞堡",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1521,
+        "name": "驿前石屋里民宅",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1673,
+        "name": "长围村围屋",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 2125,
+        "name": "井研雷氏民居",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "夯土",
+    "value": 3.68,
+    "term_count": 4,
+    "avg_confidence": 0.92,
+    "building_count": 4,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1795,
+        "name": "邦达仓",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1800,
+        "name": "拉鲁颇章",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 2022,
+        "name": "泉港土坑村古建筑群",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 2097,
+        "name": "联丰花萼楼",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "浮雕",
+    "value": 3.65,
+    "term_count": 4,
+    "avg_confidence": 0.9125,
+    "building_count": 4,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 457,
+        "name": "安贞堡",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 492,
+        "name": "大水井古建筑群",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1483,
+        "name": "九头马民居",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1484,
+        "name": "亭店杨氏民居",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "商铺",
+    "value": 3.63,
+    "term_count": 4,
+    "avg_confidence": 0.9075,
+    "building_count": 4,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 817,
+        "name": "师俭堂",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1017,
+        "name": "寨英村古建筑群",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1503,
+        "name": "明园",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1797,
+        "name": "桑珠颇章",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "民居建筑",
+    "value": 3.58,
+    "term_count": 4,
+    "avg_confidence": 0.895,
+    "building_count": 4,
+    "dimensions": [
+      "建筑功能",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 143,
+        "name": "祥集弄民宅",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 856,
+        "name": "江村古建筑群",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1852,
+        "name": "青城古民居",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 2102,
+        "name": "大埔泰安楼",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "私塾",
+    "value": 3.56,
+    "term_count": 4,
+    "avg_confidence": 0.89,
+    "building_count": 4,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 145,
+        "name": "牟氏庄园",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1302,
+        "name": "闫景李家大院",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1639,
+        "name": "龙家大院",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 2090,
+        "name": "桃树湾刘氏大屋",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "青瓦",
+    "value": 3.56,
+    "term_count": 4,
+    "avg_confidence": 0.89,
+    "building_count": 4,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 312,
+        "name": "丁氏故宅",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 322,
+        "name": "夕佳山民居",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 532,
+        "name": "郎德上寨古建筑群",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 2090,
+        "name": "桃树湾刘氏大屋",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "花园",
+    "value": 3.5,
+    "term_count": 4,
+    "avg_confidence": 0.875,
+    "building_count": 4,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 144,
+        "name": "崇礼住宅",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 819,
+        "name": "吴氏宅第",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1667,
+        "name": "潮州老城古民居建筑群",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 2105,
+        "name": "大埔光禄第",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "轴线对称",
+    "value": 3.47,
+    "term_count": 4,
+    "avg_confidence": 0.8675,
+    "building_count": 4,
+    "dimensions": [
+      "建筑空间布局",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 142,
+        "name": "东阳卢宅",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 441,
+        "name": "斯氏古民居建筑群",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1067,
+        "name": "吴堡石城",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1420,
+        "name": "林宅",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "院落式",
+    "value": 3.43,
+    "term_count": 4,
+    "avg_confidence": 0.8575,
+    "building_count": 4,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 148,
+        "name": "十笏园",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1261,
+        "name": "陈廷敬故居",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 2023,
+        "name": "坂埔古厝",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 2083,
+        "name": "杉木桥胡家大院",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "书院",
+    "value": 3.39,
+    "term_count": 4,
+    "avg_confidence": 0.8475,
+    "building_count": 4,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 452,
+        "name": "宏村古建筑群",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 467,
+        "name": "关西新围、燕翼围",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 834,
+        "name": "芙蓉村古建筑群",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1660,
+        "name": "田家大院",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "博物馆",
+    "value": 3.36,
+    "term_count": 4,
+    "avg_confidence": 0.84,
+    "building_count": 4,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 312,
+        "name": "丁氏故宅",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 328,
+        "name": "可园",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 744,
+        "name": "王家大院",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 748,
+        "name": "曹家大院",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "客厅",
+    "value": 3.35,
+    "term_count": 4,
+    "avg_confidence": 0.8375,
+    "building_count": 4,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 905,
+        "name": "蒲松龄故宅",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1362,
+        "name": "杨柳村古建筑群",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 2043,
+        "name": "洄村古楼",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 2112,
+        "name": "琼山侯家大院",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "穿斗式构架",
+    "value": 3.25,
+    "term_count": 4,
+    "avg_confidence": 0.8125,
+    "building_count": 4,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 289,
+        "name": "许驸马府",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1591,
+        "name": "寨卜昌村古建筑群",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1660,
+        "name": "田家大院",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 2125,
+        "name": "井研雷氏民居",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "传统木作",
+    "value": 3.2,
+    "term_count": 5,
+    "avg_confidence": 0.64,
+    "building_count": 5,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 532,
+        "name": "郎德上寨古建筑群",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 823,
+        "name": "甘熙宅第",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 841,
+        "name": "青藤书屋",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 856,
+        "name": "江村古建筑群",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 2025,
+        "name": "永泰庄寨建筑群",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "厢房",
+    "value": 3.16,
+    "term_count": 4,
+    "avg_confidence": 0.79,
+    "building_count": 4,
+    "dimensions": [
+      "建筑功能",
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 140,
+        "name": "丁村民宅",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1399,
+        "name": "七家厅",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1425,
+        "name": "马上桥花厅",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1976,
+        "name": "紫薇山民居",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "假山石",
+    "value": 3.14,
+    "term_count": 4,
+    "avg_confidence": 0.785,
+    "building_count": 4,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 148,
+        "name": "十笏园",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 151,
+        "name": "个园",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 418,
+        "name": "耦园",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1361,
+        "name": "近园",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "合院式",
+    "value": 3.03,
+    "term_count": 4,
+    "avg_confidence": 0.7575,
+    "building_count": 4,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 600,
+        "name": "石家大院",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1449,
+        "name": "上庄古建筑群",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1790,
+        "name": "红河县东门楼及迤萨民居",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 2161,
+        "name": "米脂常氏庄园",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "军事防御",
+    "value": 2.9,
+    "term_count": 3,
+    "avg_confidence": 0.9667,
+    "building_count": 3,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 945,
+        "name": "鱼木寨",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1012,
+        "name": "宝箴塞",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1864,
+        "name": "保安古屯田寨堡古建筑群",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "出砖入石",
+    "value": 2.89,
+    "term_count": 3,
+    "avg_confidence": 0.9633,
+    "building_count": 2,
+    "dimensions": [
+      "建筑材料",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 2022,
+        "name": "泉港土坑村古建筑群",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 2023,
+        "name": "坂埔古厝",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 2023,
+        "name": "坂埔古厝",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "三区布局",
+    "value": 2.85,
+    "term_count": 3,
+    "avg_confidence": 0.95,
+    "building_count": 3,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 736,
+        "name": "柳氏民居",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1603,
+        "name": "西蒋村马氏庄园",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1672,
+        "name": "清晖园",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "中轴对称布局",
+    "value": 2.85,
+    "term_count": 3,
+    "avg_confidence": 0.95,
+    "building_count": 3,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 312,
+        "name": "丁氏故宅",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1292,
+        "name": "雷履泰旧居",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1618,
+        "name": "沈鸿宾故居",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "品字形布局",
+    "value": 2.85,
+    "term_count": 3,
+    "avg_confidence": 0.95,
+    "building_count": 2,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1989,
+        "name": "东阳白坦民宅",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1989,
+        "name": "东阳白坦民宅",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 2126,
+        "name": "屏山龙氏山庄",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "四合院式",
+    "value": 2.85,
+    "term_count": 3,
+    "avg_confidence": 0.95,
+    "building_count": 3,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 322,
+        "name": "夕佳山民居",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 492,
+        "name": "大水井古建筑群",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1017,
+        "name": "寨英村古建筑群",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "干栏式",
+    "value": 2.85,
+    "term_count": 3,
+    "avg_confidence": 0.95,
+    "building_count": 3,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 532,
+        "name": "郎德上寨古建筑群",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1017,
+        "name": "寨英村古建筑群",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1591,
+        "name": "寨卜昌村古建筑群",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "风雨桥",
+    "value": 2.85,
+    "term_count": 3,
+    "avg_confidence": 0.95,
+    "building_count": 3,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 500,
+        "name": "芋头侗寨古建筑群",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1591,
+        "name": "寨卜昌村古建筑群",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1620,
+        "name": "彭家寨古建筑群",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  }
+]

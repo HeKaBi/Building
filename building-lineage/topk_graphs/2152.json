@@ -1,0 +1,150 @@
+{
+  "center_building": {
+    "line_no": "2152",
+    "name": "达律王府",
+    "building_type": "宫殿",
+    "start_dynasty": "元",
+    "century_num": 13,
+    "province": "西藏自治区",
+    "region": "西南",
+    "address": "西藏自治区贡觉县",
+    "start_time_confidence": 0.85,
+    "structure_terms": [
+      "石木混合结构",
+      "土木混合结构",
+      "平屋顶",
+      "土石夯筑"
+    ],
+    "layout_terms": [
+      "长方形平面",
+      "集中式布局"
+    ],
+    "material_terms": [
+      "石材",
+      "木材",
+      "生土"
+    ],
+    "craft_terms": [
+      "彩绘天花",
+      "壁画装饰",
+      "元代佛像画风"
+    ],
+    "function_terms": [
+      "宫殿",
+      "王府"
+    ],
+    "material_categories": [
+      "木材类",
+      "石材类",
+      "土类"
+    ],
+    "structure_cluster": "石木混合平顶型",
+    "structure_cluster_summary": "以石木与土木混合结构为主，平面呈长方形，采用集中式布局与藏式平屋顶。",
+    "material_primary_category": "木材类",
+    "structure_evidence": "达律王府整座建筑平面呈长方形，主体结构为三层，以石木和土木混合结构为主。 || 屋顶为典型藏式平屋顶，冬季时南向阳光，同时避开了河谷地带的强风。 || 达律王府整座建筑平面呈长方形 || 以石木和土木混合结构为主。",
+    "semantic_terms": [
+      "石木混合结构",
+      "土木混合结构",
+      "平屋顶",
+      "土石夯筑",
+      "长方形平面",
+      "集中式布局",
+      "石材",
+      "木材",
+      "生土",
+      "彩绘天花",
+      "壁画装饰",
+      "元代佛像画风",
+      "宫殿",
+      "王府",
+      "木材类",
+      "石材类",
+      "土类"
+    ]
+  },
+  "lineage_id": "宫殿-L06",
+  "lineage_name": "西藏-集中式布局·平屋顶-生土谱系",
+  "building_type": "宫殿",
+  "signature_features": {
+    "primary_structure": "平屋顶",
+    "primary_layout": "集中式布局",
+    "support_material": "生土",
+    "support_craft": "彩绘天花",
+    "dominant_province": "西藏",
+    "dominant_dynasty": "元",
+    "dominant_region": "西南"
+  },
+  "signature_summary": "以集中式布局、平屋顶为核心，辅以生土，在西藏样本中形成稳定的营造共同体。",
+  "community_member_count": 1,
+  "nodes": [
+    {
+      "line_no": "2152",
+      "name": "达律王府",
+      "building_type": "宫殿",
+      "start_dynasty": "元",
+      "century_num": 13,
+      "province": "西藏自治区",
+      "region": "西南",
+      "address": "西藏自治区贡觉县",
+      "start_time_confidence": 0.85,
+      "structure_terms": [
+        "石木混合结构",
+        "土木混合结构",
+        "平屋顶",
+        "土石夯筑"
+      ],
+      "layout_terms": [
+        "长方形平面",
+        "集中式布局"
+      ],
+      "material_terms": [
+        "石材",
+        "木材",
+        "生土"
+      ],
+      "craft_terms": [
+        "彩绘天花",
+        "壁画装饰",
+        "元代佛像画风"
+      ],
+      "function_terms": [
+        "宫殿",
+        "王府"
+      ],
+      "material_categories": [
+        "木材类",
+        "石材类",
+        "土类"
+      ],
+      "structure_cluster": "石木混合平顶型",
+      "structure_cluster_summary": "以石木与土木混合结构为主，平面呈长方形，采用集中式布局与藏式平屋顶。",
+      "material_primary_category": "木材类",
+      "structure_evidence": "达律王府整座建筑平面呈长方形，主体结构为三层，以石木和土木混合结构为主。 || 屋顶为典型藏式平屋顶，冬季时南向阳光，同时避开了河谷地带的强风。 || 达律王府整座建筑平面呈长方形 || 以石木和土木混合结构为主。",
+      "semantic_terms": [
+        "石木混合结构",
+        "土木混合结构",
+        "平屋顶",
+        "土石夯筑",
+        "长方形平面",
+        "集中式布局",
+        "石材",
+        "木材",
+        "生土",
+        "彩绘天花",
+        "壁画装饰",
+        "元代佛像画风",
+        "宫殿",
+        "王府",
+        "木材类",
+        "石材类",
+        "土类"
+      ],
+      "id": "2152",
+      "role": "center",
+      "hop": 0,
+      "score": 1,
+      "shared_features": []
+    }
+  ],
+  "edges": []
+}

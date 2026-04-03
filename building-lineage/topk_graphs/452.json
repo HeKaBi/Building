@@ -1,0 +1,201 @@
+{
+  "center_building": {
+    "line_no": "452",
+    "name": "宏村古建筑群",
+    "building_type": "民居",
+    "start_dynasty": "宋",
+    "century_num": 12,
+    "province": "安徽省",
+    "region": "华东",
+    "address": "安徽省黟县",
+    "start_time_confidence": 0.99,
+    "structure_terms": [
+      "天井院落",
+      "回廊式",
+      "二进院落",
+      "合院布局",
+      "多进院落"
+    ],
+    "layout_terms": [
+      "牛形布局",
+      "水街巷",
+      "月沼中心布局"
+    ],
+    "material_terms": [
+      "木材",
+      "砖雕",
+      "石雕"
+    ],
+    "craft_terms": [
+      "木雕",
+      "砖雕",
+      "石雕"
+    ],
+    "function_terms": [
+      "住宅",
+      "宗祠",
+      "书院",
+      "私家园林"
+    ],
+    "material_categories": [
+      "木材类",
+      "石材类",
+      "砖瓦类"
+    ],
+    "structure_cluster": "合院民居型",
+    "structure_cluster_summary": "采用合院布局，多进院落沿中轴线展开，常结合宅园一体，注重对称与功能分区。",
+    "material_primary_category": "木材类",
+    "structure_evidence": "住宅多为二进院落，有些人家还将圳水引入宅内，形成水院，开辟了鱼池。 || 承志堂……占地约2100平方米，内部有房屋60餘间，围绕着九个天井分别布置。正厅和后厅均为三间回廊式建筑，两侧是家塾厅和鱼塘厅，后院是一座花园。 || 全宅有木柱136根，木柱和额枋间均有雕刻…… || 该村的另一大特色是它的平面采用仿生学的“牛”形布局。以雷岗山为牛头，村口的两株古树为牛角，月沼为牛心，南湖为牛肚，蜿蜒的水圳为牛肠，民居建筑为牛身，四座古桥为牛脚…… || 村内街巷大都傍水而建，民居也都围绕着月沼布局。 || 村落平面采用“牛”形布局……水系网络由水圳、月沼、南湖等组成，形成独特的水街巷空间。",
+    "semantic_terms": [
+      "天井院落",
+      "回廊式",
+      "二进院落",
+      "合院布局",
+      "多进院落",
+      "牛形布局",
+      "水街巷",
+      "月沼中心布局",
+      "木材",
+      "砖雕",
+      "石雕",
+      "木雕",
+      "住宅",
+      "宗祠",
+      "书院",
+      "私家园林",
+      "木材类",
+      "石材类",
+      "砖瓦类"
+    ]
+  },
+  "lineage_id": "民居-L10",
+  "lineage_name": "江苏-内园紧凑·多进院落-砖瓦谱系",
+  "building_type": "民居",
+  "signature_features": {
+    "primary_structure": "多进院落",
+    "primary_layout": "内园紧凑",
+    "support_material": "砖瓦",
+    "support_craft": "叠石",
+    "dominant_province": "江苏",
+    "dominant_dynasty": "宋",
+    "dominant_region": "华东"
+  },
+  "signature_summary": "以内园紧凑、多进院落为核心，辅以砖瓦，在江苏样本中形成稳定的营造共同体。",
+  "community_member_count": 2,
+  "nodes": [
+    {
+      "id": "452",
+      "line_no": "452",
+      "name": "宏村古建筑群",
+      "building_type": "民居",
+      "province": "安徽省",
+      "start_dynasty": "宋",
+      "century_num": 12,
+      "role": "center",
+      "hop": 0,
+      "score": 1,
+      "shared_features": [],
+      "structure_terms": [
+        "天井院落",
+        "回廊式",
+        "二进院落",
+        "合院布局",
+        "多进院落"
+      ],
+      "layout_terms": [
+        "牛形布局",
+        "水街巷",
+        "月沼中心布局"
+      ],
+      "material_terms": [
+        "木材",
+        "砖雕",
+        "石雕"
+      ],
+      "craft_terms": [
+        "木雕",
+        "砖雕",
+        "石雕"
+      ],
+      "function_terms": [
+        "住宅",
+        "宗祠",
+        "书院",
+        "私家园林"
+      ]
+    },
+    {
+      "id": "103",
+      "line_no": "103",
+      "name": "网师园",
+      "building_type": "民居",
+      "province": "江苏省",
+      "start_dynasty": "宋",
+      "century_num": 12,
+      "role": "member",
+      "hop": 1,
+      "score": 0.5819,
+      "shared_features": [
+        "多进院落",
+        "合院布局",
+        "木材",
+        "内园紧凑",
+        "砖瓦",
+        "叠石"
+      ],
+      "structure_terms": [
+        "宅园合一",
+        "中轴对称",
+        "四进院落",
+        "合院布局",
+        "多进院落"
+      ],
+      "layout_terms": [
+        "中轴对称",
+        "内园紧凑",
+        "池水为中心",
+        "东宅西园"
+      ],
+      "material_terms": [
+        "石材",
+        "木材",
+        "砖瓦"
+      ],
+      "craft_terms": [
+        "叠石",
+        "临水布局",
+        "亭宇增建"
+      ],
+      "function_terms": [
+        "宴乐空间",
+        "书房",
+        "夜花园"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "103",
+      "target": "452",
+      "weight": 0.2339,
+      "reasons": [
+        "共享结构：多进院落、合院布局",
+        "共享材料：木材",
+        "同属结构簇：合院民居型",
+        "同属华东",
+        "同朝代：宋"
+      ],
+      "components": {
+        "structure_terms": 0.1117,
+        "layout_terms": 0,
+        "material_terms": 0.0886,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 1,
+        "region": 0.6
+      }
+    }
+  ]
+}

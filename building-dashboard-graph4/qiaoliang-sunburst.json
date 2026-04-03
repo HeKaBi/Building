@@ -1,0 +1,221 @@
+{
+  "building_type": "桥梁",
+  "title": "桥梁：主要朝代-主要地域-建筑结构",
+  "dimension_order": [
+    "主要朝代",
+    "主要地域",
+    "建筑结构"
+  ],
+  "data": [
+    {
+      "name": "明",
+      "value": 29,
+      "children": [
+        {
+          "name": "其他",
+          "value": 4,
+          "children": [
+            {
+              "name": "其他",
+              "value": 2
+            },
+            {
+              "name": "多孔",
+              "value": 1
+            },
+            {
+              "name": "石拱",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "华东",
+          "value": 12,
+          "children": [
+            {
+              "name": "其他",
+              "value": 4
+            },
+            {
+              "name": "多孔",
+              "value": 5
+            },
+            {
+              "name": "石拱",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "name": "华北",
+          "value": 8,
+          "children": [
+            {
+              "name": "其他",
+              "value": 1
+            },
+            {
+              "name": "多孔",
+              "value": 6
+            },
+            {
+              "name": "石拱",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "西南",
+          "value": 5,
+          "children": [
+            {
+              "name": "其他",
+              "value": 3
+            },
+            {
+              "name": "多孔",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "清",
+      "value": 25,
+      "children": [
+        {
+          "name": "其他",
+          "value": 10,
+          "children": [
+            {
+              "name": "其他",
+              "value": 5
+            },
+            {
+              "name": "多孔",
+              "value": 1
+            },
+            {
+              "name": "拱券",
+              "value": 2
+            },
+            {
+              "name": "石拱",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "name": "华东",
+          "value": 8,
+          "children": [
+            {
+              "name": "其他",
+              "value": 3
+            },
+            {
+              "name": "拱券",
+              "value": 4
+            },
+            {
+              "name": "石拱",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "华北",
+          "value": 1,
+          "children": [
+            {
+              "name": "拱券",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "西南",
+          "value": 6,
+          "children": [
+            {
+              "name": "其他",
+              "value": 3
+            },
+            {
+              "name": "多孔",
+              "value": 1
+            },
+            {
+              "name": "拱券",
+              "value": 1
+            },
+            {
+              "name": "石拱",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "宋",
+      "value": 22,
+      "children": [
+        {
+          "name": "其他",
+          "value": 2,
+          "children": [
+            {
+              "name": "其他",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "name": "华东",
+          "value": 20,
+          "children": [
+            {
+              "name": "其他",
+              "value": 10
+            },
+            {
+              "name": "拱券",
+              "value": 1
+            },
+            {
+              "name": "石拱",
+              "value": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "building_count": 76,
+    "dynasty_node_count": 3,
+    "region_node_count": 4,
+    "structure_node_count": 4,
+    "leaf_path_count": 27,
+    "dynasty_nodes": [
+      "明",
+      "清",
+      "宋"
+    ],
+    "region_nodes": [
+      "其他",
+      "华东",
+      "华北",
+      "西南"
+    ],
+    "structure_nodes": [
+      "其他",
+      "多孔",
+      "拱券",
+      "石拱"
+    ]
+  }
+}

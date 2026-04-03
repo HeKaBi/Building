@@ -1,0 +1,45 @@
+{
+  "pipeline": "stage10_lineage_pipeline",
+  "mode": "no_embedding_no_training",
+  "building_count": 410,
+  "type_order": [
+    "民居",
+    "官府",
+    "桥梁",
+    "宫殿"
+  ],
+  "type_stats": [
+    {
+      "building_type": "民居",
+      "building_count": 195,
+      "edge_count": 506,
+      "community_count": 18
+    },
+    {
+      "building_type": "官府",
+      "building_count": 105,
+      "edge_count": 266,
+      "community_count": 23
+    },
+    {
+      "building_type": "桥梁",
+      "building_count": 92,
+      "edge_count": 287,
+      "community_count": 13
+    },
+    {
+      "building_type": "宫殿",
+      "building_count": 18,
+      "edge_count": 12,
+      "community_count": 14
+    }
+  ],
+  "lineage_count": 68,
+  "topk_graph_count": 410,
+  "parameters": {
+    "mutual_k": 12,
+    "min_weight": 0.18,
+    "resolution": 1.12,
+    "top_k": 10
+  }
+}

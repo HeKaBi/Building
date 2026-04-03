@@ -1,0 +1,244 @@
+{
+  "nodes": [
+    {
+      "name": "元",
+      "depth": 0
+    },
+    {
+      "name": "其他朝代",
+      "depth": 0
+    },
+    {
+      "name": "唐",
+      "depth": 0
+    },
+    {
+      "name": "宋",
+      "depth": 0
+    },
+    {
+      "name": "明",
+      "depth": 0
+    },
+    {
+      "name": "清",
+      "depth": 0
+    },
+    {
+      "name": "其他桥梁体系",
+      "depth": 1
+    },
+    {
+      "name": "复合桥体系",
+      "depth": 1
+    },
+    {
+      "name": "廊桥木构体系",
+      "depth": 1
+    },
+    {
+      "name": "木拱廊桥体系",
+      "depth": 1
+    },
+    {
+      "name": "石拱桥体系",
+      "depth": 1
+    },
+    {
+      "name": "石梁桥体系",
+      "depth": 1
+    },
+    {
+      "name": "木材类",
+      "depth": 2
+    },
+    {
+      "name": "灰浆胶结类",
+      "depth": 2
+    },
+    {
+      "name": "石材类",
+      "depth": 2
+    },
+    {
+      "name": "砖瓦类",
+      "depth": 2
+    },
+    {
+      "name": "金属类",
+      "depth": 2
+    }
+  ],
+  "links": [
+    {
+      "source": "元",
+      "target": "廊桥木构体系",
+      "value": 1
+    },
+    {
+      "source": "元",
+      "target": "石拱桥体系",
+      "value": 2
+    },
+    {
+      "source": "元",
+      "target": "石梁桥体系",
+      "value": 1
+    },
+    {
+      "source": "其他朝代",
+      "target": "其他桥梁体系",
+      "value": 1
+    },
+    {
+      "source": "其他朝代",
+      "target": "复合桥体系",
+      "value": 1
+    },
+    {
+      "source": "其他朝代",
+      "target": "石拱桥体系",
+      "value": 5
+    },
+    {
+      "source": "其他桥梁体系",
+      "target": "石材类",
+      "value": 2
+    },
+    {
+      "source": "唐",
+      "target": "复合桥体系",
+      "value": 2
+    },
+    {
+      "source": "唐",
+      "target": "木拱廊桥体系",
+      "value": 1
+    },
+    {
+      "source": "唐",
+      "target": "石拱桥体系",
+      "value": 2
+    },
+    {
+      "source": "复合桥体系",
+      "target": "木材类",
+      "value": 2
+    },
+    {
+      "source": "复合桥体系",
+      "target": "石材类",
+      "value": 4
+    },
+    {
+      "source": "宋",
+      "target": "复合桥体系",
+      "value": 2
+    },
+    {
+      "source": "宋",
+      "target": "廊桥木构体系",
+      "value": 1
+    },
+    {
+      "source": "宋",
+      "target": "石拱桥体系",
+      "value": 12
+    },
+    {
+      "source": "宋",
+      "target": "石梁桥体系",
+      "value": 7
+    },
+    {
+      "source": "廊桥木构体系",
+      "target": "木材类",
+      "value": 7
+    },
+    {
+      "source": "廊桥木构体系",
+      "target": "石材类",
+      "value": 3
+    },
+    {
+      "source": "廊桥木构体系",
+      "target": "金属类",
+      "value": 1
+    },
+    {
+      "source": "明",
+      "target": "复合桥体系",
+      "value": 1
+    },
+    {
+      "source": "明",
+      "target": "木拱廊桥体系",
+      "value": 4
+    },
+    {
+      "source": "明",
+      "target": "石拱桥体系",
+      "value": 21
+    },
+    {
+      "source": "明",
+      "target": "石梁桥体系",
+      "value": 3
+    },
+    {
+      "source": "木拱廊桥体系",
+      "target": "木材类",
+      "value": 5
+    },
+    {
+      "source": "木拱廊桥体系",
+      "target": "石材类",
+      "value": 1
+    },
+    {
+      "source": "清",
+      "target": "其他桥梁体系",
+      "value": 1
+    },
+    {
+      "source": "清",
+      "target": "廊桥木构体系",
+      "value": 9
+    },
+    {
+      "source": "清",
+      "target": "木拱廊桥体系",
+      "value": 1
+    },
+    {
+      "source": "清",
+      "target": "石拱桥体系",
+      "value": 14
+    },
+    {
+      "source": "石拱桥体系",
+      "target": "木材类",
+      "value": 1
+    },
+    {
+      "source": "石拱桥体系",
+      "target": "灰浆胶结类",
+      "value": 1
+    },
+    {
+      "source": "石拱桥体系",
+      "target": "石材类",
+      "value": 53
+    },
+    {
+      "source": "石拱桥体系",
+      "target": "砖瓦类",
+      "value": 1
+    },
+    {
+      "source": "石梁桥体系",
+      "target": "石材类",
+      "value": 11
+    }
+  ]
+}

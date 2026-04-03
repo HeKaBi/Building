@@ -1,0 +1,1190 @@
+{
+  "center_building": {
+    "line_no": "117",
+    "name": "清远楼",
+    "building_type": "官府",
+    "start_dynasty": "明",
+    "century_num": 15,
+    "province": "河北省",
+    "region": "华北",
+    "address": "河北省张家口市宣化区",
+    "start_time_confidence": 0.98,
+    "structure_terms": [
+      "高台楼阁式",
+      "重檐歇山顶",
+      "回廊结构",
+      "抱厦",
+      "楼阁化",
+      "歇山顶",
+      "高台基座"
+    ],
+    "layout_terms": [
+      "十字门洞",
+      "四门通衢",
+      "中心偏东布局"
+    ],
+    "material_terms": [
+      "青砖",
+      "条石",
+      "琉璃瓦",
+      "布瓦"
+    ],
+    "craft_terms": [
+      "三踩单翘斗拱",
+      "九踩斗拱",
+      "通天柱",
+      "六椽结构"
+    ],
+    "function_terms": [
+      "钟楼",
+      "报时建筑",
+      "镇城设施"
+    ],
+    "material_categories": [
+      "砖瓦类",
+      "石材类"
+    ],
+    "structure_cluster": "高台楼阁型",
+    "structure_cluster_summary": "以高大台基承托木构楼阁，多采用重檐歇山顶与回廊结构，具中轴对称布局。",
+    "material_primary_category": "砖瓦类",
+    "structure_evidence": "清远楼为高台楼阁式建筑，其台基26米（南北）×28米（东西），高约8米。 || 清远楼全楼高25米，是一座重檐多角十字脊歇山顶的高大建筑。 || 台基上楼阁面阔三间，进深六椽，周围为回廊，前后面各有一间抱廈，均通顶层。 || 清远楼开十字门洞，四门洞上有石匾，南“昌平”，北“广灵”，东“安定”，西“大新”，与所对城门同名，即四门通衢。 || 清远楼为宣化城钟楼，位于宣化城内偏东。 || 楼建在高8米的十字券洞上，南与昌平，北与广灵，东与定安，西与大新四门通衢。",
+    "semantic_terms": [
+      "高台楼阁式",
+      "重檐歇山顶",
+      "回廊结构",
+      "抱厦",
+      "楼阁化",
+      "歇山顶",
+      "高台基座",
+      "十字门洞",
+      "四门通衢",
+      "中心偏东布局",
+      "青砖",
+      "条石",
+      "琉璃瓦",
+      "布瓦",
+      "三踩单翘斗拱",
+      "九踩斗拱",
+      "通天柱",
+      "六椽结构",
+      "钟楼",
+      "报时建筑",
+      "镇城设施",
+      "砖瓦类",
+      "石材类"
+    ]
+  },
+  "lineage_id": "官府-L05",
+  "lineage_name": "明-坐北朝南·楼阁化-青砖谱系",
+  "building_type": "官府",
+  "signature_features": {
+    "primary_structure": "楼阁化",
+    "primary_layout": "坐北朝南",
+    "support_material": "青砖",
+    "support_craft": "砖券砌筑",
+    "dominant_province": "河北",
+    "dominant_dynasty": "明",
+    "dominant_region": "华北"
+  },
+  "signature_summary": "以坐北朝南、楼阁化为核心，辅以青砖，在明样本中形成稳定的营造共同体。",
+  "community_member_count": 11,
+  "nodes": [
+    {
+      "id": "117",
+      "line_no": "117",
+      "name": "清远楼",
+      "building_type": "官府",
+      "province": "河北省",
+      "start_dynasty": "明",
+      "century_num": 15,
+      "role": "center",
+      "hop": 0,
+      "score": 1,
+      "shared_features": [],
+      "structure_terms": [
+        "高台楼阁式",
+        "重檐歇山顶",
+        "回廊结构",
+        "抱厦",
+        "楼阁化",
+        "歇山顶",
+        "高台基座"
+      ],
+      "layout_terms": [
+        "十字门洞",
+        "四门通衢",
+        "中心偏东布局"
+      ],
+      "material_terms": [
+        "青砖",
+        "条石",
+        "琉璃瓦",
+        "布瓦"
+      ],
+      "craft_terms": [
+        "三踩单翘斗拱",
+        "九踩斗拱",
+        "通天柱",
+        "六椽结构"
+      ],
+      "function_terms": [
+        "钟楼",
+        "报时建筑",
+        "镇城设施"
+      ]
+    },
+    {
+      "id": "1242",
+      "line_no": "1242",
+      "name": "隰县鼓楼",
+      "building_type": "官府",
+      "province": "山西省",
+      "start_dynasty": "明",
+      "century_num": 17,
+      "role": "member",
+      "hop": 1,
+      "score": 0.6064,
+      "shared_features": [
+        "楼阁化",
+        "歇山顶",
+        "青砖",
+        "坐北朝南",
+        "砖券砌筑"
+      ],
+      "structure_terms": [
+        "重檐十字歇山顶",
+        "梁架结构",
+        "墩台结构",
+        "楼阁化",
+        "木构架",
+        "歇山顶"
+      ],
+      "layout_terms": [
+        "十字券门洞",
+        "四面悬匾布局",
+        "露天梯道"
+      ],
+      "material_terms": [
+        "青砖",
+        "朱红涂料"
+      ],
+      "craft_terms": [
+        "明代原构",
+        "修葺可考工艺"
+      ],
+      "function_terms": [
+        "报时设施",
+        "地标建筑"
+      ]
+    },
+    {
+      "id": "1896",
+      "line_no": "1896",
+      "name": "邢台清风楼",
+      "building_type": "官府",
+      "province": "河北省",
+      "start_dynasty": "唐",
+      "century_num": 15,
+      "role": "member",
+      "hop": 1,
+      "score": 0.5987,
+      "shared_features": [
+        "重檐歇山顶",
+        "高台基座",
+        "布瓦",
+        "楼阁化",
+        "坐北朝南",
+        "青砖"
+      ],
+      "structure_terms": [
+        "重檐歇山顶",
+        "减柱造",
+        "抬梁式",
+        "斗拱",
+        "砖砌台基",
+        "楼阁化",
+        "歇山顶",
+        "斗拱承托",
+        "高台基座"
+      ],
+      "layout_terms": [
+        "面阔五间",
+        "进深三间",
+        "回廊",
+        "平座",
+        "双层楼阁"
+      ],
+      "material_terms": [
+        "布瓦",
+        "砖",
+        "石材",
+        "木材"
+      ],
+      "craft_terms": [
+        "减柱造",
+        "插金梁",
+        "落架维修",
+        "五踩重昂斗拱"
+      ],
+      "function_terms": [
+        "图书馆",
+        "文物展厅",
+        "公共展示空间"
+      ]
+    },
+    {
+      "id": "367",
+      "line_no": "367",
+      "name": "边靖楼",
+      "building_type": "官府",
+      "province": "山西省",
+      "start_dynasty": "明",
+      "century_num": 14,
+      "role": "member",
+      "hop": 1,
+      "score": 0.5206,
+      "shared_features": [
+        "回廊结构",
+        "高台基座",
+        "楼阁化",
+        "坐北朝南",
+        "青砖",
+        "砖券砌筑"
+      ],
+      "structure_terms": [
+        "砖木结构",
+        "四檐歇山顶",
+        "重檐楼阁",
+        "回廊结构",
+        "平坐层",
+        "楼阁化",
+        "木构架",
+        "歇山顶",
+        "高台基座"
+      ],
+      "layout_terms": [
+        "坐北朝南",
+        "台基楼身组合",
+        "面阔七间",
+        "进深五间",
+        "上楼马道"
+      ],
+      "material_terms": [
+        "砖",
+        "木材",
+        "石券"
+      ],
+      "craft_terms": [
+        "斗栱",
+        "五踩重翘",
+        "五踩重昂",
+        "六架椽屋",
+        "重叠柱网"
+      ],
+      "function_terms": [
+        "军事瞭望",
+        "指挥作战",
+        "制高点防御"
+      ]
+    },
+    {
+      "id": "1276",
+      "line_no": "1276",
+      "name": "唱经楼",
+      "building_type": "官府",
+      "province": "山西省",
+      "start_dynasty": "明",
+      "century_num": 14,
+      "role": "member",
+      "hop": 1,
+      "score": 0.4754,
+      "shared_features": [
+        "楼阁化",
+        "歇山顶",
+        "坐北朝南",
+        "青砖",
+        "砖券砌筑"
+      ],
+      "structure_terms": [
+        "歇山顶",
+        "重檐十字歇山顶",
+        "悬山式顶",
+        "拱券结构",
+        "木构楼阁",
+        "楼阁化",
+        "木构架",
+        "合院布局",
+        "悬山顶"
+      ],
+      "layout_terms": [
+        "工字形格局",
+        "坐南朝北",
+        "院落组合"
+      ],
+      "material_terms": [
+        "孔雀蓝琉璃瓦"
+      ],
+      "craft_terms": [
+        "落架拆卸维修",
+        "整体拆卸复原"
+      ],
+      "function_terms": [
+        "科举唱榜场所",
+        "宣唱名次建筑",
+        "科举文化建筑"
+      ]
+    },
+    {
+      "id": "1087",
+      "line_no": "1087",
+      "name": "永昌钟鼓楼",
+      "building_type": "官府",
+      "province": "甘肃省",
+      "start_dynasty": "明",
+      "century_num": 16,
+      "role": "member",
+      "hop": 1,
+      "score": 0.4724,
+      "shared_features": [
+        "高台基座",
+        "楼阁化",
+        "青砖",
+        "坐北朝南",
+        "砖券砌筑"
+      ],
+      "structure_terms": [
+        "重檐盝顶",
+        "重檐庑殿顶",
+        "二层三檐",
+        "楼阁式",
+        "楼阁化",
+        "土石夯筑",
+        "庑殿顶",
+        "高台基座"
+      ],
+      "layout_terms": [
+        "十字穿心拱洞",
+        "方形台基",
+        "四向通达",
+        "西北登台"
+      ],
+      "material_terms": [
+        "夯土",
+        "青砖",
+        "明式砖",
+        "铁铸"
+      ],
+      "craft_terms": [
+        "汉式形制",
+        "蒙古族布局",
+        "落架重修",
+        "传统工艺结合现代技术"
+      ],
+      "function_terms": [
+        "钟鼓楼",
+        "声教楼",
+        "交通穿行",
+        "报时设施"
+      ]
+    },
+    {
+      "id": "1084",
+      "line_no": "1084",
+      "name": "张掖鼓楼",
+      "building_type": "官府",
+      "province": "甘肃省",
+      "start_dynasty": "明",
+      "century_num": 16,
+      "role": "member",
+      "hop": 1,
+      "score": 0.4613,
+      "shared_features": [
+        "楼阁化",
+        "青砖",
+        "坐北朝南",
+        "砖券砌筑"
+      ],
+      "structure_terms": [
+        "重檐四面坡",
+        "攒尖顶",
+        "三层木构塔形",
+        "飞檐翘角",
+        "楼阁化",
+        "木构架",
+        "中轴对称"
+      ],
+      "layout_terms": [
+        "十字型门洞",
+        "中轴对称",
+        "四向通街",
+        "女墙围护"
+      ],
+      "material_terms": [
+        "青砖",
+        "青筒瓦",
+        "琉璃吻兽",
+        "石条",
+        "铜合金"
+      ],
+      "craft_terms": [
+        "砖券砌筑",
+        "彩绘修复",
+        "梁架修缮",
+        "台明修复"
+      ],
+      "function_terms": [
+        "交通穿行",
+        "地标性建筑",
+        "历史纪念"
+      ]
+    },
+    {
+      "id": "118",
+      "line_no": "118",
+      "name": "光岳楼",
+      "building_type": "官府",
+      "province": "山东省",
+      "start_dynasty": "明",
+      "century_num": 14,
+      "role": "member",
+      "hop": 2,
+      "score": 0.178,
+      "shared_features": [
+        "楼阁化",
+        "坐北朝南",
+        "青砖",
+        "砖券砌筑"
+      ],
+      "structure_terms": [
+        "四重檐十字脊",
+        "全木结构",
+        "楼阁式",
+        "金柱支撑",
+        "斗拱结构",
+        "楼阁化",
+        "木构架",
+        "中轴对称",
+        "斗拱承托"
+      ],
+      "layout_terms": [
+        "中心对称布局",
+        "面阔进深递减",
+        "拱门四向设制",
+        "单入口通达"
+      ],
+      "material_terms": [
+        "木材",
+        "基条石",
+        "余木"
+      ],
+      "craft_terms": [
+        "浅性基础",
+        "斗拱营造",
+        "原物保留修缮"
+      ],
+      "function_terms": [
+        "瞭望",
+        "御敌",
+        "军事指挥"
+      ]
+    },
+    {
+      "id": "1398",
+      "line_no": "1398",
+      "name": "金昭牌坊和宪台牌坊",
+      "building_type": "官府",
+      "province": "浙江省",
+      "start_dynasty": "明",
+      "century_num": 16,
+      "role": "member",
+      "hop": 2,
+      "score": 0.1375,
+      "shared_features": [
+        "楼阁化",
+        "坐北朝南",
+        "青砖",
+        "砖券砌筑"
+      ],
+      "structure_terms": [
+        "六柱三楼式",
+        "单间加擎檐柱式",
+        "木构架",
+        "官式牌坊"
+      ],
+      "layout_terms": [
+        "横长方形平面",
+        "南北走向"
+      ],
+      "material_terms": [
+        "花岗岩",
+        "木材",
+        "薄砖",
+        "方石柱"
+      ],
+      "craft_terms": [
+        "偷心造插栱",
+        "雀替",
+        "丁头栱",
+        "双落翼式悬山顶"
+      ],
+      "function_terms": [
+        "进士及第纪念坊",
+        "官员功德坊"
+      ]
+    },
+    {
+      "id": "1727",
+      "line_no": "1727",
+      "name": "宜宾大观楼",
+      "building_type": "官府",
+      "province": "四川省",
+      "start_dynasty": "明",
+      "century_num": 16,
+      "role": "member",
+      "hop": 2,
+      "score": 0.1073,
+      "shared_features": [
+        "楼阁化",
+        "坐北朝南",
+        "青砖",
+        "砖券砌筑"
+      ],
+      "structure_terms": [
+        "斗拱木质结构",
+        "三重檐歇山顶",
+        "长方形平面",
+        "歇山顶",
+        "斗拱承托"
+      ],
+      "layout_terms": [
+        "十字形通道",
+        "石梯通厅",
+        "底层架空"
+      ],
+      "material_terms": [
+        "石材",
+        "木材",
+        "灰色琉璃瓦",
+        "黑色盘龙脊宝顶"
+      ],
+      "craft_terms": [
+        "斗拱结构",
+        "歇山顶营造",
+        "琉璃瓦铺作"
+      ],
+      "function_terms": [
+        "谯楼",
+        "图书馆阅览室"
+      ]
+    },
+    {
+      "id": "1131",
+      "line_no": "1131",
+      "name": "灵寿石牌坊",
+      "building_type": "官府",
+      "province": "河北省",
+      "start_dynasty": "明",
+      "century_num": 17,
+      "role": "member",
+      "hop": 3,
+      "score": 0.0621,
+      "shared_features": [
+        "楼阁化",
+        "坐北朝南",
+        "青砖",
+        "砖券砌筑"
+      ],
+      "structure_terms": [
+        "四柱五楼",
+        "三重檐",
+        "仿木结构",
+        "石雕",
+        "木构架",
+        "斗拱承托"
+      ],
+      "layout_terms": [
+        "坐北朝南",
+        "横跨道路",
+        "两面一体"
+      ],
+      "material_terms": [
+        "花岗岩",
+        "灵寿绿"
+      ],
+      "craft_terms": [
+        "透雕",
+        "浮雕",
+        "夹柱石狮",
+        "流云雕刻"
+      ],
+      "function_terms": [
+        "功绩表彰",
+        "敕建牌坊"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "117",
+      "target": "1896",
+      "weight": 0.2819,
+      "reasons": [
+        "共享结构：重檐歇山顶、高台基座、楼阁化",
+        "共享材料：布瓦",
+        "同属结构簇：高台楼阁型",
+        "同属材料主类：砖瓦类",
+        "同省：河北省"
+      ],
+      "components": {
+        "structure_terms": 0.2639,
+        "layout_terms": 0,
+        "material_terms": 0.1837,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.65,
+        "region": 1
+      }
+    },
+    {
+      "source": "1276",
+      "target": "1242",
+      "weight": 0.2634,
+      "reasons": [
+        "共享结构：重檐十字歇山顶、楼阁化、歇山顶",
+        "同属结构簇：高台楼阁型",
+        "同属材料主类：砖瓦类",
+        "同省：山西省",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.2914,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.5458,
+        "region": 1
+      }
+    },
+    {
+      "source": "117",
+      "target": "367",
+      "weight": 0.2496,
+      "reasons": [
+        "共享结构：回廊结构、高台基座、楼阁化",
+        "同属结构簇：高台楼阁型",
+        "同属华北",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.2838,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 0.6667,
+        "time": 0.7857,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1896",
+      "target": "367",
+      "weight": 0.2477,
+      "reasons": [
+        "共享结构：高台基座、楼阁化、歇山顶",
+        "共享材料：砖、木材",
+        "同属结构簇：高台楼阁型",
+        "同属华北"
+      ],
+      "components": {
+        "structure_terms": 0.1548,
+        "layout_terms": 0,
+        "material_terms": 0.2908,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.4357,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1087",
+      "target": "1084",
+      "weight": 0.2357,
+      "reasons": [
+        "共享结构：楼阁化",
+        "共享材料：青砖",
+        "共享功能：交通穿行",
+        "同属结构簇：高台楼阁型",
+        "同属材料主类：砖瓦类",
+        "同省：甘肃省"
+      ],
+      "components": {
+        "structure_terms": 0.055,
+        "layout_terms": 0,
+        "material_terms": 0.0628,
+        "craft_terms": 0,
+        "function_terms": 0.1596,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 1,
+        "region": 1
+      }
+    },
+    {
+      "source": "1242",
+      "target": "117",
+      "weight": 0.2277,
+      "reasons": [
+        "共享结构：楼阁化、歇山顶",
+        "共享材料：青砖",
+        "同属结构簇：高台楼阁型",
+        "同属材料主类：砖瓦类",
+        "同属华北",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.129,
+        "layout_terms": 0,
+        "material_terms": 0.116,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.6421,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1087",
+      "target": "1242",
+      "weight": 0.2164,
+      "reasons": [
+        "共享结构：楼阁化",
+        "共享材料：青砖",
+        "共享功能：报时设施",
+        "同属结构簇：高台楼阁型",
+        "同属材料主类：砖瓦类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.0592,
+        "layout_terms": 0,
+        "material_terms": 0.1082,
+        "craft_terms": 0,
+        "function_terms": 0.1931,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.7857,
+        "region": 0
+      }
+    },
+    {
+      "source": "1084",
+      "target": "1242",
+      "weight": 0.2153,
+      "reasons": [
+        "共享结构：楼阁化、木构架",
+        "共享材料：青砖",
+        "同属结构簇：高台楼阁型",
+        "同属材料主类：砖瓦类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.1215,
+        "layout_terms": 0,
+        "material_terms": 0.0823,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.7857,
+        "region": 0
+      }
+    },
+    {
+      "source": "1087",
+      "target": "117",
+      "weight": 0.2148,
+      "reasons": [
+        "共享结构：高台基座、楼阁化",
+        "共享材料：青砖",
+        "同属结构簇：高台楼阁型",
+        "同属材料主类：砖瓦类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.1204,
+        "layout_terms": 0,
+        "material_terms": 0.0806,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.7857,
+        "region": 0
+      }
+    },
+    {
+      "source": "118",
+      "target": "367",
+      "weight": 0.2135,
+      "reasons": [
+        "共享结构：楼阁化、木构架",
+        "共享材料：木材",
+        "同属结构簇：高台楼阁型",
+        "同属材料主类：木材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.083,
+        "layout_terms": 0,
+        "material_terms": 0.0856,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 1,
+        "region": 0
+      }
+    },
+    {
+      "source": "1276",
+      "target": "117",
+      "weight": 0.2127,
+      "reasons": [
+        "共享结构：楼阁化、歇山顶",
+        "同属结构簇：高台楼阁型",
+        "同属材料主类：砖瓦类",
+        "同属华北",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.1046,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.7857,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1398",
+      "target": "1131",
+      "weight": 0.2123,
+      "reasons": [
+        "共享结构：木构架",
+        "共享材料：花岗岩",
+        "同属结构簇：高台楼阁型",
+        "同属材料主类：石材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.0536,
+        "layout_terms": 0,
+        "material_terms": 0.2152,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.7857,
+        "region": 0
+      }
+    },
+    {
+      "source": "1896",
+      "target": "1727",
+      "weight": 0.2111,
+      "reasons": [
+        "共享结构：斗拱承托、歇山顶",
+        "共享材料：石材、木材",
+        "同属结构簇：高台楼阁型"
+      ],
+      "components": {
+        "structure_terms": 0.127,
+        "layout_terms": 0,
+        "material_terms": 0.2344,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 0.75,
+        "time": 0.4357,
+        "region": 0
+      }
+    },
+    {
+      "source": "1276",
+      "target": "367",
+      "weight": 0.2103,
+      "reasons": [
+        "共享结构：楼阁化、歇山顶、木构架",
+        "同属结构簇：高台楼阁型",
+        "同省：山西省",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.132,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 0.3333,
+        "time": 1,
+        "region": 1
+      }
+    },
+    {
+      "source": "1084",
+      "target": "117",
+      "weight": 0.1966,
+      "reasons": [
+        "共享结构：楼阁化",
+        "共享材料：青砖",
+        "同属结构簇：高台楼阁型",
+        "同属材料主类：砖瓦类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.0618,
+        "layout_terms": 0,
+        "material_terms": 0.0653,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.7857,
+        "region": 0
+      }
+    },
+    {
+      "source": "1242",
+      "target": "367",
+      "weight": 0.1965,
+      "reasons": [
+        "共享结构：楼阁化、歇山顶、木构架",
+        "同属结构簇：高台楼阁型",
+        "同省：山西省",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.1595,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 0.25,
+        "time": 0.5458,
+        "region": 1
+      }
+    },
+    {
+      "source": "1276",
+      "target": "1896",
+      "weight": 0.1959,
+      "reasons": [
+        "共享结构：楼阁化、歇山顶",
+        "同属结构簇：高台楼阁型",
+        "同属材料主类：砖瓦类",
+        "同属华北"
+      ],
+      "components": {
+        "structure_terms": 0.0945,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.4357,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1242",
+      "target": "1896",
+      "weight": 0.1956,
+      "reasons": [
+        "共享结构：楼阁化、歇山顶",
+        "同属结构簇：高台楼阁型",
+        "同属材料主类：砖瓦类",
+        "同属华北"
+      ],
+      "components": {
+        "structure_terms": 0.114,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.2921,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "1131",
+      "target": "1727",
+      "weight": 0.1942,
+      "reasons": [
+        "共享结构：斗拱承托",
+        "同属结构簇：高台楼阁型",
+        "同属材料主类：石材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.0815,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.7857,
+        "region": 0
+      }
+    },
+    {
+      "source": "1276",
+      "target": "1084",
+      "weight": 0.1932,
+      "reasons": [
+        "共享结构：楼阁化、木构架",
+        "同属结构簇：高台楼阁型",
+        "同属材料主类：砖瓦类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.0984,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.6421,
+        "region": 0
+      }
+    },
+    {
+      "source": "1087",
+      "target": "1896",
+      "weight": 0.1879,
+      "reasons": [
+        "共享结构：高台基座、楼阁化",
+        "同属结构簇：高台楼阁型",
+        "同属材料主类：砖瓦类"
+      ],
+      "components": {
+        "structure_terms": 0.1088,
+        "layout_terms": 0,
+        "material_terms": 0,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.4357,
+        "region": 0
+      }
+    },
+    {
+      "source": "1398",
+      "target": "1727",
+      "weight": 0.187,
+      "reasons": [
+        "共享材料：木材",
+        "同属结构簇：高台楼阁型",
+        "同属材料主类：石材类",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0,
+        "layout_terms": 0,
+        "material_terms": 0.0579,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 1,
+        "region": 0
+      }
+    },
+    {
+      "source": "1398",
+      "target": "367",
+      "weight": 0.1864,
+      "reasons": [
+        "共享结构：木构架",
+        "共享材料：木材",
+        "同属结构簇：高台楼阁型",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.044,
+        "layout_terms": 0,
+        "material_terms": 0.0698,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 1,
+        "time": 0.6421,
+        "region": 0
+      }
+    },
+    {
+      "source": "118",
+      "target": "1398",
+      "weight": 0.1846,
+      "reasons": [
+        "共享结构：木构架",
+        "共享材料：木材",
+        "同属结构簇：高台楼阁型",
+        "同属华东",
+        "同朝代：明"
+      ],
+      "components": {
+        "structure_terms": 0.044,
+        "layout_terms": 0,
+        "material_terms": 0.0661,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 0.6667,
+        "time": 0.6421,
+        "region": 0.6
+      }
+    },
+    {
+      "source": "118",
+      "target": "1896",
+      "weight": 0.1834,
+      "reasons": [
+        "共享结构：斗拱承托、楼阁化",
+        "共享材料：木材",
+        "同属结构簇：高台楼阁型"
+      ],
+      "components": {
+        "structure_terms": 0.1086,
+        "layout_terms": 0,
+        "material_terms": 0.0745,
+        "craft_terms": 0,
+        "function_terms": 0,
+        "structure_cluster": 1,
+        "material_cluster": 0.6667,
+        "time": 0.4357,
+        "region": 0
+      }
+    }
+  ]
+}

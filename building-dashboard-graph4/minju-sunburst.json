@@ -1,0 +1,231 @@
+{
+  "building_type": "民居",
+  "title": "民居：主要朝代-主要地域-建筑结构",
+  "dimension_order": [
+    "主要朝代",
+    "主要地域",
+    "建筑结构"
+  ],
+  "data": [
+    {
+      "name": "清",
+      "value": 98,
+      "children": [
+        {
+          "name": "其他",
+          "value": 21,
+          "children": [
+            {
+              "name": "其他",
+              "value": 1
+            },
+            {
+              "name": "合院",
+              "value": 15
+            },
+            {
+              "name": "抬梁",
+              "value": 3
+            },
+            {
+              "name": "穿斗",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "name": "华东",
+          "value": 51,
+          "children": [
+            {
+              "name": "其他",
+              "value": 1
+            },
+            {
+              "name": "合院",
+              "value": 26
+            },
+            {
+              "name": "抬梁",
+              "value": 14
+            },
+            {
+              "name": "穿斗",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "name": "华中",
+          "value": 15,
+          "children": [
+            {
+              "name": "合院",
+              "value": 9
+            },
+            {
+              "name": "抬梁",
+              "value": 1
+            },
+            {
+              "name": "穿斗",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "name": "西南",
+          "value": 11,
+          "children": [
+            {
+              "name": "合院",
+              "value": 1
+            },
+            {
+              "name": "抬梁",
+              "value": 3
+            },
+            {
+              "name": "穿斗",
+              "value": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "明",
+      "value": 69,
+      "children": [
+        {
+          "name": "其他",
+          "value": 15,
+          "children": [
+            {
+              "name": "其他",
+              "value": 1
+            },
+            {
+              "name": "抬梁",
+              "value": 14
+            }
+          ]
+        },
+        {
+          "name": "华东",
+          "value": 35,
+          "children": [
+            {
+              "name": "其他",
+              "value": 2
+            },
+            {
+              "name": "合院",
+              "value": 1
+            },
+            {
+              "name": "抬梁",
+              "value": 32
+            }
+          ]
+        },
+        {
+          "name": "华中",
+          "value": 11,
+          "children": [
+            {
+              "name": "其他",
+              "value": 1
+            },
+            {
+              "name": "合院",
+              "value": 1
+            },
+            {
+              "name": "抬梁",
+              "value": 8
+            },
+            {
+              "name": "穿斗",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "西南",
+          "value": 8,
+          "children": [
+            {
+              "name": "抬梁",
+              "value": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "宋",
+      "value": 15,
+      "children": [
+        {
+          "name": "其他",
+          "value": 2,
+          "children": [
+            {
+              "name": "抬梁",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "name": "华东",
+          "value": 11,
+          "children": [
+            {
+              "name": "合院",
+              "value": 2
+            },
+            {
+              "name": "抬梁",
+              "value": 9
+            }
+          ]
+        },
+        {
+          "name": "华中",
+          "value": 2,
+          "children": [
+            {
+              "name": "抬梁",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "building_count": 182,
+    "dynasty_node_count": 3,
+    "region_node_count": 4,
+    "structure_node_count": 4,
+    "leaf_path_count": 28,
+    "dynasty_nodes": [
+      "清",
+      "明",
+      "宋"
+    ],
+    "region_nodes": [
+      "其他",
+      "华东",
+      "华中",
+      "西南"
+    ],
+    "structure_nodes": [
+      "其他",
+      "合院",
+      "抬梁",
+      "穿斗"
+    ]
+  }
+}

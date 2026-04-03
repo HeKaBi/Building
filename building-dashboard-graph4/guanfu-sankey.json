@@ -1,0 +1,236 @@
+{
+  "nodes": [
+    {
+      "name": "元",
+      "depth": 0
+    },
+    {
+      "name": "其他朝代",
+      "depth": 0
+    },
+    {
+      "name": "唐",
+      "depth": 0
+    },
+    {
+      "name": "宋",
+      "depth": 0
+    },
+    {
+      "name": "明",
+      "depth": 0
+    },
+    {
+      "name": "清",
+      "depth": 0
+    },
+    {
+      "name": "其他官府体系",
+      "depth": 1
+    },
+    {
+      "name": "城防防御体系",
+      "depth": 1
+    },
+    {
+      "name": "官署合院体系",
+      "depth": 1
+    },
+    {
+      "name": "楼阁台榭体系",
+      "depth": 1
+    },
+    {
+      "name": "土类",
+      "depth": 2
+    },
+    {
+      "name": "木材类",
+      "depth": 2
+    },
+    {
+      "name": "灰浆胶结类",
+      "depth": 2
+    },
+    {
+      "name": "石材类",
+      "depth": 2
+    },
+    {
+      "name": "砖瓦类",
+      "depth": 2
+    }
+  ],
+  "links": [
+    {
+      "source": "元",
+      "target": "城防防御体系",
+      "value": 1
+    },
+    {
+      "source": "元",
+      "target": "官署合院体系",
+      "value": 7
+    },
+    {
+      "source": "元",
+      "target": "楼阁台榭体系",
+      "value": 1
+    },
+    {
+      "source": "其他官府体系",
+      "target": "木材类",
+      "value": 1
+    },
+    {
+      "source": "其他官府体系",
+      "target": "石材类",
+      "value": 2
+    },
+    {
+      "source": "其他官府体系",
+      "target": "砖瓦类",
+      "value": 1
+    },
+    {
+      "source": "其他朝代",
+      "target": "城防防御体系",
+      "value": 7
+    },
+    {
+      "source": "其他朝代",
+      "target": "官署合院体系",
+      "value": 1
+    },
+    {
+      "source": "其他朝代",
+      "target": "楼阁台榭体系",
+      "value": 7
+    },
+    {
+      "source": "唐",
+      "target": "其他官府体系",
+      "value": 1
+    },
+    {
+      "source": "唐",
+      "target": "城防防御体系",
+      "value": 2
+    },
+    {
+      "source": "唐",
+      "target": "楼阁台榭体系",
+      "value": 3
+    },
+    {
+      "source": "城防防御体系",
+      "target": "土类",
+      "value": 4
+    },
+    {
+      "source": "城防防御体系",
+      "target": "木材类",
+      "value": 2
+    },
+    {
+      "source": "城防防御体系",
+      "target": "灰浆胶结类",
+      "value": 1
+    },
+    {
+      "source": "城防防御体系",
+      "target": "石材类",
+      "value": 10
+    },
+    {
+      "source": "城防防御体系",
+      "target": "砖瓦类",
+      "value": 10
+    },
+    {
+      "source": "宋",
+      "target": "城防防御体系",
+      "value": 4
+    },
+    {
+      "source": "官署合院体系",
+      "target": "土类",
+      "value": 1
+    },
+    {
+      "source": "官署合院体系",
+      "target": "木材类",
+      "value": 19
+    },
+    {
+      "source": "官署合院体系",
+      "target": "灰浆胶结类",
+      "value": 1
+    },
+    {
+      "source": "官署合院体系",
+      "target": "石材类",
+      "value": 6
+    },
+    {
+      "source": "官署合院体系",
+      "target": "砖瓦类",
+      "value": 21
+    },
+    {
+      "source": "明",
+      "target": "其他官府体系",
+      "value": 1
+    },
+    {
+      "source": "明",
+      "target": "城防防御体系",
+      "value": 13
+    },
+    {
+      "source": "明",
+      "target": "官署合院体系",
+      "value": 16
+    },
+    {
+      "source": "明",
+      "target": "楼阁台榭体系",
+      "value": 11
+    },
+    {
+      "source": "楼阁台榭体系",
+      "target": "木材类",
+      "value": 6
+    },
+    {
+      "source": "楼阁台榭体系",
+      "target": "灰浆胶结类",
+      "value": 1
+    },
+    {
+      "source": "楼阁台榭体系",
+      "target": "石材类",
+      "value": 6
+    },
+    {
+      "source": "楼阁台榭体系",
+      "target": "砖瓦类",
+      "value": 13
+    },
+    {
+      "source": "清",
+      "target": "其他官府体系",
+      "value": 2
+    },
+    {
+      "source": "清",
+      "target": "官署合院体系",
+      "value": 24
+    },
+    {
+      "source": "清",
+      "target": "楼阁台榭体系",
+      "value": 4
+    }
+  ]
+}

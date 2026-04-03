@@ -1,0 +1,603 @@
+{
+  "building_type": "官府",
+  "summary": {
+    "building_count": 105,
+    "raw_dynasty_count": 12,
+    "raw_function_count": 9,
+    "raw_material_count": 5,
+    "rose_dynasty_count": 11,
+    "rose_function_count": 9,
+    "rose_material_count": 5
+  },
+  "limits": {
+    "dynasty_max": 10,
+    "function_max": 10,
+    "material_max": 7
+  },
+  "rings": {
+    "dynasty": [
+      {
+        "name": "东周",
+        "value": 2
+      },
+      {
+        "name": "东汉",
+        "value": 3
+      },
+      {
+        "name": "东晋",
+        "value": 3
+      },
+      {
+        "name": "隋",
+        "value": 3
+      },
+      {
+        "name": "唐",
+        "value": 6
+      },
+      {
+        "name": "五代十国",
+        "value": 2
+      },
+      {
+        "name": "宋",
+        "value": 4
+      },
+      {
+        "name": "元",
+        "value": 9
+      },
+      {
+        "name": "明",
+        "value": 41
+      },
+      {
+        "name": "清",
+        "value": 30
+      },
+      {
+        "name": "其他朝代",
+        "value": 2
+      }
+    ],
+    "function": [
+      {
+        "name": "防御军事",
+        "value": 28
+      },
+      {
+        "name": "行政办公",
+        "value": 23
+      },
+      {
+        "name": "报时天文",
+        "value": 12
+      },
+      {
+        "name": "官邸府第",
+        "value": 12
+      },
+      {
+        "name": "其他功能",
+        "value": 10
+      },
+      {
+        "name": "科举考试",
+        "value": 7
+      },
+      {
+        "name": "仓储储备",
+        "value": 6
+      },
+      {
+        "name": "礼制祭祀",
+        "value": 4
+      },
+      {
+        "name": "司法监狱",
+        "value": 3
+      }
+    ],
+    "material": [
+      {
+        "name": "砖瓦类",
+        "value": 45
+      },
+      {
+        "name": "木材类",
+        "value": 28
+      },
+      {
+        "name": "石材类",
+        "value": 24
+      },
+      {
+        "name": "土类",
+        "value": 5
+      },
+      {
+        "name": "灰浆胶结类",
+        "value": 3
+      }
+    ]
+  },
+  "paths": [
+    {
+      "building_type": "官府",
+      "dynasty": "明",
+      "function": "报时天文",
+      "material": "砖瓦类",
+      "value": 5
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "明",
+      "function": "行政办公",
+      "material": "石材类",
+      "value": 4
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "明",
+      "function": "防御军事",
+      "material": "砖瓦类",
+      "value": 4
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "清",
+      "function": "官邸府第",
+      "material": "木材类",
+      "value": 4
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "明",
+      "function": "防御军事",
+      "material": "土类",
+      "value": 3
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "明",
+      "function": "防御军事",
+      "material": "木材类",
+      "value": 3
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "明",
+      "function": "防御军事",
+      "material": "石材类",
+      "value": 3
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "清",
+      "function": "仓储储备",
+      "material": "砖瓦类",
+      "value": 3
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "清",
+      "function": "行政办公",
+      "material": "砖瓦类",
+      "value": 3
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "元",
+      "function": "行政办公",
+      "material": "木材类",
+      "value": 2
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "元",
+      "function": "行政办公",
+      "material": "砖瓦类",
+      "value": 2
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "元",
+      "function": "防御军事",
+      "material": "石材类",
+      "value": 2
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "宋",
+      "function": "防御军事",
+      "material": "石材类",
+      "value": 2
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "明",
+      "function": "其他功能",
+      "material": "石材类",
+      "value": 2
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "明",
+      "function": "官邸府第",
+      "material": "木材类",
+      "value": 2
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "明",
+      "function": "报时天文",
+      "material": "石材类",
+      "value": 2
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "明",
+      "function": "礼制祭祀",
+      "material": "木材类",
+      "value": 2
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "明",
+      "function": "科举考试",
+      "material": "木材类",
+      "value": 2
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "明",
+      "function": "行政办公",
+      "material": "木材类",
+      "value": 2
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "明",
+      "function": "行政办公",
+      "material": "砖瓦类",
+      "value": 2
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "清",
+      "function": "其他功能",
+      "material": "石材类",
+      "value": 2
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "清",
+      "function": "其他功能",
+      "material": "砖瓦类",
+      "value": 2
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "清",
+      "function": "官邸府第",
+      "material": "石材类",
+      "value": 2
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "清",
+      "function": "官邸府第",
+      "material": "砖瓦类",
+      "value": 2
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "清",
+      "function": "礼制祭祀",
+      "material": "砖瓦类",
+      "value": 2
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "清",
+      "function": "科举考试",
+      "material": "石材类",
+      "value": 2
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "清",
+      "function": "行政办公",
+      "material": "木材类",
+      "value": 2
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "隋",
+      "function": "行政办公",
+      "material": "砖瓦类",
+      "value": 2
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "东周",
+      "function": "防御军事",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "东周",
+      "function": "防御军事",
+      "material": "砖瓦类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "东晋",
+      "function": "报时天文",
+      "material": "砖瓦类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "东晋",
+      "function": "防御军事",
+      "material": "灰浆胶结类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "东晋",
+      "function": "防御军事",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "东汉",
+      "function": "行政办公",
+      "material": "砖瓦类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "东汉",
+      "function": "防御军事",
+      "material": "灰浆胶结类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "东汉",
+      "function": "防御军事",
+      "material": "砖瓦类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "五代十国",
+      "function": "报时天文",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "五代十国",
+      "function": "科举考试",
+      "material": "砖瓦类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "元",
+      "function": "司法监狱",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "元",
+      "function": "官邸府第",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "元",
+      "function": "报时天文",
+      "material": "砖瓦类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "其他朝代",
+      "function": "其他功能",
+      "material": "砖瓦类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "其他朝代",
+      "function": "报时天文",
+      "material": "砖瓦类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "唐",
+      "function": "其他功能",
+      "material": "砖瓦类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "唐",
+      "function": "行政办公",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "唐",
+      "function": "行政办公",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "唐",
+      "function": "行政办公",
+      "material": "砖瓦类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "唐",
+      "function": "防御军事",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "唐",
+      "function": "防御军事",
+      "material": "石材类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "宋",
+      "function": "防御军事",
+      "material": "土类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "宋",
+      "function": "防御军事",
+      "material": "砖瓦类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "明",
+      "function": "仓储储备",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "明",
+      "function": "其他功能",
+      "material": "砖瓦类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "明",
+      "function": "司法监狱",
+      "material": "砖瓦类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "明",
+      "function": "官邸府第",
+      "material": "砖瓦类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "明",
+      "function": "科举考试",
+      "material": "砖瓦类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "清",
+      "function": "仓储储备",
+      "material": "土类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "清",
+      "function": "仓储储备",
+      "material": "木材类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "清",
+      "function": "司法监狱",
+      "material": "砖瓦类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "清",
+      "function": "报时天文",
+      "material": "砖瓦类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "清",
+      "function": "科举考试",
+      "material": "砖瓦类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "清",
+      "function": "防御军事",
+      "material": "灰浆胶结类",
+      "value": 1
+    },
+    {
+      "building_type": "官府",
+      "dynasty": "隋",
+      "function": "其他功能",
+      "material": "木材类",
+      "value": 1
+    }
+  ],
+  "mappings": {
+    "dynasty": {
+      "明": "明",
+      "清": "清",
+      "元": "元",
+      "唐": "唐",
+      "宋": "宋",
+      "隋": "隋",
+      "东汉": "东汉",
+      "东晋": "东晋",
+      "东周": "东周",
+      "五代十国": "五代十国",
+      "辽": "其他朝代",
+      "金": "其他朝代"
+    },
+    "function": {
+      "防御军事": "防御军事",
+      "行政办公": "行政办公",
+      "报时天文": "报时天文",
+      "官邸府第": "官邸府第",
+      "其他功能": "其他功能",
+      "科举考试": "科举考试",
+      "仓储储备": "仓储储备",
+      "礼制祭祀": "礼制祭祀",
+      "司法监狱": "司法监狱"
+    },
+    "material": {
+      "砖瓦类": "砖瓦类",
+      "木材类": "木材类",
+      "石材类": "石材类",
+      "土类": "土类",
+      "灰浆胶结类": "灰浆胶结类"
+    }
+  },
+  "generated_at": "2026-03-17 17:12:38"
+}

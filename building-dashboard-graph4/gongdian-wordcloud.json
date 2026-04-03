@@ -1,0 +1,1877 @@
+[
+  {
+    "name": "中轴对称",
+    "value": 4.52,
+    "term_count": 5,
+    "avg_confidence": 0.904,
+    "building_count": 5,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 53,
+        "name": "故宫",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 292,
+        "name": "靖江王府",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 329,
+        "name": "孚王府",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 330,
+        "name": "景山",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "木材",
+    "value": 4.1,
+    "term_count": 6,
+    "avg_confidence": 0.6833,
+    "building_count": 6,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 53,
+        "name": "故宫",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1076,
+        "name": "盘龙山古建筑群",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1306,
+        "name": "奈曼蒙古王府",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1366,
+        "name": "燕园",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "砖石",
+    "value": 3.04,
+    "term_count": 5,
+    "avg_confidence": 0.608,
+    "building_count": 5,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 930,
+        "name": "望京楼",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1076,
+        "name": "盘龙山古建筑群",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1306,
+        "name": "奈曼蒙古王府",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1312,
+        "name": "四子王旗王府",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "坐北朝南",
+    "value": 2.81,
+    "term_count": 3,
+    "avg_confidence": 0.9367,
+    "building_count": 3,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 329,
+        "name": "孚王府",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 594,
+        "name": "醇亲王府",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 930,
+        "name": "望京楼",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "皇家园林",
+    "value": 2.75,
+    "term_count": 3,
+    "avg_confidence": 0.9167,
+    "building_count": 3,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 76,
+        "name": "避暑山庄",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 330,
+        "name": "景山",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1366,
+        "name": "燕园",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "浮雕",
+    "value": 2.66,
+    "term_count": 3,
+    "avg_confidence": 0.8867,
+    "building_count": 3,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 357,
+        "name": "大同九龙壁",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 494,
+        "name": "襄阳王府绿影壁",
+        "dimension": "营造技艺"
+      },
+      {
+        "line_no": 1541,
+        "name": "衡王府石坊",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "王府",
+    "value": 2.63,
+    "term_count": 3,
+    "avg_confidence": 0.8767,
+    "building_count": 3,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 292,
+        "name": "靖江王府",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1306,
+        "name": "奈曼蒙古王府",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 2152,
+        "name": "达律王府",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "石材",
+    "value": 2.57,
+    "term_count": 3,
+    "avg_confidence": 0.8567,
+    "building_count": 3,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 292,
+        "name": "靖江王府",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1541,
+        "name": "衡王府石坊",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 2152,
+        "name": "达律王府",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "硬山顶",
+    "value": 2.44,
+    "term_count": 3,
+    "avg_confidence": 0.8133,
+    "building_count": 3,
+    "dimensions": [
+      "建筑材料",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 329,
+        "name": "孚王府",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1306,
+        "name": "奈曼蒙古王府",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1312,
+        "name": "四子王旗王府",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "抬梁式",
+    "value": 2.31,
+    "term_count": 3,
+    "avg_confidence": 0.77,
+    "building_count": 3,
+    "dimensions": [
+      "建筑结构体系",
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 53,
+        "name": "故宫",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 329,
+        "name": "孚王府",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "行宫",
+    "value": 1.93,
+    "term_count": 2,
+    "avg_confidence": 0.965,
+    "building_count": 2,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 76,
+        "name": "避暑山庄",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 1076,
+        "name": "盘龙山古建筑群",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "中轴线布局",
+    "value": 1.86,
+    "term_count": 2,
+    "avg_confidence": 0.93,
+    "building_count": 2,
+    "dimensions": [
+      "建筑空间布局",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 292,
+        "name": "靖江王府",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 329,
+        "name": "孚王府",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "长方形平面",
+    "value": 1.86,
+    "term_count": 2,
+    "avg_confidence": 0.93,
+    "building_count": 2,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 930,
+        "name": "望京楼",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 2152,
+        "name": "达律王府",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "照壁",
+    "value": 1.82,
+    "term_count": 2,
+    "avg_confidence": 0.91,
+    "building_count": 2,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 357,
+        "name": "大同九龙壁",
+        "dimension": "建筑功能"
+      },
+      {
+        "line_no": 494,
+        "name": "襄阳王府绿影壁",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "院落组合",
+    "value": 1.8,
+    "term_count": 2,
+    "avg_confidence": 0.9,
+    "building_count": 2,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 53,
+        "name": "故宫",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1076,
+        "name": "盘龙山古建筑群",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "汉白玉",
+    "value": 1.73,
+    "term_count": 2,
+    "avg_confidence": 0.865,
+    "building_count": 2,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 53,
+        "name": "故宫",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 494,
+        "name": "襄阳王府绿影壁",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "抬梁式木构架",
+    "value": 1.7,
+    "term_count": 2,
+    "avg_confidence": 0.85,
+    "building_count": 2,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1306,
+        "name": "奈曼蒙古王府",
+        "dimension": "建筑结构体系"
+      },
+      {
+        "line_no": 1312,
+        "name": "四子王旗王府",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "生土",
+    "value": 1.7,
+    "term_count": 2,
+    "avg_confidence": 0.85,
+    "building_count": 2,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 330,
+        "name": "景山",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 2152,
+        "name": "达律王府",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "多进建筑",
+    "value": 1.68,
+    "term_count": 2,
+    "avg_confidence": 0.84,
+    "building_count": 2,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 292,
+        "name": "靖江王府",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1076,
+        "name": "盘龙山古建筑群",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "木构架",
+    "value": 1.67,
+    "term_count": 2,
+    "avg_confidence": 0.835,
+    "building_count": 2,
+    "dimensions": [
+      "建筑材料",
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 329,
+        "name": "孚王府",
+        "dimension": "建筑材料"
+      },
+      {
+        "line_no": 1366,
+        "name": "燕园",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "对称布局",
+    "value": 1.6,
+    "term_count": 2,
+    "avg_confidence": 0.8,
+    "building_count": 2,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 357,
+        "name": "大同九龙壁",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1541,
+        "name": "衡王府石坊",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "四合院",
+    "value": 1.5,
+    "term_count": 2,
+    "avg_confidence": 0.75,
+    "building_count": 2,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1306,
+        "name": "奈曼蒙古王府",
+        "dimension": "建筑空间布局"
+      },
+      {
+        "line_no": 1312,
+        "name": "四子王旗王府",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "榫卯结构",
+    "value": 1.5,
+    "term_count": 2,
+    "avg_confidence": 0.75,
+    "building_count": 2,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1306,
+        "name": "奈曼蒙古王府",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "夏宫",
+    "value": 0.98,
+    "term_count": 1,
+    "avg_confidence": 0.98,
+    "building_count": 1,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 149,
+        "name": "罗布林卡",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "无梁殿",
+    "value": 0.98,
+    "term_count": 1,
+    "avg_confidence": 0.98,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 930,
+        "name": "望京楼",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "理政殿",
+    "value": 0.98,
+    "term_count": 1,
+    "avg_confidence": 0.98,
+    "building_count": 1,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 65,
+        "name": "沈阳故宫",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "登基大典场所",
+    "value": 0.98,
+    "term_count": 1,
+    "avg_confidence": 0.98,
+    "building_count": 1,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 65,
+        "name": "沈阳故宫",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "绿泥片岩",
+    "value": 0.98,
+    "term_count": 1,
+    "avg_confidence": 0.98,
+    "building_count": 1,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 494,
+        "name": "襄阳王府绿影壁",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "藏书阁",
+    "value": 0.98,
+    "term_count": 1,
+    "avg_confidence": 0.98,
+    "building_count": 1,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 65,
+        "name": "沈阳故宫",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "听政殿",
+    "value": 0.97,
+    "term_count": 1,
+    "avg_confidence": 0.97,
+    "building_count": 1,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 76,
+        "name": "避暑山庄",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "外朝内廷",
+    "value": 0.97,
+    "term_count": 1,
+    "avg_confidence": 0.97,
+    "building_count": 1,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 53,
+        "name": "故宫",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "多组院落群",
+    "value": 0.97,
+    "term_count": 1,
+    "avg_confidence": 0.97,
+    "building_count": 1,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 149,
+        "name": "罗布林卡",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "宗教法事场所",
+    "value": 0.97,
+    "term_count": 1,
+    "avg_confidence": 0.97,
+    "building_count": 1,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 149,
+        "name": "罗布林卡",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "砖石结构",
+    "value": 0.97,
+    "term_count": 1,
+    "avg_confidence": 0.97,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 930,
+        "name": "望京楼",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "东路-中路-西路三段式",
+    "value": 0.96,
+    "term_count": 1,
+    "avg_confidence": 0.96,
+    "building_count": 1,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 65,
+        "name": "沈阳故宫",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "八旗帐殿布局",
+    "value": 0.96,
+    "term_count": 1,
+    "avg_confidence": 0.96,
+    "building_count": 1,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 65,
+        "name": "沈阳故宫",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "内廷",
+    "value": 0.96,
+    "term_count": 1,
+    "avg_confidence": 0.96,
+    "building_count": 1,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 53,
+        "name": "故宫",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "前朝后寝",
+    "value": 0.96,
+    "term_count": 1,
+    "avg_confidence": 0.96,
+    "building_count": 1,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 292,
+        "name": "靖江王府",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "外朝",
+    "value": 0.96,
+    "term_count": 1,
+    "avg_confidence": 0.96,
+    "building_count": 1,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 53,
+        "name": "故宫",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "宫殿区与苑景区",
+    "value": 0.96,
+    "term_count": 1,
+    "avg_confidence": 0.96,
+    "building_count": 1,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 76,
+        "name": "避暑山庄",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "宫高殿低",
+    "value": 0.96,
+    "term_count": 1,
+    "avg_confidence": 0.96,
+    "building_count": 1,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 65,
+        "name": "沈阳故宫",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "接见外使",
+    "value": 0.96,
+    "term_count": 1,
+    "avg_confidence": 0.96,
+    "building_count": 1,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 76,
+        "name": "避暑山庄",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "绿矾",
+    "value": 0.96,
+    "term_count": 1,
+    "avg_confidence": 0.96,
+    "building_count": 1,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 494,
+        "name": "襄阳王府绿影壁",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "藏书楼",
+    "value": 0.96,
+    "term_count": 1,
+    "avg_confidence": 0.96,
+    "building_count": 1,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 930,
+        "name": "望京楼",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "行政办公场所",
+    "value": 0.96,
+    "term_count": 1,
+    "avg_confidence": 0.96,
+    "building_count": 1,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 149,
+        "name": "罗布林卡",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "青石",
+    "value": 0.96,
+    "term_count": 1,
+    "avg_confidence": 0.96,
+    "building_count": 1,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 930,
+        "name": "望京楼",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "三路布局",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 329,
+        "name": "孚王府",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "三路院落",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 329,
+        "name": "孚王府",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "两层楼阁",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 930,
+        "name": "望京楼",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "仿木结构",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 494,
+        "name": "襄阳王府绿影壁",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "办公用房",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 594,
+        "name": "醇亲王府",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "十字形拱券",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 930,
+        "name": "望京楼",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "单檐硬山顶",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 65,
+        "name": "沈阳故宫",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "四柱三楼牌坊式",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 494,
+        "name": "襄阳王府绿影壁",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "四柱三间式",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1541,
+        "name": "衡王府石坊",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "圆雕",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1541,
+        "name": "衡王府石坊",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "土木混合结构",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 2152,
+        "name": "达律王府",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "壁体",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 357,
+        "name": "大同九龙壁",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "壁顶",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 357,
+        "name": "大同九龙壁",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "夯土城墙",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 292,
+        "name": "靖江王府",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "学校",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 594,
+        "name": "醇亲王府",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "宫殿",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 2152,
+        "name": "达律王府",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "彻上明造",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 65,
+        "name": "沈阳故宫",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "故居",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 594,
+        "name": "醇亲王府",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "歇山博脊挑角",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 149,
+        "name": "罗布林卡",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "汉藏结合式",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 76,
+        "name": "避暑山庄",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "湖心亭布局",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 149,
+        "name": "罗布林卡",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "湖泊区",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 76,
+        "name": "避暑山庄",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "白石",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑材料"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 930,
+        "name": "望京楼",
+        "dimension": "建筑材料"
+      }
+    ]
+  },
+  {
+    "name": "石木混合结构",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 2152,
+        "name": "达律王府",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "读书楼",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑功能"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 930,
+        "name": "望京楼",
+        "dimension": "建筑功能"
+      }
+    ]
+  },
+  {
+    "name": "重檐八角亭式",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 65,
+        "name": "沈阳故宫",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "须弥座",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 357,
+        "name": "大同九龙壁",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "须弥座台基",
+    "value": 0.95,
+    "term_count": 1,
+    "avg_confidence": 0.95,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 65,
+        "name": "沈阳故宫",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "主体建筑群分区",
+    "value": 0.94,
+    "term_count": 1,
+    "avg_confidence": 0.94,
+    "building_count": 1,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 149,
+        "name": "罗布林卡",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "围山布局",
+    "value": 0.94,
+    "term_count": 1,
+    "avg_confidence": 0.94,
+    "building_count": 1,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 292,
+        "name": "靖江王府",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "外包条石",
+    "value": 0.94,
+    "term_count": 1,
+    "avg_confidence": 0.94,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 292,
+        "name": "靖江王府",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "平原区",
+    "value": 0.94,
+    "term_count": 1,
+    "avg_confidence": 0.94,
+    "building_count": 1,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 76,
+        "name": "避暑山庄",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "拱券结构",
+    "value": 0.94,
+    "term_count": 1,
+    "avg_confidence": 0.94,
+    "building_count": 1,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 930,
+        "name": "望京楼",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "藏式寺庙",
+    "value": 0.94,
+    "term_count": 1,
+    "avg_confidence": 0.94,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 76,
+        "name": "避暑山庄",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "龙纹雕刻",
+    "value": 0.94,
+    "term_count": 1,
+    "avg_confidence": 0.94,
+    "building_count": 1,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 494,
+        "name": "襄阳王府绿影壁",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "前庭后寝",
+    "value": 0.93,
+    "term_count": 1,
+    "avg_confidence": 0.93,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 329,
+        "name": "孚王府",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "剔地阳文",
+    "value": 0.93,
+    "term_count": 1,
+    "avg_confidence": 0.93,
+    "building_count": 1,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 1541,
+        "name": "衡王府石坊",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "城砖包砌",
+    "value": 0.93,
+    "term_count": 1,
+    "avg_confidence": 0.93,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 292,
+        "name": "靖江王府",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "壁座壁身壁顶三段式",
+    "value": 0.93,
+    "term_count": 1,
+    "avg_confidence": 0.93,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 494,
+        "name": "襄阳王府绿影壁",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "山峦区",
+    "value": 0.93,
+    "term_count": 1,
+    "avg_confidence": 0.93,
+    "building_count": 1,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 76,
+        "name": "避暑山庄",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "无木构造",
+    "value": 0.93,
+    "term_count": 1,
+    "avg_confidence": 0.93,
+    "building_count": 1,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 930,
+        "name": "望京楼",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "汉式寺庙",
+    "value": 0.93,
+    "term_count": 1,
+    "avg_confidence": 0.93,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 76,
+        "name": "避暑山庄",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "汉式金顶",
+    "value": 0.93,
+    "term_count": 1,
+    "avg_confidence": 0.93,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 149,
+        "name": "罗布林卡",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "九梁十八柱七十二条脊",
+    "value": 0.92,
+    "term_count": 1,
+    "avg_confidence": 0.92,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 53,
+        "name": "故宫",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "十字拱",
+    "value": 0.92,
+    "term_count": 1,
+    "avg_confidence": 0.92,
+    "building_count": 1,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 930,
+        "name": "望京楼",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "取法自然",
+    "value": 0.92,
+    "term_count": 1,
+    "avg_confidence": 0.92,
+    "building_count": 1,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 76,
+        "name": "避暑山庄",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "后罩楼庭院",
+    "value": 0.92,
+    "term_count": 1,
+    "avg_confidence": 0.92,
+    "building_count": 1,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 329,
+        "name": "孚王府",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "四门对称",
+    "value": 0.92,
+    "term_count": 1,
+    "avg_confidence": 0.92,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 292,
+        "name": "靖江王府",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "石墙贝玛草顶",
+    "value": 0.92,
+    "term_count": 1,
+    "avg_confidence": 0.92,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 149,
+        "name": "罗布林卡",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "银安殿制",
+    "value": 0.92,
+    "term_count": 1,
+    "avg_confidence": 0.92,
+    "building_count": 1,
+    "dimensions": [
+      "建筑结构体系"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 329,
+        "name": "孚王府",
+        "dimension": "建筑结构体系"
+      }
+    ]
+  },
+  {
+    "name": "附属院落群",
+    "value": 0.92,
+    "term_count": 1,
+    "avg_confidence": 0.92,
+    "building_count": 1,
+    "dimensions": [
+      "建筑空间布局"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 292,
+        "name": "靖江王府",
+        "dimension": "建筑空间布局"
+      }
+    ]
+  },
+  {
+    "name": "须弥座束腰雕饰",
+    "value": 0.92,
+    "term_count": 1,
+    "avg_confidence": 0.92,
+    "building_count": 1,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 494,
+        "name": "襄阳王府绿影壁",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "云纹海水纹装饰",
+    "value": 0.91,
+    "term_count": 1,
+    "avg_confidence": 0.91,
+    "building_count": 1,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 494,
+        "name": "襄阳王府绿影壁",
+        "dimension": "营造技艺"
+      }
+    ]
+  },
+  {
+    "name": "融合南北造园艺术",
+    "value": 0.91,
+    "term_count": 1,
+    "avg_confidence": 0.91,
+    "building_count": 1,
+    "dimensions": [
+      "营造技艺"
+    ],
+    "sample_buildings": [
+      {
+        "line_no": 76,
+        "name": "避暑山庄",
+        "dimension": "营造技艺"
+      }
+    ]
+  }
+]

@@ -1,0 +1,95 @@
+{
+  "SwitchMode": 0,
+  "RemoveAllExpKeys": [
+    0,
+    0,
+    0
+  ],
+  "MotionShortcutKeyDatas": {},
+  "ExpShortcutKeyDatas": {
+    "刘海.exp3.json": {
+      "ExpName": "刘海.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "后发 .exp3.json": {
+      "ExpName": "后发 .exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "大丸子.exp3.json": {
+      "ExpName": "大丸子.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "头饰.exp3.json": {
+      "ExpName": "头饰.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "小丸子.exp3.json": {
+      "ExpName": "小丸子.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "手势1.exp3.json": {
+      "ExpName": "手势1.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    },
+    "柿子花花发髻.exp3.json": {
+      "ExpName": "柿子花花发髻.exp3.json",
+      "IsEnable": true,
+      "IsGlobal": true,
+      "Keys": [
+        0,
+        0,
+        0
+      ],
+      "Mode": 1,
+      "FadeDuration": 0.5
+    }
+  }
+}
