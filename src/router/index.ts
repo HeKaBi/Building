@@ -12,31 +12,6 @@ const routes = [
         }
     },
     {
-        path: '/home',
-        name: 'Home',
-        component: () => import('@/views/HomeView.vue')
-    },
-    {
-        path: '/feihua',
-        name: 'Feihua',
-        component: () => import('@/views/FeihuaView.vue')
-    },
-    {
-        path: '/poetry-summary',
-        name: 'PoetrySummary',
-        component: () => import('@/views/PoetrySummaryView.vue')
-    },
-    {
-        path: '/poet-summary',
-        name: 'PoetSummary',
-        component: () => import('@/views/PoetSummaryView.vue')
-    },
-    {
-        path: '/poet-details',
-        name: 'PoetDetails',
-        component: () => import('@/views/PoetDetailsView.vue')
-    },
-    {
         path: '/building',
         component: () => import('@/views/BuildingLayoutView.vue'),
         meta: {

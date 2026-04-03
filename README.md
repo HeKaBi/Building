@@ -1,8 +1,8 @@
-<h1 align="center">Poetry Visualization</h1>
+<h1 align="center">Building Visualization</h1>
 
-## 飞花令大模型
+## 建筑问答大模型
 
-本项目使用的大模型是Doubao-1.5-pro-32k，具体调用方式可参考[官方文档](https://www.volcengine.com/docs/82379/1298454)，但是使用发现在前端项目中直接请求该大模型API接口会出现跨域问题，同时考虑到后续使用Github Pages部署当前纯前端项目，我们采用下述方案解决：
+本项目使用的大模型是Qwen3-Max，具体调用方式可参考[官方文档](https://platform.iflow.cn/models)，但是使用发现在前端项目中直接请求该大模型API接口会出现跨域问题，同时考虑到后续使用Github Pages部署当前纯前端项目，我们采用下述方案解决：
 
 **(1) 搭建代理服务器**
 

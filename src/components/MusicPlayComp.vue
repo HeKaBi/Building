@@ -84,6 +84,7 @@ const handlePause = () => {
 const syncMusicState = () => {
     isMusic.value = true
     if (!audioPlayer.value) return
+    audioPlayer.value.preload = 'auto'
     if (localStorage.getItem('isPlaying') === 'false') {
         isPlaying.value = false
         audioPlayer.value.pause()
@@ -104,12 +105,14 @@ onBeforeUnmount(removeAutoplayUnlockListeners)
     border-radius: 4rem;
     position: fixed;
     right: 1rem;
-    top: 4.5rem;
-    z-index: 999;
+    bottom: 1rem;
+    top: auto;
+    z-index: 5000;
     display: flex;
     align-items: center;
     background: #70756f2c;
     justify-content: center;
+    pointer-events: auto;
 }
 
 .musicPlay {
