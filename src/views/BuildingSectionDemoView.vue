@@ -280,15 +280,16 @@
                 <article
                   id="building-section-atlas-ink-panel"
                   class="atlas-hero"
-                  :class="{ 'atlas-hero--paper-only': isQingchengDetail }"
+                  :class="{ 'atlas-hero--paper-only': isPaperOnlyDetail }"
                   :style="getAtlasCardStyle(detailItem)"
                   @wheel.capture.stop.prevent="handleImageWheel($event, detailItem.id)"
                 >
-                  <template v-if="isQingchengDetail">
+                  <template v-if="isPaperOnlyDetail && paperOnlyHeroImage">
                     <img
                       class="atlas-hero__paper-clean"
-                      :src="qingchengPaperSketchFallback"
+                      :src="paperOnlyHeroImage"
                       :alt="`${detailItem.name}线稿`"
+                      @error="handleDetailPaperSketchError"
                     />
                   </template>
                   <template v-else>
@@ -326,7 +327,7 @@
                     </Transition>
                   </template>
 
-                  <div v-if="!isQingchengDetail" class="atlas-hero__caption">
+                  <div v-if="!isPaperOnlyDetail" class="atlas-hero__caption">
                     <span>线稿</span>
                     <span>滚轮切换前后样本</span>
                     <span>{{ detailItem.tags.join(' · ') }}</span>
@@ -813,13 +814,44 @@ const detailItem = computed(
 );
 
 const qingchengDetailId = 'building-1852-b868caf8';
+const paperOnlyDetailIds = new Set([
+  qingchengDetailId,
+  'building-53-3f08d9a5',
+  'building-119-d2166c1f',
+  'building-330-2cd68aab',
+  'building-357-cf320702',
+  'building-73-2e7282cd',
+  'building-1067-93620dde',
+  'building-1578-65a769b0',
+  'building-1595-323ef8ea',
+  'building-2079-93af223e',
+  'building-2152-971241c1',
+]);
 const isQingchengItem = (item: BuildingGalleryItem | null | undefined) =>
   !!item && (item.id === qingchengDetailId || item.name.includes('青城古民居'));
 
-const isQingchengDetail = computed(() => isQingchengItem(detailItem.value));
+const resolvePublicAssetUrl = (path: string) => {
+  const normalizedBase = import.meta.env.BASE_URL ?? '/';
+  const baseWithTrailingSlash = normalizedBase.endsWith('/') ? normalizedBase : `${normalizedBase}/`;
+  return `${baseWithTrailingSlash}${path.replace(/^\/+/, '')}`;
+};
 
-const qingchengPaperSketchFallback = `${import.meta.env.BASE_URL}building_paper/building-1852-b868caf8.png`;
+const qingchengPaperSketchFallback = resolvePublicAssetUrl('building_paper/building-1852-b868caf8.png');
+const PAPER_SKETCH_EXTENSIONS = ['png', 'jpg', 'jpeg', 'webp'] as const;
 const paperSketchLoadStep = ref(0);
+
+const uniqueStrings = (values: Array<string | undefined>) =>
+  Array.from(new Set(values.filter((value): value is string => Boolean(value))));
+
+const buildPublicPaperSketchCandidates = (item: BuildingGalleryItem) => {
+  const numberedId = item.id.match(/^building-(\d+)-/)?.[1];
+  const numberedNameKey = numberedId && item.name ? `${numberedId}${item.name}` : undefined;
+  const candidateKeys = uniqueStrings([numberedId, numberedNameKey, item.name, item.id]);
+
+  return candidateKeys.flatMap((key) =>
+    PAPER_SKETCH_EXTENSIONS.map((extension) => resolvePublicAssetUrl(`building_paper/${key}.${extension}`)),
+  );
+};
 
 const detailPaperSketchCandidates = computed(() => {
   const item = detailItem.value;
@@ -827,24 +859,38 @@ const detailPaperSketchCandidates = computed(() => {
     return [] as string[];
   }
 
+  const publicCandidates = buildPublicPaperSketchCandidates(item);
+
   if (isQingchengItem(item)) {
-    return [qingchengPaperSketch, qingchengPaperSketchFallback];
+    return uniqueStrings([
+      ...publicCandidates,
+      item.paperSketchImage,
+      qingchengPaperSketch,
+      qingchengPaperSketchFallback,
+    ]);
   }
 
-  return item.paperSketchImage ? [item.paperSketchImage] : [];
+  return uniqueStrings([...publicCandidates, item.paperSketchImage]);
 });
 
 const detailPaperSketchImage = computed(() => {
   const candidates = detailPaperSketchCandidates.value;
-  if (!candidates.length) {
-    return undefined;
-  }
-  return candidates[Math.min(paperSketchLoadStep.value, candidates.length - 1)];
+  return candidates[paperSketchLoadStep.value];
 });
 
+const paperOnlyHeroImage = computed(() => {
+  const item = detailItem.value;
+  if (!item || !paperOnlyDetailIds.has(item.id)) {
+    return undefined;
+  }
+
+  return detailPaperSketchImage.value ?? (isQingchengItem(item) ? qingchengPaperSketch : undefined);
+});
+
+const isPaperOnlyDetail = computed(() => Boolean(paperOnlyHeroImage.value));
+
 const handleDetailPaperSketchError = () => {
-  const maxStep = detailPaperSketchCandidates.value.length - 1;
-  if (paperSketchLoadStep.value < maxStep) {
+  if (paperSketchLoadStep.value < detailPaperSketchCandidates.value.length) {
     paperSketchLoadStep.value += 1;
   }
 };
